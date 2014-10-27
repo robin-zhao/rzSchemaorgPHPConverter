@@ -9,7 +9,7 @@ Just don't like underscore seperated class names.
 
     PHP5.3+, Composer
 
-###Installation
+### Installation
 
   - git clone https://github.com/robin-zhao/rzSchemaorgPHPConverter.git 
   - composer install
