@@ -1,0 +1,12 @@
+{
+    "name": "robinzhao/schemaorg",
+    "authors": [
+        {
+            "name": "Jian Zhao",
+            "email": "boborabit@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "~2.5"
+    }
+}

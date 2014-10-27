@@ -1,0 +1,191 @@
+<?php
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+require 'vendor/autoload.php';
+
+$app = new Application();
+
+$cmd = $app->register('convert');
+$cmd->setDescription('Start to convert http://schema.rdfs.org/all.json to classes.');
+$cmd->setCode(function(InputInterface $input, OutputInterface $output) {
+
+    // get json object from http://schema.rdfs.org/all.json
+    $url = 'http://schema.rdfs.org/all.json';
+    $localFile = __DIR__ . '/all.json';
+    if (!file_exists($localFile) || filemtime($localFile) + 86400 < time()) {
+        file_put_contents($localFile, file_get_contents($url));
+    }
+
+    $json = json_decode(file_get_contents($localFile));
+
+    ClassBuilder::setPropertyConf($json->properties);
+
+    foreach ((array) $json->types as $each) {
+        $classBuilder = new ClassBuilder($each);
+        $classBuilder->setRootNamespace('Example');
+        $classBuilder->build();
+    }
+});
+
+$app->run();
+
+class ClassBuilder
+{
+
+    private $rootNamespace = 'Example';
+    private $className;
+    private $ancestors;
+    private $specificProperties;
+    private $label;
+    private $file;
+    private $url;
+    private static $propertyConf = array();
+
+    private $typeMapper = array(
+        'text' => 'String',
+        'url' => 'String',
+        'time' => 'DateTime',
+        'date' => 'DateTime',
+        'boolean' => 'Boolean',
+        'datetime' => 'DateTime',
+        'float' => 'Float',
+        'Integer' => 'Integer',
+        'number' => 'Float',
+    );
+
+    public static function setPropertyConf($properties)
+    {
+        static::$propertyConf = $properties;
+    }
+
+    public function __construct($object)
+    {
+        $this->className = $object->id;
+        $this->ancestors = $object->ancestors;
+        $this->specificProperties = $object->specific_properties;
+        $this->label = $object->label;
+        $this->url = $object->url;
+        
+    }
+
+    public function setRootNamespace($rootNamespace)
+    {
+        $this->rootNamespace = $rootNamespace;
+    }
+
+    public function build()
+    {
+        $this->touchFile();
+        $this->buildClass();
+    }
+
+    private function touchFile()
+    {
+        $dir = __DIR__ . '/' . $this->rootNamespace . '/' . implode('/', $this->ancestors);
+        if (!file_exists($dir)) {
+            mkdir($dir, 0755, true);
+        }
+
+        $this->file = $dir . '/' . $this->className . '.php';
+        touch($this->file);
+    }
+
+    private function buildClass()
+    {
+        $string = array();
+        $string [] = '<?php' . "\n";
+
+        if (count($this->ancestors) > 0) {
+            $string [] = 'namespace ' . $this->rootNamespace . '\\' . implode('\\', $this->ancestors) . ';' . "\n";
+            $string [] = 'use ' . $this->rootNamespace . '\\' . implode('\\', $this->ancestors) . ';' . "\n";
+            $this->buildClassDoc($string);
+            $string [] = 'class ' . $this->className . ' extends ' . $this->ancestors[count($this->ancestors) - 1];
+        } else {
+            $string [] = 'namespace ' . $this->rootNamespace . ';' . "\n";
+            $this->buildClassDoc($string);
+            $string [] = 'class ' . $this->className;
+        }
+        $string[] = '{' . "\n";
+
+        $getterSetter = array();
+
+        foreach ($this->specificProperties as $property) {
+            $this->buildProperty($property, $string);
+            $this->buildGetterSetter($property, $getterSetter);
+        }
+
+        $this->buildUrl($string);
+
+        // Generate getUrl for Thing.
+        if ($this->className == 'Thing') {
+            $getterSetter [] = '    public function getUrl()';
+            $getterSetter [] = '    {';
+            $getterSetter [] = '        return $this->url;';
+            $getterSetter [] = '    }' . "\n";
+        }
+
+        $string = array_merge($string, $getterSetter);
+
+        $string[] = '}';
+
+        $string = implode("\n", $string) . "\n";
+        file_put_contents($this->file, $string);
+    }
+
+    private function buildClassDoc(&$string)
+    {
+        $string [] = '/**';
+        $string [] = ' * ' . $this->label;
+        $string [] = ' * ' . $this->url;
+        $string [] = ' */';
+    }
+
+    private function buildUrl(&$string)
+    {
+        $string [] = '    /**';
+        $string [] = '     * schema.org url';
+        $string [] = '     */';
+        $string [] = '    private $url = "' . $this->url . '";' . "\n";
+    }
+
+    private function buildProperty($property, &$string)
+    {
+        $string [] = '    /**';
+        $string [] = '     * ' . self::$propertyConf->$property->comment_plain;
+        $string [] = '     *';
+
+        $ranges = self::$propertyConf->$property->ranges;
+        $rangeName = array();
+        foreach($ranges as $range) {
+            if(array_key_exists(strtolower($range), $this->typeMapper)) {
+                $rangeName []= $this->typeMapper[strtolower($range)];
+            } else {
+                $rangeName []= $range; // @todo class name
+            }
+        }
+        $rangeString = implode('|', $rangeName);
+
+        $string [] = '     * @var ' . $rangeString;
+        $string [] = '     */';
+        $string [] = '    private $' . $property . ';' . "\n";
+    }
+
+    private function buildGetterSetter($property, &$getterSetter)
+    {
+        $getterSetter [] = '    public function get' . $property . '()';
+        $getterSetter [] = '    {';
+        $getterSetter [] = '        return $this->' . $property . ';';
+        $getterSetter [] = '    }' . "\n";
+
+        // @todo build method comment.
+        $getterSetter [] = '    public function set' . $property . '($' . $property . ')';
+        $getterSetter [] = '    {';
+        $getterSetter [] = '        $this->' . $property . ' = $' . $property . ';';
+        $getterSetter [] = '        return $this;';
+        $getterSetter [] = '    }' . "\n";
+    }
+
+}

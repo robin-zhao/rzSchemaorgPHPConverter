@@ -1,0 +1,37 @@
+<?php
+
+namespace Example\Thing\CreativeWork\SoftwareApplication;
+
+use Example\Thing\CreativeWork\SoftwareApplication;
+
+/**
+ * Web Application
+ * http://schema.org/WebApplication
+ */
+class WebApplication extends SoftwareApplication
+{
+
+    /**
+     * Specifies browser requirements in human-readable text. For example,"requires HTML5 support".
+     *
+     * @var String
+     */
+    private $browserRequirements;
+
+    /**
+     * schema.org url
+     */
+    private $url = "http://schema.org/WebApplication";
+
+    public function getbrowserRequirements()
+    {
+        return $this->browserRequirements;
+    }
+
+    public function setbrowserRequirements($browserRequirements)
+    {
+        $this->browserRequirements = $browserRequirements;
+        return $this;
+    }
+
+}
