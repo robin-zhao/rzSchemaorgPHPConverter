@@ -193,6 +193,7 @@ class ClassBuilder
                 $rangeName [] = $namespace;
             }
         }
+        $rangeName = array_unique($rangeName);
         return implode('|', $rangeName);
     }
 

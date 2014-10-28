@@ -19,14 +19,14 @@ class FoodEstablishment extends LocalBusiness
     /**
      * Either Yes/No, or a URL at which reservations can be made.
      *
-     * @var String|String
+     * @var String
      */
     private $acceptsReservations;
 
     /**
      * Either the actual menu or a URL of the menu.
      *
-     * @var String|String
+     * @var String
      */
     private $menu;
 
@@ -43,7 +43,7 @@ class FoodEstablishment extends LocalBusiness
     private $url = "http://schema.org/FoodEstablishment";
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getAcceptsReservations()
     {
@@ -51,7 +51,7 @@ class FoodEstablishment extends LocalBusiness
     }
 
     /**
-     * @param $acceptsReservations String|String
+     * @param $acceptsReservations String
      */
     public function setAcceptsReservations($acceptsReservations)
     {
@@ -60,7 +60,7 @@ class FoodEstablishment extends LocalBusiness
     }
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getMenu()
     {
@@ -68,7 +68,7 @@ class FoodEstablishment extends LocalBusiness
     }
 
     /**
-     * @param $menu String|String
+     * @param $menu String
      */
     public function setMenu($menu)
     {

@@ -194,7 +194,7 @@ class Drug extends MedicalTherapy
     /**
      * Any FDA or other warnings about the drug (text or URL).
      *
-     * @var String|String
+     * @var String
      */
     private $warning;
 
@@ -629,7 +629,7 @@ class Drug extends MedicalTherapy
     }
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getWarning()
     {
@@ -637,7 +637,7 @@ class Drug extends MedicalTherapy
     }
 
     /**
-     * @param $warning String|String
+     * @param $warning String
      */
     public function setWarning($warning)
     {

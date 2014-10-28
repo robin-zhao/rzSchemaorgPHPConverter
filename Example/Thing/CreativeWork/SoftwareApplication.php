@@ -19,14 +19,14 @@ class SoftwareApplication extends CreativeWork
     /**
      * Type of software application, e.g. "Game, Multimedia".
      *
-     * @var String|String
+     * @var String
      */
     private $applicationCategory;
 
     /**
      * Subcategory of the application, e.g. "Arcade Game".
      *
-     * @var String|String
+     * @var String
      */
     private $applicationSubCategory;
 
@@ -68,7 +68,7 @@ class SoftwareApplication extends CreativeWork
     /**
      * Features or modules provided by this application (and possibly required by other applications).
      *
-     * @var String|String
+     * @var String
      */
     private $featureList;
 
@@ -96,7 +96,7 @@ class SoftwareApplication extends CreativeWork
     /**
      * Minimum memory requirements.
      *
-     * @var String|String
+     * @var String
      */
     private $memoryRequirements;
 
@@ -124,14 +124,14 @@ class SoftwareApplication extends CreativeWork
     /**
      * Description of what changed in this version.
      *
-     * @var String|String
+     * @var String
      */
     private $releaseNotes;
 
     /**
      * Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).
      *
-     * @var String|String
+     * @var String
      */
     private $requirements;
 
@@ -152,7 +152,7 @@ class SoftwareApplication extends CreativeWork
     /**
      * Storage requirements (free space required).
      *
-     * @var String|String
+     * @var String
      */
     private $storageRequirements;
 
@@ -162,7 +162,7 @@ class SoftwareApplication extends CreativeWork
     private $url = "http://schema.org/SoftwareApplication";
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getApplicationCategory()
     {
@@ -170,7 +170,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @param $applicationCategory String|String
+     * @param $applicationCategory String
      */
     public function setApplicationCategory($applicationCategory)
     {
@@ -179,7 +179,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getApplicationSubCategory()
     {
@@ -187,7 +187,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @param $applicationSubCategory String|String
+     * @param $applicationSubCategory String
      */
     public function setApplicationSubCategory($applicationSubCategory)
     {
@@ -281,7 +281,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getFeatureList()
     {
@@ -289,7 +289,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @param $featureList String|String
+     * @param $featureList String
      */
     public function setFeatureList($featureList)
     {
@@ -349,7 +349,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getMemoryRequirements()
     {
@@ -357,7 +357,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @param $memoryRequirements String|String
+     * @param $memoryRequirements String
      */
     public function setMemoryRequirements($memoryRequirements)
     {
@@ -417,7 +417,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getReleaseNotes()
     {
@@ -425,7 +425,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @param $releaseNotes String|String
+     * @param $releaseNotes String
      */
     public function setReleaseNotes($releaseNotes)
     {
@@ -434,7 +434,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getRequirements()
     {
@@ -442,7 +442,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @param $requirements String|String
+     * @param $requirements String
      */
     public function setRequirements($requirements)
     {
@@ -485,7 +485,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @return String|String
+     * @return String
      */
     public function getStorageRequirements()
     {
@@ -493,7 +493,7 @@ class SoftwareApplication extends CreativeWork
     }
 
     /**
-     * @param $storageRequirements String|String
+     * @param $storageRequirements String
      */
     public function setStorageRequirements($storageRequirements)
     {
