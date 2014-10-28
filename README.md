@@ -23,6 +23,22 @@ And a simple Json-ld formatter based on the classes.
 
     php json-ld-formater-example.php | python -mjson.tool
 
+
+```php
+    $videoObject = new VideoObject();
+
+    $person = new Person();
+    $person->setTelephone('123456789');
+    $person->setName('Robin');
+    $videoObject->setAuthor($person);
+
+    $videoObject->setAward("This is a award.");
+
+    $formatter = new JsonLDFormatter($videoObject);
+
+    echo $formatter->toJson();
+```
+
     with output like:
 
     {
