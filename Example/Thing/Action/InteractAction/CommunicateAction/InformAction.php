@@ -21,12 +21,13 @@ class InformAction extends CommunicateAction
      *
      * @var Example\Thing\Event
      */
-    private $event;
+    protected $event;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/InformAction";
+    protected $context = "http://schema.org/InformAction";
 
     /**
      * @return Example\Thing\Event

@@ -17,8 +17,9 @@ class AdministrativeArea extends Place
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AdministrativeArea";
+    protected $context = "http://schema.org/AdministrativeArea";
 
 }

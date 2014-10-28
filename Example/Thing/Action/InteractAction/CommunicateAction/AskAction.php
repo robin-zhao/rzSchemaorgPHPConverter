@@ -21,12 +21,13 @@ class AskAction extends CommunicateAction
      *
      * @var String
      */
-    private $question;
+    protected $question;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AskAction";
+    protected $context = "http://schema.org/AskAction";
 
     /**
      * @return String

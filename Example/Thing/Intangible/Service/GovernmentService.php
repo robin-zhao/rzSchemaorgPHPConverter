@@ -21,12 +21,13 @@ class GovernmentService extends Service
      *
      * @var Example\Thing\Organization
      */
-    private $serviceOperator;
+    protected $serviceOperator;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/GovernmentService";
+    protected $context = "http://schema.org/GovernmentService";
 
     /**
      * @return Example\Thing\Organization

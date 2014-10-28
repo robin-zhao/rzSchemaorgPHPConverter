@@ -21,19 +21,20 @@ class DeliveryChargeSpecification extends PriceSpecification
      *
      * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    private $appliesToDeliveryMethod;
+    protected $appliesToDeliveryMethod;
 
     /**
      * The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.
      *
      * @var String|Example\Thing\Intangible\StructuredValue\GeoShape
      */
-    private $eligibleRegion;
+    protected $eligibleRegion;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DeliveryChargeSpecification";
+    protected $context = "http://schema.org/DeliveryChargeSpecification";
 
     /**
      * @return Example\Thing\Intangible\Enumeration\DeliveryMethod

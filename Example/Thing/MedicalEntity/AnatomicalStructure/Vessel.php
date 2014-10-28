@@ -17,8 +17,9 @@ class Vessel extends AnatomicalStructure
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Vessel";
+    protected $context = "http://schema.org/Vessel";
 
 }

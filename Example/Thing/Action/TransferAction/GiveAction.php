@@ -21,12 +21,13 @@ class GiveAction extends TransferAction
      *
      * @var Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
      */
-    private $recipient;
+    protected $recipient;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/GiveAction";
+    protected $context = "http://schema.org/GiveAction";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person

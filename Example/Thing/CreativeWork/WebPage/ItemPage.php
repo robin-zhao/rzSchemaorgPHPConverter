@@ -17,8 +17,9 @@ class ItemPage extends WebPage
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ItemPage";
+    protected $context = "http://schema.org/ItemPage";
 
 }

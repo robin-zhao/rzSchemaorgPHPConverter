@@ -21,61 +21,62 @@ class ExercisePlan extends CreativeWork
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $activityDuration;
+    protected $activityDuration;
 
     /**
      * How often one should engage in the activity.
      *
      * @var String
      */
-    private $activityFrequency;
+    protected $activityFrequency;
 
     /**
      * Any additional component of the exercise prescription that may need to be articulated to the patient. This may include the order of exercises, the number of repetitions of movement, quantitative distance, progressions over time, etc.
      *
      * @var String
      */
-    private $additionalVariable;
+    protected $additionalVariable;
 
     /**
      * Type(s) of exercise or activity, such as strength training, flexibility training, aerobics, cardiac rehabilitation, etc.
      *
      * @var String
      */
-    private $exerciseType;
+    protected $exerciseType;
 
     /**
      * Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.
      *
      * @var String
      */
-    private $intensity;
+    protected $intensity;
 
     /**
      * Number of times one should repeat the activity.
      *
      * @var Float
      */
-    private $repetitions;
+    protected $repetitions;
 
     /**
      * How often one should break from the activity.
      *
      * @var String
      */
-    private $restPeriods;
+    protected $restPeriods;
 
     /**
      * Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.
      *
      * @var Example\Thing\Intangible\Quantity\Energy
      */
-    private $workload;
+    protected $workload;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ExercisePlan";
+    protected $context = "http://schema.org/ExercisePlan";
 
     /**
      * @return Example\Thing\Intangible\Quantity\Duration

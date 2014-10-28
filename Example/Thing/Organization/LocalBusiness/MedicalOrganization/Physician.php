@@ -21,26 +21,27 @@ class Physician extends MedicalOrganization
      *
      * @var Example\Thing\MedicalEntity\MedicalTest|Example\Thing\MedicalEntity\MedicalProcedure|Example\Thing\MedicalEntity\MedicalTherapy
      */
-    private $availableService;
+    protected $availableService;
 
     /**
      * A hospital with which the physician or office is affiliated.
      *
      * @var Example\Thing\Place\CivicStructure\Hospital
      */
-    private $hospitalAffiliation;
+    protected $hospitalAffiliation;
 
     /**
      * A medical specialty of the provider.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
-    private $medicalSpecialty;
+    protected $medicalSpecialty;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Physician";
+    protected $context = "http://schema.org/Physician";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalTest|Example\Thing\MedicalEntity\MedicalProcedure|Example\Thing\MedicalEntity\MedicalTherapy

@@ -24,19 +24,20 @@ class Audience extends Intangible
      *
      * @var String
      */
-    private $audienceType;
+    protected $audienceType;
 
     /**
      * The geographic area associated with the audience.
      *
      * @var Example\Thing\Place\AdministrativeArea
      */
-    private $geographicArea;
+    protected $geographicArea;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Audience";
+    protected $context = "http://schema.org/Audience";
 
     /**
      * @return String

@@ -17,8 +17,9 @@ class UnRegisterAction extends InteractAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/UnRegisterAction";
+    protected $context = "http://schema.org/UnRegisterAction";
 
 }

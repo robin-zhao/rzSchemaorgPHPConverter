@@ -21,26 +21,27 @@ class AggregateRating extends Rating
      *
      * @var Example\Thing
      */
-    private $itemReviewed;
+    protected $itemReviewed;
 
     /**
      * The count of total number of ratings.
      *
      * @var Float
      */
-    private $ratingCount;
+    protected $ratingCount;
 
     /**
      * The count of total number of reviews.
      *
      * @var Float
      */
-    private $reviewCount;
+    protected $reviewCount;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AggregateRating";
+    protected $context = "http://schema.org/AggregateRating";
 
     /**
      * @return Example\Thing

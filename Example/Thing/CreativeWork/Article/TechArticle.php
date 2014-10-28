@@ -21,19 +21,20 @@ class TechArticle extends Article
      *
      * @var String
      */
-    private $dependencies;
+    protected $dependencies;
 
     /**
      * Proficiency needed for this content; expected values: 'Beginner', 'Expert'.
      *
      * @var String
      */
-    private $proficiencyLevel;
+    protected $proficiencyLevel;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TechArticle";
+    protected $context = "http://schema.org/TechArticle";
 
     /**
      * @return String

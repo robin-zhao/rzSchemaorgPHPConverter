@@ -21,12 +21,13 @@ class TrackAction extends FindAction
      *
      * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    private $deliveryMethod;
+    protected $deliveryMethod;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TrackAction";
+    protected $context = "http://schema.org/TrackAction";
 
     /**
      * @return Example\Thing\Intangible\Enumeration\DeliveryMethod

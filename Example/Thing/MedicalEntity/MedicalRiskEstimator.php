@@ -21,19 +21,20 @@ class MedicalRiskEstimator extends MedicalEntity
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $estimatesRiskOf;
+    protected $estimatesRiskOf;
 
     /**
      * A modifiable or non-modifiable risk factor included in the calculation, e.g. age, coexisting condition.
      *
      * @var Example\Thing\MedicalEntity\MedicalRiskFactor
      */
-    private $includedRiskFactor;
+    protected $includedRiskFactor;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalRiskEstimator";
+    protected $context = "http://schema.org/MedicalRiskEstimator";
 
     /**
      * @return Example\Thing\MedicalEntity

@@ -21,33 +21,34 @@ class OwnershipInfo extends StructuredValue
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $acquiredFrom;
+    protected $acquiredFrom;
 
     /**
      * The date and time of obtaining the product.
      *
      * @var DateTime
      */
-    private $ownedFrom;
+    protected $ownedFrom;
 
     /**
      * The date and time of giving up ownership on the product.
      *
      * @var DateTime
      */
-    private $ownedThrough;
+    protected $ownedThrough;
 
     /**
      * The product that this structured value is referring to.
      *
      * @var Example\Thing\Product
      */
-    private $typeOfGood;
+    protected $typeOfGood;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/OwnershipInfo";
+    protected $context = "http://schema.org/OwnershipInfo";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Person

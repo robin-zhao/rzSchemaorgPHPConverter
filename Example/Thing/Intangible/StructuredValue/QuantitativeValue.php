@@ -21,40 +21,41 @@ class QuantitativeValue extends StructuredValue
      *
      * @var Float
      */
-    private $maxValue;
+    protected $maxValue;
 
     /**
      * The lower value of the product characteristic.
      *
      * @var Float
      */
-    private $minValue;
+    protected $minValue;
 
     /**
      * The unit of measurement given using the UN/CEFACT Common Code (3 characters).
      *
      * @var String
      */
-    private $unitCode;
+    protected $unitCode;
 
     /**
      * The value of the product characteristic.
      *
      * @var Float
      */
-    private $value;
+    protected $value;
 
     /**
      * A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.
      *
      * @var Example\Thing\Intangible\Enumeration|Example\Thing\Intangible\StructuredValue
      */
-    private $valueReference;
+    protected $valueReference;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/QuantitativeValue";
+    protected $context = "http://schema.org/QuantitativeValue";
 
     /**
      * @return Float

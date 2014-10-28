@@ -17,8 +17,9 @@ class UserInteraction extends Event
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/UserInteraction";
+    protected $context = "http://schema.org/UserInteraction";
 
 }

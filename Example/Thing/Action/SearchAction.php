@@ -21,12 +21,13 @@ class SearchAction extends Action
      *
      * @var Example\Thing\Class|String
      */
-    private $query;
+    protected $query;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/SearchAction";
+    protected $context = "http://schema.org/SearchAction";
 
     /**
      * @return Example\Thing\Class|String

@@ -21,89 +21,90 @@ class NutritionInformation extends StructuredValue
      *
      * @var Example\Thing\Intangible\Quantity\Energy
      */
-    private $calories;
+    protected $calories;
 
     /**
      * The number of grams of carbohydrates.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $carbohydrateContent;
+    protected $carbohydrateContent;
 
     /**
      * The number of milligrams of cholesterol.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $cholesterolContent;
+    protected $cholesterolContent;
 
     /**
      * The number of grams of fat.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $fatContent;
+    protected $fatContent;
 
     /**
      * The number of grams of fiber.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $fiberContent;
+    protected $fiberContent;
 
     /**
      * The number of grams of protein.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $proteinContent;
+    protected $proteinContent;
 
     /**
      * The number of grams of saturated fat.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $saturatedFatContent;
+    protected $saturatedFatContent;
 
     /**
      * The serving size, in terms of the number of volume or mass
      *
      * @var String
      */
-    private $servingSize;
+    protected $servingSize;
 
     /**
      * The number of milligrams of sodium.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $sodiumContent;
+    protected $sodiumContent;
 
     /**
      * The number of grams of sugar.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $sugarContent;
+    protected $sugarContent;
 
     /**
      * The number of grams of trans fat.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $transFatContent;
+    protected $transFatContent;
 
     /**
      * The number of grams of unsaturated fat.
      *
      * @var Example\Thing\Intangible\Quantity\Mass
      */
-    private $unsaturatedFatContent;
+    protected $unsaturatedFatContent;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/NutritionInformation";
+    protected $context = "http://schema.org/NutritionInformation";
 
     /**
      * @return Example\Thing\Intangible\Quantity\Energy

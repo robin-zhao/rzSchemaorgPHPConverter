@@ -17,8 +17,9 @@ class CreateAction extends Action
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CreateAction";
+    protected $context = "http://schema.org/CreateAction";
 
 }

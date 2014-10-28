@@ -21,75 +21,76 @@ class Recipe extends CreativeWork
      *
      * @var String
      */
-    private $cookingMethod;
+    protected $cookingMethod;
 
     /**
      * The time it takes to actually cook the dish, in ISO 8601 duration format.
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $cookTime;
+    protected $cookTime;
 
     /**
      * An ingredient used in the recipe.
      *
      * @var String
      */
-    private $ingredients;
+    protected $ingredients;
 
     /**
      * Nutrition information about the recipe.
      *
      * @var Example\Thing\Intangible\StructuredValue\NutritionInformation
      */
-    private $nutrition;
+    protected $nutrition;
 
     /**
      * The length of time it takes to prepare the recipe, in ISO 8601 duration format.
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $prepTime;
+    protected $prepTime;
 
     /**
      * The category of the recipe—for example, appetizer, entree, etc.
      *
      * @var String
      */
-    private $recipeCategory;
+    protected $recipeCategory;
 
     /**
      * The cuisine of the recipe (for example, French or Ethopian).
      *
      * @var String
      */
-    private $recipeCuisine;
+    protected $recipeCuisine;
 
     /**
      * The steps to make the dish.
      *
      * @var String
      */
-    private $recipeInstructions;
+    protected $recipeInstructions;
 
     /**
      * The quantity produced by the recipe (for example, number of people served, number of servings, etc).
      *
      * @var String
      */
-    private $recipeYield;
+    protected $recipeYield;
 
     /**
      * The total time it takes to prepare and cook the recipe, in ISO 8601 duration format.
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $totalTime;
+    protected $totalTime;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Recipe";
+    protected $context = "http://schema.org/Recipe";
 
     /**
      * @return String

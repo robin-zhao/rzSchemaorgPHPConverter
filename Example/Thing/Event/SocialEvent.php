@@ -17,8 +17,9 @@ class SocialEvent extends Event
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/SocialEvent";
+    protected $context = "http://schema.org/SocialEvent";
 
 }

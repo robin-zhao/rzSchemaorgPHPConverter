@@ -21,12 +21,13 @@ class TradeAction extends Action
      *
      * @var String|Float
      */
-    private $price;
+    protected $price;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TradeAction";
+    protected $context = "http://schema.org/TradeAction";
 
     /**
      * @return String|Float

@@ -21,19 +21,20 @@ class WarrantyPromise extends StructuredValue
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $durationOfWarranty;
+    protected $durationOfWarranty;
 
     /**
      * The scope of the warranty promise.
      *
      * @var Example\Thing\Intangible\Enumeration\WarrantyScope
      */
-    private $warrantyScope;
+    protected $warrantyScope;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WarrantyPromise";
+    protected $context = "http://schema.org/WarrantyPromise";
 
     /**
      * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue

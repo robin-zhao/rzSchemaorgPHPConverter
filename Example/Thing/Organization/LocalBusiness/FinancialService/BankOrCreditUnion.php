@@ -17,8 +17,9 @@ class BankOrCreditUnion extends FinancialService
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/BankOrCreditUnion";
+    protected $context = "http://schema.org/BankOrCreditUnion";
 
 }

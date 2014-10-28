@@ -17,8 +17,9 @@ class SportingGoodsStore extends Store
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/SportingGoodsStore";
+    protected $context = "http://schema.org/SportingGoodsStore";
 
 }

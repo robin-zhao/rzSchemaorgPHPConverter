@@ -21,26 +21,27 @@ class Article extends CreativeWork
      *
      * @var String
      */
-    private $articleBody;
+    protected $articleBody;
 
     /**
      * Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.
      *
      * @var String
      */
-    private $articleSection;
+    protected $articleSection;
 
     /**
      * The number of words in the text of the Article.
      *
      * @var Integer
      */
-    private $wordCount;
+    protected $wordCount;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Article";
+    protected $context = "http://schema.org/Article";
 
     /**
      * @return String

@@ -21,12 +21,13 @@ class PathologyTest extends MedicalTest
      *
      * @var String
      */
-    private $tissueSample;
+    protected $tissueSample;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PathologyTest";
+    protected $context = "http://schema.org/PathologyTest";
 
     /**
      * @return String

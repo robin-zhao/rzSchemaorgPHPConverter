@@ -21,12 +21,13 @@ class DrugClass extends MedicalTherapy
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    private $drug;
+    protected $drug;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DrugClass";
+    protected $context = "http://schema.org/DrugClass";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalTherapy\Drug

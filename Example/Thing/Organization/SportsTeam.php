@@ -17,8 +17,9 @@ class SportsTeam extends Organization
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/SportsTeam";
+    protected $context = "http://schema.org/SportsTeam";
 
 }

@@ -21,47 +21,48 @@ class DrugCost extends MedicalIntangible
      *
      * @var Example\Thing\Place\AdministrativeArea
      */
-    private $applicableLocation;
+    protected $applicableLocation;
 
     /**
      * The category of cost, such as wholesale, retail, reimbursement cap, etc.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
      */
-    private $costCategory;
+    protected $costCategory;
 
     /**
      * The currency (in 3-letter ISO 4217 format) of the drug cost.
      *
      * @var String
      */
-    private $costCurrency;
+    protected $costCurrency;
 
     /**
      * Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.
      *
      * @var String
      */
-    private $costOrigin;
+    protected $costOrigin;
 
     /**
      * The cost per unit of the drug.
      *
      * @var Float|String
      */
-    private $costPerUnit;
+    protected $costPerUnit;
 
     /**
      * The unit in which the drug is measured, e.g. '5 mg tablet'.
      *
      * @var String
      */
-    private $drugUnit;
+    protected $drugUnit;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DrugCost";
+    protected $context = "http://schema.org/DrugCost";
 
     /**
      * @return Example\Thing\Place\AdministrativeArea

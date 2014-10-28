@@ -17,8 +17,9 @@ class MusicVideoObject extends MediaObject
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MusicVideoObject";
+    protected $context = "http://schema.org/MusicVideoObject";
 
 }

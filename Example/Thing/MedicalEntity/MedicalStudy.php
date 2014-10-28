@@ -21,47 +21,48 @@ class MedicalStudy extends MedicalEntity
      *
      * @var String
      */
-    private $outcome;
+    protected $outcome;
 
     /**
      * Any characteristics of the population used in the study, e.g. 'males under 65'.
      *
      * @var String
      */
-    private $population;
+    protected $population;
 
     /**
      * Sponsor of the study.
      *
      * @var Example\Thing\Organization
      */
-    private $sponsor;
+    protected $sponsor;
 
     /**
      * The status of the study (enumerated).
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalStudyStatus
      */
-    private $status;
+    protected $status;
 
     /**
      * The location in which the study is taking/took place.
      *
      * @var Example\Thing\Place\AdministrativeArea
      */
-    private $studyLocation;
+    protected $studyLocation;
 
     /**
      * A subject of the study, i.e. one of the medical conditions, therapies, devices, drugs, etc. investigated by the study.
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $studySubject;
+    protected $studySubject;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalStudy";
+    protected $context = "http://schema.org/MedicalStudy";
 
     /**
      * @return String

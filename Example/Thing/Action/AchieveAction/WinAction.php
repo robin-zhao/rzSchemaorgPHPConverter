@@ -21,12 +21,13 @@ class WinAction extends AchieveAction
      *
      * @var Example\Thing\Person
      */
-    private $loser;
+    protected $loser;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WinAction";
+    protected $context = "http://schema.org/WinAction";
 
     /**
      * @return Example\Thing\Person

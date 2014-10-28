@@ -17,8 +17,9 @@ class TouristAttraction extends Place
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TouristAttraction";
+    protected $context = "http://schema.org/TouristAttraction";
 
 }

@@ -21,12 +21,13 @@ class LendAction extends TransferAction
      *
      * @var Example\Thing\Person
      */
-    private $borrower;
+    protected $borrower;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LendAction";
+    protected $context = "http://schema.org/LendAction";
 
     /**
      * @return Example\Thing\Person

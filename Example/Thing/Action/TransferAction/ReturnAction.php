@@ -21,12 +21,13 @@ class ReturnAction extends TransferAction
      *
      * @var Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
      */
-    private $recipient;
+    protected $recipient;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ReturnAction";
+    protected $context = "http://schema.org/ReturnAction";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person

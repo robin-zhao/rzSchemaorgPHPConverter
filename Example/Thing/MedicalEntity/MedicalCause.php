@@ -21,12 +21,13 @@ class MedicalCause extends MedicalEntity
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $causeOf;
+    protected $causeOf;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalCause";
+    protected $context = "http://schema.org/MedicalCause";
 
     /**
      * @return Example\Thing\MedicalEntity

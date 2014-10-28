@@ -21,26 +21,27 @@ class Artery extends Vessel
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $arterialBranch;
+    protected $arterialBranch;
 
     /**
      * The anatomical or organ system that the artery originates from.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $source;
+    protected $source;
 
     /**
      * The area to which the artery supplies blood to.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $supplyTo;
+    protected $supplyTo;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Artery";
+    protected $context = "http://schema.org/Artery";
 
     /**
      * @return Example\Thing\MedicalEntity\AnatomicalStructure

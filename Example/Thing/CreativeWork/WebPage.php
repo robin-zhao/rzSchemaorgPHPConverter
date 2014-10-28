@@ -21,75 +21,76 @@ class WebPage extends CreativeWork
      *
      * @var String
      */
-    private $breadcrumb;
+    protected $breadcrumb;
 
     /**
      * Indicates the collection or gallery to which the item belongs.
      *
      * @var Example\Thing\CreativeWork\WebPage\CollectionPage
      */
-    private $isPartOf;
+    protected $isPartOf;
 
     /**
      * Date on which the content on this web page was last reviewed for accuracy and/or completeness.
      *
      * @var DateTime
      */
-    private $lastReviewed;
+    protected $lastReviewed;
 
     /**
      * Indicates if this web page element is the main subject of the page.
      *
      * @var Example\Thing\CreativeWork\WebPageElement
      */
-    private $mainContentOfPage;
+    protected $mainContentOfPage;
 
     /**
      * Indicates the main image on the page
      *
      * @var Example\Thing\CreativeWork\MediaObject\ImageObject
      */
-    private $primaryImageOfPage;
+    protected $primaryImageOfPage;
 
     /**
      * A link related to this web page, for example to other related web pages.
      *
      * @var String
      */
-    private $relatedLink;
+    protected $relatedLink;
 
     /**
      * People or organizations that have reviewed the content on this web page for accuracy and/or completeness.
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $reviewedBy;
+    protected $reviewedBy;
 
     /**
      * One of the more significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.
      *
      * @var String
      */
-    private $significantLink;
+    protected $significantLink;
 
     /**
      * The most significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most (legacy spelling; see singular form, significantLink).
      *
      * @var String
      */
-    private $significantLinks;
+    protected $significantLinks;
 
     /**
      * One of the domain specialities to which this web page's content applies.
      *
      * @var Example\Thing\Intangible\Enumeration\Specialty
      */
-    private $specialty;
+    protected $specialty;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WebPage";
+    protected $context = "http://schema.org/WebPage";
 
     /**
      * @return String

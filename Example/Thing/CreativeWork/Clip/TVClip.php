@@ -21,12 +21,13 @@ class TVClip extends Clip
      *
      * @var Example\Thing\CreativeWork\TVSeries
      */
-    private $partOfTVSeries;
+    protected $partOfTVSeries;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TVClip";
+    protected $context = "http://schema.org/TVClip";
 
     /**
      * @return Example\Thing\CreativeWork\TVSeries

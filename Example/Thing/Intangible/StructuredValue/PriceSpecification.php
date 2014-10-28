@@ -21,68 +21,69 @@ class PriceSpecification extends StructuredValue
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $eligibleQuantity;
+    protected $eligibleQuantity;
 
     /**
      * The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.
      *
      * @var Example\Thing\Intangible\StructuredValue\PriceSpecification
      */
-    private $eligibleTransactionVolume;
+    protected $eligibleTransactionVolume;
 
     /**
      * The highest price if the price is a range.
      *
      * @var Float
      */
-    private $maxPrice;
+    protected $maxPrice;
 
     /**
      * The lowest price if the price is a range.
      *
      * @var Float
      */
-    private $minPrice;
+    protected $minPrice;
 
     /**
      * The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.
      *
      * @var String|Float
      */
-    private $price;
+    protected $price;
 
     /**
      * The currency (in 3-letter ISO 4217 format) of the offer price or a price component, when attached to PriceSpecification and its subtypes.
      *
      * @var String
      */
-    private $priceCurrency;
+    protected $priceCurrency;
 
     /**
      * The date when the item becomes valid.
      *
      * @var DateTime
      */
-    private $validFrom;
+    protected $validFrom;
 
     /**
      * The end of the validity of offer, price specification, or opening hours data.
      *
      * @var DateTime
      */
-    private $validThrough;
+    protected $validThrough;
 
     /**
      * Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.
      *
      * @var Boolean
      */
-    private $valueAddedTaxIncluded;
+    protected $valueAddedTaxIncluded;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PriceSpecification";
+    protected $context = "http://schema.org/PriceSpecification";
 
     /**
      * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue

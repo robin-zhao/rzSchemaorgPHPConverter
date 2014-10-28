@@ -21,61 +21,62 @@ class Action extends Thing
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $agent;
+    protected $agent;
 
     /**
      * When the Action was performed: end time. This is for actions that span a period of time. e.g. John wrote a book from January to *December*.
      *
      * @var DateTime
      */
-    private $endTime;
+    protected $endTime;
 
     /**
      * The object that helped the agent perform the action. e.g. John wrote a book with *a pen*.
      *
      * @var Example\Thing
      */
-    private $instrument;
+    protected $instrument;
 
     /**
      * The location of the event, organization or action.
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress|Example\Thing\Place
      */
-    private $location;
+    protected $location;
 
     /**
      * The object upon the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read *a book*.
      *
      * @var Example\Thing
      */
-    private $object;
+    protected $object;
 
     /**
      * Other co-agents that participated in the action indirectly. e.g. John wrote a book with *Steve*.
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $participant;
+    protected $participant;
 
     /**
      * The result produced in the action. e.g. John wrote *a book*.
      *
      * @var Example\Thing
      */
-    private $result;
+    protected $result;
 
     /**
      * When the Action was performed: start time. This is for actions that span a period of time. e.g. John wrote a book from *January* to December.
      *
      * @var DateTime
      */
-    private $startTime;
+    protected $startTime;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Action";
+    protected $context = "http://schema.org/Action";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Person

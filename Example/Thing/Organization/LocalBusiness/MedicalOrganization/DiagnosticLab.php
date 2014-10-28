@@ -21,12 +21,13 @@ class DiagnosticLab extends MedicalOrganization
      *
      * @var Example\Thing\MedicalEntity\MedicalTest
      */
-    private $availableTest;
+    protected $availableTest;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DiagnosticLab";
+    protected $context = "http://schema.org/DiagnosticLab";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalTest

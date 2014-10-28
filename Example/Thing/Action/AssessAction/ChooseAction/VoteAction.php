@@ -21,12 +21,13 @@ class VoteAction extends ChooseAction
      *
      * @var Example\Thing\Person
      */
-    private $candidate;
+    protected $candidate;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/VoteAction";
+    protected $context = "http://schema.org/VoteAction";
 
     /**
      * @return Example\Thing\Person

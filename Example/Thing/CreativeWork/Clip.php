@@ -21,47 +21,48 @@ class Clip extends CreativeWork
      *
      * @var Integer
      */
-    private $clipNumber;
+    protected $clipNumber;
 
     /**
      * The episode to which this clip belongs.
      *
      * @var Example\Thing\CreativeWork\Episode
      */
-    private $partOfEpisode;
+    protected $partOfEpisode;
 
     /**
      * The season to which this episode belongs.
      *
      * @var Example\Thing\CreativeWork\Season
      */
-    private $partOfSeason;
+    protected $partOfSeason;
 
     /**
      * The series to which this episode or season belongs.
      *
      * @var Example\Thing\CreativeWork\Series
      */
-    private $partOfSeries;
+    protected $partOfSeries;
 
     /**
      * Free text to define other than pure numerical ranking of an episode or a season in an ordered list of items (further formatting restrictions may apply within particular user groups).
      *
      * @var String
      */
-    private $position;
+    protected $position;
 
     /**
      * A publication event associated with the episode, clip or media object.
      *
      * @var Example\Thing\Event\PublicationEvent
      */
-    private $publication;
+    protected $publication;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Clip";
+    protected $context = "http://schema.org/Clip";
 
     /**
      * @return Integer

@@ -17,8 +17,9 @@ class FilmAction extends CreateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/FilmAction";
+    protected $context = "http://schema.org/FilmAction";
 
 }

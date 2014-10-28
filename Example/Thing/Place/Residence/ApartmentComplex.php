@@ -17,8 +17,9 @@ class ApartmentComplex extends Residence
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ApartmentComplex";
+    protected $context = "http://schema.org/ApartmentComplex";
 
 }

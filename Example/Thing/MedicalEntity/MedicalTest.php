@@ -21,40 +21,41 @@ class MedicalTest extends MedicalEntity
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    private $affectedBy;
+    protected $affectedBy;
 
     /**
      * Range of acceptable values for a typical patient, when applicable.
      *
      * @var String
      */
-    private $normalRange;
+    protected $normalRange;
 
     /**
      * A sign detected by the test.
      *
      * @var Example\Thing\MedicalEntity\MedicalSignOrSymptom\MedicalSign
      */
-    private $signDetected;
+    protected $signDetected;
 
     /**
      * A condition the test is used to diagnose.
      *
      * @var Example\Thing\MedicalEntity\MedicalCondition
      */
-    private $usedToDiagnose;
+    protected $usedToDiagnose;
 
     /**
      * Device used to perform the test.
      *
      * @var Example\Thing\MedicalEntity\MedicalDevice
      */
-    private $usesDevice;
+    protected $usesDevice;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalTest";
+    protected $context = "http://schema.org/MedicalTest";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalTherapy\Drug

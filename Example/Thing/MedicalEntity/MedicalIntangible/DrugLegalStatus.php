@@ -21,12 +21,13 @@ class DrugLegalStatus extends MedicalIntangible
      *
      * @var Example\Thing\Place\AdministrativeArea
      */
-    private $applicableLocation;
+    protected $applicableLocation;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DrugLegalStatus";
+    protected $context = "http://schema.org/DrugLegalStatus";
 
     /**
      * @return Example\Thing\Place\AdministrativeArea

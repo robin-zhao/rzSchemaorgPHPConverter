@@ -21,124 +21,125 @@ class Order extends Intangible
      *
      * @var Example\Thing\Intangible\Offer
      */
-    private $acceptedOffer;
+    protected $acceptedOffer;
 
     /**
      * The billing address for the order.
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    private $billingAddress;
+    protected $billingAddress;
 
     /**
      * A number that confirms the given order.
      *
      * @var String
      */
-    private $confirmationNumber;
+    protected $confirmationNumber;
 
     /**
      * Party placing the order.
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $customer;
+    protected $customer;
 
     /**
      * Any discount applied (to an Order).
      *
      * @var Float|String
      */
-    private $discount;
+    protected $discount;
 
     /**
      * Code used to redeem a discount.
      *
      * @var String
      */
-    private $discountCode;
+    protected $discountCode;
 
     /**
      * The currency (in 3-letter ISO 4217 format) of the discount.
      *
      * @var String
      */
-    private $discountCurrency;
+    protected $discountCurrency;
 
     /**
      * Was the offer accepted as a gift for someone other than the buyer.
      *
      * @var Boolean
      */
-    private $isGift;
+    protected $isGift;
 
     /**
      * The party taking the order (e.g. Amazon.com is a merchant for many sellers).
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $merchant;
+    protected $merchant;
 
     /**
      * Date order was placed.
      *
      * @var DateTime
      */
-    private $orderDate;
+    protected $orderDate;
 
     /**
      * The item ordered.
      *
      * @var Example\Thing\Product
      */
-    private $orderedItem;
+    protected $orderedItem;
 
     /**
      * The identifier of the transaction.
      *
      * @var String
      */
-    private $orderNumber;
+    protected $orderNumber;
 
     /**
      * The current status of the order.
      *
      * @var Example\Thing\Intangible\Enumeration\OrderStatus
      */
-    private $orderStatus;
+    protected $orderStatus;
 
     /**
      * The date that payment is due.
      *
      * @var DateTime
      */
-    private $paymentDue;
+    protected $paymentDue;
 
     /**
      * The name of the credit card or other method of payment for the order.
      *
      * @var Example\Thing\Intangible\Enumeration\PaymentMethod
      */
-    private $paymentMethod;
+    protected $paymentMethod;
 
     /**
      * An identifier for the method of payment used (e.g. the last 4 digits of the credit card).
      *
      * @var String
      */
-    private $paymentMethodId;
+    protected $paymentMethodId;
 
     /**
      * The URL for sending a payment.
      *
      * @var String
      */
-    private $paymentUrl;
+    protected $paymentUrl;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Order";
+    protected $context = "http://schema.org/Order";
 
     /**
      * @return Example\Thing\Intangible\Offer

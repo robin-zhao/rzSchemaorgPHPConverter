@@ -17,8 +17,9 @@ class DeleteAction extends UpdateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DeleteAction";
+    protected $context = "http://schema.org/DeleteAction";
 
 }

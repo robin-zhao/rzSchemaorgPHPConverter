@@ -21,47 +21,48 @@ class Muscle extends AnatomicalStructure
      *
      * @var String
      */
-    private $action;
+    protected $action;
 
     /**
      * The muscle whose action counteracts the specified muscle.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure\Muscle
      */
-    private $antagonist;
+    protected $antagonist;
 
     /**
      * The blood vessel that carries blood from the heart to the muscle.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    private $bloodSupply;
+    protected $bloodSupply;
 
     /**
      * The place of attachment of a muscle, or what the muscle moves.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $insertion;
+    protected $insertion;
 
     /**
      * The underlying innervation associated with the muscle.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure\Nerve
      */
-    private $nerve;
+    protected $nerve;
 
     /**
      * The place or point where a muscle arises.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $origin;
+    protected $origin;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Muscle";
+    protected $context = "http://schema.org/Muscle";
 
     /**
      * @return String

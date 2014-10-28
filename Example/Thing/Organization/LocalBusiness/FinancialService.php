@@ -17,8 +17,9 @@ class FinancialService extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/FinancialService";
+    protected $context = "http://schema.org/FinancialService";
 
 }

@@ -21,250 +21,251 @@ class Organization extends Thing
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    private $address;
+    protected $address;
 
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
      * @var Example\Thing\Intangible\Rating\AggregateRating
      */
-    private $aggregateRating;
+    protected $aggregateRating;
 
     /**
      * The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
      *
      * @var Example\Thing\Organization|Example\Thing\Intangible\Brand
      */
-    private $brand;
+    protected $brand;
 
     /**
      * A contact point for a person or organization.
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint
      */
-    private $contactPoint;
+    protected $contactPoint;
 
     /**
      * A contact point for a person or organization (legacy spelling; see singular form, contactPoint).
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint
      */
-    private $contactPoints;
+    protected $contactPoints;
 
     /**
      * A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, or a bakery with a cafe.
      *
      * @var Example\Thing\Organization
      */
-    private $department;
+    protected $department;
 
     /**
      * The Dun & Bradstreet DUNS number for identifying an organization or business person.
      *
      * @var String
      */
-    private $duns;
+    protected $duns;
 
     /**
      * Email address.
      *
      * @var String
      */
-    private $email;
+    protected $email;
 
     /**
      * Someone working for this organization.
      *
      * @var Example\Thing\Person
      */
-    private $employee;
+    protected $employee;
 
     /**
      * People working for this organization. (legacy spelling; see singular form, employee)
      *
      * @var Example\Thing\Person
      */
-    private $employees;
+    protected $employees;
 
     /**
      * Upcoming or past event associated with this place or organization.
      *
      * @var Example\Thing\Event
      */
-    private $event;
+    protected $event;
 
     /**
      * Upcoming or past events associated with this place or organization (legacy spelling; see singular form, event).
      *
      * @var Example\Thing\Event
      */
-    private $events;
+    protected $events;
 
     /**
      * The fax number.
      *
      * @var String
      */
-    private $faxNumber;
+    protected $faxNumber;
 
     /**
      * A person who founded this organization.
      *
      * @var Example\Thing\Person
      */
-    private $founder;
+    protected $founder;
 
     /**
      * A person who founded this organization (legacy spelling; see singular form, founder).
      *
      * @var Example\Thing\Person
      */
-    private $founders;
+    protected $founders;
 
     /**
      * The date that this organization was founded.
      *
      * @var DateTime
      */
-    private $foundingDate;
+    protected $foundingDate;
 
     /**
      * The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.
      *
      * @var String
      */
-    private $globalLocationNumber;
+    protected $globalLocationNumber;
 
     /**
      * Points-of-Sales operated by the organization or person.
      *
      * @var Example\Thing\Place
      */
-    private $hasPOS;
+    protected $hasPOS;
 
     /**
      * A count of a specific user interactions with this item—for example, 20 UserLikes, 5 UserComments, or 300 UserDownloads. The user interaction type should be one of the sub types of UserInteraction.
      *
      * @var String
      */
-    private $interactionCount;
+    protected $interactionCount;
 
     /**
      * The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.
      *
      * @var String
      */
-    private $isicV4;
+    protected $isicV4;
 
     /**
      * The official name of the organization, e.g. the registered company name.
      *
      * @var String
      */
-    private $legalName;
+    protected $legalName;
 
     /**
      * The location of the event, organization or action.
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress|Example\Thing\Place
      */
-    private $location;
+    protected $location;
 
     /**
      * A logo associated with an organization.
      *
      * @var String|Example\Thing\CreativeWork\MediaObject\ImageObject
      */
-    private $logo;
+    protected $logo;
 
     /**
      * A pointer to products or services offered by the organization or person.
      *
      * @var Example\Thing\Intangible\Offer
      */
-    private $makesOffer;
+    protected $makesOffer;
 
     /**
      * A member of this organization.
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $member;
+    protected $member;
 
     /**
      * A member of this organization (legacy spelling; see singular form, member).
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $members;
+    protected $members;
 
     /**
      * The North American Industry Classification System (NAICS) code for a particular organization or business person.
      *
      * @var String
      */
-    private $naics;
+    protected $naics;
 
     /**
      * Products owned by the organization or person.
      *
      * @var Example\Thing\Intangible\StructuredValue\OwnershipInfo|Example\Thing\Product
      */
-    private $owns;
+    protected $owns;
 
     /**
      * A review of the item.
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $review;
+    protected $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $reviews;
+    protected $reviews;
 
     /**
      * A pointer to products or services sought by the organization or person (demand).
      *
      * @var Example\Thing\Intangible\Demand
      */
-    private $seeks;
+    protected $seeks;
 
     /**
      * A relationship between two organizations where the first includes the second, e.g., as a subsidiary. See also: the more specific 'department' property.
      *
      * @var Example\Thing\Organization
      */
-    private $subOrganization;
+    protected $subOrganization;
 
     /**
      * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.
      *
      * @var String
      */
-    private $taxID;
+    protected $taxID;
 
     /**
      * The telephone number.
      *
      * @var String
      */
-    private $telephone;
+    protected $telephone;
 
     /**
      * The Value-added Tax ID of the organisation or person.
      *
      * @var String
      */
-    private $vatID;
+    protected $vatID;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Organization";
+    protected $context = "http://schema.org/Organization";
 
     /**
      * @return Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress

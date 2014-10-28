@@ -17,8 +17,9 @@ class RecommendedDoseSchedule extends DoseSchedule
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/RecommendedDoseSchedule";
+    protected $context = "http://schema.org/RecommendedDoseSchedule";
 
 }

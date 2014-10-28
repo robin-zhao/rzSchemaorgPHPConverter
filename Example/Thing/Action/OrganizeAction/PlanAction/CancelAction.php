@@ -17,8 +17,9 @@ class CancelAction extends PlanAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CancelAction";
+    protected $context = "http://schema.org/CancelAction";
 
 }

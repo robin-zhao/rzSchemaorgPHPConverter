@@ -21,12 +21,13 @@ class UpdateAction extends Action
      *
      * @var Example\Thing
      */
-    private $collection;
+    protected $collection;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/UpdateAction";
+    protected $context = "http://schema.org/UpdateAction";
 
     /**
      * @return Example\Thing

@@ -21,12 +21,13 @@ class MedicalRiskScore extends MedicalRiskEstimator
      *
      * @var String
      */
-    private $algorithm;
+    protected $algorithm;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalRiskScore";
+    protected $context = "http://schema.org/MedicalRiskScore";
 
     /**
      * @return String

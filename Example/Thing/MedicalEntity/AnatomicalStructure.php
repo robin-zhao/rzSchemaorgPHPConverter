@@ -21,68 +21,69 @@ class AnatomicalStructure extends MedicalEntity
      *
      * @var String
      */
-    private $associatedPathophysiology;
+    protected $associatedPathophysiology;
 
     /**
      * Location in the body of the anatomical structure.
      *
      * @var String
      */
-    private $bodyLocation;
+    protected $bodyLocation;
 
     /**
      * Other anatomical structures to which this structure is connected.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $connectedTo;
+    protected $connectedTo;
 
     /**
      * An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.
      *
      * @var Example\Thing\CreativeWork\MediaObject\ImageObject
      */
-    private $diagram;
+    protected $diagram;
 
     /**
      * Function of the anatomical structure.
      *
      * @var String
      */
-    private $function;
+    protected $function;
 
     /**
      * The anatomical or organ system that this structure is part of.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalSystem
      */
-    private $partOfSystem;
+    protected $partOfSystem;
 
     /**
      * A medical condition associated with this anatomy.
      *
      * @var Example\Thing\MedicalEntity\MedicalCondition
      */
-    private $relatedCondition;
+    protected $relatedCondition;
 
     /**
      * A medical therapy related to this anatomy.
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy
      */
-    private $relatedTherapy;
+    protected $relatedTherapy;
 
     /**
      * Component (sub-)structure(s) that comprise this anatomical structure.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $subStructure;
+    protected $subStructure;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AnatomicalStructure";
+    protected $context = "http://schema.org/AnatomicalStructure";
 
     /**
      * @return String

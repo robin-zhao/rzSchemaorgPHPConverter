@@ -21,19 +21,20 @@ class PaymentChargeSpecification extends PriceSpecification
      *
      * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    private $appliesToDeliveryMethod;
+    protected $appliesToDeliveryMethod;
 
     /**
      * The payment method(s) to which the payment charge specification applies.
      *
      * @var Example\Thing\Intangible\Enumeration\PaymentMethod
      */
-    private $appliesToPaymentMethod;
+    protected $appliesToPaymentMethod;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PaymentChargeSpecification";
+    protected $context = "http://schema.org/PaymentChargeSpecification";
 
     /**
      * @return Example\Thing\Intangible\Enumeration\DeliveryMethod

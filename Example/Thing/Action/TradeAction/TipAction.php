@@ -21,12 +21,13 @@ class TipAction extends TradeAction
      *
      * @var Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
      */
-    private $recipient;
+    protected $recipient;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TipAction";
+    protected $context = "http://schema.org/TipAction";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person

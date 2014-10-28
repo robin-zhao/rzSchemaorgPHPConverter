@@ -17,8 +17,9 @@ class Courthouse extends GovernmentBuilding
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Courthouse";
+    protected $context = "http://schema.org/Courthouse";
 
 }

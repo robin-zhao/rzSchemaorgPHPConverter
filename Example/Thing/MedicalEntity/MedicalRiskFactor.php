@@ -21,12 +21,13 @@ class MedicalRiskFactor extends MedicalEntity
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $increasesRiskOf;
+    protected $increasesRiskOf;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalRiskFactor";
+    protected $context = "http://schema.org/MedicalRiskFactor";
 
     /**
      * @return Example\Thing\MedicalEntity

@@ -21,19 +21,20 @@ class ReplaceAction extends UpdateAction
      *
      * @var Example\Thing
      */
-    private $replacee;
+    protected $replacee;
 
     /**
      * A sub property of object. The object that replaces.
      *
      * @var Example\Thing
      */
-    private $replacer;
+    protected $replacer;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ReplaceAction";
+    protected $context = "http://schema.org/ReplaceAction";
 
     /**
      * @return Example\Thing

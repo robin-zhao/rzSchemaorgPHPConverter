@@ -17,8 +17,9 @@ class WarrantyScope extends Enumeration
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WarrantyScope";
+    protected $context = "http://schema.org/WarrantyScope";
 
 }

@@ -17,8 +17,9 @@ class ParcelService extends DeliveryMethod
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ParcelService";
+    protected $context = "http://schema.org/ParcelService";
 
 }

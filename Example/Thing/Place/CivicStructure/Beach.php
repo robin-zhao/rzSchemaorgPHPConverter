@@ -17,8 +17,9 @@ class Beach extends CivicStructure
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Beach";
+    protected $context = "http://schema.org/Beach";
 
 }

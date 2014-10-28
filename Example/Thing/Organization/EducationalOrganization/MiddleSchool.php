@@ -17,8 +17,9 @@ class MiddleSchool extends EducationalOrganization
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MiddleSchool";
+    protected $context = "http://schema.org/MiddleSchool";
 
 }

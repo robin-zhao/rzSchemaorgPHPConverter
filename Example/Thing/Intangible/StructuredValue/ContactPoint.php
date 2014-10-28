@@ -21,68 +21,69 @@ class ContactPoint extends StructuredValue
      *
      * @var Example\Thing\Place\AdministrativeArea
      */
-    private $areaServed;
+    protected $areaServed;
 
     /**
      * A language someone may use with the item.
      *
      * @var Example\Thing\Intangible\Language
      */
-    private $availableLanguage;
+    protected $availableLanguage;
 
     /**
      * An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers.)
      *
      * @var Example\Thing\Intangible\Enumeration\ContactPointOption
      */
-    private $contactOption;
+    protected $contactOption;
 
     /**
      * A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
      *
      * @var String
      */
-    private $contactType;
+    protected $contactType;
 
     /**
      * Email address.
      *
      * @var String
      */
-    private $email;
+    protected $email;
 
     /**
      * The fax number.
      *
      * @var String
      */
-    private $faxNumber;
+    protected $faxNumber;
 
     /**
      * The hours during which this contact point is available.
      *
      * @var Example\Thing\Intangible\StructuredValue\OpeningHoursSpecification
      */
-    private $hoursAvailable;
+    protected $hoursAvailable;
 
     /**
      * The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").
      *
      * @var Example\Thing\Product|String
      */
-    private $productSupported;
+    protected $productSupported;
 
     /**
      * The telephone number.
      *
      * @var String
      */
-    private $telephone;
+    protected $telephone;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ContactPoint";
+    protected $context = "http://schema.org/ContactPoint";
 
     /**
      * @return Example\Thing\Place\AdministrativeArea

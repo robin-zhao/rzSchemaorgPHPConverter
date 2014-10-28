@@ -21,12 +21,13 @@ class MedicalWebPage extends WebPage
      *
      * @var String
      */
-    private $aspect;
+    protected $aspect;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalWebPage";
+    protected $context = "http://schema.org/MedicalWebPage";
 
     /**
      * @return String

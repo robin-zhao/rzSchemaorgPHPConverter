@@ -17,8 +17,9 @@ class AcceptAction extends AllocateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AcceptAction";
+    protected $context = "http://schema.org/AcceptAction";
 
 }

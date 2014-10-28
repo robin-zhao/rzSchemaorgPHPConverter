@@ -21,40 +21,41 @@ class UserComments extends UserInteraction
      *
      * @var String
      */
-    private $commentText;
+    protected $commentText;
 
     /**
      * The time at which the UserComment was made.
      *
      * @var DateTime
      */
-    private $commentTime;
+    protected $commentTime;
 
     /**
      * The creator/author of this CreativeWork or UserComments. This is the same as the Author property for CreativeWork.
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $creator;
+    protected $creator;
 
     /**
      * Specifies the CreativeWork associated with the UserComment.
      *
      * @var Example\Thing\CreativeWork
      */
-    private $discusses;
+    protected $discusses;
 
     /**
      * The URL at which a reply may be posted to the specified UserComment.
      *
      * @var String
      */
-    private $replyToUrl;
+    protected $replyToUrl;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/UserComments";
+    protected $context = "http://schema.org/UserComments";
 
     /**
      * @return String

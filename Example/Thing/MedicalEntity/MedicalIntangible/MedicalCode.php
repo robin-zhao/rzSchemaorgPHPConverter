@@ -21,19 +21,20 @@ class MedicalCode extends MedicalIntangible
      *
      * @var String
      */
-    private $codeValue;
+    protected $codeValue;
 
     /**
      * The coding system, e.g. 'ICD-10'.
      *
      * @var String
      */
-    private $codingSystem;
+    protected $codingSystem;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalCode";
+    protected $context = "http://schema.org/MedicalCode";
 
     /**
      * @return String

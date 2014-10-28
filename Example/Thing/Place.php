@@ -21,138 +21,139 @@ class Place extends Thing
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    private $address;
+    protected $address;
 
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
      * @var Example\Thing\Intangible\Rating\AggregateRating
      */
-    private $aggregateRating;
+    protected $aggregateRating;
 
     /**
      * The basic containment relation between places.
      *
      * @var Example\Thing\Place
      */
-    private $containedIn;
+    protected $containedIn;
 
     /**
      * Upcoming or past event associated with this place or organization.
      *
      * @var Example\Thing\Event
      */
-    private $event;
+    protected $event;
 
     /**
      * Upcoming or past events associated with this place or organization (legacy spelling; see singular form, event).
      *
      * @var Example\Thing\Event
      */
-    private $events;
+    protected $events;
 
     /**
      * The fax number.
      *
      * @var String
      */
-    private $faxNumber;
+    protected $faxNumber;
 
     /**
      * The geo coordinates of the place.
      *
      * @var Example\Thing\Intangible\StructuredValue\GeoCoordinates|Example\Thing\Intangible\StructuredValue\GeoShape
      */
-    private $geo;
+    protected $geo;
 
     /**
      * The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.
      *
      * @var String
      */
-    private $globalLocationNumber;
+    protected $globalLocationNumber;
 
     /**
      * A count of a specific user interactions with this item—for example, 20 UserLikes, 5 UserComments, or 300 UserDownloads. The user interaction type should be one of the sub types of UserInteraction.
      *
      * @var String
      */
-    private $interactionCount;
+    protected $interactionCount;
 
     /**
      * The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.
      *
      * @var String
      */
-    private $isicV4;
+    protected $isicV4;
 
     /**
      * A logo associated with an organization.
      *
      * @var String|Example\Thing\CreativeWork\MediaObject\ImageObject
      */
-    private $logo;
+    protected $logo;
 
     /**
      * A URL to a map of the place.
      *
      * @var String
      */
-    private $map;
+    protected $map;
 
     /**
      * A URL to a map of the place (legacy spelling; see singular form, map).
      *
      * @var String
      */
-    private $maps;
+    protected $maps;
 
     /**
      * The opening hours of a certain place.
      *
      * @var Example\Thing\Intangible\StructuredValue\OpeningHoursSpecification
      */
-    private $openingHoursSpecification;
+    protected $openingHoursSpecification;
 
     /**
      * A photograph of this place.
      *
      * @var Example\Thing\CreativeWork\MediaObject\ImageObject|Example\Thing\CreativeWork\Photograph
      */
-    private $photo;
+    protected $photo;
 
     /**
      * Photographs of this place (legacy spelling; see singular form, photo).
      *
      * @var Example\Thing\CreativeWork\MediaObject\ImageObject|Example\Thing\CreativeWork\Photograph
      */
-    private $photos;
+    protected $photos;
 
     /**
      * A review of the item.
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $review;
+    protected $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $reviews;
+    protected $reviews;
 
     /**
      * The telephone number.
      *
      * @var String
      */
-    private $telephone;
+    protected $telephone;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Place";
+    protected $context = "http://schema.org/Place";
 
     /**
      * @return Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress

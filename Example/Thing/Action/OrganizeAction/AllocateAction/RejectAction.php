@@ -17,8 +17,9 @@ class RejectAction extends AllocateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/RejectAction";
+    protected $context = "http://schema.org/RejectAction";
 
 }

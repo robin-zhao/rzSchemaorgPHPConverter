@@ -21,47 +21,48 @@ class MedicalEntity extends Thing
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalCode
      */
-    private $code;
+    protected $code;
 
     /**
      * A medical guideline related to this entity.
      *
      * @var Example\Thing\MedicalEntity\MedicalGuideline
      */
-    private $guideline;
+    protected $guideline;
 
     /**
      * The system of medicine that includes this MedicalEntity, for example 'evidence-based', 'homeopathic', 'chiropractic', etc.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicineSystem
      */
-    private $medicineSystem;
+    protected $medicineSystem;
 
     /**
      * If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.
      *
      * @var Example\Thing\Organization
      */
-    private $recognizingAuthority;
+    protected $recognizingAuthority;
 
     /**
      * If applicable, a medical specialty in which this entity is relevant.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
-    private $relevantSpecialty;
+    protected $relevantSpecialty;
 
     /**
      * A medical study or trial related to this entity.
      *
      * @var Example\Thing\MedicalEntity\MedicalStudy
      */
-    private $study;
+    protected $study;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalEntity";
+    protected $context = "http://schema.org/MedicalEntity";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalCode

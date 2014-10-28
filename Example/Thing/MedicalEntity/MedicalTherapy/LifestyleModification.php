@@ -17,8 +17,9 @@ class LifestyleModification extends MedicalTherapy
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LifestyleModification";
+    protected $context = "http://schema.org/LifestyleModification";
 
 }

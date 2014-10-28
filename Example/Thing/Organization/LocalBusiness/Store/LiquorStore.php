@@ -17,8 +17,9 @@ class LiquorStore extends Store
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LiquorStore";
+    protected $context = "http://schema.org/LiquorStore";
 
 }

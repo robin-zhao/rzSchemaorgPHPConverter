@@ -17,8 +17,9 @@ class ReserveAction extends PlanAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ReserveAction";
+    protected $context = "http://schema.org/ReserveAction";
 
 }

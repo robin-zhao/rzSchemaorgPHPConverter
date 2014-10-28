@@ -17,8 +17,9 @@ class IceCreamShop extends FoodEstablishment
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/IceCreamShop";
+    protected $context = "http://schema.org/IceCreamShop";
 
 }

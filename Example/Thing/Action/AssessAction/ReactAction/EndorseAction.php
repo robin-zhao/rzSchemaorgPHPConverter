@@ -21,12 +21,13 @@ class EndorseAction extends ReactAction
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $endorsee;
+    protected $endorsee;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/EndorseAction";
+    protected $context = "http://schema.org/EndorseAction";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Person

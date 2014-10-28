@@ -17,8 +17,9 @@ class CommentAction extends CommunicateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CommentAction";
+    protected $context = "http://schema.org/CommentAction";
 
 }

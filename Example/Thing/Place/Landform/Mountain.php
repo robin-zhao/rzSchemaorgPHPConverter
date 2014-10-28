@@ -17,8 +17,9 @@ class Mountain extends Landform
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Mountain";
+    protected $context = "http://schema.org/Mountain";
 
 }

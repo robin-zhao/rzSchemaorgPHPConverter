@@ -17,8 +17,9 @@ class Energy extends Quantity
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Energy";
+    protected $context = "http://schema.org/Energy";
 
 }

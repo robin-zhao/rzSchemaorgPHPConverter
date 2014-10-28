@@ -17,8 +17,9 @@ class RVPark extends CivicStructure
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/RVPark";
+    protected $context = "http://schema.org/RVPark";
 
 }

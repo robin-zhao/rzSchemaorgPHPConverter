@@ -17,8 +17,9 @@ class Photograph extends CreativeWork
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Photograph";
+    protected $context = "http://schema.org/Photograph";
 
 }

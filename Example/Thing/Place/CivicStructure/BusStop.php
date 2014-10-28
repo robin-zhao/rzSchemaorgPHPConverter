@@ -17,8 +17,9 @@ class BusStop extends CivicStructure
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/BusStop";
+    protected $context = "http://schema.org/BusStop";
 
 }

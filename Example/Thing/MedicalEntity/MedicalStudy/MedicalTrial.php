@@ -21,19 +21,20 @@ class MedicalTrial extends MedicalStudy
      *
      * @var String
      */
-    private $phase;
+    protected $phase;
 
     /**
      * Specifics about the trial design (enumerated).
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalTrialDesign
      */
-    private $trialDesign;
+    protected $trialDesign;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalTrial";
+    protected $context = "http://schema.org/MedicalTrial";
 
     /**
      * @return String

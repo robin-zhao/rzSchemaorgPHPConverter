@@ -21,19 +21,20 @@ class ReceiveAction extends TransferAction
      *
      * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    private $deliveryMethod;
+    protected $deliveryMethod;
 
     /**
      * A sub property of participant. The participant who is at the sending end of the action.
      *
      * @var Example\Thing\Intangible\Audience|Example\Thing\Organization|Example\Thing\Person
      */
-    private $sender;
+    protected $sender;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ReceiveAction";
+    protected $context = "http://schema.org/ReceiveAction";
 
     /**
      * @return Example\Thing\Intangible\Enumeration\DeliveryMethod

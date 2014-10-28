@@ -21,12 +21,13 @@ class ChooseAction extends AssessAction
      *
      * @var String|Example\Thing
      */
-    private $option;
+    protected $option;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ChooseAction";
+    protected $context = "http://schema.org/ChooseAction";
 
     /**
      * @return String|Example\Thing

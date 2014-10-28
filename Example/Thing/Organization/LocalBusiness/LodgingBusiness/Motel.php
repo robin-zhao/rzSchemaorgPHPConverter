@@ -17,8 +17,9 @@ class Motel extends LodgingBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Motel";
+    protected $context = "http://schema.org/Motel";
 
 }

@@ -21,12 +21,13 @@ class WriteAction extends CreateAction
      *
      * @var Example\Thing\Intangible\Language
      */
-    private $language;
+    protected $language;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WriteAction";
+    protected $context = "http://schema.org/WriteAction";
 
     /**
      * @return Example\Thing\Intangible\Language

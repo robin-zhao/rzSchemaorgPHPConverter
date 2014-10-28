@@ -21,12 +21,13 @@ class ReviewAction extends AssessAction
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $resultReview;
+    protected $resultReview;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ReviewAction";
+    protected $context = "http://schema.org/ReviewAction";
 
     /**
      * @return Example\Thing\CreativeWork\Review

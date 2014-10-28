@@ -21,124 +21,125 @@ class MediaObject extends CreativeWork
      *
      * @var Example\Thing\CreativeWork\Article\NewsArticle
      */
-    private $associatedArticle;
+    protected $associatedArticle;
 
     /**
      * The bitrate of the media object.
      *
      * @var String
      */
-    private $bitrate;
+    protected $bitrate;
 
     /**
      * File size in (mega/kilo) bytes.
      *
      * @var String
      */
-    private $contentSize;
+    protected $contentSize;
 
     /**
      * Actual bytes of the media object, for example the image file or video file. (previous spelling: contentURL)
      *
      * @var String
      */
-    private $contentUrl;
+    protected $contentUrl;
 
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $duration;
+    protected $duration;
 
     /**
      * A URL pointing to a player for a specific video. In general, this is the information in the src element of an embed tag and should not be the same as the content of the loc tag. (previous spelling: embedURL)
      *
      * @var String
      */
-    private $embedUrl;
+    protected $embedUrl;
 
     /**
      * The creative work encoded by this media object
      *
      * @var Example\Thing\CreativeWork
      */
-    private $encodesCreativeWork;
+    protected $encodesCreativeWork;
 
     /**
      * mp3, mpeg4, etc.
      *
      * @var String
      */
-    private $encodingFormat;
+    protected $encodingFormat;
 
     /**
      * Date the content expires and is no longer useful or available. Useful for videos.
      *
      * @var DateTime
      */
-    private $expires;
+    protected $expires;
 
     /**
      * The height of the item.
      *
      * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $height;
+    protected $height;
 
     /**
      * Player type required—for example, Flash or Silverlight.
      *
      * @var String
      */
-    private $playerType;
+    protected $playerType;
 
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
      * @var Example\Thing\Organization
      */
-    private $productionCompany;
+    protected $productionCompany;
 
     /**
      * A publication event associated with the episode, clip or media object.
      *
      * @var Example\Thing\Event\PublicationEvent
      */
-    private $publication;
+    protected $publication;
 
     /**
      * The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in ISO 3166 format.
      *
      * @var Example\Thing\Place
      */
-    private $regionsAllowed;
+    protected $regionsAllowed;
 
     /**
      * Indicates if use of the media require a subscription  (either paid or free). Allowed values are true or false (note that an earlier version had 'yes', 'no').
      *
      * @var Boolean
      */
-    private $requiresSubscription;
+    protected $requiresSubscription;
 
     /**
      * Date when this media object was uploaded to this site.
      *
      * @var DateTime
      */
-    private $uploadDate;
+    protected $uploadDate;
 
     /**
      * The width of the item.
      *
      * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $width;
+    protected $width;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MediaObject";
+    protected $context = "http://schema.org/MediaObject";
 
     /**
      * @return Example\Thing\CreativeWork\Article\NewsArticle

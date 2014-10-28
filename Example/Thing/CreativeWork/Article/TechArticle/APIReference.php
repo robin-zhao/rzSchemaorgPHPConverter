@@ -21,33 +21,34 @@ class APIReference extends TechArticle
      *
      * @var String
      */
-    private $assembly;
+    protected $assembly;
 
     /**
      * Associated product/technology version. e.g., .NET Framework 4.5
      *
      * @var String
      */
-    private $assemblyVersion;
+    protected $assemblyVersion;
 
     /**
      * Indicates whether API is managed or unmanaged.
      *
      * @var String
      */
-    private $programmingModel;
+    protected $programmingModel;
 
     /**
      * Type of app development: phone, Metro style, desktop, XBox, etc.
      *
      * @var String
      */
-    private $targetPlatform;
+    protected $targetPlatform;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/APIReference";
+    protected $context = "http://schema.org/APIReference";
 
     /**
      * @return String

@@ -17,8 +17,9 @@ class OnSitePickup extends DeliveryMethod
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/OnSitePickup";
+    protected $context = "http://schema.org/OnSitePickup";
 
 }

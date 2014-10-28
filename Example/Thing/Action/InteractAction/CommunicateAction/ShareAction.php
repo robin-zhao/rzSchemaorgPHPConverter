@@ -17,8 +17,9 @@ class ShareAction extends CommunicateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ShareAction";
+    protected $context = "http://schema.org/ShareAction";
 
 }

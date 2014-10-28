@@ -21,19 +21,20 @@ class PublicationEvent extends Event
      *
      * @var Boolean
      */
-    private $free;
+    protected $free;
 
     /**
      * A broadcast service associated with the publication event
      *
      * @var Example\Thing\BroadcastService
      */
-    private $publishedOn;
+    protected $publishedOn;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PublicationEvent";
+    protected $context = "http://schema.org/PublicationEvent";
 
     /**
      * @return Boolean

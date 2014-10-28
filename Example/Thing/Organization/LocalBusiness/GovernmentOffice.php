@@ -17,8 +17,9 @@ class GovernmentOffice extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/GovernmentOffice";
+    protected $context = "http://schema.org/GovernmentOffice";
 
 }

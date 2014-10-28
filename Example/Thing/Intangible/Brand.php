@@ -21,12 +21,13 @@ class Brand extends Intangible
      *
      * @var String|Example\Thing\CreativeWork\MediaObject\ImageObject
      */
-    private $logo;
+    protected $logo;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Brand";
+    protected $context = "http://schema.org/Brand";
 
     /**
      * @return String|Example\Thing\CreativeWork\MediaObject\ImageObject

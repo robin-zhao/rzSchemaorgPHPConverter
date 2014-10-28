@@ -21,40 +21,41 @@ class Code extends CreativeWork
      *
      * @var String
      */
-    private $codeRepository;
+    protected $codeRepository;
 
     /**
      * The computer programming language.
      *
      * @var Example\Thing
      */
-    private $programmingLanguage;
+    protected $programmingLanguage;
 
     /**
      * Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0)
      *
      * @var String
      */
-    private $runtime;
+    protected $runtime;
 
     /**
      * Full (compile ready) solution, code snippet, inline code, scripts, template.
      *
      * @var String
      */
-    private $sampleType;
+    protected $sampleType;
 
     /**
      * Target Operating System / Product to which the code applies.  If applies to several versions, just the product name can be used.
      *
      * @var Example\Thing\CreativeWork\SoftwareApplication
      */
-    private $targetProduct;
+    protected $targetProduct;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Code";
+    protected $context = "http://schema.org/Code";
 
     /**
      * @return String

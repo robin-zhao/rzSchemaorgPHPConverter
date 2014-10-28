@@ -21,26 +21,27 @@ class Review extends CreativeWork
      *
      * @var Example\Thing
      */
-    private $itemReviewed;
+    protected $itemReviewed;
 
     /**
      * The actual body of the review
      *
      * @var String
      */
-    private $reviewBody;
+    protected $reviewBody;
 
     /**
      * The rating given in this review. Note that reviews can themselves be rated. The reviewRating applies to rating given by the review. The aggregateRating property applies to the review itself, as a creative work.
      *
      * @var Example\Thing\Intangible\Rating
      */
-    private $reviewRating;
+    protected $reviewRating;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Review";
+    protected $context = "http://schema.org/Review";
 
     /**
      * @return Example\Thing

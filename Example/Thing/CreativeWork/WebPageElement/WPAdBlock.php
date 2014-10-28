@@ -17,8 +17,9 @@ class WPAdBlock extends WebPageElement
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WPAdBlock";
+    protected $context = "http://schema.org/WPAdBlock";
 
 }

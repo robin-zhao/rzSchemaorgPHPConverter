@@ -17,8 +17,9 @@ class UserBlocks extends UserInteraction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/UserBlocks";
+    protected $context = "http://schema.org/UserBlocks";
 
 }

@@ -17,8 +17,9 @@ class ApplyAction extends OrganizeAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ApplyAction";
+    protected $context = "http://schema.org/ApplyAction";
 
 }

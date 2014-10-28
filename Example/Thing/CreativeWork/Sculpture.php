@@ -17,8 +17,9 @@ class Sculpture extends CreativeWork
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Sculpture";
+    protected $context = "http://schema.org/Sculpture";
 
 }

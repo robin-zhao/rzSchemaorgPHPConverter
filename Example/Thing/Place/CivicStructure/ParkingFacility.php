@@ -17,8 +17,9 @@ class ParkingFacility extends CivicStructure
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ParkingFacility";
+    protected $context = "http://schema.org/ParkingFacility";
 
 }

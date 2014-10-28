@@ -17,8 +17,9 @@ class LegislativeBuilding extends GovernmentBuilding
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LegislativeBuilding";
+    protected $context = "http://schema.org/LegislativeBuilding";
 
 }

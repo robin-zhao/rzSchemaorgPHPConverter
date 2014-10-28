@@ -17,8 +17,9 @@ class CheckOutAction extends CommunicateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CheckOutAction";
+    protected $context = "http://schema.org/CheckOutAction";
 
 }

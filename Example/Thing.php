@@ -19,54 +19,55 @@ class Thing
      *
      * @var String
      */
-    private $additionalType;
+    protected $additionalType;
 
     /**
      * An alias for the item.
      *
      * @var String
      */
-    private $alternateName;
+    protected $alternateName;
 
     /**
      * A short description of the item.
      *
      * @var String
      */
-    private $description;
+    protected $description;
 
     /**
      * URL of an image of the item.
      *
      * @var String
      */
-    private $image;
+    protected $image;
 
     /**
      * The name of the item.
      *
      * @var String
      */
-    private $name;
+    protected $name;
 
     /**
      * URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.
      *
      * @var String
      */
-    private $sameAs;
+    protected $sameAs;
 
     /**
      * URL of the item.
      *
      * @var String
      */
-    private $url;
+    protected $url;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Thing";
+    protected $context = "http://schema.org/Thing";
 
     /**
      * @return String
@@ -187,9 +188,12 @@ class Thing
         return $this;
     }
 
-    public function getUrl()
+    /**
+     * @return String
+     */
+    public function getContext()
     {
-        return $this->url;
+        return $this->context;
     }
 
 }

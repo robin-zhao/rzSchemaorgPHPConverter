@@ -17,8 +17,9 @@ class Aquarium extends CivicStructure
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Aquarium";
+    protected $context = "http://schema.org/Aquarium";
 
 }

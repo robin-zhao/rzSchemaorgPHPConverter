@@ -21,19 +21,20 @@ class Blog extends CreativeWork
      *
      * @var Example\Thing\CreativeWork\Article\BlogPosting
      */
-    private $blogPost;
+    protected $blogPost;
 
     /**
      * The postings that are part of this blog (legacy spelling; see singular form, blogPost).
      *
      * @var Example\Thing\CreativeWork\Article\BlogPosting
      */
-    private $blogPosts;
+    protected $blogPosts;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Blog";
+    protected $context = "http://schema.org/Blog";
 
     /**
      * @return Example\Thing\CreativeWork\Article\BlogPosting

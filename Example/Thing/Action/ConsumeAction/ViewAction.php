@@ -17,8 +17,9 @@ class ViewAction extends ConsumeAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ViewAction";
+    protected $context = "http://schema.org/ViewAction";
 
 }

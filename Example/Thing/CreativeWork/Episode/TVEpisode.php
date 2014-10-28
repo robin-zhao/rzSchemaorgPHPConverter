@@ -21,12 +21,13 @@ class TVEpisode extends Episode
      *
      * @var Example\Thing\CreativeWork\TVSeries
      */
-    private $partOfTVSeries;
+    protected $partOfTVSeries;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TVEpisode";
+    protected $context = "http://schema.org/TVEpisode";
 
     /**
      * @return Example\Thing\CreativeWork\TVSeries

@@ -21,12 +21,13 @@ class LoseAction extends AchieveAction
      *
      * @var Example\Thing\Person
      */
-    private $winner;
+    protected $winner;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LoseAction";
+    protected $context = "http://schema.org/LoseAction";
 
     /**
      * @return Example\Thing\Person

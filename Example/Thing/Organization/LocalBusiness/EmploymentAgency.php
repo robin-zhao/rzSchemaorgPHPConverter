@@ -17,8 +17,9 @@ class EmploymentAgency extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/EmploymentAgency";
+    protected $context = "http://schema.org/EmploymentAgency";
 
 }

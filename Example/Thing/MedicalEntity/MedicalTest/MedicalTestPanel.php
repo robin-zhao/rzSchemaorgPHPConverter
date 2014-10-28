@@ -21,12 +21,13 @@ class MedicalTestPanel extends MedicalTest
      *
      * @var Example\Thing\MedicalEntity\MedicalTest
      */
-    private $subTest;
+    protected $subTest;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalTestPanel";
+    protected $context = "http://schema.org/MedicalTestPanel";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalTest

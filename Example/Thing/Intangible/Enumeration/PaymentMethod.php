@@ -17,8 +17,9 @@ class PaymentMethod extends Enumeration
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PaymentMethod";
+    protected $context = "http://schema.org/PaymentMethod";
 
 }

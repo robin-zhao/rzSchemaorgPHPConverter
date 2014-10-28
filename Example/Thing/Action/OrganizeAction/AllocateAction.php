@@ -21,12 +21,13 @@ class AllocateAction extends OrganizeAction
      *
      * @var Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
      */
-    private $purpose;
+    protected $purpose;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AllocateAction";
+    protected $context = "http://schema.org/AllocateAction";
 
     /**
      * @return Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose

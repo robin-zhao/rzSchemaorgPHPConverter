@@ -17,8 +17,9 @@ class UserPageVisits extends UserInteraction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/UserPageVisits";
+    protected $context = "http://schema.org/UserPageVisits";
 
 }

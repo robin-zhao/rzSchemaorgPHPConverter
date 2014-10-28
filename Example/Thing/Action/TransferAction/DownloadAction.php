@@ -17,8 +17,9 @@ class DownloadAction extends TransferAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DownloadAction";
+    protected $context = "http://schema.org/DownloadAction";
 
 }

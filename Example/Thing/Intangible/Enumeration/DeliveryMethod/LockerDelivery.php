@@ -17,8 +17,9 @@ class LockerDelivery extends DeliveryMethod
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LockerDelivery";
+    protected $context = "http://schema.org/LockerDelivery";
 
 }

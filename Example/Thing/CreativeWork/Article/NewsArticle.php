@@ -21,40 +21,41 @@ class NewsArticle extends Article
      *
      * @var String
      */
-    private $dateline;
+    protected $dateline;
 
     /**
      * The number of the column in which the NewsArticle appears in the print edition.
      *
      * @var String
      */
-    private $printColumn;
+    protected $printColumn;
 
     /**
      * The edition of the print product in which the NewsArticle appears.
      *
      * @var String
      */
-    private $printEdition;
+    protected $printEdition;
 
     /**
      * If this NewsArticle appears in print, this field indicates the name of the page on which the article is found. Please note that this field is intended for the exact page name (e.g. A5, B18).
      *
      * @var String
      */
-    private $printPage;
+    protected $printPage;
 
     /**
      * If this NewsArticle appears in print, this field indicates the print section in which the article appeared.
      *
      * @var String
      */
-    private $printSection;
+    protected $printSection;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/NewsArticle";
+    protected $context = "http://schema.org/NewsArticle";
 
     /**
      * @return String

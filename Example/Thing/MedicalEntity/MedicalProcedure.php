@@ -21,33 +21,34 @@ class MedicalProcedure extends MedicalEntity
      *
      * @var String
      */
-    private $followup;
+    protected $followup;
 
     /**
      * How the procedure is performed.
      *
      * @var String
      */
-    private $howPerformed;
+    protected $howPerformed;
 
     /**
      * Typical preparation that a patient must undergo before having the procedure performed.
      *
      * @var String
      */
-    private $preparation;
+    protected $preparation;
 
     /**
      * The type of procedure, for example Surgical, Noninvasive, or Percutaneous.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalProcedureType
      */
-    private $procedureType;
+    protected $procedureType;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalProcedure";
+    protected $context = "http://schema.org/MedicalProcedure";
 
     /**
      * @return String

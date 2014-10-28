@@ -21,26 +21,27 @@ class LymphaticVessel extends Vessel
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    private $originatesFrom;
+    protected $originatesFrom;
 
     /**
      * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $regionDrained;
+    protected $regionDrained;
 
     /**
      * The vasculature the lymphatic structure runs, or efferents, to.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    private $runsTo;
+    protected $runsTo;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LymphaticVessel";
+    protected $context = "http://schema.org/LymphaticVessel";
 
     /**
      * @return Example\Thing\MedicalEntity\AnatomicalStructure\Vessel

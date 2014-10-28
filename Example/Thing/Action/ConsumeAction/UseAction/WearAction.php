@@ -17,8 +17,9 @@ class WearAction extends UseAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WearAction";
+    protected $context = "http://schema.org/WearAction";
 
 }

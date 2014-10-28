@@ -21,26 +21,27 @@ class Joint extends AnatomicalStructure
      *
      * @var String
      */
-    private $biomechnicalClass;
+    protected $biomechnicalClass;
 
     /**
      * The degree of mobility the joint allows.
      *
      * @var String
      */
-    private $functionalClass;
+    protected $functionalClass;
 
     /**
      * The name given to how bone physically connects to each other.
      *
      * @var String
      */
-    private $structuralClass;
+    protected $structuralClass;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Joint";
+    protected $context = "http://schema.org/Joint";
 
     /**
      * @return String

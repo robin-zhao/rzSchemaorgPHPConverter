@@ -17,8 +17,9 @@ class PostOffice extends GovernmentOffice
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PostOffice";
+    protected $context = "http://schema.org/PostOffice";
 
 }

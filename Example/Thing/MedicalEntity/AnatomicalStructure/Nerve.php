@@ -21,33 +21,34 @@ class Nerve extends AnatomicalStructure
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalStructure\Nerve
      */
-    private $branch;
+    protected $branch;
 
     /**
      * The neurological pathway extension that involves muscle control.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure\Muscle
      */
-    private $nerveMotor;
+    protected $nerveMotor;
 
     /**
      * The neurological pathway extension that inputs and sends information to the brain or spinal cord.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\SuperficialAnatomy
      */
-    private $sensoryUnit;
+    protected $sensoryUnit;
 
     /**
      * The neurological pathway that originates the neurons.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure\BrainStructure
      */
-    private $sourcedFrom;
+    protected $sourcedFrom;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Nerve";
+    protected $context = "http://schema.org/Nerve";
 
     /**
      * @return Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalStructure\Nerve

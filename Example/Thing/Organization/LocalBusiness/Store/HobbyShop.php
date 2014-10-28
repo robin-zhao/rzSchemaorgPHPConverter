@@ -17,8 +17,9 @@ class HobbyShop extends Store
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/HobbyShop";
+    protected $context = "http://schema.org/HobbyShop";
 
 }

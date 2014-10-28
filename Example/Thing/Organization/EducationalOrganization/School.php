@@ -17,8 +17,9 @@ class School extends EducationalOrganization
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/School";
+    protected $context = "http://schema.org/School";
 
 }

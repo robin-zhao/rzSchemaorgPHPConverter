@@ -21,19 +21,20 @@ class TransferAction extends Action
      *
      * @var Example\Thing\Place|Float
      */
-    private $fromLocation;
+    protected $fromLocation;
 
     /**
      * A sub property of location. The final location of the object or the agent after the action.
      *
      * @var Example\Thing\Place|Float
      */
-    private $toLocation;
+    protected $toLocation;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TransferAction";
+    protected $context = "http://schema.org/TransferAction";
 
     /**
      * @return Example\Thing\Place|Float

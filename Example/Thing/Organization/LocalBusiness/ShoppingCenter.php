@@ -17,8 +17,9 @@ class ShoppingCenter extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ShoppingCenter";
+    protected $context = "http://schema.org/ShoppingCenter";
 
 }

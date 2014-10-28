@@ -21,12 +21,13 @@ class TravelAction extends MoveAction
      *
      * @var Example\Thing\Intangible\Quantity\Distance
      */
-    private $distance;
+    protected $distance;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TravelAction";
+    protected $context = "http://schema.org/TravelAction";
 
     /**
      * @return Example\Thing\Intangible\Quantity\Distance

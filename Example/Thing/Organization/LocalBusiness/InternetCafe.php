@@ -17,8 +17,9 @@ class InternetCafe extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/InternetCafe";
+    protected $context = "http://schema.org/InternetCafe";
 
 }

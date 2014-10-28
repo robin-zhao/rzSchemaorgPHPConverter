@@ -21,26 +21,27 @@ class BusinessAudience extends Audience
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $numberofEmployees;
+    protected $numberofEmployees;
 
     /**
      * The size of the business in annual revenue.
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $yearlyRevenue;
+    protected $yearlyRevenue;
 
     /**
      * The age of the business.
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $yearsInOperation;
+    protected $yearsInOperation;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/BusinessAudience";
+    protected $context = "http://schema.org/BusinessAudience";
 
     /**
      * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue

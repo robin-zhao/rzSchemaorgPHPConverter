@@ -21,61 +21,62 @@ class MedicalDevice extends MedicalEntity
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $adverseOutcome;
+    protected $adverseOutcome;
 
     /**
      * A contraindication for this therapy.
      *
      * @var Example\Thing\MedicalEntity\MedicalContraindication
      */
-    private $contraindication;
+    protected $contraindication;
 
     /**
      * A factor that indicates use of this therapy for treatment and/or prevention of a condition, symptom, etc. For therapies such as drugs, indications can include both officially-approved indications as well as off-label uses. These can be distinguished by using the ApprovedIndication subtype of MedicalIndication.
      *
      * @var Example\Thing\MedicalEntity\MedicalIndication
      */
-    private $indication;
+    protected $indication;
 
     /**
      * A description of the postoperative procedures, care, and/or followups for this device.
      *
      * @var String
      */
-    private $postOp;
+    protected $postOp;
 
     /**
      * A description of the workup, testing, and other preparations required before implanting this device.
      *
      * @var String
      */
-    private $preOp;
+    protected $preOp;
 
     /**
      * A description of the procedure involved in setting up, using, and/or installing the device.
      *
      * @var String
      */
-    private $procedure;
+    protected $procedure;
 
     /**
      * A goal towards an action is taken. Can be concrete or abstract.
      *
      * @var Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
      */
-    private $purpose;
+    protected $purpose;
 
     /**
      * A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $seriousAdverseOutcome;
+    protected $seriousAdverseOutcome;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalDevice";
+    protected $context = "http://schema.org/MedicalDevice";
 
     /**
      * @return Example\Thing\MedicalEntity

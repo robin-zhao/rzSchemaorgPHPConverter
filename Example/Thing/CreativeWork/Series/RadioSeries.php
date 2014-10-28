@@ -17,8 +17,9 @@ class RadioSeries extends Series
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/RadioSeries";
+    protected $context = "http://schema.org/RadioSeries";
 
 }

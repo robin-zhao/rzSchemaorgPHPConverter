@@ -17,8 +17,9 @@ class LiteraryEvent extends Event
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LiteraryEvent";
+    protected $context = "http://schema.org/LiteraryEvent";
 
 }

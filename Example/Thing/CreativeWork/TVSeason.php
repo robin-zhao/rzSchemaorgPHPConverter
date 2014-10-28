@@ -21,12 +21,13 @@ class TVSeason extends CreativeWork
      *
      * @var Example\Thing\CreativeWork\TVSeries
      */
-    private $partOfTVSeries;
+    protected $partOfTVSeries;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TVSeason";
+    protected $context = "http://schema.org/TVSeason";
 
     /**
      * @return Example\Thing\CreativeWork\TVSeries

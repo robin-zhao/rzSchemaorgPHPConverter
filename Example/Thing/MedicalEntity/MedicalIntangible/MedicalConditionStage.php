@@ -21,19 +21,20 @@ class MedicalConditionStage extends MedicalIntangible
      *
      * @var Float
      */
-    private $stageAsNumber;
+    protected $stageAsNumber;
 
     /**
      * The substage, e.g. 'a' for Stage IIIa.
      *
      * @var String
      */
-    private $subStageSuffix;
+    protected $subStageSuffix;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalConditionStage";
+    protected $context = "http://schema.org/MedicalConditionStage";
 
     /**
      * @return Float

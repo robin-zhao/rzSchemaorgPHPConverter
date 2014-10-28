@@ -17,8 +17,9 @@ class MusicStore extends Store
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MusicStore";
+    protected $context = "http://schema.org/MusicStore";
 
 }

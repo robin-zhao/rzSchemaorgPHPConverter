@@ -21,40 +21,41 @@ class SuperficialAnatomy extends MedicalEntity
      *
      * @var String
      */
-    private $associatedPathophysiology;
+    protected $associatedPathophysiology;
 
     /**
      * Anatomical systems or structures that relate to the superficial anatomy.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalSystem
      */
-    private $relatedAnatomy;
+    protected $relatedAnatomy;
 
     /**
      * A medical condition associated with this anatomy.
      *
      * @var Example\Thing\MedicalEntity\MedicalCondition
      */
-    private $relatedCondition;
+    protected $relatedCondition;
 
     /**
      * A medical therapy related to this anatomy.
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy
      */
-    private $relatedTherapy;
+    protected $relatedTherapy;
 
     /**
      * The significance associated with the superficial anatomy; as an example, how characteristics of the superficial anatomy can suggest underlying medical conditions or courses of treatment.
      *
      * @var String
      */
-    private $significance;
+    protected $significance;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/SuperficialAnatomy";
+    protected $context = "http://schema.org/SuperficialAnatomy";
 
     /**
      * @return String

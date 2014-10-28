@@ -21,40 +21,41 @@ class Book extends CreativeWork
      *
      * @var String
      */
-    private $bookEdition;
+    protected $bookEdition;
 
     /**
      * The format of the book.
      *
      * @var Example\Thing\Intangible\Enumeration\BookFormatType
      */
-    private $bookFormat;
+    protected $bookFormat;
 
     /**
      * The illustrator of the book.
      *
      * @var Example\Thing\Person
      */
-    private $illustrator;
+    protected $illustrator;
 
     /**
      * The ISBN of the book.
      *
      * @var String
      */
-    private $isbn;
+    protected $isbn;
 
     /**
      * The number of pages in the book.
      *
      * @var Integer
      */
-    private $numberOfPages;
+    protected $numberOfPages;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Book";
+    protected $context = "http://schema.org/Book";
 
     /**
      * @return String

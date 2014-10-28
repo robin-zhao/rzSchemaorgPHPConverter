@@ -21,26 +21,27 @@ class Rating extends Intangible
      *
      * @var Float|String
      */
-    private $bestRating;
+    protected $bestRating;
 
     /**
      * The rating for the content.
      *
      * @var String
      */
-    private $ratingValue;
+    protected $ratingValue;
 
     /**
      * The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
      *
      * @var Float|String
      */
-    private $worstRating;
+    protected $worstRating;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Rating";
+    protected $context = "http://schema.org/Rating";
 
     /**
      * @return Float|String

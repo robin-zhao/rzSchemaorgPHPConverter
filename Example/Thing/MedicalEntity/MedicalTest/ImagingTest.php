@@ -21,12 +21,13 @@ class ImagingTest extends MedicalTest
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalImagingTechnique
      */
-    private $imagingTechnique;
+    protected $imagingTechnique;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ImagingTest";
+    protected $context = "http://schema.org/ImagingTest";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalImagingTechnique

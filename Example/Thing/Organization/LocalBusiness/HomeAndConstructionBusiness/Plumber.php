@@ -17,8 +17,9 @@ class Plumber extends HomeAndConstructionBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Plumber";
+    protected $context = "http://schema.org/Plumber";
 
 }

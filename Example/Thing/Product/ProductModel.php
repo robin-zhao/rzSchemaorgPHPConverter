@@ -21,26 +21,27 @@ class ProductModel extends Product
      *
      * @var Example\Thing\Product\ProductModel
      */
-    private $isVariantOf;
+    protected $isVariantOf;
 
     /**
      * A pointer from a previous, often discontinued variant of the product to its newer variant.
      *
      * @var Example\Thing\Product\ProductModel
      */
-    private $predecessorOf;
+    protected $predecessorOf;
 
     /**
      * A pointer from a newer variant of a product  to its previous, often discontinued predecessor.
      *
      * @var Example\Thing\Product\ProductModel
      */
-    private $successorOf;
+    protected $successorOf;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ProductModel";
+    protected $context = "http://schema.org/ProductModel";
 
     /**
      * @return Example\Thing\Product\ProductModel

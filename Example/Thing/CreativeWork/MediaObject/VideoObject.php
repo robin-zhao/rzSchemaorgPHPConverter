@@ -21,40 +21,41 @@ class VideoObject extends MediaObject
      *
      * @var String
      */
-    private $caption;
+    protected $caption;
 
     /**
      * Thumbnail image for an image or video.
      *
      * @var Example\Thing\CreativeWork\MediaObject\ImageObject
      */
-    private $thumbnail;
+    protected $thumbnail;
 
     /**
      * If this MediaObject is an AudioObject or VideoObject, the transcript of that object.
      *
      * @var String
      */
-    private $transcript;
+    protected $transcript;
 
     /**
      * The frame size of the video.
      *
      * @var String
      */
-    private $videoFrameSize;
+    protected $videoFrameSize;
 
     /**
      * The quality of the video.
      *
      * @var String
      */
-    private $videoQuality;
+    protected $videoQuality;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/VideoObject";
+    protected $context = "http://schema.org/VideoObject";
 
     /**
      * @return String

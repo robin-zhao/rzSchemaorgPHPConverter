@@ -21,19 +21,20 @@ class PlayAction extends Action
      *
      * @var Example\Thing\Intangible\Audience
      */
-    private $audience;
+    protected $audience;
 
     /**
      * Upcoming or past event associated with this place or organization.
      *
      * @var Example\Thing\Event
      */
-    private $event;
+    protected $event;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PlayAction";
+    protected $context = "http://schema.org/PlayAction";
 
     /**
      * @return Example\Thing\Intangible\Audience

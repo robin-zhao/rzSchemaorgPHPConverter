@@ -79,7 +79,7 @@ class ClassBuilder
         $this->ancestors = $object->ancestors;
         $this->specificProperties = $object->specific_properties;
         $this->label = $object->label;
-        $this->url = $object->url;
+        $this->context = $object->url;
         
     }
 
@@ -134,13 +134,16 @@ class ClassBuilder
             $this->buildGetterSetter($property, $getterSetter);
         }
 
-        $this->buildUrl($string);
+        $this->buildContext($string);
 
         // Generate getUrl for Thing.
         if ($this->className == 'Thing') {
-            $getterSetter [] = '    public function getUrl()';
+            $getterSetter [] = '    /**';
+            $getterSetter [] = '     * @return String';
+            $getterSetter [] = '     */';
+            $getterSetter [] = '    public function getContext()';
             $getterSetter [] = '    {';
-            $getterSetter [] = '        return $this->url;';
+            $getterSetter [] = '        return $this->context;';
             $getterSetter [] = '    }' . "\n";
         }
 
@@ -156,16 +159,18 @@ class ClassBuilder
     {
         $string [] = '/**';
         $string [] = ' * ' . $this->label;
-        $string [] = ' * ' . $this->url;
+        $string [] = ' * ' . $this->context;
         $string [] = ' */';
     }
 
-    private function buildUrl(&$string)
+    private function buildContext(&$string)
     {
         $string [] = '    /**';
-        $string [] = '     * schema.org url';
+        $string [] = '     * schema.org context url';
+        $string [] = '     * @var String';
         $string [] = '     */';
-        $string [] = '    private $url = "' . $this->url . '";' . "\n";
+        $string [] = '    protected $context = "' . $this->context . '";' . "\n";
+
     }
 
     private function buildProperty($property, &$string)
@@ -177,7 +182,7 @@ class ClassBuilder
         $type = $this->calculateType($property);
         $string [] = '     * @var ' . $type;
         $string [] = '     */';
-        $string [] = '    private $' . $property . ';' . "\n";
+        $string [] = '    protected $' . $property . ';' . "\n";
     }
 
     private function calculateType($property)

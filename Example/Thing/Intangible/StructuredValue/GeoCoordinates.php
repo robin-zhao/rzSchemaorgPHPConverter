@@ -21,26 +21,27 @@ class GeoCoordinates extends StructuredValue
      *
      * @var String|Float
      */
-    private $elevation;
+    protected $elevation;
 
     /**
      * The latitude of a location. For example 37.42242.
      *
      * @var Float|String
      */
-    private $latitude;
+    protected $latitude;
 
     /**
      * The longitude of a location. For example -122.08585.
      *
      * @var Float|String
      */
-    private $longitude;
+    protected $longitude;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/GeoCoordinates";
+    protected $context = "http://schema.org/GeoCoordinates";
 
     /**
      * @return String|Float

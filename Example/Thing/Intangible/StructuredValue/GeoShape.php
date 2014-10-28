@@ -21,40 +21,41 @@ class GeoShape extends StructuredValue
      *
      * @var String
      */
-    private $box;
+    protected $box;
 
     /**
      * A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.
      *
      * @var String
      */
-    private $circle;
+    protected $circle;
 
     /**
      * The elevation of a location.
      *
      * @var String|Float
      */
-    private $elevation;
+    protected $elevation;
 
     /**
      * A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.
      *
      * @var String
      */
-    private $line;
+    protected $line;
 
     /**
      * A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more spacedelimited points where the first and final points are identical.
      *
      * @var String
      */
-    private $polygon;
+    protected $polygon;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/GeoShape";
+    protected $context = "http://schema.org/GeoShape";
 
     /**
      * @return String

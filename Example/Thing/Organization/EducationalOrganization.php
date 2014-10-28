@@ -21,12 +21,13 @@ class EducationalOrganization extends Organization
      *
      * @var Example\Thing\Person
      */
-    private $alumni;
+    protected $alumni;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/EducationalOrganization";
+    protected $context = "http://schema.org/EducationalOrganization";
 
     /**
      * @return Example\Thing\Person

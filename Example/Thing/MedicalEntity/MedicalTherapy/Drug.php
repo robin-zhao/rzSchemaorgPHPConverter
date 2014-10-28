@@ -21,187 +21,188 @@ class Drug extends MedicalTherapy
      *
      * @var String
      */
-    private $activeIngredient;
+    protected $activeIngredient;
 
     /**
      * A route by which this drug may be administered, e.g. 'oral'.
      *
      * @var String
      */
-    private $administrationRoute;
+    protected $administrationRoute;
 
     /**
      * Any precaution, guidance, contraindication, etc. related to consumption of alcohol while taking this drug.
      *
      * @var String
      */
-    private $alcoholWarning;
+    protected $alcoholWarning;
 
     /**
      * An available dosage strength for the drug.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\DrugStrength
      */
-    private $availableStrength;
+    protected $availableStrength;
 
     /**
      * Any precaution, guidance, contraindication, etc. related to this drug's use by breastfeeding mothers.
      *
      * @var String
      */
-    private $breastfeedingWarning;
+    protected $breastfeedingWarning;
 
     /**
      * Description of the absorption and elimination of drugs, including their concentration (pharmacokinetics, pK) and biological effects (pharmacodynamics, pD).
      *
      * @var String
      */
-    private $clincalPharmacology;
+    protected $clincalPharmacology;
 
     /**
      * Cost per unit of the drug, as reported by the source being tagged.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\DrugCost
      */
-    private $cost;
+    protected $cost;
 
     /**
      * A dosage form in which this drug/supplement is available, e.g. 'tablet', 'suspension', 'injection'.
      *
      * @var String
      */
-    private $dosageForm;
+    protected $dosageForm;
 
     /**
      * A dosing schedule for the drug for a given population, either observed, recommended, or maximum dose based on the type used.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule
      */
-    private $doseSchedule;
+    protected $doseSchedule;
 
     /**
      * The class of drug this belongs to (e.g., statins).
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy\DrugClass
      */
-    private $drugClass;
+    protected $drugClass;
 
     /**
      * Any precaution, guidance, contraindication, etc. related to consumption of specific foods while taking this drug.
      *
      * @var String
      */
-    private $foodWarning;
+    protected $foodWarning;
 
     /**
      * Another drug that is known to interact with this drug in a way that impacts the effect of this drug or causes a risk to the patient. Note: disease interactions are typically captured as contraindications.
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    private $interactingDrug;
+    protected $interactingDrug;
 
     /**
      * True if the drug is available in a generic form (regardless of name).
      *
      * @var Boolean
      */
-    private $isAvailableGenerically;
+    protected $isAvailableGenerically;
 
     /**
      * True if this item's name is a proprietary/brand name (vs. generic name).
      *
      * @var Boolean
      */
-    private $isProprietary;
+    protected $isProprietary;
 
     /**
      * Link to the drug's label details.
      *
      * @var String
      */
-    private $labelDetails;
+    protected $labelDetails;
 
     /**
      * The drug or supplement's legal status, including any controlled substance schedules that apply.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
      */
-    private $legalStatus;
+    protected $legalStatus;
 
     /**
      * The manufacturer of the product.
      *
      * @var Example\Thing\Organization
      */
-    private $manufacturer;
+    protected $manufacturer;
 
     /**
      * The specific biochemical interaction through which this drug or supplement produces its pharmacological effect.
      *
      * @var String
      */
-    private $mechanismOfAction;
+    protected $mechanismOfAction;
 
     /**
      * The generic name of this drug or supplement.
      *
      * @var String
      */
-    private $nonProprietaryName;
+    protected $nonProprietaryName;
 
     /**
      * Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.
      *
      * @var String
      */
-    private $overdosage;
+    protected $overdosage;
 
     /**
      * Pregnancy category of this drug.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPregnancyCategory
      */
-    private $pregnancyCategory;
+    protected $pregnancyCategory;
 
     /**
      * Any precaution, guidance, contraindication, etc. related to this drug's use during pregnancy.
      *
      * @var String
      */
-    private $pregnancyWarning;
+    protected $pregnancyWarning;
 
     /**
      * Link to prescribing information for the drug.
      *
      * @var String
      */
-    private $prescribingInfo;
+    protected $prescribingInfo;
 
     /**
      * Indicates whether this drug is available by prescription or over-the-counter.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPrescriptionStatus
      */
-    private $prescriptionStatus;
+    protected $prescriptionStatus;
 
     /**
      * Any other drug related to this one, for example commonly-prescribed alternatives.
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    private $relatedDrug;
+    protected $relatedDrug;
 
     /**
      * Any FDA or other warnings about the drug (text or URL).
      *
      * @var String
      */
-    private $warning;
+    protected $warning;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Drug";
+    protected $context = "http://schema.org/Drug";
 
     /**
      * @return String

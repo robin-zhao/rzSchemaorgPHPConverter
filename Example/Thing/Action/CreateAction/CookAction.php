@@ -21,26 +21,27 @@ class CookAction extends CreateAction
      *
      * @var Example\Thing\Organization\LocalBusiness\FoodEstablishment|Example\Thing\Place
      */
-    private $foodEstablishment;
+    protected $foodEstablishment;
 
     /**
      * A sub property of location. The specific food event where the action occurred.
      *
      * @var Example\Thing\Event\FoodEvent
      */
-    private $foodEvent;
+    protected $foodEvent;
 
     /**
      * A sub property of instrument. The recipe/instructions used to perform the action.
      *
      * @var Example\Thing\CreativeWork\Recipe
      */
-    private $recipe;
+    protected $recipe;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CookAction";
+    protected $context = "http://schema.org/CookAction";
 
     /**
      * @return Example\Thing\Organization\LocalBusiness\FoodEstablishment|Example\Thing\Place

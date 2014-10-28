@@ -17,8 +17,9 @@ class Enumeration extends Intangible
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Enumeration";
+    protected $context = "http://schema.org/Enumeration";
 
 }

@@ -17,8 +17,9 @@ class TherapeuticProcedure extends MedicalProcedure
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TherapeuticProcedure";
+    protected $context = "http://schema.org/TherapeuticProcedure";
 
 }

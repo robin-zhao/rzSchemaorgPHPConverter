@@ -21,54 +21,55 @@ class PeopleAudience extends Audience
      *
      * @var Example\Thing\MedicalEntity\MedicalCondition
      */
-    private $healthCondition;
+    protected $healthCondition;
 
     /**
      * Audiences defined by a person's gender.
      *
      * @var String
      */
-    private $requiredGender;
+    protected $requiredGender;
 
     /**
      * Audiences defined by a person's maximum age.
      *
      * @var Integer
      */
-    private $requiredMaxAge;
+    protected $requiredMaxAge;
 
     /**
      * Audiences defined by a person's minimum age.
      *
      * @var Integer
      */
-    private $requiredMinAge;
+    protected $requiredMinAge;
 
     /**
      * The gender of the person or audience.
      *
      * @var String
      */
-    private $suggestedGender;
+    protected $suggestedGender;
 
     /**
      * Maximal age recommended for viewing content
      *
      * @var Float
      */
-    private $suggestedMaxAge;
+    protected $suggestedMaxAge;
 
     /**
      * Minimal age recommended for viewing content
      *
      * @var Float
      */
-    private $suggestedMinAge;
+    protected $suggestedMinAge;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PeopleAudience";
+    protected $context = "http://schema.org/PeopleAudience";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalCondition

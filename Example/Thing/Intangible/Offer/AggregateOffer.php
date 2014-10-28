@@ -21,26 +21,27 @@ class AggregateOffer extends Offer
      *
      * @var Float|String
      */
-    private $highPrice;
+    protected $highPrice;
 
     /**
      * The lowest price of all offers available.
      *
      * @var Float|String
      */
-    private $lowPrice;
+    protected $lowPrice;
 
     /**
      * The number of offers for the product.
      *
      * @var Integer
      */
-    private $offerCount;
+    protected $offerCount;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AggregateOffer";
+    protected $context = "http://schema.org/AggregateOffer";
 
     /**
      * @return Float|String

@@ -21,12 +21,13 @@ class CivicStructure extends Place
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $openingHours;
+    protected $openingHours;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CivicStructure";
+    protected $context = "http://schema.org/CivicStructure";
 
     /**
      * @return Example\Thing\Intangible\Quantity\Duration

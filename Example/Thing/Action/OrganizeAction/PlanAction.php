@@ -21,12 +21,13 @@ class PlanAction extends OrganizeAction
      *
      * @var DateTime
      */
-    private $scheduledTime;
+    protected $scheduledTime;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PlanAction";
+    protected $context = "http://schema.org/PlanAction";
 
     /**
      * @return DateTime

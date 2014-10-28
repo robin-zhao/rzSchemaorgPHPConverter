@@ -17,8 +17,9 @@ class Store extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Store";
+    protected $context = "http://schema.org/Store";
 
 }

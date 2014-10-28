@@ -21,40 +21,41 @@ class AlignmentObject extends Intangible
      *
      * @var String
      */
-    private $alignmentType;
+    protected $alignmentType;
 
     /**
      * The framework to which the resource being described is aligned.
      *
      * @var String
      */
-    private $educationalFramework;
+    protected $educationalFramework;
 
     /**
      * The description of a node in an established educational framework.
      *
      * @var String
      */
-    private $targetDescription;
+    protected $targetDescription;
 
     /**
      * The name of a node in an established educational framework.
      *
      * @var String
      */
-    private $targetName;
+    protected $targetName;
 
     /**
      * The URL of a node in an established educational framework.
      *
      * @var String
      */
-    private $targetUrl;
+    protected $targetUrl;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AlignmentObject";
+    protected $context = "http://schema.org/AlignmentObject";
 
     /**
      * @return String

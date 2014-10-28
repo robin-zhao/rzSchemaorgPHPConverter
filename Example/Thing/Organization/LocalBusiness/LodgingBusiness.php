@@ -17,8 +17,9 @@ class LodgingBusiness extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LodgingBusiness";
+    protected $context = "http://schema.org/LodgingBusiness";
 
 }

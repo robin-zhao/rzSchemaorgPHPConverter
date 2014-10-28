@@ -17,8 +17,9 @@ class GatedResidenceCommunity extends Residence
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/GatedResidenceCommunity";
+    protected $context = "http://schema.org/GatedResidenceCommunity";
 
 }

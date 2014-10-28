@@ -21,54 +21,55 @@ class QualitativeValue extends Enumeration
      *
      * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
-    private $equal;
+    protected $equal;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is greater than the object.
      *
      * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
-    private $greater;
+    protected $greater;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.
      *
      * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
-    private $greaterOrEqual;
+    protected $greaterOrEqual;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is lesser than the object.
      *
      * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
-    private $lesser;
+    protected $lesser;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.
      *
      * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
-    private $lesserOrEqual;
+    protected $lesserOrEqual;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is not equal to the object.
      *
      * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
-    private $nonEqual;
+    protected $nonEqual;
 
     /**
      * A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.
      *
      * @var Example\Thing\Intangible\Enumeration|Example\Thing\Intangible\StructuredValue
      */
-    private $valueReference;
+    protected $valueReference;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/QualitativeValue";
+    protected $context = "http://schema.org/QualitativeValue";
 
     /**
      * @return Example\Thing\Intangible\Enumeration\QualitativeValue

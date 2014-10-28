@@ -21,19 +21,20 @@ class RentAction extends TradeAction
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $landlord;
+    protected $landlord;
 
     /**
      * A sub property of participant. The real estate agent involved in the action.
      *
      * @var Example\Thing\Organization\LocalBusiness\RealEstateAgent
      */
-    private $realEstateAgent;
+    protected $realEstateAgent;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/RentAction";
+    protected $context = "http://schema.org/RentAction";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Person

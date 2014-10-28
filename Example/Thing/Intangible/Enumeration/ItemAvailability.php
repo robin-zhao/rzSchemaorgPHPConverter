@@ -17,8 +17,9 @@ class ItemAvailability extends Enumeration
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ItemAvailability";
+    protected $context = "http://schema.org/ItemAvailability";
 
 }

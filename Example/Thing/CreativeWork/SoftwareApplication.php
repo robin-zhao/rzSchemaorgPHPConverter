@@ -21,145 +21,146 @@ class SoftwareApplication extends CreativeWork
      *
      * @var String
      */
-    private $applicationCategory;
+    protected $applicationCategory;
 
     /**
      * Subcategory of the application, e.g. "Arcade Game".
      *
      * @var String
      */
-    private $applicationSubCategory;
+    protected $applicationSubCategory;
 
     /**
      * The name of the application suite to which the application belongs (e.g. Excel belongs to Office)
      *
      * @var String
      */
-    private $applicationSuite;
+    protected $applicationSuite;
 
     /**
      * Countries for which the application is not supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
      *
      * @var String
      */
-    private $countriesNotSupported;
+    protected $countriesNotSupported;
 
     /**
      * Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
      *
      * @var String
      */
-    private $countriesSupported;
+    protected $countriesSupported;
 
     /**
      * Device required to run the application. Used in cases where a specific make/model is required to run the application.
      *
      * @var String
      */
-    private $device;
+    protected $device;
 
     /**
      * If the file can be downloaded, URL to download the binary.
      *
      * @var String
      */
-    private $downloadUrl;
+    protected $downloadUrl;
 
     /**
      * Features or modules provided by this application (and possibly required by other applications).
      *
      * @var String
      */
-    private $featureList;
+    protected $featureList;
 
     /**
      * MIME format of the binary (e.g. application/zip).
      *
      * @var String
      */
-    private $fileFormat;
+    protected $fileFormat;
 
     /**
      * Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.
      *
      * @var Integer
      */
-    private $fileSize;
+    protected $fileSize;
 
     /**
      * URL at which the app may be installed, if different from the URL of the item.
      *
      * @var String
      */
-    private $installUrl;
+    protected $installUrl;
 
     /**
      * Minimum memory requirements.
      *
      * @var String
      */
-    private $memoryRequirements;
+    protected $memoryRequirements;
 
     /**
      * Operating systems supported (Windows 7, OSX 10.6, Android 1.6).
      *
      * @var String
      */
-    private $operatingSystem;
+    protected $operatingSystem;
 
     /**
      * Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).
      *
      * @var String
      */
-    private $permissions;
+    protected $permissions;
 
     /**
      * Processor architecture required to run the application (e.g. IA64).
      *
      * @var String
      */
-    private $processorRequirements;
+    protected $processorRequirements;
 
     /**
      * Description of what changed in this version.
      *
      * @var String
      */
-    private $releaseNotes;
+    protected $releaseNotes;
 
     /**
      * Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).
      *
      * @var String
      */
-    private $requirements;
+    protected $requirements;
 
     /**
      * A link to a screenshot image of the app.
      *
      * @var Example\Thing\CreativeWork\MediaObject\ImageObject|String
      */
-    private $screenshot;
+    protected $screenshot;
 
     /**
      * Version of the software instance.
      *
      * @var String
      */
-    private $softwareVersion;
+    protected $softwareVersion;
 
     /**
      * Storage requirements (free space required).
      *
      * @var String
      */
-    private $storageRequirements;
+    protected $storageRequirements;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/SoftwareApplication";
+    protected $context = "http://schema.org/SoftwareApplication";
 
     /**
      * @return String

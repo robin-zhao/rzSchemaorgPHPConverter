@@ -21,12 +21,13 @@ class IndividualProduct extends Product
      *
      * @var String
      */
-    private $serialNumber;
+    protected $serialNumber;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/IndividualProduct";
+    protected $context = "http://schema.org/IndividualProduct";
 
     /**
      * @return String

@@ -17,8 +17,9 @@ class DrawAction extends CreateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DrawAction";
+    protected $context = "http://schema.org/DrawAction";
 
 }

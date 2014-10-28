@@ -17,8 +17,9 @@ class LandmarksOrHistoricalBuildings extends Place
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/LandmarksOrHistoricalBuildings";
+    protected $context = "http://schema.org/LandmarksOrHistoricalBuildings";
 
 }

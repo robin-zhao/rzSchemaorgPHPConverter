@@ -21,12 +21,13 @@ class MusicAlbum extends MusicPlaylist
      *
      * @var Example\Thing\Organization\PerformingGroup\MusicGroup
      */
-    private $byArtist;
+    protected $byArtist;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MusicAlbum";
+    protected $context = "http://schema.org/MusicAlbum";
 
     /**
      * @return Example\Thing\Organization\PerformingGroup\MusicGroup

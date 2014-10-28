@@ -21,33 +21,34 @@ class MedicalGuideline extends MedicalEntity
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalEvidenceLevel
      */
-    private $evidenceLevel;
+    protected $evidenceLevel;
 
     /**
      * Source of the data used to formulate the guidance, e.g. RCT, consensus opinion, etc.
      *
      * @var String
      */
-    private $evidenceOrigin;
+    protected $evidenceOrigin;
 
     /**
      * Date on which this guideline's recommendation was made.
      *
      * @var DateTime
      */
-    private $guidelineDate;
+    protected $guidelineDate;
 
     /**
      * The medical conditions, treatments, etc. that are the subject of the guideline.
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $guidelineSubject;
+    protected $guidelineSubject;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalGuideline";
+    protected $context = "http://schema.org/MedicalGuideline";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalEvidenceLevel

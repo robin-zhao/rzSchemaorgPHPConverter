@@ -21,33 +21,34 @@ class MusicRecording extends CreativeWork
      *
      * @var Example\Thing\Organization\PerformingGroup\MusicGroup
      */
-    private $byArtist;
+    protected $byArtist;
 
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $duration;
+    protected $duration;
 
     /**
      * The album to which this recording belongs.
      *
      * @var Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
      */
-    private $inAlbum;
+    protected $inAlbum;
 
     /**
      * The playlist to which this recording belongs.
      *
      * @var Example\Thing\CreativeWork\MusicPlaylist
      */
-    private $inPlaylist;
+    protected $inPlaylist;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MusicRecording";
+    protected $context = "http://schema.org/MusicRecording";
 
     /**
      * @return Example\Thing\Organization\PerformingGroup\MusicGroup

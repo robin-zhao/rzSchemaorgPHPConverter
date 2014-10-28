@@ -21,26 +21,27 @@ class UnitPriceSpecification extends PriceSpecification
      *
      * @var Float
      */
-    private $billingIncrement;
+    protected $billingIncrement;
 
     /**
      * A short text or acronym indicating multiple price specifications for the same offer, e.g. SRP for the suggested retail price or INVOICE for the invoice price, mostly used in the car industry.
      *
      * @var String
      */
-    private $priceType;
+    protected $priceType;
 
     /**
      * The unit of measurement given using the UN/CEFACT Common Code (3 characters).
      *
      * @var String
      */
-    private $unitCode;
+    protected $unitCode;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/UnitPriceSpecification";
+    protected $context = "http://schema.org/UnitPriceSpecification";
 
     /**
      * @return Float

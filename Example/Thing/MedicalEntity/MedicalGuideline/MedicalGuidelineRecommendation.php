@@ -21,12 +21,13 @@ class MedicalGuidelineRecommendation extends MedicalGuideline
      *
      * @var String
      */
-    private $recommendationStrength;
+    protected $recommendationStrength;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalGuidelineRecommendation";
+    protected $context = "http://schema.org/MedicalGuidelineRecommendation";
 
     /**
      * @return String

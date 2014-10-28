@@ -17,8 +17,9 @@ class PalliativeProcedure extends MedicalProcedure
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PalliativeProcedure";
+    protected $context = "http://schema.org/PalliativeProcedure";
 
 }

@@ -21,12 +21,13 @@ class FollowAction extends InteractAction
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $followee;
+    protected $followee;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/FollowAction";
+    protected $context = "http://schema.org/FollowAction";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Person

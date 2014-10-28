@@ -21,33 +21,34 @@ class TypeAndQuantityNode extends StructuredValue
      *
      * @var Float
      */
-    private $amountOfThisGood;
+    protected $amountOfThisGood;
 
     /**
      * The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.
      *
      * @var Example\Thing\Intangible\Enumeration\BusinessFunction
      */
-    private $businessFunction;
+    protected $businessFunction;
 
     /**
      * The product that this structured value is referring to.
      *
      * @var Example\Thing\Product
      */
-    private $typeOfGood;
+    protected $typeOfGood;
 
     /**
      * The unit of measurement given using the UN/CEFACT Common Code (3 characters).
      *
      * @var String
      */
-    private $unitCode;
+    protected $unitCode;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TypeAndQuantityNode";
+    protected $context = "http://schema.org/TypeAndQuantityNode";
 
     /**
      * @return Float

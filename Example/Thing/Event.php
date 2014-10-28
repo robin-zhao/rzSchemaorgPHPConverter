@@ -21,117 +21,118 @@ class Event extends Thing
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $attendee;
+    protected $attendee;
 
     /**
      * A person attending the event (legacy spelling; see singular form, attendee).
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $attendees;
+    protected $attendees;
 
     /**
      * The time admission will commence.
      *
      * @var DateTime
      */
-    private $doorTime;
+    protected $doorTime;
 
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $duration;
+    protected $duration;
 
     /**
      * The end date and time of the event or item (in ISO 8601 date format).
      *
      * @var DateTime
      */
-    private $endDate;
+    protected $endDate;
 
     /**
      * An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.
      *
      * @var Example\Thing\Intangible\Enumeration\EventStatusType
      */
-    private $eventStatus;
+    protected $eventStatus;
 
     /**
      * The location of the event, organization or action.
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress|Example\Thing\Place
      */
-    private $location;
+    protected $location;
 
     /**
      * An offer to transfer some rights to an item or to provide a service—for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.
      *
      * @var Example\Thing\Intangible\Offer
      */
-    private $offers;
+    protected $offers;
 
     /**
      * A performer at the event—for example, a presenter, musician, musical group or actor.
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $performer;
+    protected $performer;
 
     /**
      * The main performer or performers of the event—for example, a presenter, musician, or actor (legacy spelling; see singular form, performer).
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $performers;
+    protected $performers;
 
     /**
      * Used in conjunction with eventStatus for rescheduled or cancelled events. This property contains the previously scheduled start date. For rescheduled events, the startDate property should be used for the newly scheduled start date. In the (rare) case of an event that has been postponed and rescheduled multiple times, this field may be repeated.
      *
      * @var DateTime
      */
-    private $previousStartDate;
+    protected $previousStartDate;
 
     /**
      * The start date and time of the event or item (in ISO 8601 date format).
      *
      * @var DateTime
      */
-    private $startDate;
+    protected $startDate;
 
     /**
      * An Event that is part of this event. For example, a conference event includes many presentations, each are a subEvent of the conference.
      *
      * @var Example\Thing\Event
      */
-    private $subEvent;
+    protected $subEvent;
 
     /**
      * Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference (legacy spelling; see singular form, subEvent).
      *
      * @var Example\Thing\Event
      */
-    private $subEvents;
+    protected $subEvents;
 
     /**
      * An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
      *
      * @var Example\Thing\Event
      */
-    private $superEvent;
+    protected $superEvent;
 
     /**
      * The typical expected age range, e.g. '7-9', '11-'.
      *
      * @var String
      */
-    private $typicalAgeRange;
+    protected $typicalAgeRange;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Event";
+    protected $context = "http://schema.org/Event";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Person

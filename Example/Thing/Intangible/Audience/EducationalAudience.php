@@ -21,12 +21,13 @@ class EducationalAudience extends Audience
      *
      * @var String
      */
-    private $educationalRole;
+    protected $educationalRole;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/EducationalAudience";
+    protected $context = "http://schema.org/EducationalAudience";
 
     /**
      * @return String

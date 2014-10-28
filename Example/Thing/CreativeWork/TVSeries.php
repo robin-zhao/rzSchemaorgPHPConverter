@@ -17,8 +17,9 @@ class TVSeries extends CreativeWork
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TVSeries";
+    protected $context = "http://schema.org/TVSeries";
 
 }

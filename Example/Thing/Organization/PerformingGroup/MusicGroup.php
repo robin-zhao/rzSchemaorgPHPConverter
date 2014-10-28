@@ -21,40 +21,41 @@ class MusicGroup extends PerformingGroup
      *
      * @var Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
      */
-    private $album;
+    protected $album;
 
     /**
      * A collection of music albums (legacy spelling; see singular form, album).
      *
      * @var Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
      */
-    private $albums;
+    protected $albums;
 
     /**
      * A member of the music group—for example, John, Paul, George, or Ringo.
      *
      * @var Example\Thing\Person
      */
-    private $musicGroupMember;
+    protected $musicGroupMember;
 
     /**
      * A music recording (track)—usually a single song.
      *
      * @var Example\Thing\CreativeWork\MusicRecording
      */
-    private $track;
+    protected $track;
 
     /**
      * A music recording (track)—usually a single song (legacy spelling; see singular form, track).
      *
      * @var Example\Thing\CreativeWork\MusicRecording
      */
-    private $tracks;
+    protected $tracks;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MusicGroup";
+    protected $context = "http://schema.org/MusicGroup";
 
     /**
      * @return Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum

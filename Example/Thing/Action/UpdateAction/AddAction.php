@@ -17,8 +17,9 @@ class AddAction extends UpdateAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/AddAction";
+    protected $context = "http://schema.org/AddAction";
 
 }

@@ -21,12 +21,13 @@ class DataCatalog extends CreativeWork
      *
      * @var Example\Thing\CreativeWork\Dataset
      */
-    private $dataset;
+    protected $dataset;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DataCatalog";
+    protected $context = "http://schema.org/DataCatalog";
 
     /**
      * @return Example\Thing\CreativeWork\Dataset

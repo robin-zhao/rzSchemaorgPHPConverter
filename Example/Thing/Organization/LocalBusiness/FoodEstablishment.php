@@ -21,26 +21,27 @@ class FoodEstablishment extends LocalBusiness
      *
      * @var String
      */
-    private $acceptsReservations;
+    protected $acceptsReservations;
 
     /**
      * Either the actual menu or a URL of the menu.
      *
      * @var String
      */
-    private $menu;
+    protected $menu;
 
     /**
      * The cuisine of the restaurant.
      *
      * @var String
      */
-    private $servesCuisine;
+    protected $servesCuisine;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/FoodEstablishment";
+    protected $context = "http://schema.org/FoodEstablishment";
 
     /**
      * @return String

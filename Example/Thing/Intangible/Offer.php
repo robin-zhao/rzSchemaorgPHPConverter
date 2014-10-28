@@ -21,264 +21,265 @@ class Offer extends Intangible
      *
      * @var Example\Thing\Intangible\Enumeration\PaymentMethod
      */
-    private $acceptedPaymentMethod;
+    protected $acceptedPaymentMethod;
 
     /**
      * An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).
      *
      * @var Example\Thing\Intangible\Offer
      */
-    private $addOn;
+    protected $addOn;
 
     /**
      * The amount of time that is required between accepting the offer and the actual usage of the resource or service.
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $advanceBookingRequirement;
+    protected $advanceBookingRequirement;
 
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
      * @var Example\Thing\Intangible\Rating\AggregateRating
      */
-    private $aggregateRating;
+    protected $aggregateRating;
 
     /**
      * The availability of this item—for example In stock, Out of stock, Pre-order, etc.
      *
      * @var Example\Thing\Intangible\Enumeration\ItemAvailability
      */
-    private $availability;
+    protected $availability;
 
     /**
      * The end of the availability of the product or service included in the offer.
      *
      * @var DateTime
      */
-    private $availabilityEnds;
+    protected $availabilityEnds;
 
     /**
      * The beginning of the availability of the product or service included in the offer.
      *
      * @var DateTime
      */
-    private $availabilityStarts;
+    protected $availabilityStarts;
 
     /**
      * The place(s) from which the offer can be obtained (e.g. store locations).
      *
      * @var Example\Thing\Place
      */
-    private $availableAtOrFrom;
+    protected $availableAtOrFrom;
 
     /**
      * The delivery method(s) available for this offer.
      *
      * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    private $availableDeliveryMethod;
+    protected $availableDeliveryMethod;
 
     /**
      * The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.
      *
      * @var Example\Thing\Intangible\Enumeration\BusinessFunction
      */
-    private $businessFunction;
+    protected $businessFunction;
 
     /**
      * A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
      *
      * @var String|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalActivityCategory|Example\Thing
      */
-    private $category;
+    protected $category;
 
     /**
      * The typical delay between the receipt of the order and the goods leaving the warehouse.
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $deliveryLeadTime;
+    protected $deliveryLeadTime;
 
     /**
      * The type(s) of customers for which the given offer is valid.
      *
      * @var Example\Thing\Intangible\Enumeration\BusinessEntityType
      */
-    private $eligibleCustomerType;
+    protected $eligibleCustomerType;
 
     /**
      * The duration for which the given offer is valid.
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $eligibleDuration;
+    protected $eligibleDuration;
 
     /**
      * The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $eligibleQuantity;
+    protected $eligibleQuantity;
 
     /**
      * The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.
      *
      * @var String|Example\Thing\Intangible\StructuredValue\GeoShape
      */
-    private $eligibleRegion;
+    protected $eligibleRegion;
 
     /**
      * The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.
      *
      * @var Example\Thing\Intangible\StructuredValue\PriceSpecification
      */
-    private $eligibleTransactionVolume;
+    protected $eligibleTransactionVolume;
 
     /**
      * The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero.
      *
      * @var String
      */
-    private $gtin13;
+    protected $gtin13;
 
     /**
      * The GTIN-14 code of the product, or the product to which the offer refers.
      *
      * @var String
      */
-    private $gtin14;
+    protected $gtin14;
 
     /**
      * The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN.
      *
      * @var String
      */
-    private $gtin8;
+    protected $gtin8;
 
     /**
      * This links to a node or nodes indicating the exact quantity of the products included in the offer.
      *
      * @var Example\Thing\Intangible\StructuredValue\TypeAndQuantityNode
      */
-    private $includesObject;
+    protected $includesObject;
 
     /**
      * The current approximate inventory level for the item or items.
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $inventoryLevel;
+    protected $inventoryLevel;
 
     /**
      * A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.
      *
      * @var Example\Thing\Intangible\Enumeration\OfferItemCondition
      */
-    private $itemCondition;
+    protected $itemCondition;
 
     /**
      * The item being offered.
      *
      * @var Example\Thing\Product
      */
-    private $itemOffered;
+    protected $itemOffered;
 
     /**
      * The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.
      *
      * @var String
      */
-    private $mpn;
+    protected $mpn;
 
     /**
      * The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.
      *
      * @var String|Float
      */
-    private $price;
+    protected $price;
 
     /**
      * The currency (in 3-letter ISO 4217 format) of the offer price or a price component, when attached to PriceSpecification and its subtypes.
      *
      * @var String
      */
-    private $priceCurrency;
+    protected $priceCurrency;
 
     /**
      * One or more detailed price specifications, indicating the unit price and delivery or payment charges.
      *
      * @var Example\Thing\Intangible\StructuredValue\PriceSpecification
      */
-    private $priceSpecification;
+    protected $priceSpecification;
 
     /**
      * The date after which the price is no longer available.
      *
      * @var DateTime
      */
-    private $priceValidUntil;
+    protected $priceValidUntil;
 
     /**
      * A review of the item.
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $review;
+    protected $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $reviews;
+    protected $reviews;
 
     /**
      * The organization or person making the offer.
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $seller;
+    protected $seller;
 
     /**
      * The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.
      *
      * @var String
      */
-    private $serialNumber;
+    protected $serialNumber;
 
     /**
      * The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.
      *
      * @var String
      */
-    private $sku;
+    protected $sku;
 
     /**
      * The date when the item becomes valid.
      *
      * @var DateTime
      */
-    private $validFrom;
+    protected $validFrom;
 
     /**
      * The end of the validity of offer, price specification, or opening hours data.
      *
      * @var DateTime
      */
-    private $validThrough;
+    protected $validThrough;
 
     /**
      * The warranty promise(s) included in the offer.
      *
      * @var Example\Thing\Intangible\StructuredValue\WarrantyPromise
      */
-    private $warranty;
+    protected $warranty;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Offer";
+    protected $context = "http://schema.org/Offer";
 
     /**
      * @return Example\Thing\Intangible\Enumeration\PaymentMethod

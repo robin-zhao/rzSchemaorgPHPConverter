@@ -21,26 +21,27 @@ class BroadcastService extends Thing
      *
      * @var Example\Thing\Place
      */
-    private $area;
+    protected $area;
 
     /**
      * The organization owning or operating the broadcast service.
      *
      * @var Example\Thing\Organization
      */
-    private $broadcaster;
+    protected $broadcaster;
 
     /**
      * A broadcast service to which the broadcast service may belong to such as regional variations of a national channel.
      *
      * @var Example\Thing\BroadcastService
      */
-    private $parentService;
+    protected $parentService;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/BroadcastService";
+    protected $context = "http://schema.org/BroadcastService";
 
     /**
      * @return Example\Thing\Place

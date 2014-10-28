@@ -21,19 +21,20 @@ class SellAction extends TradeAction
      *
      * @var Example\Thing\Person
      */
-    private $buyer;
+    protected $buyer;
 
     /**
      * The warranty promise(s) included in the offer.
      *
      * @var Example\Thing\Intangible\StructuredValue\WarrantyPromise
      */
-    private $warrantyPromise;
+    protected $warrantyPromise;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/SellAction";
+    protected $context = "http://schema.org/SellAction";
 
     /**
      * @return Example\Thing\Person

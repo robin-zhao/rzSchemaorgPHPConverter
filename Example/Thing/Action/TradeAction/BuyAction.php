@@ -21,19 +21,20 @@ class BuyAction extends TradeAction
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $vendor;
+    protected $vendor;
 
     /**
      * The warranty promise(s) included in the offer.
      *
      * @var Example\Thing\Intangible\StructuredValue\WarrantyPromise
      */
-    private $warrantyPromise;
+    protected $warrantyPromise;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/BuyAction";
+    protected $context = "http://schema.org/BuyAction";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Person

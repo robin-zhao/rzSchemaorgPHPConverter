@@ -21,12 +21,13 @@ class SomeProducts extends Product
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $inventoryLevel;
+    protected $inventoryLevel;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/SomeProducts";
+    protected $context = "http://schema.org/SomeProducts";
 
     /**
      * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue

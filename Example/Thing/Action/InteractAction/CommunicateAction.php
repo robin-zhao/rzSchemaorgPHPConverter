@@ -21,26 +21,27 @@ class CommunicateAction extends InteractAction
      *
      * @var Example\Thing
      */
-    private $about;
+    protected $about;
 
     /**
      * A sub property of instrument. The languaged used on this action.
      *
      * @var Example\Thing\Intangible\Language
      */
-    private $language;
+    protected $language;
 
     /**
      * A sub property of participant. The participant who is at the receiving end of the action.
      *
      * @var Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
      */
-    private $recipient;
+    protected $recipient;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CommunicateAction";
+    protected $context = "http://schema.org/CommunicateAction";
 
     /**
      * @return Example\Thing

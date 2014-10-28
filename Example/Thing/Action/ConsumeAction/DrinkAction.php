@@ -17,8 +17,9 @@ class DrinkAction extends ConsumeAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DrinkAction";
+    protected $context = "http://schema.org/DrinkAction";
 
 }

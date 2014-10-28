@@ -21,96 +21,97 @@ class Episode extends CreativeWork
      *
      * @var Example\Thing\Person
      */
-    private $actor;
+    protected $actor;
 
     /**
      * A cast member of the movie, tv/radio series, season, episode, or video. (legacy spelling; see singular form, actor)
      *
      * @var Example\Thing\Person
      */
-    private $actors;
+    protected $actors;
 
     /**
      * The director of the movie, tv/radio episode or series.
      *
      * @var Example\Thing\Person
      */
-    private $director;
+    protected $director;
 
     /**
      * The director of the movie, tv/radio episode or series. (legacy spelling; see singular form, director)
      *
      * @var Example\Thing\Person
      */
-    private $directors;
+    protected $directors;
 
     /**
      * Position of the episode within an ordered group of episodes.
      *
      * @var Integer
      */
-    private $episodeNumber;
+    protected $episodeNumber;
 
     /**
      * The composer of the movie or TV/radio soundtrack.
      *
      * @var Example\Thing\Person|Example\Thing\Organization\PerformingGroup\MusicGroup
      */
-    private $musicBy;
+    protected $musicBy;
 
     /**
      * The season to which this episode belongs.
      *
      * @var Example\Thing\CreativeWork\Season
      */
-    private $partOfSeason;
+    protected $partOfSeason;
 
     /**
      * The series to which this episode or season belongs.
      *
      * @var Example\Thing\CreativeWork\Series
      */
-    private $partOfSeries;
+    protected $partOfSeries;
 
     /**
      * Free text to define other than pure numerical ranking of an episode or a season in an ordered list of items (further formatting restrictions may apply within particular user groups).
      *
      * @var String
      */
-    private $position;
+    protected $position;
 
     /**
      * The producer of the movie, tv/radio series, season, or episode, or video.
      *
      * @var Example\Thing\Person
      */
-    private $producer;
+    protected $producer;
 
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
      * @var Example\Thing\Organization
      */
-    private $productionCompany;
+    protected $productionCompany;
 
     /**
      * A publication event associated with the episode, clip or media object.
      *
      * @var Example\Thing\Event\PublicationEvent
      */
-    private $publication;
+    protected $publication;
 
     /**
      * The trailer of a movie or tv/radio series, season, or episode.
      *
      * @var Example\Thing\CreativeWork\MediaObject\VideoObject
      */
-    private $trailer;
+    protected $trailer;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Episode";
+    protected $context = "http://schema.org/Episode";
 
     /**
      * @return Example\Thing\Person

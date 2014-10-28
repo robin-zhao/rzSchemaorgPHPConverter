@@ -21,47 +21,48 @@ class PostalAddress extends ContactPoint
      *
      * @var Example\Thing\Place\AdministrativeArea\Country
      */
-    private $addressCountry;
+    protected $addressCountry;
 
     /**
      * The locality. For example, Mountain View.
      *
      * @var String
      */
-    private $addressLocality;
+    protected $addressLocality;
 
     /**
      * The region. For example, CA.
      *
      * @var String
      */
-    private $addressRegion;
+    protected $addressRegion;
 
     /**
      * The postal code. For example, 94043.
      *
      * @var String
      */
-    private $postalCode;
+    protected $postalCode;
 
     /**
      * The post offce box number for PO box addresses.
      *
      * @var String
      */
-    private $postOfficeBoxNumber;
+    protected $postOfficeBoxNumber;
 
     /**
      * The street address. For example, 1600 Amphitheatre Pkwy.
      *
      * @var String
      */
-    private $streetAddress;
+    protected $streetAddress;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PostalAddress";
+    protected $context = "http://schema.org/PostalAddress";
 
     /**
      * @return Example\Thing\Place\AdministrativeArea\Country

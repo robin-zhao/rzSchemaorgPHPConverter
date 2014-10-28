@@ -17,8 +17,9 @@ class ContactPage extends WebPage
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ContactPage";
+    protected $context = "http://schema.org/ContactPage";
 
 }

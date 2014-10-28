@@ -21,82 +21,83 @@ class Season extends CreativeWork
      *
      * @var DateTime
      */
-    private $endDate;
+    protected $endDate;
 
     /**
      * An episode of a TV/radio series or season
      *
      * @var Example\Thing\CreativeWork\Episode
      */
-    private $episode;
+    protected $episode;
 
     /**
      * An episode of a TV/radio series or season (legacy spelling; see singular form, episode)
      *
      * @var Example\Thing\CreativeWork\Episode
      */
-    private $episodes;
+    protected $episodes;
 
     /**
      * The number of episodes in this season or series.
      *
      * @var Float
      */
-    private $numberOfEpisodes;
+    protected $numberOfEpisodes;
 
     /**
      * The series to which this episode or season belongs.
      *
      * @var Example\Thing\CreativeWork\Series
      */
-    private $partOfSeries;
+    protected $partOfSeries;
 
     /**
      * Free text to define other than pure numerical ranking of an episode or a season in an ordered list of items (further formatting restrictions may apply within particular user groups).
      *
      * @var String
      */
-    private $position;
+    protected $position;
 
     /**
      * The producer of the movie, tv/radio series, season, or episode, or video.
      *
      * @var Example\Thing\Person
      */
-    private $producer;
+    protected $producer;
 
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
      * @var Example\Thing\Organization
      */
-    private $productionCompany;
+    protected $productionCompany;
 
     /**
      * Position of the season within an ordered group of seasons.
      *
      * @var Integer
      */
-    private $seasonNumber;
+    protected $seasonNumber;
 
     /**
      * The start date and time of the event or item (in ISO 8601 date format).
      *
      * @var DateTime
      */
-    private $startDate;
+    protected $startDate;
 
     /**
      * The trailer of a movie or tv/radio series, season, or episode.
      *
      * @var Example\Thing\CreativeWork\MediaObject\VideoObject
      */
-    private $trailer;
+    protected $trailer;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Season";
+    protected $context = "http://schema.org/Season";
 
     /**
      * @return DateTime

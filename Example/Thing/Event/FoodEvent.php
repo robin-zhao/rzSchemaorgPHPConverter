@@ -17,8 +17,9 @@ class FoodEvent extends Event
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/FoodEvent";
+    protected $context = "http://schema.org/FoodEvent";
 
 }

@@ -17,8 +17,9 @@ class PhysicalActivityCategory extends MedicalEnumeration
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PhysicalActivityCategory";
+    protected $context = "http://schema.org/PhysicalActivityCategory";
 
 }

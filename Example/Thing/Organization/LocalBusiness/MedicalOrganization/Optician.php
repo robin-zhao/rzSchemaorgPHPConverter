@@ -17,8 +17,9 @@ class Optician extends MedicalOrganization
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Optician";
+    protected $context = "http://schema.org/Optician";
 
 }

@@ -21,12 +21,13 @@ class DonateAction extends TradeAction
      *
      * @var Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
      */
-    private $recipient;
+    protected $recipient;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DonateAction";
+    protected $context = "http://schema.org/DonateAction";
 
     /**
      * @return Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person

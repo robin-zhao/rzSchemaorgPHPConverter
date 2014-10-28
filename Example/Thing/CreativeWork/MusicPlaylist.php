@@ -21,26 +21,27 @@ class MusicPlaylist extends CreativeWork
      *
      * @var Integer
      */
-    private $numTracks;
+    protected $numTracks;
 
     /**
      * A music recording (track)—usually a single song.
      *
      * @var Example\Thing\CreativeWork\MusicRecording
      */
-    private $track;
+    protected $track;
 
     /**
      * A music recording (track)—usually a single song (legacy spelling; see singular form, track).
      *
      * @var Example\Thing\CreativeWork\MusicRecording
      */
-    private $tracks;
+    protected $tracks;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MusicPlaylist";
+    protected $context = "http://schema.org/MusicPlaylist";
 
     /**
      * @return Integer

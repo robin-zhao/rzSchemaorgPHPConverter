@@ -21,187 +21,188 @@ class Product extends Thing
      *
      * @var Example\Thing\Intangible\Rating\AggregateRating
      */
-    private $aggregateRating;
+    protected $aggregateRating;
 
     /**
      * The intended audience of the item, i.e. the group for whom the item was created.
      *
      * @var Example\Thing\Intangible\Audience
      */
-    private $audience;
+    protected $audience;
 
     /**
      * The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
      *
      * @var Example\Thing\Organization|Example\Thing\Intangible\Brand
      */
-    private $brand;
+    protected $brand;
 
     /**
      * The color of the product.
      *
      * @var String
      */
-    private $color;
+    protected $color;
 
     /**
      * The depth of the product.
      *
      * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $depth;
+    protected $depth;
 
     /**
      * The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero.
      *
      * @var String
      */
-    private $gtin13;
+    protected $gtin13;
 
     /**
      * The GTIN-14 code of the product, or the product to which the offer refers.
      *
      * @var String
      */
-    private $gtin14;
+    protected $gtin14;
 
     /**
      * The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN.
      *
      * @var String
      */
-    private $gtin8;
+    protected $gtin8;
 
     /**
      * The height of the item.
      *
      * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $height;
+    protected $height;
 
     /**
      * A pointer to another product (or multiple products) for which this product is an accessory or spare part.
      *
      * @var Example\Thing\Product
      */
-    private $isAccessoryOrSparePartFor;
+    protected $isAccessoryOrSparePartFor;
 
     /**
      * A pointer to another product (or multiple products) for which this product is a consumable.
      *
      * @var Example\Thing\Product
      */
-    private $isConsumableFor;
+    protected $isConsumableFor;
 
     /**
      * A pointer to another, somehow related product (or multiple products).
      *
      * @var Example\Thing\Product
      */
-    private $isRelatedTo;
+    protected $isRelatedTo;
 
     /**
      * A pointer to another, functionally similar product (or multiple products).
      *
      * @var Example\Thing\Product
      */
-    private $isSimilarTo;
+    protected $isSimilarTo;
 
     /**
      * A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.
      *
      * @var Example\Thing\Intangible\Enumeration\OfferItemCondition
      */
-    private $itemCondition;
+    protected $itemCondition;
 
     /**
      * A logo associated with an organization.
      *
      * @var String|Example\Thing\CreativeWork\MediaObject\ImageObject
      */
-    private $logo;
+    protected $logo;
 
     /**
      * The manufacturer of the product.
      *
      * @var Example\Thing\Organization
      */
-    private $manufacturer;
+    protected $manufacturer;
 
     /**
      * The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.
      *
      * @var Example\Thing\Product\ProductModel|String
      */
-    private $model;
+    protected $model;
 
     /**
      * The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.
      *
      * @var String
      */
-    private $mpn;
+    protected $mpn;
 
     /**
      * An offer to transfer some rights to an item or to provide a service—for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.
      *
      * @var Example\Thing\Intangible\Offer
      */
-    private $offers;
+    protected $offers;
 
     /**
      * The product identifier, such as ISBN. For example: <meta itemprop='productID' content='isbn:123-456-789'/>.
      *
      * @var String
      */
-    private $productID;
+    protected $productID;
 
     /**
      * The release date of a product or product model. This can be used to distinguish the exact variant of a product.
      *
      * @var DateTime
      */
-    private $releaseDate;
+    protected $releaseDate;
 
     /**
      * A review of the item.
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $review;
+    protected $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
      * @var Example\Thing\CreativeWork\Review
      */
-    private $reviews;
+    protected $reviews;
 
     /**
      * The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.
      *
      * @var String
      */
-    private $sku;
+    protected $sku;
 
     /**
      * The weight of the product.
      *
      * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $weight;
+    protected $weight;
 
     /**
      * The width of the item.
      *
      * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    private $width;
+    protected $width;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Product";
+    protected $context = "http://schema.org/Product";
 
     /**
      * @return Example\Thing\Intangible\Rating\AggregateRating

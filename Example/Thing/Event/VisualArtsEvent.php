@@ -17,8 +17,9 @@ class VisualArtsEvent extends Event
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/VisualArtsEvent";
+    protected $context = "http://schema.org/VisualArtsEvent";
 
 }

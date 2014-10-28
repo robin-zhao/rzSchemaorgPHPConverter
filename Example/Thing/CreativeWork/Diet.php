@@ -21,54 +21,55 @@ class Diet extends CreativeWork
      *
      * @var String
      */
-    private $dietFeatures;
+    protected $dietFeatures;
 
     /**
      * People or organizations that endorse the plan.
      *
      * @var Example\Thing\Organization|Example\Thing\Person
      */
-    private $endorsers;
+    protected $endorsers;
 
     /**
      * Medical expert advice related to the plan.
      *
      * @var String
      */
-    private $expertConsiderations;
+    protected $expertConsiderations;
 
     /**
      * Descriptive information establishing the overarching theory/philosophy of the plan. May include the rationale for the name, the population where the plan first came to prominence, etc.
      *
      * @var String
      */
-    private $overview;
+    protected $overview;
 
     /**
      * Specific physiologic benefits associated to the plan.
      *
      * @var String
      */
-    private $physiologicalBenefits;
+    protected $physiologicalBenefits;
 
     /**
      * Proprietary name given to the diet plan, typically by its originator or creator.
      *
      * @var String
      */
-    private $proprietaryName;
+    protected $proprietaryName;
 
     /**
      * Specific physiologic risks associated to the plan.
      *
      * @var String
      */
-    private $risks;
+    protected $risks;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Diet";
+    protected $context = "http://schema.org/Diet";
 
     /**
      * @return String

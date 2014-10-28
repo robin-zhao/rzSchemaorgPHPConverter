@@ -17,8 +17,9 @@ class Language extends Intangible
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Language";
+    protected $context = "http://schema.org/Language";
 
 }

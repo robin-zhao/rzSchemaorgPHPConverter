@@ -21,40 +21,41 @@ class MedicalTherapy extends MedicalEntity
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $adverseOutcome;
+    protected $adverseOutcome;
 
     /**
      * A contraindication for this therapy.
      *
      * @var Example\Thing\MedicalEntity\MedicalContraindication
      */
-    private $contraindication;
+    protected $contraindication;
 
     /**
      * A therapy that duplicates or overlaps this one.
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy
      */
-    private $duplicateTherapy;
+    protected $duplicateTherapy;
 
     /**
      * A factor that indicates use of this therapy for treatment and/or prevention of a condition, symptom, etc. For therapies such as drugs, indications can include both officially-approved indications as well as off-label uses. These can be distinguished by using the ApprovedIndication subtype of MedicalIndication.
      *
      * @var Example\Thing\MedicalEntity\MedicalIndication
      */
-    private $indication;
+    protected $indication;
 
     /**
      * A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.
      *
      * @var Example\Thing\MedicalEntity
      */
-    private $seriousAdverseOutcome;
+    protected $seriousAdverseOutcome;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalTherapy";
+    protected $context = "http://schema.org/MedicalTherapy";
 
     /**
      * @return Example\Thing\MedicalEntity

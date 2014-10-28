@@ -21,19 +21,20 @@ class DDxElement extends MedicalIntangible
      *
      * @var Example\Thing\MedicalEntity\MedicalCondition
      */
-    private $diagnosis;
+    protected $diagnosis;
 
     /**
      * One of a set of signs and symptoms that can be used to distinguish this diagnosis from others in the differential diagnosis.
      *
      * @var Example\Thing\MedicalEntity\MedicalSignOrSymptom
      */
-    private $distinguishingSign;
+    protected $distinguishingSign;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DDxElement";
+    protected $context = "http://schema.org/DDxElement";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalCondition

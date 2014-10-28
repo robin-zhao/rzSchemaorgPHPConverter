@@ -21,12 +21,13 @@ class PerformAction extends PlayAction
      *
      * @var Example\Thing\Organization\LocalBusiness\EntertainmentBusiness
      */
-    private $entertainmentBusiness;
+    protected $entertainmentBusiness;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PerformAction";
+    protected $context = "http://schema.org/PerformAction";
 
     /**
      * @return Example\Thing\Organization\LocalBusiness\EntertainmentBusiness

@@ -21,12 +21,13 @@ class JoinAction extends InteractAction
      *
      * @var Example\Thing\Event
      */
-    private $event;
+    protected $event;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/JoinAction";
+    protected $context = "http://schema.org/JoinAction";
 
     /**
      * @return Example\Thing\Event

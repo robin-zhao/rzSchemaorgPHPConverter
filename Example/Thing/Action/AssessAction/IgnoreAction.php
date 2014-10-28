@@ -17,8 +17,9 @@ class IgnoreAction extends AssessAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/IgnoreAction";
+    protected $context = "http://schema.org/IgnoreAction";
 
 }

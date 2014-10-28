@@ -21,12 +21,13 @@ class MedicalObservationalStudy extends MedicalStudy
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalObservationalStudyDesign
      */
-    private $studyDesign;
+    protected $studyDesign;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalObservationalStudy";
+    protected $context = "http://schema.org/MedicalObservationalStudy";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalObservationalStudyDesign

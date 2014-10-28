@@ -21,12 +21,13 @@ class MedicalScholarlyArticle extends ScholarlyArticle
      *
      * @var String
      */
-    private $publicationType;
+    protected $publicationType;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalScholarlyArticle";
+    protected $context = "http://schema.org/MedicalScholarlyArticle";
 
     /**
      * @return String

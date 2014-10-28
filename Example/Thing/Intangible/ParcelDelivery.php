@@ -21,82 +21,83 @@ class ParcelDelivery extends Intangible
      *
      * @var Example\Thing\Organization
      */
-    private $carrier;
+    protected $carrier;
 
     /**
      * Destination address.
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    private $deliveryAddress;
+    protected $deliveryAddress;
 
     /**
      * New entry added as the package passes through each leg of its journey (from shipment to final delivery).
      *
      * @var Example\Thing\Event\DeliveryEvent
      */
-    private $deliveryStatus;
+    protected $deliveryStatus;
 
     /**
      * The earliest date the package may arrive.
      *
      * @var DateTime
      */
-    private $expectedArrivalFrom;
+    protected $expectedArrivalFrom;
 
     /**
      * The latest date the package may arrive.
      *
      * @var DateTime
      */
-    private $expectedArrivalUntil;
+    protected $expectedArrivalUntil;
 
     /**
      * Method used for delivery or shipping.
      *
      * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    private $hasDeliveryMethod;
+    protected $hasDeliveryMethod;
 
     /**
      * Item(s) being shipped.
      *
      * @var Example\Thing\Product
      */
-    private $itemShipped;
+    protected $itemShipped;
 
     /**
      * Shipper's address.
      *
      * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    private $originAddress;
+    protected $originAddress;
 
     /**
      * The overall order the items in this delivery were included in.
      *
      * @var Example\Thing\Intangible\Order
      */
-    private $partOfOrder;
+    protected $partOfOrder;
 
     /**
      * Shipper tracking number.
      *
      * @var String
      */
-    private $trackingNumber;
+    protected $trackingNumber;
 
     /**
      * Tracking url for the parcel delivery.
      *
      * @var String
      */
-    private $trackingUrl;
+    protected $trackingUrl;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ParcelDelivery";
+    protected $context = "http://schema.org/ParcelDelivery";
 
     /**
      * @return Example\Thing\Organization

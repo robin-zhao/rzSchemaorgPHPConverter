@@ -17,8 +17,9 @@ class Continent extends Landform
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Continent";
+    protected $context = "http://schema.org/Continent";
 
 }

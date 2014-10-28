@@ -21,40 +21,41 @@ class OpeningHoursSpecification extends StructuredValue
      *
      * @var DateTime
      */
-    private $closes;
+    protected $closes;
 
     /**
      * The day of the week for which these opening hours are valid.
      *
      * @var Example\Thing\Intangible\Enumeration\DayOfWeek
      */
-    private $dayOfWeek;
+    protected $dayOfWeek;
 
     /**
      * The opening hour of the place or service on the given day(s) of the week.
      *
      * @var DateTime
      */
-    private $opens;
+    protected $opens;
 
     /**
      * The date when the item becomes valid.
      *
      * @var DateTime
      */
-    private $validFrom;
+    protected $validFrom;
 
     /**
      * The end of the validity of offer, price specification, or opening hours data.
      *
      * @var DateTime
      */
-    private $validThrough;
+    protected $validThrough;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/OpeningHoursSpecification";
+    protected $context = "http://schema.org/OpeningHoursSpecification";
 
     /**
      * @return DateTime

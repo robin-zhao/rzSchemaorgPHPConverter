@@ -17,8 +17,9 @@ class WantAction extends ReactAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WantAction";
+    protected $context = "http://schema.org/WantAction";
 
 }

@@ -17,8 +17,9 @@ class ChildCare extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ChildCare";
+    protected $context = "http://schema.org/ChildCare";
 
 }

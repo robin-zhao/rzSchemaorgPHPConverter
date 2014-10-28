@@ -17,8 +17,9 @@ class CollectionPage extends WebPage
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CollectionPage";
+    protected $context = "http://schema.org/CollectionPage";
 
 }

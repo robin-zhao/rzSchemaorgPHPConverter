@@ -21,26 +21,27 @@ class InfectiousDisease extends MedicalCondition
      *
      * @var String
      */
-    private $infectiousAgent;
+    protected $infectiousAgent;
 
     /**
      * The class of infectious agent (bacteria, prion, etc.) that causes the disease.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\InfectiousAgentClass
      */
-    private $infectiousAgentClass;
+    protected $infectiousAgentClass;
 
     /**
      * How the disease spreads, either as a route or vector, for example 'direct contact', 'Aedes aegypti', etc.
      *
      * @var String
      */
-    private $transmissionMethod;
+    protected $transmissionMethod;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/InfectiousDisease";
+    protected $context = "http://schema.org/InfectiousDisease";
 
     /**
      * @return String

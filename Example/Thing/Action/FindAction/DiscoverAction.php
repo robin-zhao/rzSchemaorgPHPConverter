@@ -17,8 +17,9 @@ class DiscoverAction extends FindAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DiscoverAction";
+    protected $context = "http://schema.org/DiscoverAction";
 
 }

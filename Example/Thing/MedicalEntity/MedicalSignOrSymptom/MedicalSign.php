@@ -21,19 +21,20 @@ class MedicalSign extends MedicalSignOrSymptom
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalExam
      */
-    private $identifyingExam;
+    protected $identifyingExam;
 
     /**
      * A diagnostic test that can identify this sign.
      *
      * @var Example\Thing\MedicalEntity\MedicalTest
      */
-    private $identifyingTest;
+    protected $identifyingTest;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalSign";
+    protected $context = "http://schema.org/MedicalSign";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalExam

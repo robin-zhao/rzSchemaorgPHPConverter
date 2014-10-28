@@ -21,33 +21,34 @@ class DrugStrength extends MedicalIntangible
      *
      * @var String
      */
-    private $activeIngredient;
+    protected $activeIngredient;
 
     /**
      * The location in which the strength is available.
      *
      * @var Example\Thing\Place\AdministrativeArea
      */
-    private $availableIn;
+    protected $availableIn;
 
     /**
      * The units of an active ingredient's strength, e.g. mg.
      *
      * @var String
      */
-    private $strengthUnit;
+    protected $strengthUnit;
 
     /**
      * The value of an active ingredient's strength, e.g. 325.
      *
      * @var Float
      */
-    private $strengthValue;
+    protected $strengthValue;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DrugStrength";
+    protected $context = "http://schema.org/DrugStrength";
 
     /**
      * @return String

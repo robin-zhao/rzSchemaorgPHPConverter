@@ -17,8 +17,9 @@ class CheckoutPage extends WebPage
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/CheckoutPage";
+    protected $context = "http://schema.org/CheckoutPage";
 
 }

@@ -21,33 +21,34 @@ class PhysicalActivity extends LifestyleModification
      *
      * @var Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\SuperficialAnatomy|Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $associatedAnatomy;
+    protected $associatedAnatomy;
 
     /**
      * A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
      *
      * @var String|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalActivityCategory|Example\Thing
      */
-    private $category;
+    protected $category;
 
     /**
      * The characteristics of associated patients, such as age, gender, race etc.
      *
      * @var String
      */
-    private $epidemiology;
+    protected $epidemiology;
 
     /**
      * Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.
      *
      * @var String
      */
-    private $pathophysiology;
+    protected $pathophysiology;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PhysicalActivity";
+    protected $context = "http://schema.org/PhysicalActivity";
 
     /**
      * @return Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\SuperficialAnatomy|Example\Thing\MedicalEntity\AnatomicalStructure

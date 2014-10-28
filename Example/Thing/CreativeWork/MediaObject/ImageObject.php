@@ -21,33 +21,34 @@ class ImageObject extends MediaObject
      *
      * @var String
      */
-    private $caption;
+    protected $caption;
 
     /**
      * exif data for this object.
      *
      * @var String
      */
-    private $exifData;
+    protected $exifData;
 
     /**
      * Indicates whether this image is representative of the content of the page.
      *
      * @var Boolean
      */
-    private $representativeOfPage;
+    protected $representativeOfPage;
 
     /**
      * Thumbnail image for an image or video.
      *
      * @var Example\Thing\CreativeWork\MediaObject\ImageObject
      */
-    private $thumbnail;
+    protected $thumbnail;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ImageObject";
+    protected $context = "http://schema.org/ImageObject";
 
     /**
      * @return String

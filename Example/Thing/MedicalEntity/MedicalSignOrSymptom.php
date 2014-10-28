@@ -21,19 +21,20 @@ class MedicalSignOrSymptom extends MedicalEntity
      *
      * @var Example\Thing\MedicalEntity\MedicalCause
      */
-    private $cause;
+    protected $cause;
 
     /**
      * A possible treatment to address this condition, sign or symptom.
      *
      * @var Example\Thing\MedicalEntity\MedicalTherapy
      */
-    private $possibleTreatment;
+    protected $possibleTreatment;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalSignOrSymptom";
+    protected $context = "http://schema.org/MedicalSignOrSymptom";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalCause

@@ -17,8 +17,9 @@ class Embassy extends GovernmentBuilding
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Embassy";
+    protected $context = "http://schema.org/Embassy";
 
 }

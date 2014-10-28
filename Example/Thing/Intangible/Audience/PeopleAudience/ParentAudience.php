@@ -21,19 +21,20 @@ class ParentAudience extends PeopleAudience
      *
      * @var Float
      */
-    private $childMaxAge;
+    protected $childMaxAge;
 
     /**
      * Minimal age of the child
      *
      * @var Float
      */
-    private $childMinAge;
+    protected $childMinAge;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ParentAudience";
+    protected $context = "http://schema.org/ParentAudience";
 
     /**
      * @return Float

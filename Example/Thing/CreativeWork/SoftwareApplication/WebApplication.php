@@ -21,12 +21,13 @@ class WebApplication extends SoftwareApplication
      *
      * @var String
      */
-    private $browserRequirements;
+    protected $browserRequirements;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/WebApplication";
+    protected $context = "http://schema.org/WebApplication";
 
     /**
      * @return String

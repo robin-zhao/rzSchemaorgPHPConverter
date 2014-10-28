@@ -21,12 +21,13 @@ class MobileApplication extends SoftwareApplication
      *
      * @var String
      */
-    private $carrierRequirements;
+    protected $carrierRequirements;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MobileApplication";
+    protected $context = "http://schema.org/MobileApplication";
 
     /**
      * @return String

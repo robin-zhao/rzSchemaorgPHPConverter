@@ -21,131 +21,132 @@ class JobPosting extends Intangible
      *
      * @var Float
      */
-    private $baseSalary;
+    protected $baseSalary;
 
     /**
      * Description of benefits associated with the job.
      *
      * @var String
      */
-    private $benefits;
+    protected $benefits;
 
     /**
      * Publication date for the job posting.
      *
      * @var DateTime
      */
-    private $datePosted;
+    protected $datePosted;
 
     /**
      * Educational background needed for the position.
      *
      * @var String
      */
-    private $educationRequirements;
+    protected $educationRequirements;
 
     /**
      * Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).
      *
      * @var String
      */
-    private $employmentType;
+    protected $employmentType;
 
     /**
      * Description of skills and experience needed for the position.
      *
      * @var String
      */
-    private $experienceRequirements;
+    protected $experienceRequirements;
 
     /**
      * Organization offering the job position.
      *
      * @var Example\Thing\Organization
      */
-    private $hiringOrganization;
+    protected $hiringOrganization;
 
     /**
      * Description of bonus and commission compensation aspects of the job.
      *
      * @var String
      */
-    private $incentives;
+    protected $incentives;
 
     /**
      * The industry associated with the job position.
      *
      * @var String
      */
-    private $industry;
+    protected $industry;
 
     /**
      * A (typically single) geographic location associated with the job position.
      *
      * @var Example\Thing\Place
      */
-    private $jobLocation;
+    protected $jobLocation;
 
     /**
      * Category or categories describing the job. Use BLS O*NET-SOC taxonomy: http://www.onetcenter.org/taxonomy.html. Ideally includes textual label and formal code, with the property repeated for each applicable value.
      *
      * @var String
      */
-    private $occupationalCategory;
+    protected $occupationalCategory;
 
     /**
      * Specific qualifications required for this role.
      *
      * @var String
      */
-    private $qualifications;
+    protected $qualifications;
 
     /**
      * Responsibilities associated with this role.
      *
      * @var String
      */
-    private $responsibilities;
+    protected $responsibilities;
 
     /**
      * The currency (coded using ISO 4217, http://en.wikipedia.org/wiki/ISO_4217 used for the main salary information in this job posting.
      *
      * @var String
      */
-    private $salaryCurrency;
+    protected $salaryCurrency;
 
     /**
      * Skills required to fulfill this role.
      *
      * @var String
      */
-    private $skills;
+    protected $skills;
 
     /**
      * Any special commitments associated with this job posting. Valid entries include VeteranCommit, MilitarySpouseCommit, etc.
      *
      * @var String
      */
-    private $specialCommitments;
+    protected $specialCommitments;
 
     /**
      * The title of the job.
      *
      * @var String
      */
-    private $title;
+    protected $title;
 
     /**
      * The typical working hours for this job (e.g. 1st shift, night shift, 8am-5pm).
      *
      * @var String
      */
-    private $workHours;
+    protected $workHours;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/JobPosting";
+    protected $context = "http://schema.org/JobPosting";
 
     /**
      * @return Float

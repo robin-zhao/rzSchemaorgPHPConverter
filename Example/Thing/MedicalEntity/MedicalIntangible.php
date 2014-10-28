@@ -17,8 +17,9 @@ class MedicalIntangible extends MedicalEntity
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalIntangible";
+    protected $context = "http://schema.org/MedicalIntangible";
 
 }

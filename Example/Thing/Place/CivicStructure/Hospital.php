@@ -21,19 +21,20 @@ class Hospital extends CivicStructure
      *
      * @var Example\Thing\MedicalEntity\MedicalTest|Example\Thing\MedicalEntity\MedicalProcedure|Example\Thing\MedicalEntity\MedicalTherapy
      */
-    private $availableService;
+    protected $availableService;
 
     /**
      * A medical specialty of the provider.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
-    private $medicalSpecialty;
+    protected $medicalSpecialty;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Hospital";
+    protected $context = "http://schema.org/Hospital";
 
     /**
      * @return Example\Thing\MedicalEntity\MedicalTest|Example\Thing\MedicalEntity\MedicalProcedure|Example\Thing\MedicalEntity\MedicalTherapy

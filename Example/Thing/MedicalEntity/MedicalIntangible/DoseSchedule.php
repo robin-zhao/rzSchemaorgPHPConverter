@@ -21,33 +21,34 @@ class DoseSchedule extends MedicalIntangible
      *
      * @var String
      */
-    private $doseUnit;
+    protected $doseUnit;
 
     /**
      * The value of the dose, e.g. 500.
      *
      * @var Float
      */
-    private $doseValue;
+    protected $doseValue;
 
     /**
      * How often the dose is taken, e.g. 'daily'.
      *
      * @var String
      */
-    private $frequency;
+    protected $frequency;
 
     /**
      * Characteristics of the population for which this is intended, or which typically uses it, e.g. 'adults'.
      *
      * @var String
      */
-    private $targetPopulation;
+    protected $targetPopulation;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DoseSchedule";
+    protected $context = "http://schema.org/DoseSchedule";
 
     /**
      * @return String

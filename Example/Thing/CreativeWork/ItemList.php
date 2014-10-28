@@ -21,19 +21,20 @@ class ItemList extends CreativeWork
      *
      * @var String
      */
-    private $itemListElement;
+    protected $itemListElement;
 
     /**
      * Type of ordering (e.g. Ascending, Descending, Unordered).
      *
      * @var String
      */
-    private $itemListOrder;
+    protected $itemListOrder;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/ItemList";
+    protected $context = "http://schema.org/ItemList";
 
     /**
      * @return String

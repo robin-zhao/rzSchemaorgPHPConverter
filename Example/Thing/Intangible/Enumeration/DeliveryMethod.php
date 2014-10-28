@@ -17,8 +17,9 @@ class DeliveryMethod extends Enumeration
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DeliveryMethod";
+    protected $context = "http://schema.org/DeliveryMethod";
 
 }

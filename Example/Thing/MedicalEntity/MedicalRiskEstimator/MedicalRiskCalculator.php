@@ -17,8 +17,9 @@ class MedicalRiskCalculator extends MedicalRiskEstimator
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/MedicalRiskCalculator";
+    protected $context = "http://schema.org/MedicalRiskCalculator";
 
 }

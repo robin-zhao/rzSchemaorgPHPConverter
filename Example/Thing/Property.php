@@ -21,19 +21,20 @@ class Property extends Thing
      *
      * @var Example\Thing\Class
      */
-    private $domainIncludes;
+    protected $domainIncludes;
 
     /**
      * Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.
      *
      * @var Example\Thing\Class
      */
-    private $rangeIncludes;
+    protected $rangeIncludes;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Property";
+    protected $context = "http://schema.org/Property";
 
     /**
      * @return Example\Thing\Class

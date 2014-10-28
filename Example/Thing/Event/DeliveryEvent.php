@@ -21,33 +21,34 @@ class DeliveryEvent extends Event
      *
      * @var String
      */
-    private $accessCode;
+    protected $accessCode;
 
     /**
      * When the item is available for pickup from the store, locker, etc.
      *
      * @var DateTime
      */
-    private $availableFrom;
+    protected $availableFrom;
 
     /**
      * After this date, the item will no longer be available for pickup.
      *
      * @var DateTime
      */
-    private $availableThrough;
+    protected $availableThrough;
 
     /**
      * Method used for delivery or shipping.
      *
      * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    private $hasDeliveryMethod;
+    protected $hasDeliveryMethod;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DeliveryEvent";
+    protected $context = "http://schema.org/DeliveryEvent";
 
     /**
      * @return String

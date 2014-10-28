@@ -17,8 +17,9 @@ class TreatmentIndication extends MedicalIndication
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/TreatmentIndication";
+    protected $context = "http://schema.org/TreatmentIndication";
 
 }

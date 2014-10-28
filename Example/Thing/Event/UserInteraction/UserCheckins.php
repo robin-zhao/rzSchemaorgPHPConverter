@@ -17,8 +17,9 @@ class UserCheckins extends UserInteraction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/UserCheckins";
+    protected $context = "http://schema.org/UserCheckins";
 
 }

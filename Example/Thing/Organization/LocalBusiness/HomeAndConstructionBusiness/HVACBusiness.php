@@ -17,8 +17,9 @@ class HVACBusiness extends HomeAndConstructionBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/HVACBusiness";
+    protected $context = "http://schema.org/HVACBusiness";
 
 }

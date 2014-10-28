@@ -17,8 +17,9 @@ class HinduTemple extends PlaceOfWorship
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/HinduTemple";
+    protected $context = "http://schema.org/HinduTemple";
 
 }

@@ -21,19 +21,20 @@ class PayAction extends TradeAction
      *
      * @var Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
      */
-    private $purpose;
+    protected $purpose;
 
     /**
      * A sub property of participant. The participant who is at the receiving end of the action.
      *
      * @var Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
      */
-    private $recipient;
+    protected $recipient;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/PayAction";
+    protected $context = "http://schema.org/PayAction";
 
     /**
      * @return Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose

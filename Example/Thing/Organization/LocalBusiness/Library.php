@@ -17,8 +17,9 @@ class Library extends LocalBusiness
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Library";
+    protected $context = "http://schema.org/Library";
 
 }

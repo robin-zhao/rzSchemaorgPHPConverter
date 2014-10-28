@@ -21,26 +21,27 @@ class Vein extends Vessel
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    private $drainsTo;
+    protected $drainsTo;
 
     /**
      * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $regionDrained;
+    protected $regionDrained;
 
     /**
      * The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.
      *
      * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
-    private $tributary;
+    protected $tributary;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Vein";
+    protected $context = "http://schema.org/Vein";
 
     /**
      * @return Example\Thing\MedicalEntity\AnatomicalStructure\Vessel

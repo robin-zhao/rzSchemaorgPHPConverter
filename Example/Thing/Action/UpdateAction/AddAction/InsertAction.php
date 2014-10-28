@@ -21,12 +21,13 @@ class InsertAction extends AddAction
      *
      * @var Example\Thing\Place|Float
      */
-    private $toLocation;
+    protected $toLocation;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/InsertAction";
+    protected $context = "http://schema.org/InsertAction";
 
     /**
      * @return Example\Thing\Place|Float

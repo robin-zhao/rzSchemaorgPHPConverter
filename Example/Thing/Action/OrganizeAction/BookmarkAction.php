@@ -17,8 +17,9 @@ class BookmarkAction extends OrganizeAction
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/BookmarkAction";
+    protected $context = "http://schema.org/BookmarkAction";
 
 }

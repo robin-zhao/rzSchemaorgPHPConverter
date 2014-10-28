@@ -21,89 +21,90 @@ class DietarySupplement extends MedicalTherapy
      *
      * @var String
      */
-    private $activeIngredient;
+    protected $activeIngredient;
 
     /**
      * Descriptive information establishing a historical perspective on the supplement. May include the rationale for the name, the population where the supplement first came to prominence, etc.
      *
      * @var String
      */
-    private $background;
+    protected $background;
 
     /**
      * A dosage form in which this drug/supplement is available, e.g. 'tablet', 'suspension', 'injection'.
      *
      * @var String
      */
-    private $dosageForm;
+    protected $dosageForm;
 
     /**
      * True if this item's name is a proprietary/brand name (vs. generic name).
      *
      * @var Boolean
      */
-    private $isProprietary;
+    protected $isProprietary;
 
     /**
      * The drug or supplement's legal status, including any controlled substance schedules that apply.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
      */
-    private $legalStatus;
+    protected $legalStatus;
 
     /**
      * The manufacturer of the product.
      *
      * @var Example\Thing\Organization
      */
-    private $manufacturer;
+    protected $manufacturer;
 
     /**
      * Recommended intake of this supplement for a given population as defined by a specific recommending authority.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\MaximumDoseSchedule
      */
-    private $maximumIntake;
+    protected $maximumIntake;
 
     /**
      * The specific biochemical interaction through which this drug or supplement produces its pharmacological effect.
      *
      * @var String
      */
-    private $mechanismOfAction;
+    protected $mechanismOfAction;
 
     /**
      * The generic name of this drug or supplement.
      *
      * @var String
      */
-    private $nonProprietaryName;
+    protected $nonProprietaryName;
 
     /**
      * Recommended intake of this supplement for a given population as defined by a specific recommending authority.
      *
      * @var Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\RecommendedDoseSchedule
      */
-    private $recommendedIntake;
+    protected $recommendedIntake;
 
     /**
      * Any potential safety concern associated with the supplement. May include interactions with other drugs and foods, pregnancy, breastfeeding, known adverse reactions, and documented efficacy of the supplement.
      *
      * @var String
      */
-    private $safetyConsideration;
+    protected $safetyConsideration;
 
     /**
      * Characteristics of the population for which this is intended, or which typically uses it, e.g. 'adults'.
      *
      * @var String
      */
-    private $targetPopulation;
+    protected $targetPopulation;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/DietarySupplement";
+    protected $context = "http://schema.org/DietarySupplement";
 
     /**
      * @return String

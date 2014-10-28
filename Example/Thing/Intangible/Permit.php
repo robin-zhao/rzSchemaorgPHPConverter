@@ -21,54 +21,55 @@ class Permit extends Intangible
      *
      * @var Example\Thing\Organization
      */
-    private $issuedBy;
+    protected $issuedBy;
 
     /**
      * The service through with the permit was granted.
      *
      * @var Example\Thing\Intangible\Service
      */
-    private $issuedThrough;
+    protected $issuedThrough;
 
     /**
      * The target audience for this permit.
      *
      * @var Example\Thing\Intangible\Audience
      */
-    private $permitAudience;
+    protected $permitAudience;
 
     /**
      * The time validity of the permit.
      *
      * @var Example\Thing\Intangible\Quantity\Duration
      */
-    private $validFor;
+    protected $validFor;
 
     /**
      * The date when the item becomes valid.
      *
      * @var DateTime
      */
-    private $validFrom;
+    protected $validFrom;
 
     /**
      * The geographic area where the permit is valid.
      *
      * @var Example\Thing\Place\AdministrativeArea
      */
-    private $validIn;
+    protected $validIn;
 
     /**
      * The date when the item is no longer valid.
      *
      * @var DateTime
      */
-    private $validUntil;
+    protected $validUntil;
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Permit";
+    protected $context = "http://schema.org/Permit";
 
     /**
      * @return Example\Thing\Organization

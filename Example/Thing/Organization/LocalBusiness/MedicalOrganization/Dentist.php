@@ -17,8 +17,9 @@ class Dentist extends MedicalOrganization
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/Dentist";
+    protected $context = "http://schema.org/Dentist";
 
 }

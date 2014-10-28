@@ -17,8 +17,9 @@ class InsuranceAgency extends FinancialService
 {
 
     /**
-     * schema.org url
+     * schema.org context url
+     * @var String
      */
-    private $url = "http://schema.org/InsuranceAgency";
+    protected $context = "http://schema.org/InsuranceAgency";
 
 }
