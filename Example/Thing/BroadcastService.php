@@ -14,21 +14,21 @@ class BroadcastService extends Thing
     /**
      * The area within which users can expect to reach the broadcast service.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $area;
 
     /**
      * The organization owning or operating the broadcast service.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $broadcaster;
 
     /**
      * A broadcast service to which the broadcast service may belong to such as regional variations of a national channel.
      *
-     * @var BroadcastService
+     * @var Example\Thing\BroadcastService
      */
     private $parentService;
 

@@ -14,7 +14,7 @@ class LendAction extends TransferAction
     /**
      * A sub property of participant. The person that borrows the object being lent.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $borrower;
 

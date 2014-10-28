@@ -14,7 +14,7 @@ class PerformAction extends PlayAction
     /**
      * A sub property of location. The entertainment business where the action occurred.
      *
-     * @var EntertainmentBusiness
+     * @var Example\Thing\Organization\LocalBusiness\EntertainmentBusiness
      */
     private $entertainmentBusiness;
 

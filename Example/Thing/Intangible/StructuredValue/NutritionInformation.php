@@ -14,49 +14,49 @@ class NutritionInformation extends StructuredValue
     /**
      * The number of calories
      *
-     * @var Energy
+     * @var Example\Thing\Intangible\Quantity\Energy
      */
     private $calories;
 
     /**
      * The number of grams of carbohydrates.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $carbohydrateContent;
 
     /**
      * The number of milligrams of cholesterol.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $cholesterolContent;
 
     /**
      * The number of grams of fat.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $fatContent;
 
     /**
      * The number of grams of fiber.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $fiberContent;
 
     /**
      * The number of grams of protein.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $proteinContent;
 
     /**
      * The number of grams of saturated fat.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $saturatedFatContent;
 
@@ -70,28 +70,28 @@ class NutritionInformation extends StructuredValue
     /**
      * The number of milligrams of sodium.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $sodiumContent;
 
     /**
      * The number of grams of sugar.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $sugarContent;
 
     /**
      * The number of grams of trans fat.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $transFatContent;
 
     /**
      * The number of grams of unsaturated fat.
      *
-     * @var Mass
+     * @var Example\Thing\Intangible\Quantity\Mass
      */
     private $unsaturatedFatContent;
 

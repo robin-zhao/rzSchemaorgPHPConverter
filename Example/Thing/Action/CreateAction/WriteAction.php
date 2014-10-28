@@ -14,7 +14,7 @@ class WriteAction extends CreateAction
     /**
      * A sub property of instrument. The languaged used on this action.
      *
-     * @var Language
+     * @var Example\Thing\Intangible\Language
      */
     private $language;
 

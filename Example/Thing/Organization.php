@@ -14,42 +14,42 @@ class Organization extends Thing
     /**
      * Physical address of the item.
      *
-     * @var PostalAddress
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
     private $address;
 
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
-     * @var AggregateRating
+     * @var Example\Thing\Intangible\Rating\AggregateRating
      */
     private $aggregateRating;
 
     /**
      * The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
      *
-     * @var Organization|Brand
+     * @var Example\Thing\Organization|Example\Thing\Intangible\Brand
      */
     private $brand;
 
     /**
      * A contact point for a person or organization.
      *
-     * @var ContactPoint
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint
      */
     private $contactPoint;
 
     /**
      * A contact point for a person or organization (legacy spelling; see singular form, contactPoint).
      *
-     * @var ContactPoint
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint
      */
     private $contactPoints;
 
     /**
      * A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, or a bakery with a cafe.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $department;
 
@@ -70,28 +70,28 @@ class Organization extends Thing
     /**
      * Someone working for this organization.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $employee;
 
     /**
      * People working for this organization. (legacy spelling; see singular form, employee)
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $employees;
 
     /**
      * Upcoming or past event associated with this place or organization.
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $event;
 
     /**
      * Upcoming or past events associated with this place or organization (legacy spelling; see singular form, event).
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $events;
 
@@ -105,14 +105,14 @@ class Organization extends Thing
     /**
      * A person who founded this organization.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $founder;
 
     /**
      * A person who founded this organization (legacy spelling; see singular form, founder).
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $founders;
 
@@ -133,7 +133,7 @@ class Organization extends Thing
     /**
      * Points-of-Sales operated by the organization or person.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $hasPOS;
 
@@ -161,35 +161,35 @@ class Organization extends Thing
     /**
      * The location of the event, organization or action.
      *
-     * @var PostalAddress|Place
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress|Example\Thing\Place
      */
     private $location;
 
     /**
      * A logo associated with an organization.
      *
-     * @var String|ImageObject
+     * @var String|Example\Thing\CreativeWork\MediaObject\ImageObject
      */
     private $logo;
 
     /**
      * A pointer to products or services offered by the organization or person.
      *
-     * @var Offer
+     * @var Example\Thing\Intangible\Offer
      */
     private $makesOffer;
 
     /**
      * A member of this organization.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $member;
 
     /**
      * A member of this organization (legacy spelling; see singular form, member).
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $members;
 
@@ -203,35 +203,35 @@ class Organization extends Thing
     /**
      * Products owned by the organization or person.
      *
-     * @var OwnershipInfo|Product
+     * @var Example\Thing\Intangible\StructuredValue\OwnershipInfo|Example\Thing\Product
      */
     private $owns;
 
     /**
      * A review of the item.
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $reviews;
 
     /**
      * A pointer to products or services sought by the organization or person (demand).
      *
-     * @var Demand
+     * @var Example\Thing\Intangible\Demand
      */
     private $seeks;
 
     /**
      * A relationship between two organizations where the first includes the second, e.g., as a subsidiary. See also: the more specific 'department' property.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $subOrganization;
 

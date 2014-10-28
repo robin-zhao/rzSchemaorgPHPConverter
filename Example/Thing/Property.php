@@ -14,14 +14,14 @@ class Property extends Thing
     /**
      * Relates a property to a class that is (one of) the type(s) the property is expected to be used on.
      *
-     * @var Class
+     * @var Example\Thing\Class
      */
     private $domainIncludes;
 
     /**
      * Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.
      *
-     * @var Class
+     * @var Example\Thing\Class
      */
     private $rangeIncludes;
 

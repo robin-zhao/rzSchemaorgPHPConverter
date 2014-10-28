@@ -14,14 +14,14 @@ class ReplaceAction extends UpdateAction
     /**
      * A sub property of object. The object that is being replaced.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $replacee;
 
     /**
      * A sub property of object. The object that replaces.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $replacer;
 

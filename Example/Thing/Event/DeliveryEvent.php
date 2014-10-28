@@ -35,7 +35,7 @@ class DeliveryEvent extends Event
     /**
      * Method used for delivery or shipping.
      *
-     * @var DeliveryMethod
+     * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
     private $hasDeliveryMethod;
 

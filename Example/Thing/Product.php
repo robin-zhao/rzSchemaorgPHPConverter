@@ -14,21 +14,21 @@ class Product extends Thing
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
-     * @var AggregateRating
+     * @var Example\Thing\Intangible\Rating\AggregateRating
      */
     private $aggregateRating;
 
     /**
      * The intended audience of the item, i.e. the group for whom the item was created.
      *
-     * @var Audience
+     * @var Example\Thing\Intangible\Audience
      */
     private $audience;
 
     /**
      * The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
      *
-     * @var Organization|Brand
+     * @var Example\Thing\Organization|Example\Thing\Intangible\Brand
      */
     private $brand;
 
@@ -42,7 +42,7 @@ class Product extends Thing
     /**
      * The depth of the product.
      *
-     * @var Distance|QuantitativeValue
+     * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $depth;
 
@@ -70,63 +70,63 @@ class Product extends Thing
     /**
      * The height of the item.
      *
-     * @var Distance|QuantitativeValue
+     * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $height;
 
     /**
      * A pointer to another product (or multiple products) for which this product is an accessory or spare part.
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $isAccessoryOrSparePartFor;
 
     /**
      * A pointer to another product (or multiple products) for which this product is a consumable.
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $isConsumableFor;
 
     /**
      * A pointer to another, somehow related product (or multiple products).
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $isRelatedTo;
 
     /**
      * A pointer to another, functionally similar product (or multiple products).
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $isSimilarTo;
 
     /**
      * A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.
      *
-     * @var OfferItemCondition
+     * @var Example\Thing\Intangible\Enumeration\OfferItemCondition
      */
     private $itemCondition;
 
     /**
      * A logo associated with an organization.
      *
-     * @var String|ImageObject
+     * @var String|Example\Thing\CreativeWork\MediaObject\ImageObject
      */
     private $logo;
 
     /**
      * The manufacturer of the product.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $manufacturer;
 
     /**
      * The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.
      *
-     * @var ProductModel|String
+     * @var Example\Thing\Product\ProductModel|String
      */
     private $model;
 
@@ -140,7 +140,7 @@ class Product extends Thing
     /**
      * An offer to transfer some rights to an item or to provide a service—for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.
      *
-     * @var Offer
+     * @var Example\Thing\Intangible\Offer
      */
     private $offers;
 
@@ -161,14 +161,14 @@ class Product extends Thing
     /**
      * A review of the item.
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $reviews;
 
@@ -182,14 +182,14 @@ class Product extends Thing
     /**
      * The weight of the product.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $weight;
 
     /**
      * The width of the item.
      *
-     * @var Distance|QuantitativeValue
+     * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $width;
 

@@ -14,28 +14,28 @@ class Permit extends Intangible
     /**
      * The organization issuing the permit.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $issuedBy;
 
     /**
      * The service through with the permit was granted.
      *
-     * @var Service
+     * @var Example\Thing\Intangible\Service
      */
     private $issuedThrough;
 
     /**
      * The target audience for this permit.
      *
-     * @var Audience
+     * @var Example\Thing\Intangible\Audience
      */
     private $permitAudience;
 
     /**
      * The time validity of the permit.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $validFor;
 
@@ -49,7 +49,7 @@ class Permit extends Intangible
     /**
      * The geographic area where the permit is valid.
      *
-     * @var AdministrativeArea
+     * @var Example\Thing\Place\AdministrativeArea
      */
     private $validIn;
 

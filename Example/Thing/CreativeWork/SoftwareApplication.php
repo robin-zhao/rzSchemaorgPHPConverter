@@ -133,7 +133,7 @@ class SoftwareApplication extends CreativeWork
     /**
      * A link to a screenshot image of the app.
      *
-     * @var ImageObject|String
+     * @var Example\Thing\CreativeWork\MediaObject\ImageObject|String
      */
     private $screenshot;
 

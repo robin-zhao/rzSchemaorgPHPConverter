@@ -14,28 +14,28 @@ class Nerve extends AnatomicalStructure
     /**
      * The branches that delineate from the nerve bundle.
      *
-     * @var AnatomicalStructure|Nerve
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalStructure\Nerve
      */
     private $branch;
 
     /**
      * The neurological pathway extension that involves muscle control.
      *
-     * @var Muscle
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure\Muscle
      */
     private $nerveMotor;
 
     /**
      * The neurological pathway extension that inputs and sends information to the brain or spinal cord.
      *
-     * @var AnatomicalStructure|SuperficialAnatomy
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\SuperficialAnatomy
      */
     private $sensoryUnit;
 
     /**
      * The neurological pathway that originates the neurons.
      *
-     * @var BrainStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure\BrainStructure
      */
     private $sourcedFrom;
 

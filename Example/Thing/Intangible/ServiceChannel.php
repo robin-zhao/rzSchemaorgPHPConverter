@@ -14,49 +14,49 @@ class ServiceChannel extends Intangible
     /**
      * A language someone may use with the item.
      *
-     * @var Language
+     * @var Example\Thing\Intangible\Language
      */
     private $availableLanguage;
 
     /**
      * Estimated processing time for the service using this channel.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $processingTime;
 
     /**
      * The service provided by this channel.
      *
-     * @var Service
+     * @var Example\Thing\Intangible\Service
      */
     private $providesService;
 
     /**
      * The location (e.g. civic structure, local business, etc.) where a person can go to access the service.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $serviceLocation;
 
     /**
      * The phone number to use to access the service.
      *
-     * @var ContactPoint
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint
      */
     private $servicePhone;
 
     /**
      * The address for accessing the service by mail.
      *
-     * @var PostalAddress
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
     private $servicePostalAddress;
 
     /**
      * The number to access the service by text message.
      *
-     * @var ContactPoint
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint
      */
     private $serviceSmsNumber;
 

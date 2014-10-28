@@ -14,7 +14,7 @@ class MedicalTest extends MedicalEntity
     /**
      * Drugs that affect the test's results.
      *
-     * @var Drug
+     * @var Example\Thing\MedicalEntity\MedicalTherapy\Drug
      */
     private $affectedBy;
 
@@ -28,21 +28,21 @@ class MedicalTest extends MedicalEntity
     /**
      * A sign detected by the test.
      *
-     * @var MedicalSign
+     * @var Example\Thing\MedicalEntity\MedicalSignOrSymptom\MedicalSign
      */
     private $signDetected;
 
     /**
      * A condition the test is used to diagnose.
      *
-     * @var MedicalCondition
+     * @var Example\Thing\MedicalEntity\MedicalCondition
      */
     private $usedToDiagnose;
 
     /**
      * Device used to perform the test.
      *
-     * @var MedicalDevice
+     * @var Example\Thing\MedicalEntity\MedicalDevice
      */
     private $usesDevice;
 

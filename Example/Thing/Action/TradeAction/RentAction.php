@@ -14,14 +14,14 @@ class RentAction extends TradeAction
     /**
      * A sub property of participant. The owner of the real estate property. Sub property of destination or participant?
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $landlord;
 
     /**
      * A sub property of participant. The real estate agent involved in the action.
      *
-     * @var RealEstateAgent
+     * @var Example\Thing\Organization\LocalBusiness\RealEstateAgent
      */
     private $realEstateAgent;
 

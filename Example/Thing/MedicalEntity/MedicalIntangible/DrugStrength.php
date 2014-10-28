@@ -21,7 +21,7 @@ class DrugStrength extends MedicalIntangible
     /**
      * The location in which the strength is available.
      *
-     * @var AdministrativeArea
+     * @var Example\Thing\Place\AdministrativeArea
      */
     private $availableIn;
 

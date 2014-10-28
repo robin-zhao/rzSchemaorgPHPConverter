@@ -14,42 +14,42 @@ class MedicalEntity extends Thing
     /**
      * A medical code for the entity, taken from a controlled vocabulary or ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc.
      *
-     * @var MedicalCode
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalCode
      */
     private $code;
 
     /**
      * A medical guideline related to this entity.
      *
-     * @var MedicalGuideline
+     * @var Example\Thing\MedicalEntity\MedicalGuideline
      */
     private $guideline;
 
     /**
      * The system of medicine that includes this MedicalEntity, for example 'evidence-based', 'homeopathic', 'chiropractic', etc.
      *
-     * @var MedicineSystem
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicineSystem
      */
     private $medicineSystem;
 
     /**
      * If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $recognizingAuthority;
 
     /**
      * If applicable, a medical specialty in which this entity is relevant.
      *
-     * @var MedicalSpecialty
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
     private $relevantSpecialty;
 
     /**
      * A medical study or trial related to this entity.
      *
-     * @var MedicalStudy
+     * @var Example\Thing\MedicalEntity\MedicalStudy
      */
     private $study;
 

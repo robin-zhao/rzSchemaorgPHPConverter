@@ -14,21 +14,21 @@ class LymphaticVessel extends Vessel
     /**
      * The vasculature the lymphatic structure originates, or afferents, from.
      *
-     * @var Vessel
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
     private $originatesFrom;
 
     /**
      * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
      *
-     * @var AnatomicalSystem|AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $regionDrained;
 
     /**
      * The vasculature the lymphatic structure runs, or efferents, to.
      *
-     * @var Vessel
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
     private $runsTo;
 

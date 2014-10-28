@@ -21,7 +21,7 @@ class PublicationEvent extends Event
     /**
      * A broadcast service associated with the publication event
      *
-     * @var BroadcastService
+     * @var Example\Thing\BroadcastService
      */
     private $publishedOn;
 

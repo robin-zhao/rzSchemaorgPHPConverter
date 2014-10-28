@@ -14,7 +14,7 @@ class PeopleAudience extends Audience
     /**
      * Expectations for health conditions of target audience
      *
-     * @var MedicalCondition
+     * @var Example\Thing\MedicalEntity\MedicalCondition
      */
     private $healthCondition;
 

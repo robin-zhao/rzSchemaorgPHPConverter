@@ -14,7 +14,7 @@ class DrugLegalStatus extends MedicalIntangible
     /**
      * The location in which the status applies.
      *
-     * @var AdministrativeArea
+     * @var Example\Thing\Place\AdministrativeArea
      */
     private $applicableLocation;
 

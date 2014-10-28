@@ -14,7 +14,7 @@ class DiagnosticLab extends MedicalOrganization
     /**
      * A diagnostic test or procedure offered by this lab.
      *
-     * @var MedicalTest
+     * @var Example\Thing\MedicalEntity\MedicalTest
      */
     private $availableTest;
 

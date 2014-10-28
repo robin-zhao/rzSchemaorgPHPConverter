@@ -14,7 +14,7 @@ class MedicalTestPanel extends MedicalTest
     /**
      * A component test of the panel.
      *
-     * @var MedicalTest
+     * @var Example\Thing\MedicalEntity\MedicalTest
      */
     private $subTest;
 

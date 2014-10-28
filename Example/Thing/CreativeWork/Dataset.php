@@ -14,21 +14,21 @@ class Dataset extends CreativeWork
     /**
      * A data catalog which contains a dataset.
      *
-     * @var DataCatalog
+     * @var Example\Thing\CreativeWork\DataCatalog
      */
     private $catalog;
 
     /**
      * A downloadable form of this dataset, at a specific location, in a specific format.
      *
-     * @var DataDownload
+     * @var Example\Thing\CreativeWork\MediaObject\DataDownload
      */
     private $distribution;
 
     /**
      * The range of spatial applicability of a dataset, e.g. for a dataset of New York weather, the state of New York.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $spatial;
 

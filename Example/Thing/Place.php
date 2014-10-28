@@ -14,35 +14,35 @@ class Place extends Thing
     /**
      * Physical address of the item.
      *
-     * @var PostalAddress
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
     private $address;
 
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
-     * @var AggregateRating
+     * @var Example\Thing\Intangible\Rating\AggregateRating
      */
     private $aggregateRating;
 
     /**
      * The basic containment relation between places.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $containedIn;
 
     /**
      * Upcoming or past event associated with this place or organization.
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $event;
 
     /**
      * Upcoming or past events associated with this place or organization (legacy spelling; see singular form, event).
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $events;
 
@@ -56,7 +56,7 @@ class Place extends Thing
     /**
      * The geo coordinates of the place.
      *
-     * @var GeoCoordinates|GeoShape
+     * @var Example\Thing\Intangible\StructuredValue\GeoCoordinates|Example\Thing\Intangible\StructuredValue\GeoShape
      */
     private $geo;
 
@@ -84,7 +84,7 @@ class Place extends Thing
     /**
      * A logo associated with an organization.
      *
-     * @var String|ImageObject
+     * @var String|Example\Thing\CreativeWork\MediaObject\ImageObject
      */
     private $logo;
 
@@ -105,35 +105,35 @@ class Place extends Thing
     /**
      * The opening hours of a certain place.
      *
-     * @var OpeningHoursSpecification
+     * @var Example\Thing\Intangible\StructuredValue\OpeningHoursSpecification
      */
     private $openingHoursSpecification;
 
     /**
      * A photograph of this place.
      *
-     * @var ImageObject|Photograph
+     * @var Example\Thing\CreativeWork\MediaObject\ImageObject|Example\Thing\CreativeWork\Photograph
      */
     private $photo;
 
     /**
      * Photographs of this place (legacy spelling; see singular form, photo).
      *
-     * @var ImageObject|Photograph
+     * @var Example\Thing\CreativeWork\MediaObject\ImageObject|Example\Thing\CreativeWork\Photograph
      */
     private $photos;
 
     /**
      * A review of the item.
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $reviews;
 

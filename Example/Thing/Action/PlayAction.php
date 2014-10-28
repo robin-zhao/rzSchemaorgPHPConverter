@@ -14,14 +14,14 @@ class PlayAction extends Action
     /**
      * The intended audience of the item, i.e. the group for whom the item was created.
      *
-     * @var Audience
+     * @var Example\Thing\Intangible\Audience
      */
     private $audience;
 
     /**
      * Upcoming or past event associated with this place or organization.
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $event;
 

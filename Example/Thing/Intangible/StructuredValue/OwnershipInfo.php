@@ -14,7 +14,7 @@ class OwnershipInfo extends StructuredValue
     /**
      * The organization or person from which the product was acquired.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $acquiredFrom;
 
@@ -35,7 +35,7 @@ class OwnershipInfo extends StructuredValue
     /**
      * The product that this structured value is referring to.
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $typeOfGood;
 

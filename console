@@ -22,6 +22,7 @@ $cmd->setCode(function(InputInterface $input, OutputInterface $output) {
     $json = json_decode(file_get_contents($localFile));
 
     ClassBuilder::setPropertyConf($json->properties);
+    ClassBuilder::setTypeConf($json->types);
 
     foreach ((array) $json->types as $each) {
         $classBuilder = new ClassBuilder($each);
@@ -43,6 +44,7 @@ class ClassBuilder
     private $file;
     private $url;
     private static $propertyConf = array();
+    private static $typeConf;
 
     private $typeMapper = array(
         'text' => 'String',
@@ -52,13 +54,17 @@ class ClassBuilder
         'boolean' => 'Boolean',
         'datetime' => 'DateTime',
         'float' => 'Float',
-        'Integer' => 'Integer',
+        'integer' => 'Integer',
         'number' => 'Float',
     );
 
     public static function setPropertyConf($properties)
     {
         static::$propertyConf = $properties;
+    }
+    public static function setTypeConf($type)
+    {
+        static::$typeConf = $type;
     }
 
     public function __construct($object)
@@ -163,7 +169,20 @@ class ClassBuilder
             if(array_key_exists(strtolower($range), $this->typeMapper)) {
                 $rangeName []= $this->typeMapper[strtolower($range)];
             } else {
-                $rangeName []= $range; // @todo class name
+
+                if(!property_exists(self::$typeConf, $range)) {
+                    var_dump($range) ;
+                }
+
+                $ancestors = self::$typeConf->$range->ancestors;
+                $ancestors[] = $range;
+                if (count($ancestors) > 0) {
+                    $namespace = $this->rootNamespace . '\\' . implode('\\', $ancestors);
+                } else {
+                    $namespace = $this->rootNamespace;
+                }
+
+                $rangeName []= $namespace; // @todo class name
             }
         }
         $rangeString = implode('|', $rangeName);

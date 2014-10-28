@@ -21,21 +21,21 @@ class SuperficialAnatomy extends MedicalEntity
     /**
      * Anatomical systems or structures that relate to the superficial anatomy.
      *
-     * @var AnatomicalStructure|AnatomicalSystem
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalSystem
      */
     private $relatedAnatomy;
 
     /**
      * A medical condition associated with this anatomy.
      *
-     * @var MedicalCondition
+     * @var Example\Thing\MedicalEntity\MedicalCondition
      */
     private $relatedCondition;
 
     /**
      * A medical therapy related to this anatomy.
      *
-     * @var MedicalTherapy
+     * @var Example\Thing\MedicalEntity\MedicalTherapy
      */
     private $relatedTherapy;
 

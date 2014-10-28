@@ -14,28 +14,28 @@ class ExerciseAction extends PlayAction
     /**
      * A sub property of location. The course where this action was taken.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $course;
 
     /**
      * A sub property of instrument. The died used in this action.
      *
-     * @var Diet
+     * @var Example\Thing\CreativeWork\Diet
      */
     private $diet;
 
     /**
      * A sub property of asset. The distance travelled.
      *
-     * @var Distance
+     * @var Example\Thing\Intangible\Quantity\Distance
      */
     private $distance;
 
     /**
      * A sub property of instrument. The exercise plan used on this action.
      *
-     * @var ExercisePlan
+     * @var Example\Thing\CreativeWork\ExercisePlan
      */
     private $exercisePlan;
 
@@ -49,42 +49,42 @@ class ExerciseAction extends PlayAction
     /**
      * A sub property of location. The original location of the object or the agent before the action.
      *
-     * @var Place|Float
+     * @var Example\Thing\Place|Float
      */
     private $fromLocation;
 
     /**
      * A sub property of participant. The oponent on this action.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $oponent;
 
     /**
      * A sub property of location. The sports activity location where this action occurred.
      *
-     * @var SportsActivityLocation
+     * @var Example\Thing\Organization\LocalBusiness\SportsActivityLocation
      */
     private $sportsActivityLocation;
 
     /**
      * A sub property of location. The sports event where this action occurred.
      *
-     * @var SportsEvent
+     * @var Example\Thing\Event\SportsEvent
      */
     private $sportsEvent;
 
     /**
      * A sub property of participant. The sports team that participated on this action.
      *
-     * @var SportsTeam
+     * @var Example\Thing\Organization\SportsTeam
      */
     private $sportsTeam;
 
     /**
      * A sub property of location. The final location of the object or the agent after the action.
      *
-     * @var Place|Float
+     * @var Example\Thing\Place|Float
      */
     private $toLocation;
 

@@ -14,14 +14,14 @@ class DDxElement extends MedicalIntangible
     /**
      * One or more alternative conditions considered in the differential diagnosis process.
      *
-     * @var MedicalCondition
+     * @var Example\Thing\MedicalEntity\MedicalCondition
      */
     private $diagnosis;
 
     /**
      * One of a set of signs and symptoms that can be used to distinguish this diagnosis from others in the differential diagnosis.
      *
-     * @var MedicalSignOrSymptom
+     * @var Example\Thing\MedicalEntity\MedicalSignOrSymptom
      */
     private $distinguishingSign;
 

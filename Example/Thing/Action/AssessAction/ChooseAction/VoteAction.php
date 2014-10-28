@@ -14,7 +14,7 @@ class VoteAction extends ChooseAction
     /**
      * A sub property of object. The candidate subject of this action.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $candidate;
 

@@ -21,21 +21,21 @@ class Person extends Thing
     /**
      * Physical address of the item.
      *
-     * @var PostalAddress
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
     private $address;
 
     /**
      * An organization that this person is affiliated with. For example, a school/university, a club, or a team.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $affiliation;
 
     /**
      * An educational organizations that the person is an alumni of.
      *
-     * @var EducationalOrganization
+     * @var Example\Thing\Organization\EducationalOrganization
      */
     private $alumniOf;
 
@@ -63,42 +63,42 @@ class Person extends Thing
     /**
      * The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
      *
-     * @var Organization|Brand
+     * @var Example\Thing\Organization|Example\Thing\Intangible\Brand
      */
     private $brand;
 
     /**
      * A child of the person.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $children;
 
     /**
      * A colleague of the person.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $colleague;
 
     /**
      * A colleague of the person (legacy spelling; see singular form, colleague).
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $colleagues;
 
     /**
      * A contact point for a person or organization.
      *
-     * @var ContactPoint
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint
      */
     private $contactPoint;
 
     /**
      * A contact point for a person or organization (legacy spelling; see singular form, contactPoint).
      *
-     * @var ContactPoint
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint
      */
     private $contactPoints;
 
@@ -140,7 +140,7 @@ class Person extends Thing
     /**
      * The most generic uni-directional social relation.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $follows;
 
@@ -168,14 +168,14 @@ class Person extends Thing
     /**
      * Points-of-Sales operated by the organization or person.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $hasPOS;
 
     /**
      * A contact location for a person's residence.
      *
-     * @var ContactPoint|Place
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint|Example\Thing\Place
      */
     private $homeLocation;
 
@@ -217,21 +217,21 @@ class Person extends Thing
     /**
      * The most generic bi-directional social/work relation.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $knows;
 
     /**
      * A pointer to products or services offered by the organization or person.
      *
-     * @var Offer
+     * @var Example\Thing\Intangible\Offer
      */
     private $makesOffer;
 
     /**
      * An organization to which the person belongs.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $memberOf;
 
@@ -245,70 +245,70 @@ class Person extends Thing
     /**
      * Nationality of the person.
      *
-     * @var Country
+     * @var Example\Thing\Place\AdministrativeArea\Country
      */
     private $nationality;
 
     /**
      * Products owned by the organization or person.
      *
-     * @var OwnershipInfo|Product
+     * @var Example\Thing\Intangible\StructuredValue\OwnershipInfo|Example\Thing\Product
      */
     private $owns;
 
     /**
      * A parent of this person.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $parent;
 
     /**
      * A parents of the person (legacy spelling; see singular form, parent).
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $parents;
 
     /**
      * Event that this person is a performer or participant in.
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $performerIn;
 
     /**
      * The most generic familial relation.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $relatedTo;
 
     /**
      * A pointer to products or services sought by the organization or person (demand).
      *
-     * @var Demand
+     * @var Example\Thing\Intangible\Demand
      */
     private $seeks;
 
     /**
      * A sibling of the person.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $sibling;
 
     /**
      * A sibling of the person (legacy spelling; see singular form, sibling).
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $siblings;
 
     /**
      * The person's spouse.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $spouse;
 
@@ -336,14 +336,14 @@ class Person extends Thing
     /**
      * A contact location for a person's place of work.
      *
-     * @var ContactPoint|Place
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint|Example\Thing\Place
      */
     private $workLocation;
 
     /**
      * Organizations that the person works for.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $worksFor;
 

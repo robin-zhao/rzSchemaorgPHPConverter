@@ -42,7 +42,7 @@ class QuantitativeValue extends StructuredValue
     /**
      * A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.
      *
-     * @var Enumeration|StructuredValue
+     * @var Example\Thing\Intangible\Enumeration|Example\Thing\Intangible\StructuredValue
      */
     private $valueReference;
 

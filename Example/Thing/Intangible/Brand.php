@@ -14,7 +14,7 @@ class Brand extends Intangible
     /**
      * A logo associated with an organization.
      *
-     * @var String|ImageObject
+     * @var String|Example\Thing\CreativeWork\MediaObject\ImageObject
      */
     private $logo;
 

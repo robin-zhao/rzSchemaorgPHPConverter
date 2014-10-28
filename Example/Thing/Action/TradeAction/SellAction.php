@@ -14,14 +14,14 @@ class SellAction extends TradeAction
     /**
      * A sub property of participant. The participant/person/organization that bought the object.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $buyer;
 
     /**
      * The warranty promise(s) included in the offer.
      *
-     * @var WarrantyPromise
+     * @var Example\Thing\Intangible\StructuredValue\WarrantyPromise
      */
     private $warrantyPromise;
 

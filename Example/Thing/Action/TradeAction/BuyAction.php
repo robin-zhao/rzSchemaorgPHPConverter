@@ -14,14 +14,14 @@ class BuyAction extends TradeAction
     /**
      * A sub property of participant. The seller.The participant/person/organization that sold the object.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $vendor;
 
     /**
      * The warranty promise(s) included in the offer.
      *
-     * @var WarrantyPromise
+     * @var Example\Thing\Intangible\StructuredValue\WarrantyPromise
      */
     private $warrantyPromise;
 

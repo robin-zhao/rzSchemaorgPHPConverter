@@ -14,14 +14,14 @@ class PhysicalActivity extends LifestyleModification
     /**
      * The anatomy of the underlying organ system or structures associated with this entity.
      *
-     * @var AnatomicalSystem|SuperficialAnatomy|AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\SuperficialAnatomy|Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $associatedAnatomy;
 
     /**
      * A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
      *
-     * @var String|PhysicalActivityCategory|Thing
+     * @var String|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalActivityCategory|Example\Thing
      */
     private $category;
 

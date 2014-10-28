@@ -14,7 +14,7 @@ class AggregateRating extends Rating
     /**
      * The item that is being reviewed/rated.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $itemReviewed;
 

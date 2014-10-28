@@ -14,21 +14,21 @@ class ParcelDelivery extends Intangible
     /**
      * The party responsible for the parcel delivery.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $carrier;
 
     /**
      * Destination address.
      *
-     * @var PostalAddress
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
     private $deliveryAddress;
 
     /**
      * New entry added as the package passes through each leg of its journey (from shipment to final delivery).
      *
-     * @var DeliveryEvent
+     * @var Example\Thing\Event\DeliveryEvent
      */
     private $deliveryStatus;
 
@@ -49,28 +49,28 @@ class ParcelDelivery extends Intangible
     /**
      * Method used for delivery or shipping.
      *
-     * @var DeliveryMethod
+     * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
     private $hasDeliveryMethod;
 
     /**
      * Item(s) being shipped.
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $itemShipped;
 
     /**
      * Shipper's address.
      *
-     * @var PostalAddress
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
     private $originAddress;
 
     /**
      * The overall order the items in this delivery were included in.
      *
-     * @var Order
+     * @var Example\Thing\Intangible\Order
      */
     private $partOfOrder;
 

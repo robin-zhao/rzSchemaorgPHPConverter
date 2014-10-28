@@ -21,21 +21,21 @@ class Clip extends CreativeWork
     /**
      * The episode to which this clip belongs.
      *
-     * @var Episode
+     * @var Example\Thing\CreativeWork\Episode
      */
     private $partOfEpisode;
 
     /**
      * The season to which this episode belongs.
      *
-     * @var Season
+     * @var Example\Thing\CreativeWork\Season
      */
     private $partOfSeason;
 
     /**
      * The series to which this episode or season belongs.
      *
-     * @var Series
+     * @var Example\Thing\CreativeWork\Series
      */
     private $partOfSeries;
 
@@ -49,7 +49,7 @@ class Clip extends CreativeWork
     /**
      * A publication event associated with the episode, clip or media object.
      *
-     * @var PublicationEvent
+     * @var Example\Thing\Event\PublicationEvent
      */
     private $publication;
 

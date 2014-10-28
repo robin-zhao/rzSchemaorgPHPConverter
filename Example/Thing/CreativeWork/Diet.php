@@ -21,7 +21,7 @@ class Diet extends CreativeWork
     /**
      * People or organizations that endorse the plan.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $endorsers;
 

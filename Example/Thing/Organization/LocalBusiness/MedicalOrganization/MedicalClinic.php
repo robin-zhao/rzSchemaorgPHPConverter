@@ -14,14 +14,14 @@ class MedicalClinic extends MedicalOrganization
     /**
      * A medical service available from this provider.
      *
-     * @var MedicalTest|MedicalProcedure|MedicalTherapy
+     * @var Example\Thing\MedicalEntity\MedicalTest|Example\Thing\MedicalEntity\MedicalProcedure|Example\Thing\MedicalEntity\MedicalTherapy
      */
     private $availableService;
 
     /**
      * A medical specialty of the provider.
      *
-     * @var MedicalSpecialty
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
     private $medicalSpecialty;
 

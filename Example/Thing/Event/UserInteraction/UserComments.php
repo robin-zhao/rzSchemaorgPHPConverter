@@ -28,14 +28,14 @@ class UserComments extends UserInteraction
     /**
      * The creator/author of this CreativeWork or UserComments. This is the same as the Author property for CreativeWork.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $creator;
 
     /**
      * Specifies the CreativeWork associated with the UserComment.
      *
-     * @var CreativeWork
+     * @var Example\Thing\CreativeWork
      */
     private $discusses;
 

@@ -56,7 +56,7 @@ class JobPosting extends Intangible
     /**
      * Organization offering the job position.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $hiringOrganization;
 
@@ -77,7 +77,7 @@ class JobPosting extends Intangible
     /**
      * A (typically single) geographic location associated with the job position.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $jobLocation;
 

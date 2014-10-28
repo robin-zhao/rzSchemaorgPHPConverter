@@ -14,7 +14,7 @@ class ExercisePlan extends CreativeWork
     /**
      * Length of time to engage in the activity.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $activityDuration;
 
@@ -63,7 +63,7 @@ class ExercisePlan extends CreativeWork
     /**
      * Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.
      *
-     * @var Energy
+     * @var Example\Thing\Intangible\Quantity\Energy
      */
     private $workload;
 

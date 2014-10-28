@@ -14,7 +14,7 @@ class FollowAction extends InteractAction
     /**
      * A sub property of object. The person or organization being followed.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $followee;
 

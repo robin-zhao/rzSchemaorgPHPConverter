@@ -14,7 +14,7 @@ class TVSeason extends CreativeWork
     /**
      * The TV series to which this episode or season belongs. (legacy form; partOfSeries is preferred)
      *
-     * @var TVSeries
+     * @var Example\Thing\CreativeWork\TVSeries
      */
     private $partOfTVSeries;
 

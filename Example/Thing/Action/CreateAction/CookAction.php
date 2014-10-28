@@ -14,21 +14,21 @@ class CookAction extends CreateAction
     /**
      * A sub property of location. The specific food establishment where the action occurreed.
      *
-     * @var FoodEstablishment|Place
+     * @var Example\Thing\Organization\LocalBusiness\FoodEstablishment|Example\Thing\Place
      */
     private $foodEstablishment;
 
     /**
      * A sub property of location. The specific food event where the action occurred.
      *
-     * @var FoodEvent
+     * @var Example\Thing\Event\FoodEvent
      */
     private $foodEvent;
 
     /**
      * A sub property of instrument. The recipe/instructions used to perform the action.
      *
-     * @var Recipe
+     * @var Example\Thing\CreativeWork\Recipe
      */
     private $recipe;
 

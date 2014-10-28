@@ -14,14 +14,14 @@ class Order extends Intangible
     /**
      * The offer(s) -- e.g., product, quantity and price combinations -- included in the order.
      *
-     * @var Offer
+     * @var Example\Thing\Intangible\Offer
      */
     private $acceptedOffer;
 
     /**
      * The billing address for the order.
      *
-     * @var PostalAddress
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
     private $billingAddress;
 
@@ -35,7 +35,7 @@ class Order extends Intangible
     /**
      * Party placing the order.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $customer;
 
@@ -70,7 +70,7 @@ class Order extends Intangible
     /**
      * The party taking the order (e.g. Amazon.com is a merchant for many sellers).
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $merchant;
 
@@ -84,7 +84,7 @@ class Order extends Intangible
     /**
      * The item ordered.
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $orderedItem;
 
@@ -98,7 +98,7 @@ class Order extends Intangible
     /**
      * The current status of the order.
      *
-     * @var OrderStatus
+     * @var Example\Thing\Intangible\Enumeration\OrderStatus
      */
     private $orderStatus;
 
@@ -112,7 +112,7 @@ class Order extends Intangible
     /**
      * The name of the credit card or other method of payment for the order.
      *
-     * @var PaymentMethod
+     * @var Example\Thing\Intangible\Enumeration\PaymentMethod
      */
     private $paymentMethod;
 

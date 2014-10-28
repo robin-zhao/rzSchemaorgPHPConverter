@@ -14,14 +14,14 @@ class DrugCost extends MedicalIntangible
     /**
      * The location in which the status applies.
      *
-     * @var AdministrativeArea
+     * @var Example\Thing\Place\AdministrativeArea
      */
     private $applicableLocation;
 
     /**
      * The category of cost, such as wholesale, retail, reimbursement cap, etc.
      *
-     * @var DrugCostCategory
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
      */
     private $costCategory;
 

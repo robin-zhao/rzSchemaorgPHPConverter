@@ -14,7 +14,7 @@ class TravelAction extends MoveAction
     /**
      * A sub property of asset. The distance travelled.
      *
-     * @var Distance
+     * @var Example\Thing\Intangible\Quantity\Distance
      */
     private $distance;
 

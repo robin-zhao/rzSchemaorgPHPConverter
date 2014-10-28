@@ -14,21 +14,21 @@ class ContactPoint extends StructuredValue
     /**
      * The location served by this contact point (e.g., a phone number intended for Europeans vs. North Americans or only within the United States.)
      *
-     * @var AdministrativeArea
+     * @var Example\Thing\Place\AdministrativeArea
      */
     private $areaServed;
 
     /**
      * A language someone may use with the item.
      *
-     * @var Language
+     * @var Example\Thing\Intangible\Language
      */
     private $availableLanguage;
 
     /**
      * An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers.)
      *
-     * @var ContactPointOption
+     * @var Example\Thing\Intangible\Enumeration\ContactPointOption
      */
     private $contactOption;
 
@@ -56,14 +56,14 @@ class ContactPoint extends StructuredValue
     /**
      * The hours during which this contact point is available.
      *
-     * @var OpeningHoursSpecification
+     * @var Example\Thing\Intangible\StructuredValue\OpeningHoursSpecification
      */
     private $hoursAvailable;
 
     /**
      * The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").
      *
-     * @var Product|String
+     * @var Example\Thing\Product|String
      */
     private $productSupported;
 

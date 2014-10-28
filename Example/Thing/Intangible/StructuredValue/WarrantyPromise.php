@@ -14,14 +14,14 @@ class WarrantyPromise extends StructuredValue
     /**
      * The duration of the warranty promise. Common unitCode values are ANN for year, MON for months, or DAY for days.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $durationOfWarranty;
 
     /**
      * The scope of the warranty promise.
      *
-     * @var WarrantyScope
+     * @var Example\Thing\Intangible\Enumeration\WarrantyScope
      */
     private $warrantyScope;
 

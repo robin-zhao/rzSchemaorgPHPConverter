@@ -21,7 +21,7 @@ class Code extends CreativeWork
     /**
      * The computer programming language.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $programmingLanguage;
 
@@ -42,7 +42,7 @@ class Code extends CreativeWork
     /**
      * Target Operating System / Product to which the code applies.  If applies to several versions, just the product name can be used.
      *
-     * @var SoftwareApplication
+     * @var Example\Thing\CreativeWork\SoftwareApplication
      */
     private $targetProduct;
 

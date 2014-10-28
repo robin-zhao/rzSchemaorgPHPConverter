@@ -21,7 +21,7 @@ class Recipe extends CreativeWork
     /**
      * The time it takes to actually cook the dish, in ISO 8601 duration format.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $cookTime;
 
@@ -35,14 +35,14 @@ class Recipe extends CreativeWork
     /**
      * Nutrition information about the recipe.
      *
-     * @var NutritionInformation
+     * @var Example\Thing\Intangible\StructuredValue\NutritionInformation
      */
     private $nutrition;
 
     /**
      * The length of time it takes to prepare the recipe, in ISO 8601 duration format.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $prepTime;
 
@@ -77,7 +77,7 @@ class Recipe extends CreativeWork
     /**
      * The total time it takes to prepare and cook the recipe, in ISO 8601 duration format.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $totalTime;
 

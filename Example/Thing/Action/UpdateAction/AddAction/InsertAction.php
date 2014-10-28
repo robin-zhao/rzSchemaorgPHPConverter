@@ -14,7 +14,7 @@ class InsertAction extends AddAction
     /**
      * A sub property of location. The final location of the object or the agent after the action.
      *
-     * @var Place|Float
+     * @var Example\Thing\Place|Float
      */
     private $toLocation;
 

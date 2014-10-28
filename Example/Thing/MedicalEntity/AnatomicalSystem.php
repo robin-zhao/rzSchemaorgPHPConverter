@@ -21,28 +21,28 @@ class AnatomicalSystem extends MedicalEntity
     /**
      * The underlying anatomical structures, such as organs, that comprise the anatomical system.
      *
-     * @var AnatomicalStructure|AnatomicalSystem
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalSystem
      */
     private $comprisedOf;
 
     /**
      * A medical condition associated with this anatomy.
      *
-     * @var MedicalCondition
+     * @var Example\Thing\MedicalEntity\MedicalCondition
      */
     private $relatedCondition;
 
     /**
      * Related anatomical structure(s) that are not part of the system but relate or connect to it, such as vascular bundles associated with an organ system.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $relatedStructure;
 
     /**
      * A medical therapy related to this anatomy.
      *
-     * @var MedicalTherapy
+     * @var Example\Thing\MedicalEntity\MedicalTherapy
      */
     private $relatedTherapy;
 

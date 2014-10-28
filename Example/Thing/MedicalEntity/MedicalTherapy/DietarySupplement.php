@@ -42,21 +42,21 @@ class DietarySupplement extends MedicalTherapy
     /**
      * The drug or supplement's legal status, including any controlled substance schedules that apply.
      *
-     * @var DrugLegalStatus
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
      */
     private $legalStatus;
 
     /**
      * The manufacturer of the product.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $manufacturer;
 
     /**
      * Recommended intake of this supplement for a given population as defined by a specific recommending authority.
      *
-     * @var MaximumDoseSchedule
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\MaximumDoseSchedule
      */
     private $maximumIntake;
 
@@ -77,7 +77,7 @@ class DietarySupplement extends MedicalTherapy
     /**
      * Recommended intake of this supplement for a given population as defined by a specific recommending authority.
      *
-     * @var RecommendedDoseSchedule
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\RecommendedDoseSchedule
      */
     private $recommendedIntake;
 

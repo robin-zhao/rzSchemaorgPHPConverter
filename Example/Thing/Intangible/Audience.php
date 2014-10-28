@@ -24,7 +24,7 @@ class Audience extends Intangible
     /**
      * The geographic area associated with the audience.
      *
-     * @var AdministrativeArea
+     * @var Example\Thing\Place\AdministrativeArea
      */
     private $geographicArea;
 

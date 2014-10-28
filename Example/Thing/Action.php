@@ -14,7 +14,7 @@ class Action extends Thing
     /**
      * The direct performer or driver of the action (animate or inanimate). e.g. *John* wrote a book.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $agent;
 
@@ -28,35 +28,35 @@ class Action extends Thing
     /**
      * The object that helped the agent perform the action. e.g. John wrote a book with *a pen*.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $instrument;
 
     /**
      * The location of the event, organization or action.
      *
-     * @var PostalAddress|Place
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress|Example\Thing\Place
      */
     private $location;
 
     /**
      * The object upon the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read *a book*.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $object;
 
     /**
      * Other co-agents that participated in the action indirectly. e.g. John wrote a book with *Steve*.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $participant;
 
     /**
      * The result produced in the action. e.g. John wrote *a book*.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $result;
 

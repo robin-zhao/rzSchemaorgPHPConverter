@@ -14,7 +14,7 @@ class ChooseAction extends AssessAction
     /**
      * A sub property of object. The options subject to this action.
      *
-     * @var String|Thing
+     * @var String|Example\Thing
      */
     private $option;
 

@@ -14,7 +14,7 @@ class AllocateAction extends OrganizeAction
     /**
      * A goal towards an action is taken. Can be concrete or abstract.
      *
-     * @var Thing|MedicalDevicePurpose
+     * @var Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
      */
     private $purpose;
 

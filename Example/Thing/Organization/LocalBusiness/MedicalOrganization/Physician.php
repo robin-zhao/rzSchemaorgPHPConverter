@@ -14,21 +14,21 @@ class Physician extends MedicalOrganization
     /**
      * A medical service available from this provider.
      *
-     * @var MedicalTest|MedicalProcedure|MedicalTherapy
+     * @var Example\Thing\MedicalEntity\MedicalTest|Example\Thing\MedicalEntity\MedicalProcedure|Example\Thing\MedicalEntity\MedicalTherapy
      */
     private $availableService;
 
     /**
      * A hospital with which the physician or office is affiliated.
      *
-     * @var Hospital
+     * @var Example\Thing\Place\CivicStructure\Hospital
      */
     private $hospitalAffiliation;
 
     /**
      * A medical specialty of the provider.
      *
-     * @var MedicalSpecialty
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
     private $medicalSpecialty;
 

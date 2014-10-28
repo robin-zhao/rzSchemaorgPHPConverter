@@ -14,14 +14,14 @@ class Event extends Thing
     /**
      * A person or organization attending the event.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $attendee;
 
     /**
      * A person attending the event (legacy spelling; see singular form, attendee).
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $attendees;
 
@@ -35,7 +35,7 @@ class Event extends Thing
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $duration;
 
@@ -49,35 +49,35 @@ class Event extends Thing
     /**
      * An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.
      *
-     * @var EventStatusType
+     * @var Example\Thing\Intangible\Enumeration\EventStatusType
      */
     private $eventStatus;
 
     /**
      * The location of the event, organization or action.
      *
-     * @var PostalAddress|Place
+     * @var Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress|Example\Thing\Place
      */
     private $location;
 
     /**
      * An offer to transfer some rights to an item or to provide a service—for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.
      *
-     * @var Offer
+     * @var Example\Thing\Intangible\Offer
      */
     private $offers;
 
     /**
      * A performer at the event—for example, a presenter, musician, musical group or actor.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $performer;
 
     /**
      * The main performer or performers of the event—for example, a presenter, musician, or actor (legacy spelling; see singular form, performer).
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $performers;
 
@@ -98,21 +98,21 @@ class Event extends Thing
     /**
      * An Event that is part of this event. For example, a conference event includes many presentations, each are a subEvent of the conference.
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $subEvent;
 
     /**
      * Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference (legacy spelling; see singular form, subEvent).
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $subEvents;
 
     /**
      * An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $superEvent;
 

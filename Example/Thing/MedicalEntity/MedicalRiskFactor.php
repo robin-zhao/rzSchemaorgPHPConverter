@@ -14,7 +14,7 @@ class MedicalRiskFactor extends MedicalEntity
     /**
      * The condition, complication, etc. influenced by this factor.
      *
-     * @var MedicalEntity
+     * @var Example\Thing\MedicalEntity
      */
     private $increasesRiskOf;
 

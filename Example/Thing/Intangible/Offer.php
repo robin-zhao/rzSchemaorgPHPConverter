@@ -14,35 +14,35 @@ class Offer extends Intangible
     /**
      * The payment method(s) accepted by seller for this offer.
      *
-     * @var PaymentMethod
+     * @var Example\Thing\Intangible\Enumeration\PaymentMethod
      */
     private $acceptedPaymentMethod;
 
     /**
      * An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).
      *
-     * @var Offer
+     * @var Example\Thing\Intangible\Offer
      */
     private $addOn;
 
     /**
      * The amount of time that is required between accepting the offer and the actual usage of the resource or service.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $advanceBookingRequirement;
 
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
-     * @var AggregateRating
+     * @var Example\Thing\Intangible\Rating\AggregateRating
      */
     private $aggregateRating;
 
     /**
      * The availability of this item—for example In stock, Out of stock, Pre-order, etc.
      *
-     * @var ItemAvailability
+     * @var Example\Thing\Intangible\Enumeration\ItemAvailability
      */
     private $availability;
 
@@ -63,70 +63,70 @@ class Offer extends Intangible
     /**
      * The place(s) from which the offer can be obtained (e.g. store locations).
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $availableAtOrFrom;
 
     /**
      * The delivery method(s) available for this offer.
      *
-     * @var DeliveryMethod
+     * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
     private $availableDeliveryMethod;
 
     /**
      * The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.
      *
-     * @var BusinessFunction
+     * @var Example\Thing\Intangible\Enumeration\BusinessFunction
      */
     private $businessFunction;
 
     /**
      * A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
      *
-     * @var String|PhysicalActivityCategory|Thing
+     * @var String|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalActivityCategory|Example\Thing
      */
     private $category;
 
     /**
      * The typical delay between the receipt of the order and the goods leaving the warehouse.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $deliveryLeadTime;
 
     /**
      * The type(s) of customers for which the given offer is valid.
      *
-     * @var BusinessEntityType
+     * @var Example\Thing\Intangible\Enumeration\BusinessEntityType
      */
     private $eligibleCustomerType;
 
     /**
      * The duration for which the given offer is valid.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $eligibleDuration;
 
     /**
      * The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $eligibleQuantity;
 
     /**
      * The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.
      *
-     * @var String|GeoShape
+     * @var String|Example\Thing\Intangible\StructuredValue\GeoShape
      */
     private $eligibleRegion;
 
     /**
      * The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.
      *
-     * @var PriceSpecification
+     * @var Example\Thing\Intangible\StructuredValue\PriceSpecification
      */
     private $eligibleTransactionVolume;
 
@@ -154,28 +154,28 @@ class Offer extends Intangible
     /**
      * This links to a node or nodes indicating the exact quantity of the products included in the offer.
      *
-     * @var TypeAndQuantityNode
+     * @var Example\Thing\Intangible\StructuredValue\TypeAndQuantityNode
      */
     private $includesObject;
 
     /**
      * The current approximate inventory level for the item or items.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $inventoryLevel;
 
     /**
      * A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.
      *
-     * @var OfferItemCondition
+     * @var Example\Thing\Intangible\Enumeration\OfferItemCondition
      */
     private $itemCondition;
 
     /**
      * The item being offered.
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $itemOffered;
 
@@ -203,7 +203,7 @@ class Offer extends Intangible
     /**
      * One or more detailed price specifications, indicating the unit price and delivery or payment charges.
      *
-     * @var PriceSpecification
+     * @var Example\Thing\Intangible\StructuredValue\PriceSpecification
      */
     private $priceSpecification;
 
@@ -217,21 +217,21 @@ class Offer extends Intangible
     /**
      * A review of the item.
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $reviews;
 
     /**
      * The organization or person making the offer.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $seller;
 
@@ -266,7 +266,7 @@ class Offer extends Intangible
     /**
      * The warranty promise(s) included in the offer.
      *
-     * @var WarrantyPromise
+     * @var Example\Thing\Intangible\StructuredValue\WarrantyPromise
      */
     private $warranty;
 

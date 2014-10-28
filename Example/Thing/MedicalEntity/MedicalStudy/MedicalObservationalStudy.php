@@ -14,7 +14,7 @@ class MedicalObservationalStudy extends MedicalStudy
     /**
      * Specifics about the observational study design (enumerated).
      *
-     * @var MedicalObservationalStudyDesign
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalObservationalStudyDesign
      */
     private $studyDesign;
 

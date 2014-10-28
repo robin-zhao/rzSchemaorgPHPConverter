@@ -14,63 +14,63 @@ class Movie extends CreativeWork
     /**
      * A cast member of the movie, tv/radio series, season, episode, or video.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $actor;
 
     /**
      * A cast member of the movie, tv/radio series, season, episode, or video. (legacy spelling; see singular form, actor)
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $actors;
 
     /**
      * The director of the movie, tv/radio episode or series.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $director;
 
     /**
      * The director of the movie, tv/radio episode or series. (legacy spelling; see singular form, director)
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $directors;
 
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $duration;
 
     /**
      * The composer of the movie or TV/radio soundtrack.
      *
-     * @var Person|MusicGroup
+     * @var Example\Thing\Person|Example\Thing\Organization\PerformingGroup\MusicGroup
      */
     private $musicBy;
 
     /**
      * The producer of the movie, tv/radio series, season, or episode, or video.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $producer;
 
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $productionCompany;
 
     /**
      * The trailer of a movie or tv/radio series, season, or episode.
      *
-     * @var VideoObject
+     * @var Example\Thing\CreativeWork\MediaObject\VideoObject
      */
     private $trailer;
 

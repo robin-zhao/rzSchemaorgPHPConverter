@@ -14,7 +14,7 @@ class SomeProducts extends Product
     /**
      * The current approximate inventory level for the item or items.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $inventoryLevel;
 

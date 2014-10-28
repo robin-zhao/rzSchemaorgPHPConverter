@@ -14,7 +14,7 @@ class EducationalOrganization extends Organization
     /**
      * Alumni of educational organization.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $alumni;
 

@@ -14,21 +14,21 @@ class Artery extends Vessel
     /**
      * The branches that comprise the arterial structure.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $arterialBranch;
 
     /**
      * The anatomical or organ system that the artery originates from.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $source;
 
     /**
      * The area to which the artery supplies blood to.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $supplyTo;
 

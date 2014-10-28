@@ -14,7 +14,7 @@ class EndorseAction extends ReactAction
     /**
      * A sub property of participant. The person/organization being supported.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $endorsee;
 

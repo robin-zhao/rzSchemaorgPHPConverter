@@ -21,14 +21,14 @@ class Season extends CreativeWork
     /**
      * An episode of a TV/radio series or season
      *
-     * @var Episode
+     * @var Example\Thing\CreativeWork\Episode
      */
     private $episode;
 
     /**
      * An episode of a TV/radio series or season (legacy spelling; see singular form, episode)
      *
-     * @var Episode
+     * @var Example\Thing\CreativeWork\Episode
      */
     private $episodes;
 
@@ -42,7 +42,7 @@ class Season extends CreativeWork
     /**
      * The series to which this episode or season belongs.
      *
-     * @var Series
+     * @var Example\Thing\CreativeWork\Series
      */
     private $partOfSeries;
 
@@ -56,14 +56,14 @@ class Season extends CreativeWork
     /**
      * The producer of the movie, tv/radio series, season, or episode, or video.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $producer;
 
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $productionCompany;
 
@@ -84,7 +84,7 @@ class Season extends CreativeWork
     /**
      * The trailer of a movie or tv/radio series, season, or episode.
      *
-     * @var VideoObject
+     * @var Example\Thing\CreativeWork\MediaObject\VideoObject
      */
     private $trailer;
 

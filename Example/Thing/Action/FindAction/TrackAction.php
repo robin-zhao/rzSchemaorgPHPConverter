@@ -14,7 +14,7 @@ class TrackAction extends FindAction
     /**
      * A sub property of instrument. The method of delivery
      *
-     * @var DeliveryMethod
+     * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
     private $deliveryMethod;
 

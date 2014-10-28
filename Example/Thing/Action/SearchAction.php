@@ -14,7 +14,7 @@ class SearchAction extends Action
     /**
      * A sub property of instrument. The query used on this action.
      *
-     * @var Class|String
+     * @var Example\Thing\Class|String
      */
     private $query;
 

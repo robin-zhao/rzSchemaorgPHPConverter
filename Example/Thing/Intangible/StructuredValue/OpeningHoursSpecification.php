@@ -21,7 +21,7 @@ class OpeningHoursSpecification extends StructuredValue
     /**
      * The day of the week for which these opening hours are valid.
      *
-     * @var DayOfWeek
+     * @var Example\Thing\Intangible\Enumeration\DayOfWeek
      */
     private $dayOfWeek;
 

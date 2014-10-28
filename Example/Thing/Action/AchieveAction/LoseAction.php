@@ -14,7 +14,7 @@ class LoseAction extends AchieveAction
     /**
      * A sub property of participant. The winner of the action.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $winner;
 

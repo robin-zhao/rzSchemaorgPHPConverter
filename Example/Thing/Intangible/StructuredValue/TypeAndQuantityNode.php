@@ -21,14 +21,14 @@ class TypeAndQuantityNode extends StructuredValue
     /**
      * The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.
      *
-     * @var BusinessFunction
+     * @var Example\Thing\Intangible\Enumeration\BusinessFunction
      */
     private $businessFunction;
 
     /**
      * The product that this structured value is referring to.
      *
-     * @var Product
+     * @var Example\Thing\Product
      */
     private $typeOfGood;
 

@@ -14,14 +14,14 @@ class Blog extends CreativeWork
     /**
      * A posting that is part of this blog.
      *
-     * @var BlogPosting
+     * @var Example\Thing\CreativeWork\Article\BlogPosting
      */
     private $blogPost;
 
     /**
      * The postings that are part of this blog (legacy spelling; see singular form, blogPost).
      *
-     * @var BlogPosting
+     * @var Example\Thing\CreativeWork\Article\BlogPosting
      */
     private $blogPosts;
 

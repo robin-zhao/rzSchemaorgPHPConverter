@@ -14,7 +14,7 @@ class MedicalGuideline extends MedicalEntity
     /**
      * Strength of evidence of the data used to formulate the guideline (enumerated).
      *
-     * @var MedicalEvidenceLevel
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalEvidenceLevel
      */
     private $evidenceLevel;
 
@@ -35,7 +35,7 @@ class MedicalGuideline extends MedicalEntity
     /**
      * The medical conditions, treatments, etc. that are the subject of the guideline.
      *
-     * @var MedicalEntity
+     * @var Example\Thing\MedicalEntity
      */
     private $guidelineSubject;
 

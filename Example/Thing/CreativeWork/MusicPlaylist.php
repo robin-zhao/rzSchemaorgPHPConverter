@@ -21,14 +21,14 @@ class MusicPlaylist extends CreativeWork
     /**
      * A music recording (track)—usually a single song.
      *
-     * @var MusicRecording
+     * @var Example\Thing\CreativeWork\MusicRecording
      */
     private $track;
 
     /**
      * A music recording (track)—usually a single song (legacy spelling; see singular form, track).
      *
-     * @var MusicRecording
+     * @var Example\Thing\CreativeWork\MusicRecording
      */
     private $tracks;
 

@@ -28,28 +28,28 @@ class MedicalStudy extends MedicalEntity
     /**
      * Sponsor of the study.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $sponsor;
 
     /**
      * The status of the study (enumerated).
      *
-     * @var MedicalStudyStatus
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalStudyStatus
      */
     private $status;
 
     /**
      * The location in which the study is taking/took place.
      *
-     * @var AdministrativeArea
+     * @var Example\Thing\Place\AdministrativeArea
      */
     private $studyLocation;
 
     /**
      * A subject of the study, i.e. one of the medical conditions, therapies, devices, drugs, etc. investigated by the study.
      *
-     * @var MedicalEntity
+     * @var Example\Thing\MedicalEntity
      */
     private $studySubject;
 

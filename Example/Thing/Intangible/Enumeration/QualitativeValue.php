@@ -14,49 +14,49 @@ class QualitativeValue extends Enumeration
     /**
      * This ordering relation for qualitative values indicates that the subject is equal to the object.
      *
-     * @var QualitativeValue
+     * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
     private $equal;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is greater than the object.
      *
-     * @var QualitativeValue
+     * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
     private $greater;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.
      *
-     * @var QualitativeValue
+     * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
     private $greaterOrEqual;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is lesser than the object.
      *
-     * @var QualitativeValue
+     * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
     private $lesser;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.
      *
-     * @var QualitativeValue
+     * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
     private $lesserOrEqual;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is not equal to the object.
      *
-     * @var QualitativeValue
+     * @var Example\Thing\Intangible\Enumeration\QualitativeValue
      */
     private $nonEqual;
 
     /**
      * A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.
      *
-     * @var Enumeration|StructuredValue
+     * @var Example\Thing\Intangible\Enumeration|Example\Thing\Intangible\StructuredValue
      */
     private $valueReference;
 

@@ -14,14 +14,14 @@ class SendAction extends TransferAction
     /**
      * A sub property of instrument. The method of delivery
      *
-     * @var DeliveryMethod
+     * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
     private $deliveryMethod;
 
     /**
      * A sub property of participant. The participant who is at the receiving end of the action.
      *
-     * @var Organization|Audience|Person
+     * @var Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
      */
     private $recipient;
 

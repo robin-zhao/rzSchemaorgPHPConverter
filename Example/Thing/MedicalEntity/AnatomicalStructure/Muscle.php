@@ -21,35 +21,35 @@ class Muscle extends AnatomicalStructure
     /**
      * The muscle whose action counteracts the specified muscle.
      *
-     * @var Muscle
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure\Muscle
      */
     private $antagonist;
 
     /**
      * The blood vessel that carries blood from the heart to the muscle.
      *
-     * @var Vessel
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
     private $bloodSupply;
 
     /**
      * The place of attachment of a muscle, or what the muscle moves.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $insertion;
 
     /**
      * The underlying innervation associated with the muscle.
      *
-     * @var Nerve
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure\Nerve
      */
     private $nerve;
 
     /**
      * The place or point where a muscle arises.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $origin;
 

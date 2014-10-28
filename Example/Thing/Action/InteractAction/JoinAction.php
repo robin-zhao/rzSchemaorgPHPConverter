@@ -14,7 +14,7 @@ class JoinAction extends InteractAction
     /**
      * Upcoming or past event associated with this place or organization.
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $event;
 

@@ -21,7 +21,7 @@ class MedicalTrial extends MedicalStudy
     /**
      * Specifics about the trial design (enumerated).
      *
-     * @var MedicalTrialDesign
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalTrialDesign
      */
     private $trialDesign;
 

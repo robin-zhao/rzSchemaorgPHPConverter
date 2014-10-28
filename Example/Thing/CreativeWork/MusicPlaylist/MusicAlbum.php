@@ -14,7 +14,7 @@ class MusicAlbum extends MusicPlaylist
     /**
      * The artist that performed this album or recording.
      *
-     * @var MusicGroup
+     * @var Example\Thing\Organization\PerformingGroup\MusicGroup
      */
     private $byArtist;
 

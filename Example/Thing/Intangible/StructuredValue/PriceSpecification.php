@@ -14,14 +14,14 @@ class PriceSpecification extends StructuredValue
     /**
      * The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $eligibleQuantity;
 
     /**
      * The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.
      *
-     * @var PriceSpecification
+     * @var Example\Thing\Intangible\StructuredValue\PriceSpecification
      */
     private $eligibleTransactionVolume;
 

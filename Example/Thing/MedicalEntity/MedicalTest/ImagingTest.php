@@ -14,7 +14,7 @@ class ImagingTest extends MedicalTest
     /**
      * Imaging technique used.
      *
-     * @var MedicalImagingTechnique
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalImagingTechnique
      */
     private $imagingTechnique;
 

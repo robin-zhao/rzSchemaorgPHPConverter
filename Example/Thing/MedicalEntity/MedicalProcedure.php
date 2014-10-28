@@ -35,7 +35,7 @@ class MedicalProcedure extends MedicalEntity
     /**
      * The type of procedure, for example Surgical, Noninvasive, or Percutaneous.
      *
-     * @var MedicalProcedureType
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalProcedureType
      */
     private $procedureType;
 

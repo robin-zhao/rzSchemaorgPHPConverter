@@ -28,14 +28,14 @@ class AnatomicalStructure extends MedicalEntity
     /**
      * Other anatomical structures to which this structure is connected.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $connectedTo;
 
     /**
      * An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.
      *
-     * @var ImageObject
+     * @var Example\Thing\CreativeWork\MediaObject\ImageObject
      */
     private $diagram;
 
@@ -49,28 +49,28 @@ class AnatomicalStructure extends MedicalEntity
     /**
      * The anatomical or organ system that this structure is part of.
      *
-     * @var AnatomicalSystem
+     * @var Example\Thing\MedicalEntity\AnatomicalSystem
      */
     private $partOfSystem;
 
     /**
      * A medical condition associated with this anatomy.
      *
-     * @var MedicalCondition
+     * @var Example\Thing\MedicalEntity\MedicalCondition
      */
     private $relatedCondition;
 
     /**
      * A medical therapy related to this anatomy.
      *
-     * @var MedicalTherapy
+     * @var Example\Thing\MedicalEntity\MedicalTherapy
      */
     private $relatedTherapy;
 
     /**
      * Component (sub-)structure(s) that comprise this anatomical structure.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $subStructure;
 

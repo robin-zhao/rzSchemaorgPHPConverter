@@ -14,7 +14,7 @@ class CreativeWork extends Thing
     /**
      * The subject matter of the content.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $about;
 
@@ -50,14 +50,14 @@ class CreativeWork extends Thing
     /**
      * Specifies the Person that is legally accountable for the CreativeWork.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $accountablePerson;
 
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
-     * @var AggregateRating
+     * @var Example\Thing\Intangible\Rating\AggregateRating
      */
     private $aggregateRating;
 
@@ -71,28 +71,28 @@ class CreativeWork extends Thing
     /**
      * The media objects that encode this creative work. This property is a synonym for encodings.
      *
-     * @var MediaObject
+     * @var Example\Thing\CreativeWork\MediaObject
      */
     private $associatedMedia;
 
     /**
      * The intended audience of the item, i.e. the group for whom the item was created.
      *
-     * @var Audience
+     * @var Example\Thing\Intangible\Audience
      */
     private $audience;
 
     /**
      * An embedded audio object.
      *
-     * @var AudioObject
+     * @var Example\Thing\CreativeWork\MediaObject\AudioObject
      */
     private $audio;
 
     /**
      * The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $author;
 
@@ -113,21 +113,21 @@ class CreativeWork extends Thing
     /**
      * A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.
      *
-     * @var CreativeWork|String
+     * @var Example\Thing\CreativeWork|String
      */
     private $citation;
 
     /**
      * Comments, typically from users, on this CreativeWork.
      *
-     * @var UserComments
+     * @var Example\Thing\Event\UserInteraction\UserComments
      */
     private $comment;
 
     /**
      * The location of the content.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $contentLocation;
 
@@ -141,14 +141,14 @@ class CreativeWork extends Thing
     /**
      * A secondary contributor to the CreativeWork.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $contributor;
 
     /**
      * The party holding the legal copyright to the CreativeWork.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $copyrightHolder;
 
@@ -162,7 +162,7 @@ class CreativeWork extends Thing
     /**
      * The creator/author of this CreativeWork or UserComments. This is the same as the Author property for CreativeWork.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $creator;
 
@@ -197,14 +197,14 @@ class CreativeWork extends Thing
     /**
      * Specifies the Person who edited the CreativeWork.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $editor;
 
     /**
      * An alignment to an established educational framework.
      *
-     * @var AlignmentObject
+     * @var Example\Thing\Intangible\AlignmentObject
      */
     private $educationalAlignment;
 
@@ -218,14 +218,14 @@ class CreativeWork extends Thing
     /**
      * A media object that encode this CreativeWork.
      *
-     * @var MediaObject
+     * @var Example\Thing\CreativeWork\MediaObject
      */
     private $encoding;
 
     /**
      * The media objects that encode this creative work (legacy spelling; see singular form, encoding).
      *
-     * @var MediaObject
+     * @var Example\Thing\CreativeWork\MediaObject
      */
     private $encodings;
 
@@ -295,28 +295,28 @@ class CreativeWork extends Thing
     /**
      * Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $mentions;
 
     /**
      * An offer to transfer some rights to an item or to provide a service—for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.
      *
-     * @var Offer
+     * @var Example\Thing\Intangible\Offer
      */
     private $offers;
 
     /**
      * The organization or agency that is providing the service.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $provider;
 
     /**
      * The publisher of the creative work.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $publisher;
 
@@ -330,21 +330,21 @@ class CreativeWork extends Thing
     /**
      * A review of the item.
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $reviews;
 
     /**
      * The Organization on whose behalf the creator was working.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $sourceOrganization;
 
@@ -365,7 +365,7 @@ class CreativeWork extends Thing
     /**
      * Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience, e.g. 'P30M', 'P1H25M'.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $timeRequired;
 
@@ -386,7 +386,7 @@ class CreativeWork extends Thing
     /**
      * An embedded video object.
      *
-     * @var VideoObject
+     * @var Example\Thing\CreativeWork\MediaObject\VideoObject
      */
     private $video;
 

@@ -14,14 +14,14 @@ class MedicalSignOrSymptom extends MedicalEntity
     /**
      * An underlying cause. More specifically, one of the causative agent(s) that are most directly responsible for the pathophysiologic process that eventually results in the occurrence.
      *
-     * @var MedicalCause
+     * @var Example\Thing\MedicalEntity\MedicalCause
      */
     private $cause;
 
     /**
      * A possible treatment to address this condition, sign or symptom.
      *
-     * @var MedicalTherapy
+     * @var Example\Thing\MedicalEntity\MedicalTherapy
      */
     private $possibleTreatment;
 

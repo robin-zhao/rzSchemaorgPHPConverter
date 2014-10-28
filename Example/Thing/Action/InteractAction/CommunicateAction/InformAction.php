@@ -14,7 +14,7 @@ class InformAction extends CommunicateAction
     /**
      * Upcoming or past event associated with this place or organization.
      *
-     * @var Event
+     * @var Example\Thing\Event
      */
     private $event;
 

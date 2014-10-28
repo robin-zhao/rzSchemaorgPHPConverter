@@ -14,7 +14,7 @@ class DataCatalog extends CreativeWork
     /**
      * A dataset contained in a catalog.
      *
-     * @var Dataset
+     * @var Example\Thing\CreativeWork\Dataset
      */
     private $dataset;
 

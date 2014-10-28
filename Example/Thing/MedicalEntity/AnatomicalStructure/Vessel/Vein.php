@@ -14,21 +14,21 @@ class Vein extends Vessel
     /**
      * The vasculature that the vein drains into.
      *
-     * @var Vessel
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
     private $drainsTo;
 
     /**
      * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
      *
-     * @var AnatomicalSystem|AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $regionDrained;
 
     /**
      * The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.
      *
-     * @var AnatomicalStructure
+     * @var Example\Thing\MedicalEntity\AnatomicalStructure
      */
     private $tributary;
 

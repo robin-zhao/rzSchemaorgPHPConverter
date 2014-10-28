@@ -14,35 +14,35 @@ class MusicGroup extends PerformingGroup
     /**
      * A music album.
      *
-     * @var MusicAlbum
+     * @var Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
      */
     private $album;
 
     /**
      * A collection of music albums (legacy spelling; see singular form, album).
      *
-     * @var MusicAlbum
+     * @var Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
      */
     private $albums;
 
     /**
      * A member of the music group—for example, John, Paul, George, or Ringo.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $musicGroupMember;
 
     /**
      * A music recording (track)—usually a single song.
      *
-     * @var MusicRecording
+     * @var Example\Thing\CreativeWork\MusicRecording
      */
     private $track;
 
     /**
      * A music recording (track)—usually a single song (legacy spelling; see singular form, track).
      *
-     * @var MusicRecording
+     * @var Example\Thing\CreativeWork\MusicRecording
      */
     private $tracks;
 

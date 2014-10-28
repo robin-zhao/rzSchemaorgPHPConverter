@@ -14,7 +14,7 @@ class DrugClass extends MedicalTherapy
     /**
      * A drug in this drug class.
      *
-     * @var Drug
+     * @var Example\Thing\MedicalEntity\MedicalTherapy\Drug
      */
     private $drug;
 

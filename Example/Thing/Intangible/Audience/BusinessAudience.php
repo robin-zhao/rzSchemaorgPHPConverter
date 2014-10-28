@@ -14,21 +14,21 @@ class BusinessAudience extends Audience
     /**
      * The size of business by number of employees.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $numberofEmployees;
 
     /**
      * The size of the business in annual revenue.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $yearlyRevenue;
 
     /**
      * The age of the business.
      *
-     * @var QuantitativeValue
+     * @var Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $yearsInOperation;
 

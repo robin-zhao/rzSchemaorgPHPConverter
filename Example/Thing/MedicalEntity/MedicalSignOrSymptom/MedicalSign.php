@@ -14,14 +14,14 @@ class MedicalSign extends MedicalSignOrSymptom
     /**
      * A physical examination that can identify this sign.
      *
-     * @var PhysicalExam
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalExam
      */
     private $identifyingExam;
 
     /**
      * A diagnostic test that can identify this sign.
      *
-     * @var MedicalTest
+     * @var Example\Thing\MedicalEntity\MedicalTest
      */
     private $identifyingTest;
 

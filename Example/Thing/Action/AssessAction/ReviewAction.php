@@ -14,7 +14,7 @@ class ReviewAction extends AssessAction
     /**
      * A sub property of result. The review that resulted in the performing of the action.
      *
-     * @var Review
+     * @var Example\Thing\CreativeWork\Review
      */
     private $resultReview;
 

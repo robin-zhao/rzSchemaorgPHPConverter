@@ -14,7 +14,7 @@ class MedicalCause extends MedicalEntity
     /**
      * The condition, complication, symptom, sign, etc. caused.
      *
-     * @var MedicalEntity
+     * @var Example\Thing\MedicalEntity
      */
     private $causeOf;
 

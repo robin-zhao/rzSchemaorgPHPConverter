@@ -21,7 +21,7 @@ class WebPage extends CreativeWork
     /**
      * Indicates the collection or gallery to which the item belongs.
      *
-     * @var CollectionPage
+     * @var Example\Thing\CreativeWork\WebPage\CollectionPage
      */
     private $isPartOf;
 
@@ -35,14 +35,14 @@ class WebPage extends CreativeWork
     /**
      * Indicates if this web page element is the main subject of the page.
      *
-     * @var WebPageElement
+     * @var Example\Thing\CreativeWork\WebPageElement
      */
     private $mainContentOfPage;
 
     /**
      * Indicates the main image on the page
      *
-     * @var ImageObject
+     * @var Example\Thing\CreativeWork\MediaObject\ImageObject
      */
     private $primaryImageOfPage;
 
@@ -56,7 +56,7 @@ class WebPage extends CreativeWork
     /**
      * People or organizations that have reviewed the content on this web page for accuracy and/or completeness.
      *
-     * @var Organization|Person
+     * @var Example\Thing\Organization|Example\Thing\Person
      */
     private $reviewedBy;
 
@@ -77,7 +77,7 @@ class WebPage extends CreativeWork
     /**
      * One of the domain specialities to which this web page's content applies.
      *
-     * @var Specialty
+     * @var Example\Thing\Intangible\Enumeration\Specialty
      */
     private $specialty;
 

@@ -35,7 +35,7 @@ class Drug extends MedicalTherapy
     /**
      * An available dosage strength for the drug.
      *
-     * @var DrugStrength
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\DrugStrength
      */
     private $availableStrength;
 
@@ -56,7 +56,7 @@ class Drug extends MedicalTherapy
     /**
      * Cost per unit of the drug, as reported by the source being tagged.
      *
-     * @var DrugCost
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\DrugCost
      */
     private $cost;
 
@@ -70,14 +70,14 @@ class Drug extends MedicalTherapy
     /**
      * A dosing schedule for the drug for a given population, either observed, recommended, or maximum dose based on the type used.
      *
-     * @var DoseSchedule
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule
      */
     private $doseSchedule;
 
     /**
      * The class of drug this belongs to (e.g., statins).
      *
-     * @var DrugClass
+     * @var Example\Thing\MedicalEntity\MedicalTherapy\DrugClass
      */
     private $drugClass;
 
@@ -91,7 +91,7 @@ class Drug extends MedicalTherapy
     /**
      * Another drug that is known to interact with this drug in a way that impacts the effect of this drug or causes a risk to the patient. Note: disease interactions are typically captured as contraindications.
      *
-     * @var Drug
+     * @var Example\Thing\MedicalEntity\MedicalTherapy\Drug
      */
     private $interactingDrug;
 
@@ -119,14 +119,14 @@ class Drug extends MedicalTherapy
     /**
      * The drug or supplement's legal status, including any controlled substance schedules that apply.
      *
-     * @var DrugLegalStatus
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
      */
     private $legalStatus;
 
     /**
      * The manufacturer of the product.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $manufacturer;
 
@@ -154,7 +154,7 @@ class Drug extends MedicalTherapy
     /**
      * Pregnancy category of this drug.
      *
-     * @var DrugPregnancyCategory
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPregnancyCategory
      */
     private $pregnancyCategory;
 
@@ -175,14 +175,14 @@ class Drug extends MedicalTherapy
     /**
      * Indicates whether this drug is available by prescription or over-the-counter.
      *
-     * @var DrugPrescriptionStatus
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPrescriptionStatus
      */
     private $prescriptionStatus;
 
     /**
      * Any other drug related to this one, for example commonly-prescribed alternatives.
      *
-     * @var Drug
+     * @var Example\Thing\MedicalEntity\MedicalTherapy\Drug
      */
     private $relatedDrug;
 

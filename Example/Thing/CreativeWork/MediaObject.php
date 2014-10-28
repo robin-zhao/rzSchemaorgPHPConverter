@@ -14,7 +14,7 @@ class MediaObject extends CreativeWork
     /**
      * A NewsArticle associated with the Media Object.
      *
-     * @var NewsArticle
+     * @var Example\Thing\CreativeWork\Article\NewsArticle
      */
     private $associatedArticle;
 
@@ -42,7 +42,7 @@ class MediaObject extends CreativeWork
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $duration;
 
@@ -56,7 +56,7 @@ class MediaObject extends CreativeWork
     /**
      * The creative work encoded by this media object
      *
-     * @var CreativeWork
+     * @var Example\Thing\CreativeWork
      */
     private $encodesCreativeWork;
 
@@ -77,7 +77,7 @@ class MediaObject extends CreativeWork
     /**
      * The height of the item.
      *
-     * @var Distance|QuantitativeValue
+     * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $height;
 
@@ -91,21 +91,21 @@ class MediaObject extends CreativeWork
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
-     * @var Organization
+     * @var Example\Thing\Organization
      */
     private $productionCompany;
 
     /**
      * A publication event associated with the episode, clip or media object.
      *
-     * @var PublicationEvent
+     * @var Example\Thing\Event\PublicationEvent
      */
     private $publication;
 
     /**
      * The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in ISO 3166 format.
      *
-     * @var Place
+     * @var Example\Thing\Place
      */
     private $regionsAllowed;
 
@@ -126,7 +126,7 @@ class MediaObject extends CreativeWork
     /**
      * The width of the item.
      *
-     * @var Distance|QuantitativeValue
+     * @var Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
      */
     private $width;
 

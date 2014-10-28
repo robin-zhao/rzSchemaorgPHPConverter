@@ -14,28 +14,28 @@ class MusicRecording extends CreativeWork
     /**
      * The artist that performed this album or recording.
      *
-     * @var MusicGroup
+     * @var Example\Thing\Organization\PerformingGroup\MusicGroup
      */
     private $byArtist;
 
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
-     * @var Duration
+     * @var Example\Thing\Intangible\Quantity\Duration
      */
     private $duration;
 
     /**
      * The album to which this recording belongs.
      *
-     * @var MusicAlbum
+     * @var Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
      */
     private $inAlbum;
 
     /**
      * The playlist to which this recording belongs.
      *
-     * @var MusicPlaylist
+     * @var Example\Thing\CreativeWork\MusicPlaylist
      */
     private $inPlaylist;
 

@@ -35,7 +35,7 @@ class ImageObject extends MediaObject
     /**
      * Thumbnail image for an image or video.
      *
-     * @var ImageObject
+     * @var Example\Thing\CreativeWork\MediaObject\ImageObject
      */
     private $thumbnail;
 

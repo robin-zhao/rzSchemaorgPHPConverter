@@ -21,7 +21,7 @@ class InfectiousDisease extends MedicalCondition
     /**
      * The class of infectious agent (bacteria, prion, etc.) that causes the disease.
      *
-     * @var InfectiousAgentClass
+     * @var Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\InfectiousAgentClass
      */
     private $infectiousAgentClass;
 

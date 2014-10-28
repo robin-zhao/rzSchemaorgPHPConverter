@@ -21,14 +21,14 @@ class Book extends CreativeWork
     /**
      * The format of the book.
      *
-     * @var BookFormatType
+     * @var Example\Thing\Intangible\Enumeration\BookFormatType
      */
     private $bookFormat;
 
     /**
      * The illustrator of the book.
      *
-     * @var Person
+     * @var Example\Thing\Person
      */
     private $illustrator;
 

@@ -14,7 +14,7 @@ class PostalAddress extends ContactPoint
     /**
      * The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
      *
-     * @var Country
+     * @var Example\Thing\Place\AdministrativeArea\Country
      */
     private $addressCountry;
 

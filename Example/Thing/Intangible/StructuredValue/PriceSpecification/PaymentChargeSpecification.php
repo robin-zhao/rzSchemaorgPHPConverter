@@ -14,14 +14,14 @@ class PaymentChargeSpecification extends PriceSpecification
     /**
      * The delivery method(s) to which the delivery charge or payment charge specification applies.
      *
-     * @var DeliveryMethod
+     * @var Example\Thing\Intangible\Enumeration\DeliveryMethod
      */
     private $appliesToDeliveryMethod;
 
     /**
      * The payment method(s) to which the payment charge specification applies.
      *
-     * @var PaymentMethod
+     * @var Example\Thing\Intangible\Enumeration\PaymentMethod
      */
     private $appliesToPaymentMethod;
 

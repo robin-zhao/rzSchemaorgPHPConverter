@@ -14,21 +14,21 @@ class CommunicateAction extends InteractAction
     /**
      * The subject matter of the content.
      *
-     * @var Thing
+     * @var Example\Thing
      */
     private $about;
 
     /**
      * A sub property of instrument. The languaged used on this action.
      *
-     * @var Language
+     * @var Example\Thing\Intangible\Language
      */
     private $language;
 
     /**
      * A sub property of participant. The participant who is at the receiving end of the action.
      *
-     * @var Organization|Audience|Person
+     * @var Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
      */
     private $recipient;
 
