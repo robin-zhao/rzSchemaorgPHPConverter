@@ -28,12 +28,12 @@ class MedicalScholarlyArticle extends ScholarlyArticle
      */
     private $url = "http://schema.org/MedicalScholarlyArticle";
 
-    public function getpublicationType()
+    public function getPublicationType()
     {
         return $this->publicationType;
     }
 
-    public function setpublicationType($publicationType)
+    public function setPublicationType($publicationType)
     {
         $this->publicationType = $publicationType;
         return $this;

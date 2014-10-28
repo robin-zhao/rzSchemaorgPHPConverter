@@ -42,34 +42,34 @@ class CookAction extends CreateAction
      */
     private $url = "http://schema.org/CookAction";
 
-    public function getfoodEstablishment()
+    public function getFoodEstablishment()
     {
         return $this->foodEstablishment;
     }
 
-    public function setfoodEstablishment($foodEstablishment)
+    public function setFoodEstablishment($foodEstablishment)
     {
         $this->foodEstablishment = $foodEstablishment;
         return $this;
     }
 
-    public function getfoodEvent()
+    public function getFoodEvent()
     {
         return $this->foodEvent;
     }
 
-    public function setfoodEvent($foodEvent)
+    public function setFoodEvent($foodEvent)
     {
         $this->foodEvent = $foodEvent;
         return $this;
     }
 
-    public function getrecipe()
+    public function getRecipe()
     {
         return $this->recipe;
     }
 
-    public function setrecipe($recipe)
+    public function setRecipe($recipe)
     {
         $this->recipe = $recipe;
         return $this;

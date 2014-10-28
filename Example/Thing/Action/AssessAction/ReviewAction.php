@@ -28,12 +28,12 @@ class ReviewAction extends AssessAction
      */
     private $url = "http://schema.org/ReviewAction";
 
-    public function getresultReview()
+    public function getResultReview()
     {
         return $this->resultReview;
     }
 
-    public function setresultReview($resultReview)
+    public function setResultReview($resultReview)
     {
         $this->resultReview = $resultReview;
         return $this;

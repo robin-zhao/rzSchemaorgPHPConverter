@@ -68,78 +68,78 @@ class Thing
      */
     private $url = "http://schema.org/Thing";
 
-    public function getadditionalType()
+    public function getAdditionalType()
     {
         return $this->additionalType;
     }
 
-    public function setadditionalType($additionalType)
+    public function setAdditionalType($additionalType)
     {
         $this->additionalType = $additionalType;
         return $this;
     }
 
-    public function getalternateName()
+    public function getAlternateName()
     {
         return $this->alternateName;
     }
 
-    public function setalternateName($alternateName)
+    public function setAlternateName($alternateName)
     {
         $this->alternateName = $alternateName;
         return $this;
     }
 
-    public function getdescription()
+    public function getDescription()
     {
         return $this->description;
     }
 
-    public function setdescription($description)
+    public function setDescription($description)
     {
         $this->description = $description;
         return $this;
     }
 
-    public function getimage()
+    public function getImage()
     {
         return $this->image;
     }
 
-    public function setimage($image)
+    public function setImage($image)
     {
         $this->image = $image;
         return $this;
     }
 
-    public function getname()
+    public function getName()
     {
         return $this->name;
     }
 
-    public function setname($name)
+    public function setName($name)
     {
         $this->name = $name;
         return $this;
     }
 
-    public function getsameAs()
+    public function getSameAs()
     {
         return $this->sameAs;
     }
 
-    public function setsameAs($sameAs)
+    public function setSameAs($sameAs)
     {
         $this->sameAs = $sameAs;
         return $this;
     }
 
-    public function geturl()
+    public function getUrl()
     {
         return $this->url;
     }
 
-    public function seturl($url)
+    public function setUrl($url)
     {
         $this->url = $url;
         return $this;

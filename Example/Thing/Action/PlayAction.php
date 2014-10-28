@@ -35,23 +35,23 @@ class PlayAction extends Action
      */
     private $url = "http://schema.org/PlayAction";
 
-    public function getaudience()
+    public function getAudience()
     {
         return $this->audience;
     }
 
-    public function setaudience($audience)
+    public function setAudience($audience)
     {
         $this->audience = $audience;
         return $this;
     }
 
-    public function getevent()
+    public function getEvent()
     {
         return $this->event;
     }
 
-    public function setevent($event)
+    public function setEvent($event)
     {
         $this->event = $event;
         return $this;

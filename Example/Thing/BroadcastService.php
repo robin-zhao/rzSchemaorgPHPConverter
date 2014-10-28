@@ -42,34 +42,34 @@ class BroadcastService extends Thing
      */
     private $url = "http://schema.org/BroadcastService";
 
-    public function getarea()
+    public function getArea()
     {
         return $this->area;
     }
 
-    public function setarea($area)
+    public function setArea($area)
     {
         $this->area = $area;
         return $this;
     }
 
-    public function getbroadcaster()
+    public function getBroadcaster()
     {
         return $this->broadcaster;
     }
 
-    public function setbroadcaster($broadcaster)
+    public function setBroadcaster($broadcaster)
     {
         $this->broadcaster = $broadcaster;
         return $this;
     }
 
-    public function getparentService()
+    public function getParentService()
     {
         return $this->parentService;
     }
 
-    public function setparentService($parentService)
+    public function setParentService($parentService)
     {
         $this->parentService = $parentService;
         return $this;

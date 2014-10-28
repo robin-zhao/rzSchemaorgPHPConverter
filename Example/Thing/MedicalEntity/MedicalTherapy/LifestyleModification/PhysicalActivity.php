@@ -49,45 +49,45 @@ class PhysicalActivity extends LifestyleModification
      */
     private $url = "http://schema.org/PhysicalActivity";
 
-    public function getassociatedAnatomy()
+    public function getAssociatedAnatomy()
     {
         return $this->associatedAnatomy;
     }
 
-    public function setassociatedAnatomy($associatedAnatomy)
+    public function setAssociatedAnatomy($associatedAnatomy)
     {
         $this->associatedAnatomy = $associatedAnatomy;
         return $this;
     }
 
-    public function getcategory()
+    public function getCategory()
     {
         return $this->category;
     }
 
-    public function setcategory($category)
+    public function setCategory($category)
     {
         $this->category = $category;
         return $this;
     }
 
-    public function getepidemiology()
+    public function getEpidemiology()
     {
         return $this->epidemiology;
     }
 
-    public function setepidemiology($epidemiology)
+    public function setEpidemiology($epidemiology)
     {
         $this->epidemiology = $epidemiology;
         return $this;
     }
 
-    public function getpathophysiology()
+    public function getPathophysiology()
     {
         return $this->pathophysiology;
     }
 
-    public function setpathophysiology($pathophysiology)
+    public function setPathophysiology($pathophysiology)
     {
         $this->pathophysiology = $pathophysiology;
         return $this;

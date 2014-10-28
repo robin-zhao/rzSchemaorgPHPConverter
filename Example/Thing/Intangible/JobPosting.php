@@ -147,199 +147,199 @@ class JobPosting extends Intangible
      */
     private $url = "http://schema.org/JobPosting";
 
-    public function getbaseSalary()
+    public function getBaseSalary()
     {
         return $this->baseSalary;
     }
 
-    public function setbaseSalary($baseSalary)
+    public function setBaseSalary($baseSalary)
     {
         $this->baseSalary = $baseSalary;
         return $this;
     }
 
-    public function getbenefits()
+    public function getBenefits()
     {
         return $this->benefits;
     }
 
-    public function setbenefits($benefits)
+    public function setBenefits($benefits)
     {
         $this->benefits = $benefits;
         return $this;
     }
 
-    public function getdatePosted()
+    public function getDatePosted()
     {
         return $this->datePosted;
     }
 
-    public function setdatePosted($datePosted)
+    public function setDatePosted($datePosted)
     {
         $this->datePosted = $datePosted;
         return $this;
     }
 
-    public function geteducationRequirements()
+    public function getEducationRequirements()
     {
         return $this->educationRequirements;
     }
 
-    public function seteducationRequirements($educationRequirements)
+    public function setEducationRequirements($educationRequirements)
     {
         $this->educationRequirements = $educationRequirements;
         return $this;
     }
 
-    public function getemploymentType()
+    public function getEmploymentType()
     {
         return $this->employmentType;
     }
 
-    public function setemploymentType($employmentType)
+    public function setEmploymentType($employmentType)
     {
         $this->employmentType = $employmentType;
         return $this;
     }
 
-    public function getexperienceRequirements()
+    public function getExperienceRequirements()
     {
         return $this->experienceRequirements;
     }
 
-    public function setexperienceRequirements($experienceRequirements)
+    public function setExperienceRequirements($experienceRequirements)
     {
         $this->experienceRequirements = $experienceRequirements;
         return $this;
     }
 
-    public function gethiringOrganization()
+    public function getHiringOrganization()
     {
         return $this->hiringOrganization;
     }
 
-    public function sethiringOrganization($hiringOrganization)
+    public function setHiringOrganization($hiringOrganization)
     {
         $this->hiringOrganization = $hiringOrganization;
         return $this;
     }
 
-    public function getincentives()
+    public function getIncentives()
     {
         return $this->incentives;
     }
 
-    public function setincentives($incentives)
+    public function setIncentives($incentives)
     {
         $this->incentives = $incentives;
         return $this;
     }
 
-    public function getindustry()
+    public function getIndustry()
     {
         return $this->industry;
     }
 
-    public function setindustry($industry)
+    public function setIndustry($industry)
     {
         $this->industry = $industry;
         return $this;
     }
 
-    public function getjobLocation()
+    public function getJobLocation()
     {
         return $this->jobLocation;
     }
 
-    public function setjobLocation($jobLocation)
+    public function setJobLocation($jobLocation)
     {
         $this->jobLocation = $jobLocation;
         return $this;
     }
 
-    public function getoccupationalCategory()
+    public function getOccupationalCategory()
     {
         return $this->occupationalCategory;
     }
 
-    public function setoccupationalCategory($occupationalCategory)
+    public function setOccupationalCategory($occupationalCategory)
     {
         $this->occupationalCategory = $occupationalCategory;
         return $this;
     }
 
-    public function getqualifications()
+    public function getQualifications()
     {
         return $this->qualifications;
     }
 
-    public function setqualifications($qualifications)
+    public function setQualifications($qualifications)
     {
         $this->qualifications = $qualifications;
         return $this;
     }
 
-    public function getresponsibilities()
+    public function getResponsibilities()
     {
         return $this->responsibilities;
     }
 
-    public function setresponsibilities($responsibilities)
+    public function setResponsibilities($responsibilities)
     {
         $this->responsibilities = $responsibilities;
         return $this;
     }
 
-    public function getsalaryCurrency()
+    public function getSalaryCurrency()
     {
         return $this->salaryCurrency;
     }
 
-    public function setsalaryCurrency($salaryCurrency)
+    public function setSalaryCurrency($salaryCurrency)
     {
         $this->salaryCurrency = $salaryCurrency;
         return $this;
     }
 
-    public function getskills()
+    public function getSkills()
     {
         return $this->skills;
     }
 
-    public function setskills($skills)
+    public function setSkills($skills)
     {
         $this->skills = $skills;
         return $this;
     }
 
-    public function getspecialCommitments()
+    public function getSpecialCommitments()
     {
         return $this->specialCommitments;
     }
 
-    public function setspecialCommitments($specialCommitments)
+    public function setSpecialCommitments($specialCommitments)
     {
         $this->specialCommitments = $specialCommitments;
         return $this;
     }
 
-    public function gettitle()
+    public function getTitle()
     {
         return $this->title;
     }
 
-    public function settitle($title)
+    public function setTitle($title)
     {
         $this->title = $title;
         return $this;
     }
 
-    public function getworkHours()
+    public function getWorkHours()
     {
         return $this->workHours;
     }
 
-    public function setworkHours($workHours)
+    public function setWorkHours($workHours)
     {
         $this->workHours = $workHours;
         return $this;

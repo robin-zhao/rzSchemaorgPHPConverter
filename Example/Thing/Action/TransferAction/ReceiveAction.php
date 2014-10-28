@@ -35,23 +35,23 @@ class ReceiveAction extends TransferAction
      */
     private $url = "http://schema.org/ReceiveAction";
 
-    public function getdeliveryMethod()
+    public function getDeliveryMethod()
     {
         return $this->deliveryMethod;
     }
 
-    public function setdeliveryMethod($deliveryMethod)
+    public function setDeliveryMethod($deliveryMethod)
     {
         $this->deliveryMethod = $deliveryMethod;
         return $this;
     }
 
-    public function getsender()
+    public function getSender()
     {
         return $this->sender;
     }
 
-    public function setsender($sender)
+    public function setSender($sender)
     {
         $this->sender = $sender;
         return $this;

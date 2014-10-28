@@ -35,23 +35,23 @@ class DDxElement extends MedicalIntangible
      */
     private $url = "http://schema.org/DDxElement";
 
-    public function getdiagnosis()
+    public function getDiagnosis()
     {
         return $this->diagnosis;
     }
 
-    public function setdiagnosis($diagnosis)
+    public function setDiagnosis($diagnosis)
     {
         $this->diagnosis = $diagnosis;
         return $this;
     }
 
-    public function getdistinguishingSign()
+    public function getDistinguishingSign()
     {
         return $this->distinguishingSign;
     }
 
-    public function setdistinguishingSign($distinguishingSign)
+    public function setDistinguishingSign($distinguishingSign)
     {
         $this->distinguishingSign = $distinguishingSign;
         return $this;

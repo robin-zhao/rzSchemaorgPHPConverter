@@ -28,12 +28,12 @@ class ChooseAction extends AssessAction
      */
     private $url = "http://schema.org/ChooseAction";
 
-    public function getoption()
+    public function getOption()
     {
         return $this->option;
     }
 
-    public function setoption($option)
+    public function setOption($option)
     {
         $this->option = $option;
         return $this;

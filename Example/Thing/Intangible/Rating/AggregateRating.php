@@ -42,34 +42,34 @@ class AggregateRating extends Rating
      */
     private $url = "http://schema.org/AggregateRating";
 
-    public function getitemReviewed()
+    public function getItemReviewed()
     {
         return $this->itemReviewed;
     }
 
-    public function setitemReviewed($itemReviewed)
+    public function setItemReviewed($itemReviewed)
     {
         $this->itemReviewed = $itemReviewed;
         return $this;
     }
 
-    public function getratingCount()
+    public function getRatingCount()
     {
         return $this->ratingCount;
     }
 
-    public function setratingCount($ratingCount)
+    public function setRatingCount($ratingCount)
     {
         $this->ratingCount = $ratingCount;
         return $this;
     }
 
-    public function getreviewCount()
+    public function getReviewCount()
     {
         return $this->reviewCount;
     }
 
-    public function setreviewCount($reviewCount)
+    public function setReviewCount($reviewCount)
     {
         $this->reviewCount = $reviewCount;
         return $this;

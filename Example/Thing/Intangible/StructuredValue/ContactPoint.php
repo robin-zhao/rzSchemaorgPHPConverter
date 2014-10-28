@@ -84,100 +84,100 @@ class ContactPoint extends StructuredValue
      */
     private $url = "http://schema.org/ContactPoint";
 
-    public function getareaServed()
+    public function getAreaServed()
     {
         return $this->areaServed;
     }
 
-    public function setareaServed($areaServed)
+    public function setAreaServed($areaServed)
     {
         $this->areaServed = $areaServed;
         return $this;
     }
 
-    public function getavailableLanguage()
+    public function getAvailableLanguage()
     {
         return $this->availableLanguage;
     }
 
-    public function setavailableLanguage($availableLanguage)
+    public function setAvailableLanguage($availableLanguage)
     {
         $this->availableLanguage = $availableLanguage;
         return $this;
     }
 
-    public function getcontactOption()
+    public function getContactOption()
     {
         return $this->contactOption;
     }
 
-    public function setcontactOption($contactOption)
+    public function setContactOption($contactOption)
     {
         $this->contactOption = $contactOption;
         return $this;
     }
 
-    public function getcontactType()
+    public function getContactType()
     {
         return $this->contactType;
     }
 
-    public function setcontactType($contactType)
+    public function setContactType($contactType)
     {
         $this->contactType = $contactType;
         return $this;
     }
 
-    public function getemail()
+    public function getEmail()
     {
         return $this->email;
     }
 
-    public function setemail($email)
+    public function setEmail($email)
     {
         $this->email = $email;
         return $this;
     }
 
-    public function getfaxNumber()
+    public function getFaxNumber()
     {
         return $this->faxNumber;
     }
 
-    public function setfaxNumber($faxNumber)
+    public function setFaxNumber($faxNumber)
     {
         $this->faxNumber = $faxNumber;
         return $this;
     }
 
-    public function gethoursAvailable()
+    public function getHoursAvailable()
     {
         return $this->hoursAvailable;
     }
 
-    public function sethoursAvailable($hoursAvailable)
+    public function setHoursAvailable($hoursAvailable)
     {
         $this->hoursAvailable = $hoursAvailable;
         return $this;
     }
 
-    public function getproductSupported()
+    public function getProductSupported()
     {
         return $this->productSupported;
     }
 
-    public function setproductSupported($productSupported)
+    public function setProductSupported($productSupported)
     {
         $this->productSupported = $productSupported;
         return $this;
     }
 
-    public function gettelephone()
+    public function getTelephone()
     {
         return $this->telephone;
     }
 
-    public function settelephone($telephone)
+    public function setTelephone($telephone)
     {
         $this->telephone = $telephone;
         return $this;

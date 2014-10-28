@@ -56,56 +56,56 @@ class SuperficialAnatomy extends MedicalEntity
      */
     private $url = "http://schema.org/SuperficialAnatomy";
 
-    public function getassociatedPathophysiology()
+    public function getAssociatedPathophysiology()
     {
         return $this->associatedPathophysiology;
     }
 
-    public function setassociatedPathophysiology($associatedPathophysiology)
+    public function setAssociatedPathophysiology($associatedPathophysiology)
     {
         $this->associatedPathophysiology = $associatedPathophysiology;
         return $this;
     }
 
-    public function getrelatedAnatomy()
+    public function getRelatedAnatomy()
     {
         return $this->relatedAnatomy;
     }
 
-    public function setrelatedAnatomy($relatedAnatomy)
+    public function setRelatedAnatomy($relatedAnatomy)
     {
         $this->relatedAnatomy = $relatedAnatomy;
         return $this;
     }
 
-    public function getrelatedCondition()
+    public function getRelatedCondition()
     {
         return $this->relatedCondition;
     }
 
-    public function setrelatedCondition($relatedCondition)
+    public function setRelatedCondition($relatedCondition)
     {
         $this->relatedCondition = $relatedCondition;
         return $this;
     }
 
-    public function getrelatedTherapy()
+    public function getRelatedTherapy()
     {
         return $this->relatedTherapy;
     }
 
-    public function setrelatedTherapy($relatedTherapy)
+    public function setRelatedTherapy($relatedTherapy)
     {
         $this->relatedTherapy = $relatedTherapy;
         return $this;
     }
 
-    public function getsignificance()
+    public function getSignificance()
     {
         return $this->significance;
     }
 
-    public function setsignificance($significance)
+    public function setSignificance($significance)
     {
         $this->significance = $significance;
         return $this;

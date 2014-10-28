@@ -266,386 +266,386 @@ class Organization extends Thing
      */
     private $url = "http://schema.org/Organization";
 
-    public function getaddress()
+    public function getAddress()
     {
         return $this->address;
     }
 
-    public function setaddress($address)
+    public function setAddress($address)
     {
         $this->address = $address;
         return $this;
     }
 
-    public function getaggregateRating()
+    public function getAggregateRating()
     {
         return $this->aggregateRating;
     }
 
-    public function setaggregateRating($aggregateRating)
+    public function setAggregateRating($aggregateRating)
     {
         $this->aggregateRating = $aggregateRating;
         return $this;
     }
 
-    public function getbrand()
+    public function getBrand()
     {
         return $this->brand;
     }
 
-    public function setbrand($brand)
+    public function setBrand($brand)
     {
         $this->brand = $brand;
         return $this;
     }
 
-    public function getcontactPoint()
+    public function getContactPoint()
     {
         return $this->contactPoint;
     }
 
-    public function setcontactPoint($contactPoint)
+    public function setContactPoint($contactPoint)
     {
         $this->contactPoint = $contactPoint;
         return $this;
     }
 
-    public function getcontactPoints()
+    public function getContactPoints()
     {
         return $this->contactPoints;
     }
 
-    public function setcontactPoints($contactPoints)
+    public function setContactPoints($contactPoints)
     {
         $this->contactPoints = $contactPoints;
         return $this;
     }
 
-    public function getdepartment()
+    public function getDepartment()
     {
         return $this->department;
     }
 
-    public function setdepartment($department)
+    public function setDepartment($department)
     {
         $this->department = $department;
         return $this;
     }
 
-    public function getduns()
+    public function getDuns()
     {
         return $this->duns;
     }
 
-    public function setduns($duns)
+    public function setDuns($duns)
     {
         $this->duns = $duns;
         return $this;
     }
 
-    public function getemail()
+    public function getEmail()
     {
         return $this->email;
     }
 
-    public function setemail($email)
+    public function setEmail($email)
     {
         $this->email = $email;
         return $this;
     }
 
-    public function getemployee()
+    public function getEmployee()
     {
         return $this->employee;
     }
 
-    public function setemployee($employee)
+    public function setEmployee($employee)
     {
         $this->employee = $employee;
         return $this;
     }
 
-    public function getemployees()
+    public function getEmployees()
     {
         return $this->employees;
     }
 
-    public function setemployees($employees)
+    public function setEmployees($employees)
     {
         $this->employees = $employees;
         return $this;
     }
 
-    public function getevent()
+    public function getEvent()
     {
         return $this->event;
     }
 
-    public function setevent($event)
+    public function setEvent($event)
     {
         $this->event = $event;
         return $this;
     }
 
-    public function getevents()
+    public function getEvents()
     {
         return $this->events;
     }
 
-    public function setevents($events)
+    public function setEvents($events)
     {
         $this->events = $events;
         return $this;
     }
 
-    public function getfaxNumber()
+    public function getFaxNumber()
     {
         return $this->faxNumber;
     }
 
-    public function setfaxNumber($faxNumber)
+    public function setFaxNumber($faxNumber)
     {
         $this->faxNumber = $faxNumber;
         return $this;
     }
 
-    public function getfounder()
+    public function getFounder()
     {
         return $this->founder;
     }
 
-    public function setfounder($founder)
+    public function setFounder($founder)
     {
         $this->founder = $founder;
         return $this;
     }
 
-    public function getfounders()
+    public function getFounders()
     {
         return $this->founders;
     }
 
-    public function setfounders($founders)
+    public function setFounders($founders)
     {
         $this->founders = $founders;
         return $this;
     }
 
-    public function getfoundingDate()
+    public function getFoundingDate()
     {
         return $this->foundingDate;
     }
 
-    public function setfoundingDate($foundingDate)
+    public function setFoundingDate($foundingDate)
     {
         $this->foundingDate = $foundingDate;
         return $this;
     }
 
-    public function getglobalLocationNumber()
+    public function getGlobalLocationNumber()
     {
         return $this->globalLocationNumber;
     }
 
-    public function setglobalLocationNumber($globalLocationNumber)
+    public function setGlobalLocationNumber($globalLocationNumber)
     {
         $this->globalLocationNumber = $globalLocationNumber;
         return $this;
     }
 
-    public function gethasPOS()
+    public function getHasPOS()
     {
         return $this->hasPOS;
     }
 
-    public function sethasPOS($hasPOS)
+    public function setHasPOS($hasPOS)
     {
         $this->hasPOS = $hasPOS;
         return $this;
     }
 
-    public function getinteractionCount()
+    public function getInteractionCount()
     {
         return $this->interactionCount;
     }
 
-    public function setinteractionCount($interactionCount)
+    public function setInteractionCount($interactionCount)
     {
         $this->interactionCount = $interactionCount;
         return $this;
     }
 
-    public function getisicV4()
+    public function getIsicV4()
     {
         return $this->isicV4;
     }
 
-    public function setisicV4($isicV4)
+    public function setIsicV4($isicV4)
     {
         $this->isicV4 = $isicV4;
         return $this;
     }
 
-    public function getlegalName()
+    public function getLegalName()
     {
         return $this->legalName;
     }
 
-    public function setlegalName($legalName)
+    public function setLegalName($legalName)
     {
         $this->legalName = $legalName;
         return $this;
     }
 
-    public function getlocation()
+    public function getLocation()
     {
         return $this->location;
     }
 
-    public function setlocation($location)
+    public function setLocation($location)
     {
         $this->location = $location;
         return $this;
     }
 
-    public function getlogo()
+    public function getLogo()
     {
         return $this->logo;
     }
 
-    public function setlogo($logo)
+    public function setLogo($logo)
     {
         $this->logo = $logo;
         return $this;
     }
 
-    public function getmakesOffer()
+    public function getMakesOffer()
     {
         return $this->makesOffer;
     }
 
-    public function setmakesOffer($makesOffer)
+    public function setMakesOffer($makesOffer)
     {
         $this->makesOffer = $makesOffer;
         return $this;
     }
 
-    public function getmember()
+    public function getMember()
     {
         return $this->member;
     }
 
-    public function setmember($member)
+    public function setMember($member)
     {
         $this->member = $member;
         return $this;
     }
 
-    public function getmembers()
+    public function getMembers()
     {
         return $this->members;
     }
 
-    public function setmembers($members)
+    public function setMembers($members)
     {
         $this->members = $members;
         return $this;
     }
 
-    public function getnaics()
+    public function getNaics()
     {
         return $this->naics;
     }
 
-    public function setnaics($naics)
+    public function setNaics($naics)
     {
         $this->naics = $naics;
         return $this;
     }
 
-    public function getowns()
+    public function getOwns()
     {
         return $this->owns;
     }
 
-    public function setowns($owns)
+    public function setOwns($owns)
     {
         $this->owns = $owns;
         return $this;
     }
 
-    public function getreview()
+    public function getReview()
     {
         return $this->review;
     }
 
-    public function setreview($review)
+    public function setReview($review)
     {
         $this->review = $review;
         return $this;
     }
 
-    public function getreviews()
+    public function getReviews()
     {
         return $this->reviews;
     }
 
-    public function setreviews($reviews)
+    public function setReviews($reviews)
     {
         $this->reviews = $reviews;
         return $this;
     }
 
-    public function getseeks()
+    public function getSeeks()
     {
         return $this->seeks;
     }
 
-    public function setseeks($seeks)
+    public function setSeeks($seeks)
     {
         $this->seeks = $seeks;
         return $this;
     }
 
-    public function getsubOrganization()
+    public function getSubOrganization()
     {
         return $this->subOrganization;
     }
 
-    public function setsubOrganization($subOrganization)
+    public function setSubOrganization($subOrganization)
     {
         $this->subOrganization = $subOrganization;
         return $this;
     }
 
-    public function gettaxID()
+    public function getTaxID()
     {
         return $this->taxID;
     }
 
-    public function settaxID($taxID)
+    public function setTaxID($taxID)
     {
         $this->taxID = $taxID;
         return $this;
     }
 
-    public function gettelephone()
+    public function getTelephone()
     {
         return $this->telephone;
     }
 
-    public function settelephone($telephone)
+    public function setTelephone($telephone)
     {
         $this->telephone = $telephone;
         return $this;
     }
 
-    public function getvatID()
+    public function getVatID()
     {
         return $this->vatID;
     }
 
-    public function setvatID($vatID)
+    public function setVatID($vatID)
     {
         $this->vatID = $vatID;
         return $this;

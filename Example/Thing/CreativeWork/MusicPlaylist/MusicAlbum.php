@@ -28,12 +28,12 @@ class MusicAlbum extends MusicPlaylist
      */
     private $url = "http://schema.org/MusicAlbum";
 
-    public function getbyArtist()
+    public function getByArtist()
     {
         return $this->byArtist;
     }
 
-    public function setbyArtist($byArtist)
+    public function setByArtist($byArtist)
     {
         $this->byArtist = $byArtist;
         return $this;

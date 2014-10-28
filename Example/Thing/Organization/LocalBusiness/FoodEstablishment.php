@@ -42,34 +42,34 @@ class FoodEstablishment extends LocalBusiness
      */
     private $url = "http://schema.org/FoodEstablishment";
 
-    public function getacceptsReservations()
+    public function getAcceptsReservations()
     {
         return $this->acceptsReservations;
     }
 
-    public function setacceptsReservations($acceptsReservations)
+    public function setAcceptsReservations($acceptsReservations)
     {
         $this->acceptsReservations = $acceptsReservations;
         return $this;
     }
 
-    public function getmenu()
+    public function getMenu()
     {
         return $this->menu;
     }
 
-    public function setmenu($menu)
+    public function setMenu($menu)
     {
         $this->menu = $menu;
         return $this;
     }
 
-    public function getservesCuisine()
+    public function getServesCuisine()
     {
         return $this->servesCuisine;
     }
 
-    public function setservesCuisine($servesCuisine)
+    public function setServesCuisine($servesCuisine)
     {
         $this->servesCuisine = $servesCuisine;
         return $this;

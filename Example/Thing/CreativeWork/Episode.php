@@ -112,144 +112,144 @@ class Episode extends CreativeWork
      */
     private $url = "http://schema.org/Episode";
 
-    public function getactor()
+    public function getActor()
     {
         return $this->actor;
     }
 
-    public function setactor($actor)
+    public function setActor($actor)
     {
         $this->actor = $actor;
         return $this;
     }
 
-    public function getactors()
+    public function getActors()
     {
         return $this->actors;
     }
 
-    public function setactors($actors)
+    public function setActors($actors)
     {
         $this->actors = $actors;
         return $this;
     }
 
-    public function getdirector()
+    public function getDirector()
     {
         return $this->director;
     }
 
-    public function setdirector($director)
+    public function setDirector($director)
     {
         $this->director = $director;
         return $this;
     }
 
-    public function getdirectors()
+    public function getDirectors()
     {
         return $this->directors;
     }
 
-    public function setdirectors($directors)
+    public function setDirectors($directors)
     {
         $this->directors = $directors;
         return $this;
     }
 
-    public function getepisodeNumber()
+    public function getEpisodeNumber()
     {
         return $this->episodeNumber;
     }
 
-    public function setepisodeNumber($episodeNumber)
+    public function setEpisodeNumber($episodeNumber)
     {
         $this->episodeNumber = $episodeNumber;
         return $this;
     }
 
-    public function getmusicBy()
+    public function getMusicBy()
     {
         return $this->musicBy;
     }
 
-    public function setmusicBy($musicBy)
+    public function setMusicBy($musicBy)
     {
         $this->musicBy = $musicBy;
         return $this;
     }
 
-    public function getpartOfSeason()
+    public function getPartOfSeason()
     {
         return $this->partOfSeason;
     }
 
-    public function setpartOfSeason($partOfSeason)
+    public function setPartOfSeason($partOfSeason)
     {
         $this->partOfSeason = $partOfSeason;
         return $this;
     }
 
-    public function getpartOfSeries()
+    public function getPartOfSeries()
     {
         return $this->partOfSeries;
     }
 
-    public function setpartOfSeries($partOfSeries)
+    public function setPartOfSeries($partOfSeries)
     {
         $this->partOfSeries = $partOfSeries;
         return $this;
     }
 
-    public function getposition()
+    public function getPosition()
     {
         return $this->position;
     }
 
-    public function setposition($position)
+    public function setPosition($position)
     {
         $this->position = $position;
         return $this;
     }
 
-    public function getproducer()
+    public function getProducer()
     {
         return $this->producer;
     }
 
-    public function setproducer($producer)
+    public function setProducer($producer)
     {
         $this->producer = $producer;
         return $this;
     }
 
-    public function getproductionCompany()
+    public function getProductionCompany()
     {
         return $this->productionCompany;
     }
 
-    public function setproductionCompany($productionCompany)
+    public function setProductionCompany($productionCompany)
     {
         $this->productionCompany = $productionCompany;
         return $this;
     }
 
-    public function getpublication()
+    public function getPublication()
     {
         return $this->publication;
     }
 
-    public function setpublication($publication)
+    public function setPublication($publication)
     {
         $this->publication = $publication;
         return $this;
     }
 
-    public function gettrailer()
+    public function getTrailer()
     {
         return $this->trailer;
     }
 
-    public function settrailer($trailer)
+    public function setTrailer($trailer)
     {
         $this->trailer = $trailer;
         return $this;

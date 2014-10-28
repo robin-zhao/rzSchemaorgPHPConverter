@@ -84,100 +84,100 @@ class PriceSpecification extends StructuredValue
      */
     private $url = "http://schema.org/PriceSpecification";
 
-    public function geteligibleQuantity()
+    public function getEligibleQuantity()
     {
         return $this->eligibleQuantity;
     }
 
-    public function seteligibleQuantity($eligibleQuantity)
+    public function setEligibleQuantity($eligibleQuantity)
     {
         $this->eligibleQuantity = $eligibleQuantity;
         return $this;
     }
 
-    public function geteligibleTransactionVolume()
+    public function getEligibleTransactionVolume()
     {
         return $this->eligibleTransactionVolume;
     }
 
-    public function seteligibleTransactionVolume($eligibleTransactionVolume)
+    public function setEligibleTransactionVolume($eligibleTransactionVolume)
     {
         $this->eligibleTransactionVolume = $eligibleTransactionVolume;
         return $this;
     }
 
-    public function getmaxPrice()
+    public function getMaxPrice()
     {
         return $this->maxPrice;
     }
 
-    public function setmaxPrice($maxPrice)
+    public function setMaxPrice($maxPrice)
     {
         $this->maxPrice = $maxPrice;
         return $this;
     }
 
-    public function getminPrice()
+    public function getMinPrice()
     {
         return $this->minPrice;
     }
 
-    public function setminPrice($minPrice)
+    public function setMinPrice($minPrice)
     {
         $this->minPrice = $minPrice;
         return $this;
     }
 
-    public function getprice()
+    public function getPrice()
     {
         return $this->price;
     }
 
-    public function setprice($price)
+    public function setPrice($price)
     {
         $this->price = $price;
         return $this;
     }
 
-    public function getpriceCurrency()
+    public function getPriceCurrency()
     {
         return $this->priceCurrency;
     }
 
-    public function setpriceCurrency($priceCurrency)
+    public function setPriceCurrency($priceCurrency)
     {
         $this->priceCurrency = $priceCurrency;
         return $this;
     }
 
-    public function getvalidFrom()
+    public function getValidFrom()
     {
         return $this->validFrom;
     }
 
-    public function setvalidFrom($validFrom)
+    public function setValidFrom($validFrom)
     {
         $this->validFrom = $validFrom;
         return $this;
     }
 
-    public function getvalidThrough()
+    public function getValidThrough()
     {
         return $this->validThrough;
     }
 
-    public function setvalidThrough($validThrough)
+    public function setValidThrough($validThrough)
     {
         $this->validThrough = $validThrough;
         return $this;
     }
 
-    public function getvalueAddedTaxIncluded()
+    public function getValueAddedTaxIncluded()
     {
         return $this->valueAddedTaxIncluded;
     }
 
-    public function setvalueAddedTaxIncluded($valueAddedTaxIncluded)
+    public function setValueAddedTaxIncluded($valueAddedTaxIncluded)
     {
         $this->valueAddedTaxIncluded = $valueAddedTaxIncluded;
         return $this;

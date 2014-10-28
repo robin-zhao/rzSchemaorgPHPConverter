@@ -28,12 +28,12 @@ class AllocateAction extends OrganizeAction
      */
     private $url = "http://schema.org/AllocateAction";
 
-    public function getpurpose()
+    public function getPurpose()
     {
         return $this->purpose;
     }
 
-    public function setpurpose($purpose)
+    public function setPurpose($purpose)
     {
         $this->purpose = $purpose;
         return $this;

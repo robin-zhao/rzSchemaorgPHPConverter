@@ -56,56 +56,56 @@ class MusicGroup extends PerformingGroup
      */
     private $url = "http://schema.org/MusicGroup";
 
-    public function getalbum()
+    public function getAlbum()
     {
         return $this->album;
     }
 
-    public function setalbum($album)
+    public function setAlbum($album)
     {
         $this->album = $album;
         return $this;
     }
 
-    public function getalbums()
+    public function getAlbums()
     {
         return $this->albums;
     }
 
-    public function setalbums($albums)
+    public function setAlbums($albums)
     {
         $this->albums = $albums;
         return $this;
     }
 
-    public function getmusicGroupMember()
+    public function getMusicGroupMember()
     {
         return $this->musicGroupMember;
     }
 
-    public function setmusicGroupMember($musicGroupMember)
+    public function setMusicGroupMember($musicGroupMember)
     {
         $this->musicGroupMember = $musicGroupMember;
         return $this;
     }
 
-    public function gettrack()
+    public function getTrack()
     {
         return $this->track;
     }
 
-    public function settrack($track)
+    public function setTrack($track)
     {
         $this->track = $track;
         return $this;
     }
 
-    public function gettracks()
+    public function getTracks()
     {
         return $this->tracks;
     }
 
-    public function settracks($tracks)
+    public function setTracks($tracks)
     {
         $this->tracks = $tracks;
         return $this;

@@ -28,12 +28,12 @@ class DonateAction extends TradeAction
      */
     private $url = "http://schema.org/DonateAction";
 
-    public function getrecipient()
+    public function getRecipient()
     {
         return $this->recipient;
     }
 
-    public function setrecipient($recipient)
+    public function setRecipient($recipient)
     {
         $this->recipient = $recipient;
         return $this;

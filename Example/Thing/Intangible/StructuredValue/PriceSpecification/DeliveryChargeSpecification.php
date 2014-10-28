@@ -35,23 +35,23 @@ class DeliveryChargeSpecification extends PriceSpecification
      */
     private $url = "http://schema.org/DeliveryChargeSpecification";
 
-    public function getappliesToDeliveryMethod()
+    public function getAppliesToDeliveryMethod()
     {
         return $this->appliesToDeliveryMethod;
     }
 
-    public function setappliesToDeliveryMethod($appliesToDeliveryMethod)
+    public function setAppliesToDeliveryMethod($appliesToDeliveryMethod)
     {
         $this->appliesToDeliveryMethod = $appliesToDeliveryMethod;
         return $this;
     }
 
-    public function geteligibleRegion()
+    public function getEligibleRegion()
     {
         return $this->eligibleRegion;
     }
 
-    public function seteligibleRegion($eligibleRegion)
+    public function setEligibleRegion($eligibleRegion)
     {
         $this->eligibleRegion = $eligibleRegion;
         return $this;

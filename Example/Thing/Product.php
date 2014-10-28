@@ -203,287 +203,287 @@ class Product extends Thing
      */
     private $url = "http://schema.org/Product";
 
-    public function getaggregateRating()
+    public function getAggregateRating()
     {
         return $this->aggregateRating;
     }
 
-    public function setaggregateRating($aggregateRating)
+    public function setAggregateRating($aggregateRating)
     {
         $this->aggregateRating = $aggregateRating;
         return $this;
     }
 
-    public function getaudience()
+    public function getAudience()
     {
         return $this->audience;
     }
 
-    public function setaudience($audience)
+    public function setAudience($audience)
     {
         $this->audience = $audience;
         return $this;
     }
 
-    public function getbrand()
+    public function getBrand()
     {
         return $this->brand;
     }
 
-    public function setbrand($brand)
+    public function setBrand($brand)
     {
         $this->brand = $brand;
         return $this;
     }
 
-    public function getcolor()
+    public function getColor()
     {
         return $this->color;
     }
 
-    public function setcolor($color)
+    public function setColor($color)
     {
         $this->color = $color;
         return $this;
     }
 
-    public function getdepth()
+    public function getDepth()
     {
         return $this->depth;
     }
 
-    public function setdepth($depth)
+    public function setDepth($depth)
     {
         $this->depth = $depth;
         return $this;
     }
 
-    public function getgtin13()
+    public function getGtin13()
     {
         return $this->gtin13;
     }
 
-    public function setgtin13($gtin13)
+    public function setGtin13($gtin13)
     {
         $this->gtin13 = $gtin13;
         return $this;
     }
 
-    public function getgtin14()
+    public function getGtin14()
     {
         return $this->gtin14;
     }
 
-    public function setgtin14($gtin14)
+    public function setGtin14($gtin14)
     {
         $this->gtin14 = $gtin14;
         return $this;
     }
 
-    public function getgtin8()
+    public function getGtin8()
     {
         return $this->gtin8;
     }
 
-    public function setgtin8($gtin8)
+    public function setGtin8($gtin8)
     {
         $this->gtin8 = $gtin8;
         return $this;
     }
 
-    public function getheight()
+    public function getHeight()
     {
         return $this->height;
     }
 
-    public function setheight($height)
+    public function setHeight($height)
     {
         $this->height = $height;
         return $this;
     }
 
-    public function getisAccessoryOrSparePartFor()
+    public function getIsAccessoryOrSparePartFor()
     {
         return $this->isAccessoryOrSparePartFor;
     }
 
-    public function setisAccessoryOrSparePartFor($isAccessoryOrSparePartFor)
+    public function setIsAccessoryOrSparePartFor($isAccessoryOrSparePartFor)
     {
         $this->isAccessoryOrSparePartFor = $isAccessoryOrSparePartFor;
         return $this;
     }
 
-    public function getisConsumableFor()
+    public function getIsConsumableFor()
     {
         return $this->isConsumableFor;
     }
 
-    public function setisConsumableFor($isConsumableFor)
+    public function setIsConsumableFor($isConsumableFor)
     {
         $this->isConsumableFor = $isConsumableFor;
         return $this;
     }
 
-    public function getisRelatedTo()
+    public function getIsRelatedTo()
     {
         return $this->isRelatedTo;
     }
 
-    public function setisRelatedTo($isRelatedTo)
+    public function setIsRelatedTo($isRelatedTo)
     {
         $this->isRelatedTo = $isRelatedTo;
         return $this;
     }
 
-    public function getisSimilarTo()
+    public function getIsSimilarTo()
     {
         return $this->isSimilarTo;
     }
 
-    public function setisSimilarTo($isSimilarTo)
+    public function setIsSimilarTo($isSimilarTo)
     {
         $this->isSimilarTo = $isSimilarTo;
         return $this;
     }
 
-    public function getitemCondition()
+    public function getItemCondition()
     {
         return $this->itemCondition;
     }
 
-    public function setitemCondition($itemCondition)
+    public function setItemCondition($itemCondition)
     {
         $this->itemCondition = $itemCondition;
         return $this;
     }
 
-    public function getlogo()
+    public function getLogo()
     {
         return $this->logo;
     }
 
-    public function setlogo($logo)
+    public function setLogo($logo)
     {
         $this->logo = $logo;
         return $this;
     }
 
-    public function getmanufacturer()
+    public function getManufacturer()
     {
         return $this->manufacturer;
     }
 
-    public function setmanufacturer($manufacturer)
+    public function setManufacturer($manufacturer)
     {
         $this->manufacturer = $manufacturer;
         return $this;
     }
 
-    public function getmodel()
+    public function getModel()
     {
         return $this->model;
     }
 
-    public function setmodel($model)
+    public function setModel($model)
     {
         $this->model = $model;
         return $this;
     }
 
-    public function getmpn()
+    public function getMpn()
     {
         return $this->mpn;
     }
 
-    public function setmpn($mpn)
+    public function setMpn($mpn)
     {
         $this->mpn = $mpn;
         return $this;
     }
 
-    public function getoffers()
+    public function getOffers()
     {
         return $this->offers;
     }
 
-    public function setoffers($offers)
+    public function setOffers($offers)
     {
         $this->offers = $offers;
         return $this;
     }
 
-    public function getproductID()
+    public function getProductID()
     {
         return $this->productID;
     }
 
-    public function setproductID($productID)
+    public function setProductID($productID)
     {
         $this->productID = $productID;
         return $this;
     }
 
-    public function getreleaseDate()
+    public function getReleaseDate()
     {
         return $this->releaseDate;
     }
 
-    public function setreleaseDate($releaseDate)
+    public function setReleaseDate($releaseDate)
     {
         $this->releaseDate = $releaseDate;
         return $this;
     }
 
-    public function getreview()
+    public function getReview()
     {
         return $this->review;
     }
 
-    public function setreview($review)
+    public function setReview($review)
     {
         $this->review = $review;
         return $this;
     }
 
-    public function getreviews()
+    public function getReviews()
     {
         return $this->reviews;
     }
 
-    public function setreviews($reviews)
+    public function setReviews($reviews)
     {
         $this->reviews = $reviews;
         return $this;
     }
 
-    public function getsku()
+    public function getSku()
     {
         return $this->sku;
     }
 
-    public function setsku($sku)
+    public function setSku($sku)
     {
         $this->sku = $sku;
         return $this;
     }
 
-    public function getweight()
+    public function getWeight()
     {
         return $this->weight;
     }
 
-    public function setweight($weight)
+    public function setWeight($weight)
     {
         $this->weight = $weight;
         return $this;
     }
 
-    public function getwidth()
+    public function getWidth()
     {
         return $this->width;
     }
 
-    public function setwidth($width)
+    public function setWidth($width)
     {
         $this->width = $width;
         return $this;

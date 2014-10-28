@@ -63,67 +63,67 @@ class Clip extends CreativeWork
      */
     private $url = "http://schema.org/Clip";
 
-    public function getclipNumber()
+    public function getClipNumber()
     {
         return $this->clipNumber;
     }
 
-    public function setclipNumber($clipNumber)
+    public function setClipNumber($clipNumber)
     {
         $this->clipNumber = $clipNumber;
         return $this;
     }
 
-    public function getpartOfEpisode()
+    public function getPartOfEpisode()
     {
         return $this->partOfEpisode;
     }
 
-    public function setpartOfEpisode($partOfEpisode)
+    public function setPartOfEpisode($partOfEpisode)
     {
         $this->partOfEpisode = $partOfEpisode;
         return $this;
     }
 
-    public function getpartOfSeason()
+    public function getPartOfSeason()
     {
         return $this->partOfSeason;
     }
 
-    public function setpartOfSeason($partOfSeason)
+    public function setPartOfSeason($partOfSeason)
     {
         $this->partOfSeason = $partOfSeason;
         return $this;
     }
 
-    public function getpartOfSeries()
+    public function getPartOfSeries()
     {
         return $this->partOfSeries;
     }
 
-    public function setpartOfSeries($partOfSeries)
+    public function setPartOfSeries($partOfSeries)
     {
         $this->partOfSeries = $partOfSeries;
         return $this;
     }
 
-    public function getposition()
+    public function getPosition()
     {
         return $this->position;
     }
 
-    public function setposition($position)
+    public function setPosition($position)
     {
         $this->position = $position;
         return $this;
     }
 
-    public function getpublication()
+    public function getPublication()
     {
         return $this->publication;
     }
 
-    public function setpublication($publication)
+    public function setPublication($publication)
     {
         $this->publication = $publication;
         return $this;

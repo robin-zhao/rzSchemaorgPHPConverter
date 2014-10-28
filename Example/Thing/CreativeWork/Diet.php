@@ -70,78 +70,78 @@ class Diet extends CreativeWork
      */
     private $url = "http://schema.org/Diet";
 
-    public function getdietFeatures()
+    public function getDietFeatures()
     {
         return $this->dietFeatures;
     }
 
-    public function setdietFeatures($dietFeatures)
+    public function setDietFeatures($dietFeatures)
     {
         $this->dietFeatures = $dietFeatures;
         return $this;
     }
 
-    public function getendorsers()
+    public function getEndorsers()
     {
         return $this->endorsers;
     }
 
-    public function setendorsers($endorsers)
+    public function setEndorsers($endorsers)
     {
         $this->endorsers = $endorsers;
         return $this;
     }
 
-    public function getexpertConsiderations()
+    public function getExpertConsiderations()
     {
         return $this->expertConsiderations;
     }
 
-    public function setexpertConsiderations($expertConsiderations)
+    public function setExpertConsiderations($expertConsiderations)
     {
         $this->expertConsiderations = $expertConsiderations;
         return $this;
     }
 
-    public function getoverview()
+    public function getOverview()
     {
         return $this->overview;
     }
 
-    public function setoverview($overview)
+    public function setOverview($overview)
     {
         $this->overview = $overview;
         return $this;
     }
 
-    public function getphysiologicalBenefits()
+    public function getPhysiologicalBenefits()
     {
         return $this->physiologicalBenefits;
     }
 
-    public function setphysiologicalBenefits($physiologicalBenefits)
+    public function setPhysiologicalBenefits($physiologicalBenefits)
     {
         $this->physiologicalBenefits = $physiologicalBenefits;
         return $this;
     }
 
-    public function getproprietaryName()
+    public function getProprietaryName()
     {
         return $this->proprietaryName;
     }
 
-    public function setproprietaryName($proprietaryName)
+    public function setProprietaryName($proprietaryName)
     {
         $this->proprietaryName = $proprietaryName;
         return $this;
     }
 
-    public function getrisks()
+    public function getRisks()
     {
         return $this->risks;
     }
 
-    public function setrisks($risks)
+    public function setRisks($risks)
     {
         $this->risks = $risks;
         return $this;

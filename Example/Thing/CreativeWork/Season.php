@@ -98,122 +98,122 @@ class Season extends CreativeWork
      */
     private $url = "http://schema.org/Season";
 
-    public function getendDate()
+    public function getEndDate()
     {
         return $this->endDate;
     }
 
-    public function setendDate($endDate)
+    public function setEndDate($endDate)
     {
         $this->endDate = $endDate;
         return $this;
     }
 
-    public function getepisode()
+    public function getEpisode()
     {
         return $this->episode;
     }
 
-    public function setepisode($episode)
+    public function setEpisode($episode)
     {
         $this->episode = $episode;
         return $this;
     }
 
-    public function getepisodes()
+    public function getEpisodes()
     {
         return $this->episodes;
     }
 
-    public function setepisodes($episodes)
+    public function setEpisodes($episodes)
     {
         $this->episodes = $episodes;
         return $this;
     }
 
-    public function getnumberOfEpisodes()
+    public function getNumberOfEpisodes()
     {
         return $this->numberOfEpisodes;
     }
 
-    public function setnumberOfEpisodes($numberOfEpisodes)
+    public function setNumberOfEpisodes($numberOfEpisodes)
     {
         $this->numberOfEpisodes = $numberOfEpisodes;
         return $this;
     }
 
-    public function getpartOfSeries()
+    public function getPartOfSeries()
     {
         return $this->partOfSeries;
     }
 
-    public function setpartOfSeries($partOfSeries)
+    public function setPartOfSeries($partOfSeries)
     {
         $this->partOfSeries = $partOfSeries;
         return $this;
     }
 
-    public function getposition()
+    public function getPosition()
     {
         return $this->position;
     }
 
-    public function setposition($position)
+    public function setPosition($position)
     {
         $this->position = $position;
         return $this;
     }
 
-    public function getproducer()
+    public function getProducer()
     {
         return $this->producer;
     }
 
-    public function setproducer($producer)
+    public function setProducer($producer)
     {
         $this->producer = $producer;
         return $this;
     }
 
-    public function getproductionCompany()
+    public function getProductionCompany()
     {
         return $this->productionCompany;
     }
 
-    public function setproductionCompany($productionCompany)
+    public function setProductionCompany($productionCompany)
     {
         $this->productionCompany = $productionCompany;
         return $this;
     }
 
-    public function getseasonNumber()
+    public function getSeasonNumber()
     {
         return $this->seasonNumber;
     }
 
-    public function setseasonNumber($seasonNumber)
+    public function setSeasonNumber($seasonNumber)
     {
         $this->seasonNumber = $seasonNumber;
         return $this;
     }
 
-    public function getstartDate()
+    public function getStartDate()
     {
         return $this->startDate;
     }
 
-    public function setstartDate($startDate)
+    public function setStartDate($startDate)
     {
         $this->startDate = $startDate;
         return $this;
     }
 
-    public function gettrailer()
+    public function getTrailer()
     {
         return $this->trailer;
     }
 
-    public function settrailer($trailer)
+    public function setTrailer($trailer)
     {
         $this->trailer = $trailer;
         return $this;

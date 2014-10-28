@@ -161,221 +161,221 @@ class SoftwareApplication extends CreativeWork
      */
     private $url = "http://schema.org/SoftwareApplication";
 
-    public function getapplicationCategory()
+    public function getApplicationCategory()
     {
         return $this->applicationCategory;
     }
 
-    public function setapplicationCategory($applicationCategory)
+    public function setApplicationCategory($applicationCategory)
     {
         $this->applicationCategory = $applicationCategory;
         return $this;
     }
 
-    public function getapplicationSubCategory()
+    public function getApplicationSubCategory()
     {
         return $this->applicationSubCategory;
     }
 
-    public function setapplicationSubCategory($applicationSubCategory)
+    public function setApplicationSubCategory($applicationSubCategory)
     {
         $this->applicationSubCategory = $applicationSubCategory;
         return $this;
     }
 
-    public function getapplicationSuite()
+    public function getApplicationSuite()
     {
         return $this->applicationSuite;
     }
 
-    public function setapplicationSuite($applicationSuite)
+    public function setApplicationSuite($applicationSuite)
     {
         $this->applicationSuite = $applicationSuite;
         return $this;
     }
 
-    public function getcountriesNotSupported()
+    public function getCountriesNotSupported()
     {
         return $this->countriesNotSupported;
     }
 
-    public function setcountriesNotSupported($countriesNotSupported)
+    public function setCountriesNotSupported($countriesNotSupported)
     {
         $this->countriesNotSupported = $countriesNotSupported;
         return $this;
     }
 
-    public function getcountriesSupported()
+    public function getCountriesSupported()
     {
         return $this->countriesSupported;
     }
 
-    public function setcountriesSupported($countriesSupported)
+    public function setCountriesSupported($countriesSupported)
     {
         $this->countriesSupported = $countriesSupported;
         return $this;
     }
 
-    public function getdevice()
+    public function getDevice()
     {
         return $this->device;
     }
 
-    public function setdevice($device)
+    public function setDevice($device)
     {
         $this->device = $device;
         return $this;
     }
 
-    public function getdownloadUrl()
+    public function getDownloadUrl()
     {
         return $this->downloadUrl;
     }
 
-    public function setdownloadUrl($downloadUrl)
+    public function setDownloadUrl($downloadUrl)
     {
         $this->downloadUrl = $downloadUrl;
         return $this;
     }
 
-    public function getfeatureList()
+    public function getFeatureList()
     {
         return $this->featureList;
     }
 
-    public function setfeatureList($featureList)
+    public function setFeatureList($featureList)
     {
         $this->featureList = $featureList;
         return $this;
     }
 
-    public function getfileFormat()
+    public function getFileFormat()
     {
         return $this->fileFormat;
     }
 
-    public function setfileFormat($fileFormat)
+    public function setFileFormat($fileFormat)
     {
         $this->fileFormat = $fileFormat;
         return $this;
     }
 
-    public function getfileSize()
+    public function getFileSize()
     {
         return $this->fileSize;
     }
 
-    public function setfileSize($fileSize)
+    public function setFileSize($fileSize)
     {
         $this->fileSize = $fileSize;
         return $this;
     }
 
-    public function getinstallUrl()
+    public function getInstallUrl()
     {
         return $this->installUrl;
     }
 
-    public function setinstallUrl($installUrl)
+    public function setInstallUrl($installUrl)
     {
         $this->installUrl = $installUrl;
         return $this;
     }
 
-    public function getmemoryRequirements()
+    public function getMemoryRequirements()
     {
         return $this->memoryRequirements;
     }
 
-    public function setmemoryRequirements($memoryRequirements)
+    public function setMemoryRequirements($memoryRequirements)
     {
         $this->memoryRequirements = $memoryRequirements;
         return $this;
     }
 
-    public function getoperatingSystem()
+    public function getOperatingSystem()
     {
         return $this->operatingSystem;
     }
 
-    public function setoperatingSystem($operatingSystem)
+    public function setOperatingSystem($operatingSystem)
     {
         $this->operatingSystem = $operatingSystem;
         return $this;
     }
 
-    public function getpermissions()
+    public function getPermissions()
     {
         return $this->permissions;
     }
 
-    public function setpermissions($permissions)
+    public function setPermissions($permissions)
     {
         $this->permissions = $permissions;
         return $this;
     }
 
-    public function getprocessorRequirements()
+    public function getProcessorRequirements()
     {
         return $this->processorRequirements;
     }
 
-    public function setprocessorRequirements($processorRequirements)
+    public function setProcessorRequirements($processorRequirements)
     {
         $this->processorRequirements = $processorRequirements;
         return $this;
     }
 
-    public function getreleaseNotes()
+    public function getReleaseNotes()
     {
         return $this->releaseNotes;
     }
 
-    public function setreleaseNotes($releaseNotes)
+    public function setReleaseNotes($releaseNotes)
     {
         $this->releaseNotes = $releaseNotes;
         return $this;
     }
 
-    public function getrequirements()
+    public function getRequirements()
     {
         return $this->requirements;
     }
 
-    public function setrequirements($requirements)
+    public function setRequirements($requirements)
     {
         $this->requirements = $requirements;
         return $this;
     }
 
-    public function getscreenshot()
+    public function getScreenshot()
     {
         return $this->screenshot;
     }
 
-    public function setscreenshot($screenshot)
+    public function setScreenshot($screenshot)
     {
         $this->screenshot = $screenshot;
         return $this;
     }
 
-    public function getsoftwareVersion()
+    public function getSoftwareVersion()
     {
         return $this->softwareVersion;
     }
 
-    public function setsoftwareVersion($softwareVersion)
+    public function setSoftwareVersion($softwareVersion)
     {
         $this->softwareVersion = $softwareVersion;
         return $this;
     }
 
-    public function getstorageRequirements()
+    public function getStorageRequirements()
     {
         return $this->storageRequirements;
     }
 
-    public function setstorageRequirements($storageRequirements)
+    public function setStorageRequirements($storageRequirements)
     {
         $this->storageRequirements = $storageRequirements;
         return $this;

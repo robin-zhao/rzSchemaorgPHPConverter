@@ -140,188 +140,188 @@ class Order extends Intangible
      */
     private $url = "http://schema.org/Order";
 
-    public function getacceptedOffer()
+    public function getAcceptedOffer()
     {
         return $this->acceptedOffer;
     }
 
-    public function setacceptedOffer($acceptedOffer)
+    public function setAcceptedOffer($acceptedOffer)
     {
         $this->acceptedOffer = $acceptedOffer;
         return $this;
     }
 
-    public function getbillingAddress()
+    public function getBillingAddress()
     {
         return $this->billingAddress;
     }
 
-    public function setbillingAddress($billingAddress)
+    public function setBillingAddress($billingAddress)
     {
         $this->billingAddress = $billingAddress;
         return $this;
     }
 
-    public function getconfirmationNumber()
+    public function getConfirmationNumber()
     {
         return $this->confirmationNumber;
     }
 
-    public function setconfirmationNumber($confirmationNumber)
+    public function setConfirmationNumber($confirmationNumber)
     {
         $this->confirmationNumber = $confirmationNumber;
         return $this;
     }
 
-    public function getcustomer()
+    public function getCustomer()
     {
         return $this->customer;
     }
 
-    public function setcustomer($customer)
+    public function setCustomer($customer)
     {
         $this->customer = $customer;
         return $this;
     }
 
-    public function getdiscount()
+    public function getDiscount()
     {
         return $this->discount;
     }
 
-    public function setdiscount($discount)
+    public function setDiscount($discount)
     {
         $this->discount = $discount;
         return $this;
     }
 
-    public function getdiscountCode()
+    public function getDiscountCode()
     {
         return $this->discountCode;
     }
 
-    public function setdiscountCode($discountCode)
+    public function setDiscountCode($discountCode)
     {
         $this->discountCode = $discountCode;
         return $this;
     }
 
-    public function getdiscountCurrency()
+    public function getDiscountCurrency()
     {
         return $this->discountCurrency;
     }
 
-    public function setdiscountCurrency($discountCurrency)
+    public function setDiscountCurrency($discountCurrency)
     {
         $this->discountCurrency = $discountCurrency;
         return $this;
     }
 
-    public function getisGift()
+    public function getIsGift()
     {
         return $this->isGift;
     }
 
-    public function setisGift($isGift)
+    public function setIsGift($isGift)
     {
         $this->isGift = $isGift;
         return $this;
     }
 
-    public function getmerchant()
+    public function getMerchant()
     {
         return $this->merchant;
     }
 
-    public function setmerchant($merchant)
+    public function setMerchant($merchant)
     {
         $this->merchant = $merchant;
         return $this;
     }
 
-    public function getorderDate()
+    public function getOrderDate()
     {
         return $this->orderDate;
     }
 
-    public function setorderDate($orderDate)
+    public function setOrderDate($orderDate)
     {
         $this->orderDate = $orderDate;
         return $this;
     }
 
-    public function getorderedItem()
+    public function getOrderedItem()
     {
         return $this->orderedItem;
     }
 
-    public function setorderedItem($orderedItem)
+    public function setOrderedItem($orderedItem)
     {
         $this->orderedItem = $orderedItem;
         return $this;
     }
 
-    public function getorderNumber()
+    public function getOrderNumber()
     {
         return $this->orderNumber;
     }
 
-    public function setorderNumber($orderNumber)
+    public function setOrderNumber($orderNumber)
     {
         $this->orderNumber = $orderNumber;
         return $this;
     }
 
-    public function getorderStatus()
+    public function getOrderStatus()
     {
         return $this->orderStatus;
     }
 
-    public function setorderStatus($orderStatus)
+    public function setOrderStatus($orderStatus)
     {
         $this->orderStatus = $orderStatus;
         return $this;
     }
 
-    public function getpaymentDue()
+    public function getPaymentDue()
     {
         return $this->paymentDue;
     }
 
-    public function setpaymentDue($paymentDue)
+    public function setPaymentDue($paymentDue)
     {
         $this->paymentDue = $paymentDue;
         return $this;
     }
 
-    public function getpaymentMethod()
+    public function getPaymentMethod()
     {
         return $this->paymentMethod;
     }
 
-    public function setpaymentMethod($paymentMethod)
+    public function setPaymentMethod($paymentMethod)
     {
         $this->paymentMethod = $paymentMethod;
         return $this;
     }
 
-    public function getpaymentMethodId()
+    public function getPaymentMethodId()
     {
         return $this->paymentMethodId;
     }
 
-    public function setpaymentMethodId($paymentMethodId)
+    public function setPaymentMethodId($paymentMethodId)
     {
         $this->paymentMethodId = $paymentMethodId;
         return $this;
     }
 
-    public function getpaymentUrl()
+    public function getPaymentUrl()
     {
         return $this->paymentUrl;
     }
 
-    public function setpaymentUrl($paymentUrl)
+    public function setPaymentUrl($paymentUrl)
     {
         $this->paymentUrl = $paymentUrl;
         return $this;

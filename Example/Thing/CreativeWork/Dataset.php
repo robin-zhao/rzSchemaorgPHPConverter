@@ -49,45 +49,45 @@ class Dataset extends CreativeWork
      */
     private $url = "http://schema.org/Dataset";
 
-    public function getcatalog()
+    public function getCatalog()
     {
         return $this->catalog;
     }
 
-    public function setcatalog($catalog)
+    public function setCatalog($catalog)
     {
         $this->catalog = $catalog;
         return $this;
     }
 
-    public function getdistribution()
+    public function getDistribution()
     {
         return $this->distribution;
     }
 
-    public function setdistribution($distribution)
+    public function setDistribution($distribution)
     {
         $this->distribution = $distribution;
         return $this;
     }
 
-    public function getspatial()
+    public function getSpatial()
     {
         return $this->spatial;
     }
 
-    public function setspatial($spatial)
+    public function setSpatial($spatial)
     {
         $this->spatial = $spatial;
         return $this;
     }
 
-    public function gettemporal()
+    public function getTemporal()
     {
         return $this->temporal;
     }
 
-    public function settemporal($temporal)
+    public function setTemporal($temporal)
     {
         $this->temporal = $temporal;
         return $this;

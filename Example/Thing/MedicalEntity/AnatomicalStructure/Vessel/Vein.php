@@ -42,34 +42,34 @@ class Vein extends Vessel
      */
     private $url = "http://schema.org/Vein";
 
-    public function getdrainsTo()
+    public function getDrainsTo()
     {
         return $this->drainsTo;
     }
 
-    public function setdrainsTo($drainsTo)
+    public function setDrainsTo($drainsTo)
     {
         $this->drainsTo = $drainsTo;
         return $this;
     }
 
-    public function getregionDrained()
+    public function getRegionDrained()
     {
         return $this->regionDrained;
     }
 
-    public function setregionDrained($regionDrained)
+    public function setRegionDrained($regionDrained)
     {
         $this->regionDrained = $regionDrained;
         return $this;
     }
 
-    public function gettributary()
+    public function getTributary()
     {
         return $this->tributary;
     }
 
-    public function settributary($tributary)
+    public function setTributary($tributary)
     {
         $this->tributary = $tributary;
         return $this;

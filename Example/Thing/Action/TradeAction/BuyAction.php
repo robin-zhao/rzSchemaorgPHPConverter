@@ -35,23 +35,23 @@ class BuyAction extends TradeAction
      */
     private $url = "http://schema.org/BuyAction";
 
-    public function getvendor()
+    public function getVendor()
     {
         return $this->vendor;
     }
 
-    public function setvendor($vendor)
+    public function setVendor($vendor)
     {
         $this->vendor = $vendor;
         return $this;
     }
 
-    public function getwarrantyPromise()
+    public function getWarrantyPromise()
     {
         return $this->warrantyPromise;
     }
 
-    public function setwarrantyPromise($warrantyPromise)
+    public function setWarrantyPromise($warrantyPromise)
     {
         $this->warrantyPromise = $warrantyPromise;
         return $this;

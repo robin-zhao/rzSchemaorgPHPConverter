@@ -203,287 +203,287 @@ class Drug extends MedicalTherapy
      */
     private $url = "http://schema.org/Drug";
 
-    public function getactiveIngredient()
+    public function getActiveIngredient()
     {
         return $this->activeIngredient;
     }
 
-    public function setactiveIngredient($activeIngredient)
+    public function setActiveIngredient($activeIngredient)
     {
         $this->activeIngredient = $activeIngredient;
         return $this;
     }
 
-    public function getadministrationRoute()
+    public function getAdministrationRoute()
     {
         return $this->administrationRoute;
     }
 
-    public function setadministrationRoute($administrationRoute)
+    public function setAdministrationRoute($administrationRoute)
     {
         $this->administrationRoute = $administrationRoute;
         return $this;
     }
 
-    public function getalcoholWarning()
+    public function getAlcoholWarning()
     {
         return $this->alcoholWarning;
     }
 
-    public function setalcoholWarning($alcoholWarning)
+    public function setAlcoholWarning($alcoholWarning)
     {
         $this->alcoholWarning = $alcoholWarning;
         return $this;
     }
 
-    public function getavailableStrength()
+    public function getAvailableStrength()
     {
         return $this->availableStrength;
     }
 
-    public function setavailableStrength($availableStrength)
+    public function setAvailableStrength($availableStrength)
     {
         $this->availableStrength = $availableStrength;
         return $this;
     }
 
-    public function getbreastfeedingWarning()
+    public function getBreastfeedingWarning()
     {
         return $this->breastfeedingWarning;
     }
 
-    public function setbreastfeedingWarning($breastfeedingWarning)
+    public function setBreastfeedingWarning($breastfeedingWarning)
     {
         $this->breastfeedingWarning = $breastfeedingWarning;
         return $this;
     }
 
-    public function getclincalPharmacology()
+    public function getClincalPharmacology()
     {
         return $this->clincalPharmacology;
     }
 
-    public function setclincalPharmacology($clincalPharmacology)
+    public function setClincalPharmacology($clincalPharmacology)
     {
         $this->clincalPharmacology = $clincalPharmacology;
         return $this;
     }
 
-    public function getcost()
+    public function getCost()
     {
         return $this->cost;
     }
 
-    public function setcost($cost)
+    public function setCost($cost)
     {
         $this->cost = $cost;
         return $this;
     }
 
-    public function getdosageForm()
+    public function getDosageForm()
     {
         return $this->dosageForm;
     }
 
-    public function setdosageForm($dosageForm)
+    public function setDosageForm($dosageForm)
     {
         $this->dosageForm = $dosageForm;
         return $this;
     }
 
-    public function getdoseSchedule()
+    public function getDoseSchedule()
     {
         return $this->doseSchedule;
     }
 
-    public function setdoseSchedule($doseSchedule)
+    public function setDoseSchedule($doseSchedule)
     {
         $this->doseSchedule = $doseSchedule;
         return $this;
     }
 
-    public function getdrugClass()
+    public function getDrugClass()
     {
         return $this->drugClass;
     }
 
-    public function setdrugClass($drugClass)
+    public function setDrugClass($drugClass)
     {
         $this->drugClass = $drugClass;
         return $this;
     }
 
-    public function getfoodWarning()
+    public function getFoodWarning()
     {
         return $this->foodWarning;
     }
 
-    public function setfoodWarning($foodWarning)
+    public function setFoodWarning($foodWarning)
     {
         $this->foodWarning = $foodWarning;
         return $this;
     }
 
-    public function getinteractingDrug()
+    public function getInteractingDrug()
     {
         return $this->interactingDrug;
     }
 
-    public function setinteractingDrug($interactingDrug)
+    public function setInteractingDrug($interactingDrug)
     {
         $this->interactingDrug = $interactingDrug;
         return $this;
     }
 
-    public function getisAvailableGenerically()
+    public function getIsAvailableGenerically()
     {
         return $this->isAvailableGenerically;
     }
 
-    public function setisAvailableGenerically($isAvailableGenerically)
+    public function setIsAvailableGenerically($isAvailableGenerically)
     {
         $this->isAvailableGenerically = $isAvailableGenerically;
         return $this;
     }
 
-    public function getisProprietary()
+    public function getIsProprietary()
     {
         return $this->isProprietary;
     }
 
-    public function setisProprietary($isProprietary)
+    public function setIsProprietary($isProprietary)
     {
         $this->isProprietary = $isProprietary;
         return $this;
     }
 
-    public function getlabelDetails()
+    public function getLabelDetails()
     {
         return $this->labelDetails;
     }
 
-    public function setlabelDetails($labelDetails)
+    public function setLabelDetails($labelDetails)
     {
         $this->labelDetails = $labelDetails;
         return $this;
     }
 
-    public function getlegalStatus()
+    public function getLegalStatus()
     {
         return $this->legalStatus;
     }
 
-    public function setlegalStatus($legalStatus)
+    public function setLegalStatus($legalStatus)
     {
         $this->legalStatus = $legalStatus;
         return $this;
     }
 
-    public function getmanufacturer()
+    public function getManufacturer()
     {
         return $this->manufacturer;
     }
 
-    public function setmanufacturer($manufacturer)
+    public function setManufacturer($manufacturer)
     {
         $this->manufacturer = $manufacturer;
         return $this;
     }
 
-    public function getmechanismOfAction()
+    public function getMechanismOfAction()
     {
         return $this->mechanismOfAction;
     }
 
-    public function setmechanismOfAction($mechanismOfAction)
+    public function setMechanismOfAction($mechanismOfAction)
     {
         $this->mechanismOfAction = $mechanismOfAction;
         return $this;
     }
 
-    public function getnonProprietaryName()
+    public function getNonProprietaryName()
     {
         return $this->nonProprietaryName;
     }
 
-    public function setnonProprietaryName($nonProprietaryName)
+    public function setNonProprietaryName($nonProprietaryName)
     {
         $this->nonProprietaryName = $nonProprietaryName;
         return $this;
     }
 
-    public function getoverdosage()
+    public function getOverdosage()
     {
         return $this->overdosage;
     }
 
-    public function setoverdosage($overdosage)
+    public function setOverdosage($overdosage)
     {
         $this->overdosage = $overdosage;
         return $this;
     }
 
-    public function getpregnancyCategory()
+    public function getPregnancyCategory()
     {
         return $this->pregnancyCategory;
     }
 
-    public function setpregnancyCategory($pregnancyCategory)
+    public function setPregnancyCategory($pregnancyCategory)
     {
         $this->pregnancyCategory = $pregnancyCategory;
         return $this;
     }
 
-    public function getpregnancyWarning()
+    public function getPregnancyWarning()
     {
         return $this->pregnancyWarning;
     }
 
-    public function setpregnancyWarning($pregnancyWarning)
+    public function setPregnancyWarning($pregnancyWarning)
     {
         $this->pregnancyWarning = $pregnancyWarning;
         return $this;
     }
 
-    public function getprescribingInfo()
+    public function getPrescribingInfo()
     {
         return $this->prescribingInfo;
     }
 
-    public function setprescribingInfo($prescribingInfo)
+    public function setPrescribingInfo($prescribingInfo)
     {
         $this->prescribingInfo = $prescribingInfo;
         return $this;
     }
 
-    public function getprescriptionStatus()
+    public function getPrescriptionStatus()
     {
         return $this->prescriptionStatus;
     }
 
-    public function setprescriptionStatus($prescriptionStatus)
+    public function setPrescriptionStatus($prescriptionStatus)
     {
         $this->prescriptionStatus = $prescriptionStatus;
         return $this;
     }
 
-    public function getrelatedDrug()
+    public function getRelatedDrug()
     {
         return $this->relatedDrug;
     }
 
-    public function setrelatedDrug($relatedDrug)
+    public function setRelatedDrug($relatedDrug)
     {
         $this->relatedDrug = $relatedDrug;
         return $this;
     }
 
-    public function getwarning()
+    public function getWarning()
     {
         return $this->warning;
     }
 
-    public function setwarning($warning)
+    public function setWarning($warning)
     {
         $this->warning = $warning;
         return $this;

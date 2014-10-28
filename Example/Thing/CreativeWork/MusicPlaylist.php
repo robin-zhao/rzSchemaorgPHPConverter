@@ -42,34 +42,34 @@ class MusicPlaylist extends CreativeWork
      */
     private $url = "http://schema.org/MusicPlaylist";
 
-    public function getnumTracks()
+    public function getNumTracks()
     {
         return $this->numTracks;
     }
 
-    public function setnumTracks($numTracks)
+    public function setNumTracks($numTracks)
     {
         $this->numTracks = $numTracks;
         return $this;
     }
 
-    public function gettrack()
+    public function getTrack()
     {
         return $this->track;
     }
 
-    public function settrack($track)
+    public function setTrack($track)
     {
         $this->track = $track;
         return $this;
     }
 
-    public function gettracks()
+    public function getTracks()
     {
         return $this->tracks;
     }
 
-    public function settracks($tracks)
+    public function setTracks($tracks)
     {
         $this->tracks = $tracks;
         return $this;

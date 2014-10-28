@@ -56,56 +56,56 @@ class Code extends CreativeWork
      */
     private $url = "http://schema.org/Code";
 
-    public function getcodeRepository()
+    public function getCodeRepository()
     {
         return $this->codeRepository;
     }
 
-    public function setcodeRepository($codeRepository)
+    public function setCodeRepository($codeRepository)
     {
         $this->codeRepository = $codeRepository;
         return $this;
     }
 
-    public function getprogrammingLanguage()
+    public function getProgrammingLanguage()
     {
         return $this->programmingLanguage;
     }
 
-    public function setprogrammingLanguage($programmingLanguage)
+    public function setProgrammingLanguage($programmingLanguage)
     {
         $this->programmingLanguage = $programmingLanguage;
         return $this;
     }
 
-    public function getruntime()
+    public function getRuntime()
     {
         return $this->runtime;
     }
 
-    public function setruntime($runtime)
+    public function setRuntime($runtime)
     {
         $this->runtime = $runtime;
         return $this;
     }
 
-    public function getsampleType()
+    public function getSampleType()
     {
         return $this->sampleType;
     }
 
-    public function setsampleType($sampleType)
+    public function setSampleType($sampleType)
     {
         $this->sampleType = $sampleType;
         return $this;
     }
 
-    public function gettargetProduct()
+    public function getTargetProduct()
     {
         return $this->targetProduct;
     }
 
-    public function settargetProduct($targetProduct)
+    public function setTargetProduct($targetProduct)
     {
         $this->targetProduct = $targetProduct;
         return $this;

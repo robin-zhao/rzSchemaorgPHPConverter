@@ -70,78 +70,78 @@ class Permit extends Intangible
      */
     private $url = "http://schema.org/Permit";
 
-    public function getissuedBy()
+    public function getIssuedBy()
     {
         return $this->issuedBy;
     }
 
-    public function setissuedBy($issuedBy)
+    public function setIssuedBy($issuedBy)
     {
         $this->issuedBy = $issuedBy;
         return $this;
     }
 
-    public function getissuedThrough()
+    public function getIssuedThrough()
     {
         return $this->issuedThrough;
     }
 
-    public function setissuedThrough($issuedThrough)
+    public function setIssuedThrough($issuedThrough)
     {
         $this->issuedThrough = $issuedThrough;
         return $this;
     }
 
-    public function getpermitAudience()
+    public function getPermitAudience()
     {
         return $this->permitAudience;
     }
 
-    public function setpermitAudience($permitAudience)
+    public function setPermitAudience($permitAudience)
     {
         $this->permitAudience = $permitAudience;
         return $this;
     }
 
-    public function getvalidFor()
+    public function getValidFor()
     {
         return $this->validFor;
     }
 
-    public function setvalidFor($validFor)
+    public function setValidFor($validFor)
     {
         $this->validFor = $validFor;
         return $this;
     }
 
-    public function getvalidFrom()
+    public function getValidFrom()
     {
         return $this->validFrom;
     }
 
-    public function setvalidFrom($validFrom)
+    public function setValidFrom($validFrom)
     {
         $this->validFrom = $validFrom;
         return $this;
     }
 
-    public function getvalidIn()
+    public function getValidIn()
     {
         return $this->validIn;
     }
 
-    public function setvalidIn($validIn)
+    public function setValidIn($validIn)
     {
         $this->validIn = $validIn;
         return $this;
     }
 
-    public function getvalidUntil()
+    public function getValidUntil()
     {
         return $this->validUntil;
     }
 
-    public function setvalidUntil($validUntil)
+    public function setValidUntil($validUntil)
     {
         $this->validUntil = $validUntil;
         return $this;

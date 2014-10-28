@@ -28,12 +28,12 @@ class WebApplication extends SoftwareApplication
      */
     private $url = "http://schema.org/WebApplication";
 
-    public function getbrowserRequirements()
+    public function getBrowserRequirements()
     {
         return $this->browserRequirements;
     }
 
-    public function setbrowserRequirements($browserRequirements)
+    public function setBrowserRequirements($browserRequirements)
     {
         $this->browserRequirements = $browserRequirements;
         return $this;

@@ -133,177 +133,177 @@ class Event extends Thing
      */
     private $url = "http://schema.org/Event";
 
-    public function getattendee()
+    public function getAttendee()
     {
         return $this->attendee;
     }
 
-    public function setattendee($attendee)
+    public function setAttendee($attendee)
     {
         $this->attendee = $attendee;
         return $this;
     }
 
-    public function getattendees()
+    public function getAttendees()
     {
         return $this->attendees;
     }
 
-    public function setattendees($attendees)
+    public function setAttendees($attendees)
     {
         $this->attendees = $attendees;
         return $this;
     }
 
-    public function getdoorTime()
+    public function getDoorTime()
     {
         return $this->doorTime;
     }
 
-    public function setdoorTime($doorTime)
+    public function setDoorTime($doorTime)
     {
         $this->doorTime = $doorTime;
         return $this;
     }
 
-    public function getduration()
+    public function getDuration()
     {
         return $this->duration;
     }
 
-    public function setduration($duration)
+    public function setDuration($duration)
     {
         $this->duration = $duration;
         return $this;
     }
 
-    public function getendDate()
+    public function getEndDate()
     {
         return $this->endDate;
     }
 
-    public function setendDate($endDate)
+    public function setEndDate($endDate)
     {
         $this->endDate = $endDate;
         return $this;
     }
 
-    public function geteventStatus()
+    public function getEventStatus()
     {
         return $this->eventStatus;
     }
 
-    public function seteventStatus($eventStatus)
+    public function setEventStatus($eventStatus)
     {
         $this->eventStatus = $eventStatus;
         return $this;
     }
 
-    public function getlocation()
+    public function getLocation()
     {
         return $this->location;
     }
 
-    public function setlocation($location)
+    public function setLocation($location)
     {
         $this->location = $location;
         return $this;
     }
 
-    public function getoffers()
+    public function getOffers()
     {
         return $this->offers;
     }
 
-    public function setoffers($offers)
+    public function setOffers($offers)
     {
         $this->offers = $offers;
         return $this;
     }
 
-    public function getperformer()
+    public function getPerformer()
     {
         return $this->performer;
     }
 
-    public function setperformer($performer)
+    public function setPerformer($performer)
     {
         $this->performer = $performer;
         return $this;
     }
 
-    public function getperformers()
+    public function getPerformers()
     {
         return $this->performers;
     }
 
-    public function setperformers($performers)
+    public function setPerformers($performers)
     {
         $this->performers = $performers;
         return $this;
     }
 
-    public function getpreviousStartDate()
+    public function getPreviousStartDate()
     {
         return $this->previousStartDate;
     }
 
-    public function setpreviousStartDate($previousStartDate)
+    public function setPreviousStartDate($previousStartDate)
     {
         $this->previousStartDate = $previousStartDate;
         return $this;
     }
 
-    public function getstartDate()
+    public function getStartDate()
     {
         return $this->startDate;
     }
 
-    public function setstartDate($startDate)
+    public function setStartDate($startDate)
     {
         $this->startDate = $startDate;
         return $this;
     }
 
-    public function getsubEvent()
+    public function getSubEvent()
     {
         return $this->subEvent;
     }
 
-    public function setsubEvent($subEvent)
+    public function setSubEvent($subEvent)
     {
         $this->subEvent = $subEvent;
         return $this;
     }
 
-    public function getsubEvents()
+    public function getSubEvents()
     {
         return $this->subEvents;
     }
 
-    public function setsubEvents($subEvents)
+    public function setSubEvents($subEvents)
     {
         $this->subEvents = $subEvents;
         return $this;
     }
 
-    public function getsuperEvent()
+    public function getSuperEvent()
     {
         return $this->superEvent;
     }
 
-    public function setsuperEvent($superEvent)
+    public function setSuperEvent($superEvent)
     {
         $this->superEvent = $superEvent;
         return $this;
     }
 
-    public function gettypicalAgeRange()
+    public function getTypicalAgeRange()
     {
         return $this->typicalAgeRange;
     }
 
-    public function settypicalAgeRange($typicalAgeRange)
+    public function setTypicalAgeRange($typicalAgeRange)
     {
         $this->typicalAgeRange = $typicalAgeRange;
         return $this;

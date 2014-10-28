@@ -56,56 +56,56 @@ class NewsArticle extends Article
      */
     private $url = "http://schema.org/NewsArticle";
 
-    public function getdateline()
+    public function getDateline()
     {
         return $this->dateline;
     }
 
-    public function setdateline($dateline)
+    public function setDateline($dateline)
     {
         $this->dateline = $dateline;
         return $this;
     }
 
-    public function getprintColumn()
+    public function getPrintColumn()
     {
         return $this->printColumn;
     }
 
-    public function setprintColumn($printColumn)
+    public function setPrintColumn($printColumn)
     {
         $this->printColumn = $printColumn;
         return $this;
     }
 
-    public function getprintEdition()
+    public function getPrintEdition()
     {
         return $this->printEdition;
     }
 
-    public function setprintEdition($printEdition)
+    public function setPrintEdition($printEdition)
     {
         $this->printEdition = $printEdition;
         return $this;
     }
 
-    public function getprintPage()
+    public function getPrintPage()
     {
         return $this->printPage;
     }
 
-    public function setprintPage($printPage)
+    public function setPrintPage($printPage)
     {
         $this->printPage = $printPage;
         return $this;
     }
 
-    public function getprintSection()
+    public function getPrintSection()
     {
         return $this->printSection;
     }
 
-    public function setprintSection($printSection)
+    public function setPrintSection($printSection)
     {
         $this->printSection = $printSection;
         return $this;

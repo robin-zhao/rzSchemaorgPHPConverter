@@ -70,78 +70,78 @@ class PeopleAudience extends Audience
      */
     private $url = "http://schema.org/PeopleAudience";
 
-    public function gethealthCondition()
+    public function getHealthCondition()
     {
         return $this->healthCondition;
     }
 
-    public function sethealthCondition($healthCondition)
+    public function setHealthCondition($healthCondition)
     {
         $this->healthCondition = $healthCondition;
         return $this;
     }
 
-    public function getrequiredGender()
+    public function getRequiredGender()
     {
         return $this->requiredGender;
     }
 
-    public function setrequiredGender($requiredGender)
+    public function setRequiredGender($requiredGender)
     {
         $this->requiredGender = $requiredGender;
         return $this;
     }
 
-    public function getrequiredMaxAge()
+    public function getRequiredMaxAge()
     {
         return $this->requiredMaxAge;
     }
 
-    public function setrequiredMaxAge($requiredMaxAge)
+    public function setRequiredMaxAge($requiredMaxAge)
     {
         $this->requiredMaxAge = $requiredMaxAge;
         return $this;
     }
 
-    public function getrequiredMinAge()
+    public function getRequiredMinAge()
     {
         return $this->requiredMinAge;
     }
 
-    public function setrequiredMinAge($requiredMinAge)
+    public function setRequiredMinAge($requiredMinAge)
     {
         $this->requiredMinAge = $requiredMinAge;
         return $this;
     }
 
-    public function getsuggestedGender()
+    public function getSuggestedGender()
     {
         return $this->suggestedGender;
     }
 
-    public function setsuggestedGender($suggestedGender)
+    public function setSuggestedGender($suggestedGender)
     {
         $this->suggestedGender = $suggestedGender;
         return $this;
     }
 
-    public function getsuggestedMaxAge()
+    public function getSuggestedMaxAge()
     {
         return $this->suggestedMaxAge;
     }
 
-    public function setsuggestedMaxAge($suggestedMaxAge)
+    public function setSuggestedMaxAge($suggestedMaxAge)
     {
         $this->suggestedMaxAge = $suggestedMaxAge;
         return $this;
     }
 
-    public function getsuggestedMinAge()
+    public function getSuggestedMinAge()
     {
         return $this->suggestedMinAge;
     }
 
-    public function setsuggestedMinAge($suggestedMinAge)
+    public function setSuggestedMinAge($suggestedMinAge)
     {
         $this->suggestedMinAge = $suggestedMinAge;
         return $this;

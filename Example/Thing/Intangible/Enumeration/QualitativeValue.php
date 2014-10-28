@@ -70,78 +70,78 @@ class QualitativeValue extends Enumeration
      */
     private $url = "http://schema.org/QualitativeValue";
 
-    public function getequal()
+    public function getEqual()
     {
         return $this->equal;
     }
 
-    public function setequal($equal)
+    public function setEqual($equal)
     {
         $this->equal = $equal;
         return $this;
     }
 
-    public function getgreater()
+    public function getGreater()
     {
         return $this->greater;
     }
 
-    public function setgreater($greater)
+    public function setGreater($greater)
     {
         $this->greater = $greater;
         return $this;
     }
 
-    public function getgreaterOrEqual()
+    public function getGreaterOrEqual()
     {
         return $this->greaterOrEqual;
     }
 
-    public function setgreaterOrEqual($greaterOrEqual)
+    public function setGreaterOrEqual($greaterOrEqual)
     {
         $this->greaterOrEqual = $greaterOrEqual;
         return $this;
     }
 
-    public function getlesser()
+    public function getLesser()
     {
         return $this->lesser;
     }
 
-    public function setlesser($lesser)
+    public function setLesser($lesser)
     {
         $this->lesser = $lesser;
         return $this;
     }
 
-    public function getlesserOrEqual()
+    public function getLesserOrEqual()
     {
         return $this->lesserOrEqual;
     }
 
-    public function setlesserOrEqual($lesserOrEqual)
+    public function setLesserOrEqual($lesserOrEqual)
     {
         $this->lesserOrEqual = $lesserOrEqual;
         return $this;
     }
 
-    public function getnonEqual()
+    public function getNonEqual()
     {
         return $this->nonEqual;
     }
 
-    public function setnonEqual($nonEqual)
+    public function setNonEqual($nonEqual)
     {
         $this->nonEqual = $nonEqual;
         return $this;
     }
 
-    public function getvalueReference()
+    public function getValueReference()
     {
         return $this->valueReference;
     }
 
-    public function setvalueReference($valueReference)
+    public function setValueReference($valueReference)
     {
         $this->valueReference = $valueReference;
         return $this;

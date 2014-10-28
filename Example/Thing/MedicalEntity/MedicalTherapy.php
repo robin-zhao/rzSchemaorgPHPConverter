@@ -56,56 +56,56 @@ class MedicalTherapy extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalTherapy";
 
-    public function getadverseOutcome()
+    public function getAdverseOutcome()
     {
         return $this->adverseOutcome;
     }
 
-    public function setadverseOutcome($adverseOutcome)
+    public function setAdverseOutcome($adverseOutcome)
     {
         $this->adverseOutcome = $adverseOutcome;
         return $this;
     }
 
-    public function getcontraindication()
+    public function getContraindication()
     {
         return $this->contraindication;
     }
 
-    public function setcontraindication($contraindication)
+    public function setContraindication($contraindication)
     {
         $this->contraindication = $contraindication;
         return $this;
     }
 
-    public function getduplicateTherapy()
+    public function getDuplicateTherapy()
     {
         return $this->duplicateTherapy;
     }
 
-    public function setduplicateTherapy($duplicateTherapy)
+    public function setDuplicateTherapy($duplicateTherapy)
     {
         $this->duplicateTherapy = $duplicateTherapy;
         return $this;
     }
 
-    public function getindication()
+    public function getIndication()
     {
         return $this->indication;
     }
 
-    public function setindication($indication)
+    public function setIndication($indication)
     {
         $this->indication = $indication;
         return $this;
     }
 
-    public function getseriousAdverseOutcome()
+    public function getSeriousAdverseOutcome()
     {
         return $this->seriousAdverseOutcome;
     }
 
-    public function setseriousAdverseOutcome($seriousAdverseOutcome)
+    public function setSeriousAdverseOutcome($seriousAdverseOutcome)
     {
         $this->seriousAdverseOutcome = $seriousAdverseOutcome;
         return $this;

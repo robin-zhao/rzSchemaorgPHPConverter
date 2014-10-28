@@ -28,12 +28,12 @@ class AskAction extends CommunicateAction
      */
     private $url = "http://schema.org/AskAction";
 
-    public function getquestion()
+    public function getQuestion()
     {
         return $this->question;
     }
 
-    public function setquestion($question)
+    public function setQuestion($question)
     {
         $this->question = $question;
         return $this;

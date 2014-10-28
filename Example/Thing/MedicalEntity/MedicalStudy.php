@@ -63,67 +63,67 @@ class MedicalStudy extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalStudy";
 
-    public function getoutcome()
+    public function getOutcome()
     {
         return $this->outcome;
     }
 
-    public function setoutcome($outcome)
+    public function setOutcome($outcome)
     {
         $this->outcome = $outcome;
         return $this;
     }
 
-    public function getpopulation()
+    public function getPopulation()
     {
         return $this->population;
     }
 
-    public function setpopulation($population)
+    public function setPopulation($population)
     {
         $this->population = $population;
         return $this;
     }
 
-    public function getsponsor()
+    public function getSponsor()
     {
         return $this->sponsor;
     }
 
-    public function setsponsor($sponsor)
+    public function setSponsor($sponsor)
     {
         $this->sponsor = $sponsor;
         return $this;
     }
 
-    public function getstatus()
+    public function getStatus()
     {
         return $this->status;
     }
 
-    public function setstatus($status)
+    public function setStatus($status)
     {
         $this->status = $status;
         return $this;
     }
 
-    public function getstudyLocation()
+    public function getStudyLocation()
     {
         return $this->studyLocation;
     }
 
-    public function setstudyLocation($studyLocation)
+    public function setStudyLocation($studyLocation)
     {
         $this->studyLocation = $studyLocation;
         return $this;
     }
 
-    public function getstudySubject()
+    public function getStudySubject()
     {
         return $this->studySubject;
     }
 
-    public function setstudySubject($studySubject)
+    public function setStudySubject($studySubject)
     {
         $this->studySubject = $studySubject;
         return $this;

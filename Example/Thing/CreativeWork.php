@@ -400,595 +400,595 @@ class CreativeWork extends Thing
      */
     private $url = "http://schema.org/CreativeWork";
 
-    public function getabout()
+    public function getAbout()
     {
         return $this->about;
     }
 
-    public function setabout($about)
+    public function setAbout($about)
     {
         $this->about = $about;
         return $this;
     }
 
-    public function getaccessibilityAPI()
+    public function getAccessibilityAPI()
     {
         return $this->accessibilityAPI;
     }
 
-    public function setaccessibilityAPI($accessibilityAPI)
+    public function setAccessibilityAPI($accessibilityAPI)
     {
         $this->accessibilityAPI = $accessibilityAPI;
         return $this;
     }
 
-    public function getaccessibilityControl()
+    public function getAccessibilityControl()
     {
         return $this->accessibilityControl;
     }
 
-    public function setaccessibilityControl($accessibilityControl)
+    public function setAccessibilityControl($accessibilityControl)
     {
         $this->accessibilityControl = $accessibilityControl;
         return $this;
     }
 
-    public function getaccessibilityFeature()
+    public function getAccessibilityFeature()
     {
         return $this->accessibilityFeature;
     }
 
-    public function setaccessibilityFeature($accessibilityFeature)
+    public function setAccessibilityFeature($accessibilityFeature)
     {
         $this->accessibilityFeature = $accessibilityFeature;
         return $this;
     }
 
-    public function getaccessibilityHazard()
+    public function getAccessibilityHazard()
     {
         return $this->accessibilityHazard;
     }
 
-    public function setaccessibilityHazard($accessibilityHazard)
+    public function setAccessibilityHazard($accessibilityHazard)
     {
         $this->accessibilityHazard = $accessibilityHazard;
         return $this;
     }
 
-    public function getaccountablePerson()
+    public function getAccountablePerson()
     {
         return $this->accountablePerson;
     }
 
-    public function setaccountablePerson($accountablePerson)
+    public function setAccountablePerson($accountablePerson)
     {
         $this->accountablePerson = $accountablePerson;
         return $this;
     }
 
-    public function getaggregateRating()
+    public function getAggregateRating()
     {
         return $this->aggregateRating;
     }
 
-    public function setaggregateRating($aggregateRating)
+    public function setAggregateRating($aggregateRating)
     {
         $this->aggregateRating = $aggregateRating;
         return $this;
     }
 
-    public function getalternativeHeadline()
+    public function getAlternativeHeadline()
     {
         return $this->alternativeHeadline;
     }
 
-    public function setalternativeHeadline($alternativeHeadline)
+    public function setAlternativeHeadline($alternativeHeadline)
     {
         $this->alternativeHeadline = $alternativeHeadline;
         return $this;
     }
 
-    public function getassociatedMedia()
+    public function getAssociatedMedia()
     {
         return $this->associatedMedia;
     }
 
-    public function setassociatedMedia($associatedMedia)
+    public function setAssociatedMedia($associatedMedia)
     {
         $this->associatedMedia = $associatedMedia;
         return $this;
     }
 
-    public function getaudience()
+    public function getAudience()
     {
         return $this->audience;
     }
 
-    public function setaudience($audience)
+    public function setAudience($audience)
     {
         $this->audience = $audience;
         return $this;
     }
 
-    public function getaudio()
+    public function getAudio()
     {
         return $this->audio;
     }
 
-    public function setaudio($audio)
+    public function setAudio($audio)
     {
         $this->audio = $audio;
         return $this;
     }
 
-    public function getauthor()
+    public function getAuthor()
     {
         return $this->author;
     }
 
-    public function setauthor($author)
+    public function setAuthor($author)
     {
         $this->author = $author;
         return $this;
     }
 
-    public function getaward()
+    public function getAward()
     {
         return $this->award;
     }
 
-    public function setaward($award)
+    public function setAward($award)
     {
         $this->award = $award;
         return $this;
     }
 
-    public function getawards()
+    public function getAwards()
     {
         return $this->awards;
     }
 
-    public function setawards($awards)
+    public function setAwards($awards)
     {
         $this->awards = $awards;
         return $this;
     }
 
-    public function getcitation()
+    public function getCitation()
     {
         return $this->citation;
     }
 
-    public function setcitation($citation)
+    public function setCitation($citation)
     {
         $this->citation = $citation;
         return $this;
     }
 
-    public function getcomment()
+    public function getComment()
     {
         return $this->comment;
     }
 
-    public function setcomment($comment)
+    public function setComment($comment)
     {
         $this->comment = $comment;
         return $this;
     }
 
-    public function getcontentLocation()
+    public function getContentLocation()
     {
         return $this->contentLocation;
     }
 
-    public function setcontentLocation($contentLocation)
+    public function setContentLocation($contentLocation)
     {
         $this->contentLocation = $contentLocation;
         return $this;
     }
 
-    public function getcontentRating()
+    public function getContentRating()
     {
         return $this->contentRating;
     }
 
-    public function setcontentRating($contentRating)
+    public function setContentRating($contentRating)
     {
         $this->contentRating = $contentRating;
         return $this;
     }
 
-    public function getcontributor()
+    public function getContributor()
     {
         return $this->contributor;
     }
 
-    public function setcontributor($contributor)
+    public function setContributor($contributor)
     {
         $this->contributor = $contributor;
         return $this;
     }
 
-    public function getcopyrightHolder()
+    public function getCopyrightHolder()
     {
         return $this->copyrightHolder;
     }
 
-    public function setcopyrightHolder($copyrightHolder)
+    public function setCopyrightHolder($copyrightHolder)
     {
         $this->copyrightHolder = $copyrightHolder;
         return $this;
     }
 
-    public function getcopyrightYear()
+    public function getCopyrightYear()
     {
         return $this->copyrightYear;
     }
 
-    public function setcopyrightYear($copyrightYear)
+    public function setCopyrightYear($copyrightYear)
     {
         $this->copyrightYear = $copyrightYear;
         return $this;
     }
 
-    public function getcreator()
+    public function getCreator()
     {
         return $this->creator;
     }
 
-    public function setcreator($creator)
+    public function setCreator($creator)
     {
         $this->creator = $creator;
         return $this;
     }
 
-    public function getdateCreated()
+    public function getDateCreated()
     {
         return $this->dateCreated;
     }
 
-    public function setdateCreated($dateCreated)
+    public function setDateCreated($dateCreated)
     {
         $this->dateCreated = $dateCreated;
         return $this;
     }
 
-    public function getdateModified()
+    public function getDateModified()
     {
         return $this->dateModified;
     }
 
-    public function setdateModified($dateModified)
+    public function setDateModified($dateModified)
     {
         $this->dateModified = $dateModified;
         return $this;
     }
 
-    public function getdatePublished()
+    public function getDatePublished()
     {
         return $this->datePublished;
     }
 
-    public function setdatePublished($datePublished)
+    public function setDatePublished($datePublished)
     {
         $this->datePublished = $datePublished;
         return $this;
     }
 
-    public function getdiscussionUrl()
+    public function getDiscussionUrl()
     {
         return $this->discussionUrl;
     }
 
-    public function setdiscussionUrl($discussionUrl)
+    public function setDiscussionUrl($discussionUrl)
     {
         $this->discussionUrl = $discussionUrl;
         return $this;
     }
 
-    public function geteditor()
+    public function getEditor()
     {
         return $this->editor;
     }
 
-    public function seteditor($editor)
+    public function setEditor($editor)
     {
         $this->editor = $editor;
         return $this;
     }
 
-    public function geteducationalAlignment()
+    public function getEducationalAlignment()
     {
         return $this->educationalAlignment;
     }
 
-    public function seteducationalAlignment($educationalAlignment)
+    public function setEducationalAlignment($educationalAlignment)
     {
         $this->educationalAlignment = $educationalAlignment;
         return $this;
     }
 
-    public function geteducationalUse()
+    public function getEducationalUse()
     {
         return $this->educationalUse;
     }
 
-    public function seteducationalUse($educationalUse)
+    public function setEducationalUse($educationalUse)
     {
         $this->educationalUse = $educationalUse;
         return $this;
     }
 
-    public function getencoding()
+    public function getEncoding()
     {
         return $this->encoding;
     }
 
-    public function setencoding($encoding)
+    public function setEncoding($encoding)
     {
         $this->encoding = $encoding;
         return $this;
     }
 
-    public function getencodings()
+    public function getEncodings()
     {
         return $this->encodings;
     }
 
-    public function setencodings($encodings)
+    public function setEncodings($encodings)
     {
         $this->encodings = $encodings;
         return $this;
     }
 
-    public function getgenre()
+    public function getGenre()
     {
         return $this->genre;
     }
 
-    public function setgenre($genre)
+    public function setGenre($genre)
     {
         $this->genre = $genre;
         return $this;
     }
 
-    public function getheadline()
+    public function getHeadline()
     {
         return $this->headline;
     }
 
-    public function setheadline($headline)
+    public function setHeadline($headline)
     {
         $this->headline = $headline;
         return $this;
     }
 
-    public function getinLanguage()
+    public function getInLanguage()
     {
         return $this->inLanguage;
     }
 
-    public function setinLanguage($inLanguage)
+    public function setInLanguage($inLanguage)
     {
         $this->inLanguage = $inLanguage;
         return $this;
     }
 
-    public function getinteractionCount()
+    public function getInteractionCount()
     {
         return $this->interactionCount;
     }
 
-    public function setinteractionCount($interactionCount)
+    public function setInteractionCount($interactionCount)
     {
         $this->interactionCount = $interactionCount;
         return $this;
     }
 
-    public function getinteractivityType()
+    public function getInteractivityType()
     {
         return $this->interactivityType;
     }
 
-    public function setinteractivityType($interactivityType)
+    public function setInteractivityType($interactivityType)
     {
         $this->interactivityType = $interactivityType;
         return $this;
     }
 
-    public function getisBasedOnUrl()
+    public function getIsBasedOnUrl()
     {
         return $this->isBasedOnUrl;
     }
 
-    public function setisBasedOnUrl($isBasedOnUrl)
+    public function setIsBasedOnUrl($isBasedOnUrl)
     {
         $this->isBasedOnUrl = $isBasedOnUrl;
         return $this;
     }
 
-    public function getisFamilyFriendly()
+    public function getIsFamilyFriendly()
     {
         return $this->isFamilyFriendly;
     }
 
-    public function setisFamilyFriendly($isFamilyFriendly)
+    public function setIsFamilyFriendly($isFamilyFriendly)
     {
         $this->isFamilyFriendly = $isFamilyFriendly;
         return $this;
     }
 
-    public function getkeywords()
+    public function getKeywords()
     {
         return $this->keywords;
     }
 
-    public function setkeywords($keywords)
+    public function setKeywords($keywords)
     {
         $this->keywords = $keywords;
         return $this;
     }
 
-    public function getlearningResourceType()
+    public function getLearningResourceType()
     {
         return $this->learningResourceType;
     }
 
-    public function setlearningResourceType($learningResourceType)
+    public function setLearningResourceType($learningResourceType)
     {
         $this->learningResourceType = $learningResourceType;
         return $this;
     }
 
-    public function getmentions()
+    public function getMentions()
     {
         return $this->mentions;
     }
 
-    public function setmentions($mentions)
+    public function setMentions($mentions)
     {
         $this->mentions = $mentions;
         return $this;
     }
 
-    public function getoffers()
+    public function getOffers()
     {
         return $this->offers;
     }
 
-    public function setoffers($offers)
+    public function setOffers($offers)
     {
         $this->offers = $offers;
         return $this;
     }
 
-    public function getprovider()
+    public function getProvider()
     {
         return $this->provider;
     }
 
-    public function setprovider($provider)
+    public function setProvider($provider)
     {
         $this->provider = $provider;
         return $this;
     }
 
-    public function getpublisher()
+    public function getPublisher()
     {
         return $this->publisher;
     }
 
-    public function setpublisher($publisher)
+    public function setPublisher($publisher)
     {
         $this->publisher = $publisher;
         return $this;
     }
 
-    public function getpublishingPrinciples()
+    public function getPublishingPrinciples()
     {
         return $this->publishingPrinciples;
     }
 
-    public function setpublishingPrinciples($publishingPrinciples)
+    public function setPublishingPrinciples($publishingPrinciples)
     {
         $this->publishingPrinciples = $publishingPrinciples;
         return $this;
     }
 
-    public function getreview()
+    public function getReview()
     {
         return $this->review;
     }
 
-    public function setreview($review)
+    public function setReview($review)
     {
         $this->review = $review;
         return $this;
     }
 
-    public function getreviews()
+    public function getReviews()
     {
         return $this->reviews;
     }
 
-    public function setreviews($reviews)
+    public function setReviews($reviews)
     {
         $this->reviews = $reviews;
         return $this;
     }
 
-    public function getsourceOrganization()
+    public function getSourceOrganization()
     {
         return $this->sourceOrganization;
     }
 
-    public function setsourceOrganization($sourceOrganization)
+    public function setSourceOrganization($sourceOrganization)
     {
         $this->sourceOrganization = $sourceOrganization;
         return $this;
     }
 
-    public function gettext()
+    public function getText()
     {
         return $this->text;
     }
 
-    public function settext($text)
+    public function setText($text)
     {
         $this->text = $text;
         return $this;
     }
 
-    public function getthumbnailUrl()
+    public function getThumbnailUrl()
     {
         return $this->thumbnailUrl;
     }
 
-    public function setthumbnailUrl($thumbnailUrl)
+    public function setThumbnailUrl($thumbnailUrl)
     {
         $this->thumbnailUrl = $thumbnailUrl;
         return $this;
     }
 
-    public function gettimeRequired()
+    public function getTimeRequired()
     {
         return $this->timeRequired;
     }
 
-    public function settimeRequired($timeRequired)
+    public function setTimeRequired($timeRequired)
     {
         $this->timeRequired = $timeRequired;
         return $this;
     }
 
-    public function gettypicalAgeRange()
+    public function getTypicalAgeRange()
     {
         return $this->typicalAgeRange;
     }
 
-    public function settypicalAgeRange($typicalAgeRange)
+    public function setTypicalAgeRange($typicalAgeRange)
     {
         $this->typicalAgeRange = $typicalAgeRange;
         return $this;
     }
 
-    public function getversion()
+    public function getVersion()
     {
         return $this->version;
     }
 
-    public function setversion($version)
+    public function setVersion($version)
     {
         $this->version = $version;
         return $this;
     }
 
-    public function getvideo()
+    public function getVideo()
     {
         return $this->video;
     }
 
-    public function setvideo($video)
+    public function setVideo($video)
     {
         $this->video = $video;
         return $this;

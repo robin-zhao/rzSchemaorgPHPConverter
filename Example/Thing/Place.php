@@ -154,210 +154,210 @@ class Place extends Thing
      */
     private $url = "http://schema.org/Place";
 
-    public function getaddress()
+    public function getAddress()
     {
         return $this->address;
     }
 
-    public function setaddress($address)
+    public function setAddress($address)
     {
         $this->address = $address;
         return $this;
     }
 
-    public function getaggregateRating()
+    public function getAggregateRating()
     {
         return $this->aggregateRating;
     }
 
-    public function setaggregateRating($aggregateRating)
+    public function setAggregateRating($aggregateRating)
     {
         $this->aggregateRating = $aggregateRating;
         return $this;
     }
 
-    public function getcontainedIn()
+    public function getContainedIn()
     {
         return $this->containedIn;
     }
 
-    public function setcontainedIn($containedIn)
+    public function setContainedIn($containedIn)
     {
         $this->containedIn = $containedIn;
         return $this;
     }
 
-    public function getevent()
+    public function getEvent()
     {
         return $this->event;
     }
 
-    public function setevent($event)
+    public function setEvent($event)
     {
         $this->event = $event;
         return $this;
     }
 
-    public function getevents()
+    public function getEvents()
     {
         return $this->events;
     }
 
-    public function setevents($events)
+    public function setEvents($events)
     {
         $this->events = $events;
         return $this;
     }
 
-    public function getfaxNumber()
+    public function getFaxNumber()
     {
         return $this->faxNumber;
     }
 
-    public function setfaxNumber($faxNumber)
+    public function setFaxNumber($faxNumber)
     {
         $this->faxNumber = $faxNumber;
         return $this;
     }
 
-    public function getgeo()
+    public function getGeo()
     {
         return $this->geo;
     }
 
-    public function setgeo($geo)
+    public function setGeo($geo)
     {
         $this->geo = $geo;
         return $this;
     }
 
-    public function getglobalLocationNumber()
+    public function getGlobalLocationNumber()
     {
         return $this->globalLocationNumber;
     }
 
-    public function setglobalLocationNumber($globalLocationNumber)
+    public function setGlobalLocationNumber($globalLocationNumber)
     {
         $this->globalLocationNumber = $globalLocationNumber;
         return $this;
     }
 
-    public function getinteractionCount()
+    public function getInteractionCount()
     {
         return $this->interactionCount;
     }
 
-    public function setinteractionCount($interactionCount)
+    public function setInteractionCount($interactionCount)
     {
         $this->interactionCount = $interactionCount;
         return $this;
     }
 
-    public function getisicV4()
+    public function getIsicV4()
     {
         return $this->isicV4;
     }
 
-    public function setisicV4($isicV4)
+    public function setIsicV4($isicV4)
     {
         $this->isicV4 = $isicV4;
         return $this;
     }
 
-    public function getlogo()
+    public function getLogo()
     {
         return $this->logo;
     }
 
-    public function setlogo($logo)
+    public function setLogo($logo)
     {
         $this->logo = $logo;
         return $this;
     }
 
-    public function getmap()
+    public function getMap()
     {
         return $this->map;
     }
 
-    public function setmap($map)
+    public function setMap($map)
     {
         $this->map = $map;
         return $this;
     }
 
-    public function getmaps()
+    public function getMaps()
     {
         return $this->maps;
     }
 
-    public function setmaps($maps)
+    public function setMaps($maps)
     {
         $this->maps = $maps;
         return $this;
     }
 
-    public function getopeningHoursSpecification()
+    public function getOpeningHoursSpecification()
     {
         return $this->openingHoursSpecification;
     }
 
-    public function setopeningHoursSpecification($openingHoursSpecification)
+    public function setOpeningHoursSpecification($openingHoursSpecification)
     {
         $this->openingHoursSpecification = $openingHoursSpecification;
         return $this;
     }
 
-    public function getphoto()
+    public function getPhoto()
     {
         return $this->photo;
     }
 
-    public function setphoto($photo)
+    public function setPhoto($photo)
     {
         $this->photo = $photo;
         return $this;
     }
 
-    public function getphotos()
+    public function getPhotos()
     {
         return $this->photos;
     }
 
-    public function setphotos($photos)
+    public function setPhotos($photos)
     {
         $this->photos = $photos;
         return $this;
     }
 
-    public function getreview()
+    public function getReview()
     {
         return $this->review;
     }
 
-    public function setreview($review)
+    public function setReview($review)
     {
         $this->review = $review;
         return $this;
     }
 
-    public function getreviews()
+    public function getReviews()
     {
         return $this->reviews;
     }
 
-    public function setreviews($reviews)
+    public function setReviews($reviews)
     {
         $this->reviews = $reviews;
         return $this;
     }
 
-    public function gettelephone()
+    public function getTelephone()
     {
         return $this->telephone;
     }
 
-    public function settelephone($telephone)
+    public function setTelephone($telephone)
     {
         $this->telephone = $telephone;
         return $this;

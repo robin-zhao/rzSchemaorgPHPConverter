@@ -133,177 +133,177 @@ class Series extends CreativeWork
      */
     private $url = "http://schema.org/Series";
 
-    public function getactor()
+    public function getActor()
     {
         return $this->actor;
     }
 
-    public function setactor($actor)
+    public function setActor($actor)
     {
         $this->actor = $actor;
         return $this;
     }
 
-    public function getactors()
+    public function getActors()
     {
         return $this->actors;
     }
 
-    public function setactors($actors)
+    public function setActors($actors)
     {
         $this->actors = $actors;
         return $this;
     }
 
-    public function getdirector()
+    public function getDirector()
     {
         return $this->director;
     }
 
-    public function setdirector($director)
+    public function setDirector($director)
     {
         $this->director = $director;
         return $this;
     }
 
-    public function getdirectors()
+    public function getDirectors()
     {
         return $this->directors;
     }
 
-    public function setdirectors($directors)
+    public function setDirectors($directors)
     {
         $this->directors = $directors;
         return $this;
     }
 
-    public function getendDate()
+    public function getEndDate()
     {
         return $this->endDate;
     }
 
-    public function setendDate($endDate)
+    public function setEndDate($endDate)
     {
         $this->endDate = $endDate;
         return $this;
     }
 
-    public function getepisode()
+    public function getEpisode()
     {
         return $this->episode;
     }
 
-    public function setepisode($episode)
+    public function setEpisode($episode)
     {
         $this->episode = $episode;
         return $this;
     }
 
-    public function getepisodes()
+    public function getEpisodes()
     {
         return $this->episodes;
     }
 
-    public function setepisodes($episodes)
+    public function setEpisodes($episodes)
     {
         $this->episodes = $episodes;
         return $this;
     }
 
-    public function getmusicBy()
+    public function getMusicBy()
     {
         return $this->musicBy;
     }
 
-    public function setmusicBy($musicBy)
+    public function setMusicBy($musicBy)
     {
         $this->musicBy = $musicBy;
         return $this;
     }
 
-    public function getnumberOfEpisodes()
+    public function getNumberOfEpisodes()
     {
         return $this->numberOfEpisodes;
     }
 
-    public function setnumberOfEpisodes($numberOfEpisodes)
+    public function setNumberOfEpisodes($numberOfEpisodes)
     {
         $this->numberOfEpisodes = $numberOfEpisodes;
         return $this;
     }
 
-    public function getnumberOfSeasons()
+    public function getNumberOfSeasons()
     {
         return $this->numberOfSeasons;
     }
 
-    public function setnumberOfSeasons($numberOfSeasons)
+    public function setNumberOfSeasons($numberOfSeasons)
     {
         $this->numberOfSeasons = $numberOfSeasons;
         return $this;
     }
 
-    public function getproducer()
+    public function getProducer()
     {
         return $this->producer;
     }
 
-    public function setproducer($producer)
+    public function setProducer($producer)
     {
         $this->producer = $producer;
         return $this;
     }
 
-    public function getproductionCompany()
+    public function getProductionCompany()
     {
         return $this->productionCompany;
     }
 
-    public function setproductionCompany($productionCompany)
+    public function setProductionCompany($productionCompany)
     {
         $this->productionCompany = $productionCompany;
         return $this;
     }
 
-    public function getseason()
+    public function getSeason()
     {
         return $this->season;
     }
 
-    public function setseason($season)
+    public function setSeason($season)
     {
         $this->season = $season;
         return $this;
     }
 
-    public function getseasons()
+    public function getSeasons()
     {
         return $this->seasons;
     }
 
-    public function setseasons($seasons)
+    public function setSeasons($seasons)
     {
         $this->seasons = $seasons;
         return $this;
     }
 
-    public function getstartDate()
+    public function getStartDate()
     {
         return $this->startDate;
     }
 
-    public function setstartDate($startDate)
+    public function setStartDate($startDate)
     {
         $this->startDate = $startDate;
         return $this;
     }
 
-    public function gettrailer()
+    public function getTrailer()
     {
         return $this->trailer;
     }
 
-    public function settrailer($trailer)
+    public function setTrailer($trailer)
     {
         $this->trailer = $trailer;
         return $this;

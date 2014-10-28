@@ -77,89 +77,89 @@ class MedicalDevice extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalDevice";
 
-    public function getadverseOutcome()
+    public function getAdverseOutcome()
     {
         return $this->adverseOutcome;
     }
 
-    public function setadverseOutcome($adverseOutcome)
+    public function setAdverseOutcome($adverseOutcome)
     {
         $this->adverseOutcome = $adverseOutcome;
         return $this;
     }
 
-    public function getcontraindication()
+    public function getContraindication()
     {
         return $this->contraindication;
     }
 
-    public function setcontraindication($contraindication)
+    public function setContraindication($contraindication)
     {
         $this->contraindication = $contraindication;
         return $this;
     }
 
-    public function getindication()
+    public function getIndication()
     {
         return $this->indication;
     }
 
-    public function setindication($indication)
+    public function setIndication($indication)
     {
         $this->indication = $indication;
         return $this;
     }
 
-    public function getpostOp()
+    public function getPostOp()
     {
         return $this->postOp;
     }
 
-    public function setpostOp($postOp)
+    public function setPostOp($postOp)
     {
         $this->postOp = $postOp;
         return $this;
     }
 
-    public function getpreOp()
+    public function getPreOp()
     {
         return $this->preOp;
     }
 
-    public function setpreOp($preOp)
+    public function setPreOp($preOp)
     {
         $this->preOp = $preOp;
         return $this;
     }
 
-    public function getprocedure()
+    public function getProcedure()
     {
         return $this->procedure;
     }
 
-    public function setprocedure($procedure)
+    public function setProcedure($procedure)
     {
         $this->procedure = $procedure;
         return $this;
     }
 
-    public function getpurpose()
+    public function getPurpose()
     {
         return $this->purpose;
     }
 
-    public function setpurpose($purpose)
+    public function setPurpose($purpose)
     {
         $this->purpose = $purpose;
         return $this;
     }
 
-    public function getseriousAdverseOutcome()
+    public function getSeriousAdverseOutcome()
     {
         return $this->seriousAdverseOutcome;
     }
 
-    public function setseriousAdverseOutcome($seriousAdverseOutcome)
+    public function setSeriousAdverseOutcome($seriousAdverseOutcome)
     {
         $this->seriousAdverseOutcome = $seriousAdverseOutcome;
         return $this;

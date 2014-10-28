@@ -28,12 +28,12 @@ class DrugClass extends MedicalTherapy
      */
     private $url = "http://schema.org/DrugClass";
 
-    public function getdrug()
+    public function getDrug()
     {
         return $this->drug;
     }
 
-    public function setdrug($drug)
+    public function setDrug($drug)
     {
         $this->drug = $drug;
         return $this;

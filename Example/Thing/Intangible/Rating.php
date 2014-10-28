@@ -42,34 +42,34 @@ class Rating extends Intangible
      */
     private $url = "http://schema.org/Rating";
 
-    public function getbestRating()
+    public function getBestRating()
     {
         return $this->bestRating;
     }
 
-    public function setbestRating($bestRating)
+    public function setBestRating($bestRating)
     {
         $this->bestRating = $bestRating;
         return $this;
     }
 
-    public function getratingValue()
+    public function getRatingValue()
     {
         return $this->ratingValue;
     }
 
-    public function setratingValue($ratingValue)
+    public function setRatingValue($ratingValue)
     {
         $this->ratingValue = $ratingValue;
         return $this;
     }
 
-    public function getworstRating()
+    public function getWorstRating()
     {
         return $this->worstRating;
     }
 
-    public function setworstRating($worstRating)
+    public function setWorstRating($worstRating)
     {
         $this->worstRating = $worstRating;
         return $this;

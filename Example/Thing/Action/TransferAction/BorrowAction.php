@@ -28,12 +28,12 @@ class BorrowAction extends TransferAction
      */
     private $url = "http://schema.org/BorrowAction";
 
-    public function getlender()
+    public function getLender()
     {
         return $this->lender;
     }
 
-    public function setlender($lender)
+    public function setLender($lender)
     {
         $this->lender = $lender;
         return $this;

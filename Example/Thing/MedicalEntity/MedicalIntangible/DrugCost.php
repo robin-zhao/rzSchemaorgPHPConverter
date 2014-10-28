@@ -63,67 +63,67 @@ class DrugCost extends MedicalIntangible
      */
     private $url = "http://schema.org/DrugCost";
 
-    public function getapplicableLocation()
+    public function getApplicableLocation()
     {
         return $this->applicableLocation;
     }
 
-    public function setapplicableLocation($applicableLocation)
+    public function setApplicableLocation($applicableLocation)
     {
         $this->applicableLocation = $applicableLocation;
         return $this;
     }
 
-    public function getcostCategory()
+    public function getCostCategory()
     {
         return $this->costCategory;
     }
 
-    public function setcostCategory($costCategory)
+    public function setCostCategory($costCategory)
     {
         $this->costCategory = $costCategory;
         return $this;
     }
 
-    public function getcostCurrency()
+    public function getCostCurrency()
     {
         return $this->costCurrency;
     }
 
-    public function setcostCurrency($costCurrency)
+    public function setCostCurrency($costCurrency)
     {
         $this->costCurrency = $costCurrency;
         return $this;
     }
 
-    public function getcostOrigin()
+    public function getCostOrigin()
     {
         return $this->costOrigin;
     }
 
-    public function setcostOrigin($costOrigin)
+    public function setCostOrigin($costOrigin)
     {
         $this->costOrigin = $costOrigin;
         return $this;
     }
 
-    public function getcostPerUnit()
+    public function getCostPerUnit()
     {
         return $this->costPerUnit;
     }
 
-    public function setcostPerUnit($costPerUnit)
+    public function setCostPerUnit($costPerUnit)
     {
         $this->costPerUnit = $costPerUnit;
         return $this;
     }
 
-    public function getdrugUnit()
+    public function getDrugUnit()
     {
         return $this->drugUnit;
     }
 
-    public function setdrugUnit($drugUnit)
+    public function setDrugUnit($drugUnit)
     {
         $this->drugUnit = $drugUnit;
         return $this;

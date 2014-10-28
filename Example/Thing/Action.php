@@ -77,89 +77,89 @@ class Action extends Thing
      */
     private $url = "http://schema.org/Action";
 
-    public function getagent()
+    public function getAgent()
     {
         return $this->agent;
     }
 
-    public function setagent($agent)
+    public function setAgent($agent)
     {
         $this->agent = $agent;
         return $this;
     }
 
-    public function getendTime()
+    public function getEndTime()
     {
         return $this->endTime;
     }
 
-    public function setendTime($endTime)
+    public function setEndTime($endTime)
     {
         $this->endTime = $endTime;
         return $this;
     }
 
-    public function getinstrument()
+    public function getInstrument()
     {
         return $this->instrument;
     }
 
-    public function setinstrument($instrument)
+    public function setInstrument($instrument)
     {
         $this->instrument = $instrument;
         return $this;
     }
 
-    public function getlocation()
+    public function getLocation()
     {
         return $this->location;
     }
 
-    public function setlocation($location)
+    public function setLocation($location)
     {
         $this->location = $location;
         return $this;
     }
 
-    public function getobject()
+    public function getObject()
     {
         return $this->object;
     }
 
-    public function setobject($object)
+    public function setObject($object)
     {
         $this->object = $object;
         return $this;
     }
 
-    public function getparticipant()
+    public function getParticipant()
     {
         return $this->participant;
     }
 
-    public function setparticipant($participant)
+    public function setParticipant($participant)
     {
         $this->participant = $participant;
         return $this;
     }
 
-    public function getresult()
+    public function getResult()
     {
         return $this->result;
     }
 
-    public function setresult($result)
+    public function setResult($result)
     {
         $this->result = $result;
         return $this;
     }
 
-    public function getstartTime()
+    public function getStartTime()
     {
         return $this->startTime;
     }
 
-    public function setstartTime($startTime)
+    public function setStartTime($startTime)
     {
         $this->startTime = $startTime;
         return $this;

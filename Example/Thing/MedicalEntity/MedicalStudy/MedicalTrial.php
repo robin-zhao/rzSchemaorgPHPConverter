@@ -35,23 +35,23 @@ class MedicalTrial extends MedicalStudy
      */
     private $url = "http://schema.org/MedicalTrial";
 
-    public function getphase()
+    public function getPhase()
     {
         return $this->phase;
     }
 
-    public function setphase($phase)
+    public function setPhase($phase)
     {
         $this->phase = $phase;
         return $this;
     }
 
-    public function gettrialDesign()
+    public function getTrialDesign()
     {
         return $this->trialDesign;
     }
 
-    public function settrialDesign($trialDesign)
+    public function setTrialDesign($trialDesign)
     {
         $this->trialDesign = $trialDesign;
         return $this;

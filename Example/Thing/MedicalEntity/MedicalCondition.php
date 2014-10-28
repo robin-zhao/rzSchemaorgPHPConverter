@@ -133,177 +133,177 @@ class MedicalCondition extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalCondition";
 
-    public function getassociatedAnatomy()
+    public function getAssociatedAnatomy()
     {
         return $this->associatedAnatomy;
     }
 
-    public function setassociatedAnatomy($associatedAnatomy)
+    public function setAssociatedAnatomy($associatedAnatomy)
     {
         $this->associatedAnatomy = $associatedAnatomy;
         return $this;
     }
 
-    public function getcause()
+    public function getCause()
     {
         return $this->cause;
     }
 
-    public function setcause($cause)
+    public function setCause($cause)
     {
         $this->cause = $cause;
         return $this;
     }
 
-    public function getdifferentialDiagnosis()
+    public function getDifferentialDiagnosis()
     {
         return $this->differentialDiagnosis;
     }
 
-    public function setdifferentialDiagnosis($differentialDiagnosis)
+    public function setDifferentialDiagnosis($differentialDiagnosis)
     {
         $this->differentialDiagnosis = $differentialDiagnosis;
         return $this;
     }
 
-    public function getepidemiology()
+    public function getEpidemiology()
     {
         return $this->epidemiology;
     }
 
-    public function setepidemiology($epidemiology)
+    public function setEpidemiology($epidemiology)
     {
         $this->epidemiology = $epidemiology;
         return $this;
     }
 
-    public function getexpectedPrognosis()
+    public function getExpectedPrognosis()
     {
         return $this->expectedPrognosis;
     }
 
-    public function setexpectedPrognosis($expectedPrognosis)
+    public function setExpectedPrognosis($expectedPrognosis)
     {
         $this->expectedPrognosis = $expectedPrognosis;
         return $this;
     }
 
-    public function getnaturalProgression()
+    public function getNaturalProgression()
     {
         return $this->naturalProgression;
     }
 
-    public function setnaturalProgression($naturalProgression)
+    public function setNaturalProgression($naturalProgression)
     {
         $this->naturalProgression = $naturalProgression;
         return $this;
     }
 
-    public function getpathophysiology()
+    public function getPathophysiology()
     {
         return $this->pathophysiology;
     }
 
-    public function setpathophysiology($pathophysiology)
+    public function setPathophysiology($pathophysiology)
     {
         $this->pathophysiology = $pathophysiology;
         return $this;
     }
 
-    public function getpossibleComplication()
+    public function getPossibleComplication()
     {
         return $this->possibleComplication;
     }
 
-    public function setpossibleComplication($possibleComplication)
+    public function setPossibleComplication($possibleComplication)
     {
         $this->possibleComplication = $possibleComplication;
         return $this;
     }
 
-    public function getpossibleTreatment()
+    public function getPossibleTreatment()
     {
         return $this->possibleTreatment;
     }
 
-    public function setpossibleTreatment($possibleTreatment)
+    public function setPossibleTreatment($possibleTreatment)
     {
         $this->possibleTreatment = $possibleTreatment;
         return $this;
     }
 
-    public function getprimaryPrevention()
+    public function getPrimaryPrevention()
     {
         return $this->primaryPrevention;
     }
 
-    public function setprimaryPrevention($primaryPrevention)
+    public function setPrimaryPrevention($primaryPrevention)
     {
         $this->primaryPrevention = $primaryPrevention;
         return $this;
     }
 
-    public function getriskFactor()
+    public function getRiskFactor()
     {
         return $this->riskFactor;
     }
 
-    public function setriskFactor($riskFactor)
+    public function setRiskFactor($riskFactor)
     {
         $this->riskFactor = $riskFactor;
         return $this;
     }
 
-    public function getsecondaryPrevention()
+    public function getSecondaryPrevention()
     {
         return $this->secondaryPrevention;
     }
 
-    public function setsecondaryPrevention($secondaryPrevention)
+    public function setSecondaryPrevention($secondaryPrevention)
     {
         $this->secondaryPrevention = $secondaryPrevention;
         return $this;
     }
 
-    public function getsignOrSymptom()
+    public function getSignOrSymptom()
     {
         return $this->signOrSymptom;
     }
 
-    public function setsignOrSymptom($signOrSymptom)
+    public function setSignOrSymptom($signOrSymptom)
     {
         $this->signOrSymptom = $signOrSymptom;
         return $this;
     }
 
-    public function getstage()
+    public function getStage()
     {
         return $this->stage;
     }
 
-    public function setstage($stage)
+    public function setStage($stage)
     {
         $this->stage = $stage;
         return $this;
     }
 
-    public function getsubtype()
+    public function getSubtype()
     {
         return $this->subtype;
     }
 
-    public function setsubtype($subtype)
+    public function setSubtype($subtype)
     {
         $this->subtype = $subtype;
         return $this;
     }
 
-    public function gettypicalTest()
+    public function getTypicalTest()
     {
         return $this->typicalTest;
     }
 
-    public function settypicalTest($typicalTest)
+    public function setTypicalTest($typicalTest)
     {
         $this->typicalTest = $typicalTest;
         return $this;

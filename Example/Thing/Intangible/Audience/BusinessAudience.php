@@ -42,34 +42,34 @@ class BusinessAudience extends Audience
      */
     private $url = "http://schema.org/BusinessAudience";
 
-    public function getnumberofEmployees()
+    public function getNumberofEmployees()
     {
         return $this->numberofEmployees;
     }
 
-    public function setnumberofEmployees($numberofEmployees)
+    public function setNumberofEmployees($numberofEmployees)
     {
         $this->numberofEmployees = $numberofEmployees;
         return $this;
     }
 
-    public function getyearlyRevenue()
+    public function getYearlyRevenue()
     {
         return $this->yearlyRevenue;
     }
 
-    public function setyearlyRevenue($yearlyRevenue)
+    public function setYearlyRevenue($yearlyRevenue)
     {
         $this->yearlyRevenue = $yearlyRevenue;
         return $this;
     }
 
-    public function getyearsInOperation()
+    public function getYearsInOperation()
     {
         return $this->yearsInOperation;
     }
 
-    public function setyearsInOperation($yearsInOperation)
+    public function setYearsInOperation($yearsInOperation)
     {
         $this->yearsInOperation = $yearsInOperation;
         return $this;

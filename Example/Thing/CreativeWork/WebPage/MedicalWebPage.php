@@ -28,12 +28,12 @@ class MedicalWebPage extends WebPage
      */
     private $url = "http://schema.org/MedicalWebPage";
 
-    public function getaspect()
+    public function getAspect()
     {
         return $this->aspect;
     }
 
-    public function setaspect($aspect)
+    public function setAspect($aspect)
     {
         $this->aspect = $aspect;
         return $this;

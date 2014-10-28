@@ -28,12 +28,12 @@ class DrugLegalStatus extends MedicalIntangible
      */
     private $url = "http://schema.org/DrugLegalStatus";
 
-    public function getapplicableLocation()
+    public function getApplicableLocation()
     {
         return $this->applicableLocation;
     }
 
-    public function setapplicableLocation($applicableLocation)
+    public function setApplicableLocation($applicableLocation)
     {
         $this->applicableLocation = $applicableLocation;
         return $this;

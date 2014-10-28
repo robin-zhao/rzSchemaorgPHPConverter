@@ -199,13 +199,13 @@ class ClassBuilder
 
     private function buildGetterSetter($property, &$getterSetter)
     {
-        $getterSetter [] = '    public function get' . $property . '()';
+        $getterSetter [] = '    public function get' . Ucfirst($property) . '()';
         $getterSetter [] = '    {';
         $getterSetter [] = '        return $this->' . $property . ';';
         $getterSetter [] = '    }' . "\n";
 
         // @todo build method comment.
-        $getterSetter [] = '    public function set' . $property . '($' . $property . ')';
+        $getterSetter [] = '    public function set' . ucfirst($property) . '($' . $property . ')';
         $getterSetter [] = '    {';
         $getterSetter [] = '        $this->' . $property . ' = $' . $property . ';';
         $getterSetter [] = '        return $this;';

@@ -35,23 +35,23 @@ class ItemList extends CreativeWork
      */
     private $url = "http://schema.org/ItemList";
 
-    public function getitemListElement()
+    public function getItemListElement()
     {
         return $this->itemListElement;
     }
 
-    public function setitemListElement($itemListElement)
+    public function setItemListElement($itemListElement)
     {
         $this->itemListElement = $itemListElement;
         return $this;
     }
 
-    public function getitemListOrder()
+    public function getItemListOrder()
     {
         return $this->itemListOrder;
     }
 
-    public function setitemListOrder($itemListOrder)
+    public function setItemListOrder($itemListOrder)
     {
         $this->itemListOrder = $itemListOrder;
         return $this;

@@ -35,23 +35,23 @@ class TransferAction extends Action
      */
     private $url = "http://schema.org/TransferAction";
 
-    public function getfromLocation()
+    public function getFromLocation()
     {
         return $this->fromLocation;
     }
 
-    public function setfromLocation($fromLocation)
+    public function setFromLocation($fromLocation)
     {
         $this->fromLocation = $fromLocation;
         return $this;
     }
 
-    public function gettoLocation()
+    public function getToLocation()
     {
         return $this->toLocation;
     }
 
-    public function settoLocation($toLocation)
+    public function setToLocation($toLocation)
     {
         $this->toLocation = $toLocation;
         return $this;

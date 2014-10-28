@@ -35,23 +35,23 @@ class MedicalCode extends MedicalIntangible
      */
     private $url = "http://schema.org/MedicalCode";
 
-    public function getcodeValue()
+    public function getCodeValue()
     {
         return $this->codeValue;
     }
 
-    public function setcodeValue($codeValue)
+    public function setCodeValue($codeValue)
     {
         $this->codeValue = $codeValue;
         return $this;
     }
 
-    public function getcodingSystem()
+    public function getCodingSystem()
     {
         return $this->codingSystem;
     }
 
-    public function setcodingSystem($codingSystem)
+    public function setCodingSystem($codingSystem)
     {
         $this->codingSystem = $codingSystem;
         return $this;

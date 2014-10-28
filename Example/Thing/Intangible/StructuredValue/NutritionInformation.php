@@ -105,133 +105,133 @@ class NutritionInformation extends StructuredValue
      */
     private $url = "http://schema.org/NutritionInformation";
 
-    public function getcalories()
+    public function getCalories()
     {
         return $this->calories;
     }
 
-    public function setcalories($calories)
+    public function setCalories($calories)
     {
         $this->calories = $calories;
         return $this;
     }
 
-    public function getcarbohydrateContent()
+    public function getCarbohydrateContent()
     {
         return $this->carbohydrateContent;
     }
 
-    public function setcarbohydrateContent($carbohydrateContent)
+    public function setCarbohydrateContent($carbohydrateContent)
     {
         $this->carbohydrateContent = $carbohydrateContent;
         return $this;
     }
 
-    public function getcholesterolContent()
+    public function getCholesterolContent()
     {
         return $this->cholesterolContent;
     }
 
-    public function setcholesterolContent($cholesterolContent)
+    public function setCholesterolContent($cholesterolContent)
     {
         $this->cholesterolContent = $cholesterolContent;
         return $this;
     }
 
-    public function getfatContent()
+    public function getFatContent()
     {
         return $this->fatContent;
     }
 
-    public function setfatContent($fatContent)
+    public function setFatContent($fatContent)
     {
         $this->fatContent = $fatContent;
         return $this;
     }
 
-    public function getfiberContent()
+    public function getFiberContent()
     {
         return $this->fiberContent;
     }
 
-    public function setfiberContent($fiberContent)
+    public function setFiberContent($fiberContent)
     {
         $this->fiberContent = $fiberContent;
         return $this;
     }
 
-    public function getproteinContent()
+    public function getProteinContent()
     {
         return $this->proteinContent;
     }
 
-    public function setproteinContent($proteinContent)
+    public function setProteinContent($proteinContent)
     {
         $this->proteinContent = $proteinContent;
         return $this;
     }
 
-    public function getsaturatedFatContent()
+    public function getSaturatedFatContent()
     {
         return $this->saturatedFatContent;
     }
 
-    public function setsaturatedFatContent($saturatedFatContent)
+    public function setSaturatedFatContent($saturatedFatContent)
     {
         $this->saturatedFatContent = $saturatedFatContent;
         return $this;
     }
 
-    public function getservingSize()
+    public function getServingSize()
     {
         return $this->servingSize;
     }
 
-    public function setservingSize($servingSize)
+    public function setServingSize($servingSize)
     {
         $this->servingSize = $servingSize;
         return $this;
     }
 
-    public function getsodiumContent()
+    public function getSodiumContent()
     {
         return $this->sodiumContent;
     }
 
-    public function setsodiumContent($sodiumContent)
+    public function setSodiumContent($sodiumContent)
     {
         $this->sodiumContent = $sodiumContent;
         return $this;
     }
 
-    public function getsugarContent()
+    public function getSugarContent()
     {
         return $this->sugarContent;
     }
 
-    public function setsugarContent($sugarContent)
+    public function setSugarContent($sugarContent)
     {
         $this->sugarContent = $sugarContent;
         return $this;
     }
 
-    public function gettransFatContent()
+    public function getTransFatContent()
     {
         return $this->transFatContent;
     }
 
-    public function settransFatContent($transFatContent)
+    public function setTransFatContent($transFatContent)
     {
         $this->transFatContent = $transFatContent;
         return $this;
     }
 
-    public function getunsaturatedFatContent()
+    public function getUnsaturatedFatContent()
     {
         return $this->unsaturatedFatContent;
     }
 
-    public function setunsaturatedFatContent($unsaturatedFatContent)
+    public function setUnsaturatedFatContent($unsaturatedFatContent)
     {
         $this->unsaturatedFatContent = $unsaturatedFatContent;
         return $this;

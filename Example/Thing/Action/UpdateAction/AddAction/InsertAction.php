@@ -28,12 +28,12 @@ class InsertAction extends AddAction
      */
     private $url = "http://schema.org/InsertAction";
 
-    public function gettoLocation()
+    public function getToLocation()
     {
         return $this->toLocation;
     }
 
-    public function settoLocation($toLocation)
+    public function setToLocation($toLocation)
     {
         $this->toLocation = $toLocation;
         return $this;

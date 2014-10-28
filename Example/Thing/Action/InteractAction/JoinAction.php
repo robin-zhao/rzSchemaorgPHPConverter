@@ -28,12 +28,12 @@ class JoinAction extends InteractAction
      */
     private $url = "http://schema.org/JoinAction";
 
-    public function getevent()
+    public function getEvent()
     {
         return $this->event;
     }
 
-    public function setevent($event)
+    public function setEvent($event)
     {
         $this->event = $event;
         return $this;

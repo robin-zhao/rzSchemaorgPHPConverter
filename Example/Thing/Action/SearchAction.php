@@ -28,12 +28,12 @@ class SearchAction extends Action
      */
     private $url = "http://schema.org/SearchAction";
 
-    public function getquery()
+    public function getQuery()
     {
         return $this->query;
     }
 
-    public function setquery($query)
+    public function setQuery($query)
     {
         $this->query = $query;
         return $this;

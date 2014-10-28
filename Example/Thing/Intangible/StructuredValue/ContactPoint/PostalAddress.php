@@ -63,67 +63,67 @@ class PostalAddress extends ContactPoint
      */
     private $url = "http://schema.org/PostalAddress";
 
-    public function getaddressCountry()
+    public function getAddressCountry()
     {
         return $this->addressCountry;
     }
 
-    public function setaddressCountry($addressCountry)
+    public function setAddressCountry($addressCountry)
     {
         $this->addressCountry = $addressCountry;
         return $this;
     }
 
-    public function getaddressLocality()
+    public function getAddressLocality()
     {
         return $this->addressLocality;
     }
 
-    public function setaddressLocality($addressLocality)
+    public function setAddressLocality($addressLocality)
     {
         $this->addressLocality = $addressLocality;
         return $this;
     }
 
-    public function getaddressRegion()
+    public function getAddressRegion()
     {
         return $this->addressRegion;
     }
 
-    public function setaddressRegion($addressRegion)
+    public function setAddressRegion($addressRegion)
     {
         $this->addressRegion = $addressRegion;
         return $this;
     }
 
-    public function getpostalCode()
+    public function getPostalCode()
     {
         return $this->postalCode;
     }
 
-    public function setpostalCode($postalCode)
+    public function setPostalCode($postalCode)
     {
         $this->postalCode = $postalCode;
         return $this;
     }
 
-    public function getpostOfficeBoxNumber()
+    public function getPostOfficeBoxNumber()
     {
         return $this->postOfficeBoxNumber;
     }
 
-    public function setpostOfficeBoxNumber($postOfficeBoxNumber)
+    public function setPostOfficeBoxNumber($postOfficeBoxNumber)
     {
         $this->postOfficeBoxNumber = $postOfficeBoxNumber;
         return $this;
     }
 
-    public function getstreetAddress()
+    public function getStreetAddress()
     {
         return $this->streetAddress;
     }
 
-    public function setstreetAddress($streetAddress)
+    public function setStreetAddress($streetAddress)
     {
         $this->streetAddress = $streetAddress;
         return $this;

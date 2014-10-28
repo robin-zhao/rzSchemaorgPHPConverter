@@ -42,34 +42,34 @@ class Review extends CreativeWork
      */
     private $url = "http://schema.org/Review";
 
-    public function getitemReviewed()
+    public function getItemReviewed()
     {
         return $this->itemReviewed;
     }
 
-    public function setitemReviewed($itemReviewed)
+    public function setItemReviewed($itemReviewed)
     {
         $this->itemReviewed = $itemReviewed;
         return $this;
     }
 
-    public function getreviewBody()
+    public function getReviewBody()
     {
         return $this->reviewBody;
     }
 
-    public function setreviewBody($reviewBody)
+    public function setReviewBody($reviewBody)
     {
         $this->reviewBody = $reviewBody;
         return $this;
     }
 
-    public function getreviewRating()
+    public function getReviewRating()
     {
         return $this->reviewRating;
     }
 
-    public function setreviewRating($reviewRating)
+    public function setReviewRating($reviewRating)
     {
         $this->reviewRating = $reviewRating;
         return $this;

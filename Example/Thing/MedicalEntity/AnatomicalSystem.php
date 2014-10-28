@@ -56,56 +56,56 @@ class AnatomicalSystem extends MedicalEntity
      */
     private $url = "http://schema.org/AnatomicalSystem";
 
-    public function getassociatedPathophysiology()
+    public function getAssociatedPathophysiology()
     {
         return $this->associatedPathophysiology;
     }
 
-    public function setassociatedPathophysiology($associatedPathophysiology)
+    public function setAssociatedPathophysiology($associatedPathophysiology)
     {
         $this->associatedPathophysiology = $associatedPathophysiology;
         return $this;
     }
 
-    public function getcomprisedOf()
+    public function getComprisedOf()
     {
         return $this->comprisedOf;
     }
 
-    public function setcomprisedOf($comprisedOf)
+    public function setComprisedOf($comprisedOf)
     {
         $this->comprisedOf = $comprisedOf;
         return $this;
     }
 
-    public function getrelatedCondition()
+    public function getRelatedCondition()
     {
         return $this->relatedCondition;
     }
 
-    public function setrelatedCondition($relatedCondition)
+    public function setRelatedCondition($relatedCondition)
     {
         $this->relatedCondition = $relatedCondition;
         return $this;
     }
 
-    public function getrelatedStructure()
+    public function getRelatedStructure()
     {
         return $this->relatedStructure;
     }
 
-    public function setrelatedStructure($relatedStructure)
+    public function setRelatedStructure($relatedStructure)
     {
         $this->relatedStructure = $relatedStructure;
         return $this;
     }
 
-    public function getrelatedTherapy()
+    public function getRelatedTherapy()
     {
         return $this->relatedTherapy;
     }
 
-    public function setrelatedTherapy($relatedTherapy)
+    public function setRelatedTherapy($relatedTherapy)
     {
         $this->relatedTherapy = $relatedTherapy;
         return $this;

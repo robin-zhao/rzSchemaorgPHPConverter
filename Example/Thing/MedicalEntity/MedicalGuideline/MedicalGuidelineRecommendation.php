@@ -28,12 +28,12 @@ class MedicalGuidelineRecommendation extends MedicalGuideline
      */
     private $url = "http://schema.org/MedicalGuidelineRecommendation";
 
-    public function getrecommendationStrength()
+    public function getRecommendationStrength()
     {
         return $this->recommendationStrength;
     }
 
-    public function setrecommendationStrength($recommendationStrength)
+    public function setRecommendationStrength($recommendationStrength)
     {
         $this->recommendationStrength = $recommendationStrength;
         return $this;

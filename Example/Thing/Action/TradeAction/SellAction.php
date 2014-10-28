@@ -35,23 +35,23 @@ class SellAction extends TradeAction
      */
     private $url = "http://schema.org/SellAction";
 
-    public function getbuyer()
+    public function getBuyer()
     {
         return $this->buyer;
     }
 
-    public function setbuyer($buyer)
+    public function setBuyer($buyer)
     {
         $this->buyer = $buyer;
         return $this;
     }
 
-    public function getwarrantyPromise()
+    public function getWarrantyPromise()
     {
         return $this->warrantyPromise;
     }
 
-    public function setwarrantyPromise($warrantyPromise)
+    public function setWarrantyPromise($warrantyPromise)
     {
         $this->warrantyPromise = $warrantyPromise;
         return $this;

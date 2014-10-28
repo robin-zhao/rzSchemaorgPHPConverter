@@ -49,45 +49,45 @@ class OwnershipInfo extends StructuredValue
      */
     private $url = "http://schema.org/OwnershipInfo";
 
-    public function getacquiredFrom()
+    public function getAcquiredFrom()
     {
         return $this->acquiredFrom;
     }
 
-    public function setacquiredFrom($acquiredFrom)
+    public function setAcquiredFrom($acquiredFrom)
     {
         $this->acquiredFrom = $acquiredFrom;
         return $this;
     }
 
-    public function getownedFrom()
+    public function getOwnedFrom()
     {
         return $this->ownedFrom;
     }
 
-    public function setownedFrom($ownedFrom)
+    public function setOwnedFrom($ownedFrom)
     {
         $this->ownedFrom = $ownedFrom;
         return $this;
     }
 
-    public function getownedThrough()
+    public function getOwnedThrough()
     {
         return $this->ownedThrough;
     }
 
-    public function setownedThrough($ownedThrough)
+    public function setOwnedThrough($ownedThrough)
     {
         $this->ownedThrough = $ownedThrough;
         return $this;
     }
 
-    public function gettypeOfGood()
+    public function getTypeOfGood()
     {
         return $this->typeOfGood;
     }
 
-    public function settypeOfGood($typeOfGood)
+    public function setTypeOfGood($typeOfGood)
     {
         $this->typeOfGood = $typeOfGood;
         return $this;

@@ -35,23 +35,23 @@ class PayAction extends TradeAction
      */
     private $url = "http://schema.org/PayAction";
 
-    public function getpurpose()
+    public function getPurpose()
     {
         return $this->purpose;
     }
 
-    public function setpurpose($purpose)
+    public function setPurpose($purpose)
     {
         $this->purpose = $purpose;
         return $this;
     }
 
-    public function getrecipient()
+    public function getRecipient()
     {
         return $this->recipient;
     }
 
-    public function setrecipient($recipient)
+    public function setRecipient($recipient)
     {
         $this->recipient = $recipient;
         return $this;

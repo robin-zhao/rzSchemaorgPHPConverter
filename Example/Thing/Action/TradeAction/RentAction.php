@@ -35,23 +35,23 @@ class RentAction extends TradeAction
      */
     private $url = "http://schema.org/RentAction";
 
-    public function getlandlord()
+    public function getLandlord()
     {
         return $this->landlord;
     }
 
-    public function setlandlord($landlord)
+    public function setLandlord($landlord)
     {
         $this->landlord = $landlord;
         return $this;
     }
 
-    public function getrealEstateAgent()
+    public function getRealEstateAgent()
     {
         return $this->realEstateAgent;
     }
 
-    public function setrealEstateAgent($realEstateAgent)
+    public function setRealEstateAgent($realEstateAgent)
     {
         $this->realEstateAgent = $realEstateAgent;
         return $this;

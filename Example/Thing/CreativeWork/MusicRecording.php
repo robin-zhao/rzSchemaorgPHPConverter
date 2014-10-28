@@ -49,45 +49,45 @@ class MusicRecording extends CreativeWork
      */
     private $url = "http://schema.org/MusicRecording";
 
-    public function getbyArtist()
+    public function getByArtist()
     {
         return $this->byArtist;
     }
 
-    public function setbyArtist($byArtist)
+    public function setByArtist($byArtist)
     {
         $this->byArtist = $byArtist;
         return $this;
     }
 
-    public function getduration()
+    public function getDuration()
     {
         return $this->duration;
     }
 
-    public function setduration($duration)
+    public function setDuration($duration)
     {
         $this->duration = $duration;
         return $this;
     }
 
-    public function getinAlbum()
+    public function getInAlbum()
     {
         return $this->inAlbum;
     }
 
-    public function setinAlbum($inAlbum)
+    public function setInAlbum($inAlbum)
     {
         $this->inAlbum = $inAlbum;
         return $this;
     }
 
-    public function getinPlaylist()
+    public function getInPlaylist()
     {
         return $this->inPlaylist;
     }
 
-    public function setinPlaylist($inPlaylist)
+    public function setInPlaylist($inPlaylist)
     {
         $this->inPlaylist = $inPlaylist;
         return $this;

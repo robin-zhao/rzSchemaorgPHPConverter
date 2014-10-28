@@ -84,100 +84,100 @@ class AnatomicalStructure extends MedicalEntity
      */
     private $url = "http://schema.org/AnatomicalStructure";
 
-    public function getassociatedPathophysiology()
+    public function getAssociatedPathophysiology()
     {
         return $this->associatedPathophysiology;
     }
 
-    public function setassociatedPathophysiology($associatedPathophysiology)
+    public function setAssociatedPathophysiology($associatedPathophysiology)
     {
         $this->associatedPathophysiology = $associatedPathophysiology;
         return $this;
     }
 
-    public function getbodyLocation()
+    public function getBodyLocation()
     {
         return $this->bodyLocation;
     }
 
-    public function setbodyLocation($bodyLocation)
+    public function setBodyLocation($bodyLocation)
     {
         $this->bodyLocation = $bodyLocation;
         return $this;
     }
 
-    public function getconnectedTo()
+    public function getConnectedTo()
     {
         return $this->connectedTo;
     }
 
-    public function setconnectedTo($connectedTo)
+    public function setConnectedTo($connectedTo)
     {
         $this->connectedTo = $connectedTo;
         return $this;
     }
 
-    public function getdiagram()
+    public function getDiagram()
     {
         return $this->diagram;
     }
 
-    public function setdiagram($diagram)
+    public function setDiagram($diagram)
     {
         $this->diagram = $diagram;
         return $this;
     }
 
-    public function getfunction()
+    public function getFunction()
     {
         return $this->function;
     }
 
-    public function setfunction($function)
+    public function setFunction($function)
     {
         $this->function = $function;
         return $this;
     }
 
-    public function getpartOfSystem()
+    public function getPartOfSystem()
     {
         return $this->partOfSystem;
     }
 
-    public function setpartOfSystem($partOfSystem)
+    public function setPartOfSystem($partOfSystem)
     {
         $this->partOfSystem = $partOfSystem;
         return $this;
     }
 
-    public function getrelatedCondition()
+    public function getRelatedCondition()
     {
         return $this->relatedCondition;
     }
 
-    public function setrelatedCondition($relatedCondition)
+    public function setRelatedCondition($relatedCondition)
     {
         $this->relatedCondition = $relatedCondition;
         return $this;
     }
 
-    public function getrelatedTherapy()
+    public function getRelatedTherapy()
     {
         return $this->relatedTherapy;
     }
 
-    public function setrelatedTherapy($relatedTherapy)
+    public function setRelatedTherapy($relatedTherapy)
     {
         $this->relatedTherapy = $relatedTherapy;
         return $this;
     }
 
-    public function getsubStructure()
+    public function getSubStructure()
     {
         return $this->subStructure;
     }
 
-    public function setsubStructure($subStructure)
+    public function setSubStructure($subStructure)
     {
         $this->subStructure = $subStructure;
         return $this;

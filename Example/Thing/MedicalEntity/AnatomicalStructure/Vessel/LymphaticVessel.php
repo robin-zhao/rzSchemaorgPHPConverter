@@ -42,34 +42,34 @@ class LymphaticVessel extends Vessel
      */
     private $url = "http://schema.org/LymphaticVessel";
 
-    public function getoriginatesFrom()
+    public function getOriginatesFrom()
     {
         return $this->originatesFrom;
     }
 
-    public function setoriginatesFrom($originatesFrom)
+    public function setOriginatesFrom($originatesFrom)
     {
         $this->originatesFrom = $originatesFrom;
         return $this;
     }
 
-    public function getregionDrained()
+    public function getRegionDrained()
     {
         return $this->regionDrained;
     }
 
-    public function setregionDrained($regionDrained)
+    public function setRegionDrained($regionDrained)
     {
         $this->regionDrained = $regionDrained;
         return $this;
     }
 
-    public function getrunsTo()
+    public function getRunsTo()
     {
         return $this->runsTo;
     }
 
-    public function setrunsTo($runsTo)
+    public function setRunsTo($runsTo)
     {
         $this->runsTo = $runsTo;
         return $this;

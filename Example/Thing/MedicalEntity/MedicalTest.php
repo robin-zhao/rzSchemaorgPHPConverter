@@ -56,56 +56,56 @@ class MedicalTest extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalTest";
 
-    public function getaffectedBy()
+    public function getAffectedBy()
     {
         return $this->affectedBy;
     }
 
-    public function setaffectedBy($affectedBy)
+    public function setAffectedBy($affectedBy)
     {
         $this->affectedBy = $affectedBy;
         return $this;
     }
 
-    public function getnormalRange()
+    public function getNormalRange()
     {
         return $this->normalRange;
     }
 
-    public function setnormalRange($normalRange)
+    public function setNormalRange($normalRange)
     {
         $this->normalRange = $normalRange;
         return $this;
     }
 
-    public function getsignDetected()
+    public function getSignDetected()
     {
         return $this->signDetected;
     }
 
-    public function setsignDetected($signDetected)
+    public function setSignDetected($signDetected)
     {
         $this->signDetected = $signDetected;
         return $this;
     }
 
-    public function getusedToDiagnose()
+    public function getUsedToDiagnose()
     {
         return $this->usedToDiagnose;
     }
 
-    public function setusedToDiagnose($usedToDiagnose)
+    public function setUsedToDiagnose($usedToDiagnose)
     {
         $this->usedToDiagnose = $usedToDiagnose;
         return $this;
     }
 
-    public function getusesDevice()
+    public function getUsesDevice()
     {
         return $this->usesDevice;
     }
 
-    public function setusesDevice($usesDevice)
+    public function setUsesDevice($usesDevice)
     {
         $this->usesDevice = $usesDevice;
         return $this;

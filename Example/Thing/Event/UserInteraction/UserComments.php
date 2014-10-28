@@ -56,56 +56,56 @@ class UserComments extends UserInteraction
      */
     private $url = "http://schema.org/UserComments";
 
-    public function getcommentText()
+    public function getCommentText()
     {
         return $this->commentText;
     }
 
-    public function setcommentText($commentText)
+    public function setCommentText($commentText)
     {
         $this->commentText = $commentText;
         return $this;
     }
 
-    public function getcommentTime()
+    public function getCommentTime()
     {
         return $this->commentTime;
     }
 
-    public function setcommentTime($commentTime)
+    public function setCommentTime($commentTime)
     {
         $this->commentTime = $commentTime;
         return $this;
     }
 
-    public function getcreator()
+    public function getCreator()
     {
         return $this->creator;
     }
 
-    public function setcreator($creator)
+    public function setCreator($creator)
     {
         $this->creator = $creator;
         return $this;
     }
 
-    public function getdiscusses()
+    public function getDiscusses()
     {
         return $this->discusses;
     }
 
-    public function setdiscusses($discusses)
+    public function setDiscusses($discusses)
     {
         $this->discusses = $discusses;
         return $this;
     }
 
-    public function getreplyToUrl()
+    public function getReplyToUrl()
     {
         return $this->replyToUrl;
     }
 
-    public function setreplyToUrl($replyToUrl)
+    public function setReplyToUrl($replyToUrl)
     {
         $this->replyToUrl = $replyToUrl;
         return $this;

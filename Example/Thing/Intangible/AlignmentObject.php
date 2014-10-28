@@ -56,56 +56,56 @@ class AlignmentObject extends Intangible
      */
     private $url = "http://schema.org/AlignmentObject";
 
-    public function getalignmentType()
+    public function getAlignmentType()
     {
         return $this->alignmentType;
     }
 
-    public function setalignmentType($alignmentType)
+    public function setAlignmentType($alignmentType)
     {
         $this->alignmentType = $alignmentType;
         return $this;
     }
 
-    public function geteducationalFramework()
+    public function getEducationalFramework()
     {
         return $this->educationalFramework;
     }
 
-    public function seteducationalFramework($educationalFramework)
+    public function setEducationalFramework($educationalFramework)
     {
         $this->educationalFramework = $educationalFramework;
         return $this;
     }
 
-    public function gettargetDescription()
+    public function getTargetDescription()
     {
         return $this->targetDescription;
     }
 
-    public function settargetDescription($targetDescription)
+    public function setTargetDescription($targetDescription)
     {
         $this->targetDescription = $targetDescription;
         return $this;
     }
 
-    public function gettargetName()
+    public function getTargetName()
     {
         return $this->targetName;
     }
 
-    public function settargetName($targetName)
+    public function setTargetName($targetName)
     {
         $this->targetName = $targetName;
         return $this;
     }
 
-    public function gettargetUrl()
+    public function getTargetUrl()
     {
         return $this->targetUrl;
     }
 
-    public function settargetUrl($targetUrl)
+    public function setTargetUrl($targetUrl)
     {
         $this->targetUrl = $targetUrl;
         return $this;

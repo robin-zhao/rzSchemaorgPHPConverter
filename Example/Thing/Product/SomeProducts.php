@@ -28,12 +28,12 @@ class SomeProducts extends Product
      */
     private $url = "http://schema.org/SomeProducts";
 
-    public function getinventoryLevel()
+    public function getInventoryLevel()
     {
         return $this->inventoryLevel;
     }
 
-    public function setinventoryLevel($inventoryLevel)
+    public function setInventoryLevel($inventoryLevel)
     {
         $this->inventoryLevel = $inventoryLevel;
         return $this;

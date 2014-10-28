@@ -28,12 +28,12 @@ class WriteAction extends CreateAction
      */
     private $url = "http://schema.org/WriteAction";
 
-    public function getlanguage()
+    public function getLanguage()
     {
         return $this->language;
     }
 
-    public function setlanguage($language)
+    public function setLanguage($language)
     {
         $this->language = $language;
         return $this;

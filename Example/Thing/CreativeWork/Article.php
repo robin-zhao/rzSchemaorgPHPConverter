@@ -42,34 +42,34 @@ class Article extends CreativeWork
      */
     private $url = "http://schema.org/Article";
 
-    public function getarticleBody()
+    public function getArticleBody()
     {
         return $this->articleBody;
     }
 
-    public function setarticleBody($articleBody)
+    public function setArticleBody($articleBody)
     {
         $this->articleBody = $articleBody;
         return $this;
     }
 
-    public function getarticleSection()
+    public function getArticleSection()
     {
         return $this->articleSection;
     }
 
-    public function setarticleSection($articleSection)
+    public function setArticleSection($articleSection)
     {
         $this->articleSection = $articleSection;
         return $this;
     }
 
-    public function getwordCount()
+    public function getWordCount()
     {
         return $this->wordCount;
     }
 
-    public function setwordCount($wordCount)
+    public function setWordCount($wordCount)
     {
         $this->wordCount = $wordCount;
         return $this;

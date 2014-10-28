@@ -28,12 +28,12 @@ class ReturnAction extends TransferAction
      */
     private $url = "http://schema.org/ReturnAction";
 
-    public function getrecipient()
+    public function getRecipient()
     {
         return $this->recipient;
     }
 
-    public function setrecipient($recipient)
+    public function setRecipient($recipient)
     {
         $this->recipient = $recipient;
         return $this;

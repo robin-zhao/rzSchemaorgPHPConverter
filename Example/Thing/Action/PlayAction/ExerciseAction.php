@@ -98,122 +98,122 @@ class ExerciseAction extends PlayAction
      */
     private $url = "http://schema.org/ExerciseAction";
 
-    public function getcourse()
+    public function getCourse()
     {
         return $this->course;
     }
 
-    public function setcourse($course)
+    public function setCourse($course)
     {
         $this->course = $course;
         return $this;
     }
 
-    public function getdiet()
+    public function getDiet()
     {
         return $this->diet;
     }
 
-    public function setdiet($diet)
+    public function setDiet($diet)
     {
         $this->diet = $diet;
         return $this;
     }
 
-    public function getdistance()
+    public function getDistance()
     {
         return $this->distance;
     }
 
-    public function setdistance($distance)
+    public function setDistance($distance)
     {
         $this->distance = $distance;
         return $this;
     }
 
-    public function getexercisePlan()
+    public function getExercisePlan()
     {
         return $this->exercisePlan;
     }
 
-    public function setexercisePlan($exercisePlan)
+    public function setExercisePlan($exercisePlan)
     {
         $this->exercisePlan = $exercisePlan;
         return $this;
     }
 
-    public function getexerciseType()
+    public function getExerciseType()
     {
         return $this->exerciseType;
     }
 
-    public function setexerciseType($exerciseType)
+    public function setExerciseType($exerciseType)
     {
         $this->exerciseType = $exerciseType;
         return $this;
     }
 
-    public function getfromLocation()
+    public function getFromLocation()
     {
         return $this->fromLocation;
     }
 
-    public function setfromLocation($fromLocation)
+    public function setFromLocation($fromLocation)
     {
         $this->fromLocation = $fromLocation;
         return $this;
     }
 
-    public function getoponent()
+    public function getOponent()
     {
         return $this->oponent;
     }
 
-    public function setoponent($oponent)
+    public function setOponent($oponent)
     {
         $this->oponent = $oponent;
         return $this;
     }
 
-    public function getsportsActivityLocation()
+    public function getSportsActivityLocation()
     {
         return $this->sportsActivityLocation;
     }
 
-    public function setsportsActivityLocation($sportsActivityLocation)
+    public function setSportsActivityLocation($sportsActivityLocation)
     {
         $this->sportsActivityLocation = $sportsActivityLocation;
         return $this;
     }
 
-    public function getsportsEvent()
+    public function getSportsEvent()
     {
         return $this->sportsEvent;
     }
 
-    public function setsportsEvent($sportsEvent)
+    public function setSportsEvent($sportsEvent)
     {
         $this->sportsEvent = $sportsEvent;
         return $this;
     }
 
-    public function getsportsTeam()
+    public function getSportsTeam()
     {
         return $this->sportsTeam;
     }
 
-    public function setsportsTeam($sportsTeam)
+    public function setSportsTeam($sportsTeam)
     {
         $this->sportsTeam = $sportsTeam;
         return $this;
     }
 
-    public function gettoLocation()
+    public function getToLocation()
     {
         return $this->toLocation;
     }
 
-    public function settoLocation($toLocation)
+    public function setToLocation($toLocation)
     {
         $this->toLocation = $toLocation;
         return $this;

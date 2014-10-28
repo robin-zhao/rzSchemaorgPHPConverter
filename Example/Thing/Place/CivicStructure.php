@@ -28,12 +28,12 @@ class CivicStructure extends Place
      */
     private $url = "http://schema.org/CivicStructure";
 
-    public function getopeningHours()
+    public function getOpeningHours()
     {
         return $this->openingHours;
     }
 
-    public function setopeningHours($openingHours)
+    public function setOpeningHours($openingHours)
     {
         $this->openingHours = $openingHours;
         return $this;

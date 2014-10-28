@@ -42,34 +42,34 @@ class Physician extends MedicalOrganization
      */
     private $url = "http://schema.org/Physician";
 
-    public function getavailableService()
+    public function getAvailableService()
     {
         return $this->availableService;
     }
 
-    public function setavailableService($availableService)
+    public function setAvailableService($availableService)
     {
         $this->availableService = $availableService;
         return $this;
     }
 
-    public function gethospitalAffiliation()
+    public function getHospitalAffiliation()
     {
         return $this->hospitalAffiliation;
     }
 
-    public function sethospitalAffiliation($hospitalAffiliation)
+    public function setHospitalAffiliation($hospitalAffiliation)
     {
         $this->hospitalAffiliation = $hospitalAffiliation;
         return $this;
     }
 
-    public function getmedicalSpecialty()
+    public function getMedicalSpecialty()
     {
         return $this->medicalSpecialty;
     }
 
-    public function setmedicalSpecialty($medicalSpecialty)
+    public function setMedicalSpecialty($medicalSpecialty)
     {
         $this->medicalSpecialty = $medicalSpecialty;
         return $this;

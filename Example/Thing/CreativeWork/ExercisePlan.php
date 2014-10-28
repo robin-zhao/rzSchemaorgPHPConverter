@@ -77,89 +77,89 @@ class ExercisePlan extends CreativeWork
      */
     private $url = "http://schema.org/ExercisePlan";
 
-    public function getactivityDuration()
+    public function getActivityDuration()
     {
         return $this->activityDuration;
     }
 
-    public function setactivityDuration($activityDuration)
+    public function setActivityDuration($activityDuration)
     {
         $this->activityDuration = $activityDuration;
         return $this;
     }
 
-    public function getactivityFrequency()
+    public function getActivityFrequency()
     {
         return $this->activityFrequency;
     }
 
-    public function setactivityFrequency($activityFrequency)
+    public function setActivityFrequency($activityFrequency)
     {
         $this->activityFrequency = $activityFrequency;
         return $this;
     }
 
-    public function getadditionalVariable()
+    public function getAdditionalVariable()
     {
         return $this->additionalVariable;
     }
 
-    public function setadditionalVariable($additionalVariable)
+    public function setAdditionalVariable($additionalVariable)
     {
         $this->additionalVariable = $additionalVariable;
         return $this;
     }
 
-    public function getexerciseType()
+    public function getExerciseType()
     {
         return $this->exerciseType;
     }
 
-    public function setexerciseType($exerciseType)
+    public function setExerciseType($exerciseType)
     {
         $this->exerciseType = $exerciseType;
         return $this;
     }
 
-    public function getintensity()
+    public function getIntensity()
     {
         return $this->intensity;
     }
 
-    public function setintensity($intensity)
+    public function setIntensity($intensity)
     {
         $this->intensity = $intensity;
         return $this;
     }
 
-    public function getrepetitions()
+    public function getRepetitions()
     {
         return $this->repetitions;
     }
 
-    public function setrepetitions($repetitions)
+    public function setRepetitions($repetitions)
     {
         $this->repetitions = $repetitions;
         return $this;
     }
 
-    public function getrestPeriods()
+    public function getRestPeriods()
     {
         return $this->restPeriods;
     }
 
-    public function setrestPeriods($restPeriods)
+    public function setRestPeriods($restPeriods)
     {
         $this->restPeriods = $restPeriods;
         return $this;
     }
 
-    public function getworkload()
+    public function getWorkload()
     {
         return $this->workload;
     }
 
-    public function setworkload($workload)
+    public function setWorkload($workload)
     {
         $this->workload = $workload;
         return $this;

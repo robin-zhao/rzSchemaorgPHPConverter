@@ -63,67 +63,67 @@ class MedicalEntity extends Thing
      */
     private $url = "http://schema.org/MedicalEntity";
 
-    public function getcode()
+    public function getCode()
     {
         return $this->code;
     }
 
-    public function setcode($code)
+    public function setCode($code)
     {
         $this->code = $code;
         return $this;
     }
 
-    public function getguideline()
+    public function getGuideline()
     {
         return $this->guideline;
     }
 
-    public function setguideline($guideline)
+    public function setGuideline($guideline)
     {
         $this->guideline = $guideline;
         return $this;
     }
 
-    public function getmedicineSystem()
+    public function getMedicineSystem()
     {
         return $this->medicineSystem;
     }
 
-    public function setmedicineSystem($medicineSystem)
+    public function setMedicineSystem($medicineSystem)
     {
         $this->medicineSystem = $medicineSystem;
         return $this;
     }
 
-    public function getrecognizingAuthority()
+    public function getRecognizingAuthority()
     {
         return $this->recognizingAuthority;
     }
 
-    public function setrecognizingAuthority($recognizingAuthority)
+    public function setRecognizingAuthority($recognizingAuthority)
     {
         $this->recognizingAuthority = $recognizingAuthority;
         return $this;
     }
 
-    public function getrelevantSpecialty()
+    public function getRelevantSpecialty()
     {
         return $this->relevantSpecialty;
     }
 
-    public function setrelevantSpecialty($relevantSpecialty)
+    public function setRelevantSpecialty($relevantSpecialty)
     {
         $this->relevantSpecialty = $relevantSpecialty;
         return $this;
     }
 
-    public function getstudy()
+    public function getStudy()
     {
         return $this->study;
     }
 
-    public function setstudy($study)
+    public function setStudy($study)
     {
         $this->study = $study;
         return $this;

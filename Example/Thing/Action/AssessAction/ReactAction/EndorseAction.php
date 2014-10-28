@@ -28,12 +28,12 @@ class EndorseAction extends ReactAction
      */
     private $url = "http://schema.org/EndorseAction";
 
-    public function getendorsee()
+    public function getEndorsee()
     {
         return $this->endorsee;
     }
 
-    public function setendorsee($endorsee)
+    public function setEndorsee($endorsee)
     {
         $this->endorsee = $endorsee;
         return $this;

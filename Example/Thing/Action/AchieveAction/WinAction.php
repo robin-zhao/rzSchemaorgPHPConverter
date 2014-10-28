@@ -28,12 +28,12 @@ class WinAction extends AchieveAction
      */
     private $url = "http://schema.org/WinAction";
 
-    public function getloser()
+    public function getLoser()
     {
         return $this->loser;
     }
 
-    public function setloser($loser)
+    public function setLoser($loser)
     {
         $this->loser = $loser;
         return $this;

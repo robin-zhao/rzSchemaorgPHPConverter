@@ -56,56 +56,56 @@ class QuantitativeValue extends StructuredValue
      */
     private $url = "http://schema.org/QuantitativeValue";
 
-    public function getmaxValue()
+    public function getMaxValue()
     {
         return $this->maxValue;
     }
 
-    public function setmaxValue($maxValue)
+    public function setMaxValue($maxValue)
     {
         $this->maxValue = $maxValue;
         return $this;
     }
 
-    public function getminValue()
+    public function getMinValue()
     {
         return $this->minValue;
     }
 
-    public function setminValue($minValue)
+    public function setMinValue($minValue)
     {
         $this->minValue = $minValue;
         return $this;
     }
 
-    public function getunitCode()
+    public function getUnitCode()
     {
         return $this->unitCode;
     }
 
-    public function setunitCode($unitCode)
+    public function setUnitCode($unitCode)
     {
         $this->unitCode = $unitCode;
         return $this;
     }
 
-    public function getvalue()
+    public function getValue()
     {
         return $this->value;
     }
 
-    public function setvalue($value)
+    public function setValue($value)
     {
         $this->value = $value;
         return $this;
     }
 
-    public function getvalueReference()
+    public function getValueReference()
     {
         return $this->valueReference;
     }
 
-    public function setvalueReference($valueReference)
+    public function setValueReference($valueReference)
     {
         $this->valueReference = $valueReference;
         return $this;

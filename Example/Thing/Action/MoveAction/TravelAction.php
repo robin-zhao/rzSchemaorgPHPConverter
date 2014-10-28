@@ -28,12 +28,12 @@ class TravelAction extends MoveAction
      */
     private $url = "http://schema.org/TravelAction";
 
-    public function getdistance()
+    public function getDistance()
     {
         return $this->distance;
     }
 
-    public function setdistance($distance)
+    public function setDistance($distance)
     {
         $this->distance = $distance;
         return $this;

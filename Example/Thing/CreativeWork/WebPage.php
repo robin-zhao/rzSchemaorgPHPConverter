@@ -91,111 +91,111 @@ class WebPage extends CreativeWork
      */
     private $url = "http://schema.org/WebPage";
 
-    public function getbreadcrumb()
+    public function getBreadcrumb()
     {
         return $this->breadcrumb;
     }
 
-    public function setbreadcrumb($breadcrumb)
+    public function setBreadcrumb($breadcrumb)
     {
         $this->breadcrumb = $breadcrumb;
         return $this;
     }
 
-    public function getisPartOf()
+    public function getIsPartOf()
     {
         return $this->isPartOf;
     }
 
-    public function setisPartOf($isPartOf)
+    public function setIsPartOf($isPartOf)
     {
         $this->isPartOf = $isPartOf;
         return $this;
     }
 
-    public function getlastReviewed()
+    public function getLastReviewed()
     {
         return $this->lastReviewed;
     }
 
-    public function setlastReviewed($lastReviewed)
+    public function setLastReviewed($lastReviewed)
     {
         $this->lastReviewed = $lastReviewed;
         return $this;
     }
 
-    public function getmainContentOfPage()
+    public function getMainContentOfPage()
     {
         return $this->mainContentOfPage;
     }
 
-    public function setmainContentOfPage($mainContentOfPage)
+    public function setMainContentOfPage($mainContentOfPage)
     {
         $this->mainContentOfPage = $mainContentOfPage;
         return $this;
     }
 
-    public function getprimaryImageOfPage()
+    public function getPrimaryImageOfPage()
     {
         return $this->primaryImageOfPage;
     }
 
-    public function setprimaryImageOfPage($primaryImageOfPage)
+    public function setPrimaryImageOfPage($primaryImageOfPage)
     {
         $this->primaryImageOfPage = $primaryImageOfPage;
         return $this;
     }
 
-    public function getrelatedLink()
+    public function getRelatedLink()
     {
         return $this->relatedLink;
     }
 
-    public function setrelatedLink($relatedLink)
+    public function setRelatedLink($relatedLink)
     {
         $this->relatedLink = $relatedLink;
         return $this;
     }
 
-    public function getreviewedBy()
+    public function getReviewedBy()
     {
         return $this->reviewedBy;
     }
 
-    public function setreviewedBy($reviewedBy)
+    public function setReviewedBy($reviewedBy)
     {
         $this->reviewedBy = $reviewedBy;
         return $this;
     }
 
-    public function getsignificantLink()
+    public function getSignificantLink()
     {
         return $this->significantLink;
     }
 
-    public function setsignificantLink($significantLink)
+    public function setSignificantLink($significantLink)
     {
         $this->significantLink = $significantLink;
         return $this;
     }
 
-    public function getsignificantLinks()
+    public function getSignificantLinks()
     {
         return $this->significantLinks;
     }
 
-    public function setsignificantLinks($significantLinks)
+    public function setSignificantLinks($significantLinks)
     {
         $this->significantLinks = $significantLinks;
         return $this;
     }
 
-    public function getspecialty()
+    public function getSpecialty()
     {
         return $this->specialty;
     }
 
-    public function setspecialty($specialty)
+    public function setSpecialty($specialty)
     {
         $this->specialty = $specialty;
         return $this;

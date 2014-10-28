@@ -42,34 +42,34 @@ class ProductModel extends Product
      */
     private $url = "http://schema.org/ProductModel";
 
-    public function getisVariantOf()
+    public function getIsVariantOf()
     {
         return $this->isVariantOf;
     }
 
-    public function setisVariantOf($isVariantOf)
+    public function setIsVariantOf($isVariantOf)
     {
         $this->isVariantOf = $isVariantOf;
         return $this;
     }
 
-    public function getpredecessorOf()
+    public function getPredecessorOf()
     {
         return $this->predecessorOf;
     }
 
-    public function setpredecessorOf($predecessorOf)
+    public function setPredecessorOf($predecessorOf)
     {
         $this->predecessorOf = $predecessorOf;
         return $this;
     }
 
-    public function getsuccessorOf()
+    public function getSuccessorOf()
     {
         return $this->successorOf;
     }
 
-    public function setsuccessorOf($successorOf)
+    public function setSuccessorOf($successorOf)
     {
         $this->successorOf = $successorOf;
         return $this;

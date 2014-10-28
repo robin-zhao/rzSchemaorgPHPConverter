@@ -28,12 +28,12 @@ class IndividualProduct extends Product
      */
     private $url = "http://schema.org/IndividualProduct";
 
-    public function getserialNumber()
+    public function getSerialNumber()
     {
         return $this->serialNumber;
     }
 
-    public function setserialNumber($serialNumber)
+    public function setSerialNumber($serialNumber)
     {
         $this->serialNumber = $serialNumber;
         return $this;

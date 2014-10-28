@@ -49,45 +49,45 @@ class Nerve extends AnatomicalStructure
      */
     private $url = "http://schema.org/Nerve";
 
-    public function getbranch()
+    public function getBranch()
     {
         return $this->branch;
     }
 
-    public function setbranch($branch)
+    public function setBranch($branch)
     {
         $this->branch = $branch;
         return $this;
     }
 
-    public function getnerveMotor()
+    public function getNerveMotor()
     {
         return $this->nerveMotor;
     }
 
-    public function setnerveMotor($nerveMotor)
+    public function setNerveMotor($nerveMotor)
     {
         $this->nerveMotor = $nerveMotor;
         return $this;
     }
 
-    public function getsensoryUnit()
+    public function getSensoryUnit()
     {
         return $this->sensoryUnit;
     }
 
-    public function setsensoryUnit($sensoryUnit)
+    public function setSensoryUnit($sensoryUnit)
     {
         $this->sensoryUnit = $sensoryUnit;
         return $this;
     }
 
-    public function getsourcedFrom()
+    public function getSourcedFrom()
     {
         return $this->sourcedFrom;
     }
 
-    public function setsourcedFrom($sourcedFrom)
+    public function setSourcedFrom($sourcedFrom)
     {
         $this->sourcedFrom = $sourcedFrom;
         return $this;

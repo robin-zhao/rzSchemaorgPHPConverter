@@ -28,12 +28,12 @@ class PerformAction extends PlayAction
      */
     private $url = "http://schema.org/PerformAction";
 
-    public function getentertainmentBusiness()
+    public function getEntertainmentBusiness()
     {
         return $this->entertainmentBusiness;
     }
 
-    public function setentertainmentBusiness($entertainmentBusiness)
+    public function setEntertainmentBusiness($entertainmentBusiness)
     {
         $this->entertainmentBusiness = $entertainmentBusiness;
         return $this;

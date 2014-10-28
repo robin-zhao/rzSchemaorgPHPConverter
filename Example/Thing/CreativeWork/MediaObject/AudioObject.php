@@ -28,12 +28,12 @@ class AudioObject extends MediaObject
      */
     private $url = "http://schema.org/AudioObject";
 
-    public function gettranscript()
+    public function getTranscript()
     {
         return $this->transcript;
     }
 
-    public function settranscript($transcript)
+    public function setTranscript($transcript)
     {
         $this->transcript = $transcript;
         return $this;

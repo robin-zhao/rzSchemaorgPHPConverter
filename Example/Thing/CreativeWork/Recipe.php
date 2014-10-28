@@ -91,111 +91,111 @@ class Recipe extends CreativeWork
      */
     private $url = "http://schema.org/Recipe";
 
-    public function getcookingMethod()
+    public function getCookingMethod()
     {
         return $this->cookingMethod;
     }
 
-    public function setcookingMethod($cookingMethod)
+    public function setCookingMethod($cookingMethod)
     {
         $this->cookingMethod = $cookingMethod;
         return $this;
     }
 
-    public function getcookTime()
+    public function getCookTime()
     {
         return $this->cookTime;
     }
 
-    public function setcookTime($cookTime)
+    public function setCookTime($cookTime)
     {
         $this->cookTime = $cookTime;
         return $this;
     }
 
-    public function getingredients()
+    public function getIngredients()
     {
         return $this->ingredients;
     }
 
-    public function setingredients($ingredients)
+    public function setIngredients($ingredients)
     {
         $this->ingredients = $ingredients;
         return $this;
     }
 
-    public function getnutrition()
+    public function getNutrition()
     {
         return $this->nutrition;
     }
 
-    public function setnutrition($nutrition)
+    public function setNutrition($nutrition)
     {
         $this->nutrition = $nutrition;
         return $this;
     }
 
-    public function getprepTime()
+    public function getPrepTime()
     {
         return $this->prepTime;
     }
 
-    public function setprepTime($prepTime)
+    public function setPrepTime($prepTime)
     {
         $this->prepTime = $prepTime;
         return $this;
     }
 
-    public function getrecipeCategory()
+    public function getRecipeCategory()
     {
         return $this->recipeCategory;
     }
 
-    public function setrecipeCategory($recipeCategory)
+    public function setRecipeCategory($recipeCategory)
     {
         $this->recipeCategory = $recipeCategory;
         return $this;
     }
 
-    public function getrecipeCuisine()
+    public function getRecipeCuisine()
     {
         return $this->recipeCuisine;
     }
 
-    public function setrecipeCuisine($recipeCuisine)
+    public function setRecipeCuisine($recipeCuisine)
     {
         $this->recipeCuisine = $recipeCuisine;
         return $this;
     }
 
-    public function getrecipeInstructions()
+    public function getRecipeInstructions()
     {
         return $this->recipeInstructions;
     }
 
-    public function setrecipeInstructions($recipeInstructions)
+    public function setRecipeInstructions($recipeInstructions)
     {
         $this->recipeInstructions = $recipeInstructions;
         return $this;
     }
 
-    public function getrecipeYield()
+    public function getRecipeYield()
     {
         return $this->recipeYield;
     }
 
-    public function setrecipeYield($recipeYield)
+    public function setRecipeYield($recipeYield)
     {
         $this->recipeYield = $recipeYield;
         return $this;
     }
 
-    public function gettotalTime()
+    public function getTotalTime()
     {
         return $this->totalTime;
     }
 
-    public function settotalTime($totalTime)
+    public function setTotalTime($totalTime)
     {
         $this->totalTime = $totalTime;
         return $this;

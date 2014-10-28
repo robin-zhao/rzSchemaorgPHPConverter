@@ -63,67 +63,67 @@ class Muscle extends AnatomicalStructure
      */
     private $url = "http://schema.org/Muscle";
 
-    public function getaction()
+    public function getAction()
     {
         return $this->action;
     }
 
-    public function setaction($action)
+    public function setAction($action)
     {
         $this->action = $action;
         return $this;
     }
 
-    public function getantagonist()
+    public function getAntagonist()
     {
         return $this->antagonist;
     }
 
-    public function setantagonist($antagonist)
+    public function setAntagonist($antagonist)
     {
         $this->antagonist = $antagonist;
         return $this;
     }
 
-    public function getbloodSupply()
+    public function getBloodSupply()
     {
         return $this->bloodSupply;
     }
 
-    public function setbloodSupply($bloodSupply)
+    public function setBloodSupply($bloodSupply)
     {
         $this->bloodSupply = $bloodSupply;
         return $this;
     }
 
-    public function getinsertion()
+    public function getInsertion()
     {
         return $this->insertion;
     }
 
-    public function setinsertion($insertion)
+    public function setInsertion($insertion)
     {
         $this->insertion = $insertion;
         return $this;
     }
 
-    public function getnerve()
+    public function getNerve()
     {
         return $this->nerve;
     }
 
-    public function setnerve($nerve)
+    public function setNerve($nerve)
     {
         $this->nerve = $nerve;
         return $this;
     }
 
-    public function getorigin()
+    public function getOrigin()
     {
         return $this->origin;
     }
 
-    public function setorigin($origin)
+    public function setOrigin($origin)
     {
         $this->origin = $origin;
         return $this;

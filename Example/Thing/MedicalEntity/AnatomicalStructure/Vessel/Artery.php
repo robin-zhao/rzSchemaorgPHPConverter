@@ -42,34 +42,34 @@ class Artery extends Vessel
      */
     private $url = "http://schema.org/Artery";
 
-    public function getarterialBranch()
+    public function getArterialBranch()
     {
         return $this->arterialBranch;
     }
 
-    public function setarterialBranch($arterialBranch)
+    public function setArterialBranch($arterialBranch)
     {
         $this->arterialBranch = $arterialBranch;
         return $this;
     }
 
-    public function getsource()
+    public function getSource()
     {
         return $this->source;
     }
 
-    public function setsource($source)
+    public function setSource($source)
     {
         $this->source = $source;
         return $this;
     }
 
-    public function getsupplyTo()
+    public function getSupplyTo()
     {
         return $this->supplyTo;
     }
 
-    public function setsupplyTo($supplyTo)
+    public function setSupplyTo($supplyTo)
     {
         $this->supplyTo = $supplyTo;
         return $this;

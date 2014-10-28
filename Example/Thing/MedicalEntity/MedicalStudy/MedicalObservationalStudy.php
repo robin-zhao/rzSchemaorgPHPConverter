@@ -28,12 +28,12 @@ class MedicalObservationalStudy extends MedicalStudy
      */
     private $url = "http://schema.org/MedicalObservationalStudy";
 
-    public function getstudyDesign()
+    public function getStudyDesign()
     {
         return $this->studyDesign;
     }
 
-    public function setstudyDesign($studyDesign)
+    public function setStudyDesign($studyDesign)
     {
         $this->studyDesign = $studyDesign;
         return $this;

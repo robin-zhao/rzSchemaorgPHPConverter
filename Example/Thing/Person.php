@@ -357,529 +357,529 @@ class Person extends Thing
      */
     private $url = "http://schema.org/Person";
 
-    public function getadditionalName()
+    public function getAdditionalName()
     {
         return $this->additionalName;
     }
 
-    public function setadditionalName($additionalName)
+    public function setAdditionalName($additionalName)
     {
         $this->additionalName = $additionalName;
         return $this;
     }
 
-    public function getaddress()
+    public function getAddress()
     {
         return $this->address;
     }
 
-    public function setaddress($address)
+    public function setAddress($address)
     {
         $this->address = $address;
         return $this;
     }
 
-    public function getaffiliation()
+    public function getAffiliation()
     {
         return $this->affiliation;
     }
 
-    public function setaffiliation($affiliation)
+    public function setAffiliation($affiliation)
     {
         $this->affiliation = $affiliation;
         return $this;
     }
 
-    public function getalumniOf()
+    public function getAlumniOf()
     {
         return $this->alumniOf;
     }
 
-    public function setalumniOf($alumniOf)
+    public function setAlumniOf($alumniOf)
     {
         $this->alumniOf = $alumniOf;
         return $this;
     }
 
-    public function getaward()
+    public function getAward()
     {
         return $this->award;
     }
 
-    public function setaward($award)
+    public function setAward($award)
     {
         $this->award = $award;
         return $this;
     }
 
-    public function getawards()
+    public function getAwards()
     {
         return $this->awards;
     }
 
-    public function setawards($awards)
+    public function setAwards($awards)
     {
         $this->awards = $awards;
         return $this;
     }
 
-    public function getbirthDate()
+    public function getBirthDate()
     {
         return $this->birthDate;
     }
 
-    public function setbirthDate($birthDate)
+    public function setBirthDate($birthDate)
     {
         $this->birthDate = $birthDate;
         return $this;
     }
 
-    public function getbrand()
+    public function getBrand()
     {
         return $this->brand;
     }
 
-    public function setbrand($brand)
+    public function setBrand($brand)
     {
         $this->brand = $brand;
         return $this;
     }
 
-    public function getchildren()
+    public function getChildren()
     {
         return $this->children;
     }
 
-    public function setchildren($children)
+    public function setChildren($children)
     {
         $this->children = $children;
         return $this;
     }
 
-    public function getcolleague()
+    public function getColleague()
     {
         return $this->colleague;
     }
 
-    public function setcolleague($colleague)
+    public function setColleague($colleague)
     {
         $this->colleague = $colleague;
         return $this;
     }
 
-    public function getcolleagues()
+    public function getColleagues()
     {
         return $this->colleagues;
     }
 
-    public function setcolleagues($colleagues)
+    public function setColleagues($colleagues)
     {
         $this->colleagues = $colleagues;
         return $this;
     }
 
-    public function getcontactPoint()
+    public function getContactPoint()
     {
         return $this->contactPoint;
     }
 
-    public function setcontactPoint($contactPoint)
+    public function setContactPoint($contactPoint)
     {
         $this->contactPoint = $contactPoint;
         return $this;
     }
 
-    public function getcontactPoints()
+    public function getContactPoints()
     {
         return $this->contactPoints;
     }
 
-    public function setcontactPoints($contactPoints)
+    public function setContactPoints($contactPoints)
     {
         $this->contactPoints = $contactPoints;
         return $this;
     }
 
-    public function getdeathDate()
+    public function getDeathDate()
     {
         return $this->deathDate;
     }
 
-    public function setdeathDate($deathDate)
+    public function setDeathDate($deathDate)
     {
         $this->deathDate = $deathDate;
         return $this;
     }
 
-    public function getduns()
+    public function getDuns()
     {
         return $this->duns;
     }
 
-    public function setduns($duns)
+    public function setDuns($duns)
     {
         $this->duns = $duns;
         return $this;
     }
 
-    public function getemail()
+    public function getEmail()
     {
         return $this->email;
     }
 
-    public function setemail($email)
+    public function setEmail($email)
     {
         $this->email = $email;
         return $this;
     }
 
-    public function getfamilyName()
+    public function getFamilyName()
     {
         return $this->familyName;
     }
 
-    public function setfamilyName($familyName)
+    public function setFamilyName($familyName)
     {
         $this->familyName = $familyName;
         return $this;
     }
 
-    public function getfaxNumber()
+    public function getFaxNumber()
     {
         return $this->faxNumber;
     }
 
-    public function setfaxNumber($faxNumber)
+    public function setFaxNumber($faxNumber)
     {
         $this->faxNumber = $faxNumber;
         return $this;
     }
 
-    public function getfollows()
+    public function getFollows()
     {
         return $this->follows;
     }
 
-    public function setfollows($follows)
+    public function setFollows($follows)
     {
         $this->follows = $follows;
         return $this;
     }
 
-    public function getgender()
+    public function getGender()
     {
         return $this->gender;
     }
 
-    public function setgender($gender)
+    public function setGender($gender)
     {
         $this->gender = $gender;
         return $this;
     }
 
-    public function getgivenName()
+    public function getGivenName()
     {
         return $this->givenName;
     }
 
-    public function setgivenName($givenName)
+    public function setGivenName($givenName)
     {
         $this->givenName = $givenName;
         return $this;
     }
 
-    public function getglobalLocationNumber()
+    public function getGlobalLocationNumber()
     {
         return $this->globalLocationNumber;
     }
 
-    public function setglobalLocationNumber($globalLocationNumber)
+    public function setGlobalLocationNumber($globalLocationNumber)
     {
         $this->globalLocationNumber = $globalLocationNumber;
         return $this;
     }
 
-    public function gethasPOS()
+    public function getHasPOS()
     {
         return $this->hasPOS;
     }
 
-    public function sethasPOS($hasPOS)
+    public function setHasPOS($hasPOS)
     {
         $this->hasPOS = $hasPOS;
         return $this;
     }
 
-    public function gethomeLocation()
+    public function getHomeLocation()
     {
         return $this->homeLocation;
     }
 
-    public function sethomeLocation($homeLocation)
+    public function setHomeLocation($homeLocation)
     {
         $this->homeLocation = $homeLocation;
         return $this;
     }
 
-    public function gethonorificPrefix()
+    public function getHonorificPrefix()
     {
         return $this->honorificPrefix;
     }
 
-    public function sethonorificPrefix($honorificPrefix)
+    public function setHonorificPrefix($honorificPrefix)
     {
         $this->honorificPrefix = $honorificPrefix;
         return $this;
     }
 
-    public function gethonorificSuffix()
+    public function getHonorificSuffix()
     {
         return $this->honorificSuffix;
     }
 
-    public function sethonorificSuffix($honorificSuffix)
+    public function setHonorificSuffix($honorificSuffix)
     {
         $this->honorificSuffix = $honorificSuffix;
         return $this;
     }
 
-    public function getinteractionCount()
+    public function getInteractionCount()
     {
         return $this->interactionCount;
     }
 
-    public function setinteractionCount($interactionCount)
+    public function setInteractionCount($interactionCount)
     {
         $this->interactionCount = $interactionCount;
         return $this;
     }
 
-    public function getisicV4()
+    public function getIsicV4()
     {
         return $this->isicV4;
     }
 
-    public function setisicV4($isicV4)
+    public function setIsicV4($isicV4)
     {
         $this->isicV4 = $isicV4;
         return $this;
     }
 
-    public function getjobTitle()
+    public function getJobTitle()
     {
         return $this->jobTitle;
     }
 
-    public function setjobTitle($jobTitle)
+    public function setJobTitle($jobTitle)
     {
         $this->jobTitle = $jobTitle;
         return $this;
     }
 
-    public function getknows()
+    public function getKnows()
     {
         return $this->knows;
     }
 
-    public function setknows($knows)
+    public function setKnows($knows)
     {
         $this->knows = $knows;
         return $this;
     }
 
-    public function getmakesOffer()
+    public function getMakesOffer()
     {
         return $this->makesOffer;
     }
 
-    public function setmakesOffer($makesOffer)
+    public function setMakesOffer($makesOffer)
     {
         $this->makesOffer = $makesOffer;
         return $this;
     }
 
-    public function getmemberOf()
+    public function getMemberOf()
     {
         return $this->memberOf;
     }
 
-    public function setmemberOf($memberOf)
+    public function setMemberOf($memberOf)
     {
         $this->memberOf = $memberOf;
         return $this;
     }
 
-    public function getnaics()
+    public function getNaics()
     {
         return $this->naics;
     }
 
-    public function setnaics($naics)
+    public function setNaics($naics)
     {
         $this->naics = $naics;
         return $this;
     }
 
-    public function getnationality()
+    public function getNationality()
     {
         return $this->nationality;
     }
 
-    public function setnationality($nationality)
+    public function setNationality($nationality)
     {
         $this->nationality = $nationality;
         return $this;
     }
 
-    public function getowns()
+    public function getOwns()
     {
         return $this->owns;
     }
 
-    public function setowns($owns)
+    public function setOwns($owns)
     {
         $this->owns = $owns;
         return $this;
     }
 
-    public function getparent()
+    public function getParent()
     {
         return $this->parent;
     }
 
-    public function setparent($parent)
+    public function setParent($parent)
     {
         $this->parent = $parent;
         return $this;
     }
 
-    public function getparents()
+    public function getParents()
     {
         return $this->parents;
     }
 
-    public function setparents($parents)
+    public function setParents($parents)
     {
         $this->parents = $parents;
         return $this;
     }
 
-    public function getperformerIn()
+    public function getPerformerIn()
     {
         return $this->performerIn;
     }
 
-    public function setperformerIn($performerIn)
+    public function setPerformerIn($performerIn)
     {
         $this->performerIn = $performerIn;
         return $this;
     }
 
-    public function getrelatedTo()
+    public function getRelatedTo()
     {
         return $this->relatedTo;
     }
 
-    public function setrelatedTo($relatedTo)
+    public function setRelatedTo($relatedTo)
     {
         $this->relatedTo = $relatedTo;
         return $this;
     }
 
-    public function getseeks()
+    public function getSeeks()
     {
         return $this->seeks;
     }
 
-    public function setseeks($seeks)
+    public function setSeeks($seeks)
     {
         $this->seeks = $seeks;
         return $this;
     }
 
-    public function getsibling()
+    public function getSibling()
     {
         return $this->sibling;
     }
 
-    public function setsibling($sibling)
+    public function setSibling($sibling)
     {
         $this->sibling = $sibling;
         return $this;
     }
 
-    public function getsiblings()
+    public function getSiblings()
     {
         return $this->siblings;
     }
 
-    public function setsiblings($siblings)
+    public function setSiblings($siblings)
     {
         $this->siblings = $siblings;
         return $this;
     }
 
-    public function getspouse()
+    public function getSpouse()
     {
         return $this->spouse;
     }
 
-    public function setspouse($spouse)
+    public function setSpouse($spouse)
     {
         $this->spouse = $spouse;
         return $this;
     }
 
-    public function gettaxID()
+    public function getTaxID()
     {
         return $this->taxID;
     }
 
-    public function settaxID($taxID)
+    public function setTaxID($taxID)
     {
         $this->taxID = $taxID;
         return $this;
     }
 
-    public function gettelephone()
+    public function getTelephone()
     {
         return $this->telephone;
     }
 
-    public function settelephone($telephone)
+    public function setTelephone($telephone)
     {
         $this->telephone = $telephone;
         return $this;
     }
 
-    public function getvatID()
+    public function getVatID()
     {
         return $this->vatID;
     }
 
-    public function setvatID($vatID)
+    public function setVatID($vatID)
     {
         $this->vatID = $vatID;
         return $this;
     }
 
-    public function getworkLocation()
+    public function getWorkLocation()
     {
         return $this->workLocation;
     }
 
-    public function setworkLocation($workLocation)
+    public function setWorkLocation($workLocation)
     {
         $this->workLocation = $workLocation;
         return $this;
     }
 
-    public function getworksFor()
+    public function getWorksFor()
     {
         return $this->worksFor;
     }
 
-    public function setworksFor($worksFor)
+    public function setWorksFor($worksFor)
     {
         $this->worksFor = $worksFor;
         return $this;

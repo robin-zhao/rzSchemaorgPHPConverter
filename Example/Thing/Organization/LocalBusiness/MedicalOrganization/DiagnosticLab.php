@@ -28,12 +28,12 @@ class DiagnosticLab extends MedicalOrganization
      */
     private $url = "http://schema.org/DiagnosticLab";
 
-    public function getavailableTest()
+    public function getAvailableTest()
     {
         return $this->availableTest;
     }
 
-    public function setavailableTest($availableTest)
+    public function setAvailableTest($availableTest)
     {
         $this->availableTest = $availableTest;
         return $this;

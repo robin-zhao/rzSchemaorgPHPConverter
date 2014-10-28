@@ -77,89 +77,89 @@ class ServiceChannel extends Intangible
      */
     private $url = "http://schema.org/ServiceChannel";
 
-    public function getavailableLanguage()
+    public function getAvailableLanguage()
     {
         return $this->availableLanguage;
     }
 
-    public function setavailableLanguage($availableLanguage)
+    public function setAvailableLanguage($availableLanguage)
     {
         $this->availableLanguage = $availableLanguage;
         return $this;
     }
 
-    public function getprocessingTime()
+    public function getProcessingTime()
     {
         return $this->processingTime;
     }
 
-    public function setprocessingTime($processingTime)
+    public function setProcessingTime($processingTime)
     {
         $this->processingTime = $processingTime;
         return $this;
     }
 
-    public function getprovidesService()
+    public function getProvidesService()
     {
         return $this->providesService;
     }
 
-    public function setprovidesService($providesService)
+    public function setProvidesService($providesService)
     {
         $this->providesService = $providesService;
         return $this;
     }
 
-    public function getserviceLocation()
+    public function getServiceLocation()
     {
         return $this->serviceLocation;
     }
 
-    public function setserviceLocation($serviceLocation)
+    public function setServiceLocation($serviceLocation)
     {
         $this->serviceLocation = $serviceLocation;
         return $this;
     }
 
-    public function getservicePhone()
+    public function getServicePhone()
     {
         return $this->servicePhone;
     }
 
-    public function setservicePhone($servicePhone)
+    public function setServicePhone($servicePhone)
     {
         $this->servicePhone = $servicePhone;
         return $this;
     }
 
-    public function getservicePostalAddress()
+    public function getServicePostalAddress()
     {
         return $this->servicePostalAddress;
     }
 
-    public function setservicePostalAddress($servicePostalAddress)
+    public function setServicePostalAddress($servicePostalAddress)
     {
         $this->servicePostalAddress = $servicePostalAddress;
         return $this;
     }
 
-    public function getserviceSmsNumber()
+    public function getServiceSmsNumber()
     {
         return $this->serviceSmsNumber;
     }
 
-    public function setserviceSmsNumber($serviceSmsNumber)
+    public function setServiceSmsNumber($serviceSmsNumber)
     {
         $this->serviceSmsNumber = $serviceSmsNumber;
         return $this;
     }
 
-    public function getserviceUrl()
+    public function getServiceUrl()
     {
         return $this->serviceUrl;
     }
 
-    public function setserviceUrl($serviceUrl)
+    public function setServiceUrl($serviceUrl)
     {
         $this->serviceUrl = $serviceUrl;
         return $this;

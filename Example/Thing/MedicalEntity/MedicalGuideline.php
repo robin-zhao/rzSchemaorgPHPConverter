@@ -49,45 +49,45 @@ class MedicalGuideline extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalGuideline";
 
-    public function getevidenceLevel()
+    public function getEvidenceLevel()
     {
         return $this->evidenceLevel;
     }
 
-    public function setevidenceLevel($evidenceLevel)
+    public function setEvidenceLevel($evidenceLevel)
     {
         $this->evidenceLevel = $evidenceLevel;
         return $this;
     }
 
-    public function getevidenceOrigin()
+    public function getEvidenceOrigin()
     {
         return $this->evidenceOrigin;
     }
 
-    public function setevidenceOrigin($evidenceOrigin)
+    public function setEvidenceOrigin($evidenceOrigin)
     {
         $this->evidenceOrigin = $evidenceOrigin;
         return $this;
     }
 
-    public function getguidelineDate()
+    public function getGuidelineDate()
     {
         return $this->guidelineDate;
     }
 
-    public function setguidelineDate($guidelineDate)
+    public function setGuidelineDate($guidelineDate)
     {
         $this->guidelineDate = $guidelineDate;
         return $this;
     }
 
-    public function getguidelineSubject()
+    public function getGuidelineSubject()
     {
         return $this->guidelineSubject;
     }
 
-    public function setguidelineSubject($guidelineSubject)
+    public function setGuidelineSubject($guidelineSubject)
     {
         $this->guidelineSubject = $guidelineSubject;
         return $this;

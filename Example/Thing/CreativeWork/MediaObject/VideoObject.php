@@ -56,56 +56,56 @@ class VideoObject extends MediaObject
      */
     private $url = "http://schema.org/VideoObject";
 
-    public function getcaption()
+    public function getCaption()
     {
         return $this->caption;
     }
 
-    public function setcaption($caption)
+    public function setCaption($caption)
     {
         $this->caption = $caption;
         return $this;
     }
 
-    public function getthumbnail()
+    public function getThumbnail()
     {
         return $this->thumbnail;
     }
 
-    public function setthumbnail($thumbnail)
+    public function setThumbnail($thumbnail)
     {
         $this->thumbnail = $thumbnail;
         return $this;
     }
 
-    public function gettranscript()
+    public function getTranscript()
     {
         return $this->transcript;
     }
 
-    public function settranscript($transcript)
+    public function setTranscript($transcript)
     {
         $this->transcript = $transcript;
         return $this;
     }
 
-    public function getvideoFrameSize()
+    public function getVideoFrameSize()
     {
         return $this->videoFrameSize;
     }
 
-    public function setvideoFrameSize($videoFrameSize)
+    public function setVideoFrameSize($videoFrameSize)
     {
         $this->videoFrameSize = $videoFrameSize;
         return $this;
     }
 
-    public function getvideoQuality()
+    public function getVideoQuality()
     {
         return $this->videoQuality;
     }
 
-    public function setvideoQuality($videoQuality)
+    public function setVideoQuality($videoQuality)
     {
         $this->videoQuality = $videoQuality;
         return $this;

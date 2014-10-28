@@ -49,45 +49,45 @@ class APIReference extends TechArticle
      */
     private $url = "http://schema.org/APIReference";
 
-    public function getassembly()
+    public function getAssembly()
     {
         return $this->assembly;
     }
 
-    public function setassembly($assembly)
+    public function setAssembly($assembly)
     {
         $this->assembly = $assembly;
         return $this;
     }
 
-    public function getassemblyVersion()
+    public function getAssemblyVersion()
     {
         return $this->assemblyVersion;
     }
 
-    public function setassemblyVersion($assemblyVersion)
+    public function setAssemblyVersion($assemblyVersion)
     {
         $this->assemblyVersion = $assemblyVersion;
         return $this;
     }
 
-    public function getprogrammingModel()
+    public function getProgrammingModel()
     {
         return $this->programmingModel;
     }
 
-    public function setprogrammingModel($programmingModel)
+    public function setProgrammingModel($programmingModel)
     {
         $this->programmingModel = $programmingModel;
         return $this;
     }
 
-    public function gettargetPlatform()
+    public function getTargetPlatform()
     {
         return $this->targetPlatform;
     }
 
-    public function settargetPlatform($targetPlatform)
+    public function setTargetPlatform($targetPlatform)
     {
         $this->targetPlatform = $targetPlatform;
         return $this;

@@ -35,23 +35,23 @@ class WarrantyPromise extends StructuredValue
      */
     private $url = "http://schema.org/WarrantyPromise";
 
-    public function getdurationOfWarranty()
+    public function getDurationOfWarranty()
     {
         return $this->durationOfWarranty;
     }
 
-    public function setdurationOfWarranty($durationOfWarranty)
+    public function setDurationOfWarranty($durationOfWarranty)
     {
         $this->durationOfWarranty = $durationOfWarranty;
         return $this;
     }
 
-    public function getwarrantyScope()
+    public function getWarrantyScope()
     {
         return $this->warrantyScope;
     }
 
-    public function setwarrantyScope($warrantyScope)
+    public function setWarrantyScope($warrantyScope)
     {
         $this->warrantyScope = $warrantyScope;
         return $this;

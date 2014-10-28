@@ -56,56 +56,56 @@ class OpeningHoursSpecification extends StructuredValue
      */
     private $url = "http://schema.org/OpeningHoursSpecification";
 
-    public function getcloses()
+    public function getCloses()
     {
         return $this->closes;
     }
 
-    public function setcloses($closes)
+    public function setCloses($closes)
     {
         $this->closes = $closes;
         return $this;
     }
 
-    public function getdayOfWeek()
+    public function getDayOfWeek()
     {
         return $this->dayOfWeek;
     }
 
-    public function setdayOfWeek($dayOfWeek)
+    public function setDayOfWeek($dayOfWeek)
     {
         $this->dayOfWeek = $dayOfWeek;
         return $this;
     }
 
-    public function getopens()
+    public function getOpens()
     {
         return $this->opens;
     }
 
-    public function setopens($opens)
+    public function setOpens($opens)
     {
         $this->opens = $opens;
         return $this;
     }
 
-    public function getvalidFrom()
+    public function getValidFrom()
     {
         return $this->validFrom;
     }
 
-    public function setvalidFrom($validFrom)
+    public function setValidFrom($validFrom)
     {
         $this->validFrom = $validFrom;
         return $this;
     }
 
-    public function getvalidThrough()
+    public function getValidThrough()
     {
         return $this->validThrough;
     }
 
-    public function setvalidThrough($validThrough)
+    public function setValidThrough($validThrough)
     {
         $this->validThrough = $validThrough;
         return $this;

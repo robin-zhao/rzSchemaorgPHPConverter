@@ -42,34 +42,34 @@ class Joint extends AnatomicalStructure
      */
     private $url = "http://schema.org/Joint";
 
-    public function getbiomechnicalClass()
+    public function getBiomechnicalClass()
     {
         return $this->biomechnicalClass;
     }
 
-    public function setbiomechnicalClass($biomechnicalClass)
+    public function setBiomechnicalClass($biomechnicalClass)
     {
         $this->biomechnicalClass = $biomechnicalClass;
         return $this;
     }
 
-    public function getfunctionalClass()
+    public function getFunctionalClass()
     {
         return $this->functionalClass;
     }
 
-    public function setfunctionalClass($functionalClass)
+    public function setFunctionalClass($functionalClass)
     {
         $this->functionalClass = $functionalClass;
         return $this;
     }
 
-    public function getstructuralClass()
+    public function getStructuralClass()
     {
         return $this->structuralClass;
     }
 
-    public function setstructuralClass($structuralClass)
+    public function setStructuralClass($structuralClass)
     {
         $this->structuralClass = $structuralClass;
         return $this;

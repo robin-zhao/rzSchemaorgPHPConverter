@@ -140,188 +140,188 @@ class MediaObject extends CreativeWork
      */
     private $url = "http://schema.org/MediaObject";
 
-    public function getassociatedArticle()
+    public function getAssociatedArticle()
     {
         return $this->associatedArticle;
     }
 
-    public function setassociatedArticle($associatedArticle)
+    public function setAssociatedArticle($associatedArticle)
     {
         $this->associatedArticle = $associatedArticle;
         return $this;
     }
 
-    public function getbitrate()
+    public function getBitrate()
     {
         return $this->bitrate;
     }
 
-    public function setbitrate($bitrate)
+    public function setBitrate($bitrate)
     {
         $this->bitrate = $bitrate;
         return $this;
     }
 
-    public function getcontentSize()
+    public function getContentSize()
     {
         return $this->contentSize;
     }
 
-    public function setcontentSize($contentSize)
+    public function setContentSize($contentSize)
     {
         $this->contentSize = $contentSize;
         return $this;
     }
 
-    public function getcontentUrl()
+    public function getContentUrl()
     {
         return $this->contentUrl;
     }
 
-    public function setcontentUrl($contentUrl)
+    public function setContentUrl($contentUrl)
     {
         $this->contentUrl = $contentUrl;
         return $this;
     }
 
-    public function getduration()
+    public function getDuration()
     {
         return $this->duration;
     }
 
-    public function setduration($duration)
+    public function setDuration($duration)
     {
         $this->duration = $duration;
         return $this;
     }
 
-    public function getembedUrl()
+    public function getEmbedUrl()
     {
         return $this->embedUrl;
     }
 
-    public function setembedUrl($embedUrl)
+    public function setEmbedUrl($embedUrl)
     {
         $this->embedUrl = $embedUrl;
         return $this;
     }
 
-    public function getencodesCreativeWork()
+    public function getEncodesCreativeWork()
     {
         return $this->encodesCreativeWork;
     }
 
-    public function setencodesCreativeWork($encodesCreativeWork)
+    public function setEncodesCreativeWork($encodesCreativeWork)
     {
         $this->encodesCreativeWork = $encodesCreativeWork;
         return $this;
     }
 
-    public function getencodingFormat()
+    public function getEncodingFormat()
     {
         return $this->encodingFormat;
     }
 
-    public function setencodingFormat($encodingFormat)
+    public function setEncodingFormat($encodingFormat)
     {
         $this->encodingFormat = $encodingFormat;
         return $this;
     }
 
-    public function getexpires()
+    public function getExpires()
     {
         return $this->expires;
     }
 
-    public function setexpires($expires)
+    public function setExpires($expires)
     {
         $this->expires = $expires;
         return $this;
     }
 
-    public function getheight()
+    public function getHeight()
     {
         return $this->height;
     }
 
-    public function setheight($height)
+    public function setHeight($height)
     {
         $this->height = $height;
         return $this;
     }
 
-    public function getplayerType()
+    public function getPlayerType()
     {
         return $this->playerType;
     }
 
-    public function setplayerType($playerType)
+    public function setPlayerType($playerType)
     {
         $this->playerType = $playerType;
         return $this;
     }
 
-    public function getproductionCompany()
+    public function getProductionCompany()
     {
         return $this->productionCompany;
     }
 
-    public function setproductionCompany($productionCompany)
+    public function setProductionCompany($productionCompany)
     {
         $this->productionCompany = $productionCompany;
         return $this;
     }
 
-    public function getpublication()
+    public function getPublication()
     {
         return $this->publication;
     }
 
-    public function setpublication($publication)
+    public function setPublication($publication)
     {
         $this->publication = $publication;
         return $this;
     }
 
-    public function getregionsAllowed()
+    public function getRegionsAllowed()
     {
         return $this->regionsAllowed;
     }
 
-    public function setregionsAllowed($regionsAllowed)
+    public function setRegionsAllowed($regionsAllowed)
     {
         $this->regionsAllowed = $regionsAllowed;
         return $this;
     }
 
-    public function getrequiresSubscription()
+    public function getRequiresSubscription()
     {
         return $this->requiresSubscription;
     }
 
-    public function setrequiresSubscription($requiresSubscription)
+    public function setRequiresSubscription($requiresSubscription)
     {
         $this->requiresSubscription = $requiresSubscription;
         return $this;
     }
 
-    public function getuploadDate()
+    public function getUploadDate()
     {
         return $this->uploadDate;
     }
 
-    public function setuploadDate($uploadDate)
+    public function setUploadDate($uploadDate)
     {
         $this->uploadDate = $uploadDate;
         return $this;
     }
 
-    public function getwidth()
+    public function getWidth()
     {
         return $this->width;
     }
 
-    public function setwidth($width)
+    public function setWidth($width)
     {
         $this->width = $width;
         return $this;

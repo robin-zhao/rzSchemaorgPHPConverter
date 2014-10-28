@@ -56,56 +56,56 @@ class Book extends CreativeWork
      */
     private $url = "http://schema.org/Book";
 
-    public function getbookEdition()
+    public function getBookEdition()
     {
         return $this->bookEdition;
     }
 
-    public function setbookEdition($bookEdition)
+    public function setBookEdition($bookEdition)
     {
         $this->bookEdition = $bookEdition;
         return $this;
     }
 
-    public function getbookFormat()
+    public function getBookFormat()
     {
         return $this->bookFormat;
     }
 
-    public function setbookFormat($bookFormat)
+    public function setBookFormat($bookFormat)
     {
         $this->bookFormat = $bookFormat;
         return $this;
     }
 
-    public function getillustrator()
+    public function getIllustrator()
     {
         return $this->illustrator;
     }
 
-    public function setillustrator($illustrator)
+    public function setIllustrator($illustrator)
     {
         $this->illustrator = $illustrator;
         return $this;
     }
 
-    public function getisbn()
+    public function getIsbn()
     {
         return $this->isbn;
     }
 
-    public function setisbn($isbn)
+    public function setIsbn($isbn)
     {
         $this->isbn = $isbn;
         return $this;
     }
 
-    public function getnumberOfPages()
+    public function getNumberOfPages()
     {
         return $this->numberOfPages;
     }
 
-    public function setnumberOfPages($numberOfPages)
+    public function setNumberOfPages($numberOfPages)
     {
         $this->numberOfPages = $numberOfPages;
         return $this;

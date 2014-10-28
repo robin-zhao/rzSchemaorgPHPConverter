@@ -224,320 +224,320 @@ class Demand extends Intangible
      */
     private $url = "http://schema.org/Demand";
 
-    public function getacceptedPaymentMethod()
+    public function getAcceptedPaymentMethod()
     {
         return $this->acceptedPaymentMethod;
     }
 
-    public function setacceptedPaymentMethod($acceptedPaymentMethod)
+    public function setAcceptedPaymentMethod($acceptedPaymentMethod)
     {
         $this->acceptedPaymentMethod = $acceptedPaymentMethod;
         return $this;
     }
 
-    public function getadvanceBookingRequirement()
+    public function getAdvanceBookingRequirement()
     {
         return $this->advanceBookingRequirement;
     }
 
-    public function setadvanceBookingRequirement($advanceBookingRequirement)
+    public function setAdvanceBookingRequirement($advanceBookingRequirement)
     {
         $this->advanceBookingRequirement = $advanceBookingRequirement;
         return $this;
     }
 
-    public function getavailability()
+    public function getAvailability()
     {
         return $this->availability;
     }
 
-    public function setavailability($availability)
+    public function setAvailability($availability)
     {
         $this->availability = $availability;
         return $this;
     }
 
-    public function getavailabilityEnds()
+    public function getAvailabilityEnds()
     {
         return $this->availabilityEnds;
     }
 
-    public function setavailabilityEnds($availabilityEnds)
+    public function setAvailabilityEnds($availabilityEnds)
     {
         $this->availabilityEnds = $availabilityEnds;
         return $this;
     }
 
-    public function getavailabilityStarts()
+    public function getAvailabilityStarts()
     {
         return $this->availabilityStarts;
     }
 
-    public function setavailabilityStarts($availabilityStarts)
+    public function setAvailabilityStarts($availabilityStarts)
     {
         $this->availabilityStarts = $availabilityStarts;
         return $this;
     }
 
-    public function getavailableAtOrFrom()
+    public function getAvailableAtOrFrom()
     {
         return $this->availableAtOrFrom;
     }
 
-    public function setavailableAtOrFrom($availableAtOrFrom)
+    public function setAvailableAtOrFrom($availableAtOrFrom)
     {
         $this->availableAtOrFrom = $availableAtOrFrom;
         return $this;
     }
 
-    public function getavailableDeliveryMethod()
+    public function getAvailableDeliveryMethod()
     {
         return $this->availableDeliveryMethod;
     }
 
-    public function setavailableDeliveryMethod($availableDeliveryMethod)
+    public function setAvailableDeliveryMethod($availableDeliveryMethod)
     {
         $this->availableDeliveryMethod = $availableDeliveryMethod;
         return $this;
     }
 
-    public function getbusinessFunction()
+    public function getBusinessFunction()
     {
         return $this->businessFunction;
     }
 
-    public function setbusinessFunction($businessFunction)
+    public function setBusinessFunction($businessFunction)
     {
         $this->businessFunction = $businessFunction;
         return $this;
     }
 
-    public function getdeliveryLeadTime()
+    public function getDeliveryLeadTime()
     {
         return $this->deliveryLeadTime;
     }
 
-    public function setdeliveryLeadTime($deliveryLeadTime)
+    public function setDeliveryLeadTime($deliveryLeadTime)
     {
         $this->deliveryLeadTime = $deliveryLeadTime;
         return $this;
     }
 
-    public function geteligibleCustomerType()
+    public function getEligibleCustomerType()
     {
         return $this->eligibleCustomerType;
     }
 
-    public function seteligibleCustomerType($eligibleCustomerType)
+    public function setEligibleCustomerType($eligibleCustomerType)
     {
         $this->eligibleCustomerType = $eligibleCustomerType;
         return $this;
     }
 
-    public function geteligibleDuration()
+    public function getEligibleDuration()
     {
         return $this->eligibleDuration;
     }
 
-    public function seteligibleDuration($eligibleDuration)
+    public function setEligibleDuration($eligibleDuration)
     {
         $this->eligibleDuration = $eligibleDuration;
         return $this;
     }
 
-    public function geteligibleQuantity()
+    public function getEligibleQuantity()
     {
         return $this->eligibleQuantity;
     }
 
-    public function seteligibleQuantity($eligibleQuantity)
+    public function setEligibleQuantity($eligibleQuantity)
     {
         $this->eligibleQuantity = $eligibleQuantity;
         return $this;
     }
 
-    public function geteligibleRegion()
+    public function getEligibleRegion()
     {
         return $this->eligibleRegion;
     }
 
-    public function seteligibleRegion($eligibleRegion)
+    public function setEligibleRegion($eligibleRegion)
     {
         $this->eligibleRegion = $eligibleRegion;
         return $this;
     }
 
-    public function geteligibleTransactionVolume()
+    public function getEligibleTransactionVolume()
     {
         return $this->eligibleTransactionVolume;
     }
 
-    public function seteligibleTransactionVolume($eligibleTransactionVolume)
+    public function setEligibleTransactionVolume($eligibleTransactionVolume)
     {
         $this->eligibleTransactionVolume = $eligibleTransactionVolume;
         return $this;
     }
 
-    public function getgtin13()
+    public function getGtin13()
     {
         return $this->gtin13;
     }
 
-    public function setgtin13($gtin13)
+    public function setGtin13($gtin13)
     {
         $this->gtin13 = $gtin13;
         return $this;
     }
 
-    public function getgtin14()
+    public function getGtin14()
     {
         return $this->gtin14;
     }
 
-    public function setgtin14($gtin14)
+    public function setGtin14($gtin14)
     {
         $this->gtin14 = $gtin14;
         return $this;
     }
 
-    public function getgtin8()
+    public function getGtin8()
     {
         return $this->gtin8;
     }
 
-    public function setgtin8($gtin8)
+    public function setGtin8($gtin8)
     {
         $this->gtin8 = $gtin8;
         return $this;
     }
 
-    public function getincludesObject()
+    public function getIncludesObject()
     {
         return $this->includesObject;
     }
 
-    public function setincludesObject($includesObject)
+    public function setIncludesObject($includesObject)
     {
         $this->includesObject = $includesObject;
         return $this;
     }
 
-    public function getinventoryLevel()
+    public function getInventoryLevel()
     {
         return $this->inventoryLevel;
     }
 
-    public function setinventoryLevel($inventoryLevel)
+    public function setInventoryLevel($inventoryLevel)
     {
         $this->inventoryLevel = $inventoryLevel;
         return $this;
     }
 
-    public function getitemCondition()
+    public function getItemCondition()
     {
         return $this->itemCondition;
     }
 
-    public function setitemCondition($itemCondition)
+    public function setItemCondition($itemCondition)
     {
         $this->itemCondition = $itemCondition;
         return $this;
     }
 
-    public function getitemOffered()
+    public function getItemOffered()
     {
         return $this->itemOffered;
     }
 
-    public function setitemOffered($itemOffered)
+    public function setItemOffered($itemOffered)
     {
         $this->itemOffered = $itemOffered;
         return $this;
     }
 
-    public function getmpn()
+    public function getMpn()
     {
         return $this->mpn;
     }
 
-    public function setmpn($mpn)
+    public function setMpn($mpn)
     {
         $this->mpn = $mpn;
         return $this;
     }
 
-    public function getpriceSpecification()
+    public function getPriceSpecification()
     {
         return $this->priceSpecification;
     }
 
-    public function setpriceSpecification($priceSpecification)
+    public function setPriceSpecification($priceSpecification)
     {
         $this->priceSpecification = $priceSpecification;
         return $this;
     }
 
-    public function getseller()
+    public function getSeller()
     {
         return $this->seller;
     }
 
-    public function setseller($seller)
+    public function setSeller($seller)
     {
         $this->seller = $seller;
         return $this;
     }
 
-    public function getserialNumber()
+    public function getSerialNumber()
     {
         return $this->serialNumber;
     }
 
-    public function setserialNumber($serialNumber)
+    public function setSerialNumber($serialNumber)
     {
         $this->serialNumber = $serialNumber;
         return $this;
     }
 
-    public function getsku()
+    public function getSku()
     {
         return $this->sku;
     }
 
-    public function setsku($sku)
+    public function setSku($sku)
     {
         $this->sku = $sku;
         return $this;
     }
 
-    public function getvalidFrom()
+    public function getValidFrom()
     {
         return $this->validFrom;
     }
 
-    public function setvalidFrom($validFrom)
+    public function setValidFrom($validFrom)
     {
         $this->validFrom = $validFrom;
         return $this;
     }
 
-    public function getvalidThrough()
+    public function getValidThrough()
     {
         return $this->validThrough;
     }
 
-    public function setvalidThrough($validThrough)
+    public function setValidThrough($validThrough)
     {
         $this->validThrough = $validThrough;
         return $this;
     }
 
-    public function getwarranty()
+    public function getWarranty()
     {
         return $this->warranty;
     }
 
-    public function setwarranty($warranty)
+    public function setWarranty($warranty)
     {
         $this->warranty = $warranty;
         return $this;

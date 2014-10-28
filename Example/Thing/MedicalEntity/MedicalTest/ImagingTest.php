@@ -28,12 +28,12 @@ class ImagingTest extends MedicalTest
      */
     private $url = "http://schema.org/ImagingTest";
 
-    public function getimagingTechnique()
+    public function getImagingTechnique()
     {
         return $this->imagingTechnique;
     }
 
-    public function setimagingTechnique($imagingTechnique)
+    public function setImagingTechnique($imagingTechnique)
     {
         $this->imagingTechnique = $imagingTechnique;
         return $this;

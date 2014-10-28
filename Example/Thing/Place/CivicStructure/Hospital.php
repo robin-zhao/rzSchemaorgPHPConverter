@@ -35,23 +35,23 @@ class Hospital extends CivicStructure
      */
     private $url = "http://schema.org/Hospital";
 
-    public function getavailableService()
+    public function getAvailableService()
     {
         return $this->availableService;
     }
 
-    public function setavailableService($availableService)
+    public function setAvailableService($availableService)
     {
         $this->availableService = $availableService;
         return $this;
     }
 
-    public function getmedicalSpecialty()
+    public function getMedicalSpecialty()
     {
         return $this->medicalSpecialty;
     }
 
-    public function setmedicalSpecialty($medicalSpecialty)
+    public function setMedicalSpecialty($medicalSpecialty)
     {
         $this->medicalSpecialty = $medicalSpecialty;
         return $this;

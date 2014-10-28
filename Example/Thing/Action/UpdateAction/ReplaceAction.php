@@ -35,23 +35,23 @@ class ReplaceAction extends UpdateAction
      */
     private $url = "http://schema.org/ReplaceAction";
 
-    public function getreplacee()
+    public function getReplacee()
     {
         return $this->replacee;
     }
 
-    public function setreplacee($replacee)
+    public function setReplacee($replacee)
     {
         $this->replacee = $replacee;
         return $this;
     }
 
-    public function getreplacer()
+    public function getReplacer()
     {
         return $this->replacer;
     }
 
-    public function setreplacer($replacer)
+    public function setReplacer($replacer)
     {
         $this->replacer = $replacer;
         return $this;

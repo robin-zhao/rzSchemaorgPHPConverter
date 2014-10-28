@@ -63,67 +63,67 @@ class Service extends Intangible
      */
     private $url = "http://schema.org/Service";
 
-    public function getavailableChannel()
+    public function getAvailableChannel()
     {
         return $this->availableChannel;
     }
 
-    public function setavailableChannel($availableChannel)
+    public function setAvailableChannel($availableChannel)
     {
         $this->availableChannel = $availableChannel;
         return $this;
     }
 
-    public function getproduces()
+    public function getProduces()
     {
         return $this->produces;
     }
 
-    public function setproduces($produces)
+    public function setProduces($produces)
     {
         $this->produces = $produces;
         return $this;
     }
 
-    public function getprovider()
+    public function getProvider()
     {
         return $this->provider;
     }
 
-    public function setprovider($provider)
+    public function setProvider($provider)
     {
         $this->provider = $provider;
         return $this;
     }
 
-    public function getserviceArea()
+    public function getServiceArea()
     {
         return $this->serviceArea;
     }
 
-    public function setserviceArea($serviceArea)
+    public function setServiceArea($serviceArea)
     {
         $this->serviceArea = $serviceArea;
         return $this;
     }
 
-    public function getserviceAudience()
+    public function getServiceAudience()
     {
         return $this->serviceAudience;
     }
 
-    public function setserviceAudience($serviceAudience)
+    public function setServiceAudience($serviceAudience)
     {
         $this->serviceAudience = $serviceAudience;
         return $this;
     }
 
-    public function getserviceType()
+    public function getServiceType()
     {
         return $this->serviceType;
     }
 
-    public function setserviceType($serviceType)
+    public function setServiceType($serviceType)
     {
         $this->serviceType = $serviceType;
         return $this;

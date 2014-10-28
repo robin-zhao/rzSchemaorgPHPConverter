@@ -28,12 +28,12 @@ class UpdateAction extends Action
      */
     private $url = "http://schema.org/UpdateAction";
 
-    public function getcollection()
+    public function getCollection()
     {
         return $this->collection;
     }
 
-    public function setcollection($collection)
+    public function setCollection($collection)
     {
         $this->collection = $collection;
         return $this;

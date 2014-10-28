@@ -35,23 +35,23 @@ class SendAction extends TransferAction
      */
     private $url = "http://schema.org/SendAction";
 
-    public function getdeliveryMethod()
+    public function getDeliveryMethod()
     {
         return $this->deliveryMethod;
     }
 
-    public function setdeliveryMethod($deliveryMethod)
+    public function setDeliveryMethod($deliveryMethod)
     {
         $this->deliveryMethod = $deliveryMethod;
         return $this;
     }
 
-    public function getrecipient()
+    public function getRecipient()
     {
         return $this->recipient;
     }
 
-    public function setrecipient($recipient)
+    public function setRecipient($recipient)
     {
         $this->recipient = $recipient;
         return $this;

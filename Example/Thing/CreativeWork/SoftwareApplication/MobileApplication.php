@@ -28,12 +28,12 @@ class MobileApplication extends SoftwareApplication
      */
     private $url = "http://schema.org/MobileApplication";
 
-    public function getcarrierRequirements()
+    public function getCarrierRequirements()
     {
         return $this->carrierRequirements;
     }
 
-    public function setcarrierRequirements($carrierRequirements)
+    public function setCarrierRequirements($carrierRequirements)
     {
         $this->carrierRequirements = $carrierRequirements;
         return $this;

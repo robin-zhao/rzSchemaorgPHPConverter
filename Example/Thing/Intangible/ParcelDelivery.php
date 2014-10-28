@@ -98,122 +98,122 @@ class ParcelDelivery extends Intangible
      */
     private $url = "http://schema.org/ParcelDelivery";
 
-    public function getcarrier()
+    public function getCarrier()
     {
         return $this->carrier;
     }
 
-    public function setcarrier($carrier)
+    public function setCarrier($carrier)
     {
         $this->carrier = $carrier;
         return $this;
     }
 
-    public function getdeliveryAddress()
+    public function getDeliveryAddress()
     {
         return $this->deliveryAddress;
     }
 
-    public function setdeliveryAddress($deliveryAddress)
+    public function setDeliveryAddress($deliveryAddress)
     {
         $this->deliveryAddress = $deliveryAddress;
         return $this;
     }
 
-    public function getdeliveryStatus()
+    public function getDeliveryStatus()
     {
         return $this->deliveryStatus;
     }
 
-    public function setdeliveryStatus($deliveryStatus)
+    public function setDeliveryStatus($deliveryStatus)
     {
         $this->deliveryStatus = $deliveryStatus;
         return $this;
     }
 
-    public function getexpectedArrivalFrom()
+    public function getExpectedArrivalFrom()
     {
         return $this->expectedArrivalFrom;
     }
 
-    public function setexpectedArrivalFrom($expectedArrivalFrom)
+    public function setExpectedArrivalFrom($expectedArrivalFrom)
     {
         $this->expectedArrivalFrom = $expectedArrivalFrom;
         return $this;
     }
 
-    public function getexpectedArrivalUntil()
+    public function getExpectedArrivalUntil()
     {
         return $this->expectedArrivalUntil;
     }
 
-    public function setexpectedArrivalUntil($expectedArrivalUntil)
+    public function setExpectedArrivalUntil($expectedArrivalUntil)
     {
         $this->expectedArrivalUntil = $expectedArrivalUntil;
         return $this;
     }
 
-    public function gethasDeliveryMethod()
+    public function getHasDeliveryMethod()
     {
         return $this->hasDeliveryMethod;
     }
 
-    public function sethasDeliveryMethod($hasDeliveryMethod)
+    public function setHasDeliveryMethod($hasDeliveryMethod)
     {
         $this->hasDeliveryMethod = $hasDeliveryMethod;
         return $this;
     }
 
-    public function getitemShipped()
+    public function getItemShipped()
     {
         return $this->itemShipped;
     }
 
-    public function setitemShipped($itemShipped)
+    public function setItemShipped($itemShipped)
     {
         $this->itemShipped = $itemShipped;
         return $this;
     }
 
-    public function getoriginAddress()
+    public function getOriginAddress()
     {
         return $this->originAddress;
     }
 
-    public function setoriginAddress($originAddress)
+    public function setOriginAddress($originAddress)
     {
         $this->originAddress = $originAddress;
         return $this;
     }
 
-    public function getpartOfOrder()
+    public function getPartOfOrder()
     {
         return $this->partOfOrder;
     }
 
-    public function setpartOfOrder($partOfOrder)
+    public function setPartOfOrder($partOfOrder)
     {
         $this->partOfOrder = $partOfOrder;
         return $this;
     }
 
-    public function gettrackingNumber()
+    public function getTrackingNumber()
     {
         return $this->trackingNumber;
     }
 
-    public function settrackingNumber($trackingNumber)
+    public function setTrackingNumber($trackingNumber)
     {
         $this->trackingNumber = $trackingNumber;
         return $this;
     }
 
-    public function gettrackingUrl()
+    public function getTrackingUrl()
     {
         return $this->trackingUrl;
     }
 
-    public function settrackingUrl($trackingUrl)
+    public function setTrackingUrl($trackingUrl)
     {
         $this->trackingUrl = $trackingUrl;
         return $this;

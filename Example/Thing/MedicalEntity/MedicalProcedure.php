@@ -49,45 +49,45 @@ class MedicalProcedure extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalProcedure";
 
-    public function getfollowup()
+    public function getFollowup()
     {
         return $this->followup;
     }
 
-    public function setfollowup($followup)
+    public function setFollowup($followup)
     {
         $this->followup = $followup;
         return $this;
     }
 
-    public function gethowPerformed()
+    public function getHowPerformed()
     {
         return $this->howPerformed;
     }
 
-    public function sethowPerformed($howPerformed)
+    public function setHowPerformed($howPerformed)
     {
         $this->howPerformed = $howPerformed;
         return $this;
     }
 
-    public function getpreparation()
+    public function getPreparation()
     {
         return $this->preparation;
     }
 
-    public function setpreparation($preparation)
+    public function setPreparation($preparation)
     {
         $this->preparation = $preparation;
         return $this;
     }
 
-    public function getprocedureType()
+    public function getProcedureType()
     {
         return $this->procedureType;
     }
 
-    public function setprocedureType($procedureType)
+    public function setProcedureType($procedureType)
     {
         $this->procedureType = $procedureType;
         return $this;

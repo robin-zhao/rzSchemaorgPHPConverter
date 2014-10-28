@@ -105,133 +105,133 @@ class DietarySupplement extends MedicalTherapy
      */
     private $url = "http://schema.org/DietarySupplement";
 
-    public function getactiveIngredient()
+    public function getActiveIngredient()
     {
         return $this->activeIngredient;
     }
 
-    public function setactiveIngredient($activeIngredient)
+    public function setActiveIngredient($activeIngredient)
     {
         $this->activeIngredient = $activeIngredient;
         return $this;
     }
 
-    public function getbackground()
+    public function getBackground()
     {
         return $this->background;
     }
 
-    public function setbackground($background)
+    public function setBackground($background)
     {
         $this->background = $background;
         return $this;
     }
 
-    public function getdosageForm()
+    public function getDosageForm()
     {
         return $this->dosageForm;
     }
 
-    public function setdosageForm($dosageForm)
+    public function setDosageForm($dosageForm)
     {
         $this->dosageForm = $dosageForm;
         return $this;
     }
 
-    public function getisProprietary()
+    public function getIsProprietary()
     {
         return $this->isProprietary;
     }
 
-    public function setisProprietary($isProprietary)
+    public function setIsProprietary($isProprietary)
     {
         $this->isProprietary = $isProprietary;
         return $this;
     }
 
-    public function getlegalStatus()
+    public function getLegalStatus()
     {
         return $this->legalStatus;
     }
 
-    public function setlegalStatus($legalStatus)
+    public function setLegalStatus($legalStatus)
     {
         $this->legalStatus = $legalStatus;
         return $this;
     }
 
-    public function getmanufacturer()
+    public function getManufacturer()
     {
         return $this->manufacturer;
     }
 
-    public function setmanufacturer($manufacturer)
+    public function setManufacturer($manufacturer)
     {
         $this->manufacturer = $manufacturer;
         return $this;
     }
 
-    public function getmaximumIntake()
+    public function getMaximumIntake()
     {
         return $this->maximumIntake;
     }
 
-    public function setmaximumIntake($maximumIntake)
+    public function setMaximumIntake($maximumIntake)
     {
         $this->maximumIntake = $maximumIntake;
         return $this;
     }
 
-    public function getmechanismOfAction()
+    public function getMechanismOfAction()
     {
         return $this->mechanismOfAction;
     }
 
-    public function setmechanismOfAction($mechanismOfAction)
+    public function setMechanismOfAction($mechanismOfAction)
     {
         $this->mechanismOfAction = $mechanismOfAction;
         return $this;
     }
 
-    public function getnonProprietaryName()
+    public function getNonProprietaryName()
     {
         return $this->nonProprietaryName;
     }
 
-    public function setnonProprietaryName($nonProprietaryName)
+    public function setNonProprietaryName($nonProprietaryName)
     {
         $this->nonProprietaryName = $nonProprietaryName;
         return $this;
     }
 
-    public function getrecommendedIntake()
+    public function getRecommendedIntake()
     {
         return $this->recommendedIntake;
     }
 
-    public function setrecommendedIntake($recommendedIntake)
+    public function setRecommendedIntake($recommendedIntake)
     {
         $this->recommendedIntake = $recommendedIntake;
         return $this;
     }
 
-    public function getsafetyConsideration()
+    public function getSafetyConsideration()
     {
         return $this->safetyConsideration;
     }
 
-    public function setsafetyConsideration($safetyConsideration)
+    public function setSafetyConsideration($safetyConsideration)
     {
         $this->safetyConsideration = $safetyConsideration;
         return $this;
     }
 
-    public function gettargetPopulation()
+    public function getTargetPopulation()
     {
         return $this->targetPopulation;
     }
 
-    public function settargetPopulation($targetPopulation)
+    public function setTargetPopulation($targetPopulation)
     {
         $this->targetPopulation = $targetPopulation;
         return $this;

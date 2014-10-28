@@ -35,23 +35,23 @@ class MedicalSign extends MedicalSignOrSymptom
      */
     private $url = "http://schema.org/MedicalSign";
 
-    public function getidentifyingExam()
+    public function getIdentifyingExam()
     {
         return $this->identifyingExam;
     }
 
-    public function setidentifyingExam($identifyingExam)
+    public function setIdentifyingExam($identifyingExam)
     {
         $this->identifyingExam = $identifyingExam;
         return $this;
     }
 
-    public function getidentifyingTest()
+    public function getIdentifyingTest()
     {
         return $this->identifyingTest;
     }
 
-    public function setidentifyingTest($identifyingTest)
+    public function setIdentifyingTest($identifyingTest)
     {
         $this->identifyingTest = $identifyingTest;
         return $this;
