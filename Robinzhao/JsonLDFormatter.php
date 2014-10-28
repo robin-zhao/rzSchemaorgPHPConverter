@@ -1,12 +1,14 @@
 <?php
 
+namespace Robinzhao;
+
 use Example\Thing;
-use Example\Thing\CreativeWork\MediaObject\VideoObject;
 
 /**
  * Description of JsonLDFormatter
  *
  * @author Jian Zhao
+ * @email boborabit@gmail.com
  */
 class JsonLDFormatter
 {
@@ -17,12 +19,12 @@ class JsonLDFormatter
     public function __construct(Thing $thing)
     {
         $this->thing = $thing;
-        $this->json = new stdClass();
+        $this->json = new \stdClass();
     }
 
     public function format($topLevel = true)
     {
-        $reflectionClass = new ReflectionClass($this->thing);
+        $reflectionClass = new \ReflectionClass($this->thing);
         $properties = $reflectionClass->getProperties();
         foreach ($properties as $property) {
             $getter = 'get' . ucfirst($property->name);
@@ -57,7 +59,7 @@ class JsonLDFormatter
                             throw new Exception('no implemented');
                             break;
                         default:
-                            $newJsonLDFormatter = new JsonLDFormatter($this->thing->$getter());
+                            $newJsonLDFormatter = new self($this->thing->$getter());
                             $this->json->{$property->name} = $newJsonLDFormatter->format(false);
                             break;
                     }
@@ -70,28 +72,7 @@ class JsonLDFormatter
 
     public function toJson()
     {
-        echo json_encode($this->json);
+        $this->format();
+        return json_encode($this->json);
     }
 }
-require 'vendor/autoload.php';
-
-$loader = new Composer\Autoload\ClassLoader();
-$loader->add('Example', '.');
-$loader->register();
-
-
-$videoObject = new VideoObject();
-
-$person = new Thing\Person();
-$person->setTelephone('123456789');
-$person->setName('Robin');
-$videoObject->setAuthor($person);
-
-$videoObject->setAward("This is a award.");
-
-
-
-$formatter = new JsonLDFormatter($videoObject);
-
-$formatter->format();
-$formatter->toJson();
