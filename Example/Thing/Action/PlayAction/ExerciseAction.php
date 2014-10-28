@@ -98,121 +98,187 @@ class ExerciseAction extends PlayAction
      */
     private $url = "http://schema.org/ExerciseAction";
 
+    /**
+     * @return Example\Thing\Place
+     */
     public function getCourse()
     {
         return $this->course;
     }
 
+    /**
+     * @param $course Example\Thing\Place
+     */
     public function setCourse($course)
     {
         $this->course = $course;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Diet
+     */
     public function getDiet()
     {
         return $this->diet;
     }
 
+    /**
+     * @param $diet Example\Thing\CreativeWork\Diet
+     */
     public function setDiet($diet)
     {
         $this->diet = $diet;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Distance
+     */
     public function getDistance()
     {
         return $this->distance;
     }
 
+    /**
+     * @param $distance Example\Thing\Intangible\Quantity\Distance
+     */
     public function setDistance($distance)
     {
         $this->distance = $distance;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\ExercisePlan
+     */
     public function getExercisePlan()
     {
         return $this->exercisePlan;
     }
 
+    /**
+     * @param $exercisePlan Example\Thing\CreativeWork\ExercisePlan
+     */
     public function setExercisePlan($exercisePlan)
     {
         $this->exercisePlan = $exercisePlan;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getExerciseType()
     {
         return $this->exerciseType;
     }
 
+    /**
+     * @param $exerciseType String
+     */
     public function setExerciseType($exerciseType)
     {
         $this->exerciseType = $exerciseType;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place|Float
+     */
     public function getFromLocation()
     {
         return $this->fromLocation;
     }
 
+    /**
+     * @param $fromLocation Example\Thing\Place|Float
+     */
     public function setFromLocation($fromLocation)
     {
         $this->fromLocation = $fromLocation;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getOponent()
     {
         return $this->oponent;
     }
 
+    /**
+     * @param $oponent Example\Thing\Person
+     */
     public function setOponent($oponent)
     {
         $this->oponent = $oponent;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization\LocalBusiness\SportsActivityLocation
+     */
     public function getSportsActivityLocation()
     {
         return $this->sportsActivityLocation;
     }
 
+    /**
+     * @param $sportsActivityLocation Example\Thing\Organization\LocalBusiness\SportsActivityLocation
+     */
     public function setSportsActivityLocation($sportsActivityLocation)
     {
         $this->sportsActivityLocation = $sportsActivityLocation;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Event\SportsEvent
+     */
     public function getSportsEvent()
     {
         return $this->sportsEvent;
     }
 
+    /**
+     * @param $sportsEvent Example\Thing\Event\SportsEvent
+     */
     public function setSportsEvent($sportsEvent)
     {
         $this->sportsEvent = $sportsEvent;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization\SportsTeam
+     */
     public function getSportsTeam()
     {
         return $this->sportsTeam;
     }
 
+    /**
+     * @param $sportsTeam Example\Thing\Organization\SportsTeam
+     */
     public function setSportsTeam($sportsTeam)
     {
         $this->sportsTeam = $sportsTeam;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place|Float
+     */
     public function getToLocation()
     {
         return $this->toLocation;
     }
 
+    /**
+     * @param $toLocation Example\Thing\Place|Float
+     */
     public function setToLocation($toLocation)
     {
         $this->toLocation = $toLocation;

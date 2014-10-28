@@ -28,11 +28,17 @@ class BorrowAction extends TransferAction
      */
     private $url = "http://schema.org/BorrowAction";
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getLender()
     {
         return $this->lender;
     }
 
+    /**
+     * @param $lender Example\Thing\Person
+     */
     public function setLender($lender)
     {
         $this->lender = $lender;

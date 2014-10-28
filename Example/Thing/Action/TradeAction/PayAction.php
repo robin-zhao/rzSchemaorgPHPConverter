@@ -35,22 +35,34 @@ class PayAction extends TradeAction
      */
     private $url = "http://schema.org/PayAction";
 
+    /**
+     * @return Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
+     */
     public function getPurpose()
     {
         return $this->purpose;
     }
 
+    /**
+     * @param $purpose Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
+     */
     public function setPurpose($purpose)
     {
         $this->purpose = $purpose;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
+     */
     public function getRecipient()
     {
         return $this->recipient;
     }
 
+    /**
+     * @param $recipient Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
+     */
     public function setRecipient($recipient)
     {
         $this->recipient = $recipient;

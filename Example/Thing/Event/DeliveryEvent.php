@@ -49,44 +49,68 @@ class DeliveryEvent extends Event
      */
     private $url = "http://schema.org/DeliveryEvent";
 
+    /**
+     * @return String
+     */
     public function getAccessCode()
     {
         return $this->accessCode;
     }
 
+    /**
+     * @param $accessCode String
+     */
     public function setAccessCode($accessCode)
     {
         $this->accessCode = $accessCode;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getAvailableFrom()
     {
         return $this->availableFrom;
     }
 
+    /**
+     * @param $availableFrom DateTime
+     */
     public function setAvailableFrom($availableFrom)
     {
         $this->availableFrom = $availableFrom;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getAvailableThrough()
     {
         return $this->availableThrough;
     }
 
+    /**
+     * @param $availableThrough DateTime
+     */
     public function setAvailableThrough($availableThrough)
     {
         $this->availableThrough = $availableThrough;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function getHasDeliveryMethod()
     {
         return $this->hasDeliveryMethod;
     }
 
+    /**
+     * @param $hasDeliveryMethod Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function setHasDeliveryMethod($hasDeliveryMethod)
     {
         $this->hasDeliveryMethod = $hasDeliveryMethod;

@@ -35,22 +35,34 @@ class PublicationEvent extends Event
      */
     private $url = "http://schema.org/PublicationEvent";
 
+    /**
+     * @return Boolean
+     */
     public function getFree()
     {
         return $this->free;
     }
 
+    /**
+     * @param $free Boolean
+     */
     public function setFree($free)
     {
         $this->free = $free;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\BroadcastService
+     */
     public function getPublishedOn()
     {
         return $this->publishedOn;
     }
 
+    /**
+     * @param $publishedOn Example\Thing\BroadcastService
+     */
     public function setPublishedOn($publishedOn)
     {
         $this->publishedOn = $publishedOn;

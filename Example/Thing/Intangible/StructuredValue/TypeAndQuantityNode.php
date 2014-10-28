@@ -49,44 +49,68 @@ class TypeAndQuantityNode extends StructuredValue
      */
     private $url = "http://schema.org/TypeAndQuantityNode";
 
+    /**
+     * @return Float
+     */
     public function getAmountOfThisGood()
     {
         return $this->amountOfThisGood;
     }
 
+    /**
+     * @param $amountOfThisGood Float
+     */
     public function setAmountOfThisGood($amountOfThisGood)
     {
         $this->amountOfThisGood = $amountOfThisGood;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\BusinessFunction
+     */
     public function getBusinessFunction()
     {
         return $this->businessFunction;
     }
 
+    /**
+     * @param $businessFunction Example\Thing\Intangible\Enumeration\BusinessFunction
+     */
     public function setBusinessFunction($businessFunction)
     {
         $this->businessFunction = $businessFunction;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product
+     */
     public function getTypeOfGood()
     {
         return $this->typeOfGood;
     }
 
+    /**
+     * @param $typeOfGood Example\Thing\Product
+     */
     public function setTypeOfGood($typeOfGood)
     {
         $this->typeOfGood = $typeOfGood;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getUnitCode()
     {
         return $this->unitCode;
     }
 
+    /**
+     * @param $unitCode String
+     */
     public function setUnitCode($unitCode)
     {
         $this->unitCode = $unitCode;

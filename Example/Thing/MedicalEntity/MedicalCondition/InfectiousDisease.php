@@ -42,33 +42,51 @@ class InfectiousDisease extends MedicalCondition
      */
     private $url = "http://schema.org/InfectiousDisease";
 
+    /**
+     * @return String
+     */
     public function getInfectiousAgent()
     {
         return $this->infectiousAgent;
     }
 
+    /**
+     * @param $infectiousAgent String
+     */
     public function setInfectiousAgent($infectiousAgent)
     {
         $this->infectiousAgent = $infectiousAgent;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\InfectiousAgentClass
+     */
     public function getInfectiousAgentClass()
     {
         return $this->infectiousAgentClass;
     }
 
+    /**
+     * @param $infectiousAgentClass Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\InfectiousAgentClass
+     */
     public function setInfectiousAgentClass($infectiousAgentClass)
     {
         $this->infectiousAgentClass = $infectiousAgentClass;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getTransmissionMethod()
     {
         return $this->transmissionMethod;
     }
 
+    /**
+     * @param $transmissionMethod String
+     */
     public function setTransmissionMethod($transmissionMethod)
     {
         $this->transmissionMethod = $transmissionMethod;

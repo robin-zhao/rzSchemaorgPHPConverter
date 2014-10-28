@@ -42,33 +42,51 @@ class Vein extends Vessel
      */
     private $url = "http://schema.org/Vein";
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
+     */
     public function getDrainsTo()
     {
         return $this->drainsTo;
     }
 
+    /**
+     * @param $drainsTo Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
+     */
     public function setDrainsTo($drainsTo)
     {
         $this->drainsTo = $drainsTo;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getRegionDrained()
     {
         return $this->regionDrained;
     }
 
+    /**
+     * @param $regionDrained Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setRegionDrained($regionDrained)
     {
         $this->regionDrained = $regionDrained;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getTributary()
     {
         return $this->tributary;
     }
 
+    /**
+     * @param $tributary Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setTributary($tributary)
     {
         $this->tributary = $tributary;

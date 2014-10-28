@@ -28,11 +28,17 @@ class ChooseAction extends AssessAction
      */
     private $url = "http://schema.org/ChooseAction";
 
+    /**
+     * @return String|Example\Thing
+     */
     public function getOption()
     {
         return $this->option;
     }
 
+    /**
+     * @param $option String|Example\Thing
+     */
     public function setOption($option)
     {
         $this->option = $option;

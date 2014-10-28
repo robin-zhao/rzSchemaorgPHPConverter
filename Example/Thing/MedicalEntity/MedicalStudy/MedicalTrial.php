@@ -35,22 +35,34 @@ class MedicalTrial extends MedicalStudy
      */
     private $url = "http://schema.org/MedicalTrial";
 
+    /**
+     * @return String
+     */
     public function getPhase()
     {
         return $this->phase;
     }
 
+    /**
+     * @param $phase String
+     */
     public function setPhase($phase)
     {
         $this->phase = $phase;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalTrialDesign
+     */
     public function getTrialDesign()
     {
         return $this->trialDesign;
     }
 
+    /**
+     * @param $trialDesign Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalTrialDesign
+     */
     public function setTrialDesign($trialDesign)
     {
         $this->trialDesign = $trialDesign;

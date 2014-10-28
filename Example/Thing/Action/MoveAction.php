@@ -35,22 +35,34 @@ class MoveAction extends Action
      */
     private $url = "http://schema.org/MoveAction";
 
+    /**
+     * @return Example\Thing\Place|Float
+     */
     public function getFromLocation()
     {
         return $this->fromLocation;
     }
 
+    /**
+     * @param $fromLocation Example\Thing\Place|Float
+     */
     public function setFromLocation($fromLocation)
     {
         $this->fromLocation = $fromLocation;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place|Float
+     */
     public function getToLocation()
     {
         return $this->toLocation;
     }
 
+    /**
+     * @param $toLocation Example\Thing\Place|Float
+     */
     public function setToLocation($toLocation)
     {
         $this->toLocation = $toLocation;

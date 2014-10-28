@@ -38,22 +38,34 @@ class Audience extends Intangible
      */
     private $url = "http://schema.org/Audience";
 
+    /**
+     * @return String
+     */
     public function getAudienceType()
     {
         return $this->audienceType;
     }
 
+    /**
+     * @param $audienceType String
+     */
     public function setAudienceType($audienceType)
     {
         $this->audienceType = $audienceType;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place\AdministrativeArea
+     */
     public function getGeographicArea()
     {
         return $this->geographicArea;
     }
 
+    /**
+     * @param $geographicArea Example\Thing\Place\AdministrativeArea
+     */
     public function setGeographicArea($geographicArea)
     {
         $this->geographicArea = $geographicArea;

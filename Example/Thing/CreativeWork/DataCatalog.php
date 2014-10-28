@@ -28,11 +28,17 @@ class DataCatalog extends CreativeWork
      */
     private $url = "http://schema.org/DataCatalog";
 
+    /**
+     * @return Example\Thing\CreativeWork\Dataset
+     */
     public function getDataset()
     {
         return $this->dataset;
     }
 
+    /**
+     * @param $dataset Example\Thing\CreativeWork\Dataset
+     */
     public function setDataset($dataset)
     {
         $this->dataset = $dataset;

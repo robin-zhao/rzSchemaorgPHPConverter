@@ -35,22 +35,34 @@ class Property extends Thing
      */
     private $url = "http://schema.org/Property";
 
+    /**
+     * @return Example\Thing\Class
+     */
     public function getDomainIncludes()
     {
         return $this->domainIncludes;
     }
 
+    /**
+     * @param $domainIncludes Example\Thing\Class
+     */
     public function setDomainIncludes($domainIncludes)
     {
         $this->domainIncludes = $domainIncludes;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Class
+     */
     public function getRangeIncludes()
     {
         return $this->rangeIncludes;
     }
 
+    /**
+     * @param $rangeIncludes Example\Thing\Class
+     */
     public function setRangeIncludes($rangeIncludes)
     {
         $this->rangeIncludes = $rangeIncludes;

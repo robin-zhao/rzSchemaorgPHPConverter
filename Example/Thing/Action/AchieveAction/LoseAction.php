@@ -28,11 +28,17 @@ class LoseAction extends AchieveAction
      */
     private $url = "http://schema.org/LoseAction";
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getWinner()
     {
         return $this->winner;
     }
 
+    /**
+     * @param $winner Example\Thing\Person
+     */
     public function setWinner($winner)
     {
         $this->winner = $winner;

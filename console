@@ -168,17 +168,20 @@ class ClassBuilder
         $string [] = '     * ' . self::$propertyConf->$property->comment_plain;
         $string [] = '     *';
 
+        $type = $this->calculateType($property);
+        $string [] = '     * @var ' . $type;
+        $string [] = '     */';
+        $string [] = '    private $' . $property . ';' . "\n";
+    }
+
+    private function calculateType($property)
+    {
         $ranges = self::$propertyConf->$property->ranges;
         $rangeName = array();
-        foreach($ranges as $range) {
-            if(array_key_exists(strtolower($range), $this->typeMapper)) {
-                $rangeName []= $this->typeMapper[strtolower($range)];
+        foreach ($ranges as $range) {
+            if (array_key_exists(strtolower($range), $this->typeMapper)) {
+                $rangeName [] = $this->typeMapper[strtolower($range)];
             } else {
-
-                if(!property_exists(self::$typeConf, $range)) {
-                    var_dump($range) ;
-                }
-
                 $ancestors = self::$typeConf->$range->ancestors;
                 $ancestors[] = $range;
                 if (count($ancestors) > 0) {
@@ -187,24 +190,27 @@ class ClassBuilder
                     $namespace = $this->rootNamespace;
                 }
 
-                $rangeName []= $namespace; // @todo class name
+                $rangeName [] = $namespace;
             }
         }
-        $rangeString = implode('|', $rangeName);
-
-        $string [] = '     * @var ' . $rangeString;
-        $string [] = '     */';
-        $string [] = '    private $' . $property . ';' . "\n";
+        return implode('|', $rangeName);
     }
 
     private function buildGetterSetter($property, &$getterSetter)
     {
+        $type = $this->calculateType($property);
+
+        $getterSetter [] = '    /**';
+        $getterSetter [] = '     * @return ' . $type;
+        $getterSetter [] = '     */';
         $getterSetter [] = '    public function get' . Ucfirst($property) . '()';
         $getterSetter [] = '    {';
         $getterSetter [] = '        return $this->' . $property . ';';
         $getterSetter [] = '    }' . "\n";
 
-        // @todo build method comment.
+        $getterSetter [] = '    /**';
+        $getterSetter [] = '     * @param $' . $property . ' ' . $type;
+        $getterSetter [] = '     */';
         $getterSetter [] = '    public function set' . ucfirst($property) . '($' . $property . ')';
         $getterSetter [] = '    {';
         $getterSetter [] = '        $this->' . $property . ' = $' . $property . ';';

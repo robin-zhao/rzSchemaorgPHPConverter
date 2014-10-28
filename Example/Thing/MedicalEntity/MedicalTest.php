@@ -56,55 +56,85 @@ class MedicalTest extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalTest";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy\Drug
+     */
     public function getAffectedBy()
     {
         return $this->affectedBy;
     }
 
+    /**
+     * @param $affectedBy Example\Thing\MedicalEntity\MedicalTherapy\Drug
+     */
     public function setAffectedBy($affectedBy)
     {
         $this->affectedBy = $affectedBy;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getNormalRange()
     {
         return $this->normalRange;
     }
 
+    /**
+     * @param $normalRange String
+     */
     public function setNormalRange($normalRange)
     {
         $this->normalRange = $normalRange;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalSignOrSymptom\MedicalSign
+     */
     public function getSignDetected()
     {
         return $this->signDetected;
     }
 
+    /**
+     * @param $signDetected Example\Thing\MedicalEntity\MedicalSignOrSymptom\MedicalSign
+     */
     public function setSignDetected($signDetected)
     {
         $this->signDetected = $signDetected;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalCondition
+     */
     public function getUsedToDiagnose()
     {
         return $this->usedToDiagnose;
     }
 
+    /**
+     * @param $usedToDiagnose Example\Thing\MedicalEntity\MedicalCondition
+     */
     public function setUsedToDiagnose($usedToDiagnose)
     {
         $this->usedToDiagnose = $usedToDiagnose;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalDevice
+     */
     public function getUsesDevice()
     {
         return $this->usesDevice;
     }
 
+    /**
+     * @param $usesDevice Example\Thing\MedicalEntity\MedicalDevice
+     */
     public function setUsesDevice($usesDevice)
     {
         $this->usesDevice = $usesDevice;

@@ -28,11 +28,17 @@ class TVClip extends Clip
      */
     private $url = "http://schema.org/TVClip";
 
+    /**
+     * @return Example\Thing\CreativeWork\TVSeries
+     */
     public function getPartOfTVSeries()
     {
         return $this->partOfTVSeries;
     }
 
+    /**
+     * @param $partOfTVSeries Example\Thing\CreativeWork\TVSeries
+     */
     public function setPartOfTVSeries($partOfTVSeries)
     {
         $this->partOfTVSeries = $partOfTVSeries;

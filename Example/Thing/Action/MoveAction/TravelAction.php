@@ -28,11 +28,17 @@ class TravelAction extends MoveAction
      */
     private $url = "http://schema.org/TravelAction";
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Distance
+     */
     public function getDistance()
     {
         return $this->distance;
     }
 
+    /**
+     * @param $distance Example\Thing\Intangible\Quantity\Distance
+     */
     public function setDistance($distance)
     {
         $this->distance = $distance;

@@ -28,11 +28,17 @@ class MedicalWebPage extends WebPage
      */
     private $url = "http://schema.org/MedicalWebPage";
 
+    /**
+     * @return String
+     */
     public function getAspect()
     {
         return $this->aspect;
     }
 
+    /**
+     * @param $aspect String
+     */
     public function setAspect($aspect)
     {
         $this->aspect = $aspect;

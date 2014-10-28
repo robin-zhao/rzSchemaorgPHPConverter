@@ -35,22 +35,34 @@ class BuyAction extends TradeAction
      */
     private $url = "http://schema.org/BuyAction";
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getVendor()
     {
         return $this->vendor;
     }
 
+    /**
+     * @param $vendor Example\Thing\Organization|Example\Thing\Person
+     */
     public function setVendor($vendor)
     {
         $this->vendor = $vendor;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\WarrantyPromise
+     */
     public function getWarrantyPromise()
     {
         return $this->warrantyPromise;
     }
 
+    /**
+     * @param $warrantyPromise Example\Thing\Intangible\StructuredValue\WarrantyPromise
+     */
     public function setWarrantyPromise($warrantyPromise)
     {
         $this->warrantyPromise = $warrantyPromise;

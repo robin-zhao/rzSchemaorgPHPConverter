@@ -63,66 +63,102 @@ class Service extends Intangible
      */
     private $url = "http://schema.org/Service";
 
+    /**
+     * @return Example\Thing\Intangible\ServiceChannel
+     */
     public function getAvailableChannel()
     {
         return $this->availableChannel;
     }
 
+    /**
+     * @param $availableChannel Example\Thing\Intangible\ServiceChannel
+     */
     public function setAvailableChannel($availableChannel)
     {
         $this->availableChannel = $availableChannel;
         return $this;
     }
 
+    /**
+     * @return Example\Thing
+     */
     public function getProduces()
     {
         return $this->produces;
     }
 
+    /**
+     * @param $produces Example\Thing
+     */
     public function setProduces($produces)
     {
         $this->produces = $produces;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getProvider()
     {
         return $this->provider;
     }
 
+    /**
+     * @param $provider Example\Thing\Organization|Example\Thing\Person
+     */
     public function setProvider($provider)
     {
         $this->provider = $provider;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place\AdministrativeArea
+     */
     public function getServiceArea()
     {
         return $this->serviceArea;
     }
 
+    /**
+     * @param $serviceArea Example\Thing\Place\AdministrativeArea
+     */
     public function setServiceArea($serviceArea)
     {
         $this->serviceArea = $serviceArea;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Audience
+     */
     public function getServiceAudience()
     {
         return $this->serviceAudience;
     }
 
+    /**
+     * @param $serviceAudience Example\Thing\Intangible\Audience
+     */
     public function setServiceAudience($serviceAudience)
     {
         $this->serviceAudience = $serviceAudience;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getServiceType()
     {
         return $this->serviceType;
     }
 
+    /**
+     * @param $serviceType String
+     */
     public function setServiceType($serviceType)
     {
         $this->serviceType = $serviceType;

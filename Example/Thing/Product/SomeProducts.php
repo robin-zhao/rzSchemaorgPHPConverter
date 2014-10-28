@@ -28,11 +28,17 @@ class SomeProducts extends Product
      */
     private $url = "http://schema.org/SomeProducts";
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getInventoryLevel()
     {
         return $this->inventoryLevel;
     }
 
+    /**
+     * @param $inventoryLevel Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setInventoryLevel($inventoryLevel)
     {
         $this->inventoryLevel = $inventoryLevel;

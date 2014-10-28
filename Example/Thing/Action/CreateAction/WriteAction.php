@@ -28,11 +28,17 @@ class WriteAction extends CreateAction
      */
     private $url = "http://schema.org/WriteAction";
 
+    /**
+     * @return Example\Thing\Intangible\Language
+     */
     public function getLanguage()
     {
         return $this->language;
     }
 
+    /**
+     * @param $language Example\Thing\Intangible\Language
+     */
     public function setLanguage($language)
     {
         $this->language = $language;

@@ -56,55 +56,85 @@ class AnatomicalSystem extends MedicalEntity
      */
     private $url = "http://schema.org/AnatomicalSystem";
 
+    /**
+     * @return String
+     */
     public function getAssociatedPathophysiology()
     {
         return $this->associatedPathophysiology;
     }
 
+    /**
+     * @param $associatedPathophysiology String
+     */
     public function setAssociatedPathophysiology($associatedPathophysiology)
     {
         $this->associatedPathophysiology = $associatedPathophysiology;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalSystem
+     */
     public function getComprisedOf()
     {
         return $this->comprisedOf;
     }
 
+    /**
+     * @param $comprisedOf Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalSystem
+     */
     public function setComprisedOf($comprisedOf)
     {
         $this->comprisedOf = $comprisedOf;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalCondition
+     */
     public function getRelatedCondition()
     {
         return $this->relatedCondition;
     }
 
+    /**
+     * @param $relatedCondition Example\Thing\MedicalEntity\MedicalCondition
+     */
     public function setRelatedCondition($relatedCondition)
     {
         $this->relatedCondition = $relatedCondition;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getRelatedStructure()
     {
         return $this->relatedStructure;
     }
 
+    /**
+     * @param $relatedStructure Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setRelatedStructure($relatedStructure)
     {
         $this->relatedStructure = $relatedStructure;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getRelatedTherapy()
     {
         return $this->relatedTherapy;
     }
 
+    /**
+     * @param $relatedTherapy Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setRelatedTherapy($relatedTherapy)
     {
         $this->relatedTherapy = $relatedTherapy;

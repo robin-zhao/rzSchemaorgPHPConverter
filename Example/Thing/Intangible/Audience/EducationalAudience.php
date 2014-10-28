@@ -28,11 +28,17 @@ class EducationalAudience extends Audience
      */
     private $url = "http://schema.org/EducationalAudience";
 
+    /**
+     * @return String
+     */
     public function getEducationalRole()
     {
         return $this->educationalRole;
     }
 
+    /**
+     * @param $educationalRole String
+     */
     public function setEducationalRole($educationalRole)
     {
         $this->educationalRole = $educationalRole;

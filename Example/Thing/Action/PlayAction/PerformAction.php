@@ -28,11 +28,17 @@ class PerformAction extends PlayAction
      */
     private $url = "http://schema.org/PerformAction";
 
+    /**
+     * @return Example\Thing\Organization\LocalBusiness\EntertainmentBusiness
+     */
     public function getEntertainmentBusiness()
     {
         return $this->entertainmentBusiness;
     }
 
+    /**
+     * @param $entertainmentBusiness Example\Thing\Organization\LocalBusiness\EntertainmentBusiness
+     */
     public function setEntertainmentBusiness($entertainmentBusiness)
     {
         $this->entertainmentBusiness = $entertainmentBusiness;

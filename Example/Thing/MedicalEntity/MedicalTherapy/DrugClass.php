@@ -28,11 +28,17 @@ class DrugClass extends MedicalTherapy
      */
     private $url = "http://schema.org/DrugClass";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy\Drug
+     */
     public function getDrug()
     {
         return $this->drug;
     }
 
+    /**
+     * @param $drug Example\Thing\MedicalEntity\MedicalTherapy\Drug
+     */
     public function setDrug($drug)
     {
         $this->drug = $drug;

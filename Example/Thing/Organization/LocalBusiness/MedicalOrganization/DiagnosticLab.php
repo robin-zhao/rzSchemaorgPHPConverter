@@ -28,11 +28,17 @@ class DiagnosticLab extends MedicalOrganization
      */
     private $url = "http://schema.org/DiagnosticLab";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTest
+     */
     public function getAvailableTest()
     {
         return $this->availableTest;
     }
 
+    /**
+     * @param $availableTest Example\Thing\MedicalEntity\MedicalTest
+     */
     public function setAvailableTest($availableTest)
     {
         $this->availableTest = $availableTest;

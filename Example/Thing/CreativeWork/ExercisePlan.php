@@ -77,88 +77,136 @@ class ExercisePlan extends CreativeWork
      */
     private $url = "http://schema.org/ExercisePlan";
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getActivityDuration()
     {
         return $this->activityDuration;
     }
 
+    /**
+     * @param $activityDuration Example\Thing\Intangible\Quantity\Duration
+     */
     public function setActivityDuration($activityDuration)
     {
         $this->activityDuration = $activityDuration;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getActivityFrequency()
     {
         return $this->activityFrequency;
     }
 
+    /**
+     * @param $activityFrequency String
+     */
     public function setActivityFrequency($activityFrequency)
     {
         $this->activityFrequency = $activityFrequency;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getAdditionalVariable()
     {
         return $this->additionalVariable;
     }
 
+    /**
+     * @param $additionalVariable String
+     */
     public function setAdditionalVariable($additionalVariable)
     {
         $this->additionalVariable = $additionalVariable;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getExerciseType()
     {
         return $this->exerciseType;
     }
 
+    /**
+     * @param $exerciseType String
+     */
     public function setExerciseType($exerciseType)
     {
         $this->exerciseType = $exerciseType;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getIntensity()
     {
         return $this->intensity;
     }
 
+    /**
+     * @param $intensity String
+     */
     public function setIntensity($intensity)
     {
         $this->intensity = $intensity;
         return $this;
     }
 
+    /**
+     * @return Float
+     */
     public function getRepetitions()
     {
         return $this->repetitions;
     }
 
+    /**
+     * @param $repetitions Float
+     */
     public function setRepetitions($repetitions)
     {
         $this->repetitions = $repetitions;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getRestPeriods()
     {
         return $this->restPeriods;
     }
 
+    /**
+     * @param $restPeriods String
+     */
     public function setRestPeriods($restPeriods)
     {
         $this->restPeriods = $restPeriods;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Energy
+     */
     public function getWorkload()
     {
         return $this->workload;
     }
 
+    /**
+     * @param $workload Example\Thing\Intangible\Quantity\Energy
+     */
     public function setWorkload($workload)
     {
         $this->workload = $workload;

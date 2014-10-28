@@ -28,11 +28,17 @@ class TradeAction extends Action
      */
     private $url = "http://schema.org/TradeAction";
 
+    /**
+     * @return String|Float
+     */
     public function getPrice()
     {
         return $this->price;
     }
 
+    /**
+     * @param $price String|Float
+     */
     public function setPrice($price)
     {
         $this->price = $price;

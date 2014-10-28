@@ -28,11 +28,17 @@ class MusicAlbum extends MusicPlaylist
      */
     private $url = "http://schema.org/MusicAlbum";
 
+    /**
+     * @return Example\Thing\Organization\PerformingGroup\MusicGroup
+     */
     public function getByArtist()
     {
         return $this->byArtist;
     }
 
+    /**
+     * @param $byArtist Example\Thing\Organization\PerformingGroup\MusicGroup
+     */
     public function setByArtist($byArtist)
     {
         $this->byArtist = $byArtist;

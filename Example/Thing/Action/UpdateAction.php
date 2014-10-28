@@ -28,11 +28,17 @@ class UpdateAction extends Action
      */
     private $url = "http://schema.org/UpdateAction";
 
+    /**
+     * @return Example\Thing
+     */
     public function getCollection()
     {
         return $this->collection;
     }
 
+    /**
+     * @param $collection Example\Thing
+     */
     public function setCollection($collection)
     {
         $this->collection = $collection;

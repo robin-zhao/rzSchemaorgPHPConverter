@@ -77,88 +77,136 @@ class ServiceChannel extends Intangible
      */
     private $url = "http://schema.org/ServiceChannel";
 
+    /**
+     * @return Example\Thing\Intangible\Language
+     */
     public function getAvailableLanguage()
     {
         return $this->availableLanguage;
     }
 
+    /**
+     * @param $availableLanguage Example\Thing\Intangible\Language
+     */
     public function setAvailableLanguage($availableLanguage)
     {
         $this->availableLanguage = $availableLanguage;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getProcessingTime()
     {
         return $this->processingTime;
     }
 
+    /**
+     * @param $processingTime Example\Thing\Intangible\Quantity\Duration
+     */
     public function setProcessingTime($processingTime)
     {
         $this->processingTime = $processingTime;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Service
+     */
     public function getProvidesService()
     {
         return $this->providesService;
     }
 
+    /**
+     * @param $providesService Example\Thing\Intangible\Service
+     */
     public function setProvidesService($providesService)
     {
         $this->providesService = $providesService;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place
+     */
     public function getServiceLocation()
     {
         return $this->serviceLocation;
     }
 
+    /**
+     * @param $serviceLocation Example\Thing\Place
+     */
     public function setServiceLocation($serviceLocation)
     {
         $this->serviceLocation = $serviceLocation;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\ContactPoint
+     */
     public function getServicePhone()
     {
         return $this->servicePhone;
     }
 
+    /**
+     * @param $servicePhone Example\Thing\Intangible\StructuredValue\ContactPoint
+     */
     public function setServicePhone($servicePhone)
     {
         $this->servicePhone = $servicePhone;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
+     */
     public function getServicePostalAddress()
     {
         return $this->servicePostalAddress;
     }
 
+    /**
+     * @param $servicePostalAddress Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
+     */
     public function setServicePostalAddress($servicePostalAddress)
     {
         $this->servicePostalAddress = $servicePostalAddress;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\ContactPoint
+     */
     public function getServiceSmsNumber()
     {
         return $this->serviceSmsNumber;
     }
 
+    /**
+     * @param $serviceSmsNumber Example\Thing\Intangible\StructuredValue\ContactPoint
+     */
     public function setServiceSmsNumber($serviceSmsNumber)
     {
         $this->serviceSmsNumber = $serviceSmsNumber;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getServiceUrl()
     {
         return $this->serviceUrl;
     }
 
+    /**
+     * @param $serviceUrl String
+     */
     public function setServiceUrl($serviceUrl)
     {
         $this->serviceUrl = $serviceUrl;

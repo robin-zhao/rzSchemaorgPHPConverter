@@ -49,44 +49,68 @@ class MusicRecording extends CreativeWork
      */
     private $url = "http://schema.org/MusicRecording";
 
+    /**
+     * @return Example\Thing\Organization\PerformingGroup\MusicGroup
+     */
     public function getByArtist()
     {
         return $this->byArtist;
     }
 
+    /**
+     * @param $byArtist Example\Thing\Organization\PerformingGroup\MusicGroup
+     */
     public function setByArtist($byArtist)
     {
         $this->byArtist = $byArtist;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getDuration()
     {
         return $this->duration;
     }
 
+    /**
+     * @param $duration Example\Thing\Intangible\Quantity\Duration
+     */
     public function setDuration($duration)
     {
         $this->duration = $duration;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
+     */
     public function getInAlbum()
     {
         return $this->inAlbum;
     }
 
+    /**
+     * @param $inAlbum Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
+     */
     public function setInAlbum($inAlbum)
     {
         $this->inAlbum = $inAlbum;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MusicPlaylist
+     */
     public function getInPlaylist()
     {
         return $this->inPlaylist;
     }
 
+    /**
+     * @param $inPlaylist Example\Thing\CreativeWork\MusicPlaylist
+     */
     public function setInPlaylist($inPlaylist)
     {
         $this->inPlaylist = $inPlaylist;

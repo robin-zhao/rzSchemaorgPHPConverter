@@ -42,33 +42,51 @@ class BusinessAudience extends Audience
      */
     private $url = "http://schema.org/BusinessAudience";
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getNumberofEmployees()
     {
         return $this->numberofEmployees;
     }
 
+    /**
+     * @param $numberofEmployees Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setNumberofEmployees($numberofEmployees)
     {
         $this->numberofEmployees = $numberofEmployees;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getYearlyRevenue()
     {
         return $this->yearlyRevenue;
     }
 
+    /**
+     * @param $yearlyRevenue Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setYearlyRevenue($yearlyRevenue)
     {
         $this->yearlyRevenue = $yearlyRevenue;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getYearsInOperation()
     {
         return $this->yearsInOperation;
     }
 
+    /**
+     * @param $yearsInOperation Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setYearsInOperation($yearsInOperation)
     {
         $this->yearsInOperation = $yearsInOperation;

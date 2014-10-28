@@ -35,22 +35,34 @@ class SendAction extends TransferAction
      */
     private $url = "http://schema.org/SendAction";
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function getDeliveryMethod()
     {
         return $this->deliveryMethod;
     }
 
+    /**
+     * @param $deliveryMethod Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function setDeliveryMethod($deliveryMethod)
     {
         $this->deliveryMethod = $deliveryMethod;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
+     */
     public function getRecipient()
     {
         return $this->recipient;
     }
 
+    /**
+     * @param $recipient Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
+     */
     public function setRecipient($recipient)
     {
         $this->recipient = $recipient;

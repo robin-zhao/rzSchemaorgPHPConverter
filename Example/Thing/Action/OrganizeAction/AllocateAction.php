@@ -28,11 +28,17 @@ class AllocateAction extends OrganizeAction
      */
     private $url = "http://schema.org/AllocateAction";
 
+    /**
+     * @return Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
+     */
     public function getPurpose()
     {
         return $this->purpose;
     }
 
+    /**
+     * @param $purpose Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
+     */
     public function setPurpose($purpose)
     {
         $this->purpose = $purpose;

@@ -147,198 +147,306 @@ class JobPosting extends Intangible
      */
     private $url = "http://schema.org/JobPosting";
 
+    /**
+     * @return Float
+     */
     public function getBaseSalary()
     {
         return $this->baseSalary;
     }
 
+    /**
+     * @param $baseSalary Float
+     */
     public function setBaseSalary($baseSalary)
     {
         $this->baseSalary = $baseSalary;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getBenefits()
     {
         return $this->benefits;
     }
 
+    /**
+     * @param $benefits String
+     */
     public function setBenefits($benefits)
     {
         $this->benefits = $benefits;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getDatePosted()
     {
         return $this->datePosted;
     }
 
+    /**
+     * @param $datePosted DateTime
+     */
     public function setDatePosted($datePosted)
     {
         $this->datePosted = $datePosted;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getEducationRequirements()
     {
         return $this->educationRequirements;
     }
 
+    /**
+     * @param $educationRequirements String
+     */
     public function setEducationRequirements($educationRequirements)
     {
         $this->educationRequirements = $educationRequirements;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getEmploymentType()
     {
         return $this->employmentType;
     }
 
+    /**
+     * @param $employmentType String
+     */
     public function setEmploymentType($employmentType)
     {
         $this->employmentType = $employmentType;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getExperienceRequirements()
     {
         return $this->experienceRequirements;
     }
 
+    /**
+     * @param $experienceRequirements String
+     */
     public function setExperienceRequirements($experienceRequirements)
     {
         $this->experienceRequirements = $experienceRequirements;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getHiringOrganization()
     {
         return $this->hiringOrganization;
     }
 
+    /**
+     * @param $hiringOrganization Example\Thing\Organization
+     */
     public function setHiringOrganization($hiringOrganization)
     {
         $this->hiringOrganization = $hiringOrganization;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getIncentives()
     {
         return $this->incentives;
     }
 
+    /**
+     * @param $incentives String
+     */
     public function setIncentives($incentives)
     {
         $this->incentives = $incentives;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getIndustry()
     {
         return $this->industry;
     }
 
+    /**
+     * @param $industry String
+     */
     public function setIndustry($industry)
     {
         $this->industry = $industry;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place
+     */
     public function getJobLocation()
     {
         return $this->jobLocation;
     }
 
+    /**
+     * @param $jobLocation Example\Thing\Place
+     */
     public function setJobLocation($jobLocation)
     {
         $this->jobLocation = $jobLocation;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getOccupationalCategory()
     {
         return $this->occupationalCategory;
     }
 
+    /**
+     * @param $occupationalCategory String
+     */
     public function setOccupationalCategory($occupationalCategory)
     {
         $this->occupationalCategory = $occupationalCategory;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getQualifications()
     {
         return $this->qualifications;
     }
 
+    /**
+     * @param $qualifications String
+     */
     public function setQualifications($qualifications)
     {
         $this->qualifications = $qualifications;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getResponsibilities()
     {
         return $this->responsibilities;
     }
 
+    /**
+     * @param $responsibilities String
+     */
     public function setResponsibilities($responsibilities)
     {
         $this->responsibilities = $responsibilities;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSalaryCurrency()
     {
         return $this->salaryCurrency;
     }
 
+    /**
+     * @param $salaryCurrency String
+     */
     public function setSalaryCurrency($salaryCurrency)
     {
         $this->salaryCurrency = $salaryCurrency;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSkills()
     {
         return $this->skills;
     }
 
+    /**
+     * @param $skills String
+     */
     public function setSkills($skills)
     {
         $this->skills = $skills;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSpecialCommitments()
     {
         return $this->specialCommitments;
     }
 
+    /**
+     * @param $specialCommitments String
+     */
     public function setSpecialCommitments($specialCommitments)
     {
         $this->specialCommitments = $specialCommitments;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getTitle()
     {
         return $this->title;
     }
 
+    /**
+     * @param $title String
+     */
     public function setTitle($title)
     {
         $this->title = $title;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getWorkHours()
     {
         return $this->workHours;
     }
 
+    /**
+     * @param $workHours String
+     */
     public function setWorkHours($workHours)
     {
         $this->workHours = $workHours;

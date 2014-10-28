@@ -28,11 +28,17 @@ class InformAction extends CommunicateAction
      */
     private $url = "http://schema.org/InformAction";
 
+    /**
+     * @return Example\Thing\Event
+     */
     public function getEvent()
     {
         return $this->event;
     }
 
+    /**
+     * @param $event Example\Thing\Event
+     */
     public function setEvent($event)
     {
         $this->event = $event;

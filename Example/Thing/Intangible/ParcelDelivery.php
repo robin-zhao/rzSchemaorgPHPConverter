@@ -98,121 +98,187 @@ class ParcelDelivery extends Intangible
      */
     private $url = "http://schema.org/ParcelDelivery";
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getCarrier()
     {
         return $this->carrier;
     }
 
+    /**
+     * @param $carrier Example\Thing\Organization
+     */
     public function setCarrier($carrier)
     {
         $this->carrier = $carrier;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
+     */
     public function getDeliveryAddress()
     {
         return $this->deliveryAddress;
     }
 
+    /**
+     * @param $deliveryAddress Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
+     */
     public function setDeliveryAddress($deliveryAddress)
     {
         $this->deliveryAddress = $deliveryAddress;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Event\DeliveryEvent
+     */
     public function getDeliveryStatus()
     {
         return $this->deliveryStatus;
     }
 
+    /**
+     * @param $deliveryStatus Example\Thing\Event\DeliveryEvent
+     */
     public function setDeliveryStatus($deliveryStatus)
     {
         $this->deliveryStatus = $deliveryStatus;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getExpectedArrivalFrom()
     {
         return $this->expectedArrivalFrom;
     }
 
+    /**
+     * @param $expectedArrivalFrom DateTime
+     */
     public function setExpectedArrivalFrom($expectedArrivalFrom)
     {
         $this->expectedArrivalFrom = $expectedArrivalFrom;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getExpectedArrivalUntil()
     {
         return $this->expectedArrivalUntil;
     }
 
+    /**
+     * @param $expectedArrivalUntil DateTime
+     */
     public function setExpectedArrivalUntil($expectedArrivalUntil)
     {
         $this->expectedArrivalUntil = $expectedArrivalUntil;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function getHasDeliveryMethod()
     {
         return $this->hasDeliveryMethod;
     }
 
+    /**
+     * @param $hasDeliveryMethod Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function setHasDeliveryMethod($hasDeliveryMethod)
     {
         $this->hasDeliveryMethod = $hasDeliveryMethod;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product
+     */
     public function getItemShipped()
     {
         return $this->itemShipped;
     }
 
+    /**
+     * @param $itemShipped Example\Thing\Product
+     */
     public function setItemShipped($itemShipped)
     {
         $this->itemShipped = $itemShipped;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
+     */
     public function getOriginAddress()
     {
         return $this->originAddress;
     }
 
+    /**
+     * @param $originAddress Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
+     */
     public function setOriginAddress($originAddress)
     {
         $this->originAddress = $originAddress;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Order
+     */
     public function getPartOfOrder()
     {
         return $this->partOfOrder;
     }
 
+    /**
+     * @param $partOfOrder Example\Thing\Intangible\Order
+     */
     public function setPartOfOrder($partOfOrder)
     {
         $this->partOfOrder = $partOfOrder;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getTrackingNumber()
     {
         return $this->trackingNumber;
     }
 
+    /**
+     * @param $trackingNumber String
+     */
     public function setTrackingNumber($trackingNumber)
     {
         $this->trackingNumber = $trackingNumber;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getTrackingUrl()
     {
         return $this->trackingUrl;
     }
 
+    /**
+     * @param $trackingUrl String
+     */
     public function setTrackingUrl($trackingUrl)
     {
         $this->trackingUrl = $trackingUrl;

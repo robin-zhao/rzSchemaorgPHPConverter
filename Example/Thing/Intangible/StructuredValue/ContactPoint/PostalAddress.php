@@ -63,66 +63,102 @@ class PostalAddress extends ContactPoint
      */
     private $url = "http://schema.org/PostalAddress";
 
+    /**
+     * @return Example\Thing\Place\AdministrativeArea\Country
+     */
     public function getAddressCountry()
     {
         return $this->addressCountry;
     }
 
+    /**
+     * @param $addressCountry Example\Thing\Place\AdministrativeArea\Country
+     */
     public function setAddressCountry($addressCountry)
     {
         $this->addressCountry = $addressCountry;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getAddressLocality()
     {
         return $this->addressLocality;
     }
 
+    /**
+     * @param $addressLocality String
+     */
     public function setAddressLocality($addressLocality)
     {
         $this->addressLocality = $addressLocality;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getAddressRegion()
     {
         return $this->addressRegion;
     }
 
+    /**
+     * @param $addressRegion String
+     */
     public function setAddressRegion($addressRegion)
     {
         $this->addressRegion = $addressRegion;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPostalCode()
     {
         return $this->postalCode;
     }
 
+    /**
+     * @param $postalCode String
+     */
     public function setPostalCode($postalCode)
     {
         $this->postalCode = $postalCode;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPostOfficeBoxNumber()
     {
         return $this->postOfficeBoxNumber;
     }
 
+    /**
+     * @param $postOfficeBoxNumber String
+     */
     public function setPostOfficeBoxNumber($postOfficeBoxNumber)
     {
         $this->postOfficeBoxNumber = $postOfficeBoxNumber;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getStreetAddress()
     {
         return $this->streetAddress;
     }
 
+    /**
+     * @param $streetAddress String
+     */
     public function setStreetAddress($streetAddress)
     {
         $this->streetAddress = $streetAddress;

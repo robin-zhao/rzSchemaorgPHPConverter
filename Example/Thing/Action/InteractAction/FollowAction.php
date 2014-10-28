@@ -28,11 +28,17 @@ class FollowAction extends InteractAction
      */
     private $url = "http://schema.org/FollowAction";
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getFollowee()
     {
         return $this->followee;
     }
 
+    /**
+     * @param $followee Example\Thing\Organization|Example\Thing\Person
+     */
     public function setFollowee($followee)
     {
         $this->followee = $followee;

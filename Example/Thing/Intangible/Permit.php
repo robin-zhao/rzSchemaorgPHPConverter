@@ -70,77 +70,119 @@ class Permit extends Intangible
      */
     private $url = "http://schema.org/Permit";
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getIssuedBy()
     {
         return $this->issuedBy;
     }
 
+    /**
+     * @param $issuedBy Example\Thing\Organization
+     */
     public function setIssuedBy($issuedBy)
     {
         $this->issuedBy = $issuedBy;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Service
+     */
     public function getIssuedThrough()
     {
         return $this->issuedThrough;
     }
 
+    /**
+     * @param $issuedThrough Example\Thing\Intangible\Service
+     */
     public function setIssuedThrough($issuedThrough)
     {
         $this->issuedThrough = $issuedThrough;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Audience
+     */
     public function getPermitAudience()
     {
         return $this->permitAudience;
     }
 
+    /**
+     * @param $permitAudience Example\Thing\Intangible\Audience
+     */
     public function setPermitAudience($permitAudience)
     {
         $this->permitAudience = $permitAudience;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getValidFor()
     {
         return $this->validFor;
     }
 
+    /**
+     * @param $validFor Example\Thing\Intangible\Quantity\Duration
+     */
     public function setValidFor($validFor)
     {
         $this->validFor = $validFor;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getValidFrom()
     {
         return $this->validFrom;
     }
 
+    /**
+     * @param $validFrom DateTime
+     */
     public function setValidFrom($validFrom)
     {
         $this->validFrom = $validFrom;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place\AdministrativeArea
+     */
     public function getValidIn()
     {
         return $this->validIn;
     }
 
+    /**
+     * @param $validIn Example\Thing\Place\AdministrativeArea
+     */
     public function setValidIn($validIn)
     {
         $this->validIn = $validIn;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getValidUntil()
     {
         return $this->validUntil;
     }
 
+    /**
+     * @param $validUntil DateTime
+     */
     public function setValidUntil($validUntil)
     {
         $this->validUntil = $validUntil;

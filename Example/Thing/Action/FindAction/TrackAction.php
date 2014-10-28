@@ -28,11 +28,17 @@ class TrackAction extends FindAction
      */
     private $url = "http://schema.org/TrackAction";
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function getDeliveryMethod()
     {
         return $this->deliveryMethod;
     }
 
+    /**
+     * @param $deliveryMethod Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function setDeliveryMethod($deliveryMethod)
     {
         $this->deliveryMethod = $deliveryMethod;

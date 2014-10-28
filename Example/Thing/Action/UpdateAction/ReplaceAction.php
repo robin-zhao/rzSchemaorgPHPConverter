@@ -35,22 +35,34 @@ class ReplaceAction extends UpdateAction
      */
     private $url = "http://schema.org/ReplaceAction";
 
+    /**
+     * @return Example\Thing
+     */
     public function getReplacee()
     {
         return $this->replacee;
     }
 
+    /**
+     * @param $replacee Example\Thing
+     */
     public function setReplacee($replacee)
     {
         $this->replacee = $replacee;
         return $this;
     }
 
+    /**
+     * @return Example\Thing
+     */
     public function getReplacer()
     {
         return $this->replacer;
     }
 
+    /**
+     * @param $replacer Example\Thing
+     */
     public function setReplacer($replacer)
     {
         $this->replacer = $replacer;

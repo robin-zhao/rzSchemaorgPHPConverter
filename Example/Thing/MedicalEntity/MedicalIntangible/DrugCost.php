@@ -63,66 +63,102 @@ class DrugCost extends MedicalIntangible
      */
     private $url = "http://schema.org/DrugCost";
 
+    /**
+     * @return Example\Thing\Place\AdministrativeArea
+     */
     public function getApplicableLocation()
     {
         return $this->applicableLocation;
     }
 
+    /**
+     * @param $applicableLocation Example\Thing\Place\AdministrativeArea
+     */
     public function setApplicableLocation($applicableLocation)
     {
         $this->applicableLocation = $applicableLocation;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
+     */
     public function getCostCategory()
     {
         return $this->costCategory;
     }
 
+    /**
+     * @param $costCategory Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
+     */
     public function setCostCategory($costCategory)
     {
         $this->costCategory = $costCategory;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getCostCurrency()
     {
         return $this->costCurrency;
     }
 
+    /**
+     * @param $costCurrency String
+     */
     public function setCostCurrency($costCurrency)
     {
         $this->costCurrency = $costCurrency;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getCostOrigin()
     {
         return $this->costOrigin;
     }
 
+    /**
+     * @param $costOrigin String
+     */
     public function setCostOrigin($costOrigin)
     {
         $this->costOrigin = $costOrigin;
         return $this;
     }
 
+    /**
+     * @return Float|String
+     */
     public function getCostPerUnit()
     {
         return $this->costPerUnit;
     }
 
+    /**
+     * @param $costPerUnit Float|String
+     */
     public function setCostPerUnit($costPerUnit)
     {
         $this->costPerUnit = $costPerUnit;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getDrugUnit()
     {
         return $this->drugUnit;
     }
 
+    /**
+     * @param $drugUnit String
+     */
     public function setDrugUnit($drugUnit)
     {
         $this->drugUnit = $drugUnit;

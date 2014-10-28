@@ -28,11 +28,17 @@ class InsertAction extends AddAction
      */
     private $url = "http://schema.org/InsertAction";
 
+    /**
+     * @return Example\Thing\Place|Float
+     */
     public function getToLocation()
     {
         return $this->toLocation;
     }
 
+    /**
+     * @param $toLocation Example\Thing\Place|Float
+     */
     public function setToLocation($toLocation)
     {
         $this->toLocation = $toLocation;

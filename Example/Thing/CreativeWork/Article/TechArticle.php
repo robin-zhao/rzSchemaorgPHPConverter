@@ -35,22 +35,34 @@ class TechArticle extends Article
      */
     private $url = "http://schema.org/TechArticle";
 
+    /**
+     * @return String
+     */
     public function getDependencies()
     {
         return $this->dependencies;
     }
 
+    /**
+     * @param $dependencies String
+     */
     public function setDependencies($dependencies)
     {
         $this->dependencies = $dependencies;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getProficiencyLevel()
     {
         return $this->proficiencyLevel;
     }
 
+    /**
+     * @param $proficiencyLevel String
+     */
     public function setProficiencyLevel($proficiencyLevel)
     {
         $this->proficiencyLevel = $proficiencyLevel;

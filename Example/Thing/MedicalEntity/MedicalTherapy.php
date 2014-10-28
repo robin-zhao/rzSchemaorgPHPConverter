@@ -56,55 +56,85 @@ class MedicalTherapy extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalTherapy";
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getAdverseOutcome()
     {
         return $this->adverseOutcome;
     }
 
+    /**
+     * @param $adverseOutcome Example\Thing\MedicalEntity
+     */
     public function setAdverseOutcome($adverseOutcome)
     {
         $this->adverseOutcome = $adverseOutcome;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalContraindication
+     */
     public function getContraindication()
     {
         return $this->contraindication;
     }
 
+    /**
+     * @param $contraindication Example\Thing\MedicalEntity\MedicalContraindication
+     */
     public function setContraindication($contraindication)
     {
         $this->contraindication = $contraindication;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getDuplicateTherapy()
     {
         return $this->duplicateTherapy;
     }
 
+    /**
+     * @param $duplicateTherapy Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setDuplicateTherapy($duplicateTherapy)
     {
         $this->duplicateTherapy = $duplicateTherapy;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIndication
+     */
     public function getIndication()
     {
         return $this->indication;
     }
 
+    /**
+     * @param $indication Example\Thing\MedicalEntity\MedicalIndication
+     */
     public function setIndication($indication)
     {
         $this->indication = $indication;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getSeriousAdverseOutcome()
     {
         return $this->seriousAdverseOutcome;
     }
 
+    /**
+     * @param $seriousAdverseOutcome Example\Thing\MedicalEntity
+     */
     public function setSeriousAdverseOutcome($seriousAdverseOutcome)
     {
         $this->seriousAdverseOutcome = $seriousAdverseOutcome;

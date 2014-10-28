@@ -49,44 +49,68 @@ class OwnershipInfo extends StructuredValue
      */
     private $url = "http://schema.org/OwnershipInfo";
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getAcquiredFrom()
     {
         return $this->acquiredFrom;
     }
 
+    /**
+     * @param $acquiredFrom Example\Thing\Organization|Example\Thing\Person
+     */
     public function setAcquiredFrom($acquiredFrom)
     {
         $this->acquiredFrom = $acquiredFrom;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getOwnedFrom()
     {
         return $this->ownedFrom;
     }
 
+    /**
+     * @param $ownedFrom DateTime
+     */
     public function setOwnedFrom($ownedFrom)
     {
         $this->ownedFrom = $ownedFrom;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getOwnedThrough()
     {
         return $this->ownedThrough;
     }
 
+    /**
+     * @param $ownedThrough DateTime
+     */
     public function setOwnedThrough($ownedThrough)
     {
         $this->ownedThrough = $ownedThrough;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product
+     */
     public function getTypeOfGood()
     {
         return $this->typeOfGood;
     }
 
+    /**
+     * @param $typeOfGood Example\Thing\Product
+     */
     public function setTypeOfGood($typeOfGood)
     {
         $this->typeOfGood = $typeOfGood;

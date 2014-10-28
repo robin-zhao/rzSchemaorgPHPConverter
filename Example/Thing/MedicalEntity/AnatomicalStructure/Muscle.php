@@ -63,66 +63,102 @@ class Muscle extends AnatomicalStructure
      */
     private $url = "http://schema.org/Muscle";
 
+    /**
+     * @return String
+     */
     public function getAction()
     {
         return $this->action;
     }
 
+    /**
+     * @param $action String
+     */
     public function setAction($action)
     {
         $this->action = $action;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure\Muscle
+     */
     public function getAntagonist()
     {
         return $this->antagonist;
     }
 
+    /**
+     * @param $antagonist Example\Thing\MedicalEntity\AnatomicalStructure\Muscle
+     */
     public function setAntagonist($antagonist)
     {
         $this->antagonist = $antagonist;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
+     */
     public function getBloodSupply()
     {
         return $this->bloodSupply;
     }
 
+    /**
+     * @param $bloodSupply Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
+     */
     public function setBloodSupply($bloodSupply)
     {
         $this->bloodSupply = $bloodSupply;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getInsertion()
     {
         return $this->insertion;
     }
 
+    /**
+     * @param $insertion Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setInsertion($insertion)
     {
         $this->insertion = $insertion;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure\Nerve
+     */
     public function getNerve()
     {
         return $this->nerve;
     }
 
+    /**
+     * @param $nerve Example\Thing\MedicalEntity\AnatomicalStructure\Nerve
+     */
     public function setNerve($nerve)
     {
         $this->nerve = $nerve;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getOrigin()
     {
         return $this->origin;
     }
 
+    /**
+     * @param $origin Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setOrigin($origin)
     {
         $this->origin = $origin;

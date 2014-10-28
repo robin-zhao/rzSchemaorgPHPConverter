@@ -28,11 +28,17 @@ class PlanAction extends OrganizeAction
      */
     private $url = "http://schema.org/PlanAction";
 
+    /**
+     * @return DateTime
+     */
     public function getScheduledTime()
     {
         return $this->scheduledTime;
     }
 
+    /**
+     * @param $scheduledTime DateTime
+     */
     public function setScheduledTime($scheduledTime)
     {
         $this->scheduledTime = $scheduledTime;

@@ -35,22 +35,34 @@ class DeliveryChargeSpecification extends PriceSpecification
      */
     private $url = "http://schema.org/DeliveryChargeSpecification";
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function getAppliesToDeliveryMethod()
     {
         return $this->appliesToDeliveryMethod;
     }
 
+    /**
+     * @param $appliesToDeliveryMethod Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function setAppliesToDeliveryMethod($appliesToDeliveryMethod)
     {
         $this->appliesToDeliveryMethod = $appliesToDeliveryMethod;
         return $this;
     }
 
+    /**
+     * @return String|Example\Thing\Intangible\StructuredValue\GeoShape
+     */
     public function getEligibleRegion()
     {
         return $this->eligibleRegion;
     }
 
+    /**
+     * @param $eligibleRegion String|Example\Thing\Intangible\StructuredValue\GeoShape
+     */
     public function setEligibleRegion($eligibleRegion)
     {
         $this->eligibleRegion = $eligibleRegion;

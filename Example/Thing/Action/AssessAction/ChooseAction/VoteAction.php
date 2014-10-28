@@ -28,11 +28,17 @@ class VoteAction extends ChooseAction
      */
     private $url = "http://schema.org/VoteAction";
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getCandidate()
     {
         return $this->candidate;
     }
 
+    /**
+     * @param $candidate Example\Thing\Person
+     */
     public function setCandidate($candidate)
     {
         $this->candidate = $candidate;

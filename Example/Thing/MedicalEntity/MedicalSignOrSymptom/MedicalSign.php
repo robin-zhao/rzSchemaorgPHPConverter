@@ -35,22 +35,34 @@ class MedicalSign extends MedicalSignOrSymptom
      */
     private $url = "http://schema.org/MedicalSign";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalExam
+     */
     public function getIdentifyingExam()
     {
         return $this->identifyingExam;
     }
 
+    /**
+     * @param $identifyingExam Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalExam
+     */
     public function setIdentifyingExam($identifyingExam)
     {
         $this->identifyingExam = $identifyingExam;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTest
+     */
     public function getIdentifyingTest()
     {
         return $this->identifyingTest;
     }
 
+    /**
+     * @param $identifyingTest Example\Thing\MedicalEntity\MedicalTest
+     */
     public function setIdentifyingTest($identifyingTest)
     {
         $this->identifyingTest = $identifyingTest;

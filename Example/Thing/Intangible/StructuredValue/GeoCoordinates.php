@@ -42,33 +42,51 @@ class GeoCoordinates extends StructuredValue
      */
     private $url = "http://schema.org/GeoCoordinates";
 
+    /**
+     * @return String|Float
+     */
     public function getElevation()
     {
         return $this->elevation;
     }
 
+    /**
+     * @param $elevation String|Float
+     */
     public function setElevation($elevation)
     {
         $this->elevation = $elevation;
         return $this;
     }
 
+    /**
+     * @return Float|String
+     */
     public function getLatitude()
     {
         return $this->latitude;
     }
 
+    /**
+     * @param $latitude Float|String
+     */
     public function setLatitude($latitude)
     {
         $this->latitude = $latitude;
         return $this;
     }
 
+    /**
+     * @return Float|String
+     */
     public function getLongitude()
     {
         return $this->longitude;
     }
 
+    /**
+     * @param $longitude Float|String
+     */
     public function setLongitude($longitude)
     {
         $this->longitude = $longitude;

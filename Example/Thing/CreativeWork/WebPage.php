@@ -91,110 +91,170 @@ class WebPage extends CreativeWork
      */
     private $url = "http://schema.org/WebPage";
 
+    /**
+     * @return String
+     */
     public function getBreadcrumb()
     {
         return $this->breadcrumb;
     }
 
+    /**
+     * @param $breadcrumb String
+     */
     public function setBreadcrumb($breadcrumb)
     {
         $this->breadcrumb = $breadcrumb;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\WebPage\CollectionPage
+     */
     public function getIsPartOf()
     {
         return $this->isPartOf;
     }
 
+    /**
+     * @param $isPartOf Example\Thing\CreativeWork\WebPage\CollectionPage
+     */
     public function setIsPartOf($isPartOf)
     {
         $this->isPartOf = $isPartOf;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getLastReviewed()
     {
         return $this->lastReviewed;
     }
 
+    /**
+     * @param $lastReviewed DateTime
+     */
     public function setLastReviewed($lastReviewed)
     {
         $this->lastReviewed = $lastReviewed;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\WebPageElement
+     */
     public function getMainContentOfPage()
     {
         return $this->mainContentOfPage;
     }
 
+    /**
+     * @param $mainContentOfPage Example\Thing\CreativeWork\WebPageElement
+     */
     public function setMainContentOfPage($mainContentOfPage)
     {
         $this->mainContentOfPage = $mainContentOfPage;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function getPrimaryImageOfPage()
     {
         return $this->primaryImageOfPage;
     }
 
+    /**
+     * @param $primaryImageOfPage Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function setPrimaryImageOfPage($primaryImageOfPage)
     {
         $this->primaryImageOfPage = $primaryImageOfPage;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getRelatedLink()
     {
         return $this->relatedLink;
     }
 
+    /**
+     * @param $relatedLink String
+     */
     public function setRelatedLink($relatedLink)
     {
         $this->relatedLink = $relatedLink;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getReviewedBy()
     {
         return $this->reviewedBy;
     }
 
+    /**
+     * @param $reviewedBy Example\Thing\Organization|Example\Thing\Person
+     */
     public function setReviewedBy($reviewedBy)
     {
         $this->reviewedBy = $reviewedBy;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSignificantLink()
     {
         return $this->significantLink;
     }
 
+    /**
+     * @param $significantLink String
+     */
     public function setSignificantLink($significantLink)
     {
         $this->significantLink = $significantLink;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSignificantLinks()
     {
         return $this->significantLinks;
     }
 
+    /**
+     * @param $significantLinks String
+     */
     public function setSignificantLinks($significantLinks)
     {
         $this->significantLinks = $significantLinks;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\Specialty
+     */
     public function getSpecialty()
     {
         return $this->specialty;
     }
 
+    /**
+     * @param $specialty Example\Thing\Intangible\Enumeration\Specialty
+     */
     public function setSpecialty($specialty)
     {
         $this->specialty = $specialty;

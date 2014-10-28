@@ -42,33 +42,51 @@ class UnitPriceSpecification extends PriceSpecification
      */
     private $url = "http://schema.org/UnitPriceSpecification";
 
+    /**
+     * @return Float
+     */
     public function getBillingIncrement()
     {
         return $this->billingIncrement;
     }
 
+    /**
+     * @param $billingIncrement Float
+     */
     public function setBillingIncrement($billingIncrement)
     {
         $this->billingIncrement = $billingIncrement;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPriceType()
     {
         return $this->priceType;
     }
 
+    /**
+     * @param $priceType String
+     */
     public function setPriceType($priceType)
     {
         $this->priceType = $priceType;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getUnitCode()
     {
         return $this->unitCode;
     }
 
+    /**
+     * @param $unitCode String
+     */
     public function setUnitCode($unitCode)
     {
         $this->unitCode = $unitCode;

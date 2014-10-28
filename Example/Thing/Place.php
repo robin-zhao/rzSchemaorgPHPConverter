@@ -154,209 +154,323 @@ class Place extends Thing
      */
     private $url = "http://schema.org/Place";
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
+     */
     public function getAddress()
     {
         return $this->address;
     }
 
+    /**
+     * @param $address Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
+     */
     public function setAddress($address)
     {
         $this->address = $address;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Rating\AggregateRating
+     */
     public function getAggregateRating()
     {
         return $this->aggregateRating;
     }
 
+    /**
+     * @param $aggregateRating Example\Thing\Intangible\Rating\AggregateRating
+     */
     public function setAggregateRating($aggregateRating)
     {
         $this->aggregateRating = $aggregateRating;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place
+     */
     public function getContainedIn()
     {
         return $this->containedIn;
     }
 
+    /**
+     * @param $containedIn Example\Thing\Place
+     */
     public function setContainedIn($containedIn)
     {
         $this->containedIn = $containedIn;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Event
+     */
     public function getEvent()
     {
         return $this->event;
     }
 
+    /**
+     * @param $event Example\Thing\Event
+     */
     public function setEvent($event)
     {
         $this->event = $event;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Event
+     */
     public function getEvents()
     {
         return $this->events;
     }
 
+    /**
+     * @param $events Example\Thing\Event
+     */
     public function setEvents($events)
     {
         $this->events = $events;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getFaxNumber()
     {
         return $this->faxNumber;
     }
 
+    /**
+     * @param $faxNumber String
+     */
     public function setFaxNumber($faxNumber)
     {
         $this->faxNumber = $faxNumber;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\GeoCoordinates|Example\Thing\Intangible\StructuredValue\GeoShape
+     */
     public function getGeo()
     {
         return $this->geo;
     }
 
+    /**
+     * @param $geo Example\Thing\Intangible\StructuredValue\GeoCoordinates|Example\Thing\Intangible\StructuredValue\GeoShape
+     */
     public function setGeo($geo)
     {
         $this->geo = $geo;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getGlobalLocationNumber()
     {
         return $this->globalLocationNumber;
     }
 
+    /**
+     * @param $globalLocationNumber String
+     */
     public function setGlobalLocationNumber($globalLocationNumber)
     {
         $this->globalLocationNumber = $globalLocationNumber;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getInteractionCount()
     {
         return $this->interactionCount;
     }
 
+    /**
+     * @param $interactionCount String
+     */
     public function setInteractionCount($interactionCount)
     {
         $this->interactionCount = $interactionCount;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getIsicV4()
     {
         return $this->isicV4;
     }
 
+    /**
+     * @param $isicV4 String
+     */
     public function setIsicV4($isicV4)
     {
         $this->isicV4 = $isicV4;
         return $this;
     }
 
+    /**
+     * @return String|Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function getLogo()
     {
         return $this->logo;
     }
 
+    /**
+     * @param $logo String|Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function setLogo($logo)
     {
         $this->logo = $logo;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getMap()
     {
         return $this->map;
     }
 
+    /**
+     * @param $map String
+     */
     public function setMap($map)
     {
         $this->map = $map;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getMaps()
     {
         return $this->maps;
     }
 
+    /**
+     * @param $maps String
+     */
     public function setMaps($maps)
     {
         $this->maps = $maps;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\OpeningHoursSpecification
+     */
     public function getOpeningHoursSpecification()
     {
         return $this->openingHoursSpecification;
     }
 
+    /**
+     * @param $openingHoursSpecification Example\Thing\Intangible\StructuredValue\OpeningHoursSpecification
+     */
     public function setOpeningHoursSpecification($openingHoursSpecification)
     {
         $this->openingHoursSpecification = $openingHoursSpecification;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MediaObject\ImageObject|Example\Thing\CreativeWork\Photograph
+     */
     public function getPhoto()
     {
         return $this->photo;
     }
 
+    /**
+     * @param $photo Example\Thing\CreativeWork\MediaObject\ImageObject|Example\Thing\CreativeWork\Photograph
+     */
     public function setPhoto($photo)
     {
         $this->photo = $photo;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MediaObject\ImageObject|Example\Thing\CreativeWork\Photograph
+     */
     public function getPhotos()
     {
         return $this->photos;
     }
 
+    /**
+     * @param $photos Example\Thing\CreativeWork\MediaObject\ImageObject|Example\Thing\CreativeWork\Photograph
+     */
     public function setPhotos($photos)
     {
         $this->photos = $photos;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Review
+     */
     public function getReview()
     {
         return $this->review;
     }
 
+    /**
+     * @param $review Example\Thing\CreativeWork\Review
+     */
     public function setReview($review)
     {
         $this->review = $review;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Review
+     */
     public function getReviews()
     {
         return $this->reviews;
     }
 
+    /**
+     * @param $reviews Example\Thing\CreativeWork\Review
+     */
     public function setReviews($reviews)
     {
         $this->reviews = $reviews;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getTelephone()
     {
         return $this->telephone;
     }
 
+    /**
+     * @param $telephone String
+     */
     public function setTelephone($telephone)
     {
         $this->telephone = $telephone;

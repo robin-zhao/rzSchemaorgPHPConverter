@@ -28,11 +28,17 @@ class Brand extends Intangible
      */
     private $url = "http://schema.org/Brand";
 
+    /**
+     * @return String|Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function getLogo()
     {
         return $this->logo;
     }
 
+    /**
+     * @param $logo String|Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function setLogo($logo)
     {
         $this->logo = $logo;

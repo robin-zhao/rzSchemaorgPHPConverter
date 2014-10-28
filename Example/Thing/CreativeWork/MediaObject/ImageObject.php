@@ -49,44 +49,68 @@ class ImageObject extends MediaObject
      */
     private $url = "http://schema.org/ImageObject";
 
+    /**
+     * @return String
+     */
     public function getCaption()
     {
         return $this->caption;
     }
 
+    /**
+     * @param $caption String
+     */
     public function setCaption($caption)
     {
         $this->caption = $caption;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getExifData()
     {
         return $this->exifData;
     }
 
+    /**
+     * @param $exifData String
+     */
     public function setExifData($exifData)
     {
         $this->exifData = $exifData;
         return $this;
     }
 
+    /**
+     * @return Boolean
+     */
     public function getRepresentativeOfPage()
     {
         return $this->representativeOfPage;
     }
 
+    /**
+     * @param $representativeOfPage Boolean
+     */
     public function setRepresentativeOfPage($representativeOfPage)
     {
         $this->representativeOfPage = $representativeOfPage;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function getThumbnail()
     {
         return $this->thumbnail;
     }
 
+    /**
+     * @param $thumbnail Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function setThumbnail($thumbnail)
     {
         $this->thumbnail = $thumbnail;

@@ -42,33 +42,51 @@ class Rating extends Intangible
      */
     private $url = "http://schema.org/Rating";
 
+    /**
+     * @return Float|String
+     */
     public function getBestRating()
     {
         return $this->bestRating;
     }
 
+    /**
+     * @param $bestRating Float|String
+     */
     public function setBestRating($bestRating)
     {
         $this->bestRating = $bestRating;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getRatingValue()
     {
         return $this->ratingValue;
     }
 
+    /**
+     * @param $ratingValue String
+     */
     public function setRatingValue($ratingValue)
     {
         $this->ratingValue = $ratingValue;
         return $this;
     }
 
+    /**
+     * @return Float|String
+     */
     public function getWorstRating()
     {
         return $this->worstRating;
     }
 
+    /**
+     * @param $worstRating Float|String
+     */
     public function setWorstRating($worstRating)
     {
         $this->worstRating = $worstRating;

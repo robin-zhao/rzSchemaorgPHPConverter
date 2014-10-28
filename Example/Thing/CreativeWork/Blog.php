@@ -35,22 +35,34 @@ class Blog extends CreativeWork
      */
     private $url = "http://schema.org/Blog";
 
+    /**
+     * @return Example\Thing\CreativeWork\Article\BlogPosting
+     */
     public function getBlogPost()
     {
         return $this->blogPost;
     }
 
+    /**
+     * @param $blogPost Example\Thing\CreativeWork\Article\BlogPosting
+     */
     public function setBlogPost($blogPost)
     {
         $this->blogPost = $blogPost;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Article\BlogPosting
+     */
     public function getBlogPosts()
     {
         return $this->blogPosts;
     }
 
+    /**
+     * @param $blogPosts Example\Thing\CreativeWork\Article\BlogPosting
+     */
     public function setBlogPosts($blogPosts)
     {
         $this->blogPosts = $blogPosts;

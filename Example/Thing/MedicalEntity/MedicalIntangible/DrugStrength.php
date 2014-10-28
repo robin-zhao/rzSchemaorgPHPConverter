@@ -49,44 +49,68 @@ class DrugStrength extends MedicalIntangible
      */
     private $url = "http://schema.org/DrugStrength";
 
+    /**
+     * @return String
+     */
     public function getActiveIngredient()
     {
         return $this->activeIngredient;
     }
 
+    /**
+     * @param $activeIngredient String
+     */
     public function setActiveIngredient($activeIngredient)
     {
         $this->activeIngredient = $activeIngredient;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place\AdministrativeArea
+     */
     public function getAvailableIn()
     {
         return $this->availableIn;
     }
 
+    /**
+     * @param $availableIn Example\Thing\Place\AdministrativeArea
+     */
     public function setAvailableIn($availableIn)
     {
         $this->availableIn = $availableIn;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getStrengthUnit()
     {
         return $this->strengthUnit;
     }
 
+    /**
+     * @param $strengthUnit String
+     */
     public function setStrengthUnit($strengthUnit)
     {
         $this->strengthUnit = $strengthUnit;
         return $this;
     }
 
+    /**
+     * @return Float
+     */
     public function getStrengthValue()
     {
         return $this->strengthValue;
     }
 
+    /**
+     * @param $strengthValue Float
+     */
     public function setStrengthValue($strengthValue)
     {
         $this->strengthValue = $strengthValue;

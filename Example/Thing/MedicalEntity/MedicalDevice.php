@@ -77,88 +77,136 @@ class MedicalDevice extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalDevice";
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getAdverseOutcome()
     {
         return $this->adverseOutcome;
     }
 
+    /**
+     * @param $adverseOutcome Example\Thing\MedicalEntity
+     */
     public function setAdverseOutcome($adverseOutcome)
     {
         $this->adverseOutcome = $adverseOutcome;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalContraindication
+     */
     public function getContraindication()
     {
         return $this->contraindication;
     }
 
+    /**
+     * @param $contraindication Example\Thing\MedicalEntity\MedicalContraindication
+     */
     public function setContraindication($contraindication)
     {
         $this->contraindication = $contraindication;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIndication
+     */
     public function getIndication()
     {
         return $this->indication;
     }
 
+    /**
+     * @param $indication Example\Thing\MedicalEntity\MedicalIndication
+     */
     public function setIndication($indication)
     {
         $this->indication = $indication;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPostOp()
     {
         return $this->postOp;
     }
 
+    /**
+     * @param $postOp String
+     */
     public function setPostOp($postOp)
     {
         $this->postOp = $postOp;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPreOp()
     {
         return $this->preOp;
     }
 
+    /**
+     * @param $preOp String
+     */
     public function setPreOp($preOp)
     {
         $this->preOp = $preOp;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getProcedure()
     {
         return $this->procedure;
     }
 
+    /**
+     * @param $procedure String
+     */
     public function setProcedure($procedure)
     {
         $this->procedure = $procedure;
         return $this;
     }
 
+    /**
+     * @return Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
+     */
     public function getPurpose()
     {
         return $this->purpose;
     }
 
+    /**
+     * @param $purpose Example\Thing|Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
+     */
     public function setPurpose($purpose)
     {
         $this->purpose = $purpose;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getSeriousAdverseOutcome()
     {
         return $this->seriousAdverseOutcome;
     }
 
+    /**
+     * @param $seriousAdverseOutcome Example\Thing\MedicalEntity
+     */
     public function setSeriousAdverseOutcome($seriousAdverseOutcome)
     {
         $this->seriousAdverseOutcome = $seriousAdverseOutcome;

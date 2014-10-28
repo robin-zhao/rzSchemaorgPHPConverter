@@ -35,22 +35,34 @@ class PaymentChargeSpecification extends PriceSpecification
      */
     private $url = "http://schema.org/PaymentChargeSpecification";
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function getAppliesToDeliveryMethod()
     {
         return $this->appliesToDeliveryMethod;
     }
 
+    /**
+     * @param $appliesToDeliveryMethod Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function setAppliesToDeliveryMethod($appliesToDeliveryMethod)
     {
         $this->appliesToDeliveryMethod = $appliesToDeliveryMethod;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\PaymentMethod
+     */
     public function getAppliesToPaymentMethod()
     {
         return $this->appliesToPaymentMethod;
     }
 
+    /**
+     * @param $appliesToPaymentMethod Example\Thing\Intangible\Enumeration\PaymentMethod
+     */
     public function setAppliesToPaymentMethod($appliesToPaymentMethod)
     {
         $this->appliesToPaymentMethod = $appliesToPaymentMethod;

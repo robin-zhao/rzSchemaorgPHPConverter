@@ -70,77 +70,119 @@ class QualitativeValue extends Enumeration
      */
     private $url = "http://schema.org/QualitativeValue";
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function getEqual()
     {
         return $this->equal;
     }
 
+    /**
+     * @param $equal Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function setEqual($equal)
     {
         $this->equal = $equal;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function getGreater()
     {
         return $this->greater;
     }
 
+    /**
+     * @param $greater Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function setGreater($greater)
     {
         $this->greater = $greater;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function getGreaterOrEqual()
     {
         return $this->greaterOrEqual;
     }
 
+    /**
+     * @param $greaterOrEqual Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function setGreaterOrEqual($greaterOrEqual)
     {
         $this->greaterOrEqual = $greaterOrEqual;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function getLesser()
     {
         return $this->lesser;
     }
 
+    /**
+     * @param $lesser Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function setLesser($lesser)
     {
         $this->lesser = $lesser;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function getLesserOrEqual()
     {
         return $this->lesserOrEqual;
     }
 
+    /**
+     * @param $lesserOrEqual Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function setLesserOrEqual($lesserOrEqual)
     {
         $this->lesserOrEqual = $lesserOrEqual;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function getNonEqual()
     {
         return $this->nonEqual;
     }
 
+    /**
+     * @param $nonEqual Example\Thing\Intangible\Enumeration\QualitativeValue
+     */
     public function setNonEqual($nonEqual)
     {
         $this->nonEqual = $nonEqual;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration|Example\Thing\Intangible\StructuredValue
+     */
     public function getValueReference()
     {
         return $this->valueReference;
     }
 
+    /**
+     * @param $valueReference Example\Thing\Intangible\Enumeration|Example\Thing\Intangible\StructuredValue
+     */
     public function setValueReference($valueReference)
     {
         $this->valueReference = $valueReference;

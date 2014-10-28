@@ -28,11 +28,17 @@ class MedicalRiskScore extends MedicalRiskEstimator
      */
     private $url = "http://schema.org/MedicalRiskScore";
 
+    /**
+     * @return String
+     */
     public function getAlgorithm()
     {
         return $this->algorithm;
     }
 
+    /**
+     * @param $algorithm String
+     */
     public function setAlgorithm($algorithm)
     {
         $this->algorithm = $algorithm;

@@ -28,11 +28,17 @@ class ImagingTest extends MedicalTest
      */
     private $url = "http://schema.org/ImagingTest";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalImagingTechnique
+     */
     public function getImagingTechnique()
     {
         return $this->imagingTechnique;
     }
 
+    /**
+     * @param $imagingTechnique Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalImagingTechnique
+     */
     public function setImagingTechnique($imagingTechnique)
     {
         $this->imagingTechnique = $imagingTechnique;

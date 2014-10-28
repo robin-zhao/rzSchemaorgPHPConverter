@@ -56,55 +56,85 @@ class SuperficialAnatomy extends MedicalEntity
      */
     private $url = "http://schema.org/SuperficialAnatomy";
 
+    /**
+     * @return String
+     */
     public function getAssociatedPathophysiology()
     {
         return $this->associatedPathophysiology;
     }
 
+    /**
+     * @param $associatedPathophysiology String
+     */
     public function setAssociatedPathophysiology($associatedPathophysiology)
     {
         $this->associatedPathophysiology = $associatedPathophysiology;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalSystem
+     */
     public function getRelatedAnatomy()
     {
         return $this->relatedAnatomy;
     }
 
+    /**
+     * @param $relatedAnatomy Example\Thing\MedicalEntity\AnatomicalStructure|Example\Thing\MedicalEntity\AnatomicalSystem
+     */
     public function setRelatedAnatomy($relatedAnatomy)
     {
         $this->relatedAnatomy = $relatedAnatomy;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalCondition
+     */
     public function getRelatedCondition()
     {
         return $this->relatedCondition;
     }
 
+    /**
+     * @param $relatedCondition Example\Thing\MedicalEntity\MedicalCondition
+     */
     public function setRelatedCondition($relatedCondition)
     {
         $this->relatedCondition = $relatedCondition;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getRelatedTherapy()
     {
         return $this->relatedTherapy;
     }
 
+    /**
+     * @param $relatedTherapy Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setRelatedTherapy($relatedTherapy)
     {
         $this->relatedTherapy = $relatedTherapy;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSignificance()
     {
         return $this->significance;
     }
 
+    /**
+     * @param $significance String
+     */
     public function setSignificance($significance)
     {
         $this->significance = $significance;

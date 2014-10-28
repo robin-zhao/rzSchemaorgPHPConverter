@@ -28,11 +28,17 @@ class EducationalOrganization extends Organization
      */
     private $url = "http://schema.org/EducationalOrganization";
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getAlumni()
     {
         return $this->alumni;
     }
 
+    /**
+     * @param $alumni Example\Thing\Person
+     */
     public function setAlumni($alumni)
     {
         $this->alumni = $alumni;

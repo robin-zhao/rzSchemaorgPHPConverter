@@ -56,55 +56,85 @@ class GeoShape extends StructuredValue
      */
     private $url = "http://schema.org/GeoShape";
 
+    /**
+     * @return String
+     */
     public function getBox()
     {
         return $this->box;
     }
 
+    /**
+     * @param $box String
+     */
     public function setBox($box)
     {
         $this->box = $box;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getCircle()
     {
         return $this->circle;
     }
 
+    /**
+     * @param $circle String
+     */
     public function setCircle($circle)
     {
         $this->circle = $circle;
         return $this;
     }
 
+    /**
+     * @return String|Float
+     */
     public function getElevation()
     {
         return $this->elevation;
     }
 
+    /**
+     * @param $elevation String|Float
+     */
     public function setElevation($elevation)
     {
         $this->elevation = $elevation;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getLine()
     {
         return $this->line;
     }
 
+    /**
+     * @param $line String
+     */
     public function setLine($line)
     {
         $this->line = $line;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPolygon()
     {
         return $this->polygon;
     }
 
+    /**
+     * @param $polygon String
+     */
     public function setPolygon($polygon)
     {
         $this->polygon = $polygon;

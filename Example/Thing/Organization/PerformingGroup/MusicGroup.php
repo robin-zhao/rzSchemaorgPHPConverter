@@ -56,55 +56,85 @@ class MusicGroup extends PerformingGroup
      */
     private $url = "http://schema.org/MusicGroup";
 
+    /**
+     * @return Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
+     */
     public function getAlbum()
     {
         return $this->album;
     }
 
+    /**
+     * @param $album Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
+     */
     public function setAlbum($album)
     {
         $this->album = $album;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
+     */
     public function getAlbums()
     {
         return $this->albums;
     }
 
+    /**
+     * @param $albums Example\Thing\CreativeWork\MusicPlaylist\MusicAlbum
+     */
     public function setAlbums($albums)
     {
         $this->albums = $albums;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getMusicGroupMember()
     {
         return $this->musicGroupMember;
     }
 
+    /**
+     * @param $musicGroupMember Example\Thing\Person
+     */
     public function setMusicGroupMember($musicGroupMember)
     {
         $this->musicGroupMember = $musicGroupMember;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MusicRecording
+     */
     public function getTrack()
     {
         return $this->track;
     }
 
+    /**
+     * @param $track Example\Thing\CreativeWork\MusicRecording
+     */
     public function setTrack($track)
     {
         $this->track = $track;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MusicRecording
+     */
     public function getTracks()
     {
         return $this->tracks;
     }
 
+    /**
+     * @param $tracks Example\Thing\CreativeWork\MusicRecording
+     */
     public function setTracks($tracks)
     {
         $this->tracks = $tracks;

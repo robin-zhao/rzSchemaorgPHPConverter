@@ -56,55 +56,85 @@ class LocalBusiness extends Organization
      */
     private $url = "http://schema.org/LocalBusiness";
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getBranchOf()
     {
         return $this->branchOf;
     }
 
+    /**
+     * @param $branchOf Example\Thing\Organization
+     */
     public function setBranchOf($branchOf)
     {
         $this->branchOf = $branchOf;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getCurrenciesAccepted()
     {
         return $this->currenciesAccepted;
     }
 
+    /**
+     * @param $currenciesAccepted String
+     */
     public function setCurrenciesAccepted($currenciesAccepted)
     {
         $this->currenciesAccepted = $currenciesAccepted;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getOpeningHours()
     {
         return $this->openingHours;
     }
 
+    /**
+     * @param $openingHours Example\Thing\Intangible\Quantity\Duration
+     */
     public function setOpeningHours($openingHours)
     {
         $this->openingHours = $openingHours;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPaymentAccepted()
     {
         return $this->paymentAccepted;
     }
 
+    /**
+     * @param $paymentAccepted String
+     */
     public function setPaymentAccepted($paymentAccepted)
     {
         $this->paymentAccepted = $paymentAccepted;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPriceRange()
     {
         return $this->priceRange;
     }
 
+    /**
+     * @param $priceRange String
+     */
     public function setPriceRange($priceRange)
     {
         $this->priceRange = $priceRange;

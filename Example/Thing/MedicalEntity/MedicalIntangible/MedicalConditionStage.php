@@ -35,22 +35,34 @@ class MedicalConditionStage extends MedicalIntangible
      */
     private $url = "http://schema.org/MedicalConditionStage";
 
+    /**
+     * @return Float
+     */
     public function getStageAsNumber()
     {
         return $this->stageAsNumber;
     }
 
+    /**
+     * @param $stageAsNumber Float
+     */
     public function setStageAsNumber($stageAsNumber)
     {
         $this->stageAsNumber = $stageAsNumber;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSubStageSuffix()
     {
         return $this->subStageSuffix;
     }
 
+    /**
+     * @param $subStageSuffix String
+     */
     public function setSubStageSuffix($subStageSuffix)
     {
         $this->subStageSuffix = $subStageSuffix;

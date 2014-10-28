@@ -63,66 +63,102 @@ class MedicalEntity extends Thing
      */
     private $url = "http://schema.org/MedicalEntity";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalCode
+     */
     public function getCode()
     {
         return $this->code;
     }
 
+    /**
+     * @param $code Example\Thing\MedicalEntity\MedicalIntangible\MedicalCode
+     */
     public function setCode($code)
     {
         $this->code = $code;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalGuideline
+     */
     public function getGuideline()
     {
         return $this->guideline;
     }
 
+    /**
+     * @param $guideline Example\Thing\MedicalEntity\MedicalGuideline
+     */
     public function setGuideline($guideline)
     {
         $this->guideline = $guideline;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicineSystem
+     */
     public function getMedicineSystem()
     {
         return $this->medicineSystem;
     }
 
+    /**
+     * @param $medicineSystem Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicineSystem
+     */
     public function setMedicineSystem($medicineSystem)
     {
         $this->medicineSystem = $medicineSystem;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getRecognizingAuthority()
     {
         return $this->recognizingAuthority;
     }
 
+    /**
+     * @param $recognizingAuthority Example\Thing\Organization
+     */
     public function setRecognizingAuthority($recognizingAuthority)
     {
         $this->recognizingAuthority = $recognizingAuthority;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
+     */
     public function getRelevantSpecialty()
     {
         return $this->relevantSpecialty;
     }
 
+    /**
+     * @param $relevantSpecialty Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
+     */
     public function setRelevantSpecialty($relevantSpecialty)
     {
         $this->relevantSpecialty = $relevantSpecialty;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalStudy
+     */
     public function getStudy()
     {
         return $this->study;
     }
 
+    /**
+     * @param $study Example\Thing\MedicalEntity\MedicalStudy
+     */
     public function setStudy($study)
     {
         $this->study = $study;

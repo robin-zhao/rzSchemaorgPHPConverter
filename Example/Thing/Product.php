@@ -203,286 +203,442 @@ class Product extends Thing
      */
     private $url = "http://schema.org/Product";
 
+    /**
+     * @return Example\Thing\Intangible\Rating\AggregateRating
+     */
     public function getAggregateRating()
     {
         return $this->aggregateRating;
     }
 
+    /**
+     * @param $aggregateRating Example\Thing\Intangible\Rating\AggregateRating
+     */
     public function setAggregateRating($aggregateRating)
     {
         $this->aggregateRating = $aggregateRating;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Audience
+     */
     public function getAudience()
     {
         return $this->audience;
     }
 
+    /**
+     * @param $audience Example\Thing\Intangible\Audience
+     */
     public function setAudience($audience)
     {
         $this->audience = $audience;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Intangible\Brand
+     */
     public function getBrand()
     {
         return $this->brand;
     }
 
+    /**
+     * @param $brand Example\Thing\Organization|Example\Thing\Intangible\Brand
+     */
     public function setBrand($brand)
     {
         $this->brand = $brand;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getColor()
     {
         return $this->color;
     }
 
+    /**
+     * @param $color String
+     */
     public function setColor($color)
     {
         $this->color = $color;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getDepth()
     {
         return $this->depth;
     }
 
+    /**
+     * @param $depth Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setDepth($depth)
     {
         $this->depth = $depth;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getGtin13()
     {
         return $this->gtin13;
     }
 
+    /**
+     * @param $gtin13 String
+     */
     public function setGtin13($gtin13)
     {
         $this->gtin13 = $gtin13;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getGtin14()
     {
         return $this->gtin14;
     }
 
+    /**
+     * @param $gtin14 String
+     */
     public function setGtin14($gtin14)
     {
         $this->gtin14 = $gtin14;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getGtin8()
     {
         return $this->gtin8;
     }
 
+    /**
+     * @param $gtin8 String
+     */
     public function setGtin8($gtin8)
     {
         $this->gtin8 = $gtin8;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getHeight()
     {
         return $this->height;
     }
 
+    /**
+     * @param $height Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setHeight($height)
     {
         $this->height = $height;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product
+     */
     public function getIsAccessoryOrSparePartFor()
     {
         return $this->isAccessoryOrSparePartFor;
     }
 
+    /**
+     * @param $isAccessoryOrSparePartFor Example\Thing\Product
+     */
     public function setIsAccessoryOrSparePartFor($isAccessoryOrSparePartFor)
     {
         $this->isAccessoryOrSparePartFor = $isAccessoryOrSparePartFor;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product
+     */
     public function getIsConsumableFor()
     {
         return $this->isConsumableFor;
     }
 
+    /**
+     * @param $isConsumableFor Example\Thing\Product
+     */
     public function setIsConsumableFor($isConsumableFor)
     {
         $this->isConsumableFor = $isConsumableFor;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product
+     */
     public function getIsRelatedTo()
     {
         return $this->isRelatedTo;
     }
 
+    /**
+     * @param $isRelatedTo Example\Thing\Product
+     */
     public function setIsRelatedTo($isRelatedTo)
     {
         $this->isRelatedTo = $isRelatedTo;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product
+     */
     public function getIsSimilarTo()
     {
         return $this->isSimilarTo;
     }
 
+    /**
+     * @param $isSimilarTo Example\Thing\Product
+     */
     public function setIsSimilarTo($isSimilarTo)
     {
         $this->isSimilarTo = $isSimilarTo;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\OfferItemCondition
+     */
     public function getItemCondition()
     {
         return $this->itemCondition;
     }
 
+    /**
+     * @param $itemCondition Example\Thing\Intangible\Enumeration\OfferItemCondition
+     */
     public function setItemCondition($itemCondition)
     {
         $this->itemCondition = $itemCondition;
         return $this;
     }
 
+    /**
+     * @return String|Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function getLogo()
     {
         return $this->logo;
     }
 
+    /**
+     * @param $logo String|Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function setLogo($logo)
     {
         $this->logo = $logo;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getManufacturer()
     {
         return $this->manufacturer;
     }
 
+    /**
+     * @param $manufacturer Example\Thing\Organization
+     */
     public function setManufacturer($manufacturer)
     {
         $this->manufacturer = $manufacturer;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product\ProductModel|String
+     */
     public function getModel()
     {
         return $this->model;
     }
 
+    /**
+     * @param $model Example\Thing\Product\ProductModel|String
+     */
     public function setModel($model)
     {
         $this->model = $model;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getMpn()
     {
         return $this->mpn;
     }
 
+    /**
+     * @param $mpn String
+     */
     public function setMpn($mpn)
     {
         $this->mpn = $mpn;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Offer
+     */
     public function getOffers()
     {
         return $this->offers;
     }
 
+    /**
+     * @param $offers Example\Thing\Intangible\Offer
+     */
     public function setOffers($offers)
     {
         $this->offers = $offers;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getProductID()
     {
         return $this->productID;
     }
 
+    /**
+     * @param $productID String
+     */
     public function setProductID($productID)
     {
         $this->productID = $productID;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getReleaseDate()
     {
         return $this->releaseDate;
     }
 
+    /**
+     * @param $releaseDate DateTime
+     */
     public function setReleaseDate($releaseDate)
     {
         $this->releaseDate = $releaseDate;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Review
+     */
     public function getReview()
     {
         return $this->review;
     }
 
+    /**
+     * @param $review Example\Thing\CreativeWork\Review
+     */
     public function setReview($review)
     {
         $this->review = $review;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Review
+     */
     public function getReviews()
     {
         return $this->reviews;
     }
 
+    /**
+     * @param $reviews Example\Thing\CreativeWork\Review
+     */
     public function setReviews($reviews)
     {
         $this->reviews = $reviews;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSku()
     {
         return $this->sku;
     }
 
+    /**
+     * @param $sku String
+     */
     public function setSku($sku)
     {
         $this->sku = $sku;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getWeight()
     {
         return $this->weight;
     }
 
+    /**
+     * @param $weight Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setWeight($weight)
     {
         $this->weight = $weight;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getWidth()
     {
         return $this->width;
     }
 
+    /**
+     * @param $width Example\Thing\Intangible\Quantity\Distance|Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setWidth($width)
     {
         $this->width = $width;

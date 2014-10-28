@@ -91,110 +91,170 @@ class Recipe extends CreativeWork
      */
     private $url = "http://schema.org/Recipe";
 
+    /**
+     * @return String
+     */
     public function getCookingMethod()
     {
         return $this->cookingMethod;
     }
 
+    /**
+     * @param $cookingMethod String
+     */
     public function setCookingMethod($cookingMethod)
     {
         $this->cookingMethod = $cookingMethod;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getCookTime()
     {
         return $this->cookTime;
     }
 
+    /**
+     * @param $cookTime Example\Thing\Intangible\Quantity\Duration
+     */
     public function setCookTime($cookTime)
     {
         $this->cookTime = $cookTime;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getIngredients()
     {
         return $this->ingredients;
     }
 
+    /**
+     * @param $ingredients String
+     */
     public function setIngredients($ingredients)
     {
         $this->ingredients = $ingredients;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\NutritionInformation
+     */
     public function getNutrition()
     {
         return $this->nutrition;
     }
 
+    /**
+     * @param $nutrition Example\Thing\Intangible\StructuredValue\NutritionInformation
+     */
     public function setNutrition($nutrition)
     {
         $this->nutrition = $nutrition;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getPrepTime()
     {
         return $this->prepTime;
     }
 
+    /**
+     * @param $prepTime Example\Thing\Intangible\Quantity\Duration
+     */
     public function setPrepTime($prepTime)
     {
         $this->prepTime = $prepTime;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getRecipeCategory()
     {
         return $this->recipeCategory;
     }
 
+    /**
+     * @param $recipeCategory String
+     */
     public function setRecipeCategory($recipeCategory)
     {
         $this->recipeCategory = $recipeCategory;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getRecipeCuisine()
     {
         return $this->recipeCuisine;
     }
 
+    /**
+     * @param $recipeCuisine String
+     */
     public function setRecipeCuisine($recipeCuisine)
     {
         $this->recipeCuisine = $recipeCuisine;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getRecipeInstructions()
     {
         return $this->recipeInstructions;
     }
 
+    /**
+     * @param $recipeInstructions String
+     */
     public function setRecipeInstructions($recipeInstructions)
     {
         $this->recipeInstructions = $recipeInstructions;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getRecipeYield()
     {
         return $this->recipeYield;
     }
 
+    /**
+     * @param $recipeYield String
+     */
     public function setRecipeYield($recipeYield)
     {
         $this->recipeYield = $recipeYield;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getTotalTime()
     {
         return $this->totalTime;
     }
 
+    /**
+     * @param $totalTime Example\Thing\Intangible\Quantity\Duration
+     */
     public function setTotalTime($totalTime)
     {
         $this->totalTime = $totalTime;

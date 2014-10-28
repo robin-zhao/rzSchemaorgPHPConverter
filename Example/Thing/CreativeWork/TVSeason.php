@@ -28,11 +28,17 @@ class TVSeason extends CreativeWork
      */
     private $url = "http://schema.org/TVSeason";
 
+    /**
+     * @return Example\Thing\CreativeWork\TVSeries
+     */
     public function getPartOfTVSeries()
     {
         return $this->partOfTVSeries;
     }
 
+    /**
+     * @param $partOfTVSeries Example\Thing\CreativeWork\TVSeries
+     */
     public function setPartOfTVSeries($partOfTVSeries)
     {
         $this->partOfTVSeries = $partOfTVSeries;

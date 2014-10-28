@@ -28,11 +28,17 @@ class TVEpisode extends Episode
      */
     private $url = "http://schema.org/TVEpisode";
 
+    /**
+     * @return Example\Thing\CreativeWork\TVSeries
+     */
     public function getPartOfTVSeries()
     {
         return $this->partOfTVSeries;
     }
 
+    /**
+     * @param $partOfTVSeries Example\Thing\CreativeWork\TVSeries
+     */
     public function setPartOfTVSeries($partOfTVSeries)
     {
         $this->partOfTVSeries = $partOfTVSeries;

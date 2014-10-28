@@ -112,143 +112,221 @@ class Episode extends CreativeWork
      */
     private $url = "http://schema.org/Episode";
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getActor()
     {
         return $this->actor;
     }
 
+    /**
+     * @param $actor Example\Thing\Person
+     */
     public function setActor($actor)
     {
         $this->actor = $actor;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getActors()
     {
         return $this->actors;
     }
 
+    /**
+     * @param $actors Example\Thing\Person
+     */
     public function setActors($actors)
     {
         $this->actors = $actors;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getDirector()
     {
         return $this->director;
     }
 
+    /**
+     * @param $director Example\Thing\Person
+     */
     public function setDirector($director)
     {
         $this->director = $director;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getDirectors()
     {
         return $this->directors;
     }
 
+    /**
+     * @param $directors Example\Thing\Person
+     */
     public function setDirectors($directors)
     {
         $this->directors = $directors;
         return $this;
     }
 
+    /**
+     * @return Integer
+     */
     public function getEpisodeNumber()
     {
         return $this->episodeNumber;
     }
 
+    /**
+     * @param $episodeNumber Integer
+     */
     public function setEpisodeNumber($episodeNumber)
     {
         $this->episodeNumber = $episodeNumber;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person|Example\Thing\Organization\PerformingGroup\MusicGroup
+     */
     public function getMusicBy()
     {
         return $this->musicBy;
     }
 
+    /**
+     * @param $musicBy Example\Thing\Person|Example\Thing\Organization\PerformingGroup\MusicGroup
+     */
     public function setMusicBy($musicBy)
     {
         $this->musicBy = $musicBy;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Season
+     */
     public function getPartOfSeason()
     {
         return $this->partOfSeason;
     }
 
+    /**
+     * @param $partOfSeason Example\Thing\CreativeWork\Season
+     */
     public function setPartOfSeason($partOfSeason)
     {
         $this->partOfSeason = $partOfSeason;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Series
+     */
     public function getPartOfSeries()
     {
         return $this->partOfSeries;
     }
 
+    /**
+     * @param $partOfSeries Example\Thing\CreativeWork\Series
+     */
     public function setPartOfSeries($partOfSeries)
     {
         $this->partOfSeries = $partOfSeries;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPosition()
     {
         return $this->position;
     }
 
+    /**
+     * @param $position String
+     */
     public function setPosition($position)
     {
         $this->position = $position;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getProducer()
     {
         return $this->producer;
     }
 
+    /**
+     * @param $producer Example\Thing\Person
+     */
     public function setProducer($producer)
     {
         $this->producer = $producer;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getProductionCompany()
     {
         return $this->productionCompany;
     }
 
+    /**
+     * @param $productionCompany Example\Thing\Organization
+     */
     public function setProductionCompany($productionCompany)
     {
         $this->productionCompany = $productionCompany;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Event\PublicationEvent
+     */
     public function getPublication()
     {
         return $this->publication;
     }
 
+    /**
+     * @param $publication Example\Thing\Event\PublicationEvent
+     */
     public function setPublication($publication)
     {
         $this->publication = $publication;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MediaObject\VideoObject
+     */
     public function getTrailer()
     {
         return $this->trailer;
     }
 
+    /**
+     * @param $trailer Example\Thing\CreativeWork\MediaObject\VideoObject
+     */
     public function setTrailer($trailer)
     {
         $this->trailer = $trailer;

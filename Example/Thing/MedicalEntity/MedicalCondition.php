@@ -133,176 +133,272 @@ class MedicalCondition extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalCondition";
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\SuperficialAnatomy|Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getAssociatedAnatomy()
     {
         return $this->associatedAnatomy;
     }
 
+    /**
+     * @param $associatedAnatomy Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\SuperficialAnatomy|Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setAssociatedAnatomy($associatedAnatomy)
     {
         $this->associatedAnatomy = $associatedAnatomy;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalCause
+     */
     public function getCause()
     {
         return $this->cause;
     }
 
+    /**
+     * @param $cause Example\Thing\MedicalEntity\MedicalCause
+     */
     public function setCause($cause)
     {
         $this->cause = $cause;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\DDxElement
+     */
     public function getDifferentialDiagnosis()
     {
         return $this->differentialDiagnosis;
     }
 
+    /**
+     * @param $differentialDiagnosis Example\Thing\MedicalEntity\MedicalIntangible\DDxElement
+     */
     public function setDifferentialDiagnosis($differentialDiagnosis)
     {
         $this->differentialDiagnosis = $differentialDiagnosis;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getEpidemiology()
     {
         return $this->epidemiology;
     }
 
+    /**
+     * @param $epidemiology String
+     */
     public function setEpidemiology($epidemiology)
     {
         $this->epidemiology = $epidemiology;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getExpectedPrognosis()
     {
         return $this->expectedPrognosis;
     }
 
+    /**
+     * @param $expectedPrognosis String
+     */
     public function setExpectedPrognosis($expectedPrognosis)
     {
         $this->expectedPrognosis = $expectedPrognosis;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getNaturalProgression()
     {
         return $this->naturalProgression;
     }
 
+    /**
+     * @param $naturalProgression String
+     */
     public function setNaturalProgression($naturalProgression)
     {
         $this->naturalProgression = $naturalProgression;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPathophysiology()
     {
         return $this->pathophysiology;
     }
 
+    /**
+     * @param $pathophysiology String
+     */
     public function setPathophysiology($pathophysiology)
     {
         $this->pathophysiology = $pathophysiology;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPossibleComplication()
     {
         return $this->possibleComplication;
     }
 
+    /**
+     * @param $possibleComplication String
+     */
     public function setPossibleComplication($possibleComplication)
     {
         $this->possibleComplication = $possibleComplication;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getPossibleTreatment()
     {
         return $this->possibleTreatment;
     }
 
+    /**
+     * @param $possibleTreatment Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setPossibleTreatment($possibleTreatment)
     {
         $this->possibleTreatment = $possibleTreatment;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getPrimaryPrevention()
     {
         return $this->primaryPrevention;
     }
 
+    /**
+     * @param $primaryPrevention Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setPrimaryPrevention($primaryPrevention)
     {
         $this->primaryPrevention = $primaryPrevention;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalRiskFactor
+     */
     public function getRiskFactor()
     {
         return $this->riskFactor;
     }
 
+    /**
+     * @param $riskFactor Example\Thing\MedicalEntity\MedicalRiskFactor
+     */
     public function setRiskFactor($riskFactor)
     {
         $this->riskFactor = $riskFactor;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getSecondaryPrevention()
     {
         return $this->secondaryPrevention;
     }
 
+    /**
+     * @param $secondaryPrevention Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setSecondaryPrevention($secondaryPrevention)
     {
         $this->secondaryPrevention = $secondaryPrevention;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalSignOrSymptom
+     */
     public function getSignOrSymptom()
     {
         return $this->signOrSymptom;
     }
 
+    /**
+     * @param $signOrSymptom Example\Thing\MedicalEntity\MedicalSignOrSymptom
+     */
     public function setSignOrSymptom($signOrSymptom)
     {
         $this->signOrSymptom = $signOrSymptom;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalConditionStage
+     */
     public function getStage()
     {
         return $this->stage;
     }
 
+    /**
+     * @param $stage Example\Thing\MedicalEntity\MedicalIntangible\MedicalConditionStage
+     */
     public function setStage($stage)
     {
         $this->stage = $stage;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSubtype()
     {
         return $this->subtype;
     }
 
+    /**
+     * @param $subtype String
+     */
     public function setSubtype($subtype)
     {
         $this->subtype = $subtype;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTest
+     */
     public function getTypicalTest()
     {
         return $this->typicalTest;
     }
 
+    /**
+     * @param $typicalTest Example\Thing\MedicalEntity\MedicalTest
+     */
     public function setTypicalTest($typicalTest)
     {
         $this->typicalTest = $typicalTest;

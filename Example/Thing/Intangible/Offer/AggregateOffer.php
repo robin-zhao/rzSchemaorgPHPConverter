@@ -42,33 +42,51 @@ class AggregateOffer extends Offer
      */
     private $url = "http://schema.org/AggregateOffer";
 
+    /**
+     * @return Float|String
+     */
     public function getHighPrice()
     {
         return $this->highPrice;
     }
 
+    /**
+     * @param $highPrice Float|String
+     */
     public function setHighPrice($highPrice)
     {
         $this->highPrice = $highPrice;
         return $this;
     }
 
+    /**
+     * @return Float|String
+     */
     public function getLowPrice()
     {
         return $this->lowPrice;
     }
 
+    /**
+     * @param $lowPrice Float|String
+     */
     public function setLowPrice($lowPrice)
     {
         $this->lowPrice = $lowPrice;
         return $this;
     }
 
+    /**
+     * @return Integer
+     */
     public function getOfferCount()
     {
         return $this->offerCount;
     }
 
+    /**
+     * @param $offerCount Integer
+     */
     public function setOfferCount($offerCount)
     {
         $this->offerCount = $offerCount;

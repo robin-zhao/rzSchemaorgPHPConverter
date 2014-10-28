@@ -77,88 +77,136 @@ class Action extends Thing
      */
     private $url = "http://schema.org/Action";
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getAgent()
     {
         return $this->agent;
     }
 
+    /**
+     * @param $agent Example\Thing\Organization|Example\Thing\Person
+     */
     public function setAgent($agent)
     {
         $this->agent = $agent;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getEndTime()
     {
         return $this->endTime;
     }
 
+    /**
+     * @param $endTime DateTime
+     */
     public function setEndTime($endTime)
     {
         $this->endTime = $endTime;
         return $this;
     }
 
+    /**
+     * @return Example\Thing
+     */
     public function getInstrument()
     {
         return $this->instrument;
     }
 
+    /**
+     * @param $instrument Example\Thing
+     */
     public function setInstrument($instrument)
     {
         $this->instrument = $instrument;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress|Example\Thing\Place
+     */
     public function getLocation()
     {
         return $this->location;
     }
 
+    /**
+     * @param $location Example\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress|Example\Thing\Place
+     */
     public function setLocation($location)
     {
         $this->location = $location;
         return $this;
     }
 
+    /**
+     * @return Example\Thing
+     */
     public function getObject()
     {
         return $this->object;
     }
 
+    /**
+     * @param $object Example\Thing
+     */
     public function setObject($object)
     {
         $this->object = $object;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getParticipant()
     {
         return $this->participant;
     }
 
+    /**
+     * @param $participant Example\Thing\Organization|Example\Thing\Person
+     */
     public function setParticipant($participant)
     {
         $this->participant = $participant;
         return $this;
     }
 
+    /**
+     * @return Example\Thing
+     */
     public function getResult()
     {
         return $this->result;
     }
 
+    /**
+     * @param $result Example\Thing
+     */
     public function setResult($result)
     {
         $this->result = $result;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getStartTime()
     {
         return $this->startTime;
     }
 
+    /**
+     * @param $startTime DateTime
+     */
     public function setStartTime($startTime)
     {
         $this->startTime = $startTime;

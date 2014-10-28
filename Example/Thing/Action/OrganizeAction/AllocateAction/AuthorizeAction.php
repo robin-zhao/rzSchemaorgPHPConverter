@@ -28,11 +28,17 @@ class AuthorizeAction extends AllocateAction
      */
     private $url = "http://schema.org/AuthorizeAction";
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
+     */
     public function getRecipient()
     {
         return $this->recipient;
     }
 
+    /**
+     * @param $recipient Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
+     */
     public function setRecipient($recipient)
     {
         $this->recipient = $recipient;

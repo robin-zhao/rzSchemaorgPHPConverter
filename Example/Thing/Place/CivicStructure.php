@@ -28,11 +28,17 @@ class CivicStructure extends Place
      */
     private $url = "http://schema.org/CivicStructure";
 
+    /**
+     * @return Example\Thing\Intangible\Quantity\Duration
+     */
     public function getOpeningHours()
     {
         return $this->openingHours;
     }
 
+    /**
+     * @param $openingHours Example\Thing\Intangible\Quantity\Duration
+     */
     public function setOpeningHours($openingHours)
     {
         $this->openingHours = $openingHours;

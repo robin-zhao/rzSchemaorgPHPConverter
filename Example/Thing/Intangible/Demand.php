@@ -224,319 +224,493 @@ class Demand extends Intangible
      */
     private $url = "http://schema.org/Demand";
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\PaymentMethod
+     */
     public function getAcceptedPaymentMethod()
     {
         return $this->acceptedPaymentMethod;
     }
 
+    /**
+     * @param $acceptedPaymentMethod Example\Thing\Intangible\Enumeration\PaymentMethod
+     */
     public function setAcceptedPaymentMethod($acceptedPaymentMethod)
     {
         $this->acceptedPaymentMethod = $acceptedPaymentMethod;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getAdvanceBookingRequirement()
     {
         return $this->advanceBookingRequirement;
     }
 
+    /**
+     * @param $advanceBookingRequirement Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setAdvanceBookingRequirement($advanceBookingRequirement)
     {
         $this->advanceBookingRequirement = $advanceBookingRequirement;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\ItemAvailability
+     */
     public function getAvailability()
     {
         return $this->availability;
     }
 
+    /**
+     * @param $availability Example\Thing\Intangible\Enumeration\ItemAvailability
+     */
     public function setAvailability($availability)
     {
         $this->availability = $availability;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getAvailabilityEnds()
     {
         return $this->availabilityEnds;
     }
 
+    /**
+     * @param $availabilityEnds DateTime
+     */
     public function setAvailabilityEnds($availabilityEnds)
     {
         $this->availabilityEnds = $availabilityEnds;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getAvailabilityStarts()
     {
         return $this->availabilityStarts;
     }
 
+    /**
+     * @param $availabilityStarts DateTime
+     */
     public function setAvailabilityStarts($availabilityStarts)
     {
         $this->availabilityStarts = $availabilityStarts;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place
+     */
     public function getAvailableAtOrFrom()
     {
         return $this->availableAtOrFrom;
     }
 
+    /**
+     * @param $availableAtOrFrom Example\Thing\Place
+     */
     public function setAvailableAtOrFrom($availableAtOrFrom)
     {
         $this->availableAtOrFrom = $availableAtOrFrom;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function getAvailableDeliveryMethod()
     {
         return $this->availableDeliveryMethod;
     }
 
+    /**
+     * @param $availableDeliveryMethod Example\Thing\Intangible\Enumeration\DeliveryMethod
+     */
     public function setAvailableDeliveryMethod($availableDeliveryMethod)
     {
         $this->availableDeliveryMethod = $availableDeliveryMethod;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\BusinessFunction
+     */
     public function getBusinessFunction()
     {
         return $this->businessFunction;
     }
 
+    /**
+     * @param $businessFunction Example\Thing\Intangible\Enumeration\BusinessFunction
+     */
     public function setBusinessFunction($businessFunction)
     {
         $this->businessFunction = $businessFunction;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getDeliveryLeadTime()
     {
         return $this->deliveryLeadTime;
     }
 
+    /**
+     * @param $deliveryLeadTime Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setDeliveryLeadTime($deliveryLeadTime)
     {
         $this->deliveryLeadTime = $deliveryLeadTime;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\BusinessEntityType
+     */
     public function getEligibleCustomerType()
     {
         return $this->eligibleCustomerType;
     }
 
+    /**
+     * @param $eligibleCustomerType Example\Thing\Intangible\Enumeration\BusinessEntityType
+     */
     public function setEligibleCustomerType($eligibleCustomerType)
     {
         $this->eligibleCustomerType = $eligibleCustomerType;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getEligibleDuration()
     {
         return $this->eligibleDuration;
     }
 
+    /**
+     * @param $eligibleDuration Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setEligibleDuration($eligibleDuration)
     {
         $this->eligibleDuration = $eligibleDuration;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getEligibleQuantity()
     {
         return $this->eligibleQuantity;
     }
 
+    /**
+     * @param $eligibleQuantity Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setEligibleQuantity($eligibleQuantity)
     {
         $this->eligibleQuantity = $eligibleQuantity;
         return $this;
     }
 
+    /**
+     * @return String|Example\Thing\Intangible\StructuredValue\GeoShape
+     */
     public function getEligibleRegion()
     {
         return $this->eligibleRegion;
     }
 
+    /**
+     * @param $eligibleRegion String|Example\Thing\Intangible\StructuredValue\GeoShape
+     */
     public function setEligibleRegion($eligibleRegion)
     {
         $this->eligibleRegion = $eligibleRegion;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\PriceSpecification
+     */
     public function getEligibleTransactionVolume()
     {
         return $this->eligibleTransactionVolume;
     }
 
+    /**
+     * @param $eligibleTransactionVolume Example\Thing\Intangible\StructuredValue\PriceSpecification
+     */
     public function setEligibleTransactionVolume($eligibleTransactionVolume)
     {
         $this->eligibleTransactionVolume = $eligibleTransactionVolume;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getGtin13()
     {
         return $this->gtin13;
     }
 
+    /**
+     * @param $gtin13 String
+     */
     public function setGtin13($gtin13)
     {
         $this->gtin13 = $gtin13;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getGtin14()
     {
         return $this->gtin14;
     }
 
+    /**
+     * @param $gtin14 String
+     */
     public function setGtin14($gtin14)
     {
         $this->gtin14 = $gtin14;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getGtin8()
     {
         return $this->gtin8;
     }
 
+    /**
+     * @param $gtin8 String
+     */
     public function setGtin8($gtin8)
     {
         $this->gtin8 = $gtin8;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\TypeAndQuantityNode
+     */
     public function getIncludesObject()
     {
         return $this->includesObject;
     }
 
+    /**
+     * @param $includesObject Example\Thing\Intangible\StructuredValue\TypeAndQuantityNode
+     */
     public function setIncludesObject($includesObject)
     {
         $this->includesObject = $includesObject;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getInventoryLevel()
     {
         return $this->inventoryLevel;
     }
 
+    /**
+     * @param $inventoryLevel Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setInventoryLevel($inventoryLevel)
     {
         $this->inventoryLevel = $inventoryLevel;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Enumeration\OfferItemCondition
+     */
     public function getItemCondition()
     {
         return $this->itemCondition;
     }
 
+    /**
+     * @param $itemCondition Example\Thing\Intangible\Enumeration\OfferItemCondition
+     */
     public function setItemCondition($itemCondition)
     {
         $this->itemCondition = $itemCondition;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Product
+     */
     public function getItemOffered()
     {
         return $this->itemOffered;
     }
 
+    /**
+     * @param $itemOffered Example\Thing\Product
+     */
     public function setItemOffered($itemOffered)
     {
         $this->itemOffered = $itemOffered;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getMpn()
     {
         return $this->mpn;
     }
 
+    /**
+     * @param $mpn String
+     */
     public function setMpn($mpn)
     {
         $this->mpn = $mpn;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\PriceSpecification
+     */
     public function getPriceSpecification()
     {
         return $this->priceSpecification;
     }
 
+    /**
+     * @param $priceSpecification Example\Thing\Intangible\StructuredValue\PriceSpecification
+     */
     public function setPriceSpecification($priceSpecification)
     {
         $this->priceSpecification = $priceSpecification;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getSeller()
     {
         return $this->seller;
     }
 
+    /**
+     * @param $seller Example\Thing\Organization|Example\Thing\Person
+     */
     public function setSeller($seller)
     {
         $this->seller = $seller;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSerialNumber()
     {
         return $this->serialNumber;
     }
 
+    /**
+     * @param $serialNumber String
+     */
     public function setSerialNumber($serialNumber)
     {
         $this->serialNumber = $serialNumber;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSku()
     {
         return $this->sku;
     }
 
+    /**
+     * @param $sku String
+     */
     public function setSku($sku)
     {
         $this->sku = $sku;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getValidFrom()
     {
         return $this->validFrom;
     }
 
+    /**
+     * @param $validFrom DateTime
+     */
     public function setValidFrom($validFrom)
     {
         $this->validFrom = $validFrom;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getValidThrough()
     {
         return $this->validThrough;
     }
 
+    /**
+     * @param $validThrough DateTime
+     */
     public function setValidThrough($validThrough)
     {
         $this->validThrough = $validThrough;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\WarrantyPromise
+     */
     public function getWarranty()
     {
         return $this->warranty;
     }
 
+    /**
+     * @param $warranty Example\Thing\Intangible\StructuredValue\WarrantyPromise
+     */
     public function setWarranty($warranty)
     {
         $this->warranty = $warranty;

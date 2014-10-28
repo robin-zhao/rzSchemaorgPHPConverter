@@ -35,22 +35,34 @@ class MedicalRiskEstimator extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalRiskEstimator";
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getEstimatesRiskOf()
     {
         return $this->estimatesRiskOf;
     }
 
+    /**
+     * @param $estimatesRiskOf Example\Thing\MedicalEntity
+     */
     public function setEstimatesRiskOf($estimatesRiskOf)
     {
         $this->estimatesRiskOf = $estimatesRiskOf;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalRiskFactor
+     */
     public function getIncludedRiskFactor()
     {
         return $this->includedRiskFactor;
     }
 
+    /**
+     * @param $includedRiskFactor Example\Thing\MedicalEntity\MedicalRiskFactor
+     */
     public function setIncludedRiskFactor($includedRiskFactor)
     {
         $this->includedRiskFactor = $includedRiskFactor;

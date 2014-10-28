@@ -28,11 +28,17 @@ class PathologyTest extends MedicalTest
      */
     private $url = "http://schema.org/PathologyTest";
 
+    /**
+     * @return String
+     */
     public function getTissueSample()
     {
         return $this->tissueSample;
     }
 
+    /**
+     * @param $tissueSample String
+     */
     public function setTissueSample($tissueSample)
     {
         $this->tissueSample = $tissueSample;

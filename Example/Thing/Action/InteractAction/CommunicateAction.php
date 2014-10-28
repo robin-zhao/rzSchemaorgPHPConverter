@@ -42,33 +42,51 @@ class CommunicateAction extends InteractAction
      */
     private $url = "http://schema.org/CommunicateAction";
 
+    /**
+     * @return Example\Thing
+     */
     public function getAbout()
     {
         return $this->about;
     }
 
+    /**
+     * @param $about Example\Thing
+     */
     public function setAbout($about)
     {
         $this->about = $about;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\Language
+     */
     public function getLanguage()
     {
         return $this->language;
     }
 
+    /**
+     * @param $language Example\Thing\Intangible\Language
+     */
     public function setLanguage($language)
     {
         $this->language = $language;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
+     */
     public function getRecipient()
     {
         return $this->recipient;
     }
 
+    /**
+     * @param $recipient Example\Thing\Organization|Example\Thing\Intangible\Audience|Example\Thing\Person
+     */
     public function setRecipient($recipient)
     {
         $this->recipient = $recipient;

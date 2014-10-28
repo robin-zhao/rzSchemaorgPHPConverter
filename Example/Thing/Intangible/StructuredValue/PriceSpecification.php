@@ -84,99 +84,153 @@ class PriceSpecification extends StructuredValue
      */
     private $url = "http://schema.org/PriceSpecification";
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function getEligibleQuantity()
     {
         return $this->eligibleQuantity;
     }
 
+    /**
+     * @param $eligibleQuantity Example\Thing\Intangible\StructuredValue\QuantitativeValue
+     */
     public function setEligibleQuantity($eligibleQuantity)
     {
         $this->eligibleQuantity = $eligibleQuantity;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Intangible\StructuredValue\PriceSpecification
+     */
     public function getEligibleTransactionVolume()
     {
         return $this->eligibleTransactionVolume;
     }
 
+    /**
+     * @param $eligibleTransactionVolume Example\Thing\Intangible\StructuredValue\PriceSpecification
+     */
     public function setEligibleTransactionVolume($eligibleTransactionVolume)
     {
         $this->eligibleTransactionVolume = $eligibleTransactionVolume;
         return $this;
     }
 
+    /**
+     * @return Float
+     */
     public function getMaxPrice()
     {
         return $this->maxPrice;
     }
 
+    /**
+     * @param $maxPrice Float
+     */
     public function setMaxPrice($maxPrice)
     {
         $this->maxPrice = $maxPrice;
         return $this;
     }
 
+    /**
+     * @return Float
+     */
     public function getMinPrice()
     {
         return $this->minPrice;
     }
 
+    /**
+     * @param $minPrice Float
+     */
     public function setMinPrice($minPrice)
     {
         $this->minPrice = $minPrice;
         return $this;
     }
 
+    /**
+     * @return String|Float
+     */
     public function getPrice()
     {
         return $this->price;
     }
 
+    /**
+     * @param $price String|Float
+     */
     public function setPrice($price)
     {
         $this->price = $price;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPriceCurrency()
     {
         return $this->priceCurrency;
     }
 
+    /**
+     * @param $priceCurrency String
+     */
     public function setPriceCurrency($priceCurrency)
     {
         $this->priceCurrency = $priceCurrency;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getValidFrom()
     {
         return $this->validFrom;
     }
 
+    /**
+     * @param $validFrom DateTime
+     */
     public function setValidFrom($validFrom)
     {
         $this->validFrom = $validFrom;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getValidThrough()
     {
         return $this->validThrough;
     }
 
+    /**
+     * @param $validThrough DateTime
+     */
     public function setValidThrough($validThrough)
     {
         $this->validThrough = $validThrough;
         return $this;
     }
 
+    /**
+     * @return Boolean
+     */
     public function getValueAddedTaxIncluded()
     {
         return $this->valueAddedTaxIncluded;
     }
 
+    /**
+     * @param $valueAddedTaxIncluded Boolean
+     */
     public function setValueAddedTaxIncluded($valueAddedTaxIncluded)
     {
         $this->valueAddedTaxIncluded = $valueAddedTaxIncluded;

@@ -28,11 +28,17 @@ class MedicalCause extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalCause";
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getCauseOf()
     {
         return $this->causeOf;
     }
 
+    /**
+     * @param $causeOf Example\Thing\MedicalEntity
+     */
     public function setCauseOf($causeOf)
     {
         $this->causeOf = $causeOf;

@@ -70,77 +70,119 @@ class Diet extends CreativeWork
      */
     private $url = "http://schema.org/Diet";
 
+    /**
+     * @return String
+     */
     public function getDietFeatures()
     {
         return $this->dietFeatures;
     }
 
+    /**
+     * @param $dietFeatures String
+     */
     public function setDietFeatures($dietFeatures)
     {
         $this->dietFeatures = $dietFeatures;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization|Example\Thing\Person
+     */
     public function getEndorsers()
     {
         return $this->endorsers;
     }
 
+    /**
+     * @param $endorsers Example\Thing\Organization|Example\Thing\Person
+     */
     public function setEndorsers($endorsers)
     {
         $this->endorsers = $endorsers;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getExpertConsiderations()
     {
         return $this->expertConsiderations;
     }
 
+    /**
+     * @param $expertConsiderations String
+     */
     public function setExpertConsiderations($expertConsiderations)
     {
         $this->expertConsiderations = $expertConsiderations;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getOverview()
     {
         return $this->overview;
     }
 
+    /**
+     * @param $overview String
+     */
     public function setOverview($overview)
     {
         $this->overview = $overview;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPhysiologicalBenefits()
     {
         return $this->physiologicalBenefits;
     }
 
+    /**
+     * @param $physiologicalBenefits String
+     */
     public function setPhysiologicalBenefits($physiologicalBenefits)
     {
         $this->physiologicalBenefits = $physiologicalBenefits;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getProprietaryName()
     {
         return $this->proprietaryName;
     }
 
+    /**
+     * @param $proprietaryName String
+     */
     public function setProprietaryName($proprietaryName)
     {
         $this->proprietaryName = $proprietaryName;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getRisks()
     {
         return $this->risks;
     }
 
+    /**
+     * @param $risks String
+     */
     public function setRisks($risks)
     {
         $this->risks = $risks;

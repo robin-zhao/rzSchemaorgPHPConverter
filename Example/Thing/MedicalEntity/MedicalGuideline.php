@@ -49,44 +49,68 @@ class MedicalGuideline extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalGuideline";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalEvidenceLevel
+     */
     public function getEvidenceLevel()
     {
         return $this->evidenceLevel;
     }
 
+    /**
+     * @param $evidenceLevel Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalEvidenceLevel
+     */
     public function setEvidenceLevel($evidenceLevel)
     {
         $this->evidenceLevel = $evidenceLevel;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getEvidenceOrigin()
     {
         return $this->evidenceOrigin;
     }
 
+    /**
+     * @param $evidenceOrigin String
+     */
     public function setEvidenceOrigin($evidenceOrigin)
     {
         $this->evidenceOrigin = $evidenceOrigin;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getGuidelineDate()
     {
         return $this->guidelineDate;
     }
 
+    /**
+     * @param $guidelineDate DateTime
+     */
     public function setGuidelineDate($guidelineDate)
     {
         $this->guidelineDate = $guidelineDate;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getGuidelineSubject()
     {
         return $this->guidelineSubject;
     }
 
+    /**
+     * @param $guidelineSubject Example\Thing\MedicalEntity
+     */
     public function setGuidelineSubject($guidelineSubject)
     {
         $this->guidelineSubject = $guidelineSubject;

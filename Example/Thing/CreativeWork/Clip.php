@@ -63,66 +63,102 @@ class Clip extends CreativeWork
      */
     private $url = "http://schema.org/Clip";
 
+    /**
+     * @return Integer
+     */
     public function getClipNumber()
     {
         return $this->clipNumber;
     }
 
+    /**
+     * @param $clipNumber Integer
+     */
     public function setClipNumber($clipNumber)
     {
         $this->clipNumber = $clipNumber;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Episode
+     */
     public function getPartOfEpisode()
     {
         return $this->partOfEpisode;
     }
 
+    /**
+     * @param $partOfEpisode Example\Thing\CreativeWork\Episode
+     */
     public function setPartOfEpisode($partOfEpisode)
     {
         $this->partOfEpisode = $partOfEpisode;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Season
+     */
     public function getPartOfSeason()
     {
         return $this->partOfSeason;
     }
 
+    /**
+     * @param $partOfSeason Example\Thing\CreativeWork\Season
+     */
     public function setPartOfSeason($partOfSeason)
     {
         $this->partOfSeason = $partOfSeason;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Series
+     */
     public function getPartOfSeries()
     {
         return $this->partOfSeries;
     }
 
+    /**
+     * @param $partOfSeries Example\Thing\CreativeWork\Series
+     */
     public function setPartOfSeries($partOfSeries)
     {
         $this->partOfSeries = $partOfSeries;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPosition()
     {
         return $this->position;
     }
 
+    /**
+     * @param $position String
+     */
     public function setPosition($position)
     {
         $this->position = $position;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Event\PublicationEvent
+     */
     public function getPublication()
     {
         return $this->publication;
     }
 
+    /**
+     * @param $publication Example\Thing\Event\PublicationEvent
+     */
     public function setPublication($publication)
     {
         $this->publication = $publication;

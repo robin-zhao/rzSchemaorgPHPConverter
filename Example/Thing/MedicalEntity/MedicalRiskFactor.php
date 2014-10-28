@@ -28,11 +28,17 @@ class MedicalRiskFactor extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalRiskFactor";
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getIncreasesRiskOf()
     {
         return $this->increasesRiskOf;
     }
 
+    /**
+     * @param $increasesRiskOf Example\Thing\MedicalEntity
+     */
     public function setIncreasesRiskOf($increasesRiskOf)
     {
         $this->increasesRiskOf = $increasesRiskOf;

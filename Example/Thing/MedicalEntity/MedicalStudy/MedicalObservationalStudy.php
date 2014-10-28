@@ -28,11 +28,17 @@ class MedicalObservationalStudy extends MedicalStudy
      */
     private $url = "http://schema.org/MedicalObservationalStudy";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalObservationalStudyDesign
+     */
     public function getStudyDesign()
     {
         return $this->studyDesign;
     }
 
+    /**
+     * @param $studyDesign Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalObservationalStudyDesign
+     */
     public function setStudyDesign($studyDesign)
     {
         $this->studyDesign = $studyDesign;

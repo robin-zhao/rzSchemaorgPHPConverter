@@ -105,132 +105,204 @@ class DietarySupplement extends MedicalTherapy
      */
     private $url = "http://schema.org/DietarySupplement";
 
+    /**
+     * @return String
+     */
     public function getActiveIngredient()
     {
         return $this->activeIngredient;
     }
 
+    /**
+     * @param $activeIngredient String
+     */
     public function setActiveIngredient($activeIngredient)
     {
         $this->activeIngredient = $activeIngredient;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getBackground()
     {
         return $this->background;
     }
 
+    /**
+     * @param $background String
+     */
     public function setBackground($background)
     {
         $this->background = $background;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getDosageForm()
     {
         return $this->dosageForm;
     }
 
+    /**
+     * @param $dosageForm String
+     */
     public function setDosageForm($dosageForm)
     {
         $this->dosageForm = $dosageForm;
         return $this;
     }
 
+    /**
+     * @return Boolean
+     */
     public function getIsProprietary()
     {
         return $this->isProprietary;
     }
 
+    /**
+     * @param $isProprietary Boolean
+     */
     public function setIsProprietary($isProprietary)
     {
         $this->isProprietary = $isProprietary;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
+     */
     public function getLegalStatus()
     {
         return $this->legalStatus;
     }
 
+    /**
+     * @param $legalStatus Example\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
+     */
     public function setLegalStatus($legalStatus)
     {
         $this->legalStatus = $legalStatus;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getManufacturer()
     {
         return $this->manufacturer;
     }
 
+    /**
+     * @param $manufacturer Example\Thing\Organization
+     */
     public function setManufacturer($manufacturer)
     {
         $this->manufacturer = $manufacturer;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\MaximumDoseSchedule
+     */
     public function getMaximumIntake()
     {
         return $this->maximumIntake;
     }
 
+    /**
+     * @param $maximumIntake Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\MaximumDoseSchedule
+     */
     public function setMaximumIntake($maximumIntake)
     {
         $this->maximumIntake = $maximumIntake;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getMechanismOfAction()
     {
         return $this->mechanismOfAction;
     }
 
+    /**
+     * @param $mechanismOfAction String
+     */
     public function setMechanismOfAction($mechanismOfAction)
     {
         $this->mechanismOfAction = $mechanismOfAction;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getNonProprietaryName()
     {
         return $this->nonProprietaryName;
     }
 
+    /**
+     * @param $nonProprietaryName String
+     */
     public function setNonProprietaryName($nonProprietaryName)
     {
         $this->nonProprietaryName = $nonProprietaryName;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\RecommendedDoseSchedule
+     */
     public function getRecommendedIntake()
     {
         return $this->recommendedIntake;
     }
 
+    /**
+     * @param $recommendedIntake Example\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\RecommendedDoseSchedule
+     */
     public function setRecommendedIntake($recommendedIntake)
     {
         $this->recommendedIntake = $recommendedIntake;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSafetyConsideration()
     {
         return $this->safetyConsideration;
     }
 
+    /**
+     * @param $safetyConsideration String
+     */
     public function setSafetyConsideration($safetyConsideration)
     {
         $this->safetyConsideration = $safetyConsideration;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getTargetPopulation()
     {
         return $this->targetPopulation;
     }
 
+    /**
+     * @param $targetPopulation String
+     */
     public function setTargetPopulation($targetPopulation)
     {
         $this->targetPopulation = $targetPopulation;

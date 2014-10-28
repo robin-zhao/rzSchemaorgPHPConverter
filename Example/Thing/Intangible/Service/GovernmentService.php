@@ -28,11 +28,17 @@ class GovernmentService extends Service
      */
     private $url = "http://schema.org/GovernmentService";
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getServiceOperator()
     {
         return $this->serviceOperator;
     }
 
+    /**
+     * @param $serviceOperator Example\Thing\Organization
+     */
     public function setServiceOperator($serviceOperator)
     {
         $this->serviceOperator = $serviceOperator;

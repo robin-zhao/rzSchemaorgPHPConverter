@@ -84,99 +84,153 @@ class AnatomicalStructure extends MedicalEntity
      */
     private $url = "http://schema.org/AnatomicalStructure";
 
+    /**
+     * @return String
+     */
     public function getAssociatedPathophysiology()
     {
         return $this->associatedPathophysiology;
     }
 
+    /**
+     * @param $associatedPathophysiology String
+     */
     public function setAssociatedPathophysiology($associatedPathophysiology)
     {
         $this->associatedPathophysiology = $associatedPathophysiology;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getBodyLocation()
     {
         return $this->bodyLocation;
     }
 
+    /**
+     * @param $bodyLocation String
+     */
     public function setBodyLocation($bodyLocation)
     {
         $this->bodyLocation = $bodyLocation;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getConnectedTo()
     {
         return $this->connectedTo;
     }
 
+    /**
+     * @param $connectedTo Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setConnectedTo($connectedTo)
     {
         $this->connectedTo = $connectedTo;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function getDiagram()
     {
         return $this->diagram;
     }
 
+    /**
+     * @param $diagram Example\Thing\CreativeWork\MediaObject\ImageObject
+     */
     public function setDiagram($diagram)
     {
         $this->diagram = $diagram;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getFunction()
     {
         return $this->function;
     }
 
+    /**
+     * @param $function String
+     */
     public function setFunction($function)
     {
         $this->function = $function;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalSystem
+     */
     public function getPartOfSystem()
     {
         return $this->partOfSystem;
     }
 
+    /**
+     * @param $partOfSystem Example\Thing\MedicalEntity\AnatomicalSystem
+     */
     public function setPartOfSystem($partOfSystem)
     {
         $this->partOfSystem = $partOfSystem;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalCondition
+     */
     public function getRelatedCondition()
     {
         return $this->relatedCondition;
     }
 
+    /**
+     * @param $relatedCondition Example\Thing\MedicalEntity\MedicalCondition
+     */
     public function setRelatedCondition($relatedCondition)
     {
         $this->relatedCondition = $relatedCondition;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getRelatedTherapy()
     {
         return $this->relatedTherapy;
     }
 
+    /**
+     * @param $relatedTherapy Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setRelatedTherapy($relatedTherapy)
     {
         $this->relatedTherapy = $relatedTherapy;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getSubStructure()
     {
         return $this->subStructure;
     }
 
+    /**
+     * @param $subStructure Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setSubStructure($subStructure)
     {
         $this->subStructure = $subStructure;

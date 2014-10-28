@@ -63,66 +63,102 @@ class MedicalStudy extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalStudy";
 
+    /**
+     * @return String
+     */
     public function getOutcome()
     {
         return $this->outcome;
     }
 
+    /**
+     * @param $outcome String
+     */
     public function setOutcome($outcome)
     {
         $this->outcome = $outcome;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getPopulation()
     {
         return $this->population;
     }
 
+    /**
+     * @param $population String
+     */
     public function setPopulation($population)
     {
         $this->population = $population;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getSponsor()
     {
         return $this->sponsor;
     }
 
+    /**
+     * @param $sponsor Example\Thing\Organization
+     */
     public function setSponsor($sponsor)
     {
         $this->sponsor = $sponsor;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalStudyStatus
+     */
     public function getStatus()
     {
         return $this->status;
     }
 
+    /**
+     * @param $status Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalStudyStatus
+     */
     public function setStatus($status)
     {
         $this->status = $status;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Place\AdministrativeArea
+     */
     public function getStudyLocation()
     {
         return $this->studyLocation;
     }
 
+    /**
+     * @param $studyLocation Example\Thing\Place\AdministrativeArea
+     */
     public function setStudyLocation($studyLocation)
     {
         $this->studyLocation = $studyLocation;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity
+     */
     public function getStudySubject()
     {
         return $this->studySubject;
     }
 
+    /**
+     * @param $studySubject Example\Thing\MedicalEntity
+     */
     public function setStudySubject($studySubject)
     {
         $this->studySubject = $studySubject;

@@ -28,11 +28,17 @@ class MedicalTestPanel extends MedicalTest
      */
     private $url = "http://schema.org/MedicalTestPanel";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTest
+     */
     public function getSubTest()
     {
         return $this->subTest;
     }
 
+    /**
+     * @param $subTest Example\Thing\MedicalEntity\MedicalTest
+     */
     public function setSubTest($subTest)
     {
         $this->subTest = $subTest;

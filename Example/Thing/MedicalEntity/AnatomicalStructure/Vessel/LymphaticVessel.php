@@ -42,33 +42,51 @@ class LymphaticVessel extends Vessel
      */
     private $url = "http://schema.org/LymphaticVessel";
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
+     */
     public function getOriginatesFrom()
     {
         return $this->originatesFrom;
     }
 
+    /**
+     * @param $originatesFrom Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
+     */
     public function setOriginatesFrom($originatesFrom)
     {
         $this->originatesFrom = $originatesFrom;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function getRegionDrained()
     {
         return $this->regionDrained;
     }
 
+    /**
+     * @param $regionDrained Example\Thing\MedicalEntity\AnatomicalSystem|Example\Thing\MedicalEntity\AnatomicalStructure
+     */
     public function setRegionDrained($regionDrained)
     {
         $this->regionDrained = $regionDrained;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
+     */
     public function getRunsTo()
     {
         return $this->runsTo;
     }
 
+    /**
+     * @param $runsTo Example\Thing\MedicalEntity\AnatomicalStructure\Vessel
+     */
     public function setRunsTo($runsTo)
     {
         $this->runsTo = $runsTo;

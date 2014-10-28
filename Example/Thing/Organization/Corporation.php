@@ -28,11 +28,17 @@ class Corporation extends Organization
      */
     private $url = "http://schema.org/Corporation";
 
+    /**
+     * @return String
+     */
     public function getTickerSymbol()
     {
         return $this->tickerSymbol;
     }
 
+    /**
+     * @param $tickerSymbol String
+     */
     public function setTickerSymbol($tickerSymbol)
     {
         $this->tickerSymbol = $tickerSymbol;

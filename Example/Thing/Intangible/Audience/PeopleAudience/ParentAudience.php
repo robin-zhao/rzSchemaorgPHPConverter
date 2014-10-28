@@ -35,22 +35,34 @@ class ParentAudience extends PeopleAudience
      */
     private $url = "http://schema.org/ParentAudience";
 
+    /**
+     * @return Float
+     */
     public function getChildMaxAge()
     {
         return $this->childMaxAge;
     }
 
+    /**
+     * @param $childMaxAge Float
+     */
     public function setChildMaxAge($childMaxAge)
     {
         $this->childMaxAge = $childMaxAge;
         return $this;
     }
 
+    /**
+     * @return Float
+     */
     public function getChildMinAge()
     {
         return $this->childMinAge;
     }
 
+    /**
+     * @param $childMinAge Float
+     */
     public function setChildMinAge($childMinAge)
     {
         $this->childMinAge = $childMinAge;

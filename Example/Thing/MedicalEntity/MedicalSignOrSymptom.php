@@ -35,22 +35,34 @@ class MedicalSignOrSymptom extends MedicalEntity
      */
     private $url = "http://schema.org/MedicalSignOrSymptom";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalCause
+     */
     public function getCause()
     {
         return $this->cause;
     }
 
+    /**
+     * @param $cause Example\Thing\MedicalEntity\MedicalCause
+     */
     public function setCause($cause)
     {
         $this->cause = $cause;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getPossibleTreatment()
     {
         return $this->possibleTreatment;
     }
 
+    /**
+     * @param $possibleTreatment Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setPossibleTreatment($possibleTreatment)
     {
         $this->possibleTreatment = $possibleTreatment;

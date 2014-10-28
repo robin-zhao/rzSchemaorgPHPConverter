@@ -133,176 +133,272 @@ class Series extends CreativeWork
      */
     private $url = "http://schema.org/Series";
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getActor()
     {
         return $this->actor;
     }
 
+    /**
+     * @param $actor Example\Thing\Person
+     */
     public function setActor($actor)
     {
         $this->actor = $actor;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getActors()
     {
         return $this->actors;
     }
 
+    /**
+     * @param $actors Example\Thing\Person
+     */
     public function setActors($actors)
     {
         $this->actors = $actors;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getDirector()
     {
         return $this->director;
     }
 
+    /**
+     * @param $director Example\Thing\Person
+     */
     public function setDirector($director)
     {
         $this->director = $director;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getDirectors()
     {
         return $this->directors;
     }
 
+    /**
+     * @param $directors Example\Thing\Person
+     */
     public function setDirectors($directors)
     {
         $this->directors = $directors;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getEndDate()
     {
         return $this->endDate;
     }
 
+    /**
+     * @param $endDate DateTime
+     */
     public function setEndDate($endDate)
     {
         $this->endDate = $endDate;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Episode
+     */
     public function getEpisode()
     {
         return $this->episode;
     }
 
+    /**
+     * @param $episode Example\Thing\CreativeWork\Episode
+     */
     public function setEpisode($episode)
     {
         $this->episode = $episode;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Episode
+     */
     public function getEpisodes()
     {
         return $this->episodes;
     }
 
+    /**
+     * @param $episodes Example\Thing\CreativeWork\Episode
+     */
     public function setEpisodes($episodes)
     {
         $this->episodes = $episodes;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person|Example\Thing\Organization\PerformingGroup\MusicGroup
+     */
     public function getMusicBy()
     {
         return $this->musicBy;
     }
 
+    /**
+     * @param $musicBy Example\Thing\Person|Example\Thing\Organization\PerformingGroup\MusicGroup
+     */
     public function setMusicBy($musicBy)
     {
         $this->musicBy = $musicBy;
         return $this;
     }
 
+    /**
+     * @return Float
+     */
     public function getNumberOfEpisodes()
     {
         return $this->numberOfEpisodes;
     }
 
+    /**
+     * @param $numberOfEpisodes Float
+     */
     public function setNumberOfEpisodes($numberOfEpisodes)
     {
         $this->numberOfEpisodes = $numberOfEpisodes;
         return $this;
     }
 
+    /**
+     * @return Float
+     */
     public function getNumberOfSeasons()
     {
         return $this->numberOfSeasons;
     }
 
+    /**
+     * @param $numberOfSeasons Float
+     */
     public function setNumberOfSeasons($numberOfSeasons)
     {
         $this->numberOfSeasons = $numberOfSeasons;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Person
+     */
     public function getProducer()
     {
         return $this->producer;
     }
 
+    /**
+     * @param $producer Example\Thing\Person
+     */
     public function setProducer($producer)
     {
         $this->producer = $producer;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\Organization
+     */
     public function getProductionCompany()
     {
         return $this->productionCompany;
     }
 
+    /**
+     * @param $productionCompany Example\Thing\Organization
+     */
     public function setProductionCompany($productionCompany)
     {
         $this->productionCompany = $productionCompany;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Season
+     */
     public function getSeason()
     {
         return $this->season;
     }
 
+    /**
+     * @param $season Example\Thing\CreativeWork\Season
+     */
     public function setSeason($season)
     {
         $this->season = $season;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\Season
+     */
     public function getSeasons()
     {
         return $this->seasons;
     }
 
+    /**
+     * @param $seasons Example\Thing\CreativeWork\Season
+     */
     public function setSeasons($seasons)
     {
         $this->seasons = $seasons;
         return $this;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getStartDate()
     {
         return $this->startDate;
     }
 
+    /**
+     * @param $startDate DateTime
+     */
     public function setStartDate($startDate)
     {
         $this->startDate = $startDate;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\CreativeWork\MediaObject\VideoObject
+     */
     public function getTrailer()
     {
         return $this->trailer;
     }
 
+    /**
+     * @param $trailer Example\Thing\CreativeWork\MediaObject\VideoObject
+     */
     public function setTrailer($trailer)
     {
         $this->trailer = $trailer;

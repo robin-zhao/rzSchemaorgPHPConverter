@@ -68,77 +68,119 @@ class Thing
      */
     private $url = "http://schema.org/Thing";
 
+    /**
+     * @return String
+     */
     public function getAdditionalType()
     {
         return $this->additionalType;
     }
 
+    /**
+     * @param $additionalType String
+     */
     public function setAdditionalType($additionalType)
     {
         $this->additionalType = $additionalType;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getAlternateName()
     {
         return $this->alternateName;
     }
 
+    /**
+     * @param $alternateName String
+     */
     public function setAlternateName($alternateName)
     {
         $this->alternateName = $alternateName;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getDescription()
     {
         return $this->description;
     }
 
+    /**
+     * @param $description String
+     */
     public function setDescription($description)
     {
         $this->description = $description;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getImage()
     {
         return $this->image;
     }
 
+    /**
+     * @param $image String
+     */
     public function setImage($image)
     {
         $this->image = $image;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getName()
     {
         return $this->name;
     }
 
+    /**
+     * @param $name String
+     */
     public function setName($name)
     {
         $this->name = $name;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getSameAs()
     {
         return $this->sameAs;
     }
 
+    /**
+     * @param $sameAs String
+     */
     public function setSameAs($sameAs)
     {
         $this->sameAs = $sameAs;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getUrl()
     {
         return $this->url;
     }
 
+    /**
+     * @param $url String
+     */
     public function setUrl($url)
     {
         $this->url = $url;

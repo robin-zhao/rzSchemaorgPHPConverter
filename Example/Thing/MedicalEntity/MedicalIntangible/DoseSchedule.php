@@ -49,44 +49,68 @@ class DoseSchedule extends MedicalIntangible
      */
     private $url = "http://schema.org/DoseSchedule";
 
+    /**
+     * @return String
+     */
     public function getDoseUnit()
     {
         return $this->doseUnit;
     }
 
+    /**
+     * @param $doseUnit String
+     */
     public function setDoseUnit($doseUnit)
     {
         $this->doseUnit = $doseUnit;
         return $this;
     }
 
+    /**
+     * @return Float
+     */
     public function getDoseValue()
     {
         return $this->doseValue;
     }
 
+    /**
+     * @param $doseValue Float
+     */
     public function setDoseValue($doseValue)
     {
         $this->doseValue = $doseValue;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getFrequency()
     {
         return $this->frequency;
     }
 
+    /**
+     * @param $frequency String
+     */
     public function setFrequency($frequency)
     {
         $this->frequency = $frequency;
         return $this;
     }
 
+    /**
+     * @return String
+     */
     public function getTargetPopulation()
     {
         return $this->targetPopulation;
     }
 
+    /**
+     * @param $targetPopulation String
+     */
     public function setTargetPopulation($targetPopulation)
     {
         $this->targetPopulation = $targetPopulation;

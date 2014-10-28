@@ -35,22 +35,34 @@ class MedicalClinic extends MedicalOrganization
      */
     private $url = "http://schema.org/MedicalClinic";
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalTest|Example\Thing\MedicalEntity\MedicalProcedure|Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function getAvailableService()
     {
         return $this->availableService;
     }
 
+    /**
+     * @param $availableService Example\Thing\MedicalEntity\MedicalTest|Example\Thing\MedicalEntity\MedicalProcedure|Example\Thing\MedicalEntity\MedicalTherapy
+     */
     public function setAvailableService($availableService)
     {
         $this->availableService = $availableService;
         return $this;
     }
 
+    /**
+     * @return Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
+     */
     public function getMedicalSpecialty()
     {
         return $this->medicalSpecialty;
     }
 
+    /**
+     * @param $medicalSpecialty Example\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
+     */
     public function setMedicalSpecialty($medicalSpecialty)
     {
         $this->medicalSpecialty = $medicalSpecialty;
