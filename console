@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * This is a command line script to generate php classes from http://schema.rdfs.org/all.json
+ *
+ * @author Jian Zhao
+ *
+ * @email boborabit@gmail.com
+ */
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
