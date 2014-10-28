@@ -102,7 +102,12 @@ class ClassBuilder
     private function buildClass()
     {
         $string = array();
-        $string [] = '<?php' . "\n";
+        $string [] = '<?php';
+        $string [] = '/**';
+        $string [] = ' * This is an auto generated file.';
+        $string [] = ' * You are encouraged to edit the script below:';
+        $string [] = ' * https://github.com/robin-zhao/rzSchemaorgPHPConverter/';
+        $string [] = ' */' . "\n";
 
         if (count($this->ancestors) > 0) {
             $string [] = 'namespace ' . $this->rootNamespace . '\\' . implode('\\', $this->ancestors) . ';' . "\n";
