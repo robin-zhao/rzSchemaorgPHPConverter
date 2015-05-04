@@ -55,7 +55,7 @@ And a simple Json-ld formatter based on the classes.
 
 ### Known Issue
 
-    - Example\Thing\Class   Class is a reserved keyword... 
+    - Robinzhao\SchemaOrg\Thing\Class   Class is a reserved keyword... 
 
     - @todo  
          - Handle Date, Time, DateTime type

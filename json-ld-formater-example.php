@@ -1,14 +1,13 @@
 <?php
 
 use Composer\Autoload\ClassLoader;
-use Example\Thing\CreativeWork\MediaObject\VideoObject;
-use Example\Thing\Person;
+use Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\VideoObject;
+use Robinzhao\SchemaOrg\Thing\Person;
 use Robinzhao\JsonLDFormatter;
 
 require 'vendor/autoload.php';
 
 $loader = new ClassLoader();
-$loader->add('Example', '.');
 $loader->add('Robinzhao', '.');
 $loader->register();
 

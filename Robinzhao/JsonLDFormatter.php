@@ -2,7 +2,7 @@
 
 namespace Robinzhao;
 
-use Example\Thing;
+use Robinzhao\SchemaOrg\Thing;
 
 /**
  * Description of JsonLDFormatter

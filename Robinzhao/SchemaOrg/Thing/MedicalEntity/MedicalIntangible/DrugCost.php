@@ -1,0 +1,169 @@
+<?php
+/**
+ * This is an auto generated file.
+ * You are encouraged to edit the script below:
+ * https://github.com/robin-zhao/rzSchemaorgPHPConverter/
+ */
+
+namespace Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible;
+
+use Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible;
+
+/**
+ * Drug Cost
+ * http://schema.org/DrugCost
+ */
+class DrugCost extends MedicalIntangible
+{
+
+    /**
+     * The location in which the status applies.
+     *
+     * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
+     */
+    protected $applicableLocation;
+
+    /**
+     * The category of cost, such as wholesale, retail, reimbursement cap, etc.
+     *
+     * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
+     */
+    protected $costCategory;
+
+    /**
+     * The currency (in 3-letter ISO 4217 format) of the drug cost.
+     *
+     * @var String
+     */
+    protected $costCurrency;
+
+    /**
+     * Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.
+     *
+     * @var String
+     */
+    protected $costOrigin;
+
+    /**
+     * The cost per unit of the drug.
+     *
+     * @var Float|String
+     */
+    protected $costPerUnit;
+
+    /**
+     * The unit in which the drug is measured, e.g. '5 mg tablet'.
+     *
+     * @var String
+     */
+    protected $drugUnit;
+
+    /**
+     * schema.org context url
+     * @var String
+     */
+    protected $context = "http://schema.org/DrugCost";
+
+    /**
+     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
+     */
+    public function getApplicableLocation()
+    {
+        return $this->applicableLocation;
+    }
+
+    /**
+     * @param $applicableLocation Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
+     */
+    public function setApplicableLocation($applicableLocation)
+    {
+        $this->applicableLocation = $applicableLocation;
+        return $this;
+    }
+
+    /**
+     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
+     */
+    public function getCostCategory()
+    {
+        return $this->costCategory;
+    }
+
+    /**
+     * @param $costCategory Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
+     */
+    public function setCostCategory($costCategory)
+    {
+        $this->costCategory = $costCategory;
+        return $this;
+    }
+
+    /**
+     * @return String
+     */
+    public function getCostCurrency()
+    {
+        return $this->costCurrency;
+    }
+
+    /**
+     * @param $costCurrency String
+     */
+    public function setCostCurrency($costCurrency)
+    {
+        $this->costCurrency = $costCurrency;
+        return $this;
+    }
+
+    /**
+     * @return String
+     */
+    public function getCostOrigin()
+    {
+        return $this->costOrigin;
+    }
+
+    /**
+     * @param $costOrigin String
+     */
+    public function setCostOrigin($costOrigin)
+    {
+        $this->costOrigin = $costOrigin;
+        return $this;
+    }
+
+    /**
+     * @return Float|String
+     */
+    public function getCostPerUnit()
+    {
+        return $this->costPerUnit;
+    }
+
+    /**
+     * @param $costPerUnit Float|String
+     */
+    public function setCostPerUnit($costPerUnit)
+    {
+        $this->costPerUnit = $costPerUnit;
+        return $this;
+    }
+
+    /**
+     * @return String
+     */
+    public function getDrugUnit()
+    {
+        return $this->drugUnit;
+    }
+
+    /**
+     * @param $drugUnit String
+     */
+    public function setDrugUnit($drugUnit)
+    {
+        $this->drugUnit = $drugUnit;
+        return $this;
+    }
+
+}

@@ -32,7 +32,7 @@ $cmd->setCode(function(InputInterface $input, OutputInterface $output) {
 
     foreach ((array) $json->types as $each) {
         $classBuilder = new ClassBuilder($each);
-        $classBuilder->setRootNamespace('Example');
+        $classBuilder->setRootNamespace('Robinzhao');
         $classBuilder->build();
     }
 });
@@ -42,7 +42,7 @@ $app->run();
 class ClassBuilder
 {
 
-    private $rootNamespace = 'Example';
+    private $rootNamespace = 'Robinzhao';
     private $className;
     private $ancestors;
     private $specificProperties;
@@ -96,7 +96,7 @@ class ClassBuilder
 
     private function touchFile()
     {
-        $dir = __DIR__ . '/' . $this->rootNamespace . '/' . implode('/', $this->ancestors);
+        $dir = __DIR__ . '/' . $this->rootNamespace . '/SchemaOrg/' . implode('/', $this->ancestors);
         if (!file_exists($dir)) {
             mkdir($dir, 0755, true);
         }
@@ -116,12 +116,12 @@ class ClassBuilder
         $string [] = ' */' . "\n";
 
         if (count($this->ancestors) > 0) {
-            $string [] = 'namespace ' . $this->rootNamespace . '\\' . implode('\\', $this->ancestors) . ';' . "\n";
-            $string [] = 'use ' . $this->rootNamespace . '\\' . implode('\\', $this->ancestors) . ';' . "\n";
+            $string [] = 'namespace ' . $this->rootNamespace . '\\SchemaOrg\\' . implode('\\', $this->ancestors) . ';' . "\n";
+            $string [] = 'use ' . $this->rootNamespace . '\\SchemaOrg\\' . implode('\\', $this->ancestors) . ';' . "\n";
             $this->buildClassDoc($string);
             $string [] = 'class ' . $this->className . ' extends ' . $this->ancestors[count($this->ancestors) - 1];
         } else {
-            $string [] = 'namespace ' . $this->rootNamespace . ';' . "\n";
+            $string [] = 'namespace ' . $this->rootNamespace . '\\SchemaOrg;' . "\n";
             $this->buildClassDoc($string);
             $string [] = 'class ' . $this->className;
         }
@@ -196,9 +196,9 @@ class ClassBuilder
                 $ancestors = self::$typeConf->$range->ancestors;
                 $ancestors[] = $range;
                 if (count($ancestors) > 0) {
-                    $namespace = $this->rootNamespace . '\\' . implode('\\', $ancestors);
+                    $namespace = $this->rootNamespace . '\\SchemaOrg\\' . implode('\\', $ancestors);
                 } else {
-                    $namespace = $this->rootNamespace;
+                    $namespace = $this->rootNamespace . '\\SchemaOrg';
                 }
 
                 $rangeName [] = $namespace;
