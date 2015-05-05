@@ -28,11 +28,17 @@ And a simple Json-ld formatter based on the classes.
     $videoObject = new VideoObject();
 
     $person = new Person();
-    $person->setTelephone('123456789');
-    $person->setName('Robin');
-    $videoObject->setAuthor($person);
+    $person->addTelephone('123456789');
+    $person->addName('Robin');
+    $videoObject->addAuthor($person);
 
-    $videoObject->setAward("This is a award.");
+    $person = new Person();
+    $person->addTelephone('987654321');
+    $person->addName('Tom');
+    $videoObject->addAuthor($person);
+
+    $videoObject->addAward("This is a award.");
+    $videoObject->addAward("This is another award.");
 
     $formatter = new JsonLDFormatter($videoObject);
 
@@ -44,13 +50,24 @@ And a simple Json-ld formatter based on the classes.
     {
         "@context": "http://schema.org",
         "@type": "VideoObject",
-        "author": {
-            "@type": "Person",
-            "name": "Robin",
-            "telephone": "123456789"
-        },
-        "award": "This is a award."
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Robin",
+                "telephone": "123456789"
+            },
+            {
+                "@type": "Person",
+                "name": "Tom",
+                "telephone": "987654321"
+            }
+        ],
+        "award": [
+            "This is a award.",
+            "This is another award."
+        ]
     }
+
 
 
 ### Known Issue
@@ -59,5 +76,4 @@ And a simple Json-ld formatter based on the classes.
 
     - @todo  
          - Handle Date, Time, DateTime type
-         - support json array
          - ...

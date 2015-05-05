@@ -27,12 +27,13 @@ class JsonLDFormatter
         $reflectionClass = new \ReflectionClass($this->thing);
         $properties = $reflectionClass->getProperties();
         foreach ($properties as $property) {
-            $getter = 'get' . ucfirst($property->name);
-            if (!is_null($this->thing->$getter())) {
+
+            $propertyValue = $this->thing->{$property->name};
+            if (!is_null($propertyValue)) {
 
                 if ($property->name == 'context') {
 
-                    $parts = explode('/', $this->thing->$getter());
+                    $parts = explode('/', $propertyValue);
                     $type = array_pop($parts);
 
                     if ($topLevel) {
@@ -52,15 +53,25 @@ class JsonLDFormatter
                     switch ($match[1])
                     {
                         case 'String':
-                            $this->json->{$property->name} = $this->thing->$getter();
+                            if (count($propertyValue) > 1) {
+                                $this->json->{$property->name} = $propertyValue;
+                            } else {
+                                $this->json->{$property->name} = current($propertyValue);
+                            }
                             break;
                         case 'Integer':
                         case 'float':
                             throw new Exception('no implemented');
-                            break;
                         default:
-                            $newJsonLDFormatter = new self($this->thing->$getter());
-                            $this->json->{$property->name} = $newJsonLDFormatter->format(false);
+                            if (count($propertyValue) > 1) {
+                                foreach ($propertyValue as $each) {
+                                    $newJsonLDFormatter = new self($each);
+                                    $this->json->{$property->name} []= $newJsonLDFormatter->format(false);
+                                }
+                            } else {
+                                $newJsonLDFormatter = new self(current($propertyValue));
+                                $this->json->{$property->name} = $newJsonLDFormatter->format(false);
+                            }
                             break;
                     }
                 }

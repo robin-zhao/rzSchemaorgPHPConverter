@@ -14,11 +14,17 @@ $loader->register();
 $videoObject = new VideoObject();
 
 $person = new Person();
-$person->setTelephone('123456789');
-$person->setName('Robin');
-$videoObject->setAuthor($person);
+$person->addTelephone('123456789');
+$person->addName('Robin');
+$videoObject->addAuthor($person);
 
-$videoObject->setAward("This is a award.");
+$person = new Person();
+$person->addTelephone('987654321');
+$person->addName('Tom');
+$videoObject->addAuthor($person);
+
+$videoObject->addAward("This is a award.");
+$videoObject->addAward("This is another award.");
 
 $formatter = new JsonLDFormatter($videoObject);
 
