@@ -21,220 +21,148 @@ class Movie extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $actor;
+    public $actor;
 
     /**
      * A cast member of the movie, tv/radio series, season, episode, or video. (legacy spelling; see singular form, actor)
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $actors;
+    public $actors;
 
     /**
      * The director of the movie, tv/radio episode or series.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $director;
+    public $director;
 
     /**
      * The director of the movie, tv/radio episode or series. (legacy spelling; see singular form, director)
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $directors;
+    public $directors;
 
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    protected $duration;
+    public $duration;
 
     /**
      * The composer of the movie or TV/radio soundtrack.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person|Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
      */
-    protected $musicBy;
+    public $musicBy;
 
     /**
      * The producer of the movie, tv/radio series, season, or episode, or video.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $producer;
+    public $producer;
 
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $productionCompany;
+    public $productionCompany;
 
     /**
      * The trailer of a movie or tv/radio series, season, or episode.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\VideoObject
      */
-    protected $trailer;
+    public $trailer;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Movie";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getActor()
-    {
-        return $this->actor;
-    }
+    public $context = "http://schema.org/Movie";
 
     /**
      * @param $actor Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setActor($actor)
+    public function addActor($actor)
     {
-        $this->actor = $actor;
+        $this->actor []= $actor;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getActors()
-    {
-        return $this->actors;
     }
 
     /**
      * @param $actors Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setActors($actors)
+    public function addActors($actors)
     {
-        $this->actors = $actors;
+        $this->actors []= $actors;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getDirector()
-    {
-        return $this->director;
     }
 
     /**
      * @param $director Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setDirector($director)
+    public function addDirector($director)
     {
-        $this->director = $director;
+        $this->director []= $director;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getDirectors()
-    {
-        return $this->directors;
     }
 
     /**
      * @param $directors Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setDirectors($directors)
+    public function addDirectors($directors)
     {
-        $this->directors = $directors;
+        $this->directors []= $directors;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
-     */
-    public function getDuration()
-    {
-        return $this->duration;
     }
 
     /**
      * @param $duration Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    public function setDuration($duration)
+    public function addDuration($duration)
     {
-        $this->duration = $duration;
+        $this->duration []= $duration;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person|Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
-     */
-    public function getMusicBy()
-    {
-        return $this->musicBy;
     }
 
     /**
      * @param $musicBy Robinzhao\SchemaOrg\Thing\Person|Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
      */
-    public function setMusicBy($musicBy)
+    public function addMusicBy($musicBy)
     {
-        $this->musicBy = $musicBy;
+        $this->musicBy []= $musicBy;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getProducer()
-    {
-        return $this->producer;
     }
 
     /**
      * @param $producer Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setProducer($producer)
+    public function addProducer($producer)
     {
-        $this->producer = $producer;
+        $this->producer []= $producer;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getProductionCompany()
-    {
-        return $this->productionCompany;
     }
 
     /**
      * @param $productionCompany Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setProductionCompany($productionCompany)
+    public function addProductionCompany($productionCompany)
     {
-        $this->productionCompany = $productionCompany;
+        $this->productionCompany []= $productionCompany;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\VideoObject
-     */
-    public function getTrailer()
-    {
-        return $this->trailer;
     }
 
     /**
      * @param $trailer Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\VideoObject
      */
-    public function setTrailer($trailer)
+    public function addTrailer($trailer)
     {
-        $this->trailer = $trailer;
+        $this->trailer []= $trailer;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class Festival extends Event
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Festival";
+    public $context = "http://schema.org/Festival";
 
 }

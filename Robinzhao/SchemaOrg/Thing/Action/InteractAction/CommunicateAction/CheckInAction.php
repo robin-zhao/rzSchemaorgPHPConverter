@@ -20,6 +20,6 @@ class CheckInAction extends CommunicateAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/CheckInAction";
+    public $context = "http://schema.org/CheckInAction";
 
 }

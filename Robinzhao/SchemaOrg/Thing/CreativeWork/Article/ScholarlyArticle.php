@@ -20,6 +20,6 @@ class ScholarlyArticle extends Article
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ScholarlyArticle";
+    public $context = "http://schema.org/ScholarlyArticle";
 
 }

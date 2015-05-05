@@ -20,6 +20,6 @@ class AutoRental extends AutomotiveBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AutoRental";
+    public $context = "http://schema.org/AutoRental";
 
 }

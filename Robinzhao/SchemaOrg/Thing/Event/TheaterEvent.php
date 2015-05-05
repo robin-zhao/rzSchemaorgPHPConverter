@@ -20,6 +20,6 @@ class TheaterEvent extends Event
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TheaterEvent";
+    public $context = "http://schema.org/TheaterEvent";
 
 }

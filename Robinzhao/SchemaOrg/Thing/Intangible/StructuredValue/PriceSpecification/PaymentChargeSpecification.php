@@ -21,52 +21,36 @@ class PaymentChargeSpecification extends PriceSpecification
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    protected $appliesToDeliveryMethod;
+    public $appliesToDeliveryMethod;
 
     /**
      * The payment method(s) to which the payment charge specification applies.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\PaymentMethod
      */
-    protected $appliesToPaymentMethod;
+    public $appliesToPaymentMethod;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PaymentChargeSpecification";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
-     */
-    public function getAppliesToDeliveryMethod()
-    {
-        return $this->appliesToDeliveryMethod;
-    }
+    public $context = "http://schema.org/PaymentChargeSpecification";
 
     /**
      * @param $appliesToDeliveryMethod Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    public function setAppliesToDeliveryMethod($appliesToDeliveryMethod)
+    public function addAppliesToDeliveryMethod($appliesToDeliveryMethod)
     {
-        $this->appliesToDeliveryMethod = $appliesToDeliveryMethod;
+        $this->appliesToDeliveryMethod []= $appliesToDeliveryMethod;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\PaymentMethod
-     */
-    public function getAppliesToPaymentMethod()
-    {
-        return $this->appliesToPaymentMethod;
     }
 
     /**
      * @param $appliesToPaymentMethod Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\PaymentMethod
      */
-    public function setAppliesToPaymentMethod($appliesToPaymentMethod)
+    public function addAppliesToPaymentMethod($appliesToPaymentMethod)
     {
-        $this->appliesToPaymentMethod = $appliesToPaymentMethod;
+        $this->appliesToPaymentMethod []= $appliesToPaymentMethod;
         return $this;
     }
 

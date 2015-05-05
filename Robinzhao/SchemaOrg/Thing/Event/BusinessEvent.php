@@ -20,6 +20,6 @@ class BusinessEvent extends Event
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BusinessEvent";
+    public $context = "http://schema.org/BusinessEvent";
 
 }

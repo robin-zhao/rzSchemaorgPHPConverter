@@ -20,6 +20,6 @@ class ReactAction extends AssessAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ReactAction";
+    public $context = "http://schema.org/ReactAction";
 
 }

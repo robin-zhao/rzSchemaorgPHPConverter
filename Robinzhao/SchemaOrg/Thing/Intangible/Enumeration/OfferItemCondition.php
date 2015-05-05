@@ -20,6 +20,6 @@ class OfferItemCondition extends Enumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/OfferItemCondition";
+    public $context = "http://schema.org/OfferItemCondition";
 
 }

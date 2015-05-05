@@ -21,76 +21,52 @@ class Physician extends MedicalOrganization
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalProcedure|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    protected $availableService;
+    public $availableService;
 
     /**
      * A hospital with which the physician or office is affiliated.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\CivicStructure\Hospital
      */
-    protected $hospitalAffiliation;
+    public $hospitalAffiliation;
 
     /**
      * A medical specialty of the provider.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
-    protected $medicalSpecialty;
+    public $medicalSpecialty;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Physician";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalProcedure|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
-     */
-    public function getAvailableService()
-    {
-        return $this->availableService;
-    }
+    public $context = "http://schema.org/Physician";
 
     /**
      * @param $availableService Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalProcedure|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    public function setAvailableService($availableService)
+    public function addAvailableService($availableService)
     {
-        $this->availableService = $availableService;
+        $this->availableService []= $availableService;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\CivicStructure\Hospital
-     */
-    public function getHospitalAffiliation()
-    {
-        return $this->hospitalAffiliation;
     }
 
     /**
      * @param $hospitalAffiliation Robinzhao\SchemaOrg\Thing\Place\CivicStructure\Hospital
      */
-    public function setHospitalAffiliation($hospitalAffiliation)
+    public function addHospitalAffiliation($hospitalAffiliation)
     {
-        $this->hospitalAffiliation = $hospitalAffiliation;
+        $this->hospitalAffiliation []= $hospitalAffiliation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
-     */
-    public function getMedicalSpecialty()
-    {
-        return $this->medicalSpecialty;
     }
 
     /**
      * @param $medicalSpecialty Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
-    public function setMedicalSpecialty($medicalSpecialty)
+    public function addMedicalSpecialty($medicalSpecialty)
     {
-        $this->medicalSpecialty = $medicalSpecialty;
+        $this->medicalSpecialty []= $medicalSpecialty;
         return $this;
     }
 

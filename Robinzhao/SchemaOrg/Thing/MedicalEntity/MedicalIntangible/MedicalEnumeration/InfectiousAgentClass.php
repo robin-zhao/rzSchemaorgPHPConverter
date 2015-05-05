@@ -20,6 +20,6 @@ class InfectiousAgentClass extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/InfectiousAgentClass";
+    public $context = "http://schema.org/InfectiousAgentClass";
 
 }

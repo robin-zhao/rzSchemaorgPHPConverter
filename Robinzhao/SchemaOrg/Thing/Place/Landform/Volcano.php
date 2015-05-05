@@ -20,6 +20,6 @@ class Volcano extends Landform
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Volcano";
+    public $context = "http://schema.org/Volcano";
 
 }

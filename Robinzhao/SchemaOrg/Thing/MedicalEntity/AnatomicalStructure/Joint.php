@@ -21,76 +21,52 @@ class Joint extends AnatomicalStructure
      *
      * @var String
      */
-    protected $biomechnicalClass;
+    public $biomechnicalClass;
 
     /**
      * The degree of mobility the joint allows.
      *
      * @var String
      */
-    protected $functionalClass;
+    public $functionalClass;
 
     /**
      * The name given to how bone physically connects to each other.
      *
      * @var String
      */
-    protected $structuralClass;
+    public $structuralClass;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Joint";
-
-    /**
-     * @return String
-     */
-    public function getBiomechnicalClass()
-    {
-        return $this->biomechnicalClass;
-    }
+    public $context = "http://schema.org/Joint";
 
     /**
      * @param $biomechnicalClass String
      */
-    public function setBiomechnicalClass($biomechnicalClass)
+    public function addBiomechnicalClass($biomechnicalClass)
     {
-        $this->biomechnicalClass = $biomechnicalClass;
+        $this->biomechnicalClass []= $biomechnicalClass;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFunctionalClass()
-    {
-        return $this->functionalClass;
     }
 
     /**
      * @param $functionalClass String
      */
-    public function setFunctionalClass($functionalClass)
+    public function addFunctionalClass($functionalClass)
     {
-        $this->functionalClass = $functionalClass;
+        $this->functionalClass []= $functionalClass;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getStructuralClass()
-    {
-        return $this->structuralClass;
     }
 
     /**
      * @param $structuralClass String
      */
-    public function setStructuralClass($structuralClass)
+    public function addStructuralClass($structuralClass)
     {
-        $this->structuralClass = $structuralClass;
+        $this->structuralClass []= $structuralClass;
         return $this;
     }
 

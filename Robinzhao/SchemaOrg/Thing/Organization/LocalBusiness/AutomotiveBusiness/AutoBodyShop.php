@@ -20,6 +20,6 @@ class AutoBodyShop extends AutomotiveBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AutoBodyShop";
+    public $context = "http://schema.org/AutoBodyShop";
 
 }

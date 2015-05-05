@@ -21,28 +21,20 @@ class PlanAction extends OrganizeAction
      *
      * @var DateTime
      */
-    protected $scheduledTime;
+    public $scheduledTime;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PlanAction";
-
-    /**
-     * @return DateTime
-     */
-    public function getScheduledTime()
-    {
-        return $this->scheduledTime;
-    }
+    public $context = "http://schema.org/PlanAction";
 
     /**
      * @param $scheduledTime DateTime
      */
-    public function setScheduledTime($scheduledTime)
+    public function addScheduledTime($scheduledTime)
     {
-        $this->scheduledTime = $scheduledTime;
+        $this->scheduledTime []= $scheduledTime;
         return $this;
     }
 

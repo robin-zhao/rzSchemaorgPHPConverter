@@ -21,52 +21,36 @@ class SellAction extends TradeAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $buyer;
+    public $buyer;
 
     /**
      * The warranty promise(s) included in the offer.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\WarrantyPromise
      */
-    protected $warrantyPromise;
+    public $warrantyPromise;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SellAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getBuyer()
-    {
-        return $this->buyer;
-    }
+    public $context = "http://schema.org/SellAction";
 
     /**
      * @param $buyer Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setBuyer($buyer)
+    public function addBuyer($buyer)
     {
-        $this->buyer = $buyer;
+        $this->buyer []= $buyer;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\WarrantyPromise
-     */
-    public function getWarrantyPromise()
-    {
-        return $this->warrantyPromise;
     }
 
     /**
      * @param $warrantyPromise Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\WarrantyPromise
      */
-    public function setWarrantyPromise($warrantyPromise)
+    public function addWarrantyPromise($warrantyPromise)
     {
-        $this->warrantyPromise = $warrantyPromise;
+        $this->warrantyPromise []= $warrantyPromise;
         return $this;
     }
 

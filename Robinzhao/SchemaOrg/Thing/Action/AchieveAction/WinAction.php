@@ -21,28 +21,20 @@ class WinAction extends AchieveAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $loser;
+    public $loser;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WinAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getLoser()
-    {
-        return $this->loser;
-    }
+    public $context = "http://schema.org/WinAction";
 
     /**
      * @param $loser Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setLoser($loser)
+    public function addLoser($loser)
     {
-        $this->loser = $loser;
+        $this->loser []= $loser;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class SubwayStation extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SubwayStation";
+    public $context = "http://schema.org/SubwayStation";
 
 }

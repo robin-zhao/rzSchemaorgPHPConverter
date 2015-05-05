@@ -20,6 +20,6 @@ class WarrantyScope extends Enumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WarrantyScope";
+    public $context = "http://schema.org/WarrantyScope";
 
 }

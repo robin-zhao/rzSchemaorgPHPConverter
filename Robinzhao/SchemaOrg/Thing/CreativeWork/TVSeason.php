@@ -21,28 +21,20 @@ class TVSeason extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\TVSeries
      */
-    protected $partOfTVSeries;
+    public $partOfTVSeries;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TVSeason";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\TVSeries
-     */
-    public function getPartOfTVSeries()
-    {
-        return $this->partOfTVSeries;
-    }
+    public $context = "http://schema.org/TVSeason";
 
     /**
      * @param $partOfTVSeries Robinzhao\SchemaOrg\Thing\CreativeWork\TVSeries
      */
-    public function setPartOfTVSeries($partOfTVSeries)
+    public function addPartOfTVSeries($partOfTVSeries)
     {
-        $this->partOfTVSeries = $partOfTVSeries;
+        $this->partOfTVSeries []= $partOfTVSeries;
         return $this;
     }
 

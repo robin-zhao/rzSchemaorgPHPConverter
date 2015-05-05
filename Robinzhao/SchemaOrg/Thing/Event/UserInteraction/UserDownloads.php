@@ -20,6 +20,6 @@ class UserDownloads extends UserInteraction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/UserDownloads";
+    public $context = "http://schema.org/UserDownloads";
 
 }

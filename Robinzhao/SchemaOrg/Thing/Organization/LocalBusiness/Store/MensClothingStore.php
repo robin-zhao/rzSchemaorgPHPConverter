@@ -20,6 +20,6 @@ class MensClothingStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MensClothingStore";
+    public $context = "http://schema.org/MensClothingStore";
 
 }

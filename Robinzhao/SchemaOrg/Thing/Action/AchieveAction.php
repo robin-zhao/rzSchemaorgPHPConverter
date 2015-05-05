@@ -20,6 +20,6 @@ class AchieveAction extends Action
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AchieveAction";
+    public $context = "http://schema.org/AchieveAction";
 
 }

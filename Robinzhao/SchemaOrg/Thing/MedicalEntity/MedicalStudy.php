@@ -21,148 +21,100 @@ class MedicalStudy extends MedicalEntity
      *
      * @var String
      */
-    protected $outcome;
+    public $outcome;
 
     /**
      * Any characteristics of the population used in the study, e.g. 'males under 65'.
      *
      * @var String
      */
-    protected $population;
+    public $population;
 
     /**
      * Sponsor of the study.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $sponsor;
+    public $sponsor;
 
     /**
      * The status of the study (enumerated).
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalStudyStatus
      */
-    protected $status;
+    public $status;
 
     /**
      * The location in which the study is taking/took place.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    protected $studyLocation;
+    public $studyLocation;
 
     /**
      * A subject of the study, i.e. one of the medical conditions, therapies, devices, drugs, etc. investigated by the study.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    protected $studySubject;
+    public $studySubject;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalStudy";
-
-    /**
-     * @return String
-     */
-    public function getOutcome()
-    {
-        return $this->outcome;
-    }
+    public $context = "http://schema.org/MedicalStudy";
 
     /**
      * @param $outcome String
      */
-    public function setOutcome($outcome)
+    public function addOutcome($outcome)
     {
-        $this->outcome = $outcome;
+        $this->outcome []= $outcome;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPopulation()
-    {
-        return $this->population;
     }
 
     /**
      * @param $population String
      */
-    public function setPopulation($population)
+    public function addPopulation($population)
     {
-        $this->population = $population;
+        $this->population []= $population;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getSponsor()
-    {
-        return $this->sponsor;
     }
 
     /**
      * @param $sponsor Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setSponsor($sponsor)
+    public function addSponsor($sponsor)
     {
-        $this->sponsor = $sponsor;
+        $this->sponsor []= $sponsor;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalStudyStatus
-     */
-    public function getStatus()
-    {
-        return $this->status;
     }
 
     /**
      * @param $status Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalStudyStatus
      */
-    public function setStatus($status)
+    public function addStatus($status)
     {
-        $this->status = $status;
+        $this->status []= $status;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
-     */
-    public function getStudyLocation()
-    {
-        return $this->studyLocation;
     }
 
     /**
      * @param $studyLocation Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    public function setStudyLocation($studyLocation)
+    public function addStudyLocation($studyLocation)
     {
-        $this->studyLocation = $studyLocation;
+        $this->studyLocation []= $studyLocation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity
-     */
-    public function getStudySubject()
-    {
-        return $this->studySubject;
     }
 
     /**
      * @param $studySubject Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    public function setStudySubject($studySubject)
+    public function addStudySubject($studySubject)
     {
-        $this->studySubject = $studySubject;
+        $this->studySubject []= $studySubject;
         return $this;
     }
 

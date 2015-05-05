@@ -20,6 +20,6 @@ class BlogPosting extends Article
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BlogPosting";
+    public $context = "http://schema.org/BlogPosting";
 
 }

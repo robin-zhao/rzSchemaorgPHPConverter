@@ -20,6 +20,6 @@ class CityHall extends GovernmentBuilding
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/CityHall";
+    public $context = "http://schema.org/CityHall";
 
 }

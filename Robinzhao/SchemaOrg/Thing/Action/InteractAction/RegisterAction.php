@@ -20,6 +20,6 @@ class RegisterAction extends InteractAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RegisterAction";
+    public $context = "http://schema.org/RegisterAction";
 
 }

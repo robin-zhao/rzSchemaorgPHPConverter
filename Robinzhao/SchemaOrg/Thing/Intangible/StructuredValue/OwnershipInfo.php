@@ -21,100 +21,68 @@ class OwnershipInfo extends StructuredValue
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $acquiredFrom;
+    public $acquiredFrom;
 
     /**
      * The date and time of obtaining the product.
      *
      * @var DateTime
      */
-    protected $ownedFrom;
+    public $ownedFrom;
 
     /**
      * The date and time of giving up ownership on the product.
      *
      * @var DateTime
      */
-    protected $ownedThrough;
+    public $ownedThrough;
 
     /**
      * The product that this structured value is referring to.
      *
      * @var Robinzhao\SchemaOrg\Thing\Product
      */
-    protected $typeOfGood;
+    public $typeOfGood;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/OwnershipInfo";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getAcquiredFrom()
-    {
-        return $this->acquiredFrom;
-    }
+    public $context = "http://schema.org/OwnershipInfo";
 
     /**
      * @param $acquiredFrom Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setAcquiredFrom($acquiredFrom)
+    public function addAcquiredFrom($acquiredFrom)
     {
-        $this->acquiredFrom = $acquiredFrom;
+        $this->acquiredFrom []= $acquiredFrom;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getOwnedFrom()
-    {
-        return $this->ownedFrom;
     }
 
     /**
      * @param $ownedFrom DateTime
      */
-    public function setOwnedFrom($ownedFrom)
+    public function addOwnedFrom($ownedFrom)
     {
-        $this->ownedFrom = $ownedFrom;
+        $this->ownedFrom []= $ownedFrom;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getOwnedThrough()
-    {
-        return $this->ownedThrough;
     }
 
     /**
      * @param $ownedThrough DateTime
      */
-    public function setOwnedThrough($ownedThrough)
+    public function addOwnedThrough($ownedThrough)
     {
-        $this->ownedThrough = $ownedThrough;
+        $this->ownedThrough []= $ownedThrough;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Product
-     */
-    public function getTypeOfGood()
-    {
-        return $this->typeOfGood;
     }
 
     /**
      * @param $typeOfGood Robinzhao\SchemaOrg\Thing\Product
      */
-    public function setTypeOfGood($typeOfGood)
+    public function addTypeOfGood($typeOfGood)
     {
-        $this->typeOfGood = $typeOfGood;
+        $this->typeOfGood []= $typeOfGood;
         return $this;
     }
 

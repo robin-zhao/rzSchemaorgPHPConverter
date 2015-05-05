@@ -20,6 +20,6 @@ class AgreeAction extends ReactAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AgreeAction";
+    public $context = "http://schema.org/AgreeAction";
 
 }

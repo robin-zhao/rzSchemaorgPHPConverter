@@ -21,100 +21,68 @@ class DrugStrength extends MedicalIntangible
      *
      * @var String
      */
-    protected $activeIngredient;
+    public $activeIngredient;
 
     /**
      * The location in which the strength is available.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    protected $availableIn;
+    public $availableIn;
 
     /**
      * The units of an active ingredient's strength, e.g. mg.
      *
      * @var String
      */
-    protected $strengthUnit;
+    public $strengthUnit;
 
     /**
      * The value of an active ingredient's strength, e.g. 325.
      *
      * @var Float
      */
-    protected $strengthValue;
+    public $strengthValue;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DrugStrength";
-
-    /**
-     * @return String
-     */
-    public function getActiveIngredient()
-    {
-        return $this->activeIngredient;
-    }
+    public $context = "http://schema.org/DrugStrength";
 
     /**
      * @param $activeIngredient String
      */
-    public function setActiveIngredient($activeIngredient)
+    public function addActiveIngredient($activeIngredient)
     {
-        $this->activeIngredient = $activeIngredient;
+        $this->activeIngredient []= $activeIngredient;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
-     */
-    public function getAvailableIn()
-    {
-        return $this->availableIn;
     }
 
     /**
      * @param $availableIn Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    public function setAvailableIn($availableIn)
+    public function addAvailableIn($availableIn)
     {
-        $this->availableIn = $availableIn;
+        $this->availableIn []= $availableIn;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getStrengthUnit()
-    {
-        return $this->strengthUnit;
     }
 
     /**
      * @param $strengthUnit String
      */
-    public function setStrengthUnit($strengthUnit)
+    public function addStrengthUnit($strengthUnit)
     {
-        $this->strengthUnit = $strengthUnit;
+        $this->strengthUnit []= $strengthUnit;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getStrengthValue()
-    {
-        return $this->strengthValue;
     }
 
     /**
      * @param $strengthValue Float
      */
-    public function setStrengthValue($strengthValue)
+    public function addStrengthValue($strengthValue)
     {
-        $this->strengthValue = $strengthValue;
+        $this->strengthValue []= $strengthValue;
         return $this;
     }
 

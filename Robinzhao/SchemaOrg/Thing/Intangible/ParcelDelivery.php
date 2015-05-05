@@ -21,268 +21,180 @@ class ParcelDelivery extends Intangible
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $carrier;
+    public $carrier;
 
     /**
      * Destination address.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    protected $deliveryAddress;
+    public $deliveryAddress;
 
     /**
      * New entry added as the package passes through each leg of its journey (from shipment to final delivery).
      *
      * @var Robinzhao\SchemaOrg\Thing\Event\DeliveryEvent
      */
-    protected $deliveryStatus;
+    public $deliveryStatus;
 
     /**
      * The earliest date the package may arrive.
      *
      * @var DateTime
      */
-    protected $expectedArrivalFrom;
+    public $expectedArrivalFrom;
 
     /**
      * The latest date the package may arrive.
      *
      * @var DateTime
      */
-    protected $expectedArrivalUntil;
+    public $expectedArrivalUntil;
 
     /**
      * Method used for delivery or shipping.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    protected $hasDeliveryMethod;
+    public $hasDeliveryMethod;
 
     /**
      * Item(s) being shipped.
      *
      * @var Robinzhao\SchemaOrg\Thing\Product
      */
-    protected $itemShipped;
+    public $itemShipped;
 
     /**
      * Shipper's address.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    protected $originAddress;
+    public $originAddress;
 
     /**
      * The overall order the items in this delivery were included in.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Order
      */
-    protected $partOfOrder;
+    public $partOfOrder;
 
     /**
      * Shipper tracking number.
      *
      * @var String
      */
-    protected $trackingNumber;
+    public $trackingNumber;
 
     /**
      * Tracking url for the parcel delivery.
      *
      * @var String
      */
-    protected $trackingUrl;
+    public $trackingUrl;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ParcelDelivery";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getCarrier()
-    {
-        return $this->carrier;
-    }
+    public $context = "http://schema.org/ParcelDelivery";
 
     /**
      * @param $carrier Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setCarrier($carrier)
+    public function addCarrier($carrier)
     {
-        $this->carrier = $carrier;
+        $this->carrier []= $carrier;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
-     */
-    public function getDeliveryAddress()
-    {
-        return $this->deliveryAddress;
     }
 
     /**
      * @param $deliveryAddress Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    public function setDeliveryAddress($deliveryAddress)
+    public function addDeliveryAddress($deliveryAddress)
     {
-        $this->deliveryAddress = $deliveryAddress;
+        $this->deliveryAddress []= $deliveryAddress;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event\DeliveryEvent
-     */
-    public function getDeliveryStatus()
-    {
-        return $this->deliveryStatus;
     }
 
     /**
      * @param $deliveryStatus Robinzhao\SchemaOrg\Thing\Event\DeliveryEvent
      */
-    public function setDeliveryStatus($deliveryStatus)
+    public function addDeliveryStatus($deliveryStatus)
     {
-        $this->deliveryStatus = $deliveryStatus;
+        $this->deliveryStatus []= $deliveryStatus;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getExpectedArrivalFrom()
-    {
-        return $this->expectedArrivalFrom;
     }
 
     /**
      * @param $expectedArrivalFrom DateTime
      */
-    public function setExpectedArrivalFrom($expectedArrivalFrom)
+    public function addExpectedArrivalFrom($expectedArrivalFrom)
     {
-        $this->expectedArrivalFrom = $expectedArrivalFrom;
+        $this->expectedArrivalFrom []= $expectedArrivalFrom;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getExpectedArrivalUntil()
-    {
-        return $this->expectedArrivalUntil;
     }
 
     /**
      * @param $expectedArrivalUntil DateTime
      */
-    public function setExpectedArrivalUntil($expectedArrivalUntil)
+    public function addExpectedArrivalUntil($expectedArrivalUntil)
     {
-        $this->expectedArrivalUntil = $expectedArrivalUntil;
+        $this->expectedArrivalUntil []= $expectedArrivalUntil;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
-     */
-    public function getHasDeliveryMethod()
-    {
-        return $this->hasDeliveryMethod;
     }
 
     /**
      * @param $hasDeliveryMethod Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    public function setHasDeliveryMethod($hasDeliveryMethod)
+    public function addHasDeliveryMethod($hasDeliveryMethod)
     {
-        $this->hasDeliveryMethod = $hasDeliveryMethod;
+        $this->hasDeliveryMethod []= $hasDeliveryMethod;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Product
-     */
-    public function getItemShipped()
-    {
-        return $this->itemShipped;
     }
 
     /**
      * @param $itemShipped Robinzhao\SchemaOrg\Thing\Product
      */
-    public function setItemShipped($itemShipped)
+    public function addItemShipped($itemShipped)
     {
-        $this->itemShipped = $itemShipped;
+        $this->itemShipped []= $itemShipped;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
-     */
-    public function getOriginAddress()
-    {
-        return $this->originAddress;
     }
 
     /**
      * @param $originAddress Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    public function setOriginAddress($originAddress)
+    public function addOriginAddress($originAddress)
     {
-        $this->originAddress = $originAddress;
+        $this->originAddress []= $originAddress;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Order
-     */
-    public function getPartOfOrder()
-    {
-        return $this->partOfOrder;
     }
 
     /**
      * @param $partOfOrder Robinzhao\SchemaOrg\Thing\Intangible\Order
      */
-    public function setPartOfOrder($partOfOrder)
+    public function addPartOfOrder($partOfOrder)
     {
-        $this->partOfOrder = $partOfOrder;
+        $this->partOfOrder []= $partOfOrder;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTrackingNumber()
-    {
-        return $this->trackingNumber;
     }
 
     /**
      * @param $trackingNumber String
      */
-    public function setTrackingNumber($trackingNumber)
+    public function addTrackingNumber($trackingNumber)
     {
-        $this->trackingNumber = $trackingNumber;
+        $this->trackingNumber []= $trackingNumber;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTrackingUrl()
-    {
-        return $this->trackingUrl;
     }
 
     /**
      * @param $trackingUrl String
      */
-    public function setTrackingUrl($trackingUrl)
+    public function addTrackingUrl($trackingUrl)
     {
-        $this->trackingUrl = $trackingUrl;
+        $this->trackingUrl []= $trackingUrl;
         return $this;
     }
 

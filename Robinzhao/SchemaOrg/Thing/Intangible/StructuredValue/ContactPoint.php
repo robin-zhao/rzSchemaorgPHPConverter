@@ -21,220 +21,148 @@ class ContactPoint extends StructuredValue
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    protected $areaServed;
+    public $areaServed;
 
     /**
      * A language someone may use with the item.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Language
      */
-    protected $availableLanguage;
+    public $availableLanguage;
 
     /**
      * An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers.)
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\ContactPointOption
      */
-    protected $contactOption;
+    public $contactOption;
 
     /**
      * A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
      *
      * @var String
      */
-    protected $contactType;
+    public $contactType;
 
     /**
      * Email address.
      *
      * @var String
      */
-    protected $email;
+    public $email;
 
     /**
      * The fax number.
      *
      * @var String
      */
-    protected $faxNumber;
+    public $faxNumber;
 
     /**
      * The hours during which this contact point is available.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OpeningHoursSpecification
      */
-    protected $hoursAvailable;
+    public $hoursAvailable;
 
     /**
      * The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").
      *
      * @var Robinzhao\SchemaOrg\Thing\Product|String
      */
-    protected $productSupported;
+    public $productSupported;
 
     /**
      * The telephone number.
      *
      * @var String
      */
-    protected $telephone;
+    public $telephone;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ContactPoint";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
-     */
-    public function getAreaServed()
-    {
-        return $this->areaServed;
-    }
+    public $context = "http://schema.org/ContactPoint";
 
     /**
      * @param $areaServed Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    public function setAreaServed($areaServed)
+    public function addAreaServed($areaServed)
     {
-        $this->areaServed = $areaServed;
+        $this->areaServed []= $areaServed;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Language
-     */
-    public function getAvailableLanguage()
-    {
-        return $this->availableLanguage;
     }
 
     /**
      * @param $availableLanguage Robinzhao\SchemaOrg\Thing\Intangible\Language
      */
-    public function setAvailableLanguage($availableLanguage)
+    public function addAvailableLanguage($availableLanguage)
     {
-        $this->availableLanguage = $availableLanguage;
+        $this->availableLanguage []= $availableLanguage;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\ContactPointOption
-     */
-    public function getContactOption()
-    {
-        return $this->contactOption;
     }
 
     /**
      * @param $contactOption Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\ContactPointOption
      */
-    public function setContactOption($contactOption)
+    public function addContactOption($contactOption)
     {
-        $this->contactOption = $contactOption;
+        $this->contactOption []= $contactOption;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getContactType()
-    {
-        return $this->contactType;
     }
 
     /**
      * @param $contactType String
      */
-    public function setContactType($contactType)
+    public function addContactType($contactType)
     {
-        $this->contactType = $contactType;
+        $this->contactType []= $contactType;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getEmail()
-    {
-        return $this->email;
     }
 
     /**
      * @param $email String
      */
-    public function setEmail($email)
+    public function addEmail($email)
     {
-        $this->email = $email;
+        $this->email []= $email;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFaxNumber()
-    {
-        return $this->faxNumber;
     }
 
     /**
      * @param $faxNumber String
      */
-    public function setFaxNumber($faxNumber)
+    public function addFaxNumber($faxNumber)
     {
-        $this->faxNumber = $faxNumber;
+        $this->faxNumber []= $faxNumber;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OpeningHoursSpecification
-     */
-    public function getHoursAvailable()
-    {
-        return $this->hoursAvailable;
     }
 
     /**
      * @param $hoursAvailable Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OpeningHoursSpecification
      */
-    public function setHoursAvailable($hoursAvailable)
+    public function addHoursAvailable($hoursAvailable)
     {
-        $this->hoursAvailable = $hoursAvailable;
+        $this->hoursAvailable []= $hoursAvailable;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Product|String
-     */
-    public function getProductSupported()
-    {
-        return $this->productSupported;
     }
 
     /**
      * @param $productSupported Robinzhao\SchemaOrg\Thing\Product|String
      */
-    public function setProductSupported($productSupported)
+    public function addProductSupported($productSupported)
     {
-        $this->productSupported = $productSupported;
+        $this->productSupported []= $productSupported;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTelephone()
-    {
-        return $this->telephone;
     }
 
     /**
      * @param $telephone String
      */
-    public function setTelephone($telephone)
+    public function addTelephone($telephone)
     {
-        $this->telephone = $telephone;
+        $this->telephone []= $telephone;
         return $this;
     }
 

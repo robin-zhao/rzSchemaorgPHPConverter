@@ -20,6 +20,6 @@ class DrugPregnancyCategory extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DrugPregnancyCategory";
+    public $context = "http://schema.org/DrugPregnancyCategory";
 
 }

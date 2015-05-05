@@ -20,6 +20,6 @@ class Beach extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Beach";
+    public $context = "http://schema.org/Beach";
 
 }

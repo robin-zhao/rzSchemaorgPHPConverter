@@ -20,6 +20,6 @@ class SelfStorage extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SelfStorage";
+    public $context = "http://schema.org/SelfStorage";
 
 }

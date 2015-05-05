@@ -20,6 +20,6 @@ class ReportedDoseSchedule extends DoseSchedule
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ReportedDoseSchedule";
+    public $context = "http://schema.org/ReportedDoseSchedule";
 
 }

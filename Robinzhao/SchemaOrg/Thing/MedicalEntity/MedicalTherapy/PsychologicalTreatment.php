@@ -20,6 +20,6 @@ class PsychologicalTreatment extends MedicalTherapy
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PsychologicalTreatment";
+    public $context = "http://schema.org/PsychologicalTreatment";
 
 }

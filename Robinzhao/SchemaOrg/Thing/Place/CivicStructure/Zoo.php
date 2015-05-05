@@ -20,6 +20,6 @@ class Zoo extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Zoo";
+    public $context = "http://schema.org/Zoo";
 
 }

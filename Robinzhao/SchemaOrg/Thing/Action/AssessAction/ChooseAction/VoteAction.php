@@ -21,28 +21,20 @@ class VoteAction extends ChooseAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $candidate;
+    public $candidate;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/VoteAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getCandidate()
-    {
-        return $this->candidate;
-    }
+    public $context = "http://schema.org/VoteAction";
 
     /**
      * @param $candidate Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setCandidate($candidate)
+    public function addCandidate($candidate)
     {
-        $this->candidate = $candidate;
+        $this->candidate []= $candidate;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class MedicalGuidelineContraindication extends MedicalGuideline
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalGuidelineContraindication";
+    public $context = "http://schema.org/MedicalGuidelineContraindication";
 
 }

@@ -21,76 +21,52 @@ class BusinessAudience extends Audience
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    protected $numberofEmployees;
+    public $numberofEmployees;
 
     /**
      * The size of the business in annual revenue.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    protected $yearlyRevenue;
+    public $yearlyRevenue;
 
     /**
      * The age of the business.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    protected $yearsInOperation;
+    public $yearsInOperation;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BusinessAudience";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
-     */
-    public function getNumberofEmployees()
-    {
-        return $this->numberofEmployees;
-    }
+    public $context = "http://schema.org/BusinessAudience";
 
     /**
      * @param $numberofEmployees Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    public function setNumberofEmployees($numberofEmployees)
+    public function addNumberofEmployees($numberofEmployees)
     {
-        $this->numberofEmployees = $numberofEmployees;
+        $this->numberofEmployees []= $numberofEmployees;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
-     */
-    public function getYearlyRevenue()
-    {
-        return $this->yearlyRevenue;
     }
 
     /**
      * @param $yearlyRevenue Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    public function setYearlyRevenue($yearlyRevenue)
+    public function addYearlyRevenue($yearlyRevenue)
     {
-        $this->yearlyRevenue = $yearlyRevenue;
+        $this->yearlyRevenue []= $yearlyRevenue;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
-     */
-    public function getYearsInOperation()
-    {
-        return $this->yearsInOperation;
     }
 
     /**
      * @param $yearsInOperation Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    public function setYearsInOperation($yearsInOperation)
+    public function addYearsInOperation($yearsInOperation)
     {
-        $this->yearsInOperation = $yearsInOperation;
+        $this->yearsInOperation []= $yearsInOperation;
         return $this;
     }
 

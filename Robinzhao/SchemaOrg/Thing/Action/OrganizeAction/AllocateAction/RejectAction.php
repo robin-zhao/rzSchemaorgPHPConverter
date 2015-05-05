@@ -20,6 +20,6 @@ class RejectAction extends AllocateAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RejectAction";
+    public $context = "http://schema.org/RejectAction";
 
 }

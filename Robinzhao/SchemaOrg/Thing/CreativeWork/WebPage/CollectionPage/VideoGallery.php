@@ -20,6 +20,6 @@ class VideoGallery extends CollectionPage
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/VideoGallery";
+    public $context = "http://schema.org/VideoGallery";
 
 }

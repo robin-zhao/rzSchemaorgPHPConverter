@@ -20,6 +20,6 @@ class HealthClub extends HealthAndBeautyBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/HealthClub";
+    public $context = "http://schema.org/HealthClub";
 
 }

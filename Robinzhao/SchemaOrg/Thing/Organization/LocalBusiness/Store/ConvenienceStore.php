@@ -20,6 +20,6 @@ class ConvenienceStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ConvenienceStore";
+    public $context = "http://schema.org/ConvenienceStore";
 
 }

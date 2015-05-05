@@ -21,28 +21,20 @@ class EndorseAction extends ReactAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $endorsee;
+    public $endorsee;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/EndorseAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getEndorsee()
-    {
-        return $this->endorsee;
-    }
+    public $context = "http://schema.org/EndorseAction";
 
     /**
      * @param $endorsee Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setEndorsee($endorsee)
+    public function addEndorsee($endorsee)
     {
-        $this->endorsee = $endorsee;
+        $this->endorsee []= $endorsee;
         return $this;
     }
 

@@ -21,124 +21,84 @@ class Code extends CreativeWork
      *
      * @var String
      */
-    protected $codeRepository;
+    public $codeRepository;
 
     /**
      * The computer programming language.
      *
      * @var Robinzhao\SchemaOrg\Thing
      */
-    protected $programmingLanguage;
+    public $programmingLanguage;
 
     /**
      * Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0)
      *
      * @var String
      */
-    protected $runtime;
+    public $runtime;
 
     /**
      * Full (compile ready) solution, code snippet, inline code, scripts, template.
      *
      * @var String
      */
-    protected $sampleType;
+    public $sampleType;
 
     /**
      * Target Operating System / Product to which the code applies.  If applies to several versions, just the product name can be used.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\SoftwareApplication
      */
-    protected $targetProduct;
+    public $targetProduct;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Code";
-
-    /**
-     * @return String
-     */
-    public function getCodeRepository()
-    {
-        return $this->codeRepository;
-    }
+    public $context = "http://schema.org/Code";
 
     /**
      * @param $codeRepository String
      */
-    public function setCodeRepository($codeRepository)
+    public function addCodeRepository($codeRepository)
     {
-        $this->codeRepository = $codeRepository;
+        $this->codeRepository []= $codeRepository;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing
-     */
-    public function getProgrammingLanguage()
-    {
-        return $this->programmingLanguage;
     }
 
     /**
      * @param $programmingLanguage Robinzhao\SchemaOrg\Thing
      */
-    public function setProgrammingLanguage($programmingLanguage)
+    public function addProgrammingLanguage($programmingLanguage)
     {
-        $this->programmingLanguage = $programmingLanguage;
+        $this->programmingLanguage []= $programmingLanguage;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRuntime()
-    {
-        return $this->runtime;
     }
 
     /**
      * @param $runtime String
      */
-    public function setRuntime($runtime)
+    public function addRuntime($runtime)
     {
-        $this->runtime = $runtime;
+        $this->runtime []= $runtime;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSampleType()
-    {
-        return $this->sampleType;
     }
 
     /**
      * @param $sampleType String
      */
-    public function setSampleType($sampleType)
+    public function addSampleType($sampleType)
     {
-        $this->sampleType = $sampleType;
+        $this->sampleType []= $sampleType;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\SoftwareApplication
-     */
-    public function getTargetProduct()
-    {
-        return $this->targetProduct;
     }
 
     /**
      * @param $targetProduct Robinzhao\SchemaOrg\Thing\CreativeWork\SoftwareApplication
      */
-    public function setTargetProduct($targetProduct)
+    public function addTargetProduct($targetProduct)
     {
-        $this->targetProduct = $targetProduct;
+        $this->targetProduct []= $targetProduct;
         return $this;
     }
 

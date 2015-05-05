@@ -20,6 +20,6 @@ class WPAdBlock extends WebPageElement
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WPAdBlock";
+    public $context = "http://schema.org/WPAdBlock";
 
 }

@@ -21,76 +21,52 @@ class FoodEstablishment extends LocalBusiness
      *
      * @var String
      */
-    protected $acceptsReservations;
+    public $acceptsReservations;
 
     /**
      * Either the actual menu or a URL of the menu.
      *
      * @var String
      */
-    protected $menu;
+    public $menu;
 
     /**
      * The cuisine of the restaurant.
      *
      * @var String
      */
-    protected $servesCuisine;
+    public $servesCuisine;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/FoodEstablishment";
-
-    /**
-     * @return String
-     */
-    public function getAcceptsReservations()
-    {
-        return $this->acceptsReservations;
-    }
+    public $context = "http://schema.org/FoodEstablishment";
 
     /**
      * @param $acceptsReservations String
      */
-    public function setAcceptsReservations($acceptsReservations)
+    public function addAcceptsReservations($acceptsReservations)
     {
-        $this->acceptsReservations = $acceptsReservations;
+        $this->acceptsReservations []= $acceptsReservations;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getMenu()
-    {
-        return $this->menu;
     }
 
     /**
      * @param $menu String
      */
-    public function setMenu($menu)
+    public function addMenu($menu)
     {
-        $this->menu = $menu;
+        $this->menu []= $menu;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getServesCuisine()
-    {
-        return $this->servesCuisine;
     }
 
     /**
      * @param $servesCuisine String
      */
-    public function setServesCuisine($servesCuisine)
+    public function addServesCuisine($servesCuisine)
     {
-        $this->servesCuisine = $servesCuisine;
+        $this->servesCuisine []= $servesCuisine;
         return $this;
     }
 

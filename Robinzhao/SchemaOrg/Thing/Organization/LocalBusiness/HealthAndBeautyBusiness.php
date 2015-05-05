@@ -20,6 +20,6 @@ class HealthAndBeautyBusiness extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/HealthAndBeautyBusiness";
+    public $context = "http://schema.org/HealthAndBeautyBusiness";
 
 }

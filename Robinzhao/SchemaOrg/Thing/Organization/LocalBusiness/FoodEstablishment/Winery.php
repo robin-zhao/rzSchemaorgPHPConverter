@@ -20,6 +20,6 @@ class Winery extends FoodEstablishment
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Winery";
+    public $context = "http://schema.org/Winery";
 
 }

@@ -21,28 +21,20 @@ class EducationalOrganization extends Organization
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $alumni;
+    public $alumni;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/EducationalOrganization";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getAlumni()
-    {
-        return $this->alumni;
-    }
+    public $context = "http://schema.org/EducationalOrganization";
 
     /**
      * @param $alumni Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setAlumni($alumni)
+    public function addAlumni($alumni)
     {
-        $this->alumni = $alumni;
+        $this->alumni []= $alumni;
         return $this;
     }
 

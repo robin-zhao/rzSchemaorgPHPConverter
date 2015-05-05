@@ -21,28 +21,20 @@ class WebApplication extends SoftwareApplication
      *
      * @var String
      */
-    protected $browserRequirements;
+    public $browserRequirements;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WebApplication";
-
-    /**
-     * @return String
-     */
-    public function getBrowserRequirements()
-    {
-        return $this->browserRequirements;
-    }
+    public $context = "http://schema.org/WebApplication";
 
     /**
      * @param $browserRequirements String
      */
-    public function setBrowserRequirements($browserRequirements)
+    public function addBrowserRequirements($browserRequirements)
     {
-        $this->browserRequirements = $browserRequirements;
+        $this->browserRequirements []= $browserRequirements;
         return $this;
     }
 

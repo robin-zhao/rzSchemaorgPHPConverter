@@ -20,6 +20,6 @@ class SkiResort extends SportsActivityLocation
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SkiResort";
+    public $context = "http://schema.org/SkiResort";
 
 }

@@ -21,76 +21,52 @@ class Artery extends Vessel
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $arterialBranch;
+    public $arterialBranch;
 
     /**
      * The anatomical or organ system that the artery originates from.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $source;
+    public $source;
 
     /**
      * The area to which the artery supplies blood to.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $supplyTo;
+    public $supplyTo;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Artery";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getArterialBranch()
-    {
-        return $this->arterialBranch;
-    }
+    public $context = "http://schema.org/Artery";
 
     /**
      * @param $arterialBranch Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setArterialBranch($arterialBranch)
+    public function addArterialBranch($arterialBranch)
     {
-        $this->arterialBranch = $arterialBranch;
+        $this->arterialBranch []= $arterialBranch;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getSource()
-    {
-        return $this->source;
     }
 
     /**
      * @param $source Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setSource($source)
+    public function addSource($source)
     {
-        $this->source = $source;
+        $this->source []= $source;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getSupplyTo()
-    {
-        return $this->supplyTo;
     }
 
     /**
      * @param $supplyTo Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setSupplyTo($supplyTo)
+    public function addSupplyTo($supplyTo)
     {
-        $this->supplyTo = $supplyTo;
+        $this->supplyTo []= $supplyTo;
         return $this;
     }
 

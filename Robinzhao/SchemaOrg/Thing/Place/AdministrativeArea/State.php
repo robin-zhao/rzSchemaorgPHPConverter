@@ -20,6 +20,6 @@ class State extends AdministrativeArea
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/State";
+    public $context = "http://schema.org/State";
 
 }

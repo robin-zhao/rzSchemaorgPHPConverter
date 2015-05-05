@@ -21,28 +21,20 @@ class PathologyTest extends MedicalTest
      *
      * @var String
      */
-    protected $tissueSample;
+    public $tissueSample;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PathologyTest";
-
-    /**
-     * @return String
-     */
-    public function getTissueSample()
-    {
-        return $this->tissueSample;
-    }
+    public $context = "http://schema.org/PathologyTest";
 
     /**
      * @param $tissueSample String
      */
-    public function setTissueSample($tissueSample)
+    public function addTissueSample($tissueSample)
     {
-        $this->tissueSample = $tissueSample;
+        $this->tissueSample []= $tissueSample;
         return $this;
     }
 

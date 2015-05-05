@@ -21,52 +21,36 @@ class Blog extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Article\BlogPosting
      */
-    protected $blogPost;
+    public $blogPost;
 
     /**
      * The postings that are part of this blog (legacy spelling; see singular form, blogPost).
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Article\BlogPosting
      */
-    protected $blogPosts;
+    public $blogPosts;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Blog";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Article\BlogPosting
-     */
-    public function getBlogPost()
-    {
-        return $this->blogPost;
-    }
+    public $context = "http://schema.org/Blog";
 
     /**
      * @param $blogPost Robinzhao\SchemaOrg\Thing\CreativeWork\Article\BlogPosting
      */
-    public function setBlogPost($blogPost)
+    public function addBlogPost($blogPost)
     {
-        $this->blogPost = $blogPost;
+        $this->blogPost []= $blogPost;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Article\BlogPosting
-     */
-    public function getBlogPosts()
-    {
-        return $this->blogPosts;
     }
 
     /**
      * @param $blogPosts Robinzhao\SchemaOrg\Thing\CreativeWork\Article\BlogPosting
      */
-    public function setBlogPosts($blogPosts)
+    public function addBlogPosts($blogPosts)
     {
-        $this->blogPosts = $blogPosts;
+        $this->blogPosts []= $blogPosts;
         return $this;
     }
 

@@ -21,76 +21,52 @@ class CookAction extends CreateAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\FoodEstablishment|Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $foodEstablishment;
+    public $foodEstablishment;
 
     /**
      * A sub property of location. The specific food event where the action occurred.
      *
      * @var Robinzhao\SchemaOrg\Thing\Event\FoodEvent
      */
-    protected $foodEvent;
+    public $foodEvent;
 
     /**
      * A sub property of instrument. The recipe/instructions used to perform the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Recipe
      */
-    protected $recipe;
+    public $recipe;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/CookAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\FoodEstablishment|Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getFoodEstablishment()
-    {
-        return $this->foodEstablishment;
-    }
+    public $context = "http://schema.org/CookAction";
 
     /**
      * @param $foodEstablishment Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\FoodEstablishment|Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setFoodEstablishment($foodEstablishment)
+    public function addFoodEstablishment($foodEstablishment)
     {
-        $this->foodEstablishment = $foodEstablishment;
+        $this->foodEstablishment []= $foodEstablishment;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event\FoodEvent
-     */
-    public function getFoodEvent()
-    {
-        return $this->foodEvent;
     }
 
     /**
      * @param $foodEvent Robinzhao\SchemaOrg\Thing\Event\FoodEvent
      */
-    public function setFoodEvent($foodEvent)
+    public function addFoodEvent($foodEvent)
     {
-        $this->foodEvent = $foodEvent;
+        $this->foodEvent []= $foodEvent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Recipe
-     */
-    public function getRecipe()
-    {
-        return $this->recipe;
     }
 
     /**
      * @param $recipe Robinzhao\SchemaOrg\Thing\CreativeWork\Recipe
      */
-    public function setRecipe($recipe)
+    public function addRecipe($recipe)
     {
-        $this->recipe = $recipe;
+        $this->recipe []= $recipe;
         return $this;
     }
 

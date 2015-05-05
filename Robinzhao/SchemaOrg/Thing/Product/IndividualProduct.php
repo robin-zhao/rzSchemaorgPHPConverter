@@ -21,28 +21,20 @@ class IndividualProduct extends Product
      *
      * @var String
      */
-    protected $serialNumber;
+    public $serialNumber;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/IndividualProduct";
-
-    /**
-     * @return String
-     */
-    public function getSerialNumber()
-    {
-        return $this->serialNumber;
-    }
+    public $context = "http://schema.org/IndividualProduct";
 
     /**
      * @param $serialNumber String
      */
-    public function setSerialNumber($serialNumber)
+    public function addSerialNumber($serialNumber)
     {
-        $this->serialNumber = $serialNumber;
+        $this->serialNumber []= $serialNumber;
         return $this;
     }
 

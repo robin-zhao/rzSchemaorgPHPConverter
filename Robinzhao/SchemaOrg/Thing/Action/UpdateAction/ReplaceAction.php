@@ -21,52 +21,36 @@ class ReplaceAction extends UpdateAction
      *
      * @var Robinzhao\SchemaOrg\Thing
      */
-    protected $replacee;
+    public $replacee;
 
     /**
      * A sub property of object. The object that replaces.
      *
      * @var Robinzhao\SchemaOrg\Thing
      */
-    protected $replacer;
+    public $replacer;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ReplaceAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing
-     */
-    public function getReplacee()
-    {
-        return $this->replacee;
-    }
+    public $context = "http://schema.org/ReplaceAction";
 
     /**
      * @param $replacee Robinzhao\SchemaOrg\Thing
      */
-    public function setReplacee($replacee)
+    public function addReplacee($replacee)
     {
-        $this->replacee = $replacee;
+        $this->replacee []= $replacee;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing
-     */
-    public function getReplacer()
-    {
-        return $this->replacer;
     }
 
     /**
      * @param $replacer Robinzhao\SchemaOrg\Thing
      */
-    public function setReplacer($replacer)
+    public function addReplacer($replacer)
     {
-        $this->replacer = $replacer;
+        $this->replacer []= $replacer;
         return $this;
     }
 

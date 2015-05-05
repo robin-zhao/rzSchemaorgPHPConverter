@@ -20,6 +20,6 @@ class AutoWash extends AutomotiveBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AutoWash";
+    public $context = "http://schema.org/AutoWash";
 
 }

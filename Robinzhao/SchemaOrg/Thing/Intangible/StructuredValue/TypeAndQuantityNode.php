@@ -21,100 +21,68 @@ class TypeAndQuantityNode extends StructuredValue
      *
      * @var Float
      */
-    protected $amountOfThisGood;
+    public $amountOfThisGood;
 
     /**
      * The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\BusinessFunction
      */
-    protected $businessFunction;
+    public $businessFunction;
 
     /**
      * The product that this structured value is referring to.
      *
      * @var Robinzhao\SchemaOrg\Thing\Product
      */
-    protected $typeOfGood;
+    public $typeOfGood;
 
     /**
      * The unit of measurement given using the UN/CEFACT Common Code (3 characters).
      *
      * @var String
      */
-    protected $unitCode;
+    public $unitCode;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TypeAndQuantityNode";
-
-    /**
-     * @return Float
-     */
-    public function getAmountOfThisGood()
-    {
-        return $this->amountOfThisGood;
-    }
+    public $context = "http://schema.org/TypeAndQuantityNode";
 
     /**
      * @param $amountOfThisGood Float
      */
-    public function setAmountOfThisGood($amountOfThisGood)
+    public function addAmountOfThisGood($amountOfThisGood)
     {
-        $this->amountOfThisGood = $amountOfThisGood;
+        $this->amountOfThisGood []= $amountOfThisGood;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\BusinessFunction
-     */
-    public function getBusinessFunction()
-    {
-        return $this->businessFunction;
     }
 
     /**
      * @param $businessFunction Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\BusinessFunction
      */
-    public function setBusinessFunction($businessFunction)
+    public function addBusinessFunction($businessFunction)
     {
-        $this->businessFunction = $businessFunction;
+        $this->businessFunction []= $businessFunction;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Product
-     */
-    public function getTypeOfGood()
-    {
-        return $this->typeOfGood;
     }
 
     /**
      * @param $typeOfGood Robinzhao\SchemaOrg\Thing\Product
      */
-    public function setTypeOfGood($typeOfGood)
+    public function addTypeOfGood($typeOfGood)
     {
-        $this->typeOfGood = $typeOfGood;
+        $this->typeOfGood []= $typeOfGood;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getUnitCode()
-    {
-        return $this->unitCode;
     }
 
     /**
      * @param $unitCode String
      */
-    public function setUnitCode($unitCode)
+    public function addUnitCode($unitCode)
     {
-        $this->unitCode = $unitCode;
+        $this->unitCode []= $unitCode;
         return $this;
     }
 

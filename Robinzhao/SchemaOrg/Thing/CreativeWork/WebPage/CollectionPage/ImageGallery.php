@@ -20,6 +20,6 @@ class ImageGallery extends CollectionPage
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ImageGallery";
+    public $context = "http://schema.org/ImageGallery";
 
 }

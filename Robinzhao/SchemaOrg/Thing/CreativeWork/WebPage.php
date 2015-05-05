@@ -21,244 +21,164 @@ class WebPage extends CreativeWork
      *
      * @var String
      */
-    protected $breadcrumb;
+    public $breadcrumb;
 
     /**
      * Indicates the collection or gallery to which the item belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\WebPage\CollectionPage
      */
-    protected $isPartOf;
+    public $isPartOf;
 
     /**
      * Date on which the content on this web page was last reviewed for accuracy and/or completeness.
      *
      * @var DateTime
      */
-    protected $lastReviewed;
+    public $lastReviewed;
 
     /**
      * Indicates if this web page element is the main subject of the page.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\WebPageElement
      */
-    protected $mainContentOfPage;
+    public $mainContentOfPage;
 
     /**
      * Indicates the main image on the page
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    protected $primaryImageOfPage;
+    public $primaryImageOfPage;
 
     /**
      * A link related to this web page, for example to other related web pages.
      *
      * @var String
      */
-    protected $relatedLink;
+    public $relatedLink;
 
     /**
      * People or organizations that have reviewed the content on this web page for accuracy and/or completeness.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $reviewedBy;
+    public $reviewedBy;
 
     /**
      * One of the more significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.
      *
      * @var String
      */
-    protected $significantLink;
+    public $significantLink;
 
     /**
      * The most significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most (legacy spelling; see singular form, significantLink).
      *
      * @var String
      */
-    protected $significantLinks;
+    public $significantLinks;
 
     /**
      * One of the domain specialities to which this web page's content applies.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\Specialty
      */
-    protected $specialty;
+    public $specialty;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WebPage";
-
-    /**
-     * @return String
-     */
-    public function getBreadcrumb()
-    {
-        return $this->breadcrumb;
-    }
+    public $context = "http://schema.org/WebPage";
 
     /**
      * @param $breadcrumb String
      */
-    public function setBreadcrumb($breadcrumb)
+    public function addBreadcrumb($breadcrumb)
     {
-        $this->breadcrumb = $breadcrumb;
+        $this->breadcrumb []= $breadcrumb;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\WebPage\CollectionPage
-     */
-    public function getIsPartOf()
-    {
-        return $this->isPartOf;
     }
 
     /**
      * @param $isPartOf Robinzhao\SchemaOrg\Thing\CreativeWork\WebPage\CollectionPage
      */
-    public function setIsPartOf($isPartOf)
+    public function addIsPartOf($isPartOf)
     {
-        $this->isPartOf = $isPartOf;
+        $this->isPartOf []= $isPartOf;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getLastReviewed()
-    {
-        return $this->lastReviewed;
     }
 
     /**
      * @param $lastReviewed DateTime
      */
-    public function setLastReviewed($lastReviewed)
+    public function addLastReviewed($lastReviewed)
     {
-        $this->lastReviewed = $lastReviewed;
+        $this->lastReviewed []= $lastReviewed;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\WebPageElement
-     */
-    public function getMainContentOfPage()
-    {
-        return $this->mainContentOfPage;
     }
 
     /**
      * @param $mainContentOfPage Robinzhao\SchemaOrg\Thing\CreativeWork\WebPageElement
      */
-    public function setMainContentOfPage($mainContentOfPage)
+    public function addMainContentOfPage($mainContentOfPage)
     {
-        $this->mainContentOfPage = $mainContentOfPage;
+        $this->mainContentOfPage []= $mainContentOfPage;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
-     */
-    public function getPrimaryImageOfPage()
-    {
-        return $this->primaryImageOfPage;
     }
 
     /**
      * @param $primaryImageOfPage Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    public function setPrimaryImageOfPage($primaryImageOfPage)
+    public function addPrimaryImageOfPage($primaryImageOfPage)
     {
-        $this->primaryImageOfPage = $primaryImageOfPage;
+        $this->primaryImageOfPage []= $primaryImageOfPage;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRelatedLink()
-    {
-        return $this->relatedLink;
     }
 
     /**
      * @param $relatedLink String
      */
-    public function setRelatedLink($relatedLink)
+    public function addRelatedLink($relatedLink)
     {
-        $this->relatedLink = $relatedLink;
+        $this->relatedLink []= $relatedLink;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getReviewedBy()
-    {
-        return $this->reviewedBy;
     }
 
     /**
      * @param $reviewedBy Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setReviewedBy($reviewedBy)
+    public function addReviewedBy($reviewedBy)
     {
-        $this->reviewedBy = $reviewedBy;
+        $this->reviewedBy []= $reviewedBy;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSignificantLink()
-    {
-        return $this->significantLink;
     }
 
     /**
      * @param $significantLink String
      */
-    public function setSignificantLink($significantLink)
+    public function addSignificantLink($significantLink)
     {
-        $this->significantLink = $significantLink;
+        $this->significantLink []= $significantLink;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSignificantLinks()
-    {
-        return $this->significantLinks;
     }
 
     /**
      * @param $significantLinks String
      */
-    public function setSignificantLinks($significantLinks)
+    public function addSignificantLinks($significantLinks)
     {
-        $this->significantLinks = $significantLinks;
+        $this->significantLinks []= $significantLinks;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\Specialty
-     */
-    public function getSpecialty()
-    {
-        return $this->specialty;
     }
 
     /**
      * @param $specialty Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\Specialty
      */
-    public function setSpecialty($specialty)
+    public function addSpecialty($specialty)
     {
-        $this->specialty = $specialty;
+        $this->specialty []= $specialty;
         return $this;
     }
 

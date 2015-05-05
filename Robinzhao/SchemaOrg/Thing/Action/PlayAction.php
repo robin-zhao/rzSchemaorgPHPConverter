@@ -21,52 +21,36 @@ class PlayAction extends Action
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Audience
      */
-    protected $audience;
+    public $audience;
 
     /**
      * Upcoming or past event associated with this place or organization.
      *
      * @var Robinzhao\SchemaOrg\Thing\Event
      */
-    protected $event;
+    public $event;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PlayAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Audience
-     */
-    public function getAudience()
-    {
-        return $this->audience;
-    }
+    public $context = "http://schema.org/PlayAction";
 
     /**
      * @param $audience Robinzhao\SchemaOrg\Thing\Intangible\Audience
      */
-    public function setAudience($audience)
+    public function addAudience($audience)
     {
-        $this->audience = $audience;
+        $this->audience []= $audience;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event
-     */
-    public function getEvent()
-    {
-        return $this->event;
     }
 
     /**
      * @param $event Robinzhao\SchemaOrg\Thing\Event
      */
-    public function setEvent($event)
+    public function addEvent($event)
     {
-        $this->event = $event;
+        $this->event []= $event;
         return $this;
     }
 

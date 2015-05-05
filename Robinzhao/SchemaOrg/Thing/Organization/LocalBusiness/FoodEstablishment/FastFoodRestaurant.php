@@ -20,6 +20,6 @@ class FastFoodRestaurant extends FoodEstablishment
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/FastFoodRestaurant";
+    public $context = "http://schema.org/FastFoodRestaurant";
 
 }

@@ -20,6 +20,6 @@ class OrganizeAction extends Action
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/OrganizeAction";
+    public $context = "http://schema.org/OrganizeAction";
 
 }

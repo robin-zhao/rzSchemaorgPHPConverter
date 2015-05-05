@@ -20,6 +20,6 @@ class ElectronicsStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ElectronicsStore";
+    public $context = "http://schema.org/ElectronicsStore";
 
 }

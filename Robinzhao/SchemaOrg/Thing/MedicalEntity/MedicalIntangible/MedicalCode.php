@@ -21,52 +21,36 @@ class MedicalCode extends MedicalIntangible
      *
      * @var String
      */
-    protected $codeValue;
+    public $codeValue;
 
     /**
      * The coding system, e.g. 'ICD-10'.
      *
      * @var String
      */
-    protected $codingSystem;
+    public $codingSystem;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalCode";
-
-    /**
-     * @return String
-     */
-    public function getCodeValue()
-    {
-        return $this->codeValue;
-    }
+    public $context = "http://schema.org/MedicalCode";
 
     /**
      * @param $codeValue String
      */
-    public function setCodeValue($codeValue)
+    public function addCodeValue($codeValue)
     {
-        $this->codeValue = $codeValue;
+        $this->codeValue []= $codeValue;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getCodingSystem()
-    {
-        return $this->codingSystem;
     }
 
     /**
      * @param $codingSystem String
      */
-    public function setCodingSystem($codingSystem)
+    public function addCodingSystem($codingSystem)
     {
-        $this->codingSystem = $codingSystem;
+        $this->codingSystem []= $codingSystem;
         return $this;
     }
 

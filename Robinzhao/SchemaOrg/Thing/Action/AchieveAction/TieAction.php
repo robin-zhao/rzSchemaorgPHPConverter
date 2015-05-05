@@ -20,6 +20,6 @@ class TieAction extends AchieveAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TieAction";
+    public $context = "http://schema.org/TieAction";
 
 }

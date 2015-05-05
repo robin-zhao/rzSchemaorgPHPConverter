@@ -20,6 +20,6 @@ class Florist extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Florist";
+    public $context = "http://schema.org/Florist";
 
 }

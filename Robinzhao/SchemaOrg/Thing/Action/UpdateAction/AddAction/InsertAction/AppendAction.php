@@ -20,6 +20,6 @@ class AppendAction extends InsertAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AppendAction";
+    public $context = "http://schema.org/AppendAction";
 
 }

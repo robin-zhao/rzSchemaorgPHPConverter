@@ -20,6 +20,6 @@ class RsvpAction extends InformAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RsvpAction";
+    public $context = "http://schema.org/RsvpAction";
 
 }

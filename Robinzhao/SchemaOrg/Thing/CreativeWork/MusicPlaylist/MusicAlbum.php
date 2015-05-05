@@ -21,28 +21,20 @@ class MusicAlbum extends MusicPlaylist
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
      */
-    protected $byArtist;
+    public $byArtist;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MusicAlbum";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
-     */
-    public function getByArtist()
-    {
-        return $this->byArtist;
-    }
+    public $context = "http://schema.org/MusicAlbum";
 
     /**
      * @param $byArtist Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
      */
-    public function setByArtist($byArtist)
+    public function addByArtist($byArtist)
     {
-        $this->byArtist = $byArtist;
+        $this->byArtist []= $byArtist;
         return $this;
     }
 

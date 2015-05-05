@@ -20,6 +20,6 @@ class ComedyClub extends EntertainmentBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ComedyClub";
+    public $context = "http://schema.org/ComedyClub";
 
 }

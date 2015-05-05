@@ -21,436 +21,292 @@ class JobPosting extends Intangible
      *
      * @var Float
      */
-    protected $baseSalary;
+    public $baseSalary;
 
     /**
      * Description of benefits associated with the job.
      *
      * @var String
      */
-    protected $benefits;
+    public $benefits;
 
     /**
      * Publication date for the job posting.
      *
      * @var DateTime
      */
-    protected $datePosted;
+    public $datePosted;
 
     /**
      * Educational background needed for the position.
      *
      * @var String
      */
-    protected $educationRequirements;
+    public $educationRequirements;
 
     /**
      * Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).
      *
      * @var String
      */
-    protected $employmentType;
+    public $employmentType;
 
     /**
      * Description of skills and experience needed for the position.
      *
      * @var String
      */
-    protected $experienceRequirements;
+    public $experienceRequirements;
 
     /**
      * Organization offering the job position.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $hiringOrganization;
+    public $hiringOrganization;
 
     /**
      * Description of bonus and commission compensation aspects of the job.
      *
      * @var String
      */
-    protected $incentives;
+    public $incentives;
 
     /**
      * The industry associated with the job position.
      *
      * @var String
      */
-    protected $industry;
+    public $industry;
 
     /**
      * A (typically single) geographic location associated with the job position.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $jobLocation;
+    public $jobLocation;
 
     /**
      * Category or categories describing the job. Use BLS O*NET-SOC taxonomy: http://www.onetcenter.org/taxonomy.html. Ideally includes textual label and formal code, with the property repeated for each applicable value.
      *
      * @var String
      */
-    protected $occupationalCategory;
+    public $occupationalCategory;
 
     /**
      * Specific qualifications required for this role.
      *
      * @var String
      */
-    protected $qualifications;
+    public $qualifications;
 
     /**
      * Responsibilities associated with this role.
      *
      * @var String
      */
-    protected $responsibilities;
+    public $responsibilities;
 
     /**
      * The currency (coded using ISO 4217, http://en.wikipedia.org/wiki/ISO_4217 used for the main salary information in this job posting.
      *
      * @var String
      */
-    protected $salaryCurrency;
+    public $salaryCurrency;
 
     /**
      * Skills required to fulfill this role.
      *
      * @var String
      */
-    protected $skills;
+    public $skills;
 
     /**
      * Any special commitments associated with this job posting. Valid entries include VeteranCommit, MilitarySpouseCommit, etc.
      *
      * @var String
      */
-    protected $specialCommitments;
+    public $specialCommitments;
 
     /**
      * The title of the job.
      *
      * @var String
      */
-    protected $title;
+    public $title;
 
     /**
      * The typical working hours for this job (e.g. 1st shift, night shift, 8am-5pm).
      *
      * @var String
      */
-    protected $workHours;
+    public $workHours;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/JobPosting";
-
-    /**
-     * @return Float
-     */
-    public function getBaseSalary()
-    {
-        return $this->baseSalary;
-    }
+    public $context = "http://schema.org/JobPosting";
 
     /**
      * @param $baseSalary Float
      */
-    public function setBaseSalary($baseSalary)
+    public function addBaseSalary($baseSalary)
     {
-        $this->baseSalary = $baseSalary;
+        $this->baseSalary []= $baseSalary;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getBenefits()
-    {
-        return $this->benefits;
     }
 
     /**
      * @param $benefits String
      */
-    public function setBenefits($benefits)
+    public function addBenefits($benefits)
     {
-        $this->benefits = $benefits;
+        $this->benefits []= $benefits;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getDatePosted()
-    {
-        return $this->datePosted;
     }
 
     /**
      * @param $datePosted DateTime
      */
-    public function setDatePosted($datePosted)
+    public function addDatePosted($datePosted)
     {
-        $this->datePosted = $datePosted;
+        $this->datePosted []= $datePosted;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getEducationRequirements()
-    {
-        return $this->educationRequirements;
     }
 
     /**
      * @param $educationRequirements String
      */
-    public function setEducationRequirements($educationRequirements)
+    public function addEducationRequirements($educationRequirements)
     {
-        $this->educationRequirements = $educationRequirements;
+        $this->educationRequirements []= $educationRequirements;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getEmploymentType()
-    {
-        return $this->employmentType;
     }
 
     /**
      * @param $employmentType String
      */
-    public function setEmploymentType($employmentType)
+    public function addEmploymentType($employmentType)
     {
-        $this->employmentType = $employmentType;
+        $this->employmentType []= $employmentType;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getExperienceRequirements()
-    {
-        return $this->experienceRequirements;
     }
 
     /**
      * @param $experienceRequirements String
      */
-    public function setExperienceRequirements($experienceRequirements)
+    public function addExperienceRequirements($experienceRequirements)
     {
-        $this->experienceRequirements = $experienceRequirements;
+        $this->experienceRequirements []= $experienceRequirements;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getHiringOrganization()
-    {
-        return $this->hiringOrganization;
     }
 
     /**
      * @param $hiringOrganization Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setHiringOrganization($hiringOrganization)
+    public function addHiringOrganization($hiringOrganization)
     {
-        $this->hiringOrganization = $hiringOrganization;
+        $this->hiringOrganization []= $hiringOrganization;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getIncentives()
-    {
-        return $this->incentives;
     }
 
     /**
      * @param $incentives String
      */
-    public function setIncentives($incentives)
+    public function addIncentives($incentives)
     {
-        $this->incentives = $incentives;
+        $this->incentives []= $incentives;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getIndustry()
-    {
-        return $this->industry;
     }
 
     /**
      * @param $industry String
      */
-    public function setIndustry($industry)
+    public function addIndustry($industry)
     {
-        $this->industry = $industry;
+        $this->industry []= $industry;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getJobLocation()
-    {
-        return $this->jobLocation;
     }
 
     /**
      * @param $jobLocation Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setJobLocation($jobLocation)
+    public function addJobLocation($jobLocation)
     {
-        $this->jobLocation = $jobLocation;
+        $this->jobLocation []= $jobLocation;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getOccupationalCategory()
-    {
-        return $this->occupationalCategory;
     }
 
     /**
      * @param $occupationalCategory String
      */
-    public function setOccupationalCategory($occupationalCategory)
+    public function addOccupationalCategory($occupationalCategory)
     {
-        $this->occupationalCategory = $occupationalCategory;
+        $this->occupationalCategory []= $occupationalCategory;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getQualifications()
-    {
-        return $this->qualifications;
     }
 
     /**
      * @param $qualifications String
      */
-    public function setQualifications($qualifications)
+    public function addQualifications($qualifications)
     {
-        $this->qualifications = $qualifications;
+        $this->qualifications []= $qualifications;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getResponsibilities()
-    {
-        return $this->responsibilities;
     }
 
     /**
      * @param $responsibilities String
      */
-    public function setResponsibilities($responsibilities)
+    public function addResponsibilities($responsibilities)
     {
-        $this->responsibilities = $responsibilities;
+        $this->responsibilities []= $responsibilities;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSalaryCurrency()
-    {
-        return $this->salaryCurrency;
     }
 
     /**
      * @param $salaryCurrency String
      */
-    public function setSalaryCurrency($salaryCurrency)
+    public function addSalaryCurrency($salaryCurrency)
     {
-        $this->salaryCurrency = $salaryCurrency;
+        $this->salaryCurrency []= $salaryCurrency;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSkills()
-    {
-        return $this->skills;
     }
 
     /**
      * @param $skills String
      */
-    public function setSkills($skills)
+    public function addSkills($skills)
     {
-        $this->skills = $skills;
+        $this->skills []= $skills;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSpecialCommitments()
-    {
-        return $this->specialCommitments;
     }
 
     /**
      * @param $specialCommitments String
      */
-    public function setSpecialCommitments($specialCommitments)
+    public function addSpecialCommitments($specialCommitments)
     {
-        $this->specialCommitments = $specialCommitments;
+        $this->specialCommitments []= $specialCommitments;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTitle()
-    {
-        return $this->title;
     }
 
     /**
      * @param $title String
      */
-    public function setTitle($title)
+    public function addTitle($title)
     {
-        $this->title = $title;
+        $this->title []= $title;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getWorkHours()
-    {
-        return $this->workHours;
     }
 
     /**
      * @param $workHours String
      */
-    public function setWorkHours($workHours)
+    public function addWorkHours($workHours)
     {
-        $this->workHours = $workHours;
+        $this->workHours []= $workHours;
         return $this;
     }
 

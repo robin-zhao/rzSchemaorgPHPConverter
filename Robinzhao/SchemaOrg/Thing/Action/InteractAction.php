@@ -20,6 +20,6 @@ class InteractAction extends Action
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/InteractAction";
+    public $context = "http://schema.org/InteractAction";
 
 }

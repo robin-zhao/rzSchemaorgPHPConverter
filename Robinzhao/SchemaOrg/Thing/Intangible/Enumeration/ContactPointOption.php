@@ -20,6 +20,6 @@ class ContactPointOption extends Enumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ContactPointOption";
+    public $context = "http://schema.org/ContactPointOption";
 
 }

@@ -20,6 +20,6 @@ class MovieTheater extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MovieTheater";
+    public $context = "http://schema.org/MovieTheater";
 
 }

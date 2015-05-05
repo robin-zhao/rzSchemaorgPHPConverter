@@ -20,6 +20,6 @@ class EventVenue extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/EventVenue";
+    public $context = "http://schema.org/EventVenue";
 
 }

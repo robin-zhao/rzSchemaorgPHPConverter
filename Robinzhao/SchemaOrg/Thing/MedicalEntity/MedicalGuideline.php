@@ -21,100 +21,68 @@ class MedicalGuideline extends MedicalEntity
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalEvidenceLevel
      */
-    protected $evidenceLevel;
+    public $evidenceLevel;
 
     /**
      * Source of the data used to formulate the guidance, e.g. RCT, consensus opinion, etc.
      *
      * @var String
      */
-    protected $evidenceOrigin;
+    public $evidenceOrigin;
 
     /**
      * Date on which this guideline's recommendation was made.
      *
      * @var DateTime
      */
-    protected $guidelineDate;
+    public $guidelineDate;
 
     /**
      * The medical conditions, treatments, etc. that are the subject of the guideline.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    protected $guidelineSubject;
+    public $guidelineSubject;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalGuideline";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalEvidenceLevel
-     */
-    public function getEvidenceLevel()
-    {
-        return $this->evidenceLevel;
-    }
+    public $context = "http://schema.org/MedicalGuideline";
 
     /**
      * @param $evidenceLevel Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalEvidenceLevel
      */
-    public function setEvidenceLevel($evidenceLevel)
+    public function addEvidenceLevel($evidenceLevel)
     {
-        $this->evidenceLevel = $evidenceLevel;
+        $this->evidenceLevel []= $evidenceLevel;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getEvidenceOrigin()
-    {
-        return $this->evidenceOrigin;
     }
 
     /**
      * @param $evidenceOrigin String
      */
-    public function setEvidenceOrigin($evidenceOrigin)
+    public function addEvidenceOrigin($evidenceOrigin)
     {
-        $this->evidenceOrigin = $evidenceOrigin;
+        $this->evidenceOrigin []= $evidenceOrigin;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getGuidelineDate()
-    {
-        return $this->guidelineDate;
     }
 
     /**
      * @param $guidelineDate DateTime
      */
-    public function setGuidelineDate($guidelineDate)
+    public function addGuidelineDate($guidelineDate)
     {
-        $this->guidelineDate = $guidelineDate;
+        $this->guidelineDate []= $guidelineDate;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity
-     */
-    public function getGuidelineSubject()
-    {
-        return $this->guidelineSubject;
     }
 
     /**
      * @param $guidelineSubject Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    public function setGuidelineSubject($guidelineSubject)
+    public function addGuidelineSubject($guidelineSubject)
     {
-        $this->guidelineSubject = $guidelineSubject;
+        $this->guidelineSubject []= $guidelineSubject;
         return $this;
     }
 

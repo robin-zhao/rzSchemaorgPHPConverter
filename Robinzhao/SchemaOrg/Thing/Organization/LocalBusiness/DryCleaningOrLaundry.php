@@ -20,6 +20,6 @@ class DryCleaningOrLaundry extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DryCleaningOrLaundry";
+    public $context = "http://schema.org/DryCleaningOrLaundry";
 
 }

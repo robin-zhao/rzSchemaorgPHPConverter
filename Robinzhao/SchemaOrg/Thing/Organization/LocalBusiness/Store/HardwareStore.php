@@ -20,6 +20,6 @@ class HardwareStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/HardwareStore";
+    public $context = "http://schema.org/HardwareStore";
 
 }

@@ -20,6 +20,6 @@ class BloodTest extends MedicalTest
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BloodTest";
+    public $context = "http://schema.org/BloodTest";
 
 }

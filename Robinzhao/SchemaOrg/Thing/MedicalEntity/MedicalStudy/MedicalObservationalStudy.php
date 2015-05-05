@@ -21,28 +21,20 @@ class MedicalObservationalStudy extends MedicalStudy
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalObservationalStudyDesign
      */
-    protected $studyDesign;
+    public $studyDesign;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalObservationalStudy";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalObservationalStudyDesign
-     */
-    public function getStudyDesign()
-    {
-        return $this->studyDesign;
-    }
+    public $context = "http://schema.org/MedicalObservationalStudy";
 
     /**
      * @param $studyDesign Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalObservationalStudyDesign
      */
-    public function setStudyDesign($studyDesign)
+    public function addStudyDesign($studyDesign)
     {
-        $this->studyDesign = $studyDesign;
+        $this->studyDesign []= $studyDesign;
         return $this;
     }
 

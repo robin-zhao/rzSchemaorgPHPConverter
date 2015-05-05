@@ -20,6 +20,6 @@ class Playground extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Playground";
+    public $context = "http://schema.org/Playground";
 
 }

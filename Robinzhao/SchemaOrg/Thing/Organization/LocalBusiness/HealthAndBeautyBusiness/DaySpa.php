@@ -20,6 +20,6 @@ class DaySpa extends HealthAndBeautyBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DaySpa";
+    public $context = "http://schema.org/DaySpa";
 
 }

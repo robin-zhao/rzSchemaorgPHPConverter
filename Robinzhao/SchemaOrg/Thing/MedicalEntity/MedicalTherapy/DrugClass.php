@@ -21,28 +21,20 @@ class DrugClass extends MedicalTherapy
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    protected $drug;
+    public $drug;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DrugClass";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
-     */
-    public function getDrug()
-    {
-        return $this->drug;
-    }
+    public $context = "http://schema.org/DrugClass";
 
     /**
      * @param $drug Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    public function setDrug($drug)
+    public function addDrug($drug)
     {
-        $this->drug = $drug;
+        $this->drug []= $drug;
         return $this;
     }
 

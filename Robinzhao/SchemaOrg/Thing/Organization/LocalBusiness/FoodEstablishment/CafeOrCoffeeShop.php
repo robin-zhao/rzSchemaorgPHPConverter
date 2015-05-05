@@ -20,6 +20,6 @@ class CafeOrCoffeeShop extends FoodEstablishment
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/CafeOrCoffeeShop";
+    public $context = "http://schema.org/CafeOrCoffeeShop";
 
 }

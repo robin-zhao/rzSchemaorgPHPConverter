@@ -20,6 +20,6 @@ class WatchAction extends ConsumeAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WatchAction";
+    public $context = "http://schema.org/WatchAction";
 
 }

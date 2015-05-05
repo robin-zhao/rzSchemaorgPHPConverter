@@ -21,52 +21,36 @@ class DDxElement extends MedicalIntangible
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    protected $diagnosis;
+    public $diagnosis;
 
     /**
      * One of a set of signs and symptoms that can be used to distinguish this diagnosis from others in the differential diagnosis.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalSignOrSymptom
      */
-    protected $distinguishingSign;
+    public $distinguishingSign;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DDxElement";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
-     */
-    public function getDiagnosis()
-    {
-        return $this->diagnosis;
-    }
+    public $context = "http://schema.org/DDxElement";
 
     /**
      * @param $diagnosis Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    public function setDiagnosis($diagnosis)
+    public function addDiagnosis($diagnosis)
     {
-        $this->diagnosis = $diagnosis;
+        $this->diagnosis []= $diagnosis;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalSignOrSymptom
-     */
-    public function getDistinguishingSign()
-    {
-        return $this->distinguishingSign;
     }
 
     /**
      * @param $distinguishingSign Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalSignOrSymptom
      */
-    public function setDistinguishingSign($distinguishingSign)
+    public function addDistinguishingSign($distinguishingSign)
     {
-        $this->distinguishingSign = $distinguishingSign;
+        $this->distinguishingSign []= $distinguishingSign;
         return $this;
     }
 

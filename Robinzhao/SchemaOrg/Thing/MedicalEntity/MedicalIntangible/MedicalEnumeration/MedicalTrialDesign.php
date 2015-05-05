@@ -20,6 +20,6 @@ class MedicalTrialDesign extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalTrialDesign";
+    public $context = "http://schema.org/MedicalTrialDesign";
 
 }

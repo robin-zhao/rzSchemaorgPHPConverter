@@ -20,6 +20,6 @@ class TaxiStand extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TaxiStand";
+    public $context = "http://schema.org/TaxiStand";
 
 }

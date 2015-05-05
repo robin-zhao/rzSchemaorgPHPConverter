@@ -20,6 +20,6 @@ class Cemetery extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Cemetery";
+    public $context = "http://schema.org/Cemetery";
 
 }

@@ -20,6 +20,6 @@ class GovernmentBuilding extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/GovernmentBuilding";
+    public $context = "http://schema.org/GovernmentBuilding";
 
 }

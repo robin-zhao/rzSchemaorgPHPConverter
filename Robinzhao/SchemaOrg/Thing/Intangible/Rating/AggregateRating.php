@@ -21,76 +21,52 @@ class AggregateRating extends Rating
      *
      * @var Robinzhao\SchemaOrg\Thing
      */
-    protected $itemReviewed;
+    public $itemReviewed;
 
     /**
      * The count of total number of ratings.
      *
      * @var Float
      */
-    protected $ratingCount;
+    public $ratingCount;
 
     /**
      * The count of total number of reviews.
      *
      * @var Float
      */
-    protected $reviewCount;
+    public $reviewCount;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AggregateRating";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing
-     */
-    public function getItemReviewed()
-    {
-        return $this->itemReviewed;
-    }
+    public $context = "http://schema.org/AggregateRating";
 
     /**
      * @param $itemReviewed Robinzhao\SchemaOrg\Thing
      */
-    public function setItemReviewed($itemReviewed)
+    public function addItemReviewed($itemReviewed)
     {
-        $this->itemReviewed = $itemReviewed;
+        $this->itemReviewed []= $itemReviewed;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getRatingCount()
-    {
-        return $this->ratingCount;
     }
 
     /**
      * @param $ratingCount Float
      */
-    public function setRatingCount($ratingCount)
+    public function addRatingCount($ratingCount)
     {
-        $this->ratingCount = $ratingCount;
+        $this->ratingCount []= $ratingCount;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getReviewCount()
-    {
-        return $this->reviewCount;
     }
 
     /**
      * @param $reviewCount Float
      */
-    public function setReviewCount($reviewCount)
+    public function addReviewCount($reviewCount)
     {
-        $this->reviewCount = $reviewCount;
+        $this->reviewCount []= $reviewCount;
         return $this;
     }
 

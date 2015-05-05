@@ -20,6 +20,6 @@ class City extends AdministrativeArea
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/City";
+    public $context = "http://schema.org/City";
 
 }

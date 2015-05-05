@@ -20,6 +20,6 @@ class PawnShop extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PawnShop";
+    public $context = "http://schema.org/PawnShop";
 
 }

@@ -20,6 +20,6 @@ class Aquarium extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Aquarium";
+    public $context = "http://schema.org/Aquarium";
 
 }

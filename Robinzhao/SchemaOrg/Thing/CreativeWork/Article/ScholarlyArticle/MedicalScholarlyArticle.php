@@ -21,28 +21,20 @@ class MedicalScholarlyArticle extends ScholarlyArticle
      *
      * @var String
      */
-    protected $publicationType;
+    public $publicationType;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalScholarlyArticle";
-
-    /**
-     * @return String
-     */
-    public function getPublicationType()
-    {
-        return $this->publicationType;
-    }
+    public $context = "http://schema.org/MedicalScholarlyArticle";
 
     /**
      * @param $publicationType String
      */
-    public function setPublicationType($publicationType)
+    public function addPublicationType($publicationType)
     {
-        $this->publicationType = $publicationType;
+        $this->publicationType []= $publicationType;
         return $this;
     }
 

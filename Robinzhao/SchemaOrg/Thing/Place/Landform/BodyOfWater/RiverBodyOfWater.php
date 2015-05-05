@@ -20,6 +20,6 @@ class RiverBodyOfWater extends BodyOfWater
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RiverBodyOfWater";
+    public $context = "http://schema.org/RiverBodyOfWater";
 
 }

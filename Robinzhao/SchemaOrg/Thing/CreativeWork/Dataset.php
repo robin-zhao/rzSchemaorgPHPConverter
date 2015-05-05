@@ -21,100 +21,68 @@ class Dataset extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\DataCatalog
      */
-    protected $catalog;
+    public $catalog;
 
     /**
      * A downloadable form of this dataset, at a specific location, in a specific format.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\DataDownload
      */
-    protected $distribution;
+    public $distribution;
 
     /**
      * The range of spatial applicability of a dataset, e.g. for a dataset of New York weather, the state of New York.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $spatial;
+    public $spatial;
 
     /**
      * The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).
      *
      * @var DateTime
      */
-    protected $temporal;
+    public $temporal;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Dataset";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\DataCatalog
-     */
-    public function getCatalog()
-    {
-        return $this->catalog;
-    }
+    public $context = "http://schema.org/Dataset";
 
     /**
      * @param $catalog Robinzhao\SchemaOrg\Thing\CreativeWork\DataCatalog
      */
-    public function setCatalog($catalog)
+    public function addCatalog($catalog)
     {
-        $this->catalog = $catalog;
+        $this->catalog []= $catalog;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\DataDownload
-     */
-    public function getDistribution()
-    {
-        return $this->distribution;
     }
 
     /**
      * @param $distribution Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\DataDownload
      */
-    public function setDistribution($distribution)
+    public function addDistribution($distribution)
     {
-        $this->distribution = $distribution;
+        $this->distribution []= $distribution;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getSpatial()
-    {
-        return $this->spatial;
     }
 
     /**
      * @param $spatial Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setSpatial($spatial)
+    public function addSpatial($spatial)
     {
-        $this->spatial = $spatial;
+        $this->spatial []= $spatial;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getTemporal()
-    {
-        return $this->temporal;
     }
 
     /**
      * @param $temporal DateTime
      */
-    public function setTemporal($temporal)
+    public function addTemporal($temporal)
     {
-        $this->temporal = $temporal;
+        $this->temporal []= $temporal;
         return $this;
     }
 

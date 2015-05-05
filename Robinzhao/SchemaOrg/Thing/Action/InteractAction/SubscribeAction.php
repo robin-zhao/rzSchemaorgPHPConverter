@@ -20,6 +20,6 @@ class SubscribeAction extends InteractAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SubscribeAction";
+    public $context = "http://schema.org/SubscribeAction";
 
 }

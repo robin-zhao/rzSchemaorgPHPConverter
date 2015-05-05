@@ -21,76 +21,52 @@ class Review extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing
      */
-    protected $itemReviewed;
+    public $itemReviewed;
 
     /**
      * The actual body of the review
      *
      * @var String
      */
-    protected $reviewBody;
+    public $reviewBody;
 
     /**
      * The rating given in this review. Note that reviews can themselves be rated. The reviewRating applies to rating given by the review. The aggregateRating property applies to the review itself, as a creative work.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Rating
      */
-    protected $reviewRating;
+    public $reviewRating;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Review";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing
-     */
-    public function getItemReviewed()
-    {
-        return $this->itemReviewed;
-    }
+    public $context = "http://schema.org/Review";
 
     /**
      * @param $itemReviewed Robinzhao\SchemaOrg\Thing
      */
-    public function setItemReviewed($itemReviewed)
+    public function addItemReviewed($itemReviewed)
     {
-        $this->itemReviewed = $itemReviewed;
+        $this->itemReviewed []= $itemReviewed;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getReviewBody()
-    {
-        return $this->reviewBody;
     }
 
     /**
      * @param $reviewBody String
      */
-    public function setReviewBody($reviewBody)
+    public function addReviewBody($reviewBody)
     {
-        $this->reviewBody = $reviewBody;
+        $this->reviewBody []= $reviewBody;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Rating
-     */
-    public function getReviewRating()
-    {
-        return $this->reviewRating;
     }
 
     /**
      * @param $reviewRating Robinzhao\SchemaOrg\Thing\Intangible\Rating
      */
-    public function setReviewRating($reviewRating)
+    public function addReviewRating($reviewRating)
     {
-        $this->reviewRating = $reviewRating;
+        $this->reviewRating []= $reviewRating;
         return $this;
     }
 

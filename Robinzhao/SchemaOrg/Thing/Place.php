@@ -21,460 +21,308 @@ class Place extends Thing
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    protected $address;
+    public $address;
 
     /**
      * The overall rating, based on a collection of reviews or ratings, of the item.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Rating\AggregateRating
      */
-    protected $aggregateRating;
+    public $aggregateRating;
 
     /**
      * The basic containment relation between places.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $containedIn;
+    public $containedIn;
 
     /**
      * Upcoming or past event associated with this place or organization.
      *
      * @var Robinzhao\SchemaOrg\Thing\Event
      */
-    protected $event;
+    public $event;
 
     /**
      * Upcoming or past events associated with this place or organization (legacy spelling; see singular form, event).
      *
      * @var Robinzhao\SchemaOrg\Thing\Event
      */
-    protected $events;
+    public $events;
 
     /**
      * The fax number.
      *
      * @var String
      */
-    protected $faxNumber;
+    public $faxNumber;
 
     /**
      * The geo coordinates of the place.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoCoordinates|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoShape
      */
-    protected $geo;
+    public $geo;
 
     /**
      * The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.
      *
      * @var String
      */
-    protected $globalLocationNumber;
+    public $globalLocationNumber;
 
     /**
      * A count of a specific user interactions with this item—for example, 20 UserLikes, 5 UserComments, or 300 UserDownloads. The user interaction type should be one of the sub types of UserInteraction.
      *
      * @var String
      */
-    protected $interactionCount;
+    public $interactionCount;
 
     /**
      * The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.
      *
      * @var String
      */
-    protected $isicV4;
+    public $isicV4;
 
     /**
      * A logo associated with an organization.
      *
      * @var String|Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    protected $logo;
+    public $logo;
 
     /**
      * A URL to a map of the place.
      *
      * @var String
      */
-    protected $map;
+    public $map;
 
     /**
      * A URL to a map of the place (legacy spelling; see singular form, map).
      *
      * @var String
      */
-    protected $maps;
+    public $maps;
 
     /**
      * The opening hours of a certain place.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OpeningHoursSpecification
      */
-    protected $openingHoursSpecification;
+    public $openingHoursSpecification;
 
     /**
      * A photograph of this place.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|Robinzhao\SchemaOrg\Thing\CreativeWork\Photograph
      */
-    protected $photo;
+    public $photo;
 
     /**
      * Photographs of this place (legacy spelling; see singular form, photo).
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|Robinzhao\SchemaOrg\Thing\CreativeWork\Photograph
      */
-    protected $photos;
+    public $photos;
 
     /**
      * A review of the item.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Review
      */
-    protected $review;
+    public $review;
 
     /**
      * Review of the item (legacy spelling; see singular form, review).
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Review
      */
-    protected $reviews;
+    public $reviews;
 
     /**
      * The telephone number.
      *
      * @var String
      */
-    protected $telephone;
+    public $telephone;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Place";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
-     */
-    public function getAddress()
-    {
-        return $this->address;
-    }
+    public $context = "http://schema.org/Place";
 
     /**
      * @param $address Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    public function setAddress($address)
+    public function addAddress($address)
     {
-        $this->address = $address;
+        $this->address []= $address;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Rating\AggregateRating
-     */
-    public function getAggregateRating()
-    {
-        return $this->aggregateRating;
     }
 
     /**
      * @param $aggregateRating Robinzhao\SchemaOrg\Thing\Intangible\Rating\AggregateRating
      */
-    public function setAggregateRating($aggregateRating)
+    public function addAggregateRating($aggregateRating)
     {
-        $this->aggregateRating = $aggregateRating;
+        $this->aggregateRating []= $aggregateRating;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getContainedIn()
-    {
-        return $this->containedIn;
     }
 
     /**
      * @param $containedIn Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setContainedIn($containedIn)
+    public function addContainedIn($containedIn)
     {
-        $this->containedIn = $containedIn;
+        $this->containedIn []= $containedIn;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event
-     */
-    public function getEvent()
-    {
-        return $this->event;
     }
 
     /**
      * @param $event Robinzhao\SchemaOrg\Thing\Event
      */
-    public function setEvent($event)
+    public function addEvent($event)
     {
-        $this->event = $event;
+        $this->event []= $event;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event
-     */
-    public function getEvents()
-    {
-        return $this->events;
     }
 
     /**
      * @param $events Robinzhao\SchemaOrg\Thing\Event
      */
-    public function setEvents($events)
+    public function addEvents($events)
     {
-        $this->events = $events;
+        $this->events []= $events;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFaxNumber()
-    {
-        return $this->faxNumber;
     }
 
     /**
      * @param $faxNumber String
      */
-    public function setFaxNumber($faxNumber)
+    public function addFaxNumber($faxNumber)
     {
-        $this->faxNumber = $faxNumber;
+        $this->faxNumber []= $faxNumber;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoCoordinates|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoShape
-     */
-    public function getGeo()
-    {
-        return $this->geo;
     }
 
     /**
      * @param $geo Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoCoordinates|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoShape
      */
-    public function setGeo($geo)
+    public function addGeo($geo)
     {
-        $this->geo = $geo;
+        $this->geo []= $geo;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getGlobalLocationNumber()
-    {
-        return $this->globalLocationNumber;
     }
 
     /**
      * @param $globalLocationNumber String
      */
-    public function setGlobalLocationNumber($globalLocationNumber)
+    public function addGlobalLocationNumber($globalLocationNumber)
     {
-        $this->globalLocationNumber = $globalLocationNumber;
+        $this->globalLocationNumber []= $globalLocationNumber;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getInteractionCount()
-    {
-        return $this->interactionCount;
     }
 
     /**
      * @param $interactionCount String
      */
-    public function setInteractionCount($interactionCount)
+    public function addInteractionCount($interactionCount)
     {
-        $this->interactionCount = $interactionCount;
+        $this->interactionCount []= $interactionCount;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getIsicV4()
-    {
-        return $this->isicV4;
     }
 
     /**
      * @param $isicV4 String
      */
-    public function setIsicV4($isicV4)
+    public function addIsicV4($isicV4)
     {
-        $this->isicV4 = $isicV4;
+        $this->isicV4 []= $isicV4;
         return $this;
-    }
-
-    /**
-     * @return String|Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
-     */
-    public function getLogo()
-    {
-        return $this->logo;
     }
 
     /**
      * @param $logo String|Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    public function setLogo($logo)
+    public function addLogo($logo)
     {
-        $this->logo = $logo;
+        $this->logo []= $logo;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getMap()
-    {
-        return $this->map;
     }
 
     /**
      * @param $map String
      */
-    public function setMap($map)
+    public function addMap($map)
     {
-        $this->map = $map;
+        $this->map []= $map;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getMaps()
-    {
-        return $this->maps;
     }
 
     /**
      * @param $maps String
      */
-    public function setMaps($maps)
+    public function addMaps($maps)
     {
-        $this->maps = $maps;
+        $this->maps []= $maps;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OpeningHoursSpecification
-     */
-    public function getOpeningHoursSpecification()
-    {
-        return $this->openingHoursSpecification;
     }
 
     /**
      * @param $openingHoursSpecification Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OpeningHoursSpecification
      */
-    public function setOpeningHoursSpecification($openingHoursSpecification)
+    public function addOpeningHoursSpecification($openingHoursSpecification)
     {
-        $this->openingHoursSpecification = $openingHoursSpecification;
+        $this->openingHoursSpecification []= $openingHoursSpecification;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|Robinzhao\SchemaOrg\Thing\CreativeWork\Photograph
-     */
-    public function getPhoto()
-    {
-        return $this->photo;
     }
 
     /**
      * @param $photo Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|Robinzhao\SchemaOrg\Thing\CreativeWork\Photograph
      */
-    public function setPhoto($photo)
+    public function addPhoto($photo)
     {
-        $this->photo = $photo;
+        $this->photo []= $photo;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|Robinzhao\SchemaOrg\Thing\CreativeWork\Photograph
-     */
-    public function getPhotos()
-    {
-        return $this->photos;
     }
 
     /**
      * @param $photos Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|Robinzhao\SchemaOrg\Thing\CreativeWork\Photograph
      */
-    public function setPhotos($photos)
+    public function addPhotos($photos)
     {
-        $this->photos = $photos;
+        $this->photos []= $photos;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Review
-     */
-    public function getReview()
-    {
-        return $this->review;
     }
 
     /**
      * @param $review Robinzhao\SchemaOrg\Thing\CreativeWork\Review
      */
-    public function setReview($review)
+    public function addReview($review)
     {
-        $this->review = $review;
+        $this->review []= $review;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Review
-     */
-    public function getReviews()
-    {
-        return $this->reviews;
     }
 
     /**
      * @param $reviews Robinzhao\SchemaOrg\Thing\CreativeWork\Review
      */
-    public function setReviews($reviews)
+    public function addReviews($reviews)
     {
-        $this->reviews = $reviews;
+        $this->reviews []= $reviews;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTelephone()
-    {
-        return $this->telephone;
     }
 
     /**
      * @param $telephone String
      */
-    public function setTelephone($telephone)
+    public function addTelephone($telephone)
     {
-        $this->telephone = $telephone;
+        $this->telephone []= $telephone;
         return $this;
     }
 

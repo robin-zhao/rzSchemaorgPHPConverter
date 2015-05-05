@@ -21,28 +21,20 @@ class UpdateAction extends Action
      *
      * @var Robinzhao\SchemaOrg\Thing
      */
-    protected $collection;
+    public $collection;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/UpdateAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing
-     */
-    public function getCollection()
-    {
-        return $this->collection;
-    }
+    public $context = "http://schema.org/UpdateAction";
 
     /**
      * @param $collection Robinzhao\SchemaOrg\Thing
      */
-    public function setCollection($collection)
+    public function addCollection($collection)
     {
-        $this->collection = $collection;
+        $this->collection []= $collection;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class AutoPartsStore extends AutomotiveBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AutoPartsStore";
+    public $context = "http://schema.org/AutoPartsStore";
 
 }

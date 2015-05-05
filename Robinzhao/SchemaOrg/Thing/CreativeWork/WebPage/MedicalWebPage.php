@@ -21,28 +21,20 @@ class MedicalWebPage extends WebPage
      *
      * @var String
      */
-    protected $aspect;
+    public $aspect;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalWebPage";
-
-    /**
-     * @return String
-     */
-    public function getAspect()
-    {
-        return $this->aspect;
-    }
+    public $context = "http://schema.org/MedicalWebPage";
 
     /**
      * @param $aspect String
      */
-    public function setAspect($aspect)
+    public function addAspect($aspect)
     {
-        $this->aspect = $aspect;
+        $this->aspect []= $aspect;
         return $this;
     }
 

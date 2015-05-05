@@ -21,52 +21,36 @@ class BuyAction extends TradeAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $vendor;
+    public $vendor;
 
     /**
      * The warranty promise(s) included in the offer.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\WarrantyPromise
      */
-    protected $warrantyPromise;
+    public $warrantyPromise;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BuyAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getVendor()
-    {
-        return $this->vendor;
-    }
+    public $context = "http://schema.org/BuyAction";
 
     /**
      * @param $vendor Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setVendor($vendor)
+    public function addVendor($vendor)
     {
-        $this->vendor = $vendor;
+        $this->vendor []= $vendor;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\WarrantyPromise
-     */
-    public function getWarrantyPromise()
-    {
-        return $this->warrantyPromise;
     }
 
     /**
      * @param $warrantyPromise Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\WarrantyPromise
      */
-    public function setWarrantyPromise($warrantyPromise)
+    public function addWarrantyPromise($warrantyPromise)
     {
-        $this->warrantyPromise = $warrantyPromise;
+        $this->warrantyPromise []= $warrantyPromise;
         return $this;
     }
 

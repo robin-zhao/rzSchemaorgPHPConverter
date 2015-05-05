@@ -20,6 +20,6 @@ class RoofingContractor extends HomeAndConstructionBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RoofingContractor";
+    public $context = "http://schema.org/RoofingContractor";
 
 }

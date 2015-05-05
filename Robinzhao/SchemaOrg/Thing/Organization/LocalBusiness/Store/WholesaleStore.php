@@ -20,6 +20,6 @@ class WholesaleStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WholesaleStore";
+    public $context = "http://schema.org/WholesaleStore";
 
 }

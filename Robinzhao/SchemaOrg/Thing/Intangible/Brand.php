@@ -21,28 +21,20 @@ class Brand extends Intangible
      *
      * @var String|Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    protected $logo;
+    public $logo;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Brand";
-
-    /**
-     * @return String|Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
-     */
-    public function getLogo()
-    {
-        return $this->logo;
-    }
+    public $context = "http://schema.org/Brand";
 
     /**
      * @param $logo String|Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    public function setLogo($logo)
+    public function addLogo($logo)
     {
-        $this->logo = $logo;
+        $this->logo []= $logo;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class BefriendAction extends InteractAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BefriendAction";
+    public $context = "http://schema.org/BefriendAction";
 
 }

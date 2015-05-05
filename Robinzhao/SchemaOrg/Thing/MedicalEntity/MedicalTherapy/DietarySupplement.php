@@ -21,292 +21,196 @@ class DietarySupplement extends MedicalTherapy
      *
      * @var String
      */
-    protected $activeIngredient;
+    public $activeIngredient;
 
     /**
      * Descriptive information establishing a historical perspective on the supplement. May include the rationale for the name, the population where the supplement first came to prominence, etc.
      *
      * @var String
      */
-    protected $background;
+    public $background;
 
     /**
      * A dosage form in which this drug/supplement is available, e.g. 'tablet', 'suspension', 'injection'.
      *
      * @var String
      */
-    protected $dosageForm;
+    public $dosageForm;
 
     /**
      * True if this item's name is a proprietary/brand name (vs. generic name).
      *
      * @var Boolean
      */
-    protected $isProprietary;
+    public $isProprietary;
 
     /**
      * The drug or supplement's legal status, including any controlled substance schedules that apply.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
      */
-    protected $legalStatus;
+    public $legalStatus;
 
     /**
      * The manufacturer of the product.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $manufacturer;
+    public $manufacturer;
 
     /**
      * Recommended intake of this supplement for a given population as defined by a specific recommending authority.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\MaximumDoseSchedule
      */
-    protected $maximumIntake;
+    public $maximumIntake;
 
     /**
      * The specific biochemical interaction through which this drug or supplement produces its pharmacological effect.
      *
      * @var String
      */
-    protected $mechanismOfAction;
+    public $mechanismOfAction;
 
     /**
      * The generic name of this drug or supplement.
      *
      * @var String
      */
-    protected $nonProprietaryName;
+    public $nonProprietaryName;
 
     /**
      * Recommended intake of this supplement for a given population as defined by a specific recommending authority.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\RecommendedDoseSchedule
      */
-    protected $recommendedIntake;
+    public $recommendedIntake;
 
     /**
      * Any potential safety concern associated with the supplement. May include interactions with other drugs and foods, pregnancy, breastfeeding, known adverse reactions, and documented efficacy of the supplement.
      *
      * @var String
      */
-    protected $safetyConsideration;
+    public $safetyConsideration;
 
     /**
      * Characteristics of the population for which this is intended, or which typically uses it, e.g. 'adults'.
      *
      * @var String
      */
-    protected $targetPopulation;
+    public $targetPopulation;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DietarySupplement";
-
-    /**
-     * @return String
-     */
-    public function getActiveIngredient()
-    {
-        return $this->activeIngredient;
-    }
+    public $context = "http://schema.org/DietarySupplement";
 
     /**
      * @param $activeIngredient String
      */
-    public function setActiveIngredient($activeIngredient)
+    public function addActiveIngredient($activeIngredient)
     {
-        $this->activeIngredient = $activeIngredient;
+        $this->activeIngredient []= $activeIngredient;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getBackground()
-    {
-        return $this->background;
     }
 
     /**
      * @param $background String
      */
-    public function setBackground($background)
+    public function addBackground($background)
     {
-        $this->background = $background;
+        $this->background []= $background;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getDosageForm()
-    {
-        return $this->dosageForm;
     }
 
     /**
      * @param $dosageForm String
      */
-    public function setDosageForm($dosageForm)
+    public function addDosageForm($dosageForm)
     {
-        $this->dosageForm = $dosageForm;
+        $this->dosageForm []= $dosageForm;
         return $this;
-    }
-
-    /**
-     * @return Boolean
-     */
-    public function getIsProprietary()
-    {
-        return $this->isProprietary;
     }
 
     /**
      * @param $isProprietary Boolean
      */
-    public function setIsProprietary($isProprietary)
+    public function addIsProprietary($isProprietary)
     {
-        $this->isProprietary = $isProprietary;
+        $this->isProprietary []= $isProprietary;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
-     */
-    public function getLegalStatus()
-    {
-        return $this->legalStatus;
     }
 
     /**
      * @param $legalStatus Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
      */
-    public function setLegalStatus($legalStatus)
+    public function addLegalStatus($legalStatus)
     {
-        $this->legalStatus = $legalStatus;
+        $this->legalStatus []= $legalStatus;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getManufacturer()
-    {
-        return $this->manufacturer;
     }
 
     /**
      * @param $manufacturer Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setManufacturer($manufacturer)
+    public function addManufacturer($manufacturer)
     {
-        $this->manufacturer = $manufacturer;
+        $this->manufacturer []= $manufacturer;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\MaximumDoseSchedule
-     */
-    public function getMaximumIntake()
-    {
-        return $this->maximumIntake;
     }
 
     /**
      * @param $maximumIntake Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\MaximumDoseSchedule
      */
-    public function setMaximumIntake($maximumIntake)
+    public function addMaximumIntake($maximumIntake)
     {
-        $this->maximumIntake = $maximumIntake;
+        $this->maximumIntake []= $maximumIntake;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getMechanismOfAction()
-    {
-        return $this->mechanismOfAction;
     }
 
     /**
      * @param $mechanismOfAction String
      */
-    public function setMechanismOfAction($mechanismOfAction)
+    public function addMechanismOfAction($mechanismOfAction)
     {
-        $this->mechanismOfAction = $mechanismOfAction;
+        $this->mechanismOfAction []= $mechanismOfAction;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getNonProprietaryName()
-    {
-        return $this->nonProprietaryName;
     }
 
     /**
      * @param $nonProprietaryName String
      */
-    public function setNonProprietaryName($nonProprietaryName)
+    public function addNonProprietaryName($nonProprietaryName)
     {
-        $this->nonProprietaryName = $nonProprietaryName;
+        $this->nonProprietaryName []= $nonProprietaryName;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\RecommendedDoseSchedule
-     */
-    public function getRecommendedIntake()
-    {
-        return $this->recommendedIntake;
     }
 
     /**
      * @param $recommendedIntake Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule\RecommendedDoseSchedule
      */
-    public function setRecommendedIntake($recommendedIntake)
+    public function addRecommendedIntake($recommendedIntake)
     {
-        $this->recommendedIntake = $recommendedIntake;
+        $this->recommendedIntake []= $recommendedIntake;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSafetyConsideration()
-    {
-        return $this->safetyConsideration;
     }
 
     /**
      * @param $safetyConsideration String
      */
-    public function setSafetyConsideration($safetyConsideration)
+    public function addSafetyConsideration($safetyConsideration)
     {
-        $this->safetyConsideration = $safetyConsideration;
+        $this->safetyConsideration []= $safetyConsideration;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTargetPopulation()
-    {
-        return $this->targetPopulation;
     }
 
     /**
      * @param $targetPopulation String
      */
-    public function setTargetPopulation($targetPopulation)
+    public function addTargetPopulation($targetPopulation)
     {
-        $this->targetPopulation = $targetPopulation;
+        $this->targetPopulation []= $targetPopulation;
         return $this;
     }
 

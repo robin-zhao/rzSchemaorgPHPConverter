@@ -21,1156 +21,772 @@ class Person extends Thing
      *
      * @var String
      */
-    protected $additionalName;
+    public $additionalName;
 
     /**
      * Physical address of the item.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    protected $address;
+    public $address;
 
     /**
      * An organization that this person is affiliated with. For example, a school/university, a club, or a team.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $affiliation;
+    public $affiliation;
 
     /**
      * An educational organizations that the person is an alumni of.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization\EducationalOrganization
      */
-    protected $alumniOf;
+    public $alumniOf;
 
     /**
      * An award won by this person or for this creative work.
      *
      * @var String
      */
-    protected $award;
+    public $award;
 
     /**
      * Awards won by this person or for this creative work. (legacy spelling; see singular form, award)
      *
      * @var String
      */
-    protected $awards;
+    public $awards;
 
     /**
      * Date of birth.
      *
      * @var DateTime
      */
-    protected $birthDate;
+    public $birthDate;
 
     /**
      * The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Brand
      */
-    protected $brand;
+    public $brand;
 
     /**
      * A child of the person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $children;
+    public $children;
 
     /**
      * A colleague of the person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $colleague;
+    public $colleague;
 
     /**
      * A colleague of the person (legacy spelling; see singular form, colleague).
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $colleagues;
+    public $colleagues;
 
     /**
      * A contact point for a person or organization.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint
      */
-    protected $contactPoint;
+    public $contactPoint;
 
     /**
      * A contact point for a person or organization (legacy spelling; see singular form, contactPoint).
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint
      */
-    protected $contactPoints;
+    public $contactPoints;
 
     /**
      * Date of death.
      *
      * @var DateTime
      */
-    protected $deathDate;
+    public $deathDate;
 
     /**
      * The Dun & Bradstreet DUNS number for identifying an organization or business person.
      *
      * @var String
      */
-    protected $duns;
+    public $duns;
 
     /**
      * Email address.
      *
      * @var String
      */
-    protected $email;
+    public $email;
 
     /**
      * Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the Name property.
      *
      * @var String
      */
-    protected $familyName;
+    public $familyName;
 
     /**
      * The fax number.
      *
      * @var String
      */
-    protected $faxNumber;
+    public $faxNumber;
 
     /**
      * The most generic uni-directional social relation.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $follows;
+    public $follows;
 
     /**
      * Gender of the person.
      *
      * @var String
      */
-    protected $gender;
+    public $gender;
 
     /**
      * Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the Name property.
      *
      * @var String
      */
-    protected $givenName;
+    public $givenName;
 
     /**
      * The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.
      *
      * @var String
      */
-    protected $globalLocationNumber;
+    public $globalLocationNumber;
 
     /**
      * Points-of-Sales operated by the organization or person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $hasPOS;
+    public $hasPOS;
 
     /**
      * A contact location for a person's residence.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint|Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $homeLocation;
+    public $homeLocation;
 
     /**
      * An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.
      *
      * @var String
      */
-    protected $honorificPrefix;
+    public $honorificPrefix;
 
     /**
      * An honorific suffix preceding a Person's name such as M.D. /PhD/MSCSW.
      *
      * @var String
      */
-    protected $honorificSuffix;
+    public $honorificSuffix;
 
     /**
      * A count of a specific user interactions with this item—for example, 20 UserLikes, 5 UserComments, or 300 UserDownloads. The user interaction type should be one of the sub types of UserInteraction.
      *
      * @var String
      */
-    protected $interactionCount;
+    public $interactionCount;
 
     /**
      * The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.
      *
      * @var String
      */
-    protected $isicV4;
+    public $isicV4;
 
     /**
      * The job title of the person (for example, Financial Manager).
      *
      * @var String
      */
-    protected $jobTitle;
+    public $jobTitle;
 
     /**
      * The most generic bi-directional social/work relation.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $knows;
+    public $knows;
 
     /**
      * A pointer to products or services offered by the organization or person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Offer
      */
-    protected $makesOffer;
+    public $makesOffer;
 
     /**
      * An organization to which the person belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $memberOf;
+    public $memberOf;
 
     /**
      * The North American Industry Classification System (NAICS) code for a particular organization or business person.
      *
      * @var String
      */
-    protected $naics;
+    public $naics;
 
     /**
      * Nationality of the person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea\Country
      */
-    protected $nationality;
+    public $nationality;
 
     /**
      * Products owned by the organization or person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OwnershipInfo|Robinzhao\SchemaOrg\Thing\Product
      */
-    protected $owns;
+    public $owns;
 
     /**
      * A parent of this person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $parent;
+    public $parent;
 
     /**
      * A parents of the person (legacy spelling; see singular form, parent).
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $parents;
+    public $parents;
 
     /**
      * Event that this person is a performer or participant in.
      *
      * @var Robinzhao\SchemaOrg\Thing\Event
      */
-    protected $performerIn;
+    public $performerIn;
 
     /**
      * The most generic familial relation.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $relatedTo;
+    public $relatedTo;
 
     /**
      * A pointer to products or services sought by the organization or person (demand).
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Demand
      */
-    protected $seeks;
+    public $seeks;
 
     /**
      * A sibling of the person.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $sibling;
+    public $sibling;
 
     /**
      * A sibling of the person (legacy spelling; see singular form, sibling).
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $siblings;
+    public $siblings;
 
     /**
      * The person's spouse.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $spouse;
+    public $spouse;
 
     /**
      * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.
      *
      * @var String
      */
-    protected $taxID;
+    public $taxID;
 
     /**
      * The telephone number.
      *
      * @var String
      */
-    protected $telephone;
+    public $telephone;
 
     /**
      * The Value-added Tax ID of the organisation or person.
      *
      * @var String
      */
-    protected $vatID;
+    public $vatID;
 
     /**
      * A contact location for a person's place of work.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint|Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $workLocation;
+    public $workLocation;
 
     /**
      * Organizations that the person works for.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $worksFor;
+    public $worksFor;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Person";
-
-    /**
-     * @return String
-     */
-    public function getAdditionalName()
-    {
-        return $this->additionalName;
-    }
+    public $context = "http://schema.org/Person";
 
     /**
      * @param $additionalName String
      */
-    public function setAdditionalName($additionalName)
+    public function addAdditionalName($additionalName)
     {
-        $this->additionalName = $additionalName;
+        $this->additionalName []= $additionalName;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
-     */
-    public function getAddress()
-    {
-        return $this->address;
     }
 
     /**
      * @param $address Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint\PostalAddress
      */
-    public function setAddress($address)
+    public function addAddress($address)
     {
-        $this->address = $address;
+        $this->address []= $address;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getAffiliation()
-    {
-        return $this->affiliation;
     }
 
     /**
      * @param $affiliation Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setAffiliation($affiliation)
+    public function addAffiliation($affiliation)
     {
-        $this->affiliation = $affiliation;
+        $this->affiliation []= $affiliation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization\EducationalOrganization
-     */
-    public function getAlumniOf()
-    {
-        return $this->alumniOf;
     }
 
     /**
      * @param $alumniOf Robinzhao\SchemaOrg\Thing\Organization\EducationalOrganization
      */
-    public function setAlumniOf($alumniOf)
+    public function addAlumniOf($alumniOf)
     {
-        $this->alumniOf = $alumniOf;
+        $this->alumniOf []= $alumniOf;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getAward()
-    {
-        return $this->award;
     }
 
     /**
      * @param $award String
      */
-    public function setAward($award)
+    public function addAward($award)
     {
-        $this->award = $award;
+        $this->award []= $award;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getAwards()
-    {
-        return $this->awards;
     }
 
     /**
      * @param $awards String
      */
-    public function setAwards($awards)
+    public function addAwards($awards)
     {
-        $this->awards = $awards;
+        $this->awards []= $awards;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getBirthDate()
-    {
-        return $this->birthDate;
     }
 
     /**
      * @param $birthDate DateTime
      */
-    public function setBirthDate($birthDate)
+    public function addBirthDate($birthDate)
     {
-        $this->birthDate = $birthDate;
+        $this->birthDate []= $birthDate;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Brand
-     */
-    public function getBrand()
-    {
-        return $this->brand;
     }
 
     /**
      * @param $brand Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Brand
      */
-    public function setBrand($brand)
+    public function addBrand($brand)
     {
-        $this->brand = $brand;
+        $this->brand []= $brand;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getChildren()
-    {
-        return $this->children;
     }
 
     /**
      * @param $children Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setChildren($children)
+    public function addChildren($children)
     {
-        $this->children = $children;
+        $this->children []= $children;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getColleague()
-    {
-        return $this->colleague;
     }
 
     /**
      * @param $colleague Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setColleague($colleague)
+    public function addColleague($colleague)
     {
-        $this->colleague = $colleague;
+        $this->colleague []= $colleague;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getColleagues()
-    {
-        return $this->colleagues;
     }
 
     /**
      * @param $colleagues Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setColleagues($colleagues)
+    public function addColleagues($colleagues)
     {
-        $this->colleagues = $colleagues;
+        $this->colleagues []= $colleagues;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint
-     */
-    public function getContactPoint()
-    {
-        return $this->contactPoint;
     }
 
     /**
      * @param $contactPoint Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint
      */
-    public function setContactPoint($contactPoint)
+    public function addContactPoint($contactPoint)
     {
-        $this->contactPoint = $contactPoint;
+        $this->contactPoint []= $contactPoint;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint
-     */
-    public function getContactPoints()
-    {
-        return $this->contactPoints;
     }
 
     /**
      * @param $contactPoints Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint
      */
-    public function setContactPoints($contactPoints)
+    public function addContactPoints($contactPoints)
     {
-        $this->contactPoints = $contactPoints;
+        $this->contactPoints []= $contactPoints;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getDeathDate()
-    {
-        return $this->deathDate;
     }
 
     /**
      * @param $deathDate DateTime
      */
-    public function setDeathDate($deathDate)
+    public function addDeathDate($deathDate)
     {
-        $this->deathDate = $deathDate;
+        $this->deathDate []= $deathDate;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getDuns()
-    {
-        return $this->duns;
     }
 
     /**
      * @param $duns String
      */
-    public function setDuns($duns)
+    public function addDuns($duns)
     {
-        $this->duns = $duns;
+        $this->duns []= $duns;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getEmail()
-    {
-        return $this->email;
     }
 
     /**
      * @param $email String
      */
-    public function setEmail($email)
+    public function addEmail($email)
     {
-        $this->email = $email;
+        $this->email []= $email;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFamilyName()
-    {
-        return $this->familyName;
     }
 
     /**
      * @param $familyName String
      */
-    public function setFamilyName($familyName)
+    public function addFamilyName($familyName)
     {
-        $this->familyName = $familyName;
+        $this->familyName []= $familyName;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFaxNumber()
-    {
-        return $this->faxNumber;
     }
 
     /**
      * @param $faxNumber String
      */
-    public function setFaxNumber($faxNumber)
+    public function addFaxNumber($faxNumber)
     {
-        $this->faxNumber = $faxNumber;
+        $this->faxNumber []= $faxNumber;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getFollows()
-    {
-        return $this->follows;
     }
 
     /**
      * @param $follows Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setFollows($follows)
+    public function addFollows($follows)
     {
-        $this->follows = $follows;
+        $this->follows []= $follows;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getGender()
-    {
-        return $this->gender;
     }
 
     /**
      * @param $gender String
      */
-    public function setGender($gender)
+    public function addGender($gender)
     {
-        $this->gender = $gender;
+        $this->gender []= $gender;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getGivenName()
-    {
-        return $this->givenName;
     }
 
     /**
      * @param $givenName String
      */
-    public function setGivenName($givenName)
+    public function addGivenName($givenName)
     {
-        $this->givenName = $givenName;
+        $this->givenName []= $givenName;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getGlobalLocationNumber()
-    {
-        return $this->globalLocationNumber;
     }
 
     /**
      * @param $globalLocationNumber String
      */
-    public function setGlobalLocationNumber($globalLocationNumber)
+    public function addGlobalLocationNumber($globalLocationNumber)
     {
-        $this->globalLocationNumber = $globalLocationNumber;
+        $this->globalLocationNumber []= $globalLocationNumber;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getHasPOS()
-    {
-        return $this->hasPOS;
     }
 
     /**
      * @param $hasPOS Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setHasPOS($hasPOS)
+    public function addHasPOS($hasPOS)
     {
-        $this->hasPOS = $hasPOS;
+        $this->hasPOS []= $hasPOS;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint|Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getHomeLocation()
-    {
-        return $this->homeLocation;
     }
 
     /**
      * @param $homeLocation Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint|Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setHomeLocation($homeLocation)
+    public function addHomeLocation($homeLocation)
     {
-        $this->homeLocation = $homeLocation;
+        $this->homeLocation []= $homeLocation;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getHonorificPrefix()
-    {
-        return $this->honorificPrefix;
     }
 
     /**
      * @param $honorificPrefix String
      */
-    public function setHonorificPrefix($honorificPrefix)
+    public function addHonorificPrefix($honorificPrefix)
     {
-        $this->honorificPrefix = $honorificPrefix;
+        $this->honorificPrefix []= $honorificPrefix;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getHonorificSuffix()
-    {
-        return $this->honorificSuffix;
     }
 
     /**
      * @param $honorificSuffix String
      */
-    public function setHonorificSuffix($honorificSuffix)
+    public function addHonorificSuffix($honorificSuffix)
     {
-        $this->honorificSuffix = $honorificSuffix;
+        $this->honorificSuffix []= $honorificSuffix;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getInteractionCount()
-    {
-        return $this->interactionCount;
     }
 
     /**
      * @param $interactionCount String
      */
-    public function setInteractionCount($interactionCount)
+    public function addInteractionCount($interactionCount)
     {
-        $this->interactionCount = $interactionCount;
+        $this->interactionCount []= $interactionCount;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getIsicV4()
-    {
-        return $this->isicV4;
     }
 
     /**
      * @param $isicV4 String
      */
-    public function setIsicV4($isicV4)
+    public function addIsicV4($isicV4)
     {
-        $this->isicV4 = $isicV4;
+        $this->isicV4 []= $isicV4;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getJobTitle()
-    {
-        return $this->jobTitle;
     }
 
     /**
      * @param $jobTitle String
      */
-    public function setJobTitle($jobTitle)
+    public function addJobTitle($jobTitle)
     {
-        $this->jobTitle = $jobTitle;
+        $this->jobTitle []= $jobTitle;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getKnows()
-    {
-        return $this->knows;
     }
 
     /**
      * @param $knows Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setKnows($knows)
+    public function addKnows($knows)
     {
-        $this->knows = $knows;
+        $this->knows []= $knows;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Offer
-     */
-    public function getMakesOffer()
-    {
-        return $this->makesOffer;
     }
 
     /**
      * @param $makesOffer Robinzhao\SchemaOrg\Thing\Intangible\Offer
      */
-    public function setMakesOffer($makesOffer)
+    public function addMakesOffer($makesOffer)
     {
-        $this->makesOffer = $makesOffer;
+        $this->makesOffer []= $makesOffer;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getMemberOf()
-    {
-        return $this->memberOf;
     }
 
     /**
      * @param $memberOf Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setMemberOf($memberOf)
+    public function addMemberOf($memberOf)
     {
-        $this->memberOf = $memberOf;
+        $this->memberOf []= $memberOf;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getNaics()
-    {
-        return $this->naics;
     }
 
     /**
      * @param $naics String
      */
-    public function setNaics($naics)
+    public function addNaics($naics)
     {
-        $this->naics = $naics;
+        $this->naics []= $naics;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea\Country
-     */
-    public function getNationality()
-    {
-        return $this->nationality;
     }
 
     /**
      * @param $nationality Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea\Country
      */
-    public function setNationality($nationality)
+    public function addNationality($nationality)
     {
-        $this->nationality = $nationality;
+        $this->nationality []= $nationality;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OwnershipInfo|Robinzhao\SchemaOrg\Thing\Product
-     */
-    public function getOwns()
-    {
-        return $this->owns;
     }
 
     /**
      * @param $owns Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\OwnershipInfo|Robinzhao\SchemaOrg\Thing\Product
      */
-    public function setOwns($owns)
+    public function addOwns($owns)
     {
-        $this->owns = $owns;
+        $this->owns []= $owns;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getParent()
-    {
-        return $this->parent;
     }
 
     /**
      * @param $parent Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setParent($parent)
+    public function addParent($parent)
     {
-        $this->parent = $parent;
+        $this->parent []= $parent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getParents()
-    {
-        return $this->parents;
     }
 
     /**
      * @param $parents Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setParents($parents)
+    public function addParents($parents)
     {
-        $this->parents = $parents;
+        $this->parents []= $parents;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event
-     */
-    public function getPerformerIn()
-    {
-        return $this->performerIn;
     }
 
     /**
      * @param $performerIn Robinzhao\SchemaOrg\Thing\Event
      */
-    public function setPerformerIn($performerIn)
+    public function addPerformerIn($performerIn)
     {
-        $this->performerIn = $performerIn;
+        $this->performerIn []= $performerIn;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getRelatedTo()
-    {
-        return $this->relatedTo;
     }
 
     /**
      * @param $relatedTo Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setRelatedTo($relatedTo)
+    public function addRelatedTo($relatedTo)
     {
-        $this->relatedTo = $relatedTo;
+        $this->relatedTo []= $relatedTo;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Demand
-     */
-    public function getSeeks()
-    {
-        return $this->seeks;
     }
 
     /**
      * @param $seeks Robinzhao\SchemaOrg\Thing\Intangible\Demand
      */
-    public function setSeeks($seeks)
+    public function addSeeks($seeks)
     {
-        $this->seeks = $seeks;
+        $this->seeks []= $seeks;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getSibling()
-    {
-        return $this->sibling;
     }
 
     /**
      * @param $sibling Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setSibling($sibling)
+    public function addSibling($sibling)
     {
-        $this->sibling = $sibling;
+        $this->sibling []= $sibling;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getSiblings()
-    {
-        return $this->siblings;
     }
 
     /**
      * @param $siblings Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setSiblings($siblings)
+    public function addSiblings($siblings)
     {
-        $this->siblings = $siblings;
+        $this->siblings []= $siblings;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getSpouse()
-    {
-        return $this->spouse;
     }
 
     /**
      * @param $spouse Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setSpouse($spouse)
+    public function addSpouse($spouse)
     {
-        $this->spouse = $spouse;
+        $this->spouse []= $spouse;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTaxID()
-    {
-        return $this->taxID;
     }
 
     /**
      * @param $taxID String
      */
-    public function setTaxID($taxID)
+    public function addTaxID($taxID)
     {
-        $this->taxID = $taxID;
+        $this->taxID []= $taxID;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTelephone()
-    {
-        return $this->telephone;
     }
 
     /**
      * @param $telephone String
      */
-    public function setTelephone($telephone)
+    public function addTelephone($telephone)
     {
-        $this->telephone = $telephone;
+        $this->telephone []= $telephone;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getVatID()
-    {
-        return $this->vatID;
     }
 
     /**
      * @param $vatID String
      */
-    public function setVatID($vatID)
+    public function addVatID($vatID)
     {
-        $this->vatID = $vatID;
+        $this->vatID []= $vatID;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint|Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getWorkLocation()
-    {
-        return $this->workLocation;
     }
 
     /**
      * @param $workLocation Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\ContactPoint|Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setWorkLocation($workLocation)
+    public function addWorkLocation($workLocation)
     {
-        $this->workLocation = $workLocation;
+        $this->workLocation []= $workLocation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getWorksFor()
-    {
-        return $this->worksFor;
     }
 
     /**
      * @param $worksFor Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setWorksFor($worksFor)
+    public function addWorksFor($worksFor)
     {
-        $this->worksFor = $worksFor;
+        $this->worksFor []= $worksFor;
         return $this;
     }
 

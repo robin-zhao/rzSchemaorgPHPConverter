@@ -20,6 +20,6 @@ class AssessAction extends Action
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AssessAction";
+    public $context = "http://schema.org/AssessAction";
 
 }

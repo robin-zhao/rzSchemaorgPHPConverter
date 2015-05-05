@@ -20,6 +20,6 @@ class Painting extends CreativeWork
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Painting";
+    public $context = "http://schema.org/Painting";
 
 }

@@ -20,6 +20,6 @@ class GeneralContractor extends HomeAndConstructionBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/GeneralContractor";
+    public $context = "http://schema.org/GeneralContractor";
 
 }

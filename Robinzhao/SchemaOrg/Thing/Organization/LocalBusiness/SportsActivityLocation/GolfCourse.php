@@ -20,6 +20,6 @@ class GolfCourse extends SportsActivityLocation
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/GolfCourse";
+    public $context = "http://schema.org/GolfCourse";
 
 }

@@ -20,6 +20,6 @@ class Mosque extends PlaceOfWorship
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Mosque";
+    public $context = "http://schema.org/Mosque";
 
 }

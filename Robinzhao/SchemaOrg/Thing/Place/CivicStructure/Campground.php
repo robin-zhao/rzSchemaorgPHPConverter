@@ -20,6 +20,6 @@ class Campground extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Campground";
+    public $context = "http://schema.org/Campground";
 
 }

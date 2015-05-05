@@ -20,6 +20,6 @@ class UserPlusOnes extends UserInteraction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/UserPlusOnes";
+    public $context = "http://schema.org/UserPlusOnes";
 
 }

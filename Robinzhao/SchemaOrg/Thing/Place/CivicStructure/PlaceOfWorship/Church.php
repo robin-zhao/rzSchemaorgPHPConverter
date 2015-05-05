@@ -20,6 +20,6 @@ class Church extends PlaceOfWorship
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Church";
+    public $context = "http://schema.org/Church";
 
 }

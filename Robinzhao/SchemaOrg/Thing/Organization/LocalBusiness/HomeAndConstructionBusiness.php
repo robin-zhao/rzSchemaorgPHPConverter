@@ -20,6 +20,6 @@ class HomeAndConstructionBusiness extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/HomeAndConstructionBusiness";
+    public $context = "http://schema.org/HomeAndConstructionBusiness";
 
 }

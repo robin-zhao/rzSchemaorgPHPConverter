@@ -21,124 +21,84 @@ class MedicalTest extends MedicalEntity
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    protected $affectedBy;
+    public $affectedBy;
 
     /**
      * Range of acceptable values for a typical patient, when applicable.
      *
      * @var String
      */
-    protected $normalRange;
+    public $normalRange;
 
     /**
      * A sign detected by the test.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalSignOrSymptom\MedicalSign
      */
-    protected $signDetected;
+    public $signDetected;
 
     /**
      * A condition the test is used to diagnose.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    protected $usedToDiagnose;
+    public $usedToDiagnose;
 
     /**
      * Device used to perform the test.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalDevice
      */
-    protected $usesDevice;
+    public $usesDevice;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalTest";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
-     */
-    public function getAffectedBy()
-    {
-        return $this->affectedBy;
-    }
+    public $context = "http://schema.org/MedicalTest";
 
     /**
      * @param $affectedBy Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    public function setAffectedBy($affectedBy)
+    public function addAffectedBy($affectedBy)
     {
-        $this->affectedBy = $affectedBy;
+        $this->affectedBy []= $affectedBy;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getNormalRange()
-    {
-        return $this->normalRange;
     }
 
     /**
      * @param $normalRange String
      */
-    public function setNormalRange($normalRange)
+    public function addNormalRange($normalRange)
     {
-        $this->normalRange = $normalRange;
+        $this->normalRange []= $normalRange;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalSignOrSymptom\MedicalSign
-     */
-    public function getSignDetected()
-    {
-        return $this->signDetected;
     }
 
     /**
      * @param $signDetected Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalSignOrSymptom\MedicalSign
      */
-    public function setSignDetected($signDetected)
+    public function addSignDetected($signDetected)
     {
-        $this->signDetected = $signDetected;
+        $this->signDetected []= $signDetected;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
-     */
-    public function getUsedToDiagnose()
-    {
-        return $this->usedToDiagnose;
     }
 
     /**
      * @param $usedToDiagnose Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    public function setUsedToDiagnose($usedToDiagnose)
+    public function addUsedToDiagnose($usedToDiagnose)
     {
-        $this->usedToDiagnose = $usedToDiagnose;
+        $this->usedToDiagnose []= $usedToDiagnose;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalDevice
-     */
-    public function getUsesDevice()
-    {
-        return $this->usesDevice;
     }
 
     /**
      * @param $usesDevice Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalDevice
      */
-    public function setUsesDevice($usesDevice)
+    public function addUsesDevice($usesDevice)
     {
-        $this->usesDevice = $usesDevice;
+        $this->usesDevice []= $usesDevice;
         return $this;
     }
 

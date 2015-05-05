@@ -21,484 +21,324 @@ class SoftwareApplication extends CreativeWork
      *
      * @var String
      */
-    protected $applicationCategory;
+    public $applicationCategory;
 
     /**
      * Subcategory of the application, e.g. "Arcade Game".
      *
      * @var String
      */
-    protected $applicationSubCategory;
+    public $applicationSubCategory;
 
     /**
      * The name of the application suite to which the application belongs (e.g. Excel belongs to Office)
      *
      * @var String
      */
-    protected $applicationSuite;
+    public $applicationSuite;
 
     /**
      * Countries for which the application is not supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
      *
      * @var String
      */
-    protected $countriesNotSupported;
+    public $countriesNotSupported;
 
     /**
      * Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
      *
      * @var String
      */
-    protected $countriesSupported;
+    public $countriesSupported;
 
     /**
      * Device required to run the application. Used in cases where a specific make/model is required to run the application.
      *
      * @var String
      */
-    protected $device;
+    public $device;
 
     /**
      * If the file can be downloaded, URL to download the binary.
      *
      * @var String
      */
-    protected $downloadUrl;
+    public $downloadUrl;
 
     /**
      * Features or modules provided by this application (and possibly required by other applications).
      *
      * @var String
      */
-    protected $featureList;
+    public $featureList;
 
     /**
      * MIME format of the binary (e.g. application/zip).
      *
      * @var String
      */
-    protected $fileFormat;
+    public $fileFormat;
 
     /**
      * Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.
      *
      * @var Integer
      */
-    protected $fileSize;
+    public $fileSize;
 
     /**
      * URL at which the app may be installed, if different from the URL of the item.
      *
      * @var String
      */
-    protected $installUrl;
+    public $installUrl;
 
     /**
      * Minimum memory requirements.
      *
      * @var String
      */
-    protected $memoryRequirements;
+    public $memoryRequirements;
 
     /**
      * Operating systems supported (Windows 7, OSX 10.6, Android 1.6).
      *
      * @var String
      */
-    protected $operatingSystem;
+    public $operatingSystem;
 
     /**
      * Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).
      *
      * @var String
      */
-    protected $permissions;
+    public $permissions;
 
     /**
      * Processor architecture required to run the application (e.g. IA64).
      *
      * @var String
      */
-    protected $processorRequirements;
+    public $processorRequirements;
 
     /**
      * Description of what changed in this version.
      *
      * @var String
      */
-    protected $releaseNotes;
+    public $releaseNotes;
 
     /**
      * Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).
      *
      * @var String
      */
-    protected $requirements;
+    public $requirements;
 
     /**
      * A link to a screenshot image of the app.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|String
      */
-    protected $screenshot;
+    public $screenshot;
 
     /**
      * Version of the software instance.
      *
      * @var String
      */
-    protected $softwareVersion;
+    public $softwareVersion;
 
     /**
      * Storage requirements (free space required).
      *
      * @var String
      */
-    protected $storageRequirements;
+    public $storageRequirements;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SoftwareApplication";
-
-    /**
-     * @return String
-     */
-    public function getApplicationCategory()
-    {
-        return $this->applicationCategory;
-    }
+    public $context = "http://schema.org/SoftwareApplication";
 
     /**
      * @param $applicationCategory String
      */
-    public function setApplicationCategory($applicationCategory)
+    public function addApplicationCategory($applicationCategory)
     {
-        $this->applicationCategory = $applicationCategory;
+        $this->applicationCategory []= $applicationCategory;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getApplicationSubCategory()
-    {
-        return $this->applicationSubCategory;
     }
 
     /**
      * @param $applicationSubCategory String
      */
-    public function setApplicationSubCategory($applicationSubCategory)
+    public function addApplicationSubCategory($applicationSubCategory)
     {
-        $this->applicationSubCategory = $applicationSubCategory;
+        $this->applicationSubCategory []= $applicationSubCategory;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getApplicationSuite()
-    {
-        return $this->applicationSuite;
     }
 
     /**
      * @param $applicationSuite String
      */
-    public function setApplicationSuite($applicationSuite)
+    public function addApplicationSuite($applicationSuite)
     {
-        $this->applicationSuite = $applicationSuite;
+        $this->applicationSuite []= $applicationSuite;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getCountriesNotSupported()
-    {
-        return $this->countriesNotSupported;
     }
 
     /**
      * @param $countriesNotSupported String
      */
-    public function setCountriesNotSupported($countriesNotSupported)
+    public function addCountriesNotSupported($countriesNotSupported)
     {
-        $this->countriesNotSupported = $countriesNotSupported;
+        $this->countriesNotSupported []= $countriesNotSupported;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getCountriesSupported()
-    {
-        return $this->countriesSupported;
     }
 
     /**
      * @param $countriesSupported String
      */
-    public function setCountriesSupported($countriesSupported)
+    public function addCountriesSupported($countriesSupported)
     {
-        $this->countriesSupported = $countriesSupported;
+        $this->countriesSupported []= $countriesSupported;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getDevice()
-    {
-        return $this->device;
     }
 
     /**
      * @param $device String
      */
-    public function setDevice($device)
+    public function addDevice($device)
     {
-        $this->device = $device;
+        $this->device []= $device;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getDownloadUrl()
-    {
-        return $this->downloadUrl;
     }
 
     /**
      * @param $downloadUrl String
      */
-    public function setDownloadUrl($downloadUrl)
+    public function addDownloadUrl($downloadUrl)
     {
-        $this->downloadUrl = $downloadUrl;
+        $this->downloadUrl []= $downloadUrl;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFeatureList()
-    {
-        return $this->featureList;
     }
 
     /**
      * @param $featureList String
      */
-    public function setFeatureList($featureList)
+    public function addFeatureList($featureList)
     {
-        $this->featureList = $featureList;
+        $this->featureList []= $featureList;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFileFormat()
-    {
-        return $this->fileFormat;
     }
 
     /**
      * @param $fileFormat String
      */
-    public function setFileFormat($fileFormat)
+    public function addFileFormat($fileFormat)
     {
-        $this->fileFormat = $fileFormat;
+        $this->fileFormat []= $fileFormat;
         return $this;
-    }
-
-    /**
-     * @return Integer
-     */
-    public function getFileSize()
-    {
-        return $this->fileSize;
     }
 
     /**
      * @param $fileSize Integer
      */
-    public function setFileSize($fileSize)
+    public function addFileSize($fileSize)
     {
-        $this->fileSize = $fileSize;
+        $this->fileSize []= $fileSize;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getInstallUrl()
-    {
-        return $this->installUrl;
     }
 
     /**
      * @param $installUrl String
      */
-    public function setInstallUrl($installUrl)
+    public function addInstallUrl($installUrl)
     {
-        $this->installUrl = $installUrl;
+        $this->installUrl []= $installUrl;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getMemoryRequirements()
-    {
-        return $this->memoryRequirements;
     }
 
     /**
      * @param $memoryRequirements String
      */
-    public function setMemoryRequirements($memoryRequirements)
+    public function addMemoryRequirements($memoryRequirements)
     {
-        $this->memoryRequirements = $memoryRequirements;
+        $this->memoryRequirements []= $memoryRequirements;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getOperatingSystem()
-    {
-        return $this->operatingSystem;
     }
 
     /**
      * @param $operatingSystem String
      */
-    public function setOperatingSystem($operatingSystem)
+    public function addOperatingSystem($operatingSystem)
     {
-        $this->operatingSystem = $operatingSystem;
+        $this->operatingSystem []= $operatingSystem;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPermissions()
-    {
-        return $this->permissions;
     }
 
     /**
      * @param $permissions String
      */
-    public function setPermissions($permissions)
+    public function addPermissions($permissions)
     {
-        $this->permissions = $permissions;
+        $this->permissions []= $permissions;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getProcessorRequirements()
-    {
-        return $this->processorRequirements;
     }
 
     /**
      * @param $processorRequirements String
      */
-    public function setProcessorRequirements($processorRequirements)
+    public function addProcessorRequirements($processorRequirements)
     {
-        $this->processorRequirements = $processorRequirements;
+        $this->processorRequirements []= $processorRequirements;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getReleaseNotes()
-    {
-        return $this->releaseNotes;
     }
 
     /**
      * @param $releaseNotes String
      */
-    public function setReleaseNotes($releaseNotes)
+    public function addReleaseNotes($releaseNotes)
     {
-        $this->releaseNotes = $releaseNotes;
+        $this->releaseNotes []= $releaseNotes;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRequirements()
-    {
-        return $this->requirements;
     }
 
     /**
      * @param $requirements String
      */
-    public function setRequirements($requirements)
+    public function addRequirements($requirements)
     {
-        $this->requirements = $requirements;
+        $this->requirements []= $requirements;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|String
-     */
-    public function getScreenshot()
-    {
-        return $this->screenshot;
     }
 
     /**
      * @param $screenshot Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject|String
      */
-    public function setScreenshot($screenshot)
+    public function addScreenshot($screenshot)
     {
-        $this->screenshot = $screenshot;
+        $this->screenshot []= $screenshot;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSoftwareVersion()
-    {
-        return $this->softwareVersion;
     }
 
     /**
      * @param $softwareVersion String
      */
-    public function setSoftwareVersion($softwareVersion)
+    public function addSoftwareVersion($softwareVersion)
     {
-        $this->softwareVersion = $softwareVersion;
+        $this->softwareVersion []= $softwareVersion;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getStorageRequirements()
-    {
-        return $this->storageRequirements;
     }
 
     /**
      * @param $storageRequirements String
      */
-    public function setStorageRequirements($storageRequirements)
+    public function addStorageRequirements($storageRequirements)
     {
-        $this->storageRequirements = $storageRequirements;
+        $this->storageRequirements []= $storageRequirements;
         return $this;
     }
 

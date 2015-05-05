@@ -21,100 +21,68 @@ class DeliveryEvent extends Event
      *
      * @var String
      */
-    protected $accessCode;
+    public $accessCode;
 
     /**
      * When the item is available for pickup from the store, locker, etc.
      *
      * @var DateTime
      */
-    protected $availableFrom;
+    public $availableFrom;
 
     /**
      * After this date, the item will no longer be available for pickup.
      *
      * @var DateTime
      */
-    protected $availableThrough;
+    public $availableThrough;
 
     /**
      * Method used for delivery or shipping.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    protected $hasDeliveryMethod;
+    public $hasDeliveryMethod;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DeliveryEvent";
-
-    /**
-     * @return String
-     */
-    public function getAccessCode()
-    {
-        return $this->accessCode;
-    }
+    public $context = "http://schema.org/DeliveryEvent";
 
     /**
      * @param $accessCode String
      */
-    public function setAccessCode($accessCode)
+    public function addAccessCode($accessCode)
     {
-        $this->accessCode = $accessCode;
+        $this->accessCode []= $accessCode;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getAvailableFrom()
-    {
-        return $this->availableFrom;
     }
 
     /**
      * @param $availableFrom DateTime
      */
-    public function setAvailableFrom($availableFrom)
+    public function addAvailableFrom($availableFrom)
     {
-        $this->availableFrom = $availableFrom;
+        $this->availableFrom []= $availableFrom;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getAvailableThrough()
-    {
-        return $this->availableThrough;
     }
 
     /**
      * @param $availableThrough DateTime
      */
-    public function setAvailableThrough($availableThrough)
+    public function addAvailableThrough($availableThrough)
     {
-        $this->availableThrough = $availableThrough;
+        $this->availableThrough []= $availableThrough;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
-     */
-    public function getHasDeliveryMethod()
-    {
-        return $this->hasDeliveryMethod;
     }
 
     /**
      * @param $hasDeliveryMethod Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    public function setHasDeliveryMethod($hasDeliveryMethod)
+    public function addHasDeliveryMethod($hasDeliveryMethod)
     {
-        $this->hasDeliveryMethod = $hasDeliveryMethod;
+        $this->hasDeliveryMethod []= $hasDeliveryMethod;
         return $this;
     }
 

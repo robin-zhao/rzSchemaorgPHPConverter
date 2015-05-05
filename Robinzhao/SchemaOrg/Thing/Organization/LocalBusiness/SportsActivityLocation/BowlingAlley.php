@@ -20,6 +20,6 @@ class BowlingAlley extends SportsActivityLocation
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BowlingAlley";
+    public $context = "http://schema.org/BowlingAlley";
 
 }

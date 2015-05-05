@@ -20,6 +20,6 @@ class Landform extends Place
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Landform";
+    public $context = "http://schema.org/Landform";
 
 }

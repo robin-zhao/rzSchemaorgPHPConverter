@@ -21,124 +21,84 @@ class Book extends CreativeWork
      *
      * @var String
      */
-    protected $bookEdition;
+    public $bookEdition;
 
     /**
      * The format of the book.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\BookFormatType
      */
-    protected $bookFormat;
+    public $bookFormat;
 
     /**
      * The illustrator of the book.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $illustrator;
+    public $illustrator;
 
     /**
      * The ISBN of the book.
      *
      * @var String
      */
-    protected $isbn;
+    public $isbn;
 
     /**
      * The number of pages in the book.
      *
      * @var Integer
      */
-    protected $numberOfPages;
+    public $numberOfPages;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Book";
-
-    /**
-     * @return String
-     */
-    public function getBookEdition()
-    {
-        return $this->bookEdition;
-    }
+    public $context = "http://schema.org/Book";
 
     /**
      * @param $bookEdition String
      */
-    public function setBookEdition($bookEdition)
+    public function addBookEdition($bookEdition)
     {
-        $this->bookEdition = $bookEdition;
+        $this->bookEdition []= $bookEdition;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\BookFormatType
-     */
-    public function getBookFormat()
-    {
-        return $this->bookFormat;
     }
 
     /**
      * @param $bookFormat Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\BookFormatType
      */
-    public function setBookFormat($bookFormat)
+    public function addBookFormat($bookFormat)
     {
-        $this->bookFormat = $bookFormat;
+        $this->bookFormat []= $bookFormat;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getIllustrator()
-    {
-        return $this->illustrator;
     }
 
     /**
      * @param $illustrator Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setIllustrator($illustrator)
+    public function addIllustrator($illustrator)
     {
-        $this->illustrator = $illustrator;
+        $this->illustrator []= $illustrator;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getIsbn()
-    {
-        return $this->isbn;
     }
 
     /**
      * @param $isbn String
      */
-    public function setIsbn($isbn)
+    public function addIsbn($isbn)
     {
-        $this->isbn = $isbn;
+        $this->isbn []= $isbn;
         return $this;
-    }
-
-    /**
-     * @return Integer
-     */
-    public function getNumberOfPages()
-    {
-        return $this->numberOfPages;
     }
 
     /**
      * @param $numberOfPages Integer
      */
-    public function setNumberOfPages($numberOfPages)
+    public function addNumberOfPages($numberOfPages)
     {
-        $this->numberOfPages = $numberOfPages;
+        $this->numberOfPages []= $numberOfPages;
         return $this;
     }
 

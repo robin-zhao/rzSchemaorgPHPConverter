@@ -20,6 +20,6 @@ class Pharmacy extends MedicalOrganization
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Pharmacy";
+    public $context = "http://schema.org/Pharmacy";
 
 }

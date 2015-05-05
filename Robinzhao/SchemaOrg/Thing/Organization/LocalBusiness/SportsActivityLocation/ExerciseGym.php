@@ -20,6 +20,6 @@ class ExerciseGym extends SportsActivityLocation
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ExerciseGym";
+    public $context = "http://schema.org/ExerciseGym";
 
 }

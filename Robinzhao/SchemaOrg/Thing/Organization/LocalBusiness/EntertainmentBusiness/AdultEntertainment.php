@@ -20,6 +20,6 @@ class AdultEntertainment extends EntertainmentBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AdultEntertainment";
+    public $context = "http://schema.org/AdultEntertainment";
 
 }

@@ -21,76 +21,52 @@ class Rating extends Intangible
      *
      * @var Float|String
      */
-    protected $bestRating;
+    public $bestRating;
 
     /**
      * The rating for the content.
      *
      * @var String
      */
-    protected $ratingValue;
+    public $ratingValue;
 
     /**
      * The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
      *
      * @var Float|String
      */
-    protected $worstRating;
+    public $worstRating;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Rating";
-
-    /**
-     * @return Float|String
-     */
-    public function getBestRating()
-    {
-        return $this->bestRating;
-    }
+    public $context = "http://schema.org/Rating";
 
     /**
      * @param $bestRating Float|String
      */
-    public function setBestRating($bestRating)
+    public function addBestRating($bestRating)
     {
-        $this->bestRating = $bestRating;
+        $this->bestRating []= $bestRating;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRatingValue()
-    {
-        return $this->ratingValue;
     }
 
     /**
      * @param $ratingValue String
      */
-    public function setRatingValue($ratingValue)
+    public function addRatingValue($ratingValue)
     {
-        $this->ratingValue = $ratingValue;
+        $this->ratingValue []= $ratingValue;
         return $this;
-    }
-
-    /**
-     * @return Float|String
-     */
-    public function getWorstRating()
-    {
-        return $this->worstRating;
     }
 
     /**
      * @param $worstRating Float|String
      */
-    public function setWorstRating($worstRating)
+    public function addWorstRating($worstRating)
     {
-        $this->worstRating = $worstRating;
+        $this->worstRating []= $worstRating;
         return $this;
     }
 

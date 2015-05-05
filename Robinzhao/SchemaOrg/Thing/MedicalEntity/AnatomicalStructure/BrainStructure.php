@@ -20,6 +20,6 @@ class BrainStructure extends AnatomicalStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BrainStructure";
+    public $context = "http://schema.org/BrainStructure";
 
 }

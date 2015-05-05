@@ -20,6 +20,6 @@ class Intangible extends Thing
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Intangible";
+    public $context = "http://schema.org/Intangible";
 
 }

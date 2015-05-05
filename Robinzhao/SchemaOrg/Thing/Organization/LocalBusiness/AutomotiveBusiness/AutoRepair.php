@@ -20,6 +20,6 @@ class AutoRepair extends AutomotiveBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AutoRepair";
+    public $context = "http://schema.org/AutoRepair";
 
 }

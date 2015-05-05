@@ -20,6 +20,6 @@ class OnDemandEvent extends PublicationEvent
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/OnDemandEvent";
+    public $context = "http://schema.org/OnDemandEvent";
 
 }

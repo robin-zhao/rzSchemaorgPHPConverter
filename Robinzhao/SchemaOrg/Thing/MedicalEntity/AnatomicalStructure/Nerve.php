@@ -21,100 +21,68 @@ class Nerve extends AnatomicalStructure
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Nerve
      */
-    protected $branch;
+    public $branch;
 
     /**
      * The neurological pathway extension that involves muscle control.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Muscle
      */
-    protected $nerveMotor;
+    public $nerveMotor;
 
     /**
      * The neurological pathway extension that inputs and sends information to the brain or spinal cord.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\SuperficialAnatomy
      */
-    protected $sensoryUnit;
+    public $sensoryUnit;
 
     /**
      * The neurological pathway that originates the neurons.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\BrainStructure
      */
-    protected $sourcedFrom;
+    public $sourcedFrom;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Nerve";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Nerve
-     */
-    public function getBranch()
-    {
-        return $this->branch;
-    }
+    public $context = "http://schema.org/Nerve";
 
     /**
      * @param $branch Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Nerve
      */
-    public function setBranch($branch)
+    public function addBranch($branch)
     {
-        $this->branch = $branch;
+        $this->branch []= $branch;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Muscle
-     */
-    public function getNerveMotor()
-    {
-        return $this->nerveMotor;
     }
 
     /**
      * @param $nerveMotor Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Muscle
      */
-    public function setNerveMotor($nerveMotor)
+    public function addNerveMotor($nerveMotor)
     {
-        $this->nerveMotor = $nerveMotor;
+        $this->nerveMotor []= $nerveMotor;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\SuperficialAnatomy
-     */
-    public function getSensoryUnit()
-    {
-        return $this->sensoryUnit;
     }
 
     /**
      * @param $sensoryUnit Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\SuperficialAnatomy
      */
-    public function setSensoryUnit($sensoryUnit)
+    public function addSensoryUnit($sensoryUnit)
     {
-        $this->sensoryUnit = $sensoryUnit;
+        $this->sensoryUnit []= $sensoryUnit;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\BrainStructure
-     */
-    public function getSourcedFrom()
-    {
-        return $this->sourcedFrom;
     }
 
     /**
      * @param $sourcedFrom Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\BrainStructure
      */
-    public function setSourcedFrom($sourcedFrom)
+    public function addSourcedFrom($sourcedFrom)
     {
-        $this->sourcedFrom = $sourcedFrom;
+        $this->sourcedFrom []= $sourcedFrom;
         return $this;
     }
 

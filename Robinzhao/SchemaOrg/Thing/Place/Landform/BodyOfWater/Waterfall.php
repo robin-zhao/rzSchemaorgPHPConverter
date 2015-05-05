@@ -20,6 +20,6 @@ class Waterfall extends BodyOfWater
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Waterfall";
+    public $context = "http://schema.org/Waterfall";
 
 }

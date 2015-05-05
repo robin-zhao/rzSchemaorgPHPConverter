@@ -20,6 +20,6 @@ class CreditCard extends PaymentMethod
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/CreditCard";
+    public $context = "http://schema.org/CreditCard";
 
 }

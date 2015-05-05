@@ -136,17 +136,6 @@ class ClassBuilder
 
         $this->buildContext($string);
 
-        // Generate getUrl for Thing.
-        if ($this->className == 'Thing') {
-            $getterSetter [] = '    /**';
-            $getterSetter [] = '     * @return String';
-            $getterSetter [] = '     */';
-            $getterSetter [] = '    public function getContext()';
-            $getterSetter [] = '    {';
-            $getterSetter [] = '        return $this->context;';
-            $getterSetter [] = '    }' . "\n";
-        }
-
         $string = array_merge($string, $getterSetter);
 
         $string[] = '}';
@@ -169,7 +158,7 @@ class ClassBuilder
         $string [] = '     * schema.org context url';
         $string [] = '     * @var String';
         $string [] = '     */';
-        $string [] = '    protected $context = "' . $this->context . '";' . "\n";
+        $string [] = '    public $context = "' . $this->context . '";' . "\n";
 
     }
 
@@ -182,7 +171,7 @@ class ClassBuilder
         $type = $this->calculateType($property);
         $string [] = '     * @var ' . $type;
         $string [] = '     */';
-        $string [] = '    protected $' . $property . ';' . "\n";
+        $string [] = '    public $' . $property . ';' . "\n";
     }
 
     private function calculateType($property)
@@ -213,19 +202,11 @@ class ClassBuilder
         $type = $this->calculateType($property);
 
         $getterSetter [] = '    /**';
-        $getterSetter [] = '     * @return ' . $type;
-        $getterSetter [] = '     */';
-        $getterSetter [] = '    public function get' . Ucfirst($property) . '()';
-        $getterSetter [] = '    {';
-        $getterSetter [] = '        return $this->' . $property . ';';
-        $getterSetter [] = '    }' . "\n";
-
-        $getterSetter [] = '    /**';
         $getterSetter [] = '     * @param $' . $property . ' ' . $type;
         $getterSetter [] = '     */';
-        $getterSetter [] = '    public function set' . ucfirst($property) . '($' . $property . ')';
+        $getterSetter [] = '    public function add' . ucfirst($property) . '($' . $property . ')';
         $getterSetter [] = '    {';
-        $getterSetter [] = '        $this->' . $property . ' = $' . $property . ';';
+        $getterSetter [] = '        $this->' . $property . ' []= $' . $property . ';';
         $getterSetter [] = '        return $this;';
         $getterSetter [] = '    }' . "\n";
     }

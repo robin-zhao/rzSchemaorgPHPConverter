@@ -20,6 +20,6 @@ class Notary extends ProfessionalService
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Notary";
+    public $context = "http://schema.org/Notary";
 
 }

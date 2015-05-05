@@ -21,76 +21,52 @@ class GeoCoordinates extends StructuredValue
      *
      * @var String|Float
      */
-    protected $elevation;
+    public $elevation;
 
     /**
      * The latitude of a location. For example 37.42242.
      *
      * @var Float|String
      */
-    protected $latitude;
+    public $latitude;
 
     /**
      * The longitude of a location. For example -122.08585.
      *
      * @var Float|String
      */
-    protected $longitude;
+    public $longitude;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/GeoCoordinates";
-
-    /**
-     * @return String|Float
-     */
-    public function getElevation()
-    {
-        return $this->elevation;
-    }
+    public $context = "http://schema.org/GeoCoordinates";
 
     /**
      * @param $elevation String|Float
      */
-    public function setElevation($elevation)
+    public function addElevation($elevation)
     {
-        $this->elevation = $elevation;
+        $this->elevation []= $elevation;
         return $this;
-    }
-
-    /**
-     * @return Float|String
-     */
-    public function getLatitude()
-    {
-        return $this->latitude;
     }
 
     /**
      * @param $latitude Float|String
      */
-    public function setLatitude($latitude)
+    public function addLatitude($latitude)
     {
-        $this->latitude = $latitude;
+        $this->latitude []= $latitude;
         return $this;
-    }
-
-    /**
-     * @return Float|String
-     */
-    public function getLongitude()
-    {
-        return $this->longitude;
     }
 
     /**
      * @param $longitude Float|String
      */
-    public function setLongitude($longitude)
+    public function addLongitude($longitude)
     {
-        $this->longitude = $longitude;
+        $this->longitude []= $longitude;
         return $this;
     }
 

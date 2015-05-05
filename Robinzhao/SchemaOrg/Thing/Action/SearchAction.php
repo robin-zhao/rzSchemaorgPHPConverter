@@ -21,28 +21,20 @@ class SearchAction extends Action
      *
      * @var Robinzhao\SchemaOrg\Thing\Class|String
      */
-    protected $query;
+    public $query;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SearchAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Class|String
-     */
-    public function getQuery()
-    {
-        return $this->query;
-    }
+    public $context = "http://schema.org/SearchAction";
 
     /**
      * @param $query Robinzhao\SchemaOrg\Thing\Class|String
      */
-    public function setQuery($query)
+    public function addQuery($query)
     {
-        $this->query = $query;
+        $this->query []= $query;
         return $this;
     }
 

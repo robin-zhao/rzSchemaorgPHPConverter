@@ -20,6 +20,6 @@ class RadioSeason extends Season
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RadioSeason";
+    public $context = "http://schema.org/RadioSeason";
 
 }

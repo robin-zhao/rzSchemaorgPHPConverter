@@ -21,28 +21,20 @@ class InformAction extends CommunicateAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Event
      */
-    protected $event;
+    public $event;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/InformAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event
-     */
-    public function getEvent()
-    {
-        return $this->event;
-    }
+    public $context = "http://schema.org/InformAction";
 
     /**
      * @param $event Robinzhao\SchemaOrg\Thing\Event
      */
-    public function setEvent($event)
+    public function addEvent($event)
     {
-        $this->event = $event;
+        $this->event []= $event;
         return $this;
     }
 

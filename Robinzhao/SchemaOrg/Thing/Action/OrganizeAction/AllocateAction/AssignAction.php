@@ -20,6 +20,6 @@ class AssignAction extends AllocateAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AssignAction";
+    public $context = "http://schema.org/AssignAction";
 
 }

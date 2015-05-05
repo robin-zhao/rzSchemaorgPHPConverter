@@ -20,6 +20,6 @@ class StadiumOrArena extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/StadiumOrArena";
+    public $context = "http://schema.org/StadiumOrArena";
 
 }

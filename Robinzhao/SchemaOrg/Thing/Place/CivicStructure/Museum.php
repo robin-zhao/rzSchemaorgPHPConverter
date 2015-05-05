@@ -20,6 +20,6 @@ class Museum extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Museum";
+    public $context = "http://schema.org/Museum";
 
 }

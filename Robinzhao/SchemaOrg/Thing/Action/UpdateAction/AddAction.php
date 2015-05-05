@@ -20,6 +20,6 @@ class AddAction extends UpdateAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AddAction";
+    public $context = "http://schema.org/AddAction";
 
 }

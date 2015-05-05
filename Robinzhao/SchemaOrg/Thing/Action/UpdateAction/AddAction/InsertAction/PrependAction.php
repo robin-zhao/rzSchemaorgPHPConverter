@@ -20,6 +20,6 @@ class PrependAction extends InsertAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PrependAction";
+    public $context = "http://schema.org/PrependAction";
 
 }

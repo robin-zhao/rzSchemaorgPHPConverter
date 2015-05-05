@@ -20,6 +20,6 @@ class BroadcastEvent extends PublicationEvent
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BroadcastEvent";
+    public $context = "http://schema.org/BroadcastEvent";
 
 }

@@ -20,6 +20,6 @@ class MedicalObservationalStudyDesign extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalObservationalStudyDesign";
+    public $context = "http://schema.org/MedicalObservationalStudyDesign";
 
 }

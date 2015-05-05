@@ -20,6 +20,6 @@ class BookFormatType extends Enumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BookFormatType";
+    public $context = "http://schema.org/BookFormatType";
 
 }

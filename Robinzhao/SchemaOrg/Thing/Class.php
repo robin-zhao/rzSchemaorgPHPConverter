@@ -20,6 +20,6 @@ class Class extends Thing
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Class";
+    public $context = "http://schema.org/Class";
 
 }

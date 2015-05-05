@@ -21,124 +21,84 @@ class NewsArticle extends Article
      *
      * @var String
      */
-    protected $dateline;
+    public $dateline;
 
     /**
      * The number of the column in which the NewsArticle appears in the print edition.
      *
      * @var String
      */
-    protected $printColumn;
+    public $printColumn;
 
     /**
      * The edition of the print product in which the NewsArticle appears.
      *
      * @var String
      */
-    protected $printEdition;
+    public $printEdition;
 
     /**
      * If this NewsArticle appears in print, this field indicates the name of the page on which the article is found. Please note that this field is intended for the exact page name (e.g. A5, B18).
      *
      * @var String
      */
-    protected $printPage;
+    public $printPage;
 
     /**
      * If this NewsArticle appears in print, this field indicates the print section in which the article appeared.
      *
      * @var String
      */
-    protected $printSection;
+    public $printSection;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/NewsArticle";
-
-    /**
-     * @return String
-     */
-    public function getDateline()
-    {
-        return $this->dateline;
-    }
+    public $context = "http://schema.org/NewsArticle";
 
     /**
      * @param $dateline String
      */
-    public function setDateline($dateline)
+    public function addDateline($dateline)
     {
-        $this->dateline = $dateline;
+        $this->dateline []= $dateline;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPrintColumn()
-    {
-        return $this->printColumn;
     }
 
     /**
      * @param $printColumn String
      */
-    public function setPrintColumn($printColumn)
+    public function addPrintColumn($printColumn)
     {
-        $this->printColumn = $printColumn;
+        $this->printColumn []= $printColumn;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPrintEdition()
-    {
-        return $this->printEdition;
     }
 
     /**
      * @param $printEdition String
      */
-    public function setPrintEdition($printEdition)
+    public function addPrintEdition($printEdition)
     {
-        $this->printEdition = $printEdition;
+        $this->printEdition []= $printEdition;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPrintPage()
-    {
-        return $this->printPage;
     }
 
     /**
      * @param $printPage String
      */
-    public function setPrintPage($printPage)
+    public function addPrintPage($printPage)
     {
-        $this->printPage = $printPage;
+        $this->printPage []= $printPage;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPrintSection()
-    {
-        return $this->printSection;
     }
 
     /**
      * @param $printSection String
      */
-    public function setPrintSection($printSection)
+    public function addPrintSection($printSection)
     {
-        $this->printSection = $printSection;
+        $this->printSection []= $printSection;
         return $this;
     }
 

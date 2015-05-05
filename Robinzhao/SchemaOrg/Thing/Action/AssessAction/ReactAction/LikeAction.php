@@ -20,6 +20,6 @@ class LikeAction extends ReactAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/LikeAction";
+    public $context = "http://schema.org/LikeAction";
 
 }

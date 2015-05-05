@@ -20,6 +20,6 @@ class MedicalStudyStatus extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalStudyStatus";
+    public $context = "http://schema.org/MedicalStudyStatus";
 
 }

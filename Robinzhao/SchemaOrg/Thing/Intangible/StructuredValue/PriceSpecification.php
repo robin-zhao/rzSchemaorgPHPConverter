@@ -21,220 +21,148 @@ class PriceSpecification extends StructuredValue
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    protected $eligibleQuantity;
+    public $eligibleQuantity;
 
     /**
      * The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\PriceSpecification
      */
-    protected $eligibleTransactionVolume;
+    public $eligibleTransactionVolume;
 
     /**
      * The highest price if the price is a range.
      *
      * @var Float
      */
-    protected $maxPrice;
+    public $maxPrice;
 
     /**
      * The lowest price if the price is a range.
      *
      * @var Float
      */
-    protected $minPrice;
+    public $minPrice;
 
     /**
      * The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.
      *
      * @var String|Float
      */
-    protected $price;
+    public $price;
 
     /**
      * The currency (in 3-letter ISO 4217 format) of the offer price or a price component, when attached to PriceSpecification and its subtypes.
      *
      * @var String
      */
-    protected $priceCurrency;
+    public $priceCurrency;
 
     /**
      * The date when the item becomes valid.
      *
      * @var DateTime
      */
-    protected $validFrom;
+    public $validFrom;
 
     /**
      * The end of the validity of offer, price specification, or opening hours data.
      *
      * @var DateTime
      */
-    protected $validThrough;
+    public $validThrough;
 
     /**
      * Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.
      *
      * @var Boolean
      */
-    protected $valueAddedTaxIncluded;
+    public $valueAddedTaxIncluded;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PriceSpecification";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
-     */
-    public function getEligibleQuantity()
-    {
-        return $this->eligibleQuantity;
-    }
+    public $context = "http://schema.org/PriceSpecification";
 
     /**
      * @param $eligibleQuantity Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    public function setEligibleQuantity($eligibleQuantity)
+    public function addEligibleQuantity($eligibleQuantity)
     {
-        $this->eligibleQuantity = $eligibleQuantity;
+        $this->eligibleQuantity []= $eligibleQuantity;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\PriceSpecification
-     */
-    public function getEligibleTransactionVolume()
-    {
-        return $this->eligibleTransactionVolume;
     }
 
     /**
      * @param $eligibleTransactionVolume Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\PriceSpecification
      */
-    public function setEligibleTransactionVolume($eligibleTransactionVolume)
+    public function addEligibleTransactionVolume($eligibleTransactionVolume)
     {
-        $this->eligibleTransactionVolume = $eligibleTransactionVolume;
+        $this->eligibleTransactionVolume []= $eligibleTransactionVolume;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getMaxPrice()
-    {
-        return $this->maxPrice;
     }
 
     /**
      * @param $maxPrice Float
      */
-    public function setMaxPrice($maxPrice)
+    public function addMaxPrice($maxPrice)
     {
-        $this->maxPrice = $maxPrice;
+        $this->maxPrice []= $maxPrice;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getMinPrice()
-    {
-        return $this->minPrice;
     }
 
     /**
      * @param $minPrice Float
      */
-    public function setMinPrice($minPrice)
+    public function addMinPrice($minPrice)
     {
-        $this->minPrice = $minPrice;
+        $this->minPrice []= $minPrice;
         return $this;
-    }
-
-    /**
-     * @return String|Float
-     */
-    public function getPrice()
-    {
-        return $this->price;
     }
 
     /**
      * @param $price String|Float
      */
-    public function setPrice($price)
+    public function addPrice($price)
     {
-        $this->price = $price;
+        $this->price []= $price;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPriceCurrency()
-    {
-        return $this->priceCurrency;
     }
 
     /**
      * @param $priceCurrency String
      */
-    public function setPriceCurrency($priceCurrency)
+    public function addPriceCurrency($priceCurrency)
     {
-        $this->priceCurrency = $priceCurrency;
+        $this->priceCurrency []= $priceCurrency;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getValidFrom()
-    {
-        return $this->validFrom;
     }
 
     /**
      * @param $validFrom DateTime
      */
-    public function setValidFrom($validFrom)
+    public function addValidFrom($validFrom)
     {
-        $this->validFrom = $validFrom;
+        $this->validFrom []= $validFrom;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getValidThrough()
-    {
-        return $this->validThrough;
     }
 
     /**
      * @param $validThrough DateTime
      */
-    public function setValidThrough($validThrough)
+    public function addValidThrough($validThrough)
     {
-        $this->validThrough = $validThrough;
+        $this->validThrough []= $validThrough;
         return $this;
-    }
-
-    /**
-     * @return Boolean
-     */
-    public function getValueAddedTaxIncluded()
-    {
-        return $this->valueAddedTaxIncluded;
     }
 
     /**
      * @param $valueAddedTaxIncluded Boolean
      */
-    public function setValueAddedTaxIncluded($valueAddedTaxIncluded)
+    public function addValueAddedTaxIncluded($valueAddedTaxIncluded)
     {
-        $this->valueAddedTaxIncluded = $valueAddedTaxIncluded;
+        $this->valueAddedTaxIncluded []= $valueAddedTaxIncluded;
         return $this;
     }
 

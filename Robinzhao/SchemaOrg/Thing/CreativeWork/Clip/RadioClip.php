@@ -20,6 +20,6 @@ class RadioClip extends Clip
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RadioClip";
+    public $context = "http://schema.org/RadioClip";
 
 }

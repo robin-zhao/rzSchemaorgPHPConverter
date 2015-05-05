@@ -20,6 +20,6 @@ class GovernmentPermit extends Permit
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/GovernmentPermit";
+    public $context = "http://schema.org/GovernmentPermit";
 
 }

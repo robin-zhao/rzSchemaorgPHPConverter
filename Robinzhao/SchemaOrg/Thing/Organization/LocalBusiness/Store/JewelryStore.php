@@ -20,6 +20,6 @@ class JewelryStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/JewelryStore";
+    public $context = "http://schema.org/JewelryStore";
 
 }

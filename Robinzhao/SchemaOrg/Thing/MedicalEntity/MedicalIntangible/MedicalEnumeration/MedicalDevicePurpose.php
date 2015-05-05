@@ -20,6 +20,6 @@ class MedicalDevicePurpose extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalDevicePurpose";
+    public $context = "http://schema.org/MedicalDevicePurpose";
 
 }

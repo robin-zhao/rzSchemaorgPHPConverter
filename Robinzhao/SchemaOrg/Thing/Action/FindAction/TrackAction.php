@@ -21,28 +21,20 @@ class TrackAction extends FindAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    protected $deliveryMethod;
+    public $deliveryMethod;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TrackAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
-     */
-    public function getDeliveryMethod()
-    {
-        return $this->deliveryMethod;
-    }
+    public $context = "http://schema.org/TrackAction";
 
     /**
      * @param $deliveryMethod Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    public function setDeliveryMethod($deliveryMethod)
+    public function addDeliveryMethod($deliveryMethod)
     {
-        $this->deliveryMethod = $deliveryMethod;
+        $this->deliveryMethod []= $deliveryMethod;
         return $this;
     }
 

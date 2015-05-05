@@ -21,316 +21,212 @@ class Episode extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $actor;
+    public $actor;
 
     /**
      * A cast member of the movie, tv/radio series, season, episode, or video. (legacy spelling; see singular form, actor)
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $actors;
+    public $actors;
 
     /**
      * The director of the movie, tv/radio episode or series.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $director;
+    public $director;
 
     /**
      * The director of the movie, tv/radio episode or series. (legacy spelling; see singular form, director)
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $directors;
+    public $directors;
 
     /**
      * Position of the episode within an ordered group of episodes.
      *
      * @var Integer
      */
-    protected $episodeNumber;
+    public $episodeNumber;
 
     /**
      * The composer of the movie or TV/radio soundtrack.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person|Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
      */
-    protected $musicBy;
+    public $musicBy;
 
     /**
      * The season to which this episode belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Season
      */
-    protected $partOfSeason;
+    public $partOfSeason;
 
     /**
      * The series to which this episode or season belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Series
      */
-    protected $partOfSeries;
+    public $partOfSeries;
 
     /**
      * Free text to define other than pure numerical ranking of an episode or a season in an ordered list of items (further formatting restrictions may apply within particular user groups).
      *
      * @var String
      */
-    protected $position;
+    public $position;
 
     /**
      * The producer of the movie, tv/radio series, season, or episode, or video.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $producer;
+    public $producer;
 
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $productionCompany;
+    public $productionCompany;
 
     /**
      * A publication event associated with the episode, clip or media object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
      */
-    protected $publication;
+    public $publication;
 
     /**
      * The trailer of a movie or tv/radio series, season, or episode.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\VideoObject
      */
-    protected $trailer;
+    public $trailer;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Episode";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getActor()
-    {
-        return $this->actor;
-    }
+    public $context = "http://schema.org/Episode";
 
     /**
      * @param $actor Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setActor($actor)
+    public function addActor($actor)
     {
-        $this->actor = $actor;
+        $this->actor []= $actor;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getActors()
-    {
-        return $this->actors;
     }
 
     /**
      * @param $actors Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setActors($actors)
+    public function addActors($actors)
     {
-        $this->actors = $actors;
+        $this->actors []= $actors;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getDirector()
-    {
-        return $this->director;
     }
 
     /**
      * @param $director Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setDirector($director)
+    public function addDirector($director)
     {
-        $this->director = $director;
+        $this->director []= $director;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getDirectors()
-    {
-        return $this->directors;
     }
 
     /**
      * @param $directors Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setDirectors($directors)
+    public function addDirectors($directors)
     {
-        $this->directors = $directors;
+        $this->directors []= $directors;
         return $this;
-    }
-
-    /**
-     * @return Integer
-     */
-    public function getEpisodeNumber()
-    {
-        return $this->episodeNumber;
     }
 
     /**
      * @param $episodeNumber Integer
      */
-    public function setEpisodeNumber($episodeNumber)
+    public function addEpisodeNumber($episodeNumber)
     {
-        $this->episodeNumber = $episodeNumber;
+        $this->episodeNumber []= $episodeNumber;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person|Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
-     */
-    public function getMusicBy()
-    {
-        return $this->musicBy;
     }
 
     /**
      * @param $musicBy Robinzhao\SchemaOrg\Thing\Person|Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
      */
-    public function setMusicBy($musicBy)
+    public function addMusicBy($musicBy)
     {
-        $this->musicBy = $musicBy;
+        $this->musicBy []= $musicBy;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Season
-     */
-    public function getPartOfSeason()
-    {
-        return $this->partOfSeason;
     }
 
     /**
      * @param $partOfSeason Robinzhao\SchemaOrg\Thing\CreativeWork\Season
      */
-    public function setPartOfSeason($partOfSeason)
+    public function addPartOfSeason($partOfSeason)
     {
-        $this->partOfSeason = $partOfSeason;
+        $this->partOfSeason []= $partOfSeason;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Series
-     */
-    public function getPartOfSeries()
-    {
-        return $this->partOfSeries;
     }
 
     /**
      * @param $partOfSeries Robinzhao\SchemaOrg\Thing\CreativeWork\Series
      */
-    public function setPartOfSeries($partOfSeries)
+    public function addPartOfSeries($partOfSeries)
     {
-        $this->partOfSeries = $partOfSeries;
+        $this->partOfSeries []= $partOfSeries;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPosition()
-    {
-        return $this->position;
     }
 
     /**
      * @param $position String
      */
-    public function setPosition($position)
+    public function addPosition($position)
     {
-        $this->position = $position;
+        $this->position []= $position;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getProducer()
-    {
-        return $this->producer;
     }
 
     /**
      * @param $producer Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setProducer($producer)
+    public function addProducer($producer)
     {
-        $this->producer = $producer;
+        $this->producer []= $producer;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getProductionCompany()
-    {
-        return $this->productionCompany;
     }
 
     /**
      * @param $productionCompany Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setProductionCompany($productionCompany)
+    public function addProductionCompany($productionCompany)
     {
-        $this->productionCompany = $productionCompany;
+        $this->productionCompany []= $productionCompany;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
-     */
-    public function getPublication()
-    {
-        return $this->publication;
     }
 
     /**
      * @param $publication Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
      */
-    public function setPublication($publication)
+    public function addPublication($publication)
     {
-        $this->publication = $publication;
+        $this->publication []= $publication;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\VideoObject
-     */
-    public function getTrailer()
-    {
-        return $this->trailer;
     }
 
     /**
      * @param $trailer Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\VideoObject
      */
-    public function setTrailer($trailer)
+    public function addTrailer($trailer)
     {
-        $this->trailer = $trailer;
+        $this->trailer []= $trailer;
         return $this;
     }
 

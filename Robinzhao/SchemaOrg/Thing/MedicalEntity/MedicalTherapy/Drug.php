@@ -21,628 +21,420 @@ class Drug extends MedicalTherapy
      *
      * @var String
      */
-    protected $activeIngredient;
+    public $activeIngredient;
 
     /**
      * A route by which this drug may be administered, e.g. 'oral'.
      *
      * @var String
      */
-    protected $administrationRoute;
+    public $administrationRoute;
 
     /**
      * Any precaution, guidance, contraindication, etc. related to consumption of alcohol while taking this drug.
      *
      * @var String
      */
-    protected $alcoholWarning;
+    public $alcoholWarning;
 
     /**
      * An available dosage strength for the drug.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugStrength
      */
-    protected $availableStrength;
+    public $availableStrength;
 
     /**
      * Any precaution, guidance, contraindication, etc. related to this drug's use by breastfeeding mothers.
      *
      * @var String
      */
-    protected $breastfeedingWarning;
+    public $breastfeedingWarning;
 
     /**
      * Description of the absorption and elimination of drugs, including their concentration (pharmacokinetics, pK) and biological effects (pharmacodynamics, pD).
      *
      * @var String
      */
-    protected $clincalPharmacology;
+    public $clincalPharmacology;
 
     /**
      * Cost per unit of the drug, as reported by the source being tagged.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugCost
      */
-    protected $cost;
+    public $cost;
 
     /**
      * A dosage form in which this drug/supplement is available, e.g. 'tablet', 'suspension', 'injection'.
      *
      * @var String
      */
-    protected $dosageForm;
+    public $dosageForm;
 
     /**
      * A dosing schedule for the drug for a given population, either observed, recommended, or maximum dose based on the type used.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule
      */
-    protected $doseSchedule;
+    public $doseSchedule;
 
     /**
      * The class of drug this belongs to (e.g., statins).
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\DrugClass
      */
-    protected $drugClass;
+    public $drugClass;
 
     /**
      * Any precaution, guidance, contraindication, etc. related to consumption of specific foods while taking this drug.
      *
      * @var String
      */
-    protected $foodWarning;
+    public $foodWarning;
 
     /**
      * Another drug that is known to interact with this drug in a way that impacts the effect of this drug or causes a risk to the patient. Note: disease interactions are typically captured as contraindications.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    protected $interactingDrug;
+    public $interactingDrug;
 
     /**
      * True if the drug is available in a generic form (regardless of name).
      *
      * @var Boolean
      */
-    protected $isAvailableGenerically;
+    public $isAvailableGenerically;
 
     /**
      * True if this item's name is a proprietary/brand name (vs. generic name).
      *
      * @var Boolean
      */
-    protected $isProprietary;
+    public $isProprietary;
 
     /**
      * Link to the drug's label details.
      *
      * @var String
      */
-    protected $labelDetails;
+    public $labelDetails;
 
     /**
      * The drug or supplement's legal status, including any controlled substance schedules that apply.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
      */
-    protected $legalStatus;
+    public $legalStatus;
 
     /**
      * The manufacturer of the product.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $manufacturer;
+    public $manufacturer;
 
     /**
      * The specific biochemical interaction through which this drug or supplement produces its pharmacological effect.
      *
      * @var String
      */
-    protected $mechanismOfAction;
+    public $mechanismOfAction;
 
     /**
      * The generic name of this drug or supplement.
      *
      * @var String
      */
-    protected $nonProprietaryName;
+    public $nonProprietaryName;
 
     /**
      * Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.
      *
      * @var String
      */
-    protected $overdosage;
+    public $overdosage;
 
     /**
      * Pregnancy category of this drug.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPregnancyCategory
      */
-    protected $pregnancyCategory;
+    public $pregnancyCategory;
 
     /**
      * Any precaution, guidance, contraindication, etc. related to this drug's use during pregnancy.
      *
      * @var String
      */
-    protected $pregnancyWarning;
+    public $pregnancyWarning;
 
     /**
      * Link to prescribing information for the drug.
      *
      * @var String
      */
-    protected $prescribingInfo;
+    public $prescribingInfo;
 
     /**
      * Indicates whether this drug is available by prescription or over-the-counter.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPrescriptionStatus
      */
-    protected $prescriptionStatus;
+    public $prescriptionStatus;
 
     /**
      * Any other drug related to this one, for example commonly-prescribed alternatives.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    protected $relatedDrug;
+    public $relatedDrug;
 
     /**
      * Any FDA or other warnings about the drug (text or URL).
      *
      * @var String
      */
-    protected $warning;
+    public $warning;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Drug";
-
-    /**
-     * @return String
-     */
-    public function getActiveIngredient()
-    {
-        return $this->activeIngredient;
-    }
+    public $context = "http://schema.org/Drug";
 
     /**
      * @param $activeIngredient String
      */
-    public function setActiveIngredient($activeIngredient)
+    public function addActiveIngredient($activeIngredient)
     {
-        $this->activeIngredient = $activeIngredient;
+        $this->activeIngredient []= $activeIngredient;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getAdministrationRoute()
-    {
-        return $this->administrationRoute;
     }
 
     /**
      * @param $administrationRoute String
      */
-    public function setAdministrationRoute($administrationRoute)
+    public function addAdministrationRoute($administrationRoute)
     {
-        $this->administrationRoute = $administrationRoute;
+        $this->administrationRoute []= $administrationRoute;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getAlcoholWarning()
-    {
-        return $this->alcoholWarning;
     }
 
     /**
      * @param $alcoholWarning String
      */
-    public function setAlcoholWarning($alcoholWarning)
+    public function addAlcoholWarning($alcoholWarning)
     {
-        $this->alcoholWarning = $alcoholWarning;
+        $this->alcoholWarning []= $alcoholWarning;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugStrength
-     */
-    public function getAvailableStrength()
-    {
-        return $this->availableStrength;
     }
 
     /**
      * @param $availableStrength Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugStrength
      */
-    public function setAvailableStrength($availableStrength)
+    public function addAvailableStrength($availableStrength)
     {
-        $this->availableStrength = $availableStrength;
+        $this->availableStrength []= $availableStrength;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getBreastfeedingWarning()
-    {
-        return $this->breastfeedingWarning;
     }
 
     /**
      * @param $breastfeedingWarning String
      */
-    public function setBreastfeedingWarning($breastfeedingWarning)
+    public function addBreastfeedingWarning($breastfeedingWarning)
     {
-        $this->breastfeedingWarning = $breastfeedingWarning;
+        $this->breastfeedingWarning []= $breastfeedingWarning;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getClincalPharmacology()
-    {
-        return $this->clincalPharmacology;
     }
 
     /**
      * @param $clincalPharmacology String
      */
-    public function setClincalPharmacology($clincalPharmacology)
+    public function addClincalPharmacology($clincalPharmacology)
     {
-        $this->clincalPharmacology = $clincalPharmacology;
+        $this->clincalPharmacology []= $clincalPharmacology;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugCost
-     */
-    public function getCost()
-    {
-        return $this->cost;
     }
 
     /**
      * @param $cost Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugCost
      */
-    public function setCost($cost)
+    public function addCost($cost)
     {
-        $this->cost = $cost;
+        $this->cost []= $cost;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getDosageForm()
-    {
-        return $this->dosageForm;
     }
 
     /**
      * @param $dosageForm String
      */
-    public function setDosageForm($dosageForm)
+    public function addDosageForm($dosageForm)
     {
-        $this->dosageForm = $dosageForm;
+        $this->dosageForm []= $dosageForm;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule
-     */
-    public function getDoseSchedule()
-    {
-        return $this->doseSchedule;
     }
 
     /**
      * @param $doseSchedule Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DoseSchedule
      */
-    public function setDoseSchedule($doseSchedule)
+    public function addDoseSchedule($doseSchedule)
     {
-        $this->doseSchedule = $doseSchedule;
+        $this->doseSchedule []= $doseSchedule;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\DrugClass
-     */
-    public function getDrugClass()
-    {
-        return $this->drugClass;
     }
 
     /**
      * @param $drugClass Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\DrugClass
      */
-    public function setDrugClass($drugClass)
+    public function addDrugClass($drugClass)
     {
-        $this->drugClass = $drugClass;
+        $this->drugClass []= $drugClass;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFoodWarning()
-    {
-        return $this->foodWarning;
     }
 
     /**
      * @param $foodWarning String
      */
-    public function setFoodWarning($foodWarning)
+    public function addFoodWarning($foodWarning)
     {
-        $this->foodWarning = $foodWarning;
+        $this->foodWarning []= $foodWarning;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
-     */
-    public function getInteractingDrug()
-    {
-        return $this->interactingDrug;
     }
 
     /**
      * @param $interactingDrug Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    public function setInteractingDrug($interactingDrug)
+    public function addInteractingDrug($interactingDrug)
     {
-        $this->interactingDrug = $interactingDrug;
+        $this->interactingDrug []= $interactingDrug;
         return $this;
-    }
-
-    /**
-     * @return Boolean
-     */
-    public function getIsAvailableGenerically()
-    {
-        return $this->isAvailableGenerically;
     }
 
     /**
      * @param $isAvailableGenerically Boolean
      */
-    public function setIsAvailableGenerically($isAvailableGenerically)
+    public function addIsAvailableGenerically($isAvailableGenerically)
     {
-        $this->isAvailableGenerically = $isAvailableGenerically;
+        $this->isAvailableGenerically []= $isAvailableGenerically;
         return $this;
-    }
-
-    /**
-     * @return Boolean
-     */
-    public function getIsProprietary()
-    {
-        return $this->isProprietary;
     }
 
     /**
      * @param $isProprietary Boolean
      */
-    public function setIsProprietary($isProprietary)
+    public function addIsProprietary($isProprietary)
     {
-        $this->isProprietary = $isProprietary;
+        $this->isProprietary []= $isProprietary;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getLabelDetails()
-    {
-        return $this->labelDetails;
     }
 
     /**
      * @param $labelDetails String
      */
-    public function setLabelDetails($labelDetails)
+    public function addLabelDetails($labelDetails)
     {
-        $this->labelDetails = $labelDetails;
+        $this->labelDetails []= $labelDetails;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
-     */
-    public function getLegalStatus()
-    {
-        return $this->legalStatus;
     }
 
     /**
      * @param $legalStatus Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\DrugLegalStatus
      */
-    public function setLegalStatus($legalStatus)
+    public function addLegalStatus($legalStatus)
     {
-        $this->legalStatus = $legalStatus;
+        $this->legalStatus []= $legalStatus;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getManufacturer()
-    {
-        return $this->manufacturer;
     }
 
     /**
      * @param $manufacturer Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setManufacturer($manufacturer)
+    public function addManufacturer($manufacturer)
     {
-        $this->manufacturer = $manufacturer;
+        $this->manufacturer []= $manufacturer;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getMechanismOfAction()
-    {
-        return $this->mechanismOfAction;
     }
 
     /**
      * @param $mechanismOfAction String
      */
-    public function setMechanismOfAction($mechanismOfAction)
+    public function addMechanismOfAction($mechanismOfAction)
     {
-        $this->mechanismOfAction = $mechanismOfAction;
+        $this->mechanismOfAction []= $mechanismOfAction;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getNonProprietaryName()
-    {
-        return $this->nonProprietaryName;
     }
 
     /**
      * @param $nonProprietaryName String
      */
-    public function setNonProprietaryName($nonProprietaryName)
+    public function addNonProprietaryName($nonProprietaryName)
     {
-        $this->nonProprietaryName = $nonProprietaryName;
+        $this->nonProprietaryName []= $nonProprietaryName;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getOverdosage()
-    {
-        return $this->overdosage;
     }
 
     /**
      * @param $overdosage String
      */
-    public function setOverdosage($overdosage)
+    public function addOverdosage($overdosage)
     {
-        $this->overdosage = $overdosage;
+        $this->overdosage []= $overdosage;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPregnancyCategory
-     */
-    public function getPregnancyCategory()
-    {
-        return $this->pregnancyCategory;
     }
 
     /**
      * @param $pregnancyCategory Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPregnancyCategory
      */
-    public function setPregnancyCategory($pregnancyCategory)
+    public function addPregnancyCategory($pregnancyCategory)
     {
-        $this->pregnancyCategory = $pregnancyCategory;
+        $this->pregnancyCategory []= $pregnancyCategory;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPregnancyWarning()
-    {
-        return $this->pregnancyWarning;
     }
 
     /**
      * @param $pregnancyWarning String
      */
-    public function setPregnancyWarning($pregnancyWarning)
+    public function addPregnancyWarning($pregnancyWarning)
     {
-        $this->pregnancyWarning = $pregnancyWarning;
+        $this->pregnancyWarning []= $pregnancyWarning;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPrescribingInfo()
-    {
-        return $this->prescribingInfo;
     }
 
     /**
      * @param $prescribingInfo String
      */
-    public function setPrescribingInfo($prescribingInfo)
+    public function addPrescribingInfo($prescribingInfo)
     {
-        $this->prescribingInfo = $prescribingInfo;
+        $this->prescribingInfo []= $prescribingInfo;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPrescriptionStatus
-     */
-    public function getPrescriptionStatus()
-    {
-        return $this->prescriptionStatus;
     }
 
     /**
      * @param $prescriptionStatus Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugPrescriptionStatus
      */
-    public function setPrescriptionStatus($prescriptionStatus)
+    public function addPrescriptionStatus($prescriptionStatus)
     {
-        $this->prescriptionStatus = $prescriptionStatus;
+        $this->prescriptionStatus []= $prescriptionStatus;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
-     */
-    public function getRelatedDrug()
-    {
-        return $this->relatedDrug;
     }
 
     /**
      * @param $relatedDrug Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy\Drug
      */
-    public function setRelatedDrug($relatedDrug)
+    public function addRelatedDrug($relatedDrug)
     {
-        $this->relatedDrug = $relatedDrug;
+        $this->relatedDrug []= $relatedDrug;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getWarning()
-    {
-        return $this->warning;
     }
 
     /**
      * @param $warning String
      */
-    public function setWarning($warning)
+    public function addWarning($warning)
     {
-        $this->warning = $warning;
+        $this->warning []= $warning;
         return $this;
     }
 

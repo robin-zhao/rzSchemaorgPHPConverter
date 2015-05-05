@@ -21,124 +21,84 @@ class UserComments extends UserInteraction
      *
      * @var String
      */
-    protected $commentText;
+    public $commentText;
 
     /**
      * The time at which the UserComment was made.
      *
      * @var DateTime
      */
-    protected $commentTime;
+    public $commentTime;
 
     /**
      * The creator/author of this CreativeWork or UserComments. This is the same as the Author property for CreativeWork.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $creator;
+    public $creator;
 
     /**
      * Specifies the CreativeWork associated with the UserComment.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork
      */
-    protected $discusses;
+    public $discusses;
 
     /**
      * The URL at which a reply may be posted to the specified UserComment.
      *
      * @var String
      */
-    protected $replyToUrl;
+    public $replyToUrl;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/UserComments";
-
-    /**
-     * @return String
-     */
-    public function getCommentText()
-    {
-        return $this->commentText;
-    }
+    public $context = "http://schema.org/UserComments";
 
     /**
      * @param $commentText String
      */
-    public function setCommentText($commentText)
+    public function addCommentText($commentText)
     {
-        $this->commentText = $commentText;
+        $this->commentText []= $commentText;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getCommentTime()
-    {
-        return $this->commentTime;
     }
 
     /**
      * @param $commentTime DateTime
      */
-    public function setCommentTime($commentTime)
+    public function addCommentTime($commentTime)
     {
-        $this->commentTime = $commentTime;
+        $this->commentTime []= $commentTime;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getCreator()
-    {
-        return $this->creator;
     }
 
     /**
      * @param $creator Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setCreator($creator)
+    public function addCreator($creator)
     {
-        $this->creator = $creator;
+        $this->creator []= $creator;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork
-     */
-    public function getDiscusses()
-    {
-        return $this->discusses;
     }
 
     /**
      * @param $discusses Robinzhao\SchemaOrg\Thing\CreativeWork
      */
-    public function setDiscusses($discusses)
+    public function addDiscusses($discusses)
     {
-        $this->discusses = $discusses;
+        $this->discusses []= $discusses;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getReplyToUrl()
-    {
-        return $this->replyToUrl;
     }
 
     /**
      * @param $replyToUrl String
      */
-    public function setReplyToUrl($replyToUrl)
+    public function addReplyToUrl($replyToUrl)
     {
-        $this->replyToUrl = $replyToUrl;
+        $this->replyToUrl []= $replyToUrl;
         return $this;
     }
 

@@ -21,28 +21,20 @@ class SomeProducts extends Product
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    protected $inventoryLevel;
+    public $inventoryLevel;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SomeProducts";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
-     */
-    public function getInventoryLevel()
-    {
-        return $this->inventoryLevel;
-    }
+    public $context = "http://schema.org/SomeProducts";
 
     /**
      * @param $inventoryLevel Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    public function setInventoryLevel($inventoryLevel)
+    public function addInventoryLevel($inventoryLevel)
     {
-        $this->inventoryLevel = $inventoryLevel;
+        $this->inventoryLevel []= $inventoryLevel;
         return $this;
     }
 

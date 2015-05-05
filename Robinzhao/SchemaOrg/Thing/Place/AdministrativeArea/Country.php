@@ -20,6 +20,6 @@ class Country extends AdministrativeArea
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Country";
+    public $context = "http://schema.org/Country";
 
 }

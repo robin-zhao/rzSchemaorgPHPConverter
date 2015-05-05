@@ -20,6 +20,6 @@ class Canal extends BodyOfWater
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Canal";
+    public $context = "http://schema.org/Canal";
 
 }

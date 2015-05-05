@@ -21,52 +21,36 @@ class PayAction extends TradeAction
      *
      * @var Robinzhao\SchemaOrg\Thing|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
      */
-    protected $purpose;
+    public $purpose;
 
     /**
      * A sub property of participant. The participant who is at the receiving end of the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $recipient;
+    public $recipient;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PayAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
-     */
-    public function getPurpose()
-    {
-        return $this->purpose;
-    }
+    public $context = "http://schema.org/PayAction";
 
     /**
      * @param $purpose Robinzhao\SchemaOrg\Thing|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
      */
-    public function setPurpose($purpose)
+    public function addPurpose($purpose)
     {
-        $this->purpose = $purpose;
+        $this->purpose []= $purpose;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getRecipient()
-    {
-        return $this->recipient;
     }
 
     /**
      * @param $recipient Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setRecipient($recipient)
+    public function addRecipient($recipient)
     {
-        $this->recipient = $recipient;
+        $this->recipient []= $recipient;
         return $this;
     }
 

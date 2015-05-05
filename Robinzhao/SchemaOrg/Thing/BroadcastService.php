@@ -21,76 +21,52 @@ class BroadcastService extends Thing
      *
      * @var Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $area;
+    public $area;
 
     /**
      * The organization owning or operating the broadcast service.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $broadcaster;
+    public $broadcaster;
 
     /**
      * A broadcast service to which the broadcast service may belong to such as regional variations of a national channel.
      *
      * @var Robinzhao\SchemaOrg\Thing\BroadcastService
      */
-    protected $parentService;
+    public $parentService;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BroadcastService";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getArea()
-    {
-        return $this->area;
-    }
+    public $context = "http://schema.org/BroadcastService";
 
     /**
      * @param $area Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setArea($area)
+    public function addArea($area)
     {
-        $this->area = $area;
+        $this->area []= $area;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getBroadcaster()
-    {
-        return $this->broadcaster;
     }
 
     /**
      * @param $broadcaster Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setBroadcaster($broadcaster)
+    public function addBroadcaster($broadcaster)
     {
-        $this->broadcaster = $broadcaster;
+        $this->broadcaster []= $broadcaster;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\BroadcastService
-     */
-    public function getParentService()
-    {
-        return $this->parentService;
     }
 
     /**
      * @param $parentService Robinzhao\SchemaOrg\Thing\BroadcastService
      */
-    public function setParentService($parentService)
+    public function addParentService($parentService)
     {
-        $this->parentService = $parentService;
+        $this->parentService []= $parentService;
         return $this;
     }
 

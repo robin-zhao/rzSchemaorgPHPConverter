@@ -20,6 +20,6 @@ class SportsClub extends SportsActivityLocation
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SportsClub";
+    public $context = "http://schema.org/SportsClub";
 
 }

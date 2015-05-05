@@ -21,124 +21,84 @@ class VideoObject extends MediaObject
      *
      * @var String
      */
-    protected $caption;
+    public $caption;
 
     /**
      * Thumbnail image for an image or video.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    protected $thumbnail;
+    public $thumbnail;
 
     /**
      * If this MediaObject is an AudioObject or VideoObject, the transcript of that object.
      *
      * @var String
      */
-    protected $transcript;
+    public $transcript;
 
     /**
      * The frame size of the video.
      *
      * @var String
      */
-    protected $videoFrameSize;
+    public $videoFrameSize;
 
     /**
      * The quality of the video.
      *
      * @var String
      */
-    protected $videoQuality;
+    public $videoQuality;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/VideoObject";
-
-    /**
-     * @return String
-     */
-    public function getCaption()
-    {
-        return $this->caption;
-    }
+    public $context = "http://schema.org/VideoObject";
 
     /**
      * @param $caption String
      */
-    public function setCaption($caption)
+    public function addCaption($caption)
     {
-        $this->caption = $caption;
+        $this->caption []= $caption;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
-     */
-    public function getThumbnail()
-    {
-        return $this->thumbnail;
     }
 
     /**
      * @param $thumbnail Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    public function setThumbnail($thumbnail)
+    public function addThumbnail($thumbnail)
     {
-        $this->thumbnail = $thumbnail;
+        $this->thumbnail []= $thumbnail;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTranscript()
-    {
-        return $this->transcript;
     }
 
     /**
      * @param $transcript String
      */
-    public function setTranscript($transcript)
+    public function addTranscript($transcript)
     {
-        $this->transcript = $transcript;
+        $this->transcript []= $transcript;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getVideoFrameSize()
-    {
-        return $this->videoFrameSize;
     }
 
     /**
      * @param $videoFrameSize String
      */
-    public function setVideoFrameSize($videoFrameSize)
+    public function addVideoFrameSize($videoFrameSize)
     {
-        $this->videoFrameSize = $videoFrameSize;
+        $this->videoFrameSize []= $videoFrameSize;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getVideoQuality()
-    {
-        return $this->videoQuality;
     }
 
     /**
      * @param $videoQuality String
      */
-    public function setVideoQuality($videoQuality)
+    public function addVideoQuality($videoQuality)
     {
-        $this->videoQuality = $videoQuality;
+        $this->videoQuality []= $videoQuality;
         return $this;
     }
 

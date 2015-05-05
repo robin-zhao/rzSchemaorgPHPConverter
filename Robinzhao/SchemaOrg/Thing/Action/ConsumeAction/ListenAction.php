@@ -20,6 +20,6 @@ class ListenAction extends ConsumeAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ListenAction";
+    public $context = "http://schema.org/ListenAction";
 
 }

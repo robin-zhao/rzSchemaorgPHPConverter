@@ -21,148 +21,100 @@ class PostalAddress extends ContactPoint
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea\Country
      */
-    protected $addressCountry;
+    public $addressCountry;
 
     /**
      * The locality. For example, Mountain View.
      *
      * @var String
      */
-    protected $addressLocality;
+    public $addressLocality;
 
     /**
      * The region. For example, CA.
      *
      * @var String
      */
-    protected $addressRegion;
+    public $addressRegion;
 
     /**
      * The postal code. For example, 94043.
      *
      * @var String
      */
-    protected $postalCode;
+    public $postalCode;
 
     /**
      * The post offce box number for PO box addresses.
      *
      * @var String
      */
-    protected $postOfficeBoxNumber;
+    public $postOfficeBoxNumber;
 
     /**
      * The street address. For example, 1600 Amphitheatre Pkwy.
      *
      * @var String
      */
-    protected $streetAddress;
+    public $streetAddress;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PostalAddress";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea\Country
-     */
-    public function getAddressCountry()
-    {
-        return $this->addressCountry;
-    }
+    public $context = "http://schema.org/PostalAddress";
 
     /**
      * @param $addressCountry Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea\Country
      */
-    public function setAddressCountry($addressCountry)
+    public function addAddressCountry($addressCountry)
     {
-        $this->addressCountry = $addressCountry;
+        $this->addressCountry []= $addressCountry;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getAddressLocality()
-    {
-        return $this->addressLocality;
     }
 
     /**
      * @param $addressLocality String
      */
-    public function setAddressLocality($addressLocality)
+    public function addAddressLocality($addressLocality)
     {
-        $this->addressLocality = $addressLocality;
+        $this->addressLocality []= $addressLocality;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getAddressRegion()
-    {
-        return $this->addressRegion;
     }
 
     /**
      * @param $addressRegion String
      */
-    public function setAddressRegion($addressRegion)
+    public function addAddressRegion($addressRegion)
     {
-        $this->addressRegion = $addressRegion;
+        $this->addressRegion []= $addressRegion;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPostalCode()
-    {
-        return $this->postalCode;
     }
 
     /**
      * @param $postalCode String
      */
-    public function setPostalCode($postalCode)
+    public function addPostalCode($postalCode)
     {
-        $this->postalCode = $postalCode;
+        $this->postalCode []= $postalCode;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPostOfficeBoxNumber()
-    {
-        return $this->postOfficeBoxNumber;
     }
 
     /**
      * @param $postOfficeBoxNumber String
      */
-    public function setPostOfficeBoxNumber($postOfficeBoxNumber)
+    public function addPostOfficeBoxNumber($postOfficeBoxNumber)
     {
-        $this->postOfficeBoxNumber = $postOfficeBoxNumber;
+        $this->postOfficeBoxNumber []= $postOfficeBoxNumber;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getStreetAddress()
-    {
-        return $this->streetAddress;
     }
 
     /**
      * @param $streetAddress String
      */
-    public function setStreetAddress($streetAddress)
+    public function addStreetAddress($streetAddress)
     {
-        $this->streetAddress = $streetAddress;
+        $this->streetAddress []= $streetAddress;
         return $this;
     }
 

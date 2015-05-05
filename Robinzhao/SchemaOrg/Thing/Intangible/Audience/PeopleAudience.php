@@ -21,172 +21,116 @@ class PeopleAudience extends Audience
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    protected $healthCondition;
+    public $healthCondition;
 
     /**
      * Audiences defined by a person's gender.
      *
      * @var String
      */
-    protected $requiredGender;
+    public $requiredGender;
 
     /**
      * Audiences defined by a person's maximum age.
      *
      * @var Integer
      */
-    protected $requiredMaxAge;
+    public $requiredMaxAge;
 
     /**
      * Audiences defined by a person's minimum age.
      *
      * @var Integer
      */
-    protected $requiredMinAge;
+    public $requiredMinAge;
 
     /**
      * The gender of the person or audience.
      *
      * @var String
      */
-    protected $suggestedGender;
+    public $suggestedGender;
 
     /**
      * Maximal age recommended for viewing content
      *
      * @var Float
      */
-    protected $suggestedMaxAge;
+    public $suggestedMaxAge;
 
     /**
      * Minimal age recommended for viewing content
      *
      * @var Float
      */
-    protected $suggestedMinAge;
+    public $suggestedMinAge;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PeopleAudience";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
-     */
-    public function getHealthCondition()
-    {
-        return $this->healthCondition;
-    }
+    public $context = "http://schema.org/PeopleAudience";
 
     /**
      * @param $healthCondition Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    public function setHealthCondition($healthCondition)
+    public function addHealthCondition($healthCondition)
     {
-        $this->healthCondition = $healthCondition;
+        $this->healthCondition []= $healthCondition;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRequiredGender()
-    {
-        return $this->requiredGender;
     }
 
     /**
      * @param $requiredGender String
      */
-    public function setRequiredGender($requiredGender)
+    public function addRequiredGender($requiredGender)
     {
-        $this->requiredGender = $requiredGender;
+        $this->requiredGender []= $requiredGender;
         return $this;
-    }
-
-    /**
-     * @return Integer
-     */
-    public function getRequiredMaxAge()
-    {
-        return $this->requiredMaxAge;
     }
 
     /**
      * @param $requiredMaxAge Integer
      */
-    public function setRequiredMaxAge($requiredMaxAge)
+    public function addRequiredMaxAge($requiredMaxAge)
     {
-        $this->requiredMaxAge = $requiredMaxAge;
+        $this->requiredMaxAge []= $requiredMaxAge;
         return $this;
-    }
-
-    /**
-     * @return Integer
-     */
-    public function getRequiredMinAge()
-    {
-        return $this->requiredMinAge;
     }
 
     /**
      * @param $requiredMinAge Integer
      */
-    public function setRequiredMinAge($requiredMinAge)
+    public function addRequiredMinAge($requiredMinAge)
     {
-        $this->requiredMinAge = $requiredMinAge;
+        $this->requiredMinAge []= $requiredMinAge;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSuggestedGender()
-    {
-        return $this->suggestedGender;
     }
 
     /**
      * @param $suggestedGender String
      */
-    public function setSuggestedGender($suggestedGender)
+    public function addSuggestedGender($suggestedGender)
     {
-        $this->suggestedGender = $suggestedGender;
+        $this->suggestedGender []= $suggestedGender;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getSuggestedMaxAge()
-    {
-        return $this->suggestedMaxAge;
     }
 
     /**
      * @param $suggestedMaxAge Float
      */
-    public function setSuggestedMaxAge($suggestedMaxAge)
+    public function addSuggestedMaxAge($suggestedMaxAge)
     {
-        $this->suggestedMaxAge = $suggestedMaxAge;
+        $this->suggestedMaxAge []= $suggestedMaxAge;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getSuggestedMinAge()
-    {
-        return $this->suggestedMinAge;
     }
 
     /**
      * @param $suggestedMinAge Float
      */
-    public function setSuggestedMinAge($suggestedMinAge)
+    public function addSuggestedMinAge($suggestedMinAge)
     {
-        $this->suggestedMinAge = $suggestedMinAge;
+        $this->suggestedMinAge []= $suggestedMinAge;
         return $this;
     }
 

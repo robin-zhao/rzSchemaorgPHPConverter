@@ -21,28 +21,20 @@ class MobileApplication extends SoftwareApplication
      *
      * @var String
      */
-    protected $carrierRequirements;
+    public $carrierRequirements;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MobileApplication";
-
-    /**
-     * @return String
-     */
-    public function getCarrierRequirements()
-    {
-        return $this->carrierRequirements;
-    }
+    public $context = "http://schema.org/MobileApplication";
 
     /**
      * @param $carrierRequirements String
      */
-    public function setCarrierRequirements($carrierRequirements)
+    public function addCarrierRequirements($carrierRequirements)
     {
-        $this->carrierRequirements = $carrierRequirements;
+        $this->carrierRequirements []= $carrierRequirements;
         return $this;
     }
 

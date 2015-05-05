@@ -20,6 +20,6 @@ class DataDownload extends MediaObject
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DataDownload";
+    public $context = "http://schema.org/DataDownload";
 
 }

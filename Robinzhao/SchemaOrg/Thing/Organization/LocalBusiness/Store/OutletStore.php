@@ -20,6 +20,6 @@ class OutletStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/OutletStore";
+    public $context = "http://schema.org/OutletStore";
 
 }

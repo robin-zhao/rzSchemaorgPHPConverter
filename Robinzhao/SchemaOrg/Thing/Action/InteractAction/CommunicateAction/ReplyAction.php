@@ -20,6 +20,6 @@ class ReplyAction extends CommunicateAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ReplyAction";
+    public $context = "http://schema.org/ReplyAction";
 
 }

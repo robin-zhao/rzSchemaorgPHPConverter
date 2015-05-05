@@ -21,52 +21,36 @@ class ReceiveAction extends TransferAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    protected $deliveryMethod;
+    public $deliveryMethod;
 
     /**
      * A sub property of participant. The participant who is at the sending end of the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $sender;
+    public $sender;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ReceiveAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
-     */
-    public function getDeliveryMethod()
-    {
-        return $this->deliveryMethod;
-    }
+    public $context = "http://schema.org/ReceiveAction";
 
     /**
      * @param $deliveryMethod Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    public function setDeliveryMethod($deliveryMethod)
+    public function addDeliveryMethod($deliveryMethod)
     {
-        $this->deliveryMethod = $deliveryMethod;
+        $this->deliveryMethod []= $deliveryMethod;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getSender()
-    {
-        return $this->sender;
     }
 
     /**
      * @param $sender Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setSender($sender)
+    public function addSender($sender)
     {
-        $this->sender = $sender;
+        $this->sender []= $sender;
         return $this;
     }
 

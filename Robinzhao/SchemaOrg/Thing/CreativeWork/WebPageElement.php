@@ -20,6 +20,6 @@ class WebPageElement extends CreativeWork
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WebPageElement";
+    public $context = "http://schema.org/WebPageElement";
 
 }

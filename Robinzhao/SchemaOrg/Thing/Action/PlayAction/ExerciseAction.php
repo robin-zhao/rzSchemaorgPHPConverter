@@ -21,268 +21,180 @@ class ExerciseAction extends PlayAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $course;
+    public $course;
 
     /**
      * A sub property of instrument. The died used in this action.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Diet
      */
-    protected $diet;
+    public $diet;
 
     /**
      * A sub property of asset. The distance travelled.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance
      */
-    protected $distance;
+    public $distance;
 
     /**
      * A sub property of instrument. The exercise plan used on this action.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\ExercisePlan
      */
-    protected $exercisePlan;
+    public $exercisePlan;
 
     /**
      * Type(s) of exercise or activity, such as strength training, flexibility training, aerobics, cardiac rehabilitation, etc.
      *
      * @var String
      */
-    protected $exerciseType;
+    public $exerciseType;
 
     /**
      * A sub property of location. The original location of the object or the agent before the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    protected $fromLocation;
+    public $fromLocation;
 
     /**
      * A sub property of participant. The oponent on this action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $oponent;
+    public $oponent;
 
     /**
      * A sub property of location. The sports activity location where this action occurred.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\SportsActivityLocation
      */
-    protected $sportsActivityLocation;
+    public $sportsActivityLocation;
 
     /**
      * A sub property of location. The sports event where this action occurred.
      *
      * @var Robinzhao\SchemaOrg\Thing\Event\SportsEvent
      */
-    protected $sportsEvent;
+    public $sportsEvent;
 
     /**
      * A sub property of participant. The sports team that participated on this action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization\SportsTeam
      */
-    protected $sportsTeam;
+    public $sportsTeam;
 
     /**
      * A sub property of location. The final location of the object or the agent after the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    protected $toLocation;
+    public $toLocation;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ExerciseAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getCourse()
-    {
-        return $this->course;
-    }
+    public $context = "http://schema.org/ExerciseAction";
 
     /**
      * @param $course Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setCourse($course)
+    public function addCourse($course)
     {
-        $this->course = $course;
+        $this->course []= $course;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Diet
-     */
-    public function getDiet()
-    {
-        return $this->diet;
     }
 
     /**
      * @param $diet Robinzhao\SchemaOrg\Thing\CreativeWork\Diet
      */
-    public function setDiet($diet)
+    public function addDiet($diet)
     {
-        $this->diet = $diet;
+        $this->diet []= $diet;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance
-     */
-    public function getDistance()
-    {
-        return $this->distance;
     }
 
     /**
      * @param $distance Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance
      */
-    public function setDistance($distance)
+    public function addDistance($distance)
     {
-        $this->distance = $distance;
+        $this->distance []= $distance;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\ExercisePlan
-     */
-    public function getExercisePlan()
-    {
-        return $this->exercisePlan;
     }
 
     /**
      * @param $exercisePlan Robinzhao\SchemaOrg\Thing\CreativeWork\ExercisePlan
      */
-    public function setExercisePlan($exercisePlan)
+    public function addExercisePlan($exercisePlan)
     {
-        $this->exercisePlan = $exercisePlan;
+        $this->exercisePlan []= $exercisePlan;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getExerciseType()
-    {
-        return $this->exerciseType;
     }
 
     /**
      * @param $exerciseType String
      */
-    public function setExerciseType($exerciseType)
+    public function addExerciseType($exerciseType)
     {
-        $this->exerciseType = $exerciseType;
+        $this->exerciseType []= $exerciseType;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place|Float
-     */
-    public function getFromLocation()
-    {
-        return $this->fromLocation;
     }
 
     /**
      * @param $fromLocation Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    public function setFromLocation($fromLocation)
+    public function addFromLocation($fromLocation)
     {
-        $this->fromLocation = $fromLocation;
+        $this->fromLocation []= $fromLocation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getOponent()
-    {
-        return $this->oponent;
     }
 
     /**
      * @param $oponent Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setOponent($oponent)
+    public function addOponent($oponent)
     {
-        $this->oponent = $oponent;
+        $this->oponent []= $oponent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\SportsActivityLocation
-     */
-    public function getSportsActivityLocation()
-    {
-        return $this->sportsActivityLocation;
     }
 
     /**
      * @param $sportsActivityLocation Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\SportsActivityLocation
      */
-    public function setSportsActivityLocation($sportsActivityLocation)
+    public function addSportsActivityLocation($sportsActivityLocation)
     {
-        $this->sportsActivityLocation = $sportsActivityLocation;
+        $this->sportsActivityLocation []= $sportsActivityLocation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event\SportsEvent
-     */
-    public function getSportsEvent()
-    {
-        return $this->sportsEvent;
     }
 
     /**
      * @param $sportsEvent Robinzhao\SchemaOrg\Thing\Event\SportsEvent
      */
-    public function setSportsEvent($sportsEvent)
+    public function addSportsEvent($sportsEvent)
     {
-        $this->sportsEvent = $sportsEvent;
+        $this->sportsEvent []= $sportsEvent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization\SportsTeam
-     */
-    public function getSportsTeam()
-    {
-        return $this->sportsTeam;
     }
 
     /**
      * @param $sportsTeam Robinzhao\SchemaOrg\Thing\Organization\SportsTeam
      */
-    public function setSportsTeam($sportsTeam)
+    public function addSportsTeam($sportsTeam)
     {
-        $this->sportsTeam = $sportsTeam;
+        $this->sportsTeam []= $sportsTeam;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place|Float
-     */
-    public function getToLocation()
-    {
-        return $this->toLocation;
     }
 
     /**
      * @param $toLocation Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    public function setToLocation($toLocation)
+    public function addToLocation($toLocation)
     {
-        $this->toLocation = $toLocation;
+        $this->toLocation []= $toLocation;
         return $this;
     }
 

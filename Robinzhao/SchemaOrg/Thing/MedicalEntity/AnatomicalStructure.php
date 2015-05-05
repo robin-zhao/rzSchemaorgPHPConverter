@@ -21,220 +21,148 @@ class AnatomicalStructure extends MedicalEntity
      *
      * @var String
      */
-    protected $associatedPathophysiology;
+    public $associatedPathophysiology;
 
     /**
      * Location in the body of the anatomical structure.
      *
      * @var String
      */
-    protected $bodyLocation;
+    public $bodyLocation;
 
     /**
      * Other anatomical structures to which this structure is connected.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $connectedTo;
+    public $connectedTo;
 
     /**
      * An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    protected $diagram;
+    public $diagram;
 
     /**
      * Function of the anatomical structure.
      *
      * @var String
      */
-    protected $function;
+    public $function;
 
     /**
      * The anatomical or organ system that this structure is part of.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
      */
-    protected $partOfSystem;
+    public $partOfSystem;
 
     /**
      * A medical condition associated with this anatomy.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    protected $relatedCondition;
+    public $relatedCondition;
 
     /**
      * A medical therapy related to this anatomy.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    protected $relatedTherapy;
+    public $relatedTherapy;
 
     /**
      * Component (sub-)structure(s) that comprise this anatomical structure.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $subStructure;
+    public $subStructure;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AnatomicalStructure";
-
-    /**
-     * @return String
-     */
-    public function getAssociatedPathophysiology()
-    {
-        return $this->associatedPathophysiology;
-    }
+    public $context = "http://schema.org/AnatomicalStructure";
 
     /**
      * @param $associatedPathophysiology String
      */
-    public function setAssociatedPathophysiology($associatedPathophysiology)
+    public function addAssociatedPathophysiology($associatedPathophysiology)
     {
-        $this->associatedPathophysiology = $associatedPathophysiology;
+        $this->associatedPathophysiology []= $associatedPathophysiology;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getBodyLocation()
-    {
-        return $this->bodyLocation;
     }
 
     /**
      * @param $bodyLocation String
      */
-    public function setBodyLocation($bodyLocation)
+    public function addBodyLocation($bodyLocation)
     {
-        $this->bodyLocation = $bodyLocation;
+        $this->bodyLocation []= $bodyLocation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getConnectedTo()
-    {
-        return $this->connectedTo;
     }
 
     /**
      * @param $connectedTo Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setConnectedTo($connectedTo)
+    public function addConnectedTo($connectedTo)
     {
-        $this->connectedTo = $connectedTo;
+        $this->connectedTo []= $connectedTo;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
-     */
-    public function getDiagram()
-    {
-        return $this->diagram;
     }
 
     /**
      * @param $diagram Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    public function setDiagram($diagram)
+    public function addDiagram($diagram)
     {
-        $this->diagram = $diagram;
+        $this->diagram []= $diagram;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFunction()
-    {
-        return $this->function;
     }
 
     /**
      * @param $function String
      */
-    public function setFunction($function)
+    public function addFunction($function)
     {
-        $this->function = $function;
+        $this->function []= $function;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
-     */
-    public function getPartOfSystem()
-    {
-        return $this->partOfSystem;
     }
 
     /**
      * @param $partOfSystem Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
      */
-    public function setPartOfSystem($partOfSystem)
+    public function addPartOfSystem($partOfSystem)
     {
-        $this->partOfSystem = $partOfSystem;
+        $this->partOfSystem []= $partOfSystem;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
-     */
-    public function getRelatedCondition()
-    {
-        return $this->relatedCondition;
     }
 
     /**
      * @param $relatedCondition Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    public function setRelatedCondition($relatedCondition)
+    public function addRelatedCondition($relatedCondition)
     {
-        $this->relatedCondition = $relatedCondition;
+        $this->relatedCondition []= $relatedCondition;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
-     */
-    public function getRelatedTherapy()
-    {
-        return $this->relatedTherapy;
     }
 
     /**
      * @param $relatedTherapy Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    public function setRelatedTherapy($relatedTherapy)
+    public function addRelatedTherapy($relatedTherapy)
     {
-        $this->relatedTherapy = $relatedTherapy;
+        $this->relatedTherapy []= $relatedTherapy;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getSubStructure()
-    {
-        return $this->subStructure;
     }
 
     /**
      * @param $subStructure Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setSubStructure($subStructure)
+    public function addSubStructure($subStructure)
     {
-        $this->subStructure = $subStructure;
+        $this->subStructure []= $subStructure;
         return $this;
     }
 

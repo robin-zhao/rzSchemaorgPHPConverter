@@ -20,6 +20,6 @@ class PlaceOfWorship extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PlaceOfWorship";
+    public $context = "http://schema.org/PlaceOfWorship";
 
 }

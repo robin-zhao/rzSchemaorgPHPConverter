@@ -20,6 +20,6 @@ class DepartmentStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DepartmentStore";
+    public $context = "http://schema.org/DepartmentStore";
 
 }

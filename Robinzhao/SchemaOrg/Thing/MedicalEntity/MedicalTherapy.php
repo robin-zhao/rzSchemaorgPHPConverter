@@ -21,124 +21,84 @@ class MedicalTherapy extends MedicalEntity
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    protected $adverseOutcome;
+    public $adverseOutcome;
 
     /**
      * A contraindication for this therapy.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalContraindication
      */
-    protected $contraindication;
+    public $contraindication;
 
     /**
      * A therapy that duplicates or overlaps this one.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    protected $duplicateTherapy;
+    public $duplicateTherapy;
 
     /**
      * A factor that indicates use of this therapy for treatment and/or prevention of a condition, symptom, etc. For therapies such as drugs, indications can include both officially-approved indications as well as off-label uses. These can be distinguished by using the ApprovedIndication subtype of MedicalIndication.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIndication
      */
-    protected $indication;
+    public $indication;
 
     /**
      * A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    protected $seriousAdverseOutcome;
+    public $seriousAdverseOutcome;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalTherapy";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity
-     */
-    public function getAdverseOutcome()
-    {
-        return $this->adverseOutcome;
-    }
+    public $context = "http://schema.org/MedicalTherapy";
 
     /**
      * @param $adverseOutcome Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    public function setAdverseOutcome($adverseOutcome)
+    public function addAdverseOutcome($adverseOutcome)
     {
-        $this->adverseOutcome = $adverseOutcome;
+        $this->adverseOutcome []= $adverseOutcome;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalContraindication
-     */
-    public function getContraindication()
-    {
-        return $this->contraindication;
     }
 
     /**
      * @param $contraindication Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalContraindication
      */
-    public function setContraindication($contraindication)
+    public function addContraindication($contraindication)
     {
-        $this->contraindication = $contraindication;
+        $this->contraindication []= $contraindication;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
-     */
-    public function getDuplicateTherapy()
-    {
-        return $this->duplicateTherapy;
     }
 
     /**
      * @param $duplicateTherapy Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    public function setDuplicateTherapy($duplicateTherapy)
+    public function addDuplicateTherapy($duplicateTherapy)
     {
-        $this->duplicateTherapy = $duplicateTherapy;
+        $this->duplicateTherapy []= $duplicateTherapy;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIndication
-     */
-    public function getIndication()
-    {
-        return $this->indication;
     }
 
     /**
      * @param $indication Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIndication
      */
-    public function setIndication($indication)
+    public function addIndication($indication)
     {
-        $this->indication = $indication;
+        $this->indication []= $indication;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity
-     */
-    public function getSeriousAdverseOutcome()
-    {
-        return $this->seriousAdverseOutcome;
     }
 
     /**
      * @param $seriousAdverseOutcome Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    public function setSeriousAdverseOutcome($seriousAdverseOutcome)
+    public function addSeriousAdverseOutcome($seriousAdverseOutcome)
     {
-        $this->seriousAdverseOutcome = $seriousAdverseOutcome;
+        $this->seriousAdverseOutcome []= $seriousAdverseOutcome;
         return $this;
     }
 

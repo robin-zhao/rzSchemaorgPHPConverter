@@ -21,172 +21,116 @@ class Diet extends CreativeWork
      *
      * @var String
      */
-    protected $dietFeatures;
+    public $dietFeatures;
 
     /**
      * People or organizations that endorse the plan.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $endorsers;
+    public $endorsers;
 
     /**
      * Medical expert advice related to the plan.
      *
      * @var String
      */
-    protected $expertConsiderations;
+    public $expertConsiderations;
 
     /**
      * Descriptive information establishing the overarching theory/philosophy of the plan. May include the rationale for the name, the population where the plan first came to prominence, etc.
      *
      * @var String
      */
-    protected $overview;
+    public $overview;
 
     /**
      * Specific physiologic benefits associated to the plan.
      *
      * @var String
      */
-    protected $physiologicalBenefits;
+    public $physiologicalBenefits;
 
     /**
      * Proprietary name given to the diet plan, typically by its originator or creator.
      *
      * @var String
      */
-    protected $proprietaryName;
+    public $proprietaryName;
 
     /**
      * Specific physiologic risks associated to the plan.
      *
      * @var String
      */
-    protected $risks;
+    public $risks;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Diet";
-
-    /**
-     * @return String
-     */
-    public function getDietFeatures()
-    {
-        return $this->dietFeatures;
-    }
+    public $context = "http://schema.org/Diet";
 
     /**
      * @param $dietFeatures String
      */
-    public function setDietFeatures($dietFeatures)
+    public function addDietFeatures($dietFeatures)
     {
-        $this->dietFeatures = $dietFeatures;
+        $this->dietFeatures []= $dietFeatures;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getEndorsers()
-    {
-        return $this->endorsers;
     }
 
     /**
      * @param $endorsers Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setEndorsers($endorsers)
+    public function addEndorsers($endorsers)
     {
-        $this->endorsers = $endorsers;
+        $this->endorsers []= $endorsers;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getExpertConsiderations()
-    {
-        return $this->expertConsiderations;
     }
 
     /**
      * @param $expertConsiderations String
      */
-    public function setExpertConsiderations($expertConsiderations)
+    public function addExpertConsiderations($expertConsiderations)
     {
-        $this->expertConsiderations = $expertConsiderations;
+        $this->expertConsiderations []= $expertConsiderations;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getOverview()
-    {
-        return $this->overview;
     }
 
     /**
      * @param $overview String
      */
-    public function setOverview($overview)
+    public function addOverview($overview)
     {
-        $this->overview = $overview;
+        $this->overview []= $overview;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPhysiologicalBenefits()
-    {
-        return $this->physiologicalBenefits;
     }
 
     /**
      * @param $physiologicalBenefits String
      */
-    public function setPhysiologicalBenefits($physiologicalBenefits)
+    public function addPhysiologicalBenefits($physiologicalBenefits)
     {
-        $this->physiologicalBenefits = $physiologicalBenefits;
+        $this->physiologicalBenefits []= $physiologicalBenefits;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getProprietaryName()
-    {
-        return $this->proprietaryName;
     }
 
     /**
      * @param $proprietaryName String
      */
-    public function setProprietaryName($proprietaryName)
+    public function addProprietaryName($proprietaryName)
     {
-        $this->proprietaryName = $proprietaryName;
+        $this->proprietaryName []= $proprietaryName;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRisks()
-    {
-        return $this->risks;
     }
 
     /**
      * @param $risks String
      */
-    public function setRisks($risks)
+    public function addRisks($risks)
     {
-        $this->risks = $risks;
+        $this->risks []= $risks;
         return $this;
     }
 

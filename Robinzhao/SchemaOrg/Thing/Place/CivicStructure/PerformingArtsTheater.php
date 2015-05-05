@@ -20,6 +20,6 @@ class PerformingArtsTheater extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PerformingArtsTheater";
+    public $context = "http://schema.org/PerformingArtsTheater";
 
 }

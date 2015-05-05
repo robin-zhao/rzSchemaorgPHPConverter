@@ -21,28 +21,20 @@ class TravelAction extends MoveAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance
      */
-    protected $distance;
+    public $distance;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TravelAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance
-     */
-    public function getDistance()
-    {
-        return $this->distance;
-    }
+    public $context = "http://schema.org/TravelAction";
 
     /**
      * @param $distance Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance
      */
-    public function setDistance($distance)
+    public function addDistance($distance)
     {
-        $this->distance = $distance;
+        $this->distance []= $distance;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class PublicSwimmingPool extends SportsActivityLocation
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PublicSwimmingPool";
+    public $context = "http://schema.org/PublicSwimmingPool";
 
 }

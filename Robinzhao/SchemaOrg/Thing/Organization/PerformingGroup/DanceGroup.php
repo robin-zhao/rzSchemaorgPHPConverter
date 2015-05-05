@@ -20,6 +20,6 @@ class DanceGroup extends PerformingGroup
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DanceGroup";
+    public $context = "http://schema.org/DanceGroup";
 
 }

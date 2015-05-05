@@ -20,6 +20,6 @@ class HousePainter extends HomeAndConstructionBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/HousePainter";
+    public $context = "http://schema.org/HousePainter";
 
 }

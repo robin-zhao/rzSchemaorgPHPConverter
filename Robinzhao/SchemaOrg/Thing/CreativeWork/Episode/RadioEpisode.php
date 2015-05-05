@@ -20,6 +20,6 @@ class RadioEpisode extends Episode
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RadioEpisode";
+    public $context = "http://schema.org/RadioEpisode";
 
 }

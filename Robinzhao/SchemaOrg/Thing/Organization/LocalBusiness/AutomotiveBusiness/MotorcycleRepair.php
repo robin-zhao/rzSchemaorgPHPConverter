@@ -20,6 +20,6 @@ class MotorcycleRepair extends AutomotiveBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MotorcycleRepair";
+    public $context = "http://schema.org/MotorcycleRepair";
 
 }

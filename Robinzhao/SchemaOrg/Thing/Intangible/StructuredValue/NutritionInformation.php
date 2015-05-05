@@ -21,292 +21,196 @@ class NutritionInformation extends StructuredValue
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Energy
      */
-    protected $calories;
+    public $calories;
 
     /**
      * The number of grams of carbohydrates.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $carbohydrateContent;
+    public $carbohydrateContent;
 
     /**
      * The number of milligrams of cholesterol.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $cholesterolContent;
+    public $cholesterolContent;
 
     /**
      * The number of grams of fat.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $fatContent;
+    public $fatContent;
 
     /**
      * The number of grams of fiber.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $fiberContent;
+    public $fiberContent;
 
     /**
      * The number of grams of protein.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $proteinContent;
+    public $proteinContent;
 
     /**
      * The number of grams of saturated fat.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $saturatedFatContent;
+    public $saturatedFatContent;
 
     /**
      * The serving size, in terms of the number of volume or mass
      *
      * @var String
      */
-    protected $servingSize;
+    public $servingSize;
 
     /**
      * The number of milligrams of sodium.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $sodiumContent;
+    public $sodiumContent;
 
     /**
      * The number of grams of sugar.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $sugarContent;
+    public $sugarContent;
 
     /**
      * The number of grams of trans fat.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $transFatContent;
+    public $transFatContent;
 
     /**
      * The number of grams of unsaturated fat.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    protected $unsaturatedFatContent;
+    public $unsaturatedFatContent;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/NutritionInformation";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Energy
-     */
-    public function getCalories()
-    {
-        return $this->calories;
-    }
+    public $context = "http://schema.org/NutritionInformation";
 
     /**
      * @param $calories Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Energy
      */
-    public function setCalories($calories)
+    public function addCalories($calories)
     {
-        $this->calories = $calories;
+        $this->calories []= $calories;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getCarbohydrateContent()
-    {
-        return $this->carbohydrateContent;
     }
 
     /**
      * @param $carbohydrateContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setCarbohydrateContent($carbohydrateContent)
+    public function addCarbohydrateContent($carbohydrateContent)
     {
-        $this->carbohydrateContent = $carbohydrateContent;
+        $this->carbohydrateContent []= $carbohydrateContent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getCholesterolContent()
-    {
-        return $this->cholesterolContent;
     }
 
     /**
      * @param $cholesterolContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setCholesterolContent($cholesterolContent)
+    public function addCholesterolContent($cholesterolContent)
     {
-        $this->cholesterolContent = $cholesterolContent;
+        $this->cholesterolContent []= $cholesterolContent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getFatContent()
-    {
-        return $this->fatContent;
     }
 
     /**
      * @param $fatContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setFatContent($fatContent)
+    public function addFatContent($fatContent)
     {
-        $this->fatContent = $fatContent;
+        $this->fatContent []= $fatContent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getFiberContent()
-    {
-        return $this->fiberContent;
     }
 
     /**
      * @param $fiberContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setFiberContent($fiberContent)
+    public function addFiberContent($fiberContent)
     {
-        $this->fiberContent = $fiberContent;
+        $this->fiberContent []= $fiberContent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getProteinContent()
-    {
-        return $this->proteinContent;
     }
 
     /**
      * @param $proteinContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setProteinContent($proteinContent)
+    public function addProteinContent($proteinContent)
     {
-        $this->proteinContent = $proteinContent;
+        $this->proteinContent []= $proteinContent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getSaturatedFatContent()
-    {
-        return $this->saturatedFatContent;
     }
 
     /**
      * @param $saturatedFatContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setSaturatedFatContent($saturatedFatContent)
+    public function addSaturatedFatContent($saturatedFatContent)
     {
-        $this->saturatedFatContent = $saturatedFatContent;
+        $this->saturatedFatContent []= $saturatedFatContent;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getServingSize()
-    {
-        return $this->servingSize;
     }
 
     /**
      * @param $servingSize String
      */
-    public function setServingSize($servingSize)
+    public function addServingSize($servingSize)
     {
-        $this->servingSize = $servingSize;
+        $this->servingSize []= $servingSize;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getSodiumContent()
-    {
-        return $this->sodiumContent;
     }
 
     /**
      * @param $sodiumContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setSodiumContent($sodiumContent)
+    public function addSodiumContent($sodiumContent)
     {
-        $this->sodiumContent = $sodiumContent;
+        $this->sodiumContent []= $sodiumContent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getSugarContent()
-    {
-        return $this->sugarContent;
     }
 
     /**
      * @param $sugarContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setSugarContent($sugarContent)
+    public function addSugarContent($sugarContent)
     {
-        $this->sugarContent = $sugarContent;
+        $this->sugarContent []= $sugarContent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getTransFatContent()
-    {
-        return $this->transFatContent;
     }
 
     /**
      * @param $transFatContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setTransFatContent($transFatContent)
+    public function addTransFatContent($transFatContent)
     {
-        $this->transFatContent = $transFatContent;
+        $this->transFatContent []= $transFatContent;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
-     */
-    public function getUnsaturatedFatContent()
-    {
-        return $this->unsaturatedFatContent;
     }
 
     /**
      * @param $unsaturatedFatContent Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Mass
      */
-    public function setUnsaturatedFatContent($unsaturatedFatContent)
+    public function addUnsaturatedFatContent($unsaturatedFatContent)
     {
-        $this->unsaturatedFatContent = $unsaturatedFatContent;
+        $this->unsaturatedFatContent []= $unsaturatedFatContent;
         return $this;
     }
 

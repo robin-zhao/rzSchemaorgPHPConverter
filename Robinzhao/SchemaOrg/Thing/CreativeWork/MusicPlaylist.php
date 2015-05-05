@@ -21,76 +21,52 @@ class MusicPlaylist extends CreativeWork
      *
      * @var Integer
      */
-    protected $numTracks;
+    public $numTracks;
 
     /**
      * A music recording (track)—usually a single song.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MusicRecording
      */
-    protected $track;
+    public $track;
 
     /**
      * A music recording (track)—usually a single song (legacy spelling; see singular form, track).
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MusicRecording
      */
-    protected $tracks;
+    public $tracks;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MusicPlaylist";
-
-    /**
-     * @return Integer
-     */
-    public function getNumTracks()
-    {
-        return $this->numTracks;
-    }
+    public $context = "http://schema.org/MusicPlaylist";
 
     /**
      * @param $numTracks Integer
      */
-    public function setNumTracks($numTracks)
+    public function addNumTracks($numTracks)
     {
-        $this->numTracks = $numTracks;
+        $this->numTracks []= $numTracks;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MusicRecording
-     */
-    public function getTrack()
-    {
-        return $this->track;
     }
 
     /**
      * @param $track Robinzhao\SchemaOrg\Thing\CreativeWork\MusicRecording
      */
-    public function setTrack($track)
+    public function addTrack($track)
     {
-        $this->track = $track;
+        $this->track []= $track;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MusicRecording
-     */
-    public function getTracks()
-    {
-        return $this->tracks;
     }
 
     /**
      * @param $tracks Robinzhao\SchemaOrg\Thing\CreativeWork\MusicRecording
      */
-    public function setTracks($tracks)
+    public function addTracks($tracks)
     {
-        $this->tracks = $tracks;
+        $this->tracks []= $tracks;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class DepartAction extends MoveAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DepartAction";
+    public $context = "http://schema.org/DepartAction";
 
 }

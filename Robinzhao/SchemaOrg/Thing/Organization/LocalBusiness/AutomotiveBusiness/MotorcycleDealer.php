@@ -20,6 +20,6 @@ class MotorcycleDealer extends AutomotiveBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MotorcycleDealer";
+    public $context = "http://schema.org/MotorcycleDealer";
 
 }

@@ -20,6 +20,6 @@ class Courthouse extends GovernmentBuilding
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Courthouse";
+    public $context = "http://schema.org/Courthouse";
 
 }

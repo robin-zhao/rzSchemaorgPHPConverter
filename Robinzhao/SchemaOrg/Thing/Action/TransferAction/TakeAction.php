@@ -20,6 +20,6 @@ class TakeAction extends TransferAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TakeAction";
+    public $context = "http://schema.org/TakeAction";
 
 }

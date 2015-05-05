@@ -21,52 +21,36 @@ class ParentAudience extends PeopleAudience
      *
      * @var Float
      */
-    protected $childMaxAge;
+    public $childMaxAge;
 
     /**
      * Minimal age of the child
      *
      * @var Float
      */
-    protected $childMinAge;
+    public $childMinAge;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ParentAudience";
-
-    /**
-     * @return Float
-     */
-    public function getChildMaxAge()
-    {
-        return $this->childMaxAge;
-    }
+    public $context = "http://schema.org/ParentAudience";
 
     /**
      * @param $childMaxAge Float
      */
-    public function setChildMaxAge($childMaxAge)
+    public function addChildMaxAge($childMaxAge)
     {
-        $this->childMaxAge = $childMaxAge;
+        $this->childMaxAge []= $childMaxAge;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getChildMinAge()
-    {
-        return $this->childMinAge;
     }
 
     /**
      * @param $childMinAge Float
      */
-    public function setChildMinAge($childMinAge)
+    public function addChildMinAge($childMinAge)
     {
-        $this->childMinAge = $childMinAge;
+        $this->childMinAge []= $childMinAge;
         return $this;
     }
 

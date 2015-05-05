@@ -21,412 +21,276 @@ class MediaObject extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Article\NewsArticle
      */
-    protected $associatedArticle;
+    public $associatedArticle;
 
     /**
      * The bitrate of the media object.
      *
      * @var String
      */
-    protected $bitrate;
+    public $bitrate;
 
     /**
      * File size in (mega/kilo) bytes.
      *
      * @var String
      */
-    protected $contentSize;
+    public $contentSize;
 
     /**
      * Actual bytes of the media object, for example the image file or video file. (previous spelling: contentURL)
      *
      * @var String
      */
-    protected $contentUrl;
+    public $contentUrl;
 
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    protected $duration;
+    public $duration;
 
     /**
      * A URL pointing to a player for a specific video. In general, this is the information in the src element of an embed tag and should not be the same as the content of the loc tag. (previous spelling: embedURL)
      *
      * @var String
      */
-    protected $embedUrl;
+    public $embedUrl;
 
     /**
      * The creative work encoded by this media object
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork
      */
-    protected $encodesCreativeWork;
+    public $encodesCreativeWork;
 
     /**
      * mp3, mpeg4, etc.
      *
      * @var String
      */
-    protected $encodingFormat;
+    public $encodingFormat;
 
     /**
      * Date the content expires and is no longer useful or available. Useful for videos.
      *
      * @var DateTime
      */
-    protected $expires;
+    public $expires;
 
     /**
      * The height of the item.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    protected $height;
+    public $height;
 
     /**
      * Player type required—for example, Flash or Silverlight.
      *
      * @var String
      */
-    protected $playerType;
+    public $playerType;
 
     /**
      * The production company or studio that made the movie, tv/radio series, season, or episode, or media object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $productionCompany;
+    public $productionCompany;
 
     /**
      * A publication event associated with the episode, clip or media object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
      */
-    protected $publication;
+    public $publication;
 
     /**
      * The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in ISO 3166 format.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place
      */
-    protected $regionsAllowed;
+    public $regionsAllowed;
 
     /**
      * Indicates if use of the media require a subscription  (either paid or free). Allowed values are true or false (note that an earlier version had 'yes', 'no').
      *
      * @var Boolean
      */
-    protected $requiresSubscription;
+    public $requiresSubscription;
 
     /**
      * Date when this media object was uploaded to this site.
      *
      * @var DateTime
      */
-    protected $uploadDate;
+    public $uploadDate;
 
     /**
      * The width of the item.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    protected $width;
+    public $width;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MediaObject";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Article\NewsArticle
-     */
-    public function getAssociatedArticle()
-    {
-        return $this->associatedArticle;
-    }
+    public $context = "http://schema.org/MediaObject";
 
     /**
      * @param $associatedArticle Robinzhao\SchemaOrg\Thing\CreativeWork\Article\NewsArticle
      */
-    public function setAssociatedArticle($associatedArticle)
+    public function addAssociatedArticle($associatedArticle)
     {
-        $this->associatedArticle = $associatedArticle;
+        $this->associatedArticle []= $associatedArticle;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getBitrate()
-    {
-        return $this->bitrate;
     }
 
     /**
      * @param $bitrate String
      */
-    public function setBitrate($bitrate)
+    public function addBitrate($bitrate)
     {
-        $this->bitrate = $bitrate;
+        $this->bitrate []= $bitrate;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getContentSize()
-    {
-        return $this->contentSize;
     }
 
     /**
      * @param $contentSize String
      */
-    public function setContentSize($contentSize)
+    public function addContentSize($contentSize)
     {
-        $this->contentSize = $contentSize;
+        $this->contentSize []= $contentSize;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getContentUrl()
-    {
-        return $this->contentUrl;
     }
 
     /**
      * @param $contentUrl String
      */
-    public function setContentUrl($contentUrl)
+    public function addContentUrl($contentUrl)
     {
-        $this->contentUrl = $contentUrl;
+        $this->contentUrl []= $contentUrl;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
-     */
-    public function getDuration()
-    {
-        return $this->duration;
     }
 
     /**
      * @param $duration Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    public function setDuration($duration)
+    public function addDuration($duration)
     {
-        $this->duration = $duration;
+        $this->duration []= $duration;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getEmbedUrl()
-    {
-        return $this->embedUrl;
     }
 
     /**
      * @param $embedUrl String
      */
-    public function setEmbedUrl($embedUrl)
+    public function addEmbedUrl($embedUrl)
     {
-        $this->embedUrl = $embedUrl;
+        $this->embedUrl []= $embedUrl;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork
-     */
-    public function getEncodesCreativeWork()
-    {
-        return $this->encodesCreativeWork;
     }
 
     /**
      * @param $encodesCreativeWork Robinzhao\SchemaOrg\Thing\CreativeWork
      */
-    public function setEncodesCreativeWork($encodesCreativeWork)
+    public function addEncodesCreativeWork($encodesCreativeWork)
     {
-        $this->encodesCreativeWork = $encodesCreativeWork;
+        $this->encodesCreativeWork []= $encodesCreativeWork;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getEncodingFormat()
-    {
-        return $this->encodingFormat;
     }
 
     /**
      * @param $encodingFormat String
      */
-    public function setEncodingFormat($encodingFormat)
+    public function addEncodingFormat($encodingFormat)
     {
-        $this->encodingFormat = $encodingFormat;
+        $this->encodingFormat []= $encodingFormat;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getExpires()
-    {
-        return $this->expires;
     }
 
     /**
      * @param $expires DateTime
      */
-    public function setExpires($expires)
+    public function addExpires($expires)
     {
-        $this->expires = $expires;
+        $this->expires []= $expires;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
-     */
-    public function getHeight()
-    {
-        return $this->height;
     }
 
     /**
      * @param $height Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    public function setHeight($height)
+    public function addHeight($height)
     {
-        $this->height = $height;
+        $this->height []= $height;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPlayerType()
-    {
-        return $this->playerType;
     }
 
     /**
      * @param $playerType String
      */
-    public function setPlayerType($playerType)
+    public function addPlayerType($playerType)
     {
-        $this->playerType = $playerType;
+        $this->playerType []= $playerType;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getProductionCompany()
-    {
-        return $this->productionCompany;
     }
 
     /**
      * @param $productionCompany Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setProductionCompany($productionCompany)
+    public function addProductionCompany($productionCompany)
     {
-        $this->productionCompany = $productionCompany;
+        $this->productionCompany []= $productionCompany;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
-     */
-    public function getPublication()
-    {
-        return $this->publication;
     }
 
     /**
      * @param $publication Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
      */
-    public function setPublication($publication)
+    public function addPublication($publication)
     {
-        $this->publication = $publication;
+        $this->publication []= $publication;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place
-     */
-    public function getRegionsAllowed()
-    {
-        return $this->regionsAllowed;
     }
 
     /**
      * @param $regionsAllowed Robinzhao\SchemaOrg\Thing\Place
      */
-    public function setRegionsAllowed($regionsAllowed)
+    public function addRegionsAllowed($regionsAllowed)
     {
-        $this->regionsAllowed = $regionsAllowed;
+        $this->regionsAllowed []= $regionsAllowed;
         return $this;
-    }
-
-    /**
-     * @return Boolean
-     */
-    public function getRequiresSubscription()
-    {
-        return $this->requiresSubscription;
     }
 
     /**
      * @param $requiresSubscription Boolean
      */
-    public function setRequiresSubscription($requiresSubscription)
+    public function addRequiresSubscription($requiresSubscription)
     {
-        $this->requiresSubscription = $requiresSubscription;
+        $this->requiresSubscription []= $requiresSubscription;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getUploadDate()
-    {
-        return $this->uploadDate;
     }
 
     /**
      * @param $uploadDate DateTime
      */
-    public function setUploadDate($uploadDate)
+    public function addUploadDate($uploadDate)
     {
-        $this->uploadDate = $uploadDate;
+        $this->uploadDate []= $uploadDate;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
-     */
-    public function getWidth()
-    {
-        return $this->width;
     }
 
     /**
      * @param $width Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Distance|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    public function setWidth($width)
+    public function addWidth($width)
     {
-        $this->width = $width;
+        $this->width []= $width;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class Brewery extends FoodEstablishment
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Brewery";
+    public $context = "http://schema.org/Brewery";
 
 }

@@ -21,28 +21,20 @@ class Corporation extends Organization
      *
      * @var String
      */
-    protected $tickerSymbol;
+    public $tickerSymbol;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Corporation";
-
-    /**
-     * @return String
-     */
-    public function getTickerSymbol()
-    {
-        return $this->tickerSymbol;
-    }
+    public $context = "http://schema.org/Corporation";
 
     /**
      * @param $tickerSymbol String
      */
-    public function setTickerSymbol($tickerSymbol)
+    public function addTickerSymbol($tickerSymbol)
     {
-        $this->tickerSymbol = $tickerSymbol;
+        $this->tickerSymbol []= $tickerSymbol;
         return $this;
     }
 

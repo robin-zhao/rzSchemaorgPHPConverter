@@ -20,6 +20,6 @@ class RadiationTherapy extends MedicalTherapy
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RadiationTherapy";
+    public $context = "http://schema.org/RadiationTherapy";
 
 }

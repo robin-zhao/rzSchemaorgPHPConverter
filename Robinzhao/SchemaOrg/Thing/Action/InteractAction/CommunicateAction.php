@@ -21,76 +21,52 @@ class CommunicateAction extends InteractAction
      *
      * @var Robinzhao\SchemaOrg\Thing
      */
-    protected $about;
+    public $about;
 
     /**
      * A sub property of instrument. The languaged used on this action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Language
      */
-    protected $language;
+    public $language;
 
     /**
      * A sub property of participant. The participant who is at the receiving end of the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $recipient;
+    public $recipient;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/CommunicateAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing
-     */
-    public function getAbout()
-    {
-        return $this->about;
-    }
+    public $context = "http://schema.org/CommunicateAction";
 
     /**
      * @param $about Robinzhao\SchemaOrg\Thing
      */
-    public function setAbout($about)
+    public function addAbout($about)
     {
-        $this->about = $about;
+        $this->about []= $about;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Language
-     */
-    public function getLanguage()
-    {
-        return $this->language;
     }
 
     /**
      * @param $language Robinzhao\SchemaOrg\Thing\Intangible\Language
      */
-    public function setLanguage($language)
+    public function addLanguage($language)
     {
-        $this->language = $language;
+        $this->language []= $language;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getRecipient()
-    {
-        return $this->recipient;
     }
 
     /**
      * @param $recipient Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setRecipient($recipient)
+    public function addRecipient($recipient)
     {
-        $this->recipient = $recipient;
+        $this->recipient []= $recipient;
         return $this;
     }
 

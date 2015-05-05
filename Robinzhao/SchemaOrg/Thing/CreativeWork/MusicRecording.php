@@ -21,100 +21,68 @@ class MusicRecording extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
      */
-    protected $byArtist;
+    public $byArtist;
 
     /**
      * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    protected $duration;
+    public $duration;
 
     /**
      * The album to which this recording belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MusicPlaylist\MusicAlbum
      */
-    protected $inAlbum;
+    public $inAlbum;
 
     /**
      * The playlist to which this recording belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MusicPlaylist
      */
-    protected $inPlaylist;
+    public $inPlaylist;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MusicRecording";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
-     */
-    public function getByArtist()
-    {
-        return $this->byArtist;
-    }
+    public $context = "http://schema.org/MusicRecording";
 
     /**
      * @param $byArtist Robinzhao\SchemaOrg\Thing\Organization\PerformingGroup\MusicGroup
      */
-    public function setByArtist($byArtist)
+    public function addByArtist($byArtist)
     {
-        $this->byArtist = $byArtist;
+        $this->byArtist []= $byArtist;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
-     */
-    public function getDuration()
-    {
-        return $this->duration;
     }
 
     /**
      * @param $duration Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    public function setDuration($duration)
+    public function addDuration($duration)
     {
-        $this->duration = $duration;
+        $this->duration []= $duration;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MusicPlaylist\MusicAlbum
-     */
-    public function getInAlbum()
-    {
-        return $this->inAlbum;
     }
 
     /**
      * @param $inAlbum Robinzhao\SchemaOrg\Thing\CreativeWork\MusicPlaylist\MusicAlbum
      */
-    public function setInAlbum($inAlbum)
+    public function addInAlbum($inAlbum)
     {
-        $this->inAlbum = $inAlbum;
+        $this->inAlbum []= $inAlbum;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MusicPlaylist
-     */
-    public function getInPlaylist()
-    {
-        return $this->inPlaylist;
     }
 
     /**
      * @param $inPlaylist Robinzhao\SchemaOrg\Thing\CreativeWork\MusicPlaylist
      */
-    public function setInPlaylist($inPlaylist)
+    public function addInPlaylist($inPlaylist)
     {
-        $this->inPlaylist = $inPlaylist;
+        $this->inPlaylist []= $inPlaylist;
         return $this;
     }
 

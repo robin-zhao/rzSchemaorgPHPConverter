@@ -20,6 +20,6 @@ class PhysicalExam extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PhysicalExam";
+    public $context = "http://schema.org/PhysicalExam";
 
 }

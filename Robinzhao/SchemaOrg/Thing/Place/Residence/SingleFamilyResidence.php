@@ -20,6 +20,6 @@ class SingleFamilyResidence extends Residence
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SingleFamilyResidence";
+    public $context = "http://schema.org/SingleFamilyResidence";
 
 }

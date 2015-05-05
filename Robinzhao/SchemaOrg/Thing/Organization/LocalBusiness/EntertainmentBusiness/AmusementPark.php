@@ -20,6 +20,6 @@ class AmusementPark extends EntertainmentBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AmusementPark";
+    public $context = "http://schema.org/AmusementPark";
 
 }

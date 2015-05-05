@@ -20,6 +20,6 @@ class Attorney extends ProfessionalService
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Attorney";
+    public $context = "http://schema.org/Attorney";
 
 }

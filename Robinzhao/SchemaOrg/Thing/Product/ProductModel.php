@@ -21,76 +21,52 @@ class ProductModel extends Product
      *
      * @var Robinzhao\SchemaOrg\Thing\Product\ProductModel
      */
-    protected $isVariantOf;
+    public $isVariantOf;
 
     /**
      * A pointer from a previous, often discontinued variant of the product to its newer variant.
      *
      * @var Robinzhao\SchemaOrg\Thing\Product\ProductModel
      */
-    protected $predecessorOf;
+    public $predecessorOf;
 
     /**
      * A pointer from a newer variant of a product  to its previous, often discontinued predecessor.
      *
      * @var Robinzhao\SchemaOrg\Thing\Product\ProductModel
      */
-    protected $successorOf;
+    public $successorOf;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ProductModel";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Product\ProductModel
-     */
-    public function getIsVariantOf()
-    {
-        return $this->isVariantOf;
-    }
+    public $context = "http://schema.org/ProductModel";
 
     /**
      * @param $isVariantOf Robinzhao\SchemaOrg\Thing\Product\ProductModel
      */
-    public function setIsVariantOf($isVariantOf)
+    public function addIsVariantOf($isVariantOf)
     {
-        $this->isVariantOf = $isVariantOf;
+        $this->isVariantOf []= $isVariantOf;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Product\ProductModel
-     */
-    public function getPredecessorOf()
-    {
-        return $this->predecessorOf;
     }
 
     /**
      * @param $predecessorOf Robinzhao\SchemaOrg\Thing\Product\ProductModel
      */
-    public function setPredecessorOf($predecessorOf)
+    public function addPredecessorOf($predecessorOf)
     {
-        $this->predecessorOf = $predecessorOf;
+        $this->predecessorOf []= $predecessorOf;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Product\ProductModel
-     */
-    public function getSuccessorOf()
-    {
-        return $this->successorOf;
     }
 
     /**
      * @param $successorOf Robinzhao\SchemaOrg\Thing\Product\ProductModel
      */
-    public function setSuccessorOf($successorOf)
+    public function addSuccessorOf($successorOf)
     {
-        $this->successorOf = $successorOf;
+        $this->successorOf []= $successorOf;
         return $this;
     }
 

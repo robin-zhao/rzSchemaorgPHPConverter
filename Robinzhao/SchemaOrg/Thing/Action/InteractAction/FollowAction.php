@@ -21,28 +21,20 @@ class FollowAction extends InteractAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $followee;
+    public $followee;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/FollowAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getFollowee()
-    {
-        return $this->followee;
-    }
+    public $context = "http://schema.org/FollowAction";
 
     /**
      * @param $followee Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setFollowee($followee)
+    public function addFollowee($followee)
     {
-        $this->followee = $followee;
+        $this->followee []= $followee;
         return $this;
     }
 

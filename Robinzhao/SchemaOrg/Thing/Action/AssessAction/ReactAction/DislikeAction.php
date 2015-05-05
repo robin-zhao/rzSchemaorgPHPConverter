@@ -20,6 +20,6 @@ class DislikeAction extends ReactAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DislikeAction";
+    public $context = "http://schema.org/DislikeAction";
 
 }

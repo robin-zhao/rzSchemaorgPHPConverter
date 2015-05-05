@@ -21,28 +21,20 @@ class MedicalRiskScore extends MedicalRiskEstimator
      *
      * @var String
      */
-    protected $algorithm;
+    public $algorithm;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalRiskScore";
-
-    /**
-     * @return String
-     */
-    public function getAlgorithm()
-    {
-        return $this->algorithm;
-    }
+    public $context = "http://schema.org/MedicalRiskScore";
 
     /**
      * @param $algorithm String
      */
-    public function setAlgorithm($algorithm)
+    public function addAlgorithm($algorithm)
     {
-        $this->algorithm = $algorithm;
+        $this->algorithm []= $algorithm;
         return $this;
     }
 

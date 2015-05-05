@@ -20,6 +20,6 @@ class WPFooter extends WebPageElement
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WPFooter";
+    public $context = "http://schema.org/WPFooter";
 
 }

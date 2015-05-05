@@ -20,6 +20,6 @@ class EventStatusType extends Enumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/EventStatusType";
+    public $context = "http://schema.org/EventStatusType";
 
 }

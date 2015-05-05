@@ -21,28 +21,20 @@ class TradeAction extends Action
      *
      * @var String|Float
      */
-    protected $price;
+    public $price;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TradeAction";
-
-    /**
-     * @return String|Float
-     */
-    public function getPrice()
-    {
-        return $this->price;
-    }
+    public $context = "http://schema.org/TradeAction";
 
     /**
      * @param $price String|Float
      */
-    public function setPrice($price)
+    public function addPrice($price)
     {
-        $this->price = $price;
+        $this->price []= $price;
         return $this;
     }
 

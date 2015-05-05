@@ -20,6 +20,6 @@ class DanceEvent extends Event
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DanceEvent";
+    public $context = "http://schema.org/DanceEvent";
 
 }

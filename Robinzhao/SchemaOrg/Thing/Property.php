@@ -21,52 +21,36 @@ class Property extends Thing
      *
      * @var Robinzhao\SchemaOrg\Thing\Class
      */
-    protected $domainIncludes;
+    public $domainIncludes;
 
     /**
      * Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.
      *
      * @var Robinzhao\SchemaOrg\Thing\Class
      */
-    protected $rangeIncludes;
+    public $rangeIncludes;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Property";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Class
-     */
-    public function getDomainIncludes()
-    {
-        return $this->domainIncludes;
-    }
+    public $context = "http://schema.org/Property";
 
     /**
      * @param $domainIncludes Robinzhao\SchemaOrg\Thing\Class
      */
-    public function setDomainIncludes($domainIncludes)
+    public function addDomainIncludes($domainIncludes)
     {
-        $this->domainIncludes = $domainIncludes;
+        $this->domainIncludes []= $domainIncludes;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Class
-     */
-    public function getRangeIncludes()
-    {
-        return $this->rangeIncludes;
     }
 
     /**
      * @param $rangeIncludes Robinzhao\SchemaOrg\Thing\Class
      */
-    public function setRangeIncludes($rangeIncludes)
+    public function addRangeIncludes($rangeIncludes)
     {
-        $this->rangeIncludes = $rangeIncludes;
+        $this->rangeIncludes []= $rangeIncludes;
         return $this;
     }
 

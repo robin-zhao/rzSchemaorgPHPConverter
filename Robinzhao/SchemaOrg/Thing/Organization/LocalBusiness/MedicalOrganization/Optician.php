@@ -20,6 +20,6 @@ class Optician extends MedicalOrganization
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Optician";
+    public $context = "http://schema.org/Optician";
 
 }

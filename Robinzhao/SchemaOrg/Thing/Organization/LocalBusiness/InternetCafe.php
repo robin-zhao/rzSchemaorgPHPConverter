@@ -20,6 +20,6 @@ class InternetCafe extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/InternetCafe";
+    public $context = "http://schema.org/InternetCafe";
 
 }

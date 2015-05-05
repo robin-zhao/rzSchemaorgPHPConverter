@@ -21,28 +21,20 @@ class ReturnAction extends TransferAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $recipient;
+    public $recipient;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ReturnAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getRecipient()
-    {
-        return $this->recipient;
-    }
+    public $context = "http://schema.org/ReturnAction";
 
     /**
      * @param $recipient Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setRecipient($recipient)
+    public function addRecipient($recipient)
     {
-        $this->recipient = $recipient;
+        $this->recipient []= $recipient;
         return $this;
     }
 

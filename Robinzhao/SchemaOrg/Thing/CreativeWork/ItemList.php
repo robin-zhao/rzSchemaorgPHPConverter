@@ -21,52 +21,36 @@ class ItemList extends CreativeWork
      *
      * @var String
      */
-    protected $itemListElement;
+    public $itemListElement;
 
     /**
      * Type of ordering (e.g. Ascending, Descending, Unordered).
      *
      * @var String
      */
-    protected $itemListOrder;
+    public $itemListOrder;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ItemList";
-
-    /**
-     * @return String
-     */
-    public function getItemListElement()
-    {
-        return $this->itemListElement;
-    }
+    public $context = "http://schema.org/ItemList";
 
     /**
      * @param $itemListElement String
      */
-    public function setItemListElement($itemListElement)
+    public function addItemListElement($itemListElement)
     {
-        $this->itemListElement = $itemListElement;
+        $this->itemListElement []= $itemListElement;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getItemListOrder()
-    {
-        return $this->itemListOrder;
     }
 
     /**
      * @param $itemListOrder String
      */
-    public function setItemListOrder($itemListOrder)
+    public function addItemListOrder($itemListOrder)
     {
-        $this->itemListOrder = $itemListOrder;
+        $this->itemListOrder []= $itemListOrder;
         return $this;
     }
 

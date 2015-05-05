@@ -21,28 +21,20 @@ class BorrowAction extends TransferAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $lender;
+    public $lender;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BorrowAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getLender()
-    {
-        return $this->lender;
-    }
+    public $context = "http://schema.org/BorrowAction";
 
     /**
      * @param $lender Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setLender($lender)
+    public function addLender($lender)
     {
-        $this->lender = $lender;
+        $this->lender []= $lender;
         return $this;
     }
 

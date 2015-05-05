@@ -21,172 +21,116 @@ class Permit extends Intangible
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $issuedBy;
+    public $issuedBy;
 
     /**
      * The service through with the permit was granted.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Service
      */
-    protected $issuedThrough;
+    public $issuedThrough;
 
     /**
      * The target audience for this permit.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Audience
      */
-    protected $permitAudience;
+    public $permitAudience;
 
     /**
      * The time validity of the permit.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    protected $validFor;
+    public $validFor;
 
     /**
      * The date when the item becomes valid.
      *
      * @var DateTime
      */
-    protected $validFrom;
+    public $validFrom;
 
     /**
      * The geographic area where the permit is valid.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    protected $validIn;
+    public $validIn;
 
     /**
      * The date when the item is no longer valid.
      *
      * @var DateTime
      */
-    protected $validUntil;
+    public $validUntil;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Permit";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getIssuedBy()
-    {
-        return $this->issuedBy;
-    }
+    public $context = "http://schema.org/Permit";
 
     /**
      * @param $issuedBy Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setIssuedBy($issuedBy)
+    public function addIssuedBy($issuedBy)
     {
-        $this->issuedBy = $issuedBy;
+        $this->issuedBy []= $issuedBy;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Service
-     */
-    public function getIssuedThrough()
-    {
-        return $this->issuedThrough;
     }
 
     /**
      * @param $issuedThrough Robinzhao\SchemaOrg\Thing\Intangible\Service
      */
-    public function setIssuedThrough($issuedThrough)
+    public function addIssuedThrough($issuedThrough)
     {
-        $this->issuedThrough = $issuedThrough;
+        $this->issuedThrough []= $issuedThrough;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Audience
-     */
-    public function getPermitAudience()
-    {
-        return $this->permitAudience;
     }
 
     /**
      * @param $permitAudience Robinzhao\SchemaOrg\Thing\Intangible\Audience
      */
-    public function setPermitAudience($permitAudience)
+    public function addPermitAudience($permitAudience)
     {
-        $this->permitAudience = $permitAudience;
+        $this->permitAudience []= $permitAudience;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
-     */
-    public function getValidFor()
-    {
-        return $this->validFor;
     }
 
     /**
      * @param $validFor Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    public function setValidFor($validFor)
+    public function addValidFor($validFor)
     {
-        $this->validFor = $validFor;
+        $this->validFor []= $validFor;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getValidFrom()
-    {
-        return $this->validFrom;
     }
 
     /**
      * @param $validFrom DateTime
      */
-    public function setValidFrom($validFrom)
+    public function addValidFrom($validFrom)
     {
-        $this->validFrom = $validFrom;
+        $this->validFrom []= $validFrom;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
-     */
-    public function getValidIn()
-    {
-        return $this->validIn;
     }
 
     /**
      * @param $validIn Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    public function setValidIn($validIn)
+    public function addValidIn($validIn)
     {
-        $this->validIn = $validIn;
+        $this->validIn []= $validIn;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getValidUntil()
-    {
-        return $this->validUntil;
     }
 
     /**
      * @param $validUntil DateTime
      */
-    public function setValidUntil($validUntil)
+    public function addValidUntil($validUntil)
     {
-        $this->validUntil = $validUntil;
+        $this->validUntil []= $validUntil;
         return $this;
     }
 

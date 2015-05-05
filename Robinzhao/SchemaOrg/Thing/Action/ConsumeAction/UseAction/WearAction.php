@@ -20,6 +20,6 @@ class WearAction extends UseAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WearAction";
+    public $context = "http://schema.org/WearAction";
 
 }

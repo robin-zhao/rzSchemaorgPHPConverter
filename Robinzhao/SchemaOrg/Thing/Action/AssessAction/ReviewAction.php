@@ -21,28 +21,20 @@ class ReviewAction extends AssessAction
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Review
      */
-    protected $resultReview;
+    public $resultReview;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ReviewAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Review
-     */
-    public function getResultReview()
-    {
-        return $this->resultReview;
-    }
+    public $context = "http://schema.org/ReviewAction";
 
     /**
      * @param $resultReview Robinzhao\SchemaOrg\Thing\CreativeWork\Review
      */
-    public function setResultReview($resultReview)
+    public function addResultReview($resultReview)
     {
-        $this->resultReview = $resultReview;
+        $this->resultReview []= $resultReview;
         return $this;
     }
 

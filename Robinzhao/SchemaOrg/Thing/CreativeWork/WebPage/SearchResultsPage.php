@@ -20,6 +20,6 @@ class SearchResultsPage extends WebPage
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SearchResultsPage";
+    public $context = "http://schema.org/SearchResultsPage";
 
 }

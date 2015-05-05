@@ -20,6 +20,6 @@ class ConfirmAction extends InformAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ConfirmAction";
+    public $context = "http://schema.org/ConfirmAction";
 
 }

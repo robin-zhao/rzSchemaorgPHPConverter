@@ -20,6 +20,6 @@ class ScheduleAction extends PlanAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ScheduleAction";
+    public $context = "http://schema.org/ScheduleAction";
 
 }

@@ -20,6 +20,6 @@ class InstallAction extends ConsumeAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/InstallAction";
+    public $context = "http://schema.org/InstallAction";
 
 }

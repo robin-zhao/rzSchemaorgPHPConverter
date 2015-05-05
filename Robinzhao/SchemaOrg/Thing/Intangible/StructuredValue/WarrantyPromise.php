@@ -21,52 +21,36 @@ class WarrantyPromise extends StructuredValue
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    protected $durationOfWarranty;
+    public $durationOfWarranty;
 
     /**
      * The scope of the warranty promise.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\WarrantyScope
      */
-    protected $warrantyScope;
+    public $warrantyScope;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WarrantyPromise";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
-     */
-    public function getDurationOfWarranty()
-    {
-        return $this->durationOfWarranty;
-    }
+    public $context = "http://schema.org/WarrantyPromise";
 
     /**
      * @param $durationOfWarranty Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\QuantitativeValue
      */
-    public function setDurationOfWarranty($durationOfWarranty)
+    public function addDurationOfWarranty($durationOfWarranty)
     {
-        $this->durationOfWarranty = $durationOfWarranty;
+        $this->durationOfWarranty []= $durationOfWarranty;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\WarrantyScope
-     */
-    public function getWarrantyScope()
-    {
-        return $this->warrantyScope;
     }
 
     /**
      * @param $warrantyScope Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\WarrantyScope
      */
-    public function setWarrantyScope($warrantyScope)
+    public function addWarrantyScope($warrantyScope)
     {
-        $this->warrantyScope = $warrantyScope;
+        $this->warrantyScope []= $warrantyScope;
         return $this;
     }
 

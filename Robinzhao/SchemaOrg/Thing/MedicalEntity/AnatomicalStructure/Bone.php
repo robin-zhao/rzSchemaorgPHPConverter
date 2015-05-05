@@ -20,6 +20,6 @@ class Bone extends AnatomicalStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Bone";
+    public $context = "http://schema.org/Bone";
 
 }

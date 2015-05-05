@@ -20,6 +20,6 @@ class EatAction extends ConsumeAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/EatAction";
+    public $context = "http://schema.org/EatAction";
 
 }

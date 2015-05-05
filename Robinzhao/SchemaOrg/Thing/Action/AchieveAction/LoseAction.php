@@ -21,28 +21,20 @@ class LoseAction extends AchieveAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $winner;
+    public $winner;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/LoseAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getWinner()
-    {
-        return $this->winner;
-    }
+    public $context = "http://schema.org/LoseAction";
 
     /**
      * @param $winner Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setWinner($winner)
+    public function addWinner($winner)
     {
-        $this->winner = $winner;
+        $this->winner []= $winner;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class Locksmith extends HomeAndConstructionBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Locksmith";
+    public $context = "http://schema.org/Locksmith";
 
 }

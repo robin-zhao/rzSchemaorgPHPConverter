@@ -21,124 +21,84 @@ class OpeningHoursSpecification extends StructuredValue
      *
      * @var DateTime
      */
-    protected $closes;
+    public $closes;
 
     /**
      * The day of the week for which these opening hours are valid.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DayOfWeek
      */
-    protected $dayOfWeek;
+    public $dayOfWeek;
 
     /**
      * The opening hour of the place or service on the given day(s) of the week.
      *
      * @var DateTime
      */
-    protected $opens;
+    public $opens;
 
     /**
      * The date when the item becomes valid.
      *
      * @var DateTime
      */
-    protected $validFrom;
+    public $validFrom;
 
     /**
      * The end of the validity of offer, price specification, or opening hours data.
      *
      * @var DateTime
      */
-    protected $validThrough;
+    public $validThrough;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/OpeningHoursSpecification";
-
-    /**
-     * @return DateTime
-     */
-    public function getCloses()
-    {
-        return $this->closes;
-    }
+    public $context = "http://schema.org/OpeningHoursSpecification";
 
     /**
      * @param $closes DateTime
      */
-    public function setCloses($closes)
+    public function addCloses($closes)
     {
-        $this->closes = $closes;
+        $this->closes []= $closes;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DayOfWeek
-     */
-    public function getDayOfWeek()
-    {
-        return $this->dayOfWeek;
     }
 
     /**
      * @param $dayOfWeek Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DayOfWeek
      */
-    public function setDayOfWeek($dayOfWeek)
+    public function addDayOfWeek($dayOfWeek)
     {
-        $this->dayOfWeek = $dayOfWeek;
+        $this->dayOfWeek []= $dayOfWeek;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getOpens()
-    {
-        return $this->opens;
     }
 
     /**
      * @param $opens DateTime
      */
-    public function setOpens($opens)
+    public function addOpens($opens)
     {
-        $this->opens = $opens;
+        $this->opens []= $opens;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getValidFrom()
-    {
-        return $this->validFrom;
     }
 
     /**
      * @param $validFrom DateTime
      */
-    public function setValidFrom($validFrom)
+    public function addValidFrom($validFrom)
     {
-        $this->validFrom = $validFrom;
+        $this->validFrom []= $validFrom;
         return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getValidThrough()
-    {
-        return $this->validThrough;
     }
 
     /**
      * @param $validThrough DateTime
      */
-    public function setValidThrough($validThrough)
+    public function addValidThrough($validThrough)
     {
-        $this->validThrough = $validThrough;
+        $this->validThrough []= $validThrough;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class ApprovedIndication extends MedicalIndication
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ApprovedIndication";
+    public $context = "http://schema.org/ApprovedIndication";
 
 }

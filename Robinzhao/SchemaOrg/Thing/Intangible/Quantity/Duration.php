@@ -20,6 +20,6 @@ class Duration extends Quantity
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Duration";
+    public $context = "http://schema.org/Duration";
 
 }

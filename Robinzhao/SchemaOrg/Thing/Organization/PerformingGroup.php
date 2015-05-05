@@ -20,6 +20,6 @@ class PerformingGroup extends Organization
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PerformingGroup";
+    public $context = "http://schema.org/PerformingGroup";
 
 }

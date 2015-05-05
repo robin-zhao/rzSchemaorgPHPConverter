@@ -20,6 +20,6 @@ class TireShop extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TireShop";
+    public $context = "http://schema.org/TireShop";
 
 }

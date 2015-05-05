@@ -20,6 +20,6 @@ class FoodEvent extends Event
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/FoodEvent";
+    public $context = "http://schema.org/FoodEvent";
 
 }

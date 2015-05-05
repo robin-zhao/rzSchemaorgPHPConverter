@@ -20,6 +20,6 @@ class CollegeOrUniversity extends EducationalOrganization
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/CollegeOrUniversity";
+    public $context = "http://schema.org/CollegeOrUniversity";
 
 }

@@ -21,28 +21,20 @@ class EducationalAudience extends Audience
      *
      * @var String
      */
-    protected $educationalRole;
+    public $educationalRole;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/EducationalAudience";
-
-    /**
-     * @return String
-     */
-    public function getEducationalRole()
-    {
-        return $this->educationalRole;
-    }
+    public $context = "http://schema.org/EducationalAudience";
 
     /**
      * @param $educationalRole String
      */
-    public function setEducationalRole($educationalRole)
+    public function addEducationalRole($educationalRole)
     {
-        $this->educationalRole = $educationalRole;
+        $this->educationalRole []= $educationalRole;
         return $this;
     }
 

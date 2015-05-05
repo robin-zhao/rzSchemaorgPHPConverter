@@ -20,6 +20,6 @@ class BodyOfWater extends Landform
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BodyOfWater";
+    public $context = "http://schema.org/BodyOfWater";
 
 }

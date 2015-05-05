@@ -21,76 +21,52 @@ class LymphaticVessel extends Vessel
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    protected $originatesFrom;
+    public $originatesFrom;
 
     /**
      * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $regionDrained;
+    public $regionDrained;
 
     /**
      * The vasculature the lymphatic structure runs, or efferents, to.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    protected $runsTo;
+    public $runsTo;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/LymphaticVessel";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
-     */
-    public function getOriginatesFrom()
-    {
-        return $this->originatesFrom;
-    }
+    public $context = "http://schema.org/LymphaticVessel";
 
     /**
      * @param $originatesFrom Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    public function setOriginatesFrom($originatesFrom)
+    public function addOriginatesFrom($originatesFrom)
     {
-        $this->originatesFrom = $originatesFrom;
+        $this->originatesFrom []= $originatesFrom;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getRegionDrained()
-    {
-        return $this->regionDrained;
     }
 
     /**
      * @param $regionDrained Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setRegionDrained($regionDrained)
+    public function addRegionDrained($regionDrained)
     {
-        $this->regionDrained = $regionDrained;
+        $this->regionDrained []= $regionDrained;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
-     */
-    public function getRunsTo()
-    {
-        return $this->runsTo;
     }
 
     /**
      * @param $runsTo Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    public function setRunsTo($runsTo)
+    public function addRunsTo($runsTo)
     {
-        $this->runsTo = $runsTo;
+        $this->runsTo []= $runsTo;
         return $this;
     }
 

@@ -21,52 +21,36 @@ class MedicalSignOrSymptom extends MedicalEntity
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCause
      */
-    protected $cause;
+    public $cause;
 
     /**
      * A possible treatment to address this condition, sign or symptom.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    protected $possibleTreatment;
+    public $possibleTreatment;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalSignOrSymptom";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCause
-     */
-    public function getCause()
-    {
-        return $this->cause;
-    }
+    public $context = "http://schema.org/MedicalSignOrSymptom";
 
     /**
      * @param $cause Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCause
      */
-    public function setCause($cause)
+    public function addCause($cause)
     {
-        $this->cause = $cause;
+        $this->cause []= $cause;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
-     */
-    public function getPossibleTreatment()
-    {
-        return $this->possibleTreatment;
     }
 
     /**
      * @param $possibleTreatment Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    public function setPossibleTreatment($possibleTreatment)
+    public function addPossibleTreatment($possibleTreatment)
     {
-        $this->possibleTreatment = $possibleTreatment;
+        $this->possibleTreatment []= $possibleTreatment;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class LiteraryEvent extends Event
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/LiteraryEvent";
+    public $context = "http://schema.org/LiteraryEvent";
 
 }

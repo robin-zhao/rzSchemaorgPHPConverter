@@ -21,124 +21,84 @@ class AlignmentObject extends Intangible
      *
      * @var String
      */
-    protected $alignmentType;
+    public $alignmentType;
 
     /**
      * The framework to which the resource being described is aligned.
      *
      * @var String
      */
-    protected $educationalFramework;
+    public $educationalFramework;
 
     /**
      * The description of a node in an established educational framework.
      *
      * @var String
      */
-    protected $targetDescription;
+    public $targetDescription;
 
     /**
      * The name of a node in an established educational framework.
      *
      * @var String
      */
-    protected $targetName;
+    public $targetName;
 
     /**
      * The URL of a node in an established educational framework.
      *
      * @var String
      */
-    protected $targetUrl;
+    public $targetUrl;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AlignmentObject";
-
-    /**
-     * @return String
-     */
-    public function getAlignmentType()
-    {
-        return $this->alignmentType;
-    }
+    public $context = "http://schema.org/AlignmentObject";
 
     /**
      * @param $alignmentType String
      */
-    public function setAlignmentType($alignmentType)
+    public function addAlignmentType($alignmentType)
     {
-        $this->alignmentType = $alignmentType;
+        $this->alignmentType []= $alignmentType;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getEducationalFramework()
-    {
-        return $this->educationalFramework;
     }
 
     /**
      * @param $educationalFramework String
      */
-    public function setEducationalFramework($educationalFramework)
+    public function addEducationalFramework($educationalFramework)
     {
-        $this->educationalFramework = $educationalFramework;
+        $this->educationalFramework []= $educationalFramework;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTargetDescription()
-    {
-        return $this->targetDescription;
     }
 
     /**
      * @param $targetDescription String
      */
-    public function setTargetDescription($targetDescription)
+    public function addTargetDescription($targetDescription)
     {
-        $this->targetDescription = $targetDescription;
+        $this->targetDescription []= $targetDescription;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTargetName()
-    {
-        return $this->targetName;
     }
 
     /**
      * @param $targetName String
      */
-    public function setTargetName($targetName)
+    public function addTargetName($targetName)
     {
-        $this->targetName = $targetName;
+        $this->targetName []= $targetName;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTargetUrl()
-    {
-        return $this->targetUrl;
     }
 
     /**
      * @param $targetUrl String
      */
-    public function setTargetUrl($targetUrl)
+    public function addTargetUrl($targetUrl)
     {
-        $this->targetUrl = $targetUrl;
+        $this->targetUrl []= $targetUrl;
         return $this;
     }
 

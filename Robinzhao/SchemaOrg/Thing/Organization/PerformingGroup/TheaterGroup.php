@@ -20,6 +20,6 @@ class TheaterGroup extends PerformingGroup
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TheaterGroup";
+    public $context = "http://schema.org/TheaterGroup";
 
 }

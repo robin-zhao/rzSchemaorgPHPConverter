@@ -21,28 +21,20 @@ class DrugLegalStatus extends MedicalIntangible
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    protected $applicableLocation;
+    public $applicableLocation;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DrugLegalStatus";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
-     */
-    public function getApplicableLocation()
-    {
-        return $this->applicableLocation;
-    }
+    public $context = "http://schema.org/DrugLegalStatus";
 
     /**
      * @param $applicableLocation Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    public function setApplicableLocation($applicableLocation)
+    public function addApplicableLocation($applicableLocation)
     {
-        $this->applicableLocation = $applicableLocation;
+        $this->applicableLocation []= $applicableLocation;
         return $this;
     }
 

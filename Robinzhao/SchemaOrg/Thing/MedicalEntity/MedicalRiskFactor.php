@@ -21,28 +21,20 @@ class MedicalRiskFactor extends MedicalEntity
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    protected $increasesRiskOf;
+    public $increasesRiskOf;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalRiskFactor";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity
-     */
-    public function getIncreasesRiskOf()
-    {
-        return $this->increasesRiskOf;
-    }
+    public $context = "http://schema.org/MedicalRiskFactor";
 
     /**
      * @param $increasesRiskOf Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    public function setIncreasesRiskOf($increasesRiskOf)
+    public function addIncreasesRiskOf($increasesRiskOf)
     {
-        $this->increasesRiskOf = $increasesRiskOf;
+        $this->increasesRiskOf []= $increasesRiskOf;
         return $this;
     }
 

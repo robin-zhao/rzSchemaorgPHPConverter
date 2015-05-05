@@ -21,28 +21,20 @@ class MedicalCause extends MedicalEntity
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    protected $causeOf;
+    public $causeOf;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalCause";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity
-     */
-    public function getCauseOf()
-    {
-        return $this->causeOf;
-    }
+    public $context = "http://schema.org/MedicalCause";
 
     /**
      * @param $causeOf Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    public function setCauseOf($causeOf)
+    public function addCauseOf($causeOf)
     {
-        $this->causeOf = $causeOf;
+        $this->causeOf []= $causeOf;
         return $this;
     }
 

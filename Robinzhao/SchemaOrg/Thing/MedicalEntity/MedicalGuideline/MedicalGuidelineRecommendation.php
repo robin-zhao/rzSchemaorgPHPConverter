@@ -21,28 +21,20 @@ class MedicalGuidelineRecommendation extends MedicalGuideline
      *
      * @var String
      */
-    protected $recommendationStrength;
+    public $recommendationStrength;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalGuidelineRecommendation";
-
-    /**
-     * @return String
-     */
-    public function getRecommendationStrength()
-    {
-        return $this->recommendationStrength;
-    }
+    public $context = "http://schema.org/MedicalGuidelineRecommendation";
 
     /**
      * @param $recommendationStrength String
      */
-    public function setRecommendationStrength($recommendationStrength)
+    public function addRecommendationStrength($recommendationStrength)
     {
-        $this->recommendationStrength = $recommendationStrength;
+        $this->recommendationStrength []= $recommendationStrength;
         return $this;
     }
 

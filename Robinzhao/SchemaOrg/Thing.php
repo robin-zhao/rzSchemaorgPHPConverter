@@ -19,181 +19,117 @@ class Thing
      *
      * @var String
      */
-    protected $additionalType;
+    public $additionalType;
 
     /**
      * An alias for the item.
      *
      * @var String
      */
-    protected $alternateName;
+    public $alternateName;
 
     /**
      * A short description of the item.
      *
      * @var String
      */
-    protected $description;
+    public $description;
 
     /**
      * URL of an image of the item.
      *
      * @var String
      */
-    protected $image;
+    public $image;
 
     /**
      * The name of the item.
      *
      * @var String
      */
-    protected $name;
+    public $name;
 
     /**
      * URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.
      *
      * @var String
      */
-    protected $sameAs;
+    public $sameAs;
 
     /**
      * URL of the item.
      *
      * @var String
      */
-    protected $url;
+    public $url;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Thing";
-
-    /**
-     * @return String
-     */
-    public function getAdditionalType()
-    {
-        return $this->additionalType;
-    }
+    public $context = "http://schema.org/Thing";
 
     /**
      * @param $additionalType String
      */
-    public function setAdditionalType($additionalType)
+    public function addAdditionalType($additionalType)
     {
-        $this->additionalType = $additionalType;
+        $this->additionalType []= $additionalType;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getAlternateName()
-    {
-        return $this->alternateName;
     }
 
     /**
      * @param $alternateName String
      */
-    public function setAlternateName($alternateName)
+    public function addAlternateName($alternateName)
     {
-        $this->alternateName = $alternateName;
+        $this->alternateName []= $alternateName;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getDescription()
-    {
-        return $this->description;
     }
 
     /**
      * @param $description String
      */
-    public function setDescription($description)
+    public function addDescription($description)
     {
-        $this->description = $description;
+        $this->description []= $description;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getImage()
-    {
-        return $this->image;
     }
 
     /**
      * @param $image String
      */
-    public function setImage($image)
+    public function addImage($image)
     {
-        $this->image = $image;
+        $this->image []= $image;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getName()
-    {
-        return $this->name;
     }
 
     /**
      * @param $name String
      */
-    public function setName($name)
+    public function addName($name)
     {
-        $this->name = $name;
+        $this->name []= $name;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSameAs()
-    {
-        return $this->sameAs;
     }
 
     /**
      * @param $sameAs String
      */
-    public function setSameAs($sameAs)
+    public function addSameAs($sameAs)
     {
-        $this->sameAs = $sameAs;
+        $this->sameAs []= $sameAs;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getUrl()
-    {
-        return $this->url;
     }
 
     /**
      * @param $url String
      */
-    public function setUrl($url)
+    public function addUrl($url)
     {
-        $this->url = $url;
+        $this->url []= $url;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getContext()
-    {
-        return $this->context;
     }
 
 }

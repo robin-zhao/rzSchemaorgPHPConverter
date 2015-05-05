@@ -20,6 +20,6 @@ class Specialty extends Enumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Specialty";
+    public $context = "http://schema.org/Specialty";
 
 }

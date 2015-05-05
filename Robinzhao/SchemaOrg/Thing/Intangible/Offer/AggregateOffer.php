@@ -21,76 +21,52 @@ class AggregateOffer extends Offer
      *
      * @var Float|String
      */
-    protected $highPrice;
+    public $highPrice;
 
     /**
      * The lowest price of all offers available.
      *
      * @var Float|String
      */
-    protected $lowPrice;
+    public $lowPrice;
 
     /**
      * The number of offers for the product.
      *
      * @var Integer
      */
-    protected $offerCount;
+    public $offerCount;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AggregateOffer";
-
-    /**
-     * @return Float|String
-     */
-    public function getHighPrice()
-    {
-        return $this->highPrice;
-    }
+    public $context = "http://schema.org/AggregateOffer";
 
     /**
      * @param $highPrice Float|String
      */
-    public function setHighPrice($highPrice)
+    public function addHighPrice($highPrice)
     {
-        $this->highPrice = $highPrice;
+        $this->highPrice []= $highPrice;
         return $this;
-    }
-
-    /**
-     * @return Float|String
-     */
-    public function getLowPrice()
-    {
-        return $this->lowPrice;
     }
 
     /**
      * @param $lowPrice Float|String
      */
-    public function setLowPrice($lowPrice)
+    public function addLowPrice($lowPrice)
     {
-        $this->lowPrice = $lowPrice;
+        $this->lowPrice []= $lowPrice;
         return $this;
-    }
-
-    /**
-     * @return Integer
-     */
-    public function getOfferCount()
-    {
-        return $this->offerCount;
     }
 
     /**
      * @param $offerCount Integer
      */
-    public function setOfferCount($offerCount)
+    public function addOfferCount($offerCount)
     {
-        $this->offerCount = $offerCount;
+        $this->offerCount []= $offerCount;
         return $this;
     }
 

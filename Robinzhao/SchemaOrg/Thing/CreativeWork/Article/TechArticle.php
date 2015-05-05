@@ -21,52 +21,36 @@ class TechArticle extends Article
      *
      * @var String
      */
-    protected $dependencies;
+    public $dependencies;
 
     /**
      * Proficiency needed for this content; expected values: 'Beginner', 'Expert'.
      *
      * @var String
      */
-    protected $proficiencyLevel;
+    public $proficiencyLevel;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TechArticle";
-
-    /**
-     * @return String
-     */
-    public function getDependencies()
-    {
-        return $this->dependencies;
-    }
+    public $context = "http://schema.org/TechArticle";
 
     /**
      * @param $dependencies String
      */
-    public function setDependencies($dependencies)
+    public function addDependencies($dependencies)
     {
-        $this->dependencies = $dependencies;
+        $this->dependencies []= $dependencies;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getProficiencyLevel()
-    {
-        return $this->proficiencyLevel;
     }
 
     /**
      * @param $proficiencyLevel String
      */
-    public function setProficiencyLevel($proficiencyLevel)
+    public function addProficiencyLevel($proficiencyLevel)
     {
-        $this->proficiencyLevel = $proficiencyLevel;
+        $this->proficiencyLevel []= $proficiencyLevel;
         return $this;
     }
 

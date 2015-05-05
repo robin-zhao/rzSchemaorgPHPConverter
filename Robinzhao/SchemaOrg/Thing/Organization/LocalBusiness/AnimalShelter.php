@@ -20,6 +20,6 @@ class AnimalShelter extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AnimalShelter";
+    public $context = "http://schema.org/AnimalShelter";
 
 }

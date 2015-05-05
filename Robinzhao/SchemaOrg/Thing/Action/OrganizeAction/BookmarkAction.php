@@ -20,6 +20,6 @@ class BookmarkAction extends OrganizeAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BookmarkAction";
+    public $context = "http://schema.org/BookmarkAction";
 
 }

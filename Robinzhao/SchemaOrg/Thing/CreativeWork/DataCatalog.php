@@ -21,28 +21,20 @@ class DataCatalog extends CreativeWork
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Dataset
      */
-    protected $dataset;
+    public $dataset;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DataCatalog";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Dataset
-     */
-    public function getDataset()
-    {
-        return $this->dataset;
-    }
+    public $context = "http://schema.org/DataCatalog";
 
     /**
      * @param $dataset Robinzhao\SchemaOrg\Thing\CreativeWork\Dataset
      */
-    public function setDataset($dataset)
+    public function addDataset($dataset)
     {
-        $this->dataset = $dataset;
+        $this->dataset []= $dataset;
         return $this;
     }
 

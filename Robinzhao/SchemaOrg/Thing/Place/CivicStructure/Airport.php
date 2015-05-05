@@ -20,6 +20,6 @@ class Airport extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Airport";
+    public $context = "http://schema.org/Airport";
 
 }

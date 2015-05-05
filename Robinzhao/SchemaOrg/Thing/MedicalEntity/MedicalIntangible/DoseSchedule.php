@@ -21,100 +21,68 @@ class DoseSchedule extends MedicalIntangible
      *
      * @var String
      */
-    protected $doseUnit;
+    public $doseUnit;
 
     /**
      * The value of the dose, e.g. 500.
      *
      * @var Float
      */
-    protected $doseValue;
+    public $doseValue;
 
     /**
      * How often the dose is taken, e.g. 'daily'.
      *
      * @var String
      */
-    protected $frequency;
+    public $frequency;
 
     /**
      * Characteristics of the population for which this is intended, or which typically uses it, e.g. 'adults'.
      *
      * @var String
      */
-    protected $targetPopulation;
+    public $targetPopulation;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DoseSchedule";
-
-    /**
-     * @return String
-     */
-    public function getDoseUnit()
-    {
-        return $this->doseUnit;
-    }
+    public $context = "http://schema.org/DoseSchedule";
 
     /**
      * @param $doseUnit String
      */
-    public function setDoseUnit($doseUnit)
+    public function addDoseUnit($doseUnit)
     {
-        $this->doseUnit = $doseUnit;
+        $this->doseUnit []= $doseUnit;
         return $this;
-    }
-
-    /**
-     * @return Float
-     */
-    public function getDoseValue()
-    {
-        return $this->doseValue;
     }
 
     /**
      * @param $doseValue Float
      */
-    public function setDoseValue($doseValue)
+    public function addDoseValue($doseValue)
     {
-        $this->doseValue = $doseValue;
+        $this->doseValue []= $doseValue;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getFrequency()
-    {
-        return $this->frequency;
     }
 
     /**
      * @param $frequency String
      */
-    public function setFrequency($frequency)
+    public function addFrequency($frequency)
     {
-        $this->frequency = $frequency;
+        $this->frequency []= $frequency;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTargetPopulation()
-    {
-        return $this->targetPopulation;
     }
 
     /**
      * @param $targetPopulation String
      */
-    public function setTargetPopulation($targetPopulation)
+    public function addTargetPopulation($targetPopulation)
     {
-        $this->targetPopulation = $targetPopulation;
+        $this->targetPopulation []= $targetPopulation;
         return $this;
     }
 

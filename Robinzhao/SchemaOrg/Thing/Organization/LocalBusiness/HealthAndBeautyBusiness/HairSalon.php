@@ -20,6 +20,6 @@ class HairSalon extends HealthAndBeautyBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/HairSalon";
+    public $context = "http://schema.org/HairSalon";
 
 }

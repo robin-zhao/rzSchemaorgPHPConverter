@@ -20,6 +20,6 @@ class HomeGoodsStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/HomeGoodsStore";
+    public $context = "http://schema.org/HomeGoodsStore";
 
 }

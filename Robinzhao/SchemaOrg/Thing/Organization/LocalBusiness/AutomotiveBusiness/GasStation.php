@@ -20,6 +20,6 @@ class GasStation extends AutomotiveBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/GasStation";
+    public $context = "http://schema.org/GasStation";
 
 }

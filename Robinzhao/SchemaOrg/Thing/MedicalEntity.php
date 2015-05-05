@@ -21,148 +21,100 @@ class MedicalEntity extends Thing
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalCode
      */
-    protected $code;
+    public $code;
 
     /**
      * A medical guideline related to this entity.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalGuideline
      */
-    protected $guideline;
+    public $guideline;
 
     /**
      * The system of medicine that includes this MedicalEntity, for example 'evidence-based', 'homeopathic', 'chiropractic', etc.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicineSystem
      */
-    protected $medicineSystem;
+    public $medicineSystem;
 
     /**
      * If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $recognizingAuthority;
+    public $recognizingAuthority;
 
     /**
      * If applicable, a medical specialty in which this entity is relevant.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
-    protected $relevantSpecialty;
+    public $relevantSpecialty;
 
     /**
      * A medical study or trial related to this entity.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalStudy
      */
-    protected $study;
+    public $study;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalEntity";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalCode
-     */
-    public function getCode()
-    {
-        return $this->code;
-    }
+    public $context = "http://schema.org/MedicalEntity";
 
     /**
      * @param $code Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalCode
      */
-    public function setCode($code)
+    public function addCode($code)
     {
-        $this->code = $code;
+        $this->code []= $code;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalGuideline
-     */
-    public function getGuideline()
-    {
-        return $this->guideline;
     }
 
     /**
      * @param $guideline Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalGuideline
      */
-    public function setGuideline($guideline)
+    public function addGuideline($guideline)
     {
-        $this->guideline = $guideline;
+        $this->guideline []= $guideline;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicineSystem
-     */
-    public function getMedicineSystem()
-    {
-        return $this->medicineSystem;
     }
 
     /**
      * @param $medicineSystem Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicineSystem
      */
-    public function setMedicineSystem($medicineSystem)
+    public function addMedicineSystem($medicineSystem)
     {
-        $this->medicineSystem = $medicineSystem;
+        $this->medicineSystem []= $medicineSystem;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getRecognizingAuthority()
-    {
-        return $this->recognizingAuthority;
     }
 
     /**
      * @param $recognizingAuthority Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setRecognizingAuthority($recognizingAuthority)
+    public function addRecognizingAuthority($recognizingAuthority)
     {
-        $this->recognizingAuthority = $recognizingAuthority;
+        $this->recognizingAuthority []= $recognizingAuthority;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
-     */
-    public function getRelevantSpecialty()
-    {
-        return $this->relevantSpecialty;
     }
 
     /**
      * @param $relevantSpecialty Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalSpecialty
      */
-    public function setRelevantSpecialty($relevantSpecialty)
+    public function addRelevantSpecialty($relevantSpecialty)
     {
-        $this->relevantSpecialty = $relevantSpecialty;
+        $this->relevantSpecialty []= $relevantSpecialty;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalStudy
-     */
-    public function getStudy()
-    {
-        return $this->study;
     }
 
     /**
      * @param $study Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalStudy
      */
-    public function setStudy($study)
+    public function addStudy($study)
     {
-        $this->study = $study;
+        $this->study []= $study;
         return $this;
     }
 

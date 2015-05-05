@@ -21,28 +21,20 @@ class WriteAction extends CreateAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Language
      */
-    protected $language;
+    public $language;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WriteAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Language
-     */
-    public function getLanguage()
-    {
-        return $this->language;
-    }
+    public $context = "http://schema.org/WriteAction";
 
     /**
      * @param $language Robinzhao\SchemaOrg\Thing\Intangible\Language
      */
-    public function setLanguage($language)
+    public function addLanguage($language)
     {
-        $this->language = $language;
+        $this->language []= $language;
         return $this;
     }
 

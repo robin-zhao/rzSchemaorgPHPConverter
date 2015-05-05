@@ -21,28 +21,20 @@ class InsertAction extends AddAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    protected $toLocation;
+    public $toLocation;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/InsertAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place|Float
-     */
-    public function getToLocation()
-    {
-        return $this->toLocation;
-    }
+    public $context = "http://schema.org/InsertAction";
 
     /**
      * @param $toLocation Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    public function setToLocation($toLocation)
+    public function addToLocation($toLocation)
     {
-        $this->toLocation = $toLocation;
+        $this->toLocation []= $toLocation;
         return $this;
     }
 

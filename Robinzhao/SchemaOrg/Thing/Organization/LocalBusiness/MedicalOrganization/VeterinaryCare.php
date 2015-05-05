@@ -20,6 +20,6 @@ class VeterinaryCare extends MedicalOrganization
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/VeterinaryCare";
+    public $context = "http://schema.org/VeterinaryCare";
 
 }

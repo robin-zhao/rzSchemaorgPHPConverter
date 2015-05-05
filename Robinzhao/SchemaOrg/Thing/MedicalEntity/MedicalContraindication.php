@@ -20,6 +20,6 @@ class MedicalContraindication extends MedicalEntity
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalContraindication";
+    public $context = "http://schema.org/MedicalContraindication";
 
 }

@@ -24,52 +24,36 @@ class Audience extends Intangible
      *
      * @var String
      */
-    protected $audienceType;
+    public $audienceType;
 
     /**
      * The geographic area associated with the audience.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    protected $geographicArea;
+    public $geographicArea;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Audience";
-
-    /**
-     * @return String
-     */
-    public function getAudienceType()
-    {
-        return $this->audienceType;
-    }
+    public $context = "http://schema.org/Audience";
 
     /**
      * @param $audienceType String
      */
-    public function setAudienceType($audienceType)
+    public function addAudienceType($audienceType)
     {
-        $this->audienceType = $audienceType;
+        $this->audienceType []= $audienceType;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
-     */
-    public function getGeographicArea()
-    {
-        return $this->geographicArea;
     }
 
     /**
      * @param $geographicArea Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    public function setGeographicArea($geographicArea)
+    public function addGeographicArea($geographicArea)
     {
-        $this->geographicArea = $geographicArea;
+        $this->geographicArea []= $geographicArea;
         return $this;
     }
 

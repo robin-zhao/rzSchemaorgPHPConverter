@@ -20,6 +20,6 @@ class Distance extends Quantity
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Distance";
+    public $context = "http://schema.org/Distance";
 
 }

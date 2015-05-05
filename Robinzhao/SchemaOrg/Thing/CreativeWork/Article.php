@@ -21,76 +21,52 @@ class Article extends CreativeWork
      *
      * @var String
      */
-    protected $articleBody;
+    public $articleBody;
 
     /**
      * Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.
      *
      * @var String
      */
-    protected $articleSection;
+    public $articleSection;
 
     /**
      * The number of words in the text of the Article.
      *
      * @var Integer
      */
-    protected $wordCount;
+    public $wordCount;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Article";
-
-    /**
-     * @return String
-     */
-    public function getArticleBody()
-    {
-        return $this->articleBody;
-    }
+    public $context = "http://schema.org/Article";
 
     /**
      * @param $articleBody String
      */
-    public function setArticleBody($articleBody)
+    public function addArticleBody($articleBody)
     {
-        $this->articleBody = $articleBody;
+        $this->articleBody []= $articleBody;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getArticleSection()
-    {
-        return $this->articleSection;
     }
 
     /**
      * @param $articleSection String
      */
-    public function setArticleSection($articleSection)
+    public function addArticleSection($articleSection)
     {
-        $this->articleSection = $articleSection;
+        $this->articleSection []= $articleSection;
         return $this;
-    }
-
-    /**
-     * @return Integer
-     */
-    public function getWordCount()
-    {
-        return $this->wordCount;
     }
 
     /**
      * @param $wordCount Integer
      */
-    public function setWordCount($wordCount)
+    public function addWordCount($wordCount)
     {
-        $this->wordCount = $wordCount;
+        $this->wordCount []= $wordCount;
         return $this;
     }
 

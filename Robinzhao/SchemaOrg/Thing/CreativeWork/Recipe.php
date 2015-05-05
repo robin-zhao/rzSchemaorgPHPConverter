@@ -21,244 +21,164 @@ class Recipe extends CreativeWork
      *
      * @var String
      */
-    protected $cookingMethod;
+    public $cookingMethod;
 
     /**
      * The time it takes to actually cook the dish, in ISO 8601 duration format.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    protected $cookTime;
+    public $cookTime;
 
     /**
      * An ingredient used in the recipe.
      *
      * @var String
      */
-    protected $ingredients;
+    public $ingredients;
 
     /**
      * Nutrition information about the recipe.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\NutritionInformation
      */
-    protected $nutrition;
+    public $nutrition;
 
     /**
      * The length of time it takes to prepare the recipe, in ISO 8601 duration format.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    protected $prepTime;
+    public $prepTime;
 
     /**
      * The category of the recipe—for example, appetizer, entree, etc.
      *
      * @var String
      */
-    protected $recipeCategory;
+    public $recipeCategory;
 
     /**
      * The cuisine of the recipe (for example, French or Ethopian).
      *
      * @var String
      */
-    protected $recipeCuisine;
+    public $recipeCuisine;
 
     /**
      * The steps to make the dish.
      *
      * @var String
      */
-    protected $recipeInstructions;
+    public $recipeInstructions;
 
     /**
      * The quantity produced by the recipe (for example, number of people served, number of servings, etc).
      *
      * @var String
      */
-    protected $recipeYield;
+    public $recipeYield;
 
     /**
      * The total time it takes to prepare and cook the recipe, in ISO 8601 duration format.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    protected $totalTime;
+    public $totalTime;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Recipe";
-
-    /**
-     * @return String
-     */
-    public function getCookingMethod()
-    {
-        return $this->cookingMethod;
-    }
+    public $context = "http://schema.org/Recipe";
 
     /**
      * @param $cookingMethod String
      */
-    public function setCookingMethod($cookingMethod)
+    public function addCookingMethod($cookingMethod)
     {
-        $this->cookingMethod = $cookingMethod;
+        $this->cookingMethod []= $cookingMethod;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
-     */
-    public function getCookTime()
-    {
-        return $this->cookTime;
     }
 
     /**
      * @param $cookTime Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    public function setCookTime($cookTime)
+    public function addCookTime($cookTime)
     {
-        $this->cookTime = $cookTime;
+        $this->cookTime []= $cookTime;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getIngredients()
-    {
-        return $this->ingredients;
     }
 
     /**
      * @param $ingredients String
      */
-    public function setIngredients($ingredients)
+    public function addIngredients($ingredients)
     {
-        $this->ingredients = $ingredients;
+        $this->ingredients []= $ingredients;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\NutritionInformation
-     */
-    public function getNutrition()
-    {
-        return $this->nutrition;
     }
 
     /**
      * @param $nutrition Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\NutritionInformation
      */
-    public function setNutrition($nutrition)
+    public function addNutrition($nutrition)
     {
-        $this->nutrition = $nutrition;
+        $this->nutrition []= $nutrition;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
-     */
-    public function getPrepTime()
-    {
-        return $this->prepTime;
     }
 
     /**
      * @param $prepTime Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    public function setPrepTime($prepTime)
+    public function addPrepTime($prepTime)
     {
-        $this->prepTime = $prepTime;
+        $this->prepTime []= $prepTime;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRecipeCategory()
-    {
-        return $this->recipeCategory;
     }
 
     /**
      * @param $recipeCategory String
      */
-    public function setRecipeCategory($recipeCategory)
+    public function addRecipeCategory($recipeCategory)
     {
-        $this->recipeCategory = $recipeCategory;
+        $this->recipeCategory []= $recipeCategory;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRecipeCuisine()
-    {
-        return $this->recipeCuisine;
     }
 
     /**
      * @param $recipeCuisine String
      */
-    public function setRecipeCuisine($recipeCuisine)
+    public function addRecipeCuisine($recipeCuisine)
     {
-        $this->recipeCuisine = $recipeCuisine;
+        $this->recipeCuisine []= $recipeCuisine;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRecipeInstructions()
-    {
-        return $this->recipeInstructions;
     }
 
     /**
      * @param $recipeInstructions String
      */
-    public function setRecipeInstructions($recipeInstructions)
+    public function addRecipeInstructions($recipeInstructions)
     {
-        $this->recipeInstructions = $recipeInstructions;
+        $this->recipeInstructions []= $recipeInstructions;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getRecipeYield()
-    {
-        return $this->recipeYield;
     }
 
     /**
      * @param $recipeYield String
      */
-    public function setRecipeYield($recipeYield)
+    public function addRecipeYield($recipeYield)
     {
-        $this->recipeYield = $recipeYield;
+        $this->recipeYield []= $recipeYield;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
-     */
-    public function getTotalTime()
-    {
-        return $this->totalTime;
     }
 
     /**
      * @param $totalTime Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    public function setTotalTime($totalTime)
+    public function addTotalTime($totalTime)
     {
-        $this->totalTime = $totalTime;
+        $this->totalTime []= $totalTime;
         return $this;
     }
 

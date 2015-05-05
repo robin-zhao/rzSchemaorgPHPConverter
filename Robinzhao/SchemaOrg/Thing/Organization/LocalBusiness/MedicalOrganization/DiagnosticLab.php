@@ -21,28 +21,20 @@ class DiagnosticLab extends MedicalOrganization
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
      */
-    protected $availableTest;
+    public $availableTest;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DiagnosticLab";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
-     */
-    public function getAvailableTest()
-    {
-        return $this->availableTest;
-    }
+    public $context = "http://schema.org/DiagnosticLab";
 
     /**
      * @param $availableTest Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
      */
-    public function setAvailableTest($availableTest)
+    public function addAvailableTest($availableTest)
     {
-        $this->availableTest = $availableTest;
+        $this->availableTest []= $availableTest;
         return $this;
     }
 

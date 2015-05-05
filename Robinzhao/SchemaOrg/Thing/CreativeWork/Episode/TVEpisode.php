@@ -21,28 +21,20 @@ class TVEpisode extends Episode
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\TVSeries
      */
-    protected $partOfTVSeries;
+    public $partOfTVSeries;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TVEpisode";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\TVSeries
-     */
-    public function getPartOfTVSeries()
-    {
-        return $this->partOfTVSeries;
-    }
+    public $context = "http://schema.org/TVEpisode";
 
     /**
      * @param $partOfTVSeries Robinzhao\SchemaOrg\Thing\CreativeWork\TVSeries
      */
-    public function setPartOfTVSeries($partOfTVSeries)
+    public function addPartOfTVSeries($partOfTVSeries)
     {
-        $this->partOfTVSeries = $partOfTVSeries;
+        $this->partOfTVSeries []= $partOfTVSeries;
         return $this;
     }
 

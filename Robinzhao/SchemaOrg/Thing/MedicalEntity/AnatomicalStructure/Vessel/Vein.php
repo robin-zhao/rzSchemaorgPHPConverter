@@ -21,76 +21,52 @@ class Vein extends Vessel
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    protected $drainsTo;
+    public $drainsTo;
 
     /**
      * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $regionDrained;
+    public $regionDrained;
 
     /**
      * The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $tributary;
+    public $tributary;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Vein";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
-     */
-    public function getDrainsTo()
-    {
-        return $this->drainsTo;
-    }
+    public $context = "http://schema.org/Vein";
 
     /**
      * @param $drainsTo Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    public function setDrainsTo($drainsTo)
+    public function addDrainsTo($drainsTo)
     {
-        $this->drainsTo = $drainsTo;
+        $this->drainsTo []= $drainsTo;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getRegionDrained()
-    {
-        return $this->regionDrained;
     }
 
     /**
      * @param $regionDrained Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setRegionDrained($regionDrained)
+    public function addRegionDrained($regionDrained)
     {
-        $this->regionDrained = $regionDrained;
+        $this->regionDrained []= $regionDrained;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getTributary()
-    {
-        return $this->tributary;
     }
 
     /**
      * @param $tributary Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setTributary($tributary)
+    public function addTributary($tributary)
     {
-        $this->tributary = $tributary;
+        $this->tributary []= $tributary;
         return $this;
     }
 

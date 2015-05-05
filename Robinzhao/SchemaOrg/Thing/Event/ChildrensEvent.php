@@ -20,6 +20,6 @@ class ChildrensEvent extends Event
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ChildrensEvent";
+    public $context = "http://schema.org/ChildrensEvent";
 
 }

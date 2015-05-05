@@ -20,6 +20,6 @@ class MedicalEvidenceLevel extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalEvidenceLevel";
+    public $context = "http://schema.org/MedicalEvidenceLevel";
 
 }

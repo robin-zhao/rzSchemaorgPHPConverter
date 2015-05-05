@@ -20,6 +20,6 @@ class MovingCompany extends HomeAndConstructionBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MovingCompany";
+    public $context = "http://schema.org/MovingCompany";
 
 }

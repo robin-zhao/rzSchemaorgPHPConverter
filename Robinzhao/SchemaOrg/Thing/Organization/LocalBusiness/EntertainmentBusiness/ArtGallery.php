@@ -20,6 +20,6 @@ class ArtGallery extends EntertainmentBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ArtGallery";
+    public $context = "http://schema.org/ArtGallery";
 
 }

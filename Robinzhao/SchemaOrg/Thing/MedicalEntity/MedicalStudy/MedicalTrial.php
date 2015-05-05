@@ -21,52 +21,36 @@ class MedicalTrial extends MedicalStudy
      *
      * @var String
      */
-    protected $phase;
+    public $phase;
 
     /**
      * Specifics about the trial design (enumerated).
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalTrialDesign
      */
-    protected $trialDesign;
+    public $trialDesign;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalTrial";
-
-    /**
-     * @return String
-     */
-    public function getPhase()
-    {
-        return $this->phase;
-    }
+    public $context = "http://schema.org/MedicalTrial";
 
     /**
      * @param $phase String
      */
-    public function setPhase($phase)
+    public function addPhase($phase)
     {
-        $this->phase = $phase;
+        $this->phase []= $phase;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalTrialDesign
-     */
-    public function getTrialDesign()
-    {
-        return $this->trialDesign;
     }
 
     /**
      * @param $trialDesign Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalTrialDesign
      */
-    public function setTrialDesign($trialDesign)
+    public function addTrialDesign($trialDesign)
     {
-        $this->trialDesign = $trialDesign;
+        $this->trialDesign []= $trialDesign;
         return $this;
     }
 

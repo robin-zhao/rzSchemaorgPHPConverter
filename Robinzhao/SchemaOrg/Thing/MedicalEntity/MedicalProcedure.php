@@ -21,100 +21,68 @@ class MedicalProcedure extends MedicalEntity
      *
      * @var String
      */
-    protected $followup;
+    public $followup;
 
     /**
      * How the procedure is performed.
      *
      * @var String
      */
-    protected $howPerformed;
+    public $howPerformed;
 
     /**
      * Typical preparation that a patient must undergo before having the procedure performed.
      *
      * @var String
      */
-    protected $preparation;
+    public $preparation;
 
     /**
      * The type of procedure, for example Surgical, Noninvasive, or Percutaneous.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalProcedureType
      */
-    protected $procedureType;
+    public $procedureType;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalProcedure";
-
-    /**
-     * @return String
-     */
-    public function getFollowup()
-    {
-        return $this->followup;
-    }
+    public $context = "http://schema.org/MedicalProcedure";
 
     /**
      * @param $followup String
      */
-    public function setFollowup($followup)
+    public function addFollowup($followup)
     {
-        $this->followup = $followup;
+        $this->followup []= $followup;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getHowPerformed()
-    {
-        return $this->howPerformed;
     }
 
     /**
      * @param $howPerformed String
      */
-    public function setHowPerformed($howPerformed)
+    public function addHowPerformed($howPerformed)
     {
-        $this->howPerformed = $howPerformed;
+        $this->howPerformed []= $howPerformed;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPreparation()
-    {
-        return $this->preparation;
     }
 
     /**
      * @param $preparation String
      */
-    public function setPreparation($preparation)
+    public function addPreparation($preparation)
     {
-        $this->preparation = $preparation;
+        $this->preparation []= $preparation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalProcedureType
-     */
-    public function getProcedureType()
-    {
-        return $this->procedureType;
     }
 
     /**
      * @param $procedureType Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalProcedureType
      */
-    public function setProcedureType($procedureType)
+    public function addProcedureType($procedureType)
     {
-        $this->procedureType = $procedureType;
+        $this->procedureType []= $procedureType;
         return $this;
     }
 

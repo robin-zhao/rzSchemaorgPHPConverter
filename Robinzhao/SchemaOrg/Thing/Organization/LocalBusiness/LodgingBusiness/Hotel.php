@@ -20,6 +20,6 @@ class Hotel extends LodgingBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Hotel";
+    public $context = "http://schema.org/Hotel";
 
 }

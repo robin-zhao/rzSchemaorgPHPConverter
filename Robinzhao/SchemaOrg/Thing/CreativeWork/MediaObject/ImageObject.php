@@ -21,100 +21,68 @@ class ImageObject extends MediaObject
      *
      * @var String
      */
-    protected $caption;
+    public $caption;
 
     /**
      * exif data for this object.
      *
      * @var String
      */
-    protected $exifData;
+    public $exifData;
 
     /**
      * Indicates whether this image is representative of the content of the page.
      *
      * @var Boolean
      */
-    protected $representativeOfPage;
+    public $representativeOfPage;
 
     /**
      * Thumbnail image for an image or video.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    protected $thumbnail;
+    public $thumbnail;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ImageObject";
-
-    /**
-     * @return String
-     */
-    public function getCaption()
-    {
-        return $this->caption;
-    }
+    public $context = "http://schema.org/ImageObject";
 
     /**
      * @param $caption String
      */
-    public function setCaption($caption)
+    public function addCaption($caption)
     {
-        $this->caption = $caption;
+        $this->caption []= $caption;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getExifData()
-    {
-        return $this->exifData;
     }
 
     /**
      * @param $exifData String
      */
-    public function setExifData($exifData)
+    public function addExifData($exifData)
     {
-        $this->exifData = $exifData;
+        $this->exifData []= $exifData;
         return $this;
-    }
-
-    /**
-     * @return Boolean
-     */
-    public function getRepresentativeOfPage()
-    {
-        return $this->representativeOfPage;
     }
 
     /**
      * @param $representativeOfPage Boolean
      */
-    public function setRepresentativeOfPage($representativeOfPage)
+    public function addRepresentativeOfPage($representativeOfPage)
     {
-        $this->representativeOfPage = $representativeOfPage;
+        $this->representativeOfPage []= $representativeOfPage;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
-     */
-    public function getThumbnail()
-    {
-        return $this->thumbnail;
     }
 
     /**
      * @param $thumbnail Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\ImageObject
      */
-    public function setThumbnail($thumbnail)
+    public function addThumbnail($thumbnail)
     {
-        $this->thumbnail = $thumbnail;
+        $this->thumbnail []= $thumbnail;
         return $this;
     }
 

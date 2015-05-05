@@ -21,52 +21,36 @@ class SendAction extends TransferAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    protected $deliveryMethod;
+    public $deliveryMethod;
 
     /**
      * A sub property of participant. The participant who is at the receiving end of the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $recipient;
+    public $recipient;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SendAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
-     */
-    public function getDeliveryMethod()
-    {
-        return $this->deliveryMethod;
-    }
+    public $context = "http://schema.org/SendAction";
 
     /**
      * @param $deliveryMethod Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    public function setDeliveryMethod($deliveryMethod)
+    public function addDeliveryMethod($deliveryMethod)
     {
-        $this->deliveryMethod = $deliveryMethod;
+        $this->deliveryMethod []= $deliveryMethod;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getRecipient()
-    {
-        return $this->recipient;
     }
 
     /**
      * @param $recipient Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Intangible\Audience|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setRecipient($recipient)
+    public function addRecipient($recipient)
     {
-        $this->recipient = $recipient;
+        $this->recipient []= $recipient;
         return $this;
     }
 

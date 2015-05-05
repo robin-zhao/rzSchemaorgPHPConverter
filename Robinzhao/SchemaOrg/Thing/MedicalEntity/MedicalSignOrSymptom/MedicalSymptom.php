@@ -20,6 +20,6 @@ class MedicalSymptom extends MedicalSignOrSymptom
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalSymptom";
+    public $context = "http://schema.org/MedicalSymptom";
 
 }

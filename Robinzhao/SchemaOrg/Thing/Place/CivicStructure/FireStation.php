@@ -20,6 +20,6 @@ class FireStation extends CivicStructure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/FireStation";
+    public $context = "http://schema.org/FireStation";
 
 }

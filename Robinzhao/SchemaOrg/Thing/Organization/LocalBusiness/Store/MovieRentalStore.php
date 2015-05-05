@@ -20,6 +20,6 @@ class MovieRentalStore extends Store
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MovieRentalStore";
+    public $context = "http://schema.org/MovieRentalStore";
 
 }

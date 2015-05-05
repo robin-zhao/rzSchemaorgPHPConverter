@@ -21,28 +21,20 @@ class AllocateAction extends OrganizeAction
      *
      * @var Robinzhao\SchemaOrg\Thing|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
      */
-    protected $purpose;
+    public $purpose;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AllocateAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
-     */
-    public function getPurpose()
-    {
-        return $this->purpose;
-    }
+    public $context = "http://schema.org/AllocateAction";
 
     /**
      * @param $purpose Robinzhao\SchemaOrg\Thing|Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalDevicePurpose
      */
-    public function setPurpose($purpose)
+    public function addPurpose($purpose)
     {
-        $this->purpose = $purpose;
+        $this->purpose []= $purpose;
         return $this;
     }
 

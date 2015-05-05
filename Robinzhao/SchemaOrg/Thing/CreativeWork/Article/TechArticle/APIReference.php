@@ -21,100 +21,68 @@ class APIReference extends TechArticle
      *
      * @var String
      */
-    protected $assembly;
+    public $assembly;
 
     /**
      * Associated product/technology version. e.g., .NET Framework 4.5
      *
      * @var String
      */
-    protected $assemblyVersion;
+    public $assemblyVersion;
 
     /**
      * Indicates whether API is managed or unmanaged.
      *
      * @var String
      */
-    protected $programmingModel;
+    public $programmingModel;
 
     /**
      * Type of app development: phone, Metro style, desktop, XBox, etc.
      *
      * @var String
      */
-    protected $targetPlatform;
+    public $targetPlatform;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/APIReference";
-
-    /**
-     * @return String
-     */
-    public function getAssembly()
-    {
-        return $this->assembly;
-    }
+    public $context = "http://schema.org/APIReference";
 
     /**
      * @param $assembly String
      */
-    public function setAssembly($assembly)
+    public function addAssembly($assembly)
     {
-        $this->assembly = $assembly;
+        $this->assembly []= $assembly;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getAssemblyVersion()
-    {
-        return $this->assemblyVersion;
     }
 
     /**
      * @param $assemblyVersion String
      */
-    public function setAssemblyVersion($assemblyVersion)
+    public function addAssemblyVersion($assemblyVersion)
     {
-        $this->assemblyVersion = $assemblyVersion;
+        $this->assemblyVersion []= $assemblyVersion;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getProgrammingModel()
-    {
-        return $this->programmingModel;
     }
 
     /**
      * @param $programmingModel String
      */
-    public function setProgrammingModel($programmingModel)
+    public function addProgrammingModel($programmingModel)
     {
-        $this->programmingModel = $programmingModel;
+        $this->programmingModel []= $programmingModel;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getTargetPlatform()
-    {
-        return $this->targetPlatform;
     }
 
     /**
      * @param $targetPlatform String
      */
-    public function setTargetPlatform($targetPlatform)
+    public function addTargetPlatform($targetPlatform)
     {
-        $this->targetPlatform = $targetPlatform;
+        $this->targetPlatform []= $targetPlatform;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class NightClub extends EntertainmentBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/NightClub";
+    public $context = "http://schema.org/NightClub";
 
 }

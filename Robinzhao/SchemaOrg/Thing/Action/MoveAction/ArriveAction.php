@@ -20,6 +20,6 @@ class ArriveAction extends MoveAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ArriveAction";
+    public $context = "http://schema.org/ArriveAction";
 
 }

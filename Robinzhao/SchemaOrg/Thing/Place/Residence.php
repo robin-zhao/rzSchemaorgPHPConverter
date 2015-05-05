@@ -20,6 +20,6 @@ class Residence extends Place
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Residence";
+    public $context = "http://schema.org/Residence";
 
 }

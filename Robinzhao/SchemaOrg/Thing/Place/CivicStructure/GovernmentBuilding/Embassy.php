@@ -20,6 +20,6 @@ class Embassy extends GovernmentBuilding
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Embassy";
+    public $context = "http://schema.org/Embassy";
 
 }

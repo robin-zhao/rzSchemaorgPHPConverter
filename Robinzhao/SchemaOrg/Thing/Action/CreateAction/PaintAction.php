@@ -20,6 +20,6 @@ class PaintAction extends CreateAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PaintAction";
+    public $context = "http://schema.org/PaintAction";
 
 }

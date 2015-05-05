@@ -20,6 +20,6 @@ class WPHeader extends WebPageElement
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/WPHeader";
+    public $context = "http://schema.org/WPHeader";
 
 }

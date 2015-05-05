@@ -21,28 +21,20 @@ class ImagingTest extends MedicalTest
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalImagingTechnique
      */
-    protected $imagingTechnique;
+    public $imagingTechnique;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ImagingTest";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalImagingTechnique
-     */
-    public function getImagingTechnique()
-    {
-        return $this->imagingTechnique;
-    }
+    public $context = "http://schema.org/ImagingTest";
 
     /**
      * @param $imagingTechnique Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\MedicalImagingTechnique
      */
-    public function setImagingTechnique($imagingTechnique)
+    public function addImagingTechnique($imagingTechnique)
     {
-        $this->imagingTechnique = $imagingTechnique;
+        $this->imagingTechnique []= $imagingTechnique;
         return $this;
     }
 

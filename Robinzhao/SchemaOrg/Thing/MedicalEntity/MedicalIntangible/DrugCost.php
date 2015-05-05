@@ -21,148 +21,100 @@ class DrugCost extends MedicalIntangible
      *
      * @var Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    protected $applicableLocation;
+    public $applicableLocation;
 
     /**
      * The category of cost, such as wholesale, retail, reimbursement cap, etc.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
      */
-    protected $costCategory;
+    public $costCategory;
 
     /**
      * The currency (in 3-letter ISO 4217 format) of the drug cost.
      *
      * @var String
      */
-    protected $costCurrency;
+    public $costCurrency;
 
     /**
      * Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.
      *
      * @var String
      */
-    protected $costOrigin;
+    public $costOrigin;
 
     /**
      * The cost per unit of the drug.
      *
      * @var Float|String
      */
-    protected $costPerUnit;
+    public $costPerUnit;
 
     /**
      * The unit in which the drug is measured, e.g. '5 mg tablet'.
      *
      * @var String
      */
-    protected $drugUnit;
+    public $drugUnit;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DrugCost";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
-     */
-    public function getApplicableLocation()
-    {
-        return $this->applicableLocation;
-    }
+    public $context = "http://schema.org/DrugCost";
 
     /**
      * @param $applicableLocation Robinzhao\SchemaOrg\Thing\Place\AdministrativeArea
      */
-    public function setApplicableLocation($applicableLocation)
+    public function addApplicableLocation($applicableLocation)
     {
-        $this->applicableLocation = $applicableLocation;
+        $this->applicableLocation []= $applicableLocation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
-     */
-    public function getCostCategory()
-    {
-        return $this->costCategory;
     }
 
     /**
      * @param $costCategory Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\DrugCostCategory
      */
-    public function setCostCategory($costCategory)
+    public function addCostCategory($costCategory)
     {
-        $this->costCategory = $costCategory;
+        $this->costCategory []= $costCategory;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getCostCurrency()
-    {
-        return $this->costCurrency;
     }
 
     /**
      * @param $costCurrency String
      */
-    public function setCostCurrency($costCurrency)
+    public function addCostCurrency($costCurrency)
     {
-        $this->costCurrency = $costCurrency;
+        $this->costCurrency []= $costCurrency;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getCostOrigin()
-    {
-        return $this->costOrigin;
     }
 
     /**
      * @param $costOrigin String
      */
-    public function setCostOrigin($costOrigin)
+    public function addCostOrigin($costOrigin)
     {
-        $this->costOrigin = $costOrigin;
+        $this->costOrigin []= $costOrigin;
         return $this;
-    }
-
-    /**
-     * @return Float|String
-     */
-    public function getCostPerUnit()
-    {
-        return $this->costPerUnit;
     }
 
     /**
      * @param $costPerUnit Float|String
      */
-    public function setCostPerUnit($costPerUnit)
+    public function addCostPerUnit($costPerUnit)
     {
-        $this->costPerUnit = $costPerUnit;
+        $this->costPerUnit []= $costPerUnit;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getDrugUnit()
-    {
-        return $this->drugUnit;
     }
 
     /**
      * @param $drugUnit String
      */
-    public function setDrugUnit($drugUnit)
+    public function addDrugUnit($drugUnit)
     {
-        $this->drugUnit = $drugUnit;
+        $this->drugUnit []= $drugUnit;
         return $this;
     }
 

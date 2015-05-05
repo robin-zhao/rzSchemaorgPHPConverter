@@ -21,52 +21,36 @@ class MedicalSign extends MedicalSignOrSymptom
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalExam
      */
-    protected $identifyingExam;
+    public $identifyingExam;
 
     /**
      * A diagnostic test that can identify this sign.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
      */
-    protected $identifyingTest;
+    public $identifyingTest;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalSign";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalExam
-     */
-    public function getIdentifyingExam()
-    {
-        return $this->identifyingExam;
-    }
+    public $context = "http://schema.org/MedicalSign";
 
     /**
      * @param $identifyingExam Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalIntangible\MedicalEnumeration\PhysicalExam
      */
-    public function setIdentifyingExam($identifyingExam)
+    public function addIdentifyingExam($identifyingExam)
     {
-        $this->identifyingExam = $identifyingExam;
+        $this->identifyingExam []= $identifyingExam;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
-     */
-    public function getIdentifyingTest()
-    {
-        return $this->identifyingTest;
     }
 
     /**
      * @param $identifyingTest Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
      */
-    public function setIdentifyingTest($identifyingTest)
+    public function addIdentifyingTest($identifyingTest)
     {
-        $this->identifyingTest = $identifyingTest;
+        $this->identifyingTest []= $identifyingTest;
         return $this;
     }
 

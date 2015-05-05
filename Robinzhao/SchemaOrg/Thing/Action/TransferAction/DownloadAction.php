@@ -20,6 +20,6 @@ class DownloadAction extends TransferAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DownloadAction";
+    public $context = "http://schema.org/DownloadAction";
 
 }

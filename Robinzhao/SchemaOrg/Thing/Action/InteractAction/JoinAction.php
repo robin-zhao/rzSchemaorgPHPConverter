@@ -21,28 +21,20 @@ class JoinAction extends InteractAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Event
      */
-    protected $event;
+    public $event;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/JoinAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event
-     */
-    public function getEvent()
-    {
-        return $this->event;
-    }
+    public $context = "http://schema.org/JoinAction";
 
     /**
      * @param $event Robinzhao\SchemaOrg\Thing\Event
      */
-    public function setEvent($event)
+    public function addEvent($event)
     {
-        $this->event = $event;
+        $this->event []= $event;
         return $this;
     }
 

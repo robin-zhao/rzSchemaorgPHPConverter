@@ -21,172 +21,116 @@ class QualitativeValue extends Enumeration
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    protected $equal;
+    public $equal;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is greater than the object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    protected $greater;
+    public $greater;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    protected $greaterOrEqual;
+    public $greaterOrEqual;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is lesser than the object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    protected $lesser;
+    public $lesser;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    protected $lesserOrEqual;
+    public $lesserOrEqual;
 
     /**
      * This ordering relation for qualitative values indicates that the subject is not equal to the object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    protected $nonEqual;
+    public $nonEqual;
 
     /**
      * A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue
      */
-    protected $valueReference;
+    public $valueReference;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/QualitativeValue";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
-     */
-    public function getEqual()
-    {
-        return $this->equal;
-    }
+    public $context = "http://schema.org/QualitativeValue";
 
     /**
      * @param $equal Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    public function setEqual($equal)
+    public function addEqual($equal)
     {
-        $this->equal = $equal;
+        $this->equal []= $equal;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
-     */
-    public function getGreater()
-    {
-        return $this->greater;
     }
 
     /**
      * @param $greater Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    public function setGreater($greater)
+    public function addGreater($greater)
     {
-        $this->greater = $greater;
+        $this->greater []= $greater;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
-     */
-    public function getGreaterOrEqual()
-    {
-        return $this->greaterOrEqual;
     }
 
     /**
      * @param $greaterOrEqual Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    public function setGreaterOrEqual($greaterOrEqual)
+    public function addGreaterOrEqual($greaterOrEqual)
     {
-        $this->greaterOrEqual = $greaterOrEqual;
+        $this->greaterOrEqual []= $greaterOrEqual;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
-     */
-    public function getLesser()
-    {
-        return $this->lesser;
     }
 
     /**
      * @param $lesser Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    public function setLesser($lesser)
+    public function addLesser($lesser)
     {
-        $this->lesser = $lesser;
+        $this->lesser []= $lesser;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
-     */
-    public function getLesserOrEqual()
-    {
-        return $this->lesserOrEqual;
     }
 
     /**
      * @param $lesserOrEqual Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    public function setLesserOrEqual($lesserOrEqual)
+    public function addLesserOrEqual($lesserOrEqual)
     {
-        $this->lesserOrEqual = $lesserOrEqual;
+        $this->lesserOrEqual []= $lesserOrEqual;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
-     */
-    public function getNonEqual()
-    {
-        return $this->nonEqual;
     }
 
     /**
      * @param $nonEqual Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\QualitativeValue
      */
-    public function setNonEqual($nonEqual)
+    public function addNonEqual($nonEqual)
     {
-        $this->nonEqual = $nonEqual;
+        $this->nonEqual []= $nonEqual;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue
-     */
-    public function getValueReference()
-    {
-        return $this->valueReference;
     }
 
     /**
      * @param $valueReference Robinzhao\SchemaOrg\Thing\Intangible\Enumeration|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue
      */
-    public function setValueReference($valueReference)
+    public function addValueReference($valueReference)
     {
-        $this->valueReference = $valueReference;
+        $this->valueReference []= $valueReference;
         return $this;
     }
 

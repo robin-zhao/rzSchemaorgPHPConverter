@@ -20,6 +20,6 @@ class TattooParlor extends HealthAndBeautyBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/TattooParlor";
+    public $context = "http://schema.org/TattooParlor";
 
 }

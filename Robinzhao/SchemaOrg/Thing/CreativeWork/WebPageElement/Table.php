@@ -20,6 +20,6 @@ class Table extends WebPageElement
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Table";
+    public $context = "http://schema.org/Table";
 
 }

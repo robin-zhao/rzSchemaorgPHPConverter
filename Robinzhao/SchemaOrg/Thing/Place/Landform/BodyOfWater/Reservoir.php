@@ -20,6 +20,6 @@ class Reservoir extends BodyOfWater
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Reservoir";
+    public $context = "http://schema.org/Reservoir";
 
 }

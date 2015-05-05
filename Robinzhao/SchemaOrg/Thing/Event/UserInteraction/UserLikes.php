@@ -20,6 +20,6 @@ class UserLikes extends UserInteraction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/UserLikes";
+    public $context = "http://schema.org/UserLikes";
 
 }

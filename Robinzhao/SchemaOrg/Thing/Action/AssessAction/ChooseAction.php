@@ -21,28 +21,20 @@ class ChooseAction extends AssessAction
      *
      * @var String|Robinzhao\SchemaOrg\Thing
      */
-    protected $option;
+    public $option;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/ChooseAction";
-
-    /**
-     * @return String|Robinzhao\SchemaOrg\Thing
-     */
-    public function getOption()
-    {
-        return $this->option;
-    }
+    public $context = "http://schema.org/ChooseAction";
 
     /**
      * @param $option String|Robinzhao\SchemaOrg\Thing
      */
-    public function setOption($option)
+    public function addOption($option)
     {
-        $this->option = $option;
+        $this->option []= $option;
         return $this;
     }
 

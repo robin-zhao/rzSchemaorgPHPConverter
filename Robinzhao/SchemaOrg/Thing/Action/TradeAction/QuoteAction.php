@@ -20,6 +20,6 @@ class QuoteAction extends TradeAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/QuoteAction";
+    public $context = "http://schema.org/QuoteAction";
 
 }

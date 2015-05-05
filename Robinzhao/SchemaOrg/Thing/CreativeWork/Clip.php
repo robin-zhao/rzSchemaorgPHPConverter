@@ -21,148 +21,100 @@ class Clip extends CreativeWork
      *
      * @var Integer
      */
-    protected $clipNumber;
+    public $clipNumber;
 
     /**
      * The episode to which this clip belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Episode
      */
-    protected $partOfEpisode;
+    public $partOfEpisode;
 
     /**
      * The season to which this episode belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Season
      */
-    protected $partOfSeason;
+    public $partOfSeason;
 
     /**
      * The series to which this episode or season belongs.
      *
      * @var Robinzhao\SchemaOrg\Thing\CreativeWork\Series
      */
-    protected $partOfSeries;
+    public $partOfSeries;
 
     /**
      * Free text to define other than pure numerical ranking of an episode or a season in an ordered list of items (further formatting restrictions may apply within particular user groups).
      *
      * @var String
      */
-    protected $position;
+    public $position;
 
     /**
      * A publication event associated with the episode, clip or media object.
      *
      * @var Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
      */
-    protected $publication;
+    public $publication;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Clip";
-
-    /**
-     * @return Integer
-     */
-    public function getClipNumber()
-    {
-        return $this->clipNumber;
-    }
+    public $context = "http://schema.org/Clip";
 
     /**
      * @param $clipNumber Integer
      */
-    public function setClipNumber($clipNumber)
+    public function addClipNumber($clipNumber)
     {
-        $this->clipNumber = $clipNumber;
+        $this->clipNumber []= $clipNumber;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Episode
-     */
-    public function getPartOfEpisode()
-    {
-        return $this->partOfEpisode;
     }
 
     /**
      * @param $partOfEpisode Robinzhao\SchemaOrg\Thing\CreativeWork\Episode
      */
-    public function setPartOfEpisode($partOfEpisode)
+    public function addPartOfEpisode($partOfEpisode)
     {
-        $this->partOfEpisode = $partOfEpisode;
+        $this->partOfEpisode []= $partOfEpisode;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Season
-     */
-    public function getPartOfSeason()
-    {
-        return $this->partOfSeason;
     }
 
     /**
      * @param $partOfSeason Robinzhao\SchemaOrg\Thing\CreativeWork\Season
      */
-    public function setPartOfSeason($partOfSeason)
+    public function addPartOfSeason($partOfSeason)
     {
-        $this->partOfSeason = $partOfSeason;
+        $this->partOfSeason []= $partOfSeason;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\CreativeWork\Series
-     */
-    public function getPartOfSeries()
-    {
-        return $this->partOfSeries;
     }
 
     /**
      * @param $partOfSeries Robinzhao\SchemaOrg\Thing\CreativeWork\Series
      */
-    public function setPartOfSeries($partOfSeries)
+    public function addPartOfSeries($partOfSeries)
     {
-        $this->partOfSeries = $partOfSeries;
+        $this->partOfSeries []= $partOfSeries;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getPosition()
-    {
-        return $this->position;
     }
 
     /**
      * @param $position String
      */
-    public function setPosition($position)
+    public function addPosition($position)
     {
-        $this->position = $position;
+        $this->position []= $position;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
-     */
-    public function getPublication()
-    {
-        return $this->publication;
     }
 
     /**
      * @param $publication Robinzhao\SchemaOrg\Thing\Event\PublicationEvent
      */
-    public function setPublication($publication)
+    public function addPublication($publication)
     {
-        $this->publication = $publication;
+        $this->publication []= $publication;
         return $this;
     }
 

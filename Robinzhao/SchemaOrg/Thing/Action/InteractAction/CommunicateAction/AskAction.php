@@ -21,28 +21,20 @@ class AskAction extends CommunicateAction
      *
      * @var String
      */
-    protected $question;
+    public $question;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AskAction";
-
-    /**
-     * @return String
-     */
-    public function getQuestion()
-    {
-        return $this->question;
-    }
+    public $context = "http://schema.org/AskAction";
 
     /**
      * @param $question String
      */
-    public function setQuestion($question)
+    public function addQuestion($question)
     {
-        $this->question = $question;
+        $this->question []= $question;
         return $this;
     }
 

@@ -21,28 +21,20 @@ class GovernmentService extends Service
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization
      */
-    protected $serviceOperator;
+    public $serviceOperator;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/GovernmentService";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization
-     */
-    public function getServiceOperator()
-    {
-        return $this->serviceOperator;
-    }
+    public $context = "http://schema.org/GovernmentService";
 
     /**
      * @param $serviceOperator Robinzhao\SchemaOrg\Thing\Organization
      */
-    public function setServiceOperator($serviceOperator)
+    public function addServiceOperator($serviceOperator)
     {
-        $this->serviceOperator = $serviceOperator;
+        $this->serviceOperator []= $serviceOperator;
         return $this;
     }
 

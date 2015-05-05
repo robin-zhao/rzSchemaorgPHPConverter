@@ -20,6 +20,6 @@ class MedicalAudience extends Audience
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalAudience";
+    public $context = "http://schema.org/MedicalAudience";
 
 }

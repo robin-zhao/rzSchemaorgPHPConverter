@@ -20,6 +20,6 @@ class AutomotiveBusiness extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AutomotiveBusiness";
+    public $context = "http://schema.org/AutomotiveBusiness";
 
 }

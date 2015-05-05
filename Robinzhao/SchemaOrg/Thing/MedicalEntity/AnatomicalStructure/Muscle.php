@@ -21,148 +21,100 @@ class Muscle extends AnatomicalStructure
      *
      * @var String
      */
-    protected $action;
+    public $action;
 
     /**
      * The muscle whose action counteracts the specified muscle.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Muscle
      */
-    protected $antagonist;
+    public $antagonist;
 
     /**
      * The blood vessel that carries blood from the heart to the muscle.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    protected $bloodSupply;
+    public $bloodSupply;
 
     /**
      * The place of attachment of a muscle, or what the muscle moves.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $insertion;
+    public $insertion;
 
     /**
      * The underlying innervation associated with the muscle.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Nerve
      */
-    protected $nerve;
+    public $nerve;
 
     /**
      * The place or point where a muscle arises.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $origin;
+    public $origin;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Muscle";
-
-    /**
-     * @return String
-     */
-    public function getAction()
-    {
-        return $this->action;
-    }
+    public $context = "http://schema.org/Muscle";
 
     /**
      * @param $action String
      */
-    public function setAction($action)
+    public function addAction($action)
     {
-        $this->action = $action;
+        $this->action []= $action;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Muscle
-     */
-    public function getAntagonist()
-    {
-        return $this->antagonist;
     }
 
     /**
      * @param $antagonist Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Muscle
      */
-    public function setAntagonist($antagonist)
+    public function addAntagonist($antagonist)
     {
-        $this->antagonist = $antagonist;
+        $this->antagonist []= $antagonist;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
-     */
-    public function getBloodSupply()
-    {
-        return $this->bloodSupply;
     }
 
     /**
      * @param $bloodSupply Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Vessel
      */
-    public function setBloodSupply($bloodSupply)
+    public function addBloodSupply($bloodSupply)
     {
-        $this->bloodSupply = $bloodSupply;
+        $this->bloodSupply []= $bloodSupply;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getInsertion()
-    {
-        return $this->insertion;
     }
 
     /**
      * @param $insertion Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setInsertion($insertion)
+    public function addInsertion($insertion)
     {
-        $this->insertion = $insertion;
+        $this->insertion []= $insertion;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Nerve
-     */
-    public function getNerve()
-    {
-        return $this->nerve;
     }
 
     /**
      * @param $nerve Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure\Nerve
      */
-    public function setNerve($nerve)
+    public function addNerve($nerve)
     {
-        $this->nerve = $nerve;
+        $this->nerve []= $nerve;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getOrigin()
-    {
-        return $this->origin;
     }
 
     /**
      * @param $origin Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setOrigin($origin)
+    public function addOrigin($origin)
     {
-        $this->origin = $origin;
+        $this->origin []= $origin;
         return $this;
     }
 

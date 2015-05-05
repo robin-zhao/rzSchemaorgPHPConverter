@@ -21,52 +21,36 @@ class RentAction extends TradeAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    protected $landlord;
+    public $landlord;
 
     /**
      * A sub property of participant. The real estate agent involved in the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\RealEstateAgent
      */
-    protected $realEstateAgent;
+    public $realEstateAgent;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/RentAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
-     */
-    public function getLandlord()
-    {
-        return $this->landlord;
-    }
+    public $context = "http://schema.org/RentAction";
 
     /**
      * @param $landlord Robinzhao\SchemaOrg\Thing\Organization|Robinzhao\SchemaOrg\Thing\Person
      */
-    public function setLandlord($landlord)
+    public function addLandlord($landlord)
     {
-        $this->landlord = $landlord;
+        $this->landlord []= $landlord;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\RealEstateAgent
-     */
-    public function getRealEstateAgent()
-    {
-        return $this->realEstateAgent;
     }
 
     /**
      * @param $realEstateAgent Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\RealEstateAgent
      */
-    public function setRealEstateAgent($realEstateAgent)
+    public function addRealEstateAgent($realEstateAgent)
     {
-        $this->realEstateAgent = $realEstateAgent;
+        $this->realEstateAgent []= $realEstateAgent;
         return $this;
     }
 

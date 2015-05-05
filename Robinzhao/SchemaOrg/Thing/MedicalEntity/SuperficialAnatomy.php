@@ -21,124 +21,84 @@ class SuperficialAnatomy extends MedicalEntity
      *
      * @var String
      */
-    protected $associatedPathophysiology;
+    public $associatedPathophysiology;
 
     /**
      * Anatomical systems or structures that relate to the superficial anatomy.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
      */
-    protected $relatedAnatomy;
+    public $relatedAnatomy;
 
     /**
      * A medical condition associated with this anatomy.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    protected $relatedCondition;
+    public $relatedCondition;
 
     /**
      * A medical therapy related to this anatomy.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    protected $relatedTherapy;
+    public $relatedTherapy;
 
     /**
      * The significance associated with the superficial anatomy; as an example, how characteristics of the superficial anatomy can suggest underlying medical conditions or courses of treatment.
      *
      * @var String
      */
-    protected $significance;
+    public $significance;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/SuperficialAnatomy";
-
-    /**
-     * @return String
-     */
-    public function getAssociatedPathophysiology()
-    {
-        return $this->associatedPathophysiology;
-    }
+    public $context = "http://schema.org/SuperficialAnatomy";
 
     /**
      * @param $associatedPathophysiology String
      */
-    public function setAssociatedPathophysiology($associatedPathophysiology)
+    public function addAssociatedPathophysiology($associatedPathophysiology)
     {
-        $this->associatedPathophysiology = $associatedPathophysiology;
+        $this->associatedPathophysiology []= $associatedPathophysiology;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
-     */
-    public function getRelatedAnatomy()
-    {
-        return $this->relatedAnatomy;
     }
 
     /**
      * @param $relatedAnatomy Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
      */
-    public function setRelatedAnatomy($relatedAnatomy)
+    public function addRelatedAnatomy($relatedAnatomy)
     {
-        $this->relatedAnatomy = $relatedAnatomy;
+        $this->relatedAnatomy []= $relatedAnatomy;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
-     */
-    public function getRelatedCondition()
-    {
-        return $this->relatedCondition;
     }
 
     /**
      * @param $relatedCondition Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    public function setRelatedCondition($relatedCondition)
+    public function addRelatedCondition($relatedCondition)
     {
-        $this->relatedCondition = $relatedCondition;
+        $this->relatedCondition []= $relatedCondition;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
-     */
-    public function getRelatedTherapy()
-    {
-        return $this->relatedTherapy;
     }
 
     /**
      * @param $relatedTherapy Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    public function setRelatedTherapy($relatedTherapy)
+    public function addRelatedTherapy($relatedTherapy)
     {
-        $this->relatedTherapy = $relatedTherapy;
+        $this->relatedTherapy []= $relatedTherapy;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSignificance()
-    {
-        return $this->significance;
     }
 
     /**
      * @param $significance String
      */
-    public function setSignificance($significance)
+    public function addSignificance($significance)
     {
-        $this->significance = $significance;
+        $this->significance []= $significance;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class EmergencyService extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/EmergencyService";
+    public $context = "http://schema.org/EmergencyService";
 
 }

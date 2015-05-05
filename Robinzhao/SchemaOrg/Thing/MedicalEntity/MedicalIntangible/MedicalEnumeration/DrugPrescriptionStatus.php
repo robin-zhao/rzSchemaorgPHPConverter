@@ -20,6 +20,6 @@ class DrugPrescriptionStatus extends MedicalEnumeration
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DrugPrescriptionStatus";
+    public $context = "http://schema.org/DrugPrescriptionStatus";
 
 }

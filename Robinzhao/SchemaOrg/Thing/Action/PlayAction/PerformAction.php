@@ -21,28 +21,20 @@ class PerformAction extends PlayAction
      *
      * @var Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\EntertainmentBusiness
      */
-    protected $entertainmentBusiness;
+    public $entertainmentBusiness;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PerformAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\EntertainmentBusiness
-     */
-    public function getEntertainmentBusiness()
-    {
-        return $this->entertainmentBusiness;
-    }
+    public $context = "http://schema.org/PerformAction";
 
     /**
      * @param $entertainmentBusiness Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness\EntertainmentBusiness
      */
-    public function setEntertainmentBusiness($entertainmentBusiness)
+    public function addEntertainmentBusiness($entertainmentBusiness)
     {
-        $this->entertainmentBusiness = $entertainmentBusiness;
+        $this->entertainmentBusiness []= $entertainmentBusiness;
         return $this;
     }
 

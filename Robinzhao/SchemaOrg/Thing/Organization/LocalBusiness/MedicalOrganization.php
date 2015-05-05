@@ -20,6 +20,6 @@ class MedicalOrganization extends LocalBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalOrganization";
+    public $context = "http://schema.org/MedicalOrganization";
 
 }

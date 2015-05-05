@@ -20,6 +20,6 @@ class BarOrPub extends FoodEstablishment
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/BarOrPub";
+    public $context = "http://schema.org/BarOrPub";
 
 }

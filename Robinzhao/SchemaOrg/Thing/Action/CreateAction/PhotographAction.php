@@ -20,6 +20,6 @@ class PhotographAction extends CreateAction
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PhotographAction";
+    public $context = "http://schema.org/PhotographAction";
 
 }

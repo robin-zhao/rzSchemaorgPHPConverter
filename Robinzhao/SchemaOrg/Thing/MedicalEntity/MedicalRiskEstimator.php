@@ -21,52 +21,36 @@ class MedicalRiskEstimator extends MedicalEntity
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    protected $estimatesRiskOf;
+    public $estimatesRiskOf;
 
     /**
      * A modifiable or non-modifiable risk factor included in the calculation, e.g. age, coexisting condition.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalRiskFactor
      */
-    protected $includedRiskFactor;
+    public $includedRiskFactor;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalRiskEstimator";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity
-     */
-    public function getEstimatesRiskOf()
-    {
-        return $this->estimatesRiskOf;
-    }
+    public $context = "http://schema.org/MedicalRiskEstimator";
 
     /**
      * @param $estimatesRiskOf Robinzhao\SchemaOrg\Thing\MedicalEntity
      */
-    public function setEstimatesRiskOf($estimatesRiskOf)
+    public function addEstimatesRiskOf($estimatesRiskOf)
     {
-        $this->estimatesRiskOf = $estimatesRiskOf;
+        $this->estimatesRiskOf []= $estimatesRiskOf;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalRiskFactor
-     */
-    public function getIncludedRiskFactor()
-    {
-        return $this->includedRiskFactor;
     }
 
     /**
      * @param $includedRiskFactor Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalRiskFactor
      */
-    public function setIncludedRiskFactor($includedRiskFactor)
+    public function addIncludedRiskFactor($includedRiskFactor)
     {
-        $this->includedRiskFactor = $includedRiskFactor;
+        $this->includedRiskFactor []= $includedRiskFactor;
         return $this;
     }
 

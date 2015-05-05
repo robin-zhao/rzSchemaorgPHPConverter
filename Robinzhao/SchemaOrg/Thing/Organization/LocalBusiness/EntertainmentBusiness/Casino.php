@@ -20,6 +20,6 @@ class Casino extends EntertainmentBusiness
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Casino";
+    public $context = "http://schema.org/Casino";
 
 }

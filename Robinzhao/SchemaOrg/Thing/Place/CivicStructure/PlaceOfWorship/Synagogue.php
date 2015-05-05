@@ -20,6 +20,6 @@ class Synagogue extends PlaceOfWorship
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/Synagogue";
+    public $context = "http://schema.org/Synagogue";
 
 }

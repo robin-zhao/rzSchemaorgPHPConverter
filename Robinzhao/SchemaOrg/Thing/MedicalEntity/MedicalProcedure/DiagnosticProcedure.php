@@ -20,6 +20,6 @@ class DiagnosticProcedure extends MedicalProcedure
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DiagnosticProcedure";
+    public $context = "http://schema.org/DiagnosticProcedure";
 
 }

@@ -21,52 +21,36 @@ class MedicalConditionStage extends MedicalIntangible
      *
      * @var Float
      */
-    protected $stageAsNumber;
+    public $stageAsNumber;
 
     /**
      * The substage, e.g. 'a' for Stage IIIa.
      *
      * @var String
      */
-    protected $subStageSuffix;
+    public $subStageSuffix;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalConditionStage";
-
-    /**
-     * @return Float
-     */
-    public function getStageAsNumber()
-    {
-        return $this->stageAsNumber;
-    }
+    public $context = "http://schema.org/MedicalConditionStage";
 
     /**
      * @param $stageAsNumber Float
      */
-    public function setStageAsNumber($stageAsNumber)
+    public function addStageAsNumber($stageAsNumber)
     {
-        $this->stageAsNumber = $stageAsNumber;
+        $this->stageAsNumber []= $stageAsNumber;
         return $this;
-    }
-
-    /**
-     * @return String
-     */
-    public function getSubStageSuffix()
-    {
-        return $this->subStageSuffix;
     }
 
     /**
      * @param $subStageSuffix String
      */
-    public function setSubStageSuffix($subStageSuffix)
+    public function addSubStageSuffix($subStageSuffix)
     {
-        $this->subStageSuffix = $subStageSuffix;
+        $this->subStageSuffix []= $subStageSuffix;
         return $this;
     }
 

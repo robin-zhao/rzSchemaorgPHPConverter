@@ -21,124 +21,84 @@ class AnatomicalSystem extends MedicalEntity
      *
      * @var String
      */
-    protected $associatedPathophysiology;
+    public $associatedPathophysiology;
 
     /**
      * The underlying anatomical structures, such as organs, that comprise the anatomical system.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
      */
-    protected $comprisedOf;
+    public $comprisedOf;
 
     /**
      * A medical condition associated with this anatomy.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    protected $relatedCondition;
+    public $relatedCondition;
 
     /**
      * Related anatomical structure(s) that are not part of the system but relate or connect to it, such as vascular bundles associated with an organ system.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    protected $relatedStructure;
+    public $relatedStructure;
 
     /**
      * A medical therapy related to this anatomy.
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    protected $relatedTherapy;
+    public $relatedTherapy;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AnatomicalSystem";
-
-    /**
-     * @return String
-     */
-    public function getAssociatedPathophysiology()
-    {
-        return $this->associatedPathophysiology;
-    }
+    public $context = "http://schema.org/AnatomicalSystem";
 
     /**
      * @param $associatedPathophysiology String
      */
-    public function setAssociatedPathophysiology($associatedPathophysiology)
+    public function addAssociatedPathophysiology($associatedPathophysiology)
     {
-        $this->associatedPathophysiology = $associatedPathophysiology;
+        $this->associatedPathophysiology []= $associatedPathophysiology;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
-     */
-    public function getComprisedOf()
-    {
-        return $this->comprisedOf;
     }
 
     /**
      * @param $comprisedOf Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure|Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalSystem
      */
-    public function setComprisedOf($comprisedOf)
+    public function addComprisedOf($comprisedOf)
     {
-        $this->comprisedOf = $comprisedOf;
+        $this->comprisedOf []= $comprisedOf;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
-     */
-    public function getRelatedCondition()
-    {
-        return $this->relatedCondition;
     }
 
     /**
      * @param $relatedCondition Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalCondition
      */
-    public function setRelatedCondition($relatedCondition)
+    public function addRelatedCondition($relatedCondition)
     {
-        $this->relatedCondition = $relatedCondition;
+        $this->relatedCondition []= $relatedCondition;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
-     */
-    public function getRelatedStructure()
-    {
-        return $this->relatedStructure;
     }
 
     /**
      * @param $relatedStructure Robinzhao\SchemaOrg\Thing\MedicalEntity\AnatomicalStructure
      */
-    public function setRelatedStructure($relatedStructure)
+    public function addRelatedStructure($relatedStructure)
     {
-        $this->relatedStructure = $relatedStructure;
+        $this->relatedStructure []= $relatedStructure;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
-     */
-    public function getRelatedTherapy()
-    {
-        return $this->relatedTherapy;
     }
 
     /**
      * @param $relatedTherapy Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTherapy
      */
-    public function setRelatedTherapy($relatedTherapy)
+    public function addRelatedTherapy($relatedTherapy)
     {
-        $this->relatedTherapy = $relatedTherapy;
+        $this->relatedTherapy []= $relatedTherapy;
         return $this;
     }
 

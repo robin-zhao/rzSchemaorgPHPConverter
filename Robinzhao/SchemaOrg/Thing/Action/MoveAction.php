@@ -21,52 +21,36 @@ class MoveAction extends Action
      *
      * @var Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    protected $fromLocation;
+    public $fromLocation;
 
     /**
      * A sub property of location. The final location of the object or the agent after the action.
      *
      * @var Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    protected $toLocation;
+    public $toLocation;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MoveAction";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place|Float
-     */
-    public function getFromLocation()
-    {
-        return $this->fromLocation;
-    }
+    public $context = "http://schema.org/MoveAction";
 
     /**
      * @param $fromLocation Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    public function setFromLocation($fromLocation)
+    public function addFromLocation($fromLocation)
     {
-        $this->fromLocation = $fromLocation;
+        $this->fromLocation []= $fromLocation;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Place|Float
-     */
-    public function getToLocation()
-    {
-        return $this->toLocation;
     }
 
     /**
      * @param $toLocation Robinzhao\SchemaOrg\Thing\Place|Float
      */
-    public function setToLocation($toLocation)
+    public function addToLocation($toLocation)
     {
-        $this->toLocation = $toLocation;
+        $this->toLocation []= $toLocation;
         return $this;
     }
 

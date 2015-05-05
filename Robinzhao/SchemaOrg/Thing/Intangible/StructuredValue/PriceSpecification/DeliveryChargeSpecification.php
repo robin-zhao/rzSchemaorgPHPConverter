@@ -21,52 +21,36 @@ class DeliveryChargeSpecification extends PriceSpecification
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    protected $appliesToDeliveryMethod;
+    public $appliesToDeliveryMethod;
 
     /**
      * The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.
      *
      * @var String|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoShape
      */
-    protected $eligibleRegion;
+    public $eligibleRegion;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/DeliveryChargeSpecification";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
-     */
-    public function getAppliesToDeliveryMethod()
-    {
-        return $this->appliesToDeliveryMethod;
-    }
+    public $context = "http://schema.org/DeliveryChargeSpecification";
 
     /**
      * @param $appliesToDeliveryMethod Robinzhao\SchemaOrg\Thing\Intangible\Enumeration\DeliveryMethod
      */
-    public function setAppliesToDeliveryMethod($appliesToDeliveryMethod)
+    public function addAppliesToDeliveryMethod($appliesToDeliveryMethod)
     {
-        $this->appliesToDeliveryMethod = $appliesToDeliveryMethod;
+        $this->appliesToDeliveryMethod []= $appliesToDeliveryMethod;
         return $this;
-    }
-
-    /**
-     * @return String|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoShape
-     */
-    public function getEligibleRegion()
-    {
-        return $this->eligibleRegion;
     }
 
     /**
      * @param $eligibleRegion String|Robinzhao\SchemaOrg\Thing\Intangible\StructuredValue\GeoShape
      */
-    public function setEligibleRegion($eligibleRegion)
+    public function addEligibleRegion($eligibleRegion)
     {
-        $this->eligibleRegion = $eligibleRegion;
+        $this->eligibleRegion []= $eligibleRegion;
         return $this;
     }
 

@@ -20,6 +20,6 @@ class MaximumDoseSchedule extends DoseSchedule
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MaximumDoseSchedule";
+    public $context = "http://schema.org/MaximumDoseSchedule";
 
 }

@@ -21,28 +21,20 @@ class MedicalTestPanel extends MedicalTest
      *
      * @var Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
      */
-    protected $subTest;
+    public $subTest;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalTestPanel";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
-     */
-    public function getSubTest()
-    {
-        return $this->subTest;
-    }
+    public $context = "http://schema.org/MedicalTestPanel";
 
     /**
      * @param $subTest Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalTest
      */
-    public function setSubTest($subTest)
+    public function addSubTest($subTest)
     {
-        $this->subTest = $subTest;
+        $this->subTest []= $subTest;
         return $this;
     }
 

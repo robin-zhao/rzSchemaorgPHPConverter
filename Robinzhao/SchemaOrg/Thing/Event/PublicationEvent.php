@@ -21,52 +21,36 @@ class PublicationEvent extends Event
      *
      * @var Boolean
      */
-    protected $free;
+    public $free;
 
     /**
      * A broadcast service associated with the publication event
      *
      * @var Robinzhao\SchemaOrg\Thing\BroadcastService
      */
-    protected $publishedOn;
+    public $publishedOn;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/PublicationEvent";
-
-    /**
-     * @return Boolean
-     */
-    public function getFree()
-    {
-        return $this->free;
-    }
+    public $context = "http://schema.org/PublicationEvent";
 
     /**
      * @param $free Boolean
      */
-    public function setFree($free)
+    public function addFree($free)
     {
-        $this->free = $free;
+        $this->free []= $free;
         return $this;
-    }
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\BroadcastService
-     */
-    public function getPublishedOn()
-    {
-        return $this->publishedOn;
     }
 
     /**
      * @param $publishedOn Robinzhao\SchemaOrg\Thing\BroadcastService
      */
-    public function setPublishedOn($publishedOn)
+    public function addPublishedOn($publishedOn)
     {
-        $this->publishedOn = $publishedOn;
+        $this->publishedOn []= $publishedOn;
         return $this;
     }
 

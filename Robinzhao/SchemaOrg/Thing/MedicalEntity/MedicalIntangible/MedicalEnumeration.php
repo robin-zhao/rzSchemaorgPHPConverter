@@ -20,6 +20,6 @@ class MedicalEnumeration extends MedicalIntangible
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/MedicalEnumeration";
+    public $context = "http://schema.org/MedicalEnumeration";
 
 }

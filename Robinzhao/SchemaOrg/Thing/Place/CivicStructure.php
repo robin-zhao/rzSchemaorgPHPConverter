@@ -21,28 +21,20 @@ class CivicStructure extends Place
      *
      * @var Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    protected $openingHours;
+    public $openingHours;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/CivicStructure";
-
-    /**
-     * @return Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
-     */
-    public function getOpeningHours()
-    {
-        return $this->openingHours;
-    }
+    public $context = "http://schema.org/CivicStructure";
 
     /**
      * @param $openingHours Robinzhao\SchemaOrg\Thing\Intangible\Quantity\Duration
      */
-    public function setOpeningHours($openingHours)
+    public function addOpeningHours($openingHours)
     {
-        $this->openingHours = $openingHours;
+        $this->openingHours []= $openingHours;
         return $this;
     }
 

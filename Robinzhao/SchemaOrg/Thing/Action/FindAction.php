@@ -20,6 +20,6 @@ class FindAction extends Action
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/FindAction";
+    public $context = "http://schema.org/FindAction";
 
 }

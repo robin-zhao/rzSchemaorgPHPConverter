@@ -21,28 +21,20 @@ class AudioObject extends MediaObject
      *
      * @var String
      */
-    protected $transcript;
+    public $transcript;
 
     /**
      * schema.org context url
      * @var String
      */
-    protected $context = "http://schema.org/AudioObject";
-
-    /**
-     * @return String
-     */
-    public function getTranscript()
-    {
-        return $this->transcript;
-    }
+    public $context = "http://schema.org/AudioObject";
 
     /**
      * @param $transcript String
      */
-    public function setTranscript($transcript)
+    public function addTranscript($transcript)
     {
-        $this->transcript = $transcript;
+        $this->transcript []= $transcript;
         return $this;
     }
 
