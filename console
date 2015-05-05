@@ -6,8 +6,10 @@
  *
  * @email boborabit@gmail.com
  */
+
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 require 'vendor/autoload.php';
@@ -15,6 +17,7 @@ require 'vendor/autoload.php';
 $app = new Application();
 
 $cmd = $app->register('convert');
+$cmd->addOption('namespace', null,  InputOption::VALUE_REQUIRED, 'Specify a custom namespace like Robin\\SchemaOrg');
 $cmd->setDescription('Start to convert http://schema.rdfs.org/all.json to classes.');
 $cmd->setCode(function(InputInterface $input, OutputInterface $output) {
 
@@ -30,9 +33,15 @@ $cmd->setCode(function(InputInterface $input, OutputInterface $output) {
     ClassBuilder::setPropertyConf($json->properties);
     ClassBuilder::setTypeConf($json->types);
 
+    $namespace = 'Robinzhao\\SchemaOrg';
+    $inputNamespace = $input->getOption('namespace');
+    if ($inputNamespace) {
+        $namespace = $inputNamespace;
+    }
+
     foreach ((array) $json->types as $each) {
         $classBuilder = new ClassBuilder($each);
-        $classBuilder->setRootNamespace('Robinzhao');
+        $classBuilder->setRootNamespace($namespace);
         $classBuilder->build();
     }
 });
@@ -42,7 +51,7 @@ $app->run();
 class ClassBuilder
 {
 
-    private $rootNamespace = 'Robinzhao';
+    private $rootNamespace = 'Robinzhao\\SchemaOrg';
     private $className;
     private $ancestors;
     private $specificProperties;
@@ -94,9 +103,15 @@ class ClassBuilder
         $this->buildClass();
     }
 
+    private function namespaceToPath($namespace)
+    {
+        $namespace = str_replace('\\', '/', $namespace);
+        return $namespace;
+    }
+
     private function touchFile()
     {
-        $dir = __DIR__ . '/' . $this->rootNamespace . '/SchemaOrg/' . implode('/', $this->ancestors);
+        $dir = __DIR__ . '/' . $this->namespaceToPath($this->rootNamespace) . '/' . implode('/', $this->ancestors);
         if (!file_exists($dir)) {
             mkdir($dir, 0755, true);
         }
@@ -116,12 +131,12 @@ class ClassBuilder
         $string [] = ' */' . "\n";
 
         if (count($this->ancestors) > 0) {
-            $string [] = 'namespace ' . $this->rootNamespace . '\\SchemaOrg\\' . implode('\\', $this->ancestors) . ';' . "\n";
-            $string [] = 'use ' . $this->rootNamespace . '\\SchemaOrg\\' . implode('\\', $this->ancestors) . ';' . "\n";
+            $string [] = 'namespace ' . $this->rootNamespace . '\\' . implode('\\', $this->ancestors) . ';' . "\n";
+            $string [] = 'use ' . $this->rootNamespace . '\\' . implode('\\', $this->ancestors) . ';' . "\n";
             $this->buildClassDoc($string);
             $string [] = 'class ' . $this->className . ' extends ' . $this->ancestors[count($this->ancestors) - 1];
         } else {
-            $string [] = 'namespace ' . $this->rootNamespace . '\\SchemaOrg;' . "\n";
+            $string [] = 'namespace ' . $this->rootNamespace . ";\n";
             $this->buildClassDoc($string);
             $string [] = 'class ' . $this->className;
         }
@@ -185,9 +200,9 @@ class ClassBuilder
                 $ancestors = self::$typeConf->$range->ancestors;
                 $ancestors[] = $range;
                 if (count($ancestors) > 0) {
-                    $namespace = $this->rootNamespace . '\\SchemaOrg\\' . implode('\\', $ancestors);
+                    $namespace = $this->rootNamespace . '\\' . implode('\\', $ancestors);
                 } else {
-                    $namespace = $this->rootNamespace . '\\SchemaOrg';
+                    $namespace = $this->rootNamespace;
                 }
 
                 $rangeName [] = $namespace;

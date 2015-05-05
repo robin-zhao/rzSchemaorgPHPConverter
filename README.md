@@ -15,7 +15,7 @@ And a simple Json-ld formatter based on the classes.
 
 ### How to use
 
-    - Generate classes: /usr/bin/php console convert
+    - Generate classes: /usr/bin/php console convert --namespace=Robin\\SchemaOrg
 
 ### Json-ld formatter
 
