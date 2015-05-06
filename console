@@ -155,7 +155,7 @@ class ClassBuilder
 
         $this->buildFormatMethod($string);
 
-        $string .= "\n}";
+        $string .= "}\n";
 
         file_put_contents($this->file, $string);
     }
@@ -302,7 +302,6 @@ class ClassBuilder
         $this->format();
         return json_encode($this->json);
     }
-
 FORMAT;
 
         }
