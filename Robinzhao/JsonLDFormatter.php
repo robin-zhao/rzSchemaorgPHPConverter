@@ -8,7 +8,6 @@ use Robinzhao\SchemaOrg\Thing;
  * Description of JsonLDFormatter
  *
  * @author Jian Zhao
- * @email boborabit@gmail.com
  */
 class JsonLDFormatter
 {
