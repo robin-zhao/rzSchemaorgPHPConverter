@@ -25,6 +25,10 @@ And a simple Json-ld formatter based on the classes.
 
 
 ```php
+    $loader = new ClassLoader();
+    $loader->add('Robinzhao', '.');
+    $loader->register();
+
     $videoObject = new VideoObject();
 
     $person = new Person();
@@ -40,9 +44,8 @@ And a simple Json-ld formatter based on the classes.
     $videoObject->addAward("This is a award.");
     $videoObject->addAward("This is another award.");
 
-    $formatter = new JsonLDFormatter($videoObject);
 
-    echo $formatter->toJson();
+    echo $videoObject->toJson();
 ```
 
     with output like:

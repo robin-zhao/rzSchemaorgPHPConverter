@@ -1,8 +1,6 @@
 <?php
 /**
  * This is an auto generated file.
- * You are encouraged to edit the script below:
- * https://github.com/robin-zhao/rzSchemaorgPHPConverter/
  */
 
 namespace Robinzhao\SchemaOrg\Thing\MedicalEntity\MedicalRiskEstimator;
@@ -21,5 +19,6 @@ class MedicalRiskCalculator extends MedicalRiskEstimator
      * @var String
      */
     public $context = "http://schema.org/MedicalRiskCalculator";
+
 
 }

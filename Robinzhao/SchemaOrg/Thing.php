@@ -1,8 +1,6 @@
 <?php
 /**
  * This is an auto generated file.
- * You are encouraged to edit the script below:
- * https://github.com/robin-zhao/rzSchemaorgPHPConverter/
  */
 
 namespace Robinzhao\SchemaOrg;
@@ -130,6 +128,76 @@ class Thing
     {
         $this->url []= $url;
         return $this;
+    }
+
+    protected $json;
+
+    public function format($topLevel = true)
+    {
+        $this->json = new \stdClass();
+
+        $reflectionClass = new \ReflectionClass($this);
+        $properties = $reflectionClass->getProperties();
+        foreach ($properties as $property) {
+
+            if ($property->name == 'json') {
+                continue;
+            }
+
+            $propertyValue = $this->{$property->name};
+            if (!is_null($propertyValue)) {
+
+                if ($property->name == 'context') {
+
+                    $parts = explode('/', $propertyValue);
+                    $type = array_pop($parts);
+
+                    if ($topLevel) {
+                        $context = implode('/', $parts);
+                        $label = '@context';
+                        $this->json->{$label} = $context;
+                    }
+
+                    $label = '@type';
+                    $this->json->{$label} = $type;
+                } else {
+                    // Text based property.
+                    $doc = $property->getDocComment();
+                    $match = array();
+                    preg_match('/@var ([a-zA-Z\\\\]+)/', $doc, $match);
+
+                    switch ($match[1]) {
+                        case 'String':
+                            if (count($propertyValue) > 1) {
+                                $this->json->{$property->name} = $propertyValue;
+                            } else {
+                                $this->json->{$property->name} = current($propertyValue);
+                            }
+                            break;
+                        case 'Integer':
+                        case 'float':
+                            throw new Exception('no implemented');
+                        default:
+                            if (count($propertyValue) > 1) {
+                                foreach ($propertyValue as $each) {
+                                    $this->json->{$property->name} [] = $each->format(false);
+                                }
+                            } else {
+                                $object = current($propertyValue);
+                                $this->json->{$property->name} = $object->format(false);
+                            }
+                            break;
+                    }
+                }
+            }
+        }
+
+        return $this->json;
+    }
+
+    public function toJson() {
+        $this->format();
+        return json_encode($this->json);
     }
 
 }

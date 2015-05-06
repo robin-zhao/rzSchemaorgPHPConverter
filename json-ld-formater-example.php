@@ -3,7 +3,6 @@
 use Composer\Autoload\ClassLoader;
 use Robinzhao\SchemaOrg\Thing\CreativeWork\MediaObject\VideoObject;
 use Robinzhao\SchemaOrg\Thing\Person;
-use Robinzhao\JsonLDFormatter;
 
 require 'vendor/autoload.php';
 
@@ -26,6 +25,5 @@ $videoObject->addAuthor($person);
 $videoObject->addAward("This is a award.");
 $videoObject->addAward("This is another award.");
 
-$formatter = new JsonLDFormatter($videoObject);
 
-echo $formatter->toJson();
+echo $videoObject->toJson();

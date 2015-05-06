@@ -1,8 +1,6 @@
 <?php
 /**
  * This is an auto generated file.
- * You are encouraged to edit the script below:
- * https://github.com/robin-zhao/rzSchemaorgPHPConverter/
  */
 
 namespace Robinzhao\SchemaOrg\Thing\Intangible;
@@ -309,5 +307,6 @@ class JobPosting extends Intangible
         $this->workHours []= $workHours;
         return $this;
     }
+
 
 }

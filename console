@@ -144,16 +144,19 @@ class ClassBuilder
 
         foreach ($this->specificProperties as $property) {
             $this->buildProperty($property, $string);
-            $this->buildGetterSetter($property, $getterSetter);
+            $this->buildAdder($property, $getterSetter);
         }
 
         $this->buildContext($string);
 
         $string = array_merge($string, $getterSetter);
 
-        $string[] = '}';
-
         $string = implode("\n", $string) . "\n";
+
+        $this->buildFormatMethod($string);
+
+        $string .= "\n}";
+
         file_put_contents($this->file, $string);
     }
 
@@ -210,18 +213,98 @@ class ClassBuilder
         return implode('|', $rangeName);
     }
 
-    private function buildGetterSetter($property, &$getterSetter)
+    private function buildAdder($property, &$adder)
     {
         $type = $this->calculateType($property);
 
-        $getterSetter [] = '    /**';
-        $getterSetter [] = '     * @param $' . $property . ' ' . $type;
-        $getterSetter [] = '     */';
-        $getterSetter [] = '    public function add' . ucfirst($property) . '($' . $property . ')';
-        $getterSetter [] = '    {';
-        $getterSetter [] = '        $this->' . $property . ' []= $' . $property . ';';
-        $getterSetter [] = '        return $this;';
-        $getterSetter [] = '    }' . "\n";
+        $adder [] = '    /**';
+        $adder [] = '     * @param $' . $property . ' ' . $type;
+        $adder [] = '     */';
+        $adder [] = '    public function add' . ucfirst($property) . '($' . $property . ')';
+        $adder [] = '    {';
+        $adder [] = '        $this->' . $property . ' []= $' . $property . ';';
+        $adder [] = '        return $this;';
+        $adder [] = '    }' . "\n";
     }
 
+
+    private function buildFormatMethod(&$string)
+    {
+        if ($this->className == 'Thing')
+        {
+            $string .= <<<'FORMAT'
+    protected $json;
+
+    public function format($topLevel = true)
+    {
+        $this->json = new \stdClass();
+
+        $reflectionClass = new \ReflectionClass($this);
+        $properties = $reflectionClass->getProperties();
+        foreach ($properties as $property) {
+
+            if ($property->name == 'json') {
+                continue;
+            }
+
+            $propertyValue = $this->{$property->name};
+            if (!is_null($propertyValue)) {
+
+                if ($property->name == 'context') {
+
+                    $parts = explode('/', $propertyValue);
+                    $type = array_pop($parts);
+
+                    if ($topLevel) {
+                        $context = implode('/', $parts);
+                        $label = '@context';
+                        $this->json->{$label} = $context;
+                    }
+
+                    $label = '@type';
+                    $this->json->{$label} = $type;
+                } else {
+                    // Text based property.
+                    $doc = $property->getDocComment();
+                    $match = array();
+                    preg_match('/@var ([a-zA-Z\\\\]+)/', $doc, $match);
+
+                    switch ($match[1]) {
+                        case 'String':
+                            if (count($propertyValue) > 1) {
+                                $this->json->{$property->name} = $propertyValue;
+                            } else {
+                                $this->json->{$property->name} = current($propertyValue);
+                            }
+                            break;
+                        case 'Integer':
+                        case 'float':
+                            throw new Exception('no implemented');
+                        default:
+                            if (count($propertyValue) > 1) {
+                                foreach ($propertyValue as $each) {
+                                    $this->json->{$property->name} [] = $each->format(false);
+                                }
+                            } else {
+                                $object = current($propertyValue);
+                                $this->json->{$property->name} = $object->format(false);
+                            }
+                            break;
+                    }
+                }
+            }
+        }
+
+        return $this->json;
+    }
+
+    public function toJson() {
+        $this->format();
+        return json_encode($this->json);
+    }
+
+FORMAT;
+
+        }
+    }
 }

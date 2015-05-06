@@ -1,8 +1,6 @@
 <?php
 /**
  * This is an auto generated file.
- * You are encouraged to edit the script below:
- * https://github.com/robin-zhao/rzSchemaorgPHPConverter/
  */
 
 namespace Robinzhao\SchemaOrg\Thing\MedicalEntity;
@@ -37,5 +35,6 @@ class MedicalRiskFactor extends MedicalEntity
         $this->increasesRiskOf []= $increasesRiskOf;
         return $this;
     }
+
 
 }

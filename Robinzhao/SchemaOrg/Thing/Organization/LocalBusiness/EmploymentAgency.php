@@ -1,8 +1,6 @@
 <?php
 /**
  * This is an auto generated file.
- * You are encouraged to edit the script below:
- * https://github.com/robin-zhao/rzSchemaorgPHPConverter/
  */
 
 namespace Robinzhao\SchemaOrg\Thing\Organization\LocalBusiness;
@@ -21,5 +19,6 @@ class EmploymentAgency extends LocalBusiness
      * @var String
      */
     public $context = "http://schema.org/EmploymentAgency";
+
 
 }
